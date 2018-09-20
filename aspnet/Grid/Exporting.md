@@ -729,5 +729,189 @@ public partial class DetailTemplateExporting : System.Web.UI.Page
 
 {% endtabs %}
 
+## Exporting with Custom Summary
+
+In Exporting, custom summary needs to be handled using `QueryCustomSummaryInfo` server-side event.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight html %}
+
+<ej:Grid ID="FlatGrid" runat="server" AllowPaging="true" ShowSummary="true"  OnServerWordExporting="FlatGrid_ServerWordExporting" OnServerPdfExporting="FlatGrid_ServerPdfExporting" OnServerExcelExporting="FlatGrid_ServerExcelExporting">
+    <ToolbarSettings ShowToolbar="true" ToolbarItems="excelExport,wordExport,pdfExport"></ToolbarSettings>
+    <SummaryRows>
+        <ej:SummaryRow Title="Currency" >
+            <SummaryColumn>
+                    <ej:SummaryColumn SummaryType="Custom" CustomSummaryValue="currency" DisplayColumn="Freight"
+                        Format="{0:C2}" />
+            </SummaryColumn>
+        </ej:SummaryRow>
+    </SummaryRows>
+    <Columns>
+        <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
+        <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
+        <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
+        <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
+    </Columns>
+</ej:Grid>
 
 
+{% endhighlight %}
+
+{% highlight c# %}
+
+public partial class CustomSummaryExporting : System.Web.UI.Page
+
+    {
+
+        List<Orders> order = new List<Orders>();
+
+        protected void Page_Load(object sender, EventArgs e)
+
+        {
+
+            BindDataSource();
+
+        }
+
+        private void BindDataSource()
+
+        {
+
+            int code = 10000;
+
+            for (int i = 1; i < 10; i++)
+
+            {
+
+                order.Add(new Orders(code + 1, "ALFKI", i + 0, 2.3 * i, new DateTime(1991, 05, 15), "Berlin"));
+
+                order.Add(new Orders(code + 2, "ANATR", i + 2, 3.3 * i, new DateTime(1990, 04, 04), "Madrid"));
+
+                order.Add(new Orders(code + 3, "ANTON", i + 1, 4.3 * i, new DateTime(1957, 11, 30), "Cholchester"));
+
+                order.Add(new Orders(code + 4, "BLONP", i + 3, 5.3 * i, new DateTime(1930, 10, 22), "Marseille"));
+
+                order.Add(new Orders(code + 5, "BOLID", i + 4, 6.3 * i, new DateTime(1953, 02, 18), "Tsawassen"));
+
+                code += 5;
+
+            }
+
+            this.FlatGrid.DataSource = order;
+
+            this.FlatGrid.DataBind();
+
+        }
+
+
+
+        [Serializable]
+
+        public class Orders
+
+        {
+
+            public Orders()
+
+            {
+
+
+
+            }
+
+            public Orders(long OrderId, string CustomerId, int EmployeeId, double Freight, DateTime OrderDate, string ShipCity)
+
+            {
+
+                this.OrderID = OrderId;
+
+                this.CustomerID = CustomerId;
+
+                this.EmployeeID = EmployeeId;
+
+                this.Freight = Freight;
+
+                this.OrderDate = OrderDate;
+
+                this.ShipCity = ShipCity;
+
+            }
+
+            public long OrderID { get; set; }
+
+            public string CustomerID { get; set; }
+
+            public int EmployeeID { get; set; }
+
+            public double Freight { get; set; }
+
+            public DateTime OrderDate { get; set; }
+
+            public string ShipCity { get; set; }
+
+        }
+
+
+
+        protected void FlatGrid_ServerExcelExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+
+        {
+
+            ExcelExport exp = new ExcelExport();
+            GridExcelExport GridExp = new GridExcelExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-lime";
+            GridExp.FileName = "Export.xlsx";
+            exp.Export(FlatGrid.Model, (IEnumerable)FlatGrid.DataSource, GridExp);
+
+        }
+
+
+
+        protected void FlatGrid_ServerWordExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+
+        {
+
+            WordExport exp = new WordExport();
+            GridWordExport GridExp = new GridWordExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-lime";
+            GridExp.FileName = "Export.docx";
+            exp.Export(FlatGrid.Model, (IEnumerable)FlatGrid.DataSource, GridExp);
+
+        }
+
+
+
+        protected void FlatGrid_ServerPdfExporting(object sender, Syncfusion.JavaScript.Web.GridEventArgs e)
+
+        {
+
+            PdfExport exp = new PdfExport();
+            GridPdfExport GridExp = new GridPdfExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-lime";
+            GridExp.FileName = "Export.pdf";
+            exp.Export(FlatGrid.Model, (IEnumerable)FlatGrid.DataSource, GridExp);
+
+        }
+
+        private object SummaryCellInfo(IQueryable arg1, SummaryColumn arg2)
+        {
+            var rs = 0; double value = 0;
+            if (arg2.DisplayColumn == "Freight")
+            {
+                rs = 100000;
+                value = 0.017;
+            }
+            return (rs * value);
+        }
+
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
