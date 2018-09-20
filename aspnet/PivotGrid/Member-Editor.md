@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Member Editor | PivotGrid | ASP.NET | Syncfusion
-description: Memebr editor in pivot grid control
+description: Member editor in pivot grid control
 platform: aspnet
 control: PivotGrid
 documentation: ug
@@ -36,7 +36,7 @@ Following are the navigation option available in Member Editor Pager.
 * Numeric Box - Navigates to the desired page by entering an appropriate page number in numeric value.
 
 
-![](Member_Editor_images/member_editor_paging.png)
+![Paging in member editor](Member_Editor_images/member_editor_paging.png)
 
 ## Member editor - Sorting
 
