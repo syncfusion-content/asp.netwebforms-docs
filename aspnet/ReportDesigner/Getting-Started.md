@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a ReportDesigner in your web application with ASP.NET.
+This section explains briefly about how to create a ReportDesigner in your ASP.NET web application.
 
 ## Create your first ReportDesigner application in ASP.NET
 
@@ -22,13 +22,13 @@ Open Visual Studio and create a new project by clicking `New Project`. Select th
 Project Creation Wizard
 {:.caption}
 
-### Add References
+## Add Assembly References
 
 1. In the Solution Explorer, right-click the `References` folder and then click `Add Reference`.
 
     ![](Getting-Started_images/Getting-Started_img4.png) 
 
-2. Add the following references to the project that are necessary for using the report designer control and click OK.
+2. Add the following Syncfusion assemblies to the project that are necessary for using the report designer control and click OK.
 
    * Syncfusion.Chart.Wpf
    * Syncfusion.Compression.Base
@@ -46,7 +46,7 @@ Project Creation Wizard
 
     > Refer the above assemblies from the installed location, [Installed Location]:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\{{ site.releaseversion }}\Assemblies
 
-3.  Add reference to the following assemblies from [NuGet package](https://www.nuget.org/packages/Microsoft.AspNet.WebApi/ "Web NuGet Package Details").
+3.  Add the following WebAPI assemblies from [NuGet package](https://www.nuget.org/packages/Microsoft.AspNet.WebApi/ "Web NuGet Package Details").
 
     * System.Web.Http
     * System. Web.Http.WebHost
@@ -56,8 +56,6 @@ Project Creation Wizard
     > The System.Web.Routing and System.Net.Http assemblies are also required, which are referred by default when creating the project.
 
 ### Create ASPX Page
-
-If `Default.aspx` page already exists in your application skip the below steps.
 
 To create a new Web Forms in the application
 
@@ -76,13 +74,13 @@ To create a new Web Forms in the application
 
     ![](Getting-Started_images/Getting-Started_img14.png)
 
-### Add Scripts and Styles
+## Add Scripts and Styles
 
 For complete dependencies list of report designer control [Click here](/aspnet/ReportDesigner/Dependencies).
 
 Add the script files and theme files in the &lt;head&gt; tag of the Default.aspx page.
 
-**Themes**
+### Themes
 
 {% highlight html %}
 
@@ -91,9 +89,9 @@ Add the script files and theme files in the &lt;head&gt; tag of the Default.aspx
 
 {% endhighlight %} 
 
-**Scripts**
+### Scripts
 
-**External dependencies**
+#### External dependencies
 
 {% highlight html %}
 
@@ -103,7 +101,7 @@ Add the script files and theme files in the &lt;head&gt; tag of the Default.aspx
 
 {% endhighlight %} 
 
-**Internal dependencies**
+#### Internal dependencies
 
 Refer the below scripts to render report designer control.
 
@@ -115,7 +113,7 @@ Refer the below scripts to render report designer control.
  
 {% endhighlight %} 
 
-**Code Mirror**
+##### Code Mirror
 
 To edit the SQL queries with syntax highlighter need to refer the below code mirror scripts and themes.
 
@@ -131,18 +129,18 @@ To edit the SQL queries with syntax highlighter need to refer the below code mir
 
 {% endhighlight %} 
 
-Use the above code example while adding scripts and styles.
+Use the above code examples while adding scripts and styles.
 
 > Refer the following installed location to get scripts and styles in local machine, [Installed Location]:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\{{ site.releaseversion }}\JavaScript\assets.
 
-### Add Control in ASPX Page
+## Add Control in ASPX Page
 
 To add the control, we can use either of the following two ways:
 
 *	Drag and drop the control from the toolbox. <BR>
 *	Manually using the control code. <BR>
 
-#### Drag and drop the control from the toolbox
+### Drag and drop the control from the toolbox
 
 1.	An easy way of adding control into the Default.aspx page is by making use of the Toolbox option present in the Visual Studio. When you install Essential Studio Package or ASP.NET setup in your machine, all the available ASP.NET controls are automatically configured into the Visual Studio Toolbox.
 
@@ -165,11 +163,11 @@ To add the control, we can use either of the following two ways:
 
     {% endhighlight %}
     
-#### Manually using the control code
+### Manually using the control code
 
 If you want to add the control code manually, follow the below steps.
 
-##### Assembly Reference
+#### Assembly Reference
 
 Refer to the following assemblies in your newly created ASP.NET application that allows you to use any of the Syncfusion ASP.NET controls within it.
 
@@ -178,7 +176,7 @@ Refer to the following assemblies in your newly created ASP.NET application that
 
 > Refer the above assemblies from the installed location, [Installed Location]:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\{{ site.releaseversion }}\Assemblies
 
-##### Registering Syncfusion Assemblies within the Web.config
+#### Registering Syncfusion Assemblies within the Web.config
 
 In your application’s web.config file, add the following assembly information within the <assemblies> tag.
 
@@ -186,52 +184,56 @@ In your application’s web.config file, add the following assembly information 
 
 <system.web>
     <compilation debug="true" targetFramework="4.5">
-          <assemblies>
-
-            <add assembly="Syncfusion.EJ, Version=16.3450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-
-            <add assembly="Syncfusion.EJ.Web, Version=16.3450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-
-          </assemblies>
+      <assemblies>
+        <add assembly="Syncfusion.EJ, Version=16.3450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Web, Version=16.3450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+     </assemblies>
     </compilation>
     <authentication mode="Forms">
 </system.web>
 
 {% endhighlight %}
 
-1.	Add the following ReportDesigner code into the body section of the Default.aspx file, as shown in the image following it.
+1.Add the following ReportDesigner code into the body section of the Default.aspx file.
 
-        {% highlight html %}
-        
-        <form id="form1" runat="server">
-            <div style="height: 650px;width: 950px;">
-                <ej:ReportDesigner ID="designer" runat="server"></ej:ReportDesigner>
-            </div>
-        </form>   
-        {% endhighlight %}
+{% highlight html %}
 
-2.	Also register the required assemblies within the Default.aspx page at the top where you are using the control as shown in the following.
+<form id="form1" runat="server">
+<div style="height: 650px;width: 950px;">
+    <ej:ReportDesigner ID="designer" runat="server"></ej:ReportDesigner>
+</div>
+</form> 
 
-    ![](Getting-Started_images/Getting-Started_img11.png)
+{% endhighlight %}
 
-3. Set the desired `ServiceUrl` to ReportDesigner.
+2.Also register the required assemblies within the Default.aspx page at the top where you are using the control as shown in the following code snippet.
+
+{% highlight html %} 
+
+<%@ Register Assembly="Syncfusion.EJ, Version=16.3450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+
+<%@ Register Assembly="Syncfusion.EJ.Web, Version=16.3450.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+
+{% endhighlight %}
+
+3.Set the desired `ServiceUrl` to ReportDesigner.
    
-   {% highlight html %} 
+{% highlight html %} 
 
-   <form id="form1" runat="server">
-       <div style="height: 650px;width: 950px;">
-           <ej:ReportDesigner runat="server" ID="designer" ServiceUrl="/api/ReportDesigner">
-           </ej:ReportDesigner>
-       </div>
-   </form>   
-   
-   {% endhighlight %}
+<form id="form1" runat="server">
+    <div style="height: 650px;width: 950px;">
+        <ej:ReportDesigner runat="server" ID="designer" ServiceUrl="/api/ReportDesigner">
+        </ej:ReportDesigner>
+    </div>
+</form>   
+
+{% endhighlight %}
    
 ### Add WebAPI controller for ReportDesigner
 
 The ASP.NET ReportDesigner uses WebApi services to process the report file and process the request from control.
 
-**Add Controller**
+#### Add Controller
 
 1. Right-Click on the project and select `Add` then click `New Item`. 
 
@@ -244,7 +246,6 @@ The ASP.NET ReportDesigner uses WebApi services to process the report file and p
 3. Click Add.
 
     ![](Getting-Started_images/Getting-Started_img12.png)
-
 
 #### Inherit IReportDesignerController
  
