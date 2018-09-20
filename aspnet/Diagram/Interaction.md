@@ -169,49 +169,36 @@ Diagram provides support to drop a node/connector over another node/connector. D
         Width = 100,
         Height = 100,
         OffsetX = 100,
-        OffsetY = 100
-    };
-    BasicShape node2 = new BasicShape()
-    {
-        Name = "node2",
-        FillColor = "white",
-        Width = 100,
-        Height = 100,
-        OffsetX = 150,
-        OffsetY = 150
-    };
-    Group group = new Group()
-    {
-        Name = "canvas",
-        OffsetX = 400,
-        OffsetY = 400,
-        //to enable allow drop contraints for the group node...
+        OffsetY = 100,        
+        //to enable allow drop contraints for the node...
         Constraints = NodeConstraints.Default | NodeConstraints.AllowDrop
     };
-    group.Children.Add(node1);
-    group.Children.Add(node2);
-    DiagramWebControl.Model.Nodes.Add(group);
+    DiagramWebControl.Model.Nodes.Add(node1);
 {% endhighlight %}
 {% endtabs %}
 
-The following code examples illustrates how to insert a child to a group while dropping a node onto a group interactively.
+The following code examples illustrates how to create a connection between the nodes while dropping a node onto another node interactively.
 
 {% highlight aspx-cs %}
      <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
      </ej:Diagram> 
 	 
   	 function ondrop(args) {
-	 	if (args.target && args.element) {
-		 	//Element that is being dropped
-		 	var node = args.element;
-		 	//Element over which another element is dropped
-		 	var target = args.target;
-		 	if (diagram.getObjectType(target) == "group" && diagram.getObjectType(node) == "node") {
-			 	//Inserts the node into group
-			 	node.parent = target.name;
-			 	target.children.push(node.name);
-		 	}
-	 	}
+    	 	if (args.target && args.element) {
+            args.cancel = true;
+            var diagram = $("#DiagramContent").ejDiagram("instance");
+            //Element that is being dropped
+            var node = args.element;
+            //Element over which another element is dropped
+            var target = args.target;
+            if (diagram.getObjectType(target) == "node") {         
+                node.offsetX = target.offsetX + 200;
+                node.width = 100;
+                node.height = 100;
+                diagram.add(node);
+                diagram.add({ name: "connector1" + ej.datavisualization.Diagram.Util.randomId(), sourceNode: target.name, targetNode: node.name });
+            }
+        }
   	}
 {% endhighlight %}
 
