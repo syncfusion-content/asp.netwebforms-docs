@@ -53,10 +53,10 @@ This section explains briefly you on how to create a Diagram in your application
 
 The following list of namespaces needs to be added on the top of the aspx code file for creating the diagram objects such as nodes and connectors.  
 
-    * using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
-    * using Syncfusion.JavaScript.DataVisualization.Models;
-    * using Syncfusion.JavaScript.DataVisualization.Models.Collections;
-    * using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
+* using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
+* using Syncfusion.JavaScript.DataVisualization.Models;
+* using Syncfusion.JavaScript.DataVisualization.Models.Collections;
+* using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
 
 ### Create and add Node
 
@@ -73,18 +73,26 @@ The following code example to create and add nodes into the diagram.
 
 {% highlight c# %}
 
-    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
-    
-    FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
+    public partial class FlowChartDiagram : Page
     {
-       FlowShape node = new FlowShape()
-       {
-            Shape = shape,
-            Name = name,
-            OffsetY = offsetY,
-            Labels = new Collection() { new Label() { Text = text } }
-       };
-       return node;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
+            }
+        }
+        FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
+        {
+            FlowShape node = new FlowShape()
+            {
+                Shape = shape,
+                Name = name,
+                OffsetY = offsetY,
+                Labels = new Collection() { new Label() { Text = text } }
+            };
+            return node;
+        }
     }
 {% endhighlight %}
 {% endtabs %}
@@ -94,14 +102,23 @@ N> `Labels` property is an array, which indicates that more than one label can b
 * Default values for all nodes can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings.Node` by using below code example.
 
 {% highlight c# %}
-    //Default Settings
-    DiagramWebControl.Model.DefaultSettings.Node = new Node()
+    public partial class FlowChartDiagram : Page
     {
-        Type = Shapes.Flow,
-        Width = 140,
-        Height = 50,
-        OffsetX = 300
-    };
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                //Default Settings
+                DiagramWebControl.Model.DefaultSettings.Node = new Node()
+                {
+                    Type = Shapes.Flow,
+                    Width = 140,
+                    Height = 50,
+                    OffsetX = 300
+                };
+            }         
+        }
+    }
 {% endhighlight %}
 
 Added node will be displayed in diagram as shown below.
@@ -113,22 +130,29 @@ Added node will be displayed in diagram as shown below.
 * Create another `node` with another set of data.
 
 {% highlight c# %}
-
-       DiagramWebControl.Nodes.Add(CreateNode("Start", 140, 50, 300, 50, FlowShapes.Terminator, "Start"));
-       DiagramWebControl.Nodes.Add(CreateNode("Init", 140, 50, 300, 140, FlowShapes.Process, "var i = 0;"));      
-       
-       //Helper method
-       FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
-       {
-           FlowShape node = new FlowShape()
-           {
+    public partial class FlowChartDiagram : Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                DiagramWebControl.Nodes.Add(CreateNode("Start", 140, 50, 300, 50, FlowShapes.Terminator, "Start"));
+                DiagramWebControl.Nodes.Add(CreateNode("Init", 140, 50, 300, 140, FlowShapes.Process, "var i = 0;"));
+            }
+        }
+        //Helper method
+        FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
+        {
+            FlowShape node = new FlowShape()
+            {
                 Shape = shape,
                 Name = name,
                 OffsetY = offsetY,
                 Labels = new Collection() { new Label() { Text = text } }
-           };
-           return node;
-       }   
+            };
+            return node;
+        }
+    }  
     
 {% endhighlight %}
 
@@ -136,22 +160,32 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 
 {% highlight c# %}
     
-    //Add a connector to `Connectors` collection of diagram model
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
-    
-    //Helper method
-    Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
+   public partial class FlowChartDiagram : Page
     {
-        return new Connector()
+        protected void Page_Load(object sender, EventArgs e)
         {
-            Name = name,
-            SourceNode = source,
-            TargetNode = target,
-            Labels = new Collection() { new Label() { Text = text } },
-            Segments = new Collection() { 
-            segment != null? segment: new Segment(Segments.Orthogonal)
-        };
-    }
+            if (!IsPostBack)
+            {
+                //Add a connector to `Connectors` collection of diagram model
+                DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
+            }
+        }
+
+        //Helper method
+        Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
+        {
+            return new Connector()
+            {
+                Name = name,
+                SourceNode = source,
+                TargetNode = target,
+                Labels = new Collection() { new Label() { Text = text } },
+                Segments = new Collection() { 
+                segment != null? segment: new Segment(Segments.Orthogonal)
+                }
+            };
+        }      
+    }  
 
 {% endhighlight %}
 
@@ -162,12 +196,21 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 * Default values for all connectors can be set using default settings. For example if all connectors have same 'Labels' appearance, we can move such properties into `DefaultSettings.Connector` by using below below code example.
 
 {% highlight c# %}
-    //Default Settings
-    DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
+    public partial class FlowChartDiagram : Page
     {
-        Labels = new Collection() { new Label() { FillColor = "white" } },
-        Segments = new Collection() { new Segment(Segments.Orthogonal) }
-    };
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                //Default Settings
+                DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
+                {
+                    Labels = new Collection() { new Label() { FillColor = "white" } },
+                    Segments = new Collection() { new Segment(Segments.Orthogonal) }
+                };
+            }
+        }
+    }
 {% endhighlight %}
 
 ### Complete flow diagram
@@ -176,65 +219,90 @@ Similarly we can add required nodes and connectors to form a complete flow diagr
 
 {% highlight c# %}
     
-    //Default Settings
-    DiagramWebControl.Model.DefaultSettings.Node = new Node()
+    using Syncfusion.JavaScript.DataVisualization.DiagramEnums;
+    using Syncfusion.JavaScript.DataVisualization.Models;
+    using Syncfusion.JavaScript.DataVisualization.Models.Collections;
+    using Syncfusion.JavaScript.DataVisualization.Models.Diagram;
+    using Syncfusion.JavaScript.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web;
+    using System.Web.UI;
+    using System.Web.UI.WebControls;
+    using Label = Syncfusion.JavaScript.DataVisualization.Models.Diagram.Label;
+    using System.Web.Services;
+    
+    namespace FlowChartApplication1
     {
-        Type = Shapes.Flow,
-        Width = 140,
-        Height = 50,
-        OffsetX = 300
-    };
-    DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
-    {
-        Labels = new Collection() { new Label() { FillColor = "white" } },
-        Segments = new Collection() { new Segment(Segments.Orthogonal) }
-    };
-
-    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
-    DiagramWebControl.Nodes.Add(CreateNode("Init", 140, FlowShapes.Process, "var i = 0;"));
-    DiagramWebControl.Nodes.Add(CreateNode("Condition", 230, FlowShapes.Decision, "i < 10?"));
-    DiagramWebControl.Nodes.Add(CreateNode("Print", 320, FlowShapes.PreDefinedProcess, "i < 10?"));
-    DiagramWebControl.Nodes.Add(CreateNode("Increment", 410, FlowShapes.Process, "i < 10?"));
-    DiagramWebControl.Nodes.Add(CreateNode("End", 500, FlowShapes.Terminator, "i < 10?"));
-
-    //Connect Nodes
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector2", "Init", "Condition"));
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector3", "Condition", "Print", "Yes"));
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector4", "Condition", "End", "No",
-        new Segment() { Type = Segments.Orthogonal, Direction = "right", Length = 30 }));
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector5", "Print", "Increment"));
-    DiagramWebControl.Connectors.Add(ConnectNodes("connector5", "Increment", "Condition", "",
-      new Segment() { Type = Segments.Orthogonal, Direction = "left", Length = 30 }));
-      
-      
-    //Helper methods      
-    FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
-    {
-        FlowShape node = new FlowShape()
+        public partial class FlowChartDiagram : Page
         {
-            Shape = shape,
-            Name = name,
-            OffsetY = offsetY,
-            Labels = new Collection() { new Label() { Text = text } }
-        };
-        return node;
-    }
-
-    Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
-    {
-        Connector connector = new Connector()
-        {
-            Name = name,
-            SourceNode = source,
-            TargetNode = target,
-            Labels = new Collection() { new Label() { Text = text } },
-            Segments = new Collection() { 
-            segment != null? segment: new Segment(Segments.Orthogonal)
+            protected void Page_Load(object sender, EventArgs e)
+            {
+                if (!IsPostBack)
+                {
+                    //Default Settings
+                    DiagramWebControl.Model.DefaultSettings.Node = new Node()
+                    {
+                        Type = Shapes.Flow,
+                        Width = 140,
+                        Height = 50,
+                        OffsetX = 300
+                    };
+                    DiagramWebControl.Model.DefaultSettings.Connector = new Connector()
+                    {
+                        Labels = new Collection() { new Label() { FillColor = "white" } },
+                        Segments = new Collection() { new Segment(Segments.Orthogonal) }
+                    };
+    
+                    DiagramWebControl.Nodes.Add(CreateNode("Start", 50, FlowShapes.Terminator, "Start"));
+                    DiagramWebControl.Nodes.Add(CreateNode("Init", 140, FlowShapes.Process, "var i = 0;"));
+                    DiagramWebControl.Nodes.Add(CreateNode("Condition", 230, FlowShapes.Decision, "i < 10?"));
+                    DiagramWebControl.Nodes.Add(CreateNode("Print", 320, FlowShapes.PreDefinedProcess, "i < 10?"));
+                    DiagramWebControl.Nodes.Add(CreateNode("Increment", 410, FlowShapes.Process, "i < 10?"));
+                    DiagramWebControl.Nodes.Add(CreateNode("End", 500, FlowShapes.Terminator, "i < 10?"));
+    
+                    //Connect Nodes
+                    DiagramWebControl.Connectors.Add(ConnectNodes("connector1", "Start", "Init"));
+                    DiagramWebControl.Connectors.Add(ConnectNodes("connector2", "Init", "Condition"));
+                    DiagramWebControl.Connectors.Add(ConnectNodes("connector3", "Condition", "Print", "Yes"));
+                    DiagramWebControl.Connectors.Add(ConnectNodes("connector4", "Condition", "End", "No",
+                        new Segment() { Type = Segments.Orthogonal, Direction = "right", Length = 30 }));
+                    DiagramWebControl.Connectors.Add(ConnectNodes("connector5", "Print", "Increment"));
+                    DiagramWebControl.Connectors.Add(ConnectNodes("connector5", "Increment", "Condition", "",
+                      new Segment() { Type = Segments.Orthogonal, Direction = "left", Length = 30 }));      
+                }
+            }
+    
+            //Helper methods      
+            FlowShape CreateNode(string name, int offsetY, FlowShapes shape, string text)
+            {
+                FlowShape node = new FlowShape()
+                {
+                    Shape = shape,
+                    Name = name,
+                    OffsetY = offsetY,
+                    Labels = new Collection() { new Label() { Text = text } }
+                };
+                return node;
+            }
+    
+            Connector ConnectNodes(string name, string source, string target, string text = "", Segment segment = null)
+            {
+                Connector connector = new Connector()
+                {
+                    Name = name,
+                    SourceNode = source,
+                    TargetNode = target,
+                    Labels = new Collection() { new Label() { Text = text } },
+                    Segments = new Collection() { 
+                     segment != null? segment: new Segment(Segments.Orthogonal)
+                    }
+                };
+                return connector;
+            }
         }
-        };
-        return connector;
-    }
+    }  
 
 {% endhighlight %}
 
@@ -280,7 +348,6 @@ Initializing diagram is already discussed in Flow Diagram > [Initialize diagram]
 {% tabs %}
 
 {% highlight aspx-cs %}
-
      <ej:Diagram runat="server" ID="Diagram" ClientIDMode="Static" Width="100%" Height="600px">
          <DataSourceSettings Id="Name" Parent="ReportingPerson" />
      </ej:Diagram>
