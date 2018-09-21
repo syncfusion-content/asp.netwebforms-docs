@@ -148,61 +148,40 @@ Diagram provides support to drop a node/connector over another node/connector. D
 {% tabs %}
 {% highlight aspx-cs %}
 
-    <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
-        <Nodes>
-            <ej:BasicShape Width="100" Height="100" OffsetX="100" OffsetY="100" FillColor="#1BA0E2" Constraints="AllowDrop"></ej:BasicShape>
-        </Nodes>
-        <Connectors>
-            <ej:DiagramConnector Constraints="AllowDrop">
-                <SourcePoint X="200" Y="50"/>
-                <TargetPoint X="300" Y="150"/>
-            </ej:DiagramConnector>
-        </Connectors>
-    </ej:Diagram>
+<ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
+<Nodes>
+<%--Enable allow drop behavior (constraints) along with default behavior for the node--%> 
+<ej:BasicShape Width="100" Height="100" OffsetX="100" OffsetY="100" FillColor="#1BA0E2" Constraints="Default, AllowDrop">
+</ej:BasicShape>
+</Nodes>
+</ej:Diagram>
 
-{% endhighlight %}
-{% highlight c# %}
-    BasicShape node1 = new BasicShape()
-    {
-        Name = "node1",
-        FillColor = "darkCyan",
-        Width = 100,
-        Height = 100,
-        OffsetX = 100,
-        OffsetY = 100,        
-        //to enable allow drop contraints for the node...
-        Constraints = NodeConstraints.Default | NodeConstraints.AllowDrop
-    };
-    DiagramWebControl.Model.Nodes.Add(node1);
 {% endhighlight %}
 {% endtabs %}
 
 The following code examples illustrates how to create a connection between the nodes while dropping a node onto another node interactively.
 
-{% highlight aspx-cs %}
-     <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
-     </ej:Diagram> 
-	 
-  	 function ondrop(args) {
-    	 	if (args.target && args.element) {
-            //Cancelling the drop event here and add the dragged node and create the connection between dragged node and dropped over the node.
-            //This is due to we can able to the establish connection only if the node exist and node will be added into diagram after drop event execution.
-            args.cancel = true;
-            var diagram = $("#DiagramContent").ejDiagram("instance");
-            //Element that is being dropped
-            var node = args.element;
-            //Element over which another element is dropped
-            var target = args.target; 
-            
-            if (diagram.getObjectType(target) == "node") {         
-                node.offsetX = target.offsetX + 200;
-                node.width = 100;
-                node.height = 100;
-                diagram.add(node);
-                diagram.add({ name: "connector1" + ej.datavisualization.Diagram.Util.randomId(), sourceNode: target.name, targetNode: node.name });
-            }
+{% highlight aspx-cs %}	 
+function ondrop(args) {
+    if (args.target && args.element) {
+        //Cancelling the drop event here and add the dragged node and create the connection between dragged node and dropped over the node.
+        //This is due to we can able to the establish connection only if the node exist and node will be added into diagram after drop event execution.
+        args.cancel = true;
+        var diagram = $("#DiagramContent").ejDiagram("instance");
+        //Element that is being dropped
+        var node = args.element;
+        //Element over which another element is dropped
+        var target = args.target; 
+    
+        if (diagram.getObjectType(target) == "node") {         
+            node.offsetX = target.offsetX + 200;
+            node.width = 100;
+            node.height = 100;
+            diagram.add(node);
+            diagram.add({ name: "connector1" + ej.datavisualization.Diagram.Util.randomId(), sourceNode: target.name, targetNode: node.name });
         }
-  	}
+    }
+}
 {% endhighlight %}
 
 ## User handles
