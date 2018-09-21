@@ -364,5 +364,20 @@ And the internal assemblies are tabulated below.
           It's used to preview the report.        
         </td>        
     </tr>
-    
+    <tr>
+        <td>
+            Syncfusion.EJ.Web
+        </td>
+        <td>
+          Must be referred to use Web Report Designer control from Syncfusion ASP.NET controls.        
+        </td>        
+    </tr>
+    <tr>
+        <td>
+            Syncfusion.EJ
+        </td>
+        <td>
+          It's used as base class for Syncfusion ASP.NET controls.        
+        </td>        
+    </tr>
 </table>
