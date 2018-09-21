@@ -161,24 +161,24 @@ The following code examples illustrates how to create a connection between the n
 
 {% highlight aspx-cs %}	 
 function ondrop(args) {
-if (args.target && args.element) {
-//Cancelling the drop event here and add the dragged node and create the connection between dragged node and dropped over the node.
-//This is due to we can able to the establish connection only if the node exist and node will be added into diagram after drop event execution.
-args.cancel = true;
-var diagram = $("#DiagramContent").ejDiagram("instance");
-//Element that is being dropped
-var node = args.element;
-//Element over which another element is dropped
-var target = args.target; 
-
-if (diagram.getObjectType(target) == "node") {         
-    node.offsetX = target.offsetX + 200;
-    node.width = 100;
-    node.height = 100;
-    diagram.add(node);
-    diagram.add({ name: "connector1" + ej.datavisualization.Diagram.Util.randomId(), sourceNode: target.name, targetNode: node.name });
-}
-}
+    if (args.target && args.element) {
+        //Cancelling the drop event here and add the dragged node and create the connection between dragged node and dropped over the node.
+        //This is due to we can able to the establish connection only if the node exist and node will be added into diagram after drop event execution.
+        args.cancel = true;
+        var diagram = $("#DiagramContent").ejDiagram("instance");
+        //Element that is being dropped
+        var node = args.element;
+        //Element over which another element is dropped
+        var target = args.target; 
+    
+        if (diagram.getObjectType(target) == "node") {         
+            node.offsetX = target.offsetX + 200;
+            node.width = 100;
+            node.height = 100;
+            diagram.add(node);
+            diagram.add({ name: "connector1" + ej.datavisualization.Diagram.Util.randomId(), sourceNode: target.name, targetNode: node.name });
+        }
+    }
 }
 {% endhighlight %}
 
