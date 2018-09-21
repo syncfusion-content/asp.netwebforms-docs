@@ -94,6 +94,7 @@ TreeGrid supports the below editModes, 
 * Cell Editing
 * Row Editing
 * Dialog Editing
+* Batch Editing
 
 You can enable editing in TreeGrid by enabling the property `AllowEditing`.
 
@@ -213,6 +214,44 @@ function actionComplete(args) {
 {% endhighlight %}
 
 N> While saving the edited record `ActionComplete` event will be triggered with updated record value in `data` argument and `requestType` as `recordUpdate`. Using this event we can update the database.
+
+### Batch Editing
+
+The batch editing support in the tree grid is used to save all added, edited, and deleted changes to the database with single action. This can be enable by setting the `EditMode` property to `BatchEditing`. The following code example shows how to enable the batchEditing in the tree grid control.
+
+{% highlight html %}
+
+   <ej:TreeGrid runat="server" ID="Treegrid">
+         <EditSettings EditMode="BatchEditing">
+         </EditSettings>
+   </ej:TreeGrid>
+
+{% endhighlight %}
+
+The output of the tree grid with `BatchEditing` is obtained as follows.
+
+![](Editing_images/BatchEdit_img1.png)
+
+
+In batch editing, the edit mode can be changed to **Cell** or **Row** or **Dialog** with the `BatchEditSettings.EditMode` property. The following code snippet shows how to set the editMode to row in the `BatchEditSettings` property.
+
+{% highlight js %}
+
+   <ej:TreeGrid runat="server" ID="Treegrid">
+       <EditSettings EditMode="BatchEditing">
+            <BatchEditSettings EditMode="Row" />
+       </EditSettings>
+   </ej:TreeGrid>
+
+
+{% endhighlight %}
+
+The output of the tree grid with `BatchEditSettings` and `EditMode` as `Row` is as obtained follows.
+
+![](Editing_images/BatchEdit_img2.png)
+
+
+N> After modifying all changes in the tree grid, click the save button in the toolbar. The `ActionComplete` event will be triggered with updated records in the `batchChanges` argument with `requestType` argument as `batchSave`. Using this event, you can update all the modified records to the database.
 
 ## Edit type and its params
 
