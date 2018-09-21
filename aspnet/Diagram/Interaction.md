@@ -150,8 +150,9 @@ Diagram provides support to drop a node/connector over another node/connector. D
 
 <ej:Diagram runat="server" ClientIDMode="Static" ID="DiagramWebControl" Width="100%" Height="600px" OnClientDrop="ondrop">
 <Nodes>
-<%--To enable allow drop contraints along with Default constraints for the node--%>
-<ej:BasicShape Width="100" Height="100" OffsetX="100" OffsetY="100" FillColor="#1BA0E2" Constraints="Default, AllowDrop"></ej:BasicShape>
+<%--Enable allow drop behavior (constraints) along with default behavior for the node--%> 
+<ej:BasicShape Width="100" Height="100" OffsetX="100" OffsetY="100" FillColor="#1BA0E2" Constraints="Default, AllowDrop">
+</ej:BasicShape>
 </Nodes>
 </ej:Diagram>
 
