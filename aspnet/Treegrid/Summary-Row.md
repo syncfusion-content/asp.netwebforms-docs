@@ -139,6 +139,6 @@ Custom summary can be used to create summary values based on your required custo
 
 {% endhighlight %}
 
-The output of the tree grid with custom summary value is obtained as follows.
+The output of the tree grid with custom summary value is as follows.
 
 ![](SummaryRows_images/CustomSummary_img1.png)
