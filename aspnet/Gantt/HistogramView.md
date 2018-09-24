@@ -9,9 +9,9 @@ documentation: ug
 
 # Resource Histogram
 
-Resource histogram displays the scheduled working time range of resources for its assigned tasks. Using this, you can easily identify the resource availability and it’s working time. The resource histogram is used to allocate the resources properly throughout the project and find the details about allocated resources and allocated time range of specific resource.
+A resource histogram displays the scheduled working time range of resources for its assigned tasks. Using this, you can easily identify the resource's availability and its working time. The resource histogram is used to allocate the resources properly throughout the project and find the details about allocated resources and the allocated time ranges of a specific resource.
 
-## DataBinding
+## Databinding
 You can render the histogram view for both project view Gantt and resource view Gantt by using the `ViewType` as `HistogramView`. 
 The following code example explains how to bind the resource histogram view for project view Gantt.
 {% highlight html %}
