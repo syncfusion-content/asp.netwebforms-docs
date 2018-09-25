@@ -60,6 +60,170 @@ The following output is displayed as a result of the above code example.
 
 ![](Swimlanes_images/Swimlanes_img1.png)
 
+## Customized swimlane header text
+
+You can change the swimlane row header text using the swimlane `KanbanSwimlaneHeaders` property.  In this property, the text is changed using the `Text` property and the corresponding value is mapped into the `Key` property based on `SwimlaneKey` datasource mapping.
+
+Refer to the following code example.
+
+{% tabs %}
+
+{% highlight html %}
+
+  <ej:Kanban ID="Kanban" runat="server" KeyField="Status" AllowTitle="true">
+        <Columns>
+            <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
+            <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
+            <ej:KanbanColumn HeaderText="Done" Key="Close" />
+        </Columns>
+        <Fields Content="Summary" SwimlaneKey="Assignee" PrimaryKey="Id" />
+        <SwimlaneSettings>
+            <Headers>
+                <ej:KanbanSwimlaneHeaders Text="Andrew" Key="Andrew Fuller" />
+                <ej:KanbanSwimlaneHeaders Text="Janet" Key="Janet" />
+            </Headers>
+        </SwimlaneSettings>
+    </ej:Kanban>
+  
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    public partial class KanbanController : Controller
+    {
+        List<Tasks> Task = new List<Tasks>();
+        
+        // GET: /Kanban/
+        public ActionResult KanbanFeatures()
+        {
+            Task.Add(new Tasks(6, "Close", "Arrange a web meeting with the customer to get the login page requirements.", "Others", "Low", "Meeting", 2, "Janet", "../content/images/kanban/3.png", 1));
+            Task.Add(new Tasks(7, "Validate", "Validate new requirements", "Improvement", "Low", "Validation", 1.5, "Janet", "../content/images/kanban/3.png", 4));
+            Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Andrew Fuller", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Janet", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(10, "InProgress", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Andrew Fuller", "../content/images/kanban/1.png", 3));
+            ViewBag.datasource = Task;
+            return View();
+        }
+    }
+    public class Tasks
+    {
+        public Tasks()
+        {
+        }
+        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string Image, int RankId)
+        {
+            this.Id = Id;
+            this.Status = Status;
+            this.Summary = Summary;
+            this.Type = Type;
+            this.Priority = Priority;
+            this.Tags = Tags;
+            this.Estimate = Estimate;
+            this.Assignee = Assignee;
+            this.Image = Image;
+            this.RankId = RankId;
+        }
+        public int Id { get; set; }
+        public string Status { get; set; }
+        public string Summary { get; set; }
+        public string Type { get; set; }
+        public string Priority { get; set; }
+        public string Tags { get; set; }
+        public double Estimate { get; set; }
+        public string Assignee { get; set; }
+        public string Image { get; set; }
+        public int RankId { get; set; }
+    }
+              
+{% endhighlight  %}
+
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](Swimlane_images/swimlane_img6.png)
+
+## Empty swimlane row on Kanban board
+
+You can create an empty swimlane row by enabling the `ShowEmptySwimlane` property based on swimlane headers `Key` value mapping.  If no data is present, then the empty swimlane row is rendered on the Kanban board based on the specified swimlane headers `Key`.
+
+Refer to the following code.
+
+{% tabs %}
+
+{% highlight html %}
+
+ <ej:Kanban ID="Kanban" runat="server" KeyField="Status" AllowTitle="true">
+        <Columns>
+            <ej:KanbanColumn HeaderText="Backlog" Key="Open" />
+            <ej:KanbanColumn HeaderText="In Progress" Key="InProgress" />
+            <ej:KanbanColumn HeaderText="Done" Key="Close" />
+        </Columns>
+        <Fields Content="Summary" SwimlaneKey="Assignee" PrimaryKey="Id" />
+        <SwimlaneSettings ShowEmptySwimlane="true">
+            <Headers>
+                <ej:KanbanSwimlaneHeaders Text="Andrew" Key="Andrew Fuller" />
+                <ej:KanbanSwimlaneHeaders Text="Janet" Key="Janet Leverling" />
+            </Headers>
+        </SwimlaneSettings>
+    </ej:Kanban>
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+public partial class KanbanController : Controller
+    {
+        List<Tasks> Task = new List<Tasks>();
+        
+        // GET: /Kanban/
+        public ActionResult KanbanFeatures()
+        {
+            Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Andrew Fuller", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Janet", "../content/images/kanban/3.png", 2));
+            Task.Add(new Tasks(10, "InProgress", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Andrew Fuller", "../content/images/kanban/1.png", 3));
+            ViewBag.datasource = Task;
+            return View();
+        }
+    }
+    public class Tasks
+    {
+        public Tasks()
+        {
+        }
+        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string Image, int RankId)
+        {
+            this.Id = Id;
+            this.Status = Status;
+            this.Summary = Summary;
+            this.Type = Type;
+            this.Priority = Priority;
+            this.Tags = Tags;
+            this.Estimate = Estimate;
+            this.Assignee = Assignee;
+            this.Image = Image;
+            this.RankId = RankId;
+        }
+        public int Id { get; set; }
+        public string Status { get; set; }
+        public string Summary { get; set; }
+        public string Type { get; set; }
+        public string Priority { get; set; }
+        public string Tags { get; set; }
+        public double Estimate { get; set; }
+        public string Assignee { get; set; }
+        public string Image { get; set; }
+        public int RankId { get; set; }
+    }
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](Swimlane_images/swimlane_img7.png)
+
 ## Drag And Drop between swim lanes
 
 You can set `AllowDragAndDrop` property of `SwimlaneSettings` as true to enable Drag and Drop between the swim lanes.
