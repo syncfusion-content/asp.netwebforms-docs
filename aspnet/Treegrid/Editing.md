@@ -217,7 +217,7 @@ N> While saving the edited record `ActionComplete` event will be triggered with 
 
 ### Batch Editing
 
-The batch editing support in the tree grid is used to save all added, edited, and deleted changes to the database with single action. This can be enable by setting the `EditMode` property to `BatchEditing`. The following code example shows how to enable the batchEditing in the tree grid control.
+The batch editing support in the tree grid is used to save all added, edited, and deleted changes to the database with a single action. This can be enabled by setting the `EditMode` property to `BatchEditing`. The following code example shows how to enable the batchEditing in the tree grid control.
 
 {% highlight html %}
 
@@ -228,7 +228,7 @@ The batch editing support in the tree grid is used to save all added, edited, an
 
 {% endhighlight %}
 
-The output of the tree grid with `BatchEditing` is obtained as follows.
+The output of a tree grid with `BatchEditing` is as follows.
 
 ![](Editing_images/BatchEdit_img1.png)
 
@@ -246,7 +246,7 @@ In batch editing, the edit mode can be changed to **Cell** or **Row** or **Dialo
 
 {% endhighlight %}
 
-The output of the tree grid with `BatchEditSettings` and `EditMode` as `Row` is as obtained follows.
+The output of a tree grid with `BatchEditSettings` and `EditMode` set as `Row` is as follows.
 
 ![](Editing_images/BatchEdit_img2.png)
 
