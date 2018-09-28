@@ -46,34 +46,56 @@ To disable the default tooltip, You need to set `SelectedItems.Tooltip` as `null
 Diagram provides support to show tooltip when mouse hovers over any node/connector. 
 To show tooltip on mouse over, the `Tooltip` property of Diagram model needs to be set with the tooltip `TemplateId` and `Alignment` as shown in the following example.
 
+ {% tabs %}
  {% highlight aspx-cs %}
 
         <!--Define tooltip template-->
         <script type="text/x-jsrender" id="mouseovertooltip">
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-            <span style="padding: 5px;"> {{:name}} </span>
+            <span style="padding: 5px;">{{:addInfo.Description}} </span>
         </div>
         </script>
 
  
         <%--   Initializes Diagram--%>
-        <ej:Diagram ID="Diagram" runat="server" Height="600px" Width="900px" Tool="SingleSelect">
-            <%--    Add the node to the nodes collection --%>
-            <Nodes>
-                <%--Defines nodes--%>
-                <ej:BasicShape Name="Elizabeth" OffsetX="100" OffsetY="100" Height="40" Width="70" FillColor="darkCyan" BorderColor="black">
-                    <labels>
-                        <ej:DiagramLabel Text="Elizabeth"  FontColor = "white" Bold = true></ej:DiagramLabel>
-                    </labels>
-                </ej:BasicShape>
-            </Nodes>
-            <%--Defines mouse over tooltip--%>
-            <Tooltip TemplateId="mouseovertooltip">
-                <Alignment Horizontal="Center" Vertical="Center"></Alignment>
-            </Tooltip>
-        </ej:Diagram>
+        <ej:Diagram ClientIDMode="Static" ID="DiagramWebControl1" runat="server" OnClientCreate="diagramCreate" Height="600px" Width="1000px" Locale="en-US" EnableContextMenu="true">
+                 <Tooltip TemplateId="mouseovertooltip"></Tooltip>
+        <PageSettings ScrollLimit="Diagram" />
+        <SnapSettings SnapConstraints="None" />
+     
+    </ej:Diagram> 
         
+{% endhighlight %}
+{% highlight c# %}
+public partial class DiagramFeatures: System.Web.UI.Page {
+    protected void Page_Load(object sender, EventArgs e) {
+        Node node = CreateNode(DiagramWebControl1.Nodes, "node1", 60, 60, 100, 100, "Elizabeth", "Managing Director");
+
+    }
+
+    private Node CreateNode(Collection nodes, String name, double width, double height, double offsetx, double offsety, string text = "", string description = "") {
+        Node node = new Node();
+        node.Name = name;
+        node.Width = width;
+        node.Height = height;
+        node.OffsetX = offsetx;
+        node.OffsetY = offsety;
+        Label label = new Label();
+        label.Text = text;
+        label.FontColor = "black";
+        node.Labels.Add(label);
+        if (description != "") node.AddInfo = new Dictionary < string, object > {
+            {
+                "Description",
+                description
+            }
+        };
+        nodes.Add(node);
+        return node;
+    }
+}
 {% endhighlight %} 
+{% endtabs %} 
 
 ![](/aspnet/Diagram/Tooltip_images/Tooltip_img4.png)
 
@@ -94,20 +116,57 @@ Tooltips on mouse over can be disabled by assigning `tooltip` property as `null`
 
 Tooltips can be customized for every node. Tooltip can be defined for individual node/connector by using the `Tooltip` property of that node/connector. In addition to that, you have to remove the **InheritTooltip** option from the `Constraints` of that node/connector. The following code example illustrates how to customize tooltips for individual elements.
 
+{% tabs %}
 {% highlight aspx-cs %}
 
-            <Nodes>
-                <%--Defines nodes--%>
-                <ej:BasicShape Name="Elizabeth" OffsetX="100" OffsetY="100" Height="40" Width="70" FillColor="darkCyan" BorderColor="black" Constraints="InheritTooltip">
-                    <Tooltip TemplateId="nodetooltiptemplate">
-                        </Tooltip>
-                    <labels>
-                        <ej:DiagramLabel Text="Elizabeth"  FontColor = "white" Bold = true></ej:DiagramLabel>
-                    </labels>
-                </ej:BasicShape>
-            </Nodes>
+        <!--Define tooltip template-->
+        <script type="text/x-jsrender" id="mouseovertooltip">
+        <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
+            <span style="margin: 10px;">{{:addInfo.Description}} </span>
+        </div>
+        </script>
 
+ 
+        <%--   Initializes Diagram--%>
+        <ej:Diagram ClientIDMode="Static" ID="DiagramWebControl1" runat="server" OnClientCreate="diagramCreate" Height="600px" Width="1000px" Locale="en-US" EnableContextMenu="true">
+                 <Tooltip TemplateId="mouseovertooltip"></Tooltip>
+        <PageSettings ScrollLimit="Diagram" />
+        <SnapSettings SnapConstraints="None" />
+     
+    </ej:Diagram> 
+
+{% endhighlight %}
+{% highlight c# %}
+public partial class DiagramFeatures: System.Web.UI.Page {
+    protected void Page_Load(object sender, EventArgs e) {
+        Node node = CreateNode(DiagramWebControl1.Nodes, "node1", 60, 60, 100, 100, "Elizabeth", "Managing Director");
+
+    }
+
+    private Node CreateNode(Collection nodes, String name, double width, double height, double offsetx, double offsety, string text = "", string description = "") {
+        Node node = new Node();
+        node.Name = name;
+        node.Width = width;
+        node.Height = height;
+        node.OffsetX = offsetx;
+        node.OffsetY = offsety;
+        node.constraints = NodeConstraints.Default & ~NodeConstraints.InheritTooltip
+        Label label = new Label();
+        label.Text = text;
+        label.FontColor = "black";
+        node.Labels.Add(label);
+        if (description != "") node.AddInfo = new Dictionary < string, object > {
+            {
+                "Description",
+                description
+            }
+        };
+        nodes.Add(node);
+        return node;
+    }
+}
 {% endhighlight %} 
+{% endtabs %} 
 
 ## Tooltip alignments
 
@@ -116,33 +175,55 @@ Tooltips can be customized for every node. Tooltip can be defined for individual
 Diagram provides support to show tooltip around the node/connector that is hovered by mouse. You can align the tooltip as you wish by using the `Alignment` and `Margin` properties of tooltip. The `RelativeMode` property of tooltip defines whether the tooltip has to be displayed around the object or at the mouse position. The following code example illustrates how to position the tooltip around object.
 
 {% tabs %}
-
 {% highlight aspx-cs %}
 
-    <!--Define tooltip template-->
-    <script type="text/x-jsrender" id="mouseovertooltip">
+        <!--Define tooltip template-->
+        <script type="text/x-jsrender" id="mouseovertooltip">
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-            <span style="padding: 5px;"> {{:addInfo.Designation}} </span>
+            <span style="padding: 5px;">{{:addInfo.Description}} </span>
         </div>
-    </script>
+        </script>
 
  
+        <%--   Initializes Diagram--%>
+        <ej:Diagram ClientIDMode="Static" ID="DiagramWebControl1" runat="server" OnClientCreate="diagramCreate" Height="600px" Width="1000px" Locale="en-US" EnableContextMenu="true">
+                 <Tooltip TemplateId="mouseovertooltip" RelativeMode="Object"></Tooltip>
+        <PageSettings ScrollLimit="Diagram" />
+        <SnapSettings SnapConstraints="None" />
+     
+    </ej:Diagram> 
 
-    <Nodes>
-                <%--Defines nodes--%>
-                <ej:BasicShape Name="Director" OffsetX="100" OffsetY="100" Height="40" Width="70" FillColor="darkCyan" BorderColor="black" Constraints="InheritTooltip">
-                    <Tooltip TemplateId="nodetooltiptemplate" RelativeMode="Object">
-                          <Alignment Horizontal="Center" Vertical="Top"></Alignment>
-                        </Tooltip>
-                    <labels>
-                        <ej:DiagramLabel Text="Elizabeth"  FontColor = "white" Bold = true></ej:DiagramLabel>
-                    </labels>
-                </ej:BasicShape>
-            </Nodes>
-            
 {% endhighlight %}
+{% highlight c# %}
+public partial class DiagramFeatures: System.Web.UI.Page {
+    protected void Page_Load(object sender, EventArgs e) {
+        Node node = CreateNode(DiagramWebControl1.Nodes, "node1", 60, 60, 100, 100, "Elizabeth", "Director");
 
-{% endtabs %}
+    }
+
+    private Node CreateNode(Collection nodes, String name, double width, double height, double offsetx, double offsety, string text = "", string description = "") {
+        Node node = new Node();
+        node.Name = name;
+        node.Width = width;
+        node.Height = height;
+        node.OffsetX = offsetx;
+        node.OffsetY = offsety;
+        Label label = new Label();
+        label.Text = text;
+        label.FontColor = "black";
+        node.Labels.Add(label);
+        if (description != "") node.AddInfo = new Dictionary < string, object > {
+            {
+                "Description",
+                description
+            }
+        };
+        nodes.Add(node);
+        return node;
+    }
+}
+{% endhighlight %} 
+{% endtabs %} 
 
 ![](/aspnet/Diagram/Tooltip_images/Tooltip_img5.png)
 
@@ -150,23 +231,56 @@ Diagram provides support to show tooltip around the node/connector that is hover
 
 To display the tooltip at mouse position, you need to set "Mouse" option to the `RelativeMode` property of tooltip. The following code example illustrates how to show tooltip at mouse position.
 
+{% tabs %}
 {% highlight aspx-cs %}
 
-     <%--    Add the node to the nodes collection --%>
-            <Nodes>
-                <%--Defines nodes--%>
-                <ej:BasicShape Name="Director" OffsetX="100" OffsetY="100" Height="40" Width="70" FillColor="darkCyan" BorderColor="black" Constraints="InheritTooltip">
-                    <Tooltip TemplateId="nodetooltiptemplate" RelativeMode="Mouse">
-                          <Alignment Horizontal="Center" Vertical="Top"></Alignment> 
-                        </Tooltip>
-                    <labels>
-                        <ej:DiagramLabel Text="Elizabeth"  FontColor = "white" Bold = true></ej:DiagramLabel>
-                    </labels>
-                </ej:BasicShape>
-            </Nodes>
+        <!--Define tooltip template-->
+        <script type="text/x-jsrender" id="mouseovertooltip">
+        <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
+            <span style="padding: 5px;">{{:addInfo.Description}} </span>
+        </div>
+        </script>
 
+ 
+        <%--   Initializes Diagram--%>
+        <ej:Diagram ClientIDMode="Static" ID="DiagramWebControl1" runat="server" OnClientCreate="diagramCreate" Height="600px" Width="1000px" Locale="en-US" EnableContextMenu="true">
+                 <Tooltip TemplateId="mouseovertooltip" RelativeMode="Mouse"></Tooltip>
+        <PageSettings ScrollLimit="Diagram" />
+        <SnapSettings SnapConstraints="None" />
+     
+    </ej:Diagram> 
 
 {% endhighlight %}
+{% highlight c# %}
+public partial class DiagramFeatures: System.Web.UI.Page {
+    protected void Page_Load(object sender, EventArgs e) {
+        Node node = CreateNode(DiagramWebControl1.Nodes, "node1", 60, 60, 100, 100, "Elizabeth", "Director");
+
+    }
+
+    private Node CreateNode(Collection nodes, String name, double width, double height, double offsetx, double offsety, string text = "", string description = "") {
+        Node node = new Node();
+        node.Name = name;
+        node.Width = width;
+        node.Height = height;
+        node.OffsetX = offsetx;
+        node.OffsetY = offsety;
+        Label label = new Label();
+        label.Text = text;
+        label.FontColor = "black";
+        node.Labels.Add(label);
+        if (description != "") node.AddInfo = new Dictionary < string, object > {
+            {
+                "Description",
+                description
+            }
+        };
+        nodes.Add(node);
+        return node;
+    }
+}
+{% endhighlight %} 
+{% endtabs %} 
 
 ![](/aspnet/Diagram/Tooltip_images/Tooltip_img6.png)
 
