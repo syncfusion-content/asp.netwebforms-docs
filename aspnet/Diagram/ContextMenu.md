@@ -19,12 +19,12 @@ The following code illustrates how to enable the default context menu items.
 
 {% highlight aspx-cs %}
 <%--Disables the context menu--%>
-<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" EnableContextMenu="false" >
+<ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%" EnableContextMenu="true" >
 </ej:Diagram>
 {% endhighlight %}
 
 
-![](ContextMenu_images/Contextmenu_img1.png)
+![](ContextMenu_images/contextmenu.png)
 
 ## Customize Context Menu
 
