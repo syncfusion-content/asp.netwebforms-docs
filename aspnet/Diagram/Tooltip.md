@@ -52,7 +52,7 @@ To show tooltip on mouse over, the `Tooltip` property of Diagram model needs to 
         <!--Define tooltip template-->
         <script type="text/x-jsrender" id="mouseovertooltip">
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-            <span style="padding: 5px;"> {{:addInfo.Description}} </span>
+            <span style="padding: 5px;"> {{"{{"}}:addInfo.Description{{}}}} </span>
         </div>
         </script>
 
@@ -124,7 +124,7 @@ Tooltips can be customized for every node. Tooltip can be defined for individual
         <!--Define tooltip template-->
         <script type="text/x-jsrender" id="mouseovertooltip">
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-            <span style="margin: 10px;"> {{:addInfo.Description}} </span>
+            <span style="padding: 5px;"> {{"{{"}}:addInfo.Description{{}}}} </span>
         </div>
         </script>
 
@@ -184,7 +184,7 @@ Diagram provides support to show tooltip around the node/connector that is hover
         <!--Define tooltip template-->
         <script type="text/x-jsrender" id="mouseovertooltip">
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-            <span style="padding: 5px;"> {{:addInfo.Description}} </span>
+            <span style="padding: 5px;"> {{"{{"}}:addInfo.Description{{}}}} </span>
         </div>
         </script>
 
@@ -243,7 +243,7 @@ To display the tooltip at mouse position, you need to set "Mouse" option to the 
         <!--Define tooltip template-->
         <script type="text/x-jsrender" id="mouseovertooltip">
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-            <span style="padding: 5px;"> {{:addInfo.Description}} </span>
+             <span style="padding: 5px;"> {{"{{"}}:addInfo.Description{{}}}} </span>
         </div>
         </script>
 
