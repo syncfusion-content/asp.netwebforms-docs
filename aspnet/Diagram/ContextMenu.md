@@ -78,7 +78,7 @@ You would be notified with events when you try to open the context menu items(`c
 {% highlight aspx-cs %}
 <%--Enables the context menu--%>
 <ej:Diagram ClientIDMode="Static" ID="Diagram" runat="server" Height="600px" Width="100%"  
-	EnableContextMenu="false" OnClientContextMenuBeforeOpen="contextMenuBeforeOpen"
+	EnableContextMenu="true" OnClientContextMenuBeforeOpen="contextMenuBeforeOpen"
 	OnClientContextMenuClick="contextMenuClick">
 </ej:Diagram>
 {% endhighlight %}

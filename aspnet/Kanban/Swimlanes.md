@@ -141,7 +141,7 @@ Refer to the following code example.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img6.png)
+![](Swimlanes_images/swimlane_img6.png)
 
 ## Empty swimlane row on Kanban board
 
@@ -222,7 +222,7 @@ public partial class KanbanController : Controller
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img7.png)
+![](Swimlanes_images/swimlane_img7.png)
 
 ## Drag And Drop between swim lanes
 
