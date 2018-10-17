@@ -486,9 +486,9 @@ If you want to add our Syncfusion ASP.NET controls into your existing applicatio
 
 To render the Syncfusion ASP.NET controls with its unique style and theme, it is necessary to refer to the required CSS files into your application. You need to copy all the required CSS files into your application from the following location.
 
-N> <installed location>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+N> <installed location>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\css\web
 N> For example, If you have installed the Essential Studio within C:\Program Files (x86), navigate to the following location.
-N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\css\web
+N> C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\css\web
 
 When you navigate to the above location, you can find the files shown in the following image that you need to copy entirely and paste it into your root application.
 
@@ -532,15 +532,15 @@ The dependencies are available in the following locations of your machine. Pleas
 </tr>
 <tr>
 <td>jquery-1.10.2.min.js<br/>jsrender.min.js</td>
-<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\external</td>
+<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external</td>
 </tr>
 <tr>
 <td>ej.web.all.min.js</td>
-<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\scripts\web</td>
+<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\web</td>
 </tr>
 <tr>
 <td>ej.webform.min.js</td>
-<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\13.1.0.21\JavaScript\assets\scripts\common</td>
+<td>&lt;Syncfusion Installed Location&gt;\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\scripts\common</td>
 </tr>
 </table>
 
@@ -579,7 +579,7 @@ If you want to refer to the CDN links instead of the direct script and CSS refer
 
     <title><%: Page.Title %> - My ASP.NET Application</title>
 
-    <link href="http://cdn.syncfusion.com/13.1.0.21/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
@@ -589,9 +589,9 @@ If you want to refer to the CDN links instead of the direct script and CSS refer
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.web.all.min.js"></script> 
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
 
-    <script src="http://cdn.syncfusion.com/13.1.0.21/js/web/ej.webform.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.webform.min.js"></script>
 
 </head>    
 
@@ -659,23 +659,23 @@ Right click on the References --> choose Add Reference option
 
 2.	Now the Reference Manager pop-up will appear on the screen. Select the Browse tab in it and navigate to the installed location of the Syncfusion Essential Studio package in your system. (As illustrated in the following image.)
 
-N> <installed location>\Syncfusion\Essential Studio\13.1.0.21\precompiledassemblies\13.1.0.21
+N> <installed location>\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}
 
 N> For example, If you have installed the Essential Studio package within C:\Program Files (x86), navigate to the following location.
 
-N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\precompiledassemblies\13.1.0.21
+N> C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}
 
 ![](Getting-Started_images/Getting-Started_img27.png)
 Reference Manager Pop-up with Browse button clicked
 {:.caption}
 
-N> In the above image, the folders 3.5, 4.0, 4.5, 4.5.1 denotes the .NET Framework version. Based on the Framework version used in your application, you can choose assemblies from the appropriate folders. The Syncfusion.EJ.Web and other core assemblies like Syncfusion.Core, Syncfusion.EJ are available within these folders.
+N> In the above image, the folders 3.5, 4.0, 4.5, 4.5.1 denotes the .NET Framework version. Based on the Framework version used in your application, you can choose assemblies from the appropriate folders. The Syncfusion.EJ.Web and other assemblies like Syncfusion.EJ are available within these folders.
 
-3.	Add the Syncfusion.EJ, Syncfusion.EJ.Web, and Syncfusion.Core assemblies to your application from the following specified location.
+3.	Add the Syncfusion.EJ and Syncfusion.EJ.Web assemblies to your application from the following specified location.
 
-N> <installed location>\Syncfusion\Essential Studio\13.1.0.21\precompiledassemblies\13.1.0.21\4.5 <BR>
+N> <installed location>\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}\4.5 <BR>
 For example, If you have installed the Essential Studio package within C:\Program Files (x86), navigate to the following location. <BR>
-C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\precompiledassemblies\13.1.0.21\4.5
+C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}\4.5
 
 ![](Getting-Started_images/Getting-Started_img28.png)
 Reference Manager Pop-up with assemblies selected
@@ -697,9 +697,9 @@ In your application’s web.config file, add the following assembly information 
     <compilation debug="true" targetFramework="4.5">
           <assemblies>
 
-            <add assembly="Syncfusion.EJ, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.EJ, Version=16.3450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
-            <add assembly="Syncfusion.EJ.Web, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+            <add assembly="Syncfusion.EJ.Web, Version=16.3450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
           </assemblies>
     </compilation>
