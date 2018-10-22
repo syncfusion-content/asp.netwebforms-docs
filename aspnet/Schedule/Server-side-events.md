@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Server-side events of Scheduler ASP.NET Web Forms
+title: Server-side events of ASP.NET Web Forms Scheduler
 description: Complete server-side events available in Scheduler along with its accessible argument details.
 platform: aspnet
 control: Schedule
 documentation: ug
 ---
 
-## Server side events
+## Server-side events
 
-This section explains in detail about the various server-side events available in the ASP.NET Web Forms Schedule control and the arguments that are available on those events. 
+This section explains in detail about the various server-side events available in the ASP.NET Web Forms Scheduler control and the arguments that are available on those events. 
 
-The **sender** parameter of all the server-side events returns the schedule model details. The **Syncfusion.JavaScript.Web.ScheduleEventArgs** arguments provide information specific to each event.
+The **sender** parameter of all the server-side events returns the scheduler model details. The **Syncfusion.JavaScript.Web.ScheduleEventArgs** arguments provide information specific to each event.
 
 The various server-side events and the corresponding arguments of it are as follows.
 
