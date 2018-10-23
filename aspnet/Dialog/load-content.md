@@ -85,5 +85,4 @@ Add the following script
 
 N> The same way we can render the iframe and image content for the Dialog widget by specifying the `ContentType` as “iframe” and “image” respectively and also by specifying the proper location in the “**ContentUrl**” property.
 
-
-
+N>To update the Dialog's AJAX content after the content has been updated, changed the content on server-side, or dynamically changed the dialog content, set the `contentUrl` and `contentType` properties using setModel on any action click.
