@@ -516,8 +516,8 @@ Once the CSS files are added in your application, include the reference to "ej.w
 
 Adding the required JavaScript files into your application plays an important role, without which the Syncfusion controls cannot be created. It requires the following mandatory common script files.
 
-*	jquery-1.10.2.min.js
-* jquery.easing.1.3.min.js
+*	jQuery (version supported from 1.7.1.min.js to 3.3.1.min.js
+*   jquery.easing.1.3.min.js
 *	jquery.globalize.min.js
 *	jsrender.min.js
 
@@ -531,7 +531,7 @@ The dependencies are available in the following locations of your machine. Pleas
 <th>Location</th>
 </tr>
 <tr>
-<td>jquery-1.10.2.min.js<br/>jsrender.min.js</td>
+<td>jquery-3.3.1.min.js<br/>jsrender.min.js</td>
 <td>&lt;Syncfusion Installed Location&gt;\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external</td>
 </tr>
 <tr>
@@ -558,7 +558,7 @@ Add the following script references in the Site.Master file within the head sect
 {% highlight html %}
 
 <link href="Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
-<script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-1.10.2.min.js")%>' type="text/javascript"></script>
+<script src='<%= Page.ResolveClientUrl("~/Scripts/jquery-3.3.1.min.js")%>' type="text/javascript"></script>
 <script src='<%= Page.ResolveClientUrl("~/Scripts/jsrender.min.js")%>' type="text/javascript"></script>
 <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.web.all.min.js")%>' type="text/javascript"></script>
 <script src='<%= Page.ResolveClientUrl("~/Scripts/ej/ej.webform.min.js")%>' type="text/javascript"></script>
@@ -581,7 +581,7 @@ If you want to refer to the CDN links instead of the direct script and CSS refer
 
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.3.1.min.js"></script>
 
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
 
@@ -596,6 +596,8 @@ If you want to refer to the CDN links instead of the direct script and CSS refer
 </head>    
 
 {% endhighlight %}
+
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 ### Adding Syncfusion ASP.NET control
 
