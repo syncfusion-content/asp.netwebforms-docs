@@ -12,10 +12,24 @@ documentation: ug
 Digital Gauge for Essential Studio encompasses the visualization of the segmented display of both the 7-segment numeric values and the 14-segment alphanumeric characters. It can display the following five kinds of character types:
 
 * Seven Segment
+
+![](/aspnet/DigitalGauge/Overview_images/Overview_img2.png)
+
 * Fourteen Segment
+
+![](/aspnet/DigitalGauge/Overview_images/Overview_img3.png)
+
 * Sixteen Segment
+
+![](/aspnet/DigitalGauge/Overview_images/Overview_img4.png)
+
 * EightCrossEightDotMatrix
+
+![](/aspnet/DigitalGauge/Overview_images/Overview_img5.png)
+
 * EightCrossEightSquareMatrix
+
+![](/aspnet/DigitalGauge/Overview_images/Overview_img6.png)
 
 ![](Overview_images/Overview_img1.png)
 
