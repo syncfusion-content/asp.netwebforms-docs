@@ -243,7 +243,7 @@ The text markup annotation tools of the PDF viewer contain strikeout, highlight,
 </script>
 {% endhighlight %}
 
-**Print Tool**
+### Print Tool
 
 The print tool of the PDF viewer contains an option to print the PDF document. When the print button is clicked, the changes made in the PDF document will be printed along with the document using the browser’s default printer settings. The PDF viewer control provides the option to show or hide the print tool in the default toolbar. You can achieve this by using the showPrintTools(bool) method.
 
@@ -299,7 +299,7 @@ The selection tool of the PDF viewer control contains options for selection and 
 </script>
 {% endhighlight %}
 
-**Text Search tool**
+### Text Search tool
 
 The text search tool of the PDF viewer control is used to initiate and close the text search process in the PDF viewer control. The PDF viewer control provides the option to show or hide the text search tool in the default toolbar. You can achieve this by using the showTextSearchTool(bool) method.
 
