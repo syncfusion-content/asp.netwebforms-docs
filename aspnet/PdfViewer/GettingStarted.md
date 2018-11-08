@@ -180,7 +180,7 @@ When the PDF viewer control is destroyed, the Destroy event will be triggered. Y
 </script>
 {% endhighlight %}
 
-**HyperlinkClicked**
+### HyperlinkClicked
 
 When the hyperlinks available in the PDF document is clicked, the hyperlinkClick event will be triggered. You can define the event method using the HyperlinkClicked property of the control
 
