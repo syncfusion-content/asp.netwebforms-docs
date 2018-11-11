@@ -479,7 +479,7 @@ The following screenshot illustrates the Tab with customized style.
 
 ## Scroll of the Grid inside Tab
 
-The tab control used for navigations can use any controls inside its content. We have adding our Grid control inside tab content section.
+The tab control used for navigations can render any controls inside its content. We have adding our Grid control inside tab content section. The tab property `HeightAdjustMode` set to `None` and set tab `height`.
 
 The following code example is used to render the Tab control with Grid control.
 
