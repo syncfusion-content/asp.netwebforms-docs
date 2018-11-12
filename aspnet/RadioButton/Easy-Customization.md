@@ -232,3 +232,52 @@ Configure the CSS styles to align the RadioButtons.
 {% endhighlight %}
 
 ![](Easy-Customization_images/Easy-Customization_img4.png)
+
+## Styles Customization
+
+RadioButton allows you to customize its appearance by using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, use  **CssClass** property. CssClass property sets the root class for RadioButton theme.
+
+By using this CssClass, you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. From the root class, you can customize the RadioButton control theme.
+
+In the following example, the border color and border width of the active RadioButton is customized through the custom classes to create the success, and danger indication with RadioButton.
+
+{% highlight html %}
+
+<span><b>Agree terms & conditions:</b></span>
+    <span style="margin-left: 15px">
+        <ej:RadioButton Name="radio1" ID="Radio_checked" Text="Yes" runat="server" Size="Medium" Checked="true" CssClass="success">
+        </ej:RadioButton>
+        <ej:RadioButton Name="radio1" ID="Radio_unchecked" Text="No" runat="server" Size="Medium" Checked="false" CssClass="warning">
+        </ej:RadioButton>
+    </span>
+    <br>
+    <br>
+    <span><b>Confirm:</b></span>
+    <span style="margin-left: 15px">
+        <ej:RadioButton Name="radio2" ID="RadioButton3" Text="Yes" runat="server" Size="Medium" Checked="true" CssClass="success">
+        </ej:RadioButton>
+        <ej:RadioButton Name="radio2" ID="RadioButton4" Text="No" runat="server" Size="Medium" Checked="false" CssClass="warning">
+        </ej:RadioButton>
+    </span>
+
+{% endhighlight %}
+
+{% highlight css %}
+
+<style>
+        .success .e-spanicon.e-rad-active,
+        .success .e-spanicon.e-rad-active:hover {
+            border-color: #17ad37;
+            border-width: 2px;
+        }
+
+        .warning .e-spanicon.e-rad-active,
+        .warning .e-spanicon.e-rad-active:hover {
+            border-color: #ff6e40;
+            border-width: 2px;
+        }
+    </style>
+
+{% endhighlight %}
+
+![](Easy-Customization_images/Easy-Customization_img5.png)
