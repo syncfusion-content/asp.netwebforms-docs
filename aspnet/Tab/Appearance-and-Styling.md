@@ -477,5 +477,43 @@ The following screenshot illustrates the Tab with customized style.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
 
+## Scroll of the Grid inside Tab
 
+The tab control used for navigations can render any controls inside its content. We have adding our Grid control inside tab content section. The tab property `HeightAdjustMode` set to `None` and set tab `height`.
 
+The following code example is used to render the Tab control with Grid control.
+
+Add the following ASPX to render Tab with grid content.
+
+{% highlight html %}
+
+<ej:Tab ID="Tab1" runat="server" Height="300px" HeightAdjustMode="None">
+    <Items>
+        <ej:TabItem ID="steelman" Text="Grid">
+            <ContentSection>
+                <div>
+                <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="True">
+                <DataManager URL="https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/" CrossDomain="true"></DataManager>
+                <Columns>
+                <ej:Column Field="OrderID" HeaderText=" OrderID" IsPrimaryKey="True" TextAlign="Right" Width="75" />
+                <ej:Column Field="CustomerID" HeaderText="CustomerID" Width="90" />
+                <ej:Column Field="EmployeeID" HeaderText="EmployeeID" TextAlign="Right" Width="90" />
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="75" />
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="80" />
+                <ej:Column Field="OrderDate" HeaderText="Order Date" Format="{0:MM/dd/yyyy}" TextAlign="Right" Width="80" />
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
+                </Columns>
+                <PageSettings PageSize="9" />
+                </ej:Grid>
+                 </div>
+            </ContentSection>
+        </ej:TabItem>
+        <ej:TabItem runat="server" ID="otherItem" Text="otherItem">
+            <ContentSection>
+                other content item
+            </ContentSection>
+        </ej:TabItem>
+    </Items>
+</ej:Tab>
+
+{% endhighlight %}
