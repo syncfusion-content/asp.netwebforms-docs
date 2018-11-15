@@ -15,7 +15,7 @@ Essential ASP.NET Waiting Popup provides support to display a Waiting Popup 
 
 The following screenshot illustrates the functionality of a Waiting Popup with login page scenario.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg) 
+![WaitingPopup](Getting-Started_images/Getting-Started_img1.jpeg) 
 
 
 
@@ -47,7 +47,7 @@ You can create a WEB Project and add the necessary assemblies, styles, and scr
 
                         <td>
 
-                            <input type="text">
+                            <input type="text" runat="server">
 
                         </td>
 
@@ -63,7 +63,7 @@ You can create a WEB Project and add the necessary assemblies, styles, and scr
 
                         <td>
 
-                            <input type="password">
+                            <input type="password" runat="server">
 
                         </td>
 
@@ -77,25 +77,21 @@ You can create a WEB Project and add the necessary assemblies, styles, and scr
 
                         <td>
 
-                            <ej:Button ID="buttonnormal" runat="server"Type="Button" Text="login" Size="Large"
+                            <ej:Button ID="buttonnormal" runat="server" Type="Button" Text="login" Size="Large"
 
-                                ShowRoundedCorner="true"ClientSideOnClick="btnClick">
+                                ShowRoundedCorner="true" ClientSideOnClick="btnClick">
 
                             </ej:Button>
 
                         </td>
 
-                        <ej:WaitingPopup ID="target" runat="server"ShowOnInit="false">
+                        <ej:WaitingPopup ID="target" runat="server" ShowOnInit="false">
 
                         </ej:WaitingPopup>
 
                     </tr>
 
                 </table>
-
-                <div id="target" class="targetpostion">
-
-                </div>
 
             </div>
 
@@ -155,7 +151,7 @@ In a real-time login page scenario, when you click the Login button, the Wait
 
         function btnClick(e) {
 
-            var popup = $("#target").data("ejWaitingPopup");
+            var popup = $("#<%=target.ClientID%>").data("ejWaitingPopup");
 
             popup.show();
 
@@ -167,7 +163,7 @@ In a real-time login page scenario, when you click the Login button, the Wait
 
             alert("Signed in successfully");
 
-            $("#target").ejWaitingPopup("hide");
+           $("#<%=target.ClientID%>").ejWaitingPopup("hide");
 
         }
 
@@ -179,13 +175,13 @@ In a real-time login page scenario, when you click the Login button, the Wait
 
 The following screenshot shows the output of the code example.
 
- ![](Getting-Started_images/Getting-Started_img3.png) 
+ ![WaitingPopup](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
 The following screenshot displays an alert box displayed with the message signed in successfully after loading.
 
-![](Getting-Started_images/Getting-Started_img4.jpeg) 
+![Alert](Getting-Started_images/Getting-Started_img4.jpeg) 
 
 
 
