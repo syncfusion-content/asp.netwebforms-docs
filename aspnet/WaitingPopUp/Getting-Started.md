@@ -175,7 +175,7 @@ In a real-time login page scenario, when you click the Login button, the Wait
 
 The following screenshot shows the output of the code example.
 
- ![WaitinPopup](Getting-Started_images/Getting-Started_img3.png) 
+ ![WaitingPopup](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
