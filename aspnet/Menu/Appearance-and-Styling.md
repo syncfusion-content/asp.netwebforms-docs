@@ -29,6 +29,34 @@ Essential Studio ASP.NET controls feature 13 built-in themes, six flat and gradi
 * gradient-saffron-dark
 * bootstrap-theme
 
+Syncfusion provides a CSS file named **ej.web.all.min.css** for each of the above specified theme, which can be referred in your application, in order to apply the appropriate theming styles to the widgets. All the above specified theme files are available within the **css** folder.
+
+## Adding specific theme to your application
+
+This section explains what are all the files required to refer and the steps to apply the **flat-saffron** theme. 
+
+1. Create the following folders in the same structure under your application folder. 
+
+N>   appfolder\Content\ej\flat-saffron
+
+2. Copy **common-images** folder & **ej.widgets.core.min.css** file into the appfolder\Content\ej
+
+N> Both of these folders and files are mandatory for any themes. 
+
+3. Copy the CSS files available in the installed location of the flat-saffron folder into your app location appfolder\Content\ej\flat-saffron
+4. Refer the **ej.web.all.min.css** file in your HTML page within the `<head>` section before making any script reference as shown below,
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Adding specific theme to your application</title>
+<link href="Content/ej/web/flat-saffron/ej.web.all.min.css" rel="stylesheet">
+</head>
+</html>
+
+{% endhighlight %}
 
 ## CssClass
 
