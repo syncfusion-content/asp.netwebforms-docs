@@ -219,5 +219,55 @@ Run the above code to render the following output.
 
 ![](Easy-customization_images/Easy-customization_img6.png)
 
+## Styles Customization
+
+CheckBox allows you to customize its appearance by using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, use  **CssClass** property. CssClass property sets the root class for CheckBox theme.
+
+By using this CssClass, you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. From the root class, you can customize the CheckBox control theme.
+
+In the following example, the border color and border width of the active CheckBox is customized through the custom classes to create the success, and danger indication with CheckBox.
+
+{% highlight html %}
+
+<span><b>Agree terms & conditions:</b></span>
+    <span style="margin-left: 15px">
+    <ej:CheckBox ID="check1" Text="Primary" runat="server" Size="Medium" Checked="true" CssClass="success">
+        </ej:CheckBox>
+        <ej:CheckBox ID="check2" Text="Danger" runat="server" Size="Medium" Checked="true" CssClass="danger">
+        </ej:CheckBox>
+    </span>
+
+{% endhighlight %}
+
+{% highlight css %}
+
+<style>
+    .success .e-chkbox-medium .e-chk-inact .e-chk-image,
+        .success .e-chkbox-medium .e-chk-act .e-chk-image {
+            background: #17ad37;
+            color: white;
+        }
+
+        .success .e-chkbox-medium .e-chk-inact,
+        .success .e-chkbox-medium .e-chk-act {
+            border-color: transparent;
+        }
+
+        .danger .e-chkbox-medium .e-chk-inact .e-chk-image,
+        .danger .e-chkbox-medium .e-chk-act .e-chk-image {
+            background: #d84315;
+            color: white;
+        }
+
+        .danger .e-chkbox-medium .e-chk-inact,
+        .danger .e-chkbox-medium .e-chk-act {
+            border-color: transparent;
+        }
+    </style>
+
+{% endhighlight %}
+
+![](Easy-customization_images/Easy-customization_img7.png)
+
 
 
