@@ -40,7 +40,7 @@ EJWEB DatePicker allows you to restrict date selection in specific range by usin
 
 ## How to add clear button with DatePicker?
 
-Clear button can be included in the DatePicker control. In the `created` event of DatePicker, clear button element should be appended in the input element and event for clearing the value should bind with the clear button element. Refer the sample from the link [Clear button](http://jsplayground.syncfusion.com/mmdn4d0q) to know how to add the clear button with the DatePicker component.
+Clear button can be included in the DatePicker control. In the `create` event of DatePicker, clear button element should be appended in the input element and event for clearing the value should bind with the clear button element. Refer the sample from the link [Clear button](http://jsplayground.syncfusion.com/mmdn4d0q) to know how to add the clear button with the DatePicker component.
 
 {% highlight html %}
 
