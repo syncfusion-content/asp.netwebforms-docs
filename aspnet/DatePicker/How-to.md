@@ -47,7 +47,7 @@ Clear button can be included in the DatePicker control. In the `created` event o
     <ej:DatePicker ClientSideOnCreate="Created" runat="server"></ej:DatePicker>
 
     <script>
-        function Created(e) {
+        function Created() {
             if (this.innerWrapper.find('.e-clear-date').length == 0) {
                 this.innerWrapper.append("<span class='e-clear-date e-icon'></span>"); // create and append the 'div' element to the calendar
                 this._on($('.e-clear-date', this.innerWrapper), "click", function () { this.option('value', null); if (!this.model.displayInline) this.hide(); }); // bind the 'Click' event to that 'div' element
