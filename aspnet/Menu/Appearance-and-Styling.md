@@ -37,13 +37,13 @@ This section explains what are all the files required to refer and the steps to 
 
 1. Create the following folders in the same structure under your application folder. 
 
-N>   appfolder\Content\ej\flat-saffron
+N>   app folder\Content\ej\flat-saffron
 
-2. Copy **common-images** folder & **ej.widgets.core.min.css** file into the appfolder\Content\ej
+2. Copy **common-images** folder & **ej.widgets.core.min.css** file into the `appfolder\Content\ej`
 
 N> Both of these folders and files are mandatory for any themes. 
 
-3. Copy the CSS files available in the installed location of the flat-saffron folder into your app location appfolder\Content\ej\flat-saffron
+3. Copy the CSS files available in the installed location of the flat-saffron folder into your app location `appfolder\Content\ej\flat-saffron`
 4. Refer the **ej.web.all.min.css** file in your HTML page within the `<head>` section before making any script reference as shown below,
 
 {% highlight html %}
@@ -217,7 +217,7 @@ Add the following code in your style section.
 
 Following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![menu](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 
 
@@ -563,7 +563,7 @@ Add the following code example in your style section
 
 Execute the above code example to render the following output.                       
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![menu style](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
