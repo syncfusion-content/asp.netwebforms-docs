@@ -18,9 +18,9 @@ The following procedure illustrates how to install Essential Studio ASP.NET plat
 
 2. Double-click the Syncfusion ASP.NET platform Setup file. The Setup Wizard opens and extracts the package automatically.
 
-   ![](Platform_images/Step-by-Step-Installation_img1.png)
+   ![install](Platform_images/Step-by-Step-Installation_img1.png)
 
-   N> The Setup wizard extracts the syncfusionessentialaspnet_(version).exe dialog, displaying the unzip operation of the package.
+   N> The Setup wizard extracts the `syncfusionessentialaspnet_(version).exe` dialog, displaying the unzip operation of the package.
 
 3. You have two options to unlock the Syncfusion setup:
 
@@ -35,14 +35,14 @@ The following procedure illustrates how to install Essential Studio ASP.NET plat
    
    You should enter your Syncfusion Direct-Trac login credentials. If you don't have Syncfusion Direct-Trac login credentials, then you can click on Sign Up to a create new account. Else if you forgot your password, click on Reset Password to create new password. Here Email address and Password is validated and the Platform Selection window opens.
 
-   ![](Platform_images/Step-by-Step-Installation_img2.png)   
+   ![log in](Platform_images/Step-by-Step-Installation_img2.png)   
 
 
    **Use Unlock Key**
    
    You should use the Syncfusion License/Trial key. Trial key is valid for 30 days and the installer won't accept the expired trial key. Licensed customer can generate key from [here](https://www.syncfusion.com/kb/2326).
 
-   ![](Platform_images/Step-by-Step-Installation_img3.png)   
+   ![unlock key](Platform_images/Step-by-Step-Installation_img3.png)   
 
 
 4. After reading the License Terms and Conditions, check the **I agree to the License Terms and Conditions** check box.
@@ -51,7 +51,7 @@ The following procedure illustrates how to install Essential Studio ASP.NET plat
 5. Click Next. Select the Installation, Samples Folder and Advanced Options screen opens. To install in the displayed default location, click Install
 
 
-    ![](Platform_images/Step-by-Step-Installation_img4.png)
+    ![click](Platform_images/Step-by-Step-Installation_img4.png)
 
 
     N> From the 2018 Volume 2 release, Syncfusion has changed the install and samples location 
@@ -69,11 +69,11 @@ The following procedure illustrates how to install Essential Studio ASP.NET plat
 6.  Click Install.
 
 
-    ![](Platform_images/Step-by-Step-Installation_img5.png)
+    ![before install](Platform_images/Step-by-Step-Installation_img5.png)
 
 7. The Completed screen is displayed once the ASP.NET platform is installed.
 
-    ![](Platform_images/Step-by-Step-Installation_img6.png)
+    ![install complete](Platform_images/Step-by-Step-Installation_img6.png)
 
 
 8. Select the **Run Syncfusion Control Panel** check box to launch the Syncfusion Control Panel after installing.
@@ -90,9 +90,9 @@ The Syncfusion Essential Studio Platform Installer supports installing/uninstall
 Follow the steps below to install through Command Line in Silent mode.
 
 1. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically. 
-2. The syncfusionessentialaspnet_(version).exe file is extracted into the Temp folder.
-3. Run %temp%. The Temp folder will open. The syncfusionessentialaspnet_(version).exe file is available in one of the folders.
-4. Copy the extracted syncfusionessentialaspnet_(version).exe file in local drive.
+2. The `syncfusionessentialaspnet_(version).exe` file is extracted into the Temp folder.
+3. Run %temp%. The Temp folder will open. The `syncfusionessentialaspnet_(version).exe` file is available in one of the folders.
+4. Copy the extracted `syncfusionessentialaspnet_(version).exe` file in local drive.
 5. Cancel the Wizard.
 6. Open the Command Prompt in administrator mode and pass the following arguments.
 
@@ -102,7 +102,7 @@ Follow the steps below to install through Command Line in Silent mode.
 
    N> [..] – Arguments inside the square brackets are optional.
 
-   **Example:** “D:\Temp\syncfusionessentialaspnet_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+   **Example:** `D:\Temp\syncfusionessentialaspnet_x.x.x.x.exe` /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 	
 7. Setup is installed.
@@ -114,17 +114,17 @@ Follow the steps below to install through Command Line in Silent mode.
 
 Syncfusion Essential Studio supports uninstalling the setup through Command Line in Silent mode. The following steps illustrate this. 
 
-1. When you do not have the extracted setup (syncfusionessentialaspnet_(version).exe) then follow the steps from 2 to 7.
+1. When you do not have the extracted setup `(syncfusionessentialaspnet_(version).exe)` then follow the steps from 2 to 7.
 2. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically.
-3. The syncfusionessentialaspnet_(version).exe file is extracted into the Temp folder.
-4. Run %temp%. The Temp folder will open. The syncfusionessentialaspnet_(version).exe file is available in one of the folders.
-5. Copy the syncfusionessentialaspnet_(version).exe file in local drive. 
+3. The `syncfusionessentialaspnet_(version).exe` file is extracted into the Temp folder.
+4. Run %temp%. The Temp folder will open. The `syncfusionessentialaspnet_(version).exe` file is available in one of the folders.
+5. Copy the `syncfusionessentialaspnet_(version).exe` file in local drive. 
 6. Cancel the Wizard.
 7. Open the Command Prompt in administrator mode and pass the following arguments.
    
-   **Arguments:** “Copied setup file path\syncfusionessentialaspnet_(version).exe” /uninstall silent 
+   **Arguments:** `Copied setup file path\syncfusionessentialaspnet_(version).exe` /uninstall silent 
 
-   **Example:** “D:\Temp\syncfusionessentialaspnet_x.x.x.x.exe" /uninstall silent
+   **Example:** `D:\Temp\syncfusionessentialaspnet_x.x.x.x.exe` /uninstall silent
 
 
 8. Setup is uninstalled.
