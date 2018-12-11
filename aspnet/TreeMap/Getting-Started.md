@@ -25,6 +25,56 @@ You can configure ASP.NET TreeMap in simple steps. This manual provides instruct
 
 You can create a new ASP.NET project application by adding the necessary dll's and scripts.
 
+#### Referencing Syncfusion Assemblies
+
+The following assemblies need to be referenced in your application for using Essential Treemap ASP
+
+1. Syncfusion.EJ.dll
+2. Syncfusion.EJ.Web.dll
+
+Follow the steps given below to deploy the application in the development server by referencing the assembly in **GAC**.
+
+* Web.config file should be configured according to the referenced assemblies.
+* To deploy your application, you have to ensure that the above referenced assemblies (in your web.config files) are present in the GAC.
+
+![](Getting-Started_images/Getting-Started_img10.png)
+
+And, add the Syncfusion namespace in the Web.config file.
+
+![](Getting-Started_images/Getting-Started_img8.png)
+
+N> If you are referring Syncfusion assemblies manually from bin folder to create ASP Treemap, then remove Culture, Version and PublicKeyToken attributes used in all, and nodes.
+
+####  Adding script reference
+
+By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jQuery and Syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jQuery and Syncfusion script files.
+
+![](Getting-Started_images/Getting-Started_img9.png)
+
+{% highlight html %}
+
+
+    <!--  jquery script  -->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <!-- Essential JS UI widget -->
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+
+{% endhighlight %}
+
+N> If you are using the Essential Studio below 13.4.0.53 version, then you need to refer **jQuery.globalize.js** script file along with the above references to render the Treemap control.
+
+#### Initialize Map
+
+1.Add the following code in the default.aspx file to create the treemap control in View page.
+
+{% highlight html %}
+
+<ej:Treemap ID="Container" runat="server" >
+</ej:Treemap>
+
+{% endhighlight %}
+
 #### Add Data
 
 You can populate the TreeMap data inside the TreeMap .For example, you can populate data of few countries from the following location.
