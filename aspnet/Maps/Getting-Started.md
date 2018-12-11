@@ -18,15 +18,65 @@ You can configure an Essential ASP.NET Map with simple steps. In this example, y
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 Map
-{:.caption} 
+{:.caption}
 
-### Create a simple ASP.NET Application 
+### Create a simple ASP.NET Application
 
 To begin, create a new ASP.NET Web application with necessary Dll’s and Scripts.
 
+### Referencing Syncfusion Assemblies
+
+The following assemblies need to be referenced in your application for using Essential Map ASP
+
+1. Syncfusion.EJ.dll
+2. Syncfusion.EJ.Web.dll
+
+Follow the steps given below to deploy the application in the development server by referencing the assembly in **GAC**.
+
+* Web.config file should be configured according to the referenced assemblies.
+* To deploy your application, you have to ensure that the above referenced assemblies (in your web.config files) are present in the GAC.
+
+![](Getting-Started_images/Getting-Started_img7.png)
+
+And, add the Syncfusion namespace in the Web.config file.
+
+![](Getting-Started_images/Getting-Started_img8.png)
+
+N> If you are referring Syncfusion assemblies manually from bin folder to create ASP Maps, then remove Culture, Version and PublicKeyToken attributes used in all, and nodes.
+
+###  Adding script reference
+
+By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jQuery and Syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jQuery and Syncfusion script files.
+
+![](Getting-Started_images/Getting-Started_img9.png)
+
+{% highlight html %}
+
+
+    <!--  jquery script  -->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <!-- Essential JS UI widget -->
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+
+{% endhighlight %}
+
+N> If you are using the Essential Studio below 13.4.0.53 version, then you need to refer **jQuery.globalize.js** script file along with the above references to render the Maps control.
+
+### Initialize Map
+
+1.Add the following code in the default.aspx file to create the maps control in View page.
+
+{% highlight html %}
+
+<ej:Map ID="Container" runat="server" >
+</ej:Map>
+
+{% endhighlight %}
+
 ### Preparing Shape Data
 
-The Shape Data collection describing geographical shape information can be obtained from [GEOJSON format shapes](http://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip). 
+The Shape Data collection describing geographical shape information can be obtained from [GEOJSON format shapes](http://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip).
 
 In this example, USA shape is used as shape data by utilizing the “United States of America.json” file in the following folder structure obtained from downloaded Maps_GeoJSON folder.
 
@@ -251,13 +301,13 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 1. Create an HTML file and add necessary script and CSS files in Head tag as illustrated in the following code example.
 
    ~~~ html
-        
+
 
         <html xmlns="http://www.w3.org/1999/xhtml">
 
         <head>
 
-	    <title> Getting Started with Maps </title>    
+	    <title> Getting Started with Maps </title>
 
         <!--  jquery script  -->
 
@@ -277,7 +327,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
                <!-- JS Render widget -->
 
-               <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>   
+               <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>
 
 
 
@@ -298,9 +348,9 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
    ~~~ html
 
 
-        <html>   
+        <html>
 
-        <body> 
+        <body>
 
         <div style="min-height:404px">
 
@@ -311,7 +361,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
         </div>
 
 
-        </body>      
+        </body>
 
         </html>
 
@@ -355,7 +405,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 
         }
 
-        }   
+        }
 
 
 
@@ -369,7 +419,7 @@ The above code renders a map with default properties and shape input provided th
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 Map with default properties
-{:.caption} 
+{:.caption}
 
 ### Data Binding in Map
 
@@ -383,7 +433,7 @@ The following properties in shape layers is used for binding data in Maps contro
 
 The DataSource property accepts collection values as input. For example, you can provide the list of objects as input.
 
-### ShapeDataPath 
+### ShapeDataPath
 
 The ShapeDataPath property is used to refer the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The ShapeDataPath and the ShapePropertyPath properties are related to each other (refer to ShapePropertyPath for more details).
 
@@ -395,62 +445,62 @@ The ShapePropertyPath property is similar to the ShapeDataPath that refers the c
 
 {% highlight html %}
 
-     <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >       
-		<Layers>            
-			<ej:ShapeLayer LayerType="Geometry" ShapeDataPath = "name" ShapePropertyPath= "name">           
-			</ej:ShapeLayer>        
-		</Layers>     
+     <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >
+		<Layers>
+			<ej:ShapeLayer LayerType="Geometry" ShapeDataPath = "name" ShapePropertyPath= "name">
+			</ej:ShapeLayer>
+		</Layers>
 	 </ej:Map>
-	 
+
 {% endhighlight %}
 
 {% highlight c# %}
-   
-     public partial class Default: Page    
-	 {        
-		protected void Page_Load(object sender, EventArgs e)        
-		{            
-		(this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            
-		(this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();       
-		}    
+
+     public partial class Default: Page
+	 {
+		protected void Page_Load(object sender, EventArgs e)
+		{
+		(this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();
+		(this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();
+		}
 	 }
 {% endhighlight %}
 
 {% endtabs %}
 
-### Customizing Map Appearance 
+### Customizing Map Appearance
 
 You can customize the shape’s color by using Fill, Stroke and StrokeThickness properties in ShapeSettings.
 
 {% tabs %}
 
 {% highlight html %}
-    
-    <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >  
-	
-		<Layers>       
-		
-			<ej:ShapeLayer LayerType="Geometry" EnableSelection = "false" ShapeDataPath = "name" ShapePropertyPath= "name" EnableMouseHover = "true">         
-				
-				<ShapeSettings Fill = "Gray" StrokeThickness = "0.5" Stroke = "white" ValuePath = "name" HightlightStroke = "White" HightlightColor = "#BC5353" HightlightBorderWidth = "1">                
-				
-				</ShapeSettings> 
-				
-			</ej:ShapeLayer> 
-            
-		</Layers>    
-		
+
+    <ej:Map ID=“map” runat="server"  EnableAnimation ="true" >
+
+		<Layers>
+
+			<ej:ShapeLayer LayerType="Geometry" EnableSelection = "false" ShapeDataPath = "name" ShapePropertyPath= "name" EnableMouseHover = "true">
+
+				<ShapeSettings Fill = "Gray" StrokeThickness = "0.5" Stroke = "white" ValuePath = "name" HightlightStroke = "White" HightlightColor = "#BC5353" HightlightBorderWidth = "1">
+
+				</ShapeSettings>
+
+			</ej:ShapeLayer>
+
+		</Layers>
+
 	</ej:Map>
-	
+
 {% endhighlight %}
 
 {% highlight c# %}
-       
+
     protected void Page_Load(object sender, EventArgs e)
-	{	
+	{
 		(this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();
-		
-		(this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        
+
+		(this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();
 	}
 
 {% endhighlight%}
@@ -460,7 +510,7 @@ You can customize the shape’s color by using Fill, Stroke and StrokeThickness 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 Customized Map
-{:.caption} 
+{:.caption}
 
 ### Customizing Map Appearance by Range
 
@@ -512,7 +562,7 @@ N> The EnableGradient property value should be true to apply gradient colors for
 
 
 
-    </ej:Map>        
+    </ej:Map>
 
 {% endhighlight  %}
 
@@ -525,7 +575,7 @@ N> The EnableGradient property value should be true to apply gradient colors for
             (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();
 
             (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();
-			
+
         }
 
 {% endhighlight %}
@@ -539,7 +589,7 @@ The following screenshot illustrates a map with gradient color property enable.
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 Customized Map by range
-{:.caption} 
+{:.caption}
 
 ### Enable Tooltip
 
@@ -567,9 +617,9 @@ The tooltip is displayed only when ShowTooltip is set to ‘True’ in the shape
 
             </ej:ShapeLayer>
 
-        </Layers>        
+        </Layers>
 
-    </ej:Map>        
+    </ej:Map>
 
 
 
@@ -610,11 +660,11 @@ The following screenshot illustrates a Map control displaying a Tooltip.
 ![](Getting-Started_images/Getting-Started_img5.png)
 
 Map with tooltip
-{:.caption} 
+{:.caption}
 
 ### Legend
 
-A Legend can be made visible by setting the ShowLegend property in LegendSettings. 
+A Legend can be made visible by setting the ShowLegend property in LegendSettings.
 
 ### Interactive Legend
 
@@ -626,7 +676,7 @@ You can use Title property to provide title for interactive legend.
 
 ### Label for Interactive Legend
 
-You can use LeftLabel and RightLabel property to provide left and right labels for interactive legend. 
+You can use LeftLabel and RightLabel property to provide left and right labels for interactive legend.
 
 {% tabs %}
 
@@ -650,7 +700,7 @@ You can use LeftLabel and RightLabel property to provide left and right labels f
 
         </Layers>
 
-    </ej:Map>      
+    </ej:Map>
 
 
 
@@ -689,6 +739,6 @@ The following screenshot illustrates a map displaying an interactive legend.
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 Map with interactive Legend
-{:.caption} 
+{:.caption}
 
 
