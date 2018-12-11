@@ -26,7 +26,62 @@ Analog thermometer
 ASP.NET Linear Gauge widget basically renders with flexible API’s. You can easily create the Linear Gauge widget by using simple code example as follows.
 
 1. First create an ASP Project and add necessary Dll’s and Scripts with the help of the given ASP-Getting Started Documentation.
-2. Add the mentioned code example to the corresponding designer page to render the Linear Gauge.
+2. Configure web.config files for assemblies
+
+   * The following assemblies references are added properly in web.config file.  
+
+   ~~~ html	
+	
+		<compilation debug="true" targetFramework="4.5">
+		
+			<assemblies>
+			
+				<add assembly="Syncfusion.EJ.Web, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89"/>
+				
+				<add assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89"/>
+				
+			</assemblies>
+			
+		</compilation>	
+		
+		<httpRuntime targetFramework="4.5" />
+		
+		<pages> 
+		
+			<controls>
+			
+				<add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
+				
+				<add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
+				
+				<add  namespace="Syncfusion.JavaScript.DataVisualization.Models" assembly="Syncfusion.EJ" tagPrefix="ej"/>
+				
+			</controls>
+			
+		</pages>	
+		
+   ~~~
+
+3. Adding Script Reference,
+    
+By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jQuery and Syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jQuery and Syncfusion script files.
+
+![](Getting-Started_images/Getting-Started_img12.png)
+
+{% highlight html %}
+
+
+    <!--  jquery script  -->
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+
+    <!-- Essential JS UI widget -->
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+
+{% endhighlight %}
+
+N> If you are using the Essential Studio below 13.4.0.53 version, then you need to refer **jQuery.globalize.js** script file along with the above references to render the linear gauge control.
+
+4. Add the mentioned code example to the corresponding designer page to render the Linear Gauge.
 
 
 {% highlight html %}
