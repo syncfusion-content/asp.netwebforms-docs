@@ -10,7 +10,7 @@ documentation: UG
 
 # Full Row Selection
 
-The TreeView control provides the option to highlight a full row of tree view nodes. When **FullRowSelect** is **true**, a selection highlights the entire width of the tree view, display instead of the width of just the tree node text. It makes selection easier.
+The TreeView control provides the option to highlight a full row of tree view nodes. When **FullRowSelect** is set to **true**, selection highlights the entire width of the tree view and displays the tree node text instead of the width. It makes selection easier.
 
 In the code behind page, create a data list which contains the details about tree nodes of TreeView.
 
