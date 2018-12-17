@@ -42,7 +42,7 @@ And, add the Syncfusion namespace in the Web.config file.
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
-N> If you are referring Syncfusion assemblies manually from bin folder to create ASP Maps, then remove Culture, Version and PublicKeyToken attributes used in all, and nodes.
+N> If you are referring Syncfusion assemblies manually from bin folder to create ASP Maps, then remove Culture, Version and PublicKeyToken attributes used in all files.
 
 ###  Adding script reference
 
