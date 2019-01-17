@@ -63,9 +63,9 @@ To consume Web API service, set the service link to the Url property and set the
 
 ## WebMethod Adaptor
 
-The WebMethod Adaptor is used to bind data source from remote services and code behind methods. 
+The WebMethod Adaptor is used to bind data source from web services and code behind methods. For every operation, an AJAX post will be sent to specified service. 
 
-By using “WebMethodAdaptor” we can bind data from WebService to the ComboBox control and also we need to include “ScriptService” Attribute to WebService in order to enable request from client-side.
+By using “WebMethodAdaptor” we can bind data from WebService to the ComboBox control and also we need to include “ScriptService” Attribute to WebService in order to enable request from client-side.Please refer [here](https://help.syncfusion.com/aspnet/datamanager/data-adaptors#webmethod-adaptor) to know more details on WebMethod Adaptor.
 
 {% highlight html %}
 
@@ -125,8 +125,8 @@ Initialize the ComboBox as follows
 
 {% highlight html %}
 
-    <ej:ComboBox ID="employeeList" Width="116px" Query="ej.Query().requiresCount()" DataTextField="Name" DataValueField="Country" runat="server"
-        DataManager URL="Default.aspx/Get" CrossDomain="true" Adaptor="WebMethodAdaptor">
+    <ej:ComboBox ID="employeeList" Width="116px" Query="ej.Query().requiresCount()" DataTextField="Name" DataValueField="Country" runat="server">
+        <DataManager URL="Default.aspx/Get" CrossDomain="true" Adaptor="WebMethodAdaptor"></DataManager>
     </ej:ComboBox>
 
 {% endhighlight %}
