@@ -262,3 +262,75 @@ Now, index value will be return in the DropDownListIndex method by matching the 
 {% endhighlight %}
 
 Please refer the following links for Sample: [Sample] ( http://www.syncfusion.com/downloads/support/directtrac/166189/ze/SyncfusionDropdown_(3)884590000 )
+
+## MultiColumn and multiple rows items in dropdownlist
+
+The DropDownList `template` property used to load the datasouce like mulitple coloumn and rows. Using css to customized the column and rows in dropdownlist template element. The dropdownlist popup customization shown below code:
+
+{% highlight c# %}
+
+protected void Page_Load(object sender, EventArgs e)
+    {
+        List<Data> empl = new List<Data>();
+        empl.Add(new Data { text = "10" });
+        empl.Add(new Data { text = "30" });
+        empl.Add(new Data { text = "101" });
+        empl.Add(new Data { text = "50" });
+        selectColumn.DataSource = empl;
+    }
+public class Data
+    {
+        public string text { get; set; } 
+}
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<ej:DropDownList ID="selectColumn" runat="server" Template="<span><span class='ddlcolumn'>${text}</span><span class='ddlpages'>pages</span></span>" WatermarkText="Select the column" Width="600px" PopupHeight="500px" PopupWidth="600px" ClientSideOnCreate ="onCreate" ClientSideOnChange="onChange">
+</ej:DropDownList>
+
+<script>
+var ddlobj;
+function onCreate(e) {
+    ddlobj = $("#<%=selectColumn.ClientID%>").data("ejDropDownList");
+    var dateSpan = document.createElement('span');
+    dateSpan.setAttribute("id", ddlobj._id + "_valueSpan");
+    dateSpan.setAttribute("class", "e-valTemp");
+    $(dateSpan).insertBefore(ddlobj.element);
+}
+function onChange(e) {
+    var page = "<span class='pagevaluetemp'>page</span>"
+    ddlobj.wrapper.find('.e-valTemp')[0].innerHTML = e.selectedText + page;
+}
+</script>
+<style>
+.e-ddl-popup div>ul li {
+    display: inline-flex;
+    width: 110px;
+    padding: 10px 5px 5px 5px;
+}
+.e-ddl-popup div>ul li.e-hover {
+    width: 100px;
+    padding: 10px 5px 5px 5px;
+}
+.e-valTemp {
+    line-height: 28px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+.pagevaluetemp {
+    padding: 3px;
+}
+.ddlcolumn {
+    display: block;
+    font-weight: 600;
+}
+.ddlpages {
+    color: darkgray;
+}
+</style>
+
+{% endhighlight %}
+
+Please refer the following links for Sample: [Sample] ( http://www.syncfusion.com/downloads/support/directtrac/140579/ze/DropDown1353983443 )
