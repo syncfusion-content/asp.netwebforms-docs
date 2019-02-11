@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Named Set | PivotGrid | ASP.NET | Syncfusion
+title: Named Set | PivotClient | ASP.NET | Syncfusion
 description: named set
 platform: aspnet
-control: PivotGrid
+control: PivotClient
 documentation: ug
 ---
 
 # Named set
 
-Named set is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining the cube data, arithmetic operators, numbers, and functions. You can set the named set option in the pivot grid by setting the `isNamedSets` property to true for client mode.
+Named set is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining the cube data, arithmetic operators, numbers, and functions. You can set the named set option in the pivot client by setting the `isNamedSets` property to true for client mode.
 
 ## Client mode
 
-You can bind the named sets in the pivot grid by setting it's unique name in the `FieldName` property either in row or column axis and `isNamedSets` Boolean property to true.
+You can bind the named sets in the pivot client by setting it's unique name in the `FieldName` property either in row or column axis and `isNamedSets` Boolean property to true.
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server">
+<ej:PivotClient ID="PivotClient1" Title="OLAP Browser" runat="server">
     <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
@@ -33,15 +33,13 @@ You can bind the named sets in the pivot grid by setting it's unique name in the
             </ej:Field>
         </Values>
     </DataSource>
-</ej:PivotGrid>
+</ej:PivotClient>
 
 {% endhighlight %}
 
-![Named sets in ASP NET pivot grid OLAP client mode](KPI_images/namedset.png)
-
 ## Server mode
 
-You can add the named sets in the pivot grid by using the NamedSetElement Class in the OLAP report.
+You can add the named sets in the pivot client by using the NamedSetElement Class in the OLAP report.
 
 {% highlight C# %}
 
@@ -67,5 +65,4 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 
 {% endhighlight %}
 
-![Named sets in ASP NET pivot grid OLAP server mode](KPI_images/servernamedset.png)
-
+![](KPI_images/namedset.png)

@@ -37,7 +37,7 @@ Allows you to render the pivot client in different sizes. You can set the height
 
 The pivot client with decreased size from default size.
 
-![](Layout-Customization_images/small-size.png)
+![ASP NET pivot client control with reduced size](Layout-Customization_images/small-size.png)
 
 ## Set size in percentage
 
@@ -77,7 +77,7 @@ In tab view representation, both the grid and chart will be displayed in separat
 
 {% endhighlight  %}
 
-![](Layout-Customization_images/tabview.png) 
+![ASP NET pivot client control with tab view](Layout-Customization_images/tabview.png)
 
 ### Tile view
 
@@ -103,7 +103,7 @@ In tile view representation, both the grid and chart will be displayed one above
 
 {% endhighlight  %}
 
-![](Layout-Customization_images/tileview.png) 
+![ASP NET pivot client control with tile view](Layout-Customization_images/tileview.png)
 
 ## Default view
 
@@ -131,7 +131,7 @@ To display grid control by default, set the `DefaultView` property under the `Di
 
 {% endhighlight  %}
 
-![](Layout-Customization_images/gridview.png) 
+![ASP NET pivot client control with grid view as default](Layout-Customization_images/gridview.png)
 
 ### Chart view
 
@@ -157,7 +157,7 @@ To display the chart control by default, set the `DefaultView` property to the *
 
 {% endhighlight  %}
 
-![](Layout-Customization_images/chartview.png) 
+![ASP NET pivot client control with chart view as default](Layout-Customization_images/chartview.png)
 
 ## Display mode
 
@@ -185,7 +185,7 @@ In the `Mode` property, the `DisplaySettings` option is set to **GridOnly**, suc
 
 {% endhighlight  %}
 
-![](Layout-Customization_images/gridonlyview.png) 
+![ASP NET pivot client control with grid only view](Layout-Customization_images/gridonlyview.png)
 
 
 ### Chart only
@@ -212,7 +212,7 @@ In the `Mode` property, the `DisplaySettings` option is set to **ChartOnly**, su
 
 {% endhighlight  %}
 
-![](Layout-Customization_images/chartonlyview.png) 
+![ASP NET pivot client control with chart only view](Layout-Customization_images/chartonlyview.png)
 
 ### Both chart and grid
 
@@ -236,9 +236,9 @@ In the `Mode` property, set the `DisplaySettings` option to **ChartAndGrid**, th
         <DisplaySettings Mode="ChartAndGrid" />
     </ej:PivotClient>
 
-{% endhighlight  %}	
+{% endhighlight  %}
 
-![](Layout-Customization_images/tileview.png) 
+![ASP NET pivot client control with grid and chart view](Layout-Customization_images/tileview.png)
 
 ## Toggle panel
 
@@ -262,13 +262,13 @@ Toggle panel option allows you to toggle the visibility of axis element builder 
         <DisplaySettings EnableTogglePanel="true" />
     </ej:PivotClient>
 
-{% endhighlight  %}	
+{% endhighlight  %}
 
-![](Layout-Customization_images/toggleview.png) 
+![ASP NET pivot client control with toggle panel](Layout-Customization_images/toggleview.png)
 
 ## Collapse Toggle Panel By Default
 
-Allows the user to hide “Cube Browser” and “Axis Element Builder” panels while initiating the widget. You can enable this option in PivotClient by setting the `CollapseCubeBrowserByDefault` property to true.  
+Allows the user to hide “Cube Browser” and “Axis Element Builder” panels while initiating the widget. You can enable this option in PivotClient by setting the `CollapseCubeBrowserByDefault` property to true.
 
 {% highlight html %}
 
@@ -287,9 +287,9 @@ Allows the user to hide “Cube Browser” and “Axis Element Builder” panels
         <ClientSideEvents Load="onLoad"/>
     </ej:PivotClient>
 
-{% endhighlight  %}	
+{% endhighlight  %}
 
-![](Layout-Customization_images/collapse-cube-browser-by-default.png)
+![ASP NET pivot client control with toggle panel by default](Layout-Customization_images/collapse-cube-browser-by-default.png)
 
 ## Maximized/Full Screen View
 
@@ -314,13 +314,13 @@ The full screen view helps to visualize the pivot grid and pivot chart controls 
         <DisplaySettings EnableFullScreen="true" />
     </ej:PivotClient>
 
-{% endhighlight  %}	
+{% endhighlight  %}
 
-![](Layout-Customization_images/maximizedview.png) 
+![Full screen icon in ASP NET pivot client control](Layout-Customization_images/maximizedview.png)
 
 The following screenshot shows the maximized view of the pivot grid:
 
-![](Layout-Customization_images/maximizedview1.png) 
+![Full screen view of ASP NET pivot client control](Layout-Customization_images/maximizedview1.png)
 
 
 ## Chart types
@@ -344,15 +344,15 @@ While loading the pivot client initially, the pivot chart widget can be rendered
         <ClientSideEvents Load="onLoad"/>
     </ej:PivotClient>
 
-{% endhighlight  %}	
+{% endhighlight  %}
 
 The `ChartType` property takes column chart by default. The available types are column, stacking column, bar, stacking bar, line, spline, step line, area, spline area, step area, stacking area, pie, funnel, and pyramid.
 
 The chart type can also be changed dynamically through the toolbar icon.
 
-![](Layout-Customization_images/charttypes.png) 
+![Chart types icon in ASP NET pivot client control](Layout-Customization_images/charttypes.png)
 
-![](Layout-Customization_images/linechart.png)  
+![ASP NET pivot client control with line chart type](Layout-Customization_images/linechart.png)
 
 ### Pivot tree map
 
@@ -379,9 +379,9 @@ You can include the pivot tree map component as one of the chart types by settin
 
 {% endhighlight %}
 
-![](Layout-Customization_images/TreeMap1.png)
+![Treemap icon in chart types panel of ASP NET pivot client control](Layout-Customization_images/TreeMap1.png)
 
-![](Layout-Customization_images/TreeMap2.png)
+![Treemap in ASP NET pivot client control](Layout-Customization_images/TreeMap2.png)
 
 
 ## Report toolbar
@@ -397,8 +397,8 @@ You can customize the display of toolbar by enabling/disabling the visibility of
 
 {% endhighlight %}
 
-![](Layout-Customization_images/toolbarIconSettings1.png)
+![Report toolbar of ASP NET pivot client control](Layout-Customization_images/toolbarIconSettings1.png)
 
 The following screenshot shows after disabling the toolbar icons:
 
-![](Layout-Customization_images/toolbarIconSettings2.png)
+![Hiding report icons from toolbar of ASP NET pivot client control](Layout-Customization_images/toolbarIconSettings2.png)

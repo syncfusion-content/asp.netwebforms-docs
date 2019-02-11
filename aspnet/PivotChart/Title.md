@@ -16,14 +16,14 @@ By using the `Title.text` property, you can add the title text for the pivot cha
 {% highlight html %}
 
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
-    //Adding Chart title
+    <%--Adding Chart title--%>
     <Title text="PivotChart"></Title>
     <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
 {% endhighlight %}
 
-![](Title_images/Title_img1.png)
+![Title text in ASP NET pivot chart control](Title_images/Title_img1.png)
 
 ## Title alignment
 
@@ -32,14 +32,14 @@ By using the `Title.TextAlignment` property, you can align the title text to cen
 {% highlight html %}
 
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc"  ClientIDMode="Static">
-    //Change title text alignment
+    <%--Change title text alignment--%>
     <Title text="PivotChart" TextAlignment="near"></Title>
     <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
 {% endhighlight %}
 
-![](Title_images/Title_img2.png)
+![Title alignment in ASP NET pivot chart control](Title_images/Title_img2.png)
 
 ## Title customization
 
@@ -48,7 +48,7 @@ By using the `Title` property, you can add the title text for X-axis and Y-axis.
 {% highlight html %}
 
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
-    //Customizing axis title
+    <%--Customizing axis title--%>
     <PrimaryXAxis Title-Text="Fiscal Year" Title-Font-Color="Grey" Title-Font-FontSize="16px" Title-Font-FontFamily="Segoe UI" Title-Font-FontWeight="Bold" >
     </PrimaryXAxis>
     <Size Width="950px" Height="460px"></Size>
@@ -56,5 +56,5 @@ By using the `Title` property, you can add the title text for X-axis and Y-axis.
 
 {% endhighlight %}
 
-![](Title_images/Title_img3.png) 
+![Title customization in ASP NET pivot chart control](Title_images/Title_img3.png)
 

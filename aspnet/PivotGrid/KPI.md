@@ -15,7 +15,7 @@ The different indicators available in KPI are:
 
 * KPI value: A physical measure or a calculated measure.
 * KPI goal: Defines the target for the measure.
-* KPI status: Evaluates the current status of the value compared to the goal. 
+* KPI status: Evaluates the current status of the value compared to the goal.
 * KPI trend: Evaluates the current trend of the value compared to the goal.
 
 The **"KpiElements"** class in the OLAP base library holds the KPI names. When its object are added to an OlapReport, you can view the resultant information in the pivot grid.
@@ -42,11 +42,11 @@ The **"KpiElements"** class in the OLAP base library holds the KPI names. When i
         </Values>
     </DataSource>
 </ej:PivotGrid>
-        
+
 {% endhighlight %}
 
 
-![](KPI_images/ClientSideKPI.png)
+![Key Performance indicator, aka KPI support in ASP NET pivot grid client mode](KPI_images/ClientSideKPI.png)
 
 ## Server mode
 
@@ -72,7 +72,7 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 
 {% endhighlight %}
 
-![](KPI_images/kpi.png)
+![Key Performance indicator, aka KPI support in ASP NET pivot grid server mode](KPI_images/kpi.png)
 
 
 

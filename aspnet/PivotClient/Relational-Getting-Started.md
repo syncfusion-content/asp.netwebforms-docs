@@ -34,7 +34,7 @@ Register the referred assemblies in Web.config files available at the root of th
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
+    <assemblies>
         ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -44,7 +44,7 @@ Register the referred assemblies in Web.config files available at the root of th
 </compilation>
 {% endhighlight %}
 
-### Scripts and CSS references  
+### Scripts and CSS references
 
 Create a GettingStarted.aspx page, and scripts and style sheets that are required to render the pivot client control in a web application are mentioned below in an appropriate order:
 
@@ -55,15 +55,15 @@ Create a GettingStarted.aspx page, and scripts and style sheets that are require
 
 Scripts and style sheets are referred under the <head> tag in the GettingStarted.aspx page.
 
-{% highlight html %}    
+{% highlight html %}
 
 <head>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
-    
-</head>    
+
+</head>
 
 {% endhighlight %}
 
@@ -78,8 +78,8 @@ After placing the control into the web page, add **'ScriptManager'** next to it 
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-<html> 
-    …… 
+<html>
+    ……
     ……
 
 <body>
@@ -132,14 +132,14 @@ This section illustrates how to populate the pivot client control by using a sam
                         { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
         ]
     }
-</script> 
-     
+</script>
+
 {% endhighlight %}
-     
+
 The JSON data is set to the **"Data"** property present in the **"DataSource"** object. The **"DataSource"** object allows you to set both data source and fields that should be displayed in the row, column, value, and filter section of the pivot client control.
 
 {% highlight html %}
-  
+
 <ej:PivotClient ID="PivotClient1" runat="server" Title="Relational Browser" ClientIDMode="Static">
     <DataSource>
         <Rows>
@@ -159,7 +159,7 @@ The JSON data is set to the **"Data"** property present in the **"DataSource"** 
 
 Now, the pivot client is rendered with pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![](Getting-Started_images/purejs.png)
+![ASP NET pivot client control rendered with relational client mode](Getting-Started_images/purejs.png)
 
 ## Creating a simple application with pivot client and relational data sources(server mode)
 
@@ -219,14 +219,14 @@ Scripts and style sheets are referred under the <head> tag in the **GettingStart
 ### Control initialization
 
 You can drag and drop the **pivot client** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control as shown in the following code sample of the **"GettingStarted.aspx"** page:
- 
+
 After placing the control into the web page, add **'ScriptManager'** next to it to generate appropriate scripts.
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %> 
-<html> 
-    …… 
+<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+<html>
+    ……
     ……
 
 <body>
@@ -249,8 +249,8 @@ If you enter the code manually instead of drag and drop from the toolbox, then y
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
-        …… 
+    <assemblies>
+        ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -262,11 +262,11 @@ If you enter the code manually instead of drag and drop from the toolbox, then y
         <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-    
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+
     </assemblies>
 </compilation>
-    
+
 {% endhighlight %}
 
 ### WebAPI
@@ -287,7 +287,7 @@ namespace PivotClientDemo
 {
     public class RelationalController: ApiController
     {
-    
+
     }
 }
 
@@ -686,11 +686,11 @@ public class Global: System.Web.HttpApplication
 
 Now, the **pivot client** is rendered with the pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![](Getting-Started_images/relaionalwebapi.png) 
+![JQuery pivot client control with relational server mode](Getting-Started_images/relaionalwebapi.png)
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot client. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotclient/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot client. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotclient/relational-connectivity#wcf).
 
 
 

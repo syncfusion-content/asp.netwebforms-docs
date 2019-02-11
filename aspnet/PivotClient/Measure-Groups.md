@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Measure Groups | PivotClient | ASP.NET | Syncfusion
-description: measure groups 
+description: measure groups
 platform: aspnet
 control: PivotClient
 documentation: ug
 ---
 
-# Measure groups 
+# Measure groups
 
 I> This feature is applicable only for the OLAP data source bound from the server-side.
 
@@ -21,6 +21,6 @@ In Cube Dimension Browser, the tree view can be viewed in a filtered manner thro
 
 By selecting a measure group from the drop-down list, the Cube Dimension Browser tree view displays the related measures and dimensions as follows:
 
-![](Measure-Groups_images/measuregroup.png) 
+![List of Measure groups in ASP NET pivot client control](Measure-Groups_images/measuregroup.png)
 
-![](Measure-Groups_images/measuregroup1.png)
+![Measure Group in ASP NET pivot client control](Measure-Groups_images/measuregroup1.png)

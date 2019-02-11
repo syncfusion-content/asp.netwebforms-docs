@@ -36,18 +36,18 @@ Register the referenced assemblies in Web.config files available at the root of 
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
+    <assemblies>
         ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />  
-        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />            
+        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
     </assemblies>
 </compilation>
 {% endhighlight %}
 
-### Scripts and CSS references 
+### Scripts and CSS references
 
 create a GettingStarted.aspx page, and scripts and style sheets that are required to render the pivot grid control in a web application are mentioned below in an appropriate order:
 
@@ -57,14 +57,14 @@ create a GettingStarted.aspx page, and scripts and style sheets that are require
 
 Scripts and style sheets are referred under the <head> tag in the GettingStarted.aspx page.
 
-{% highlight html %}    
+{% highlight html %}
 
 <head>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-    
-</head>    
+
+</head>
 
 {% endhighlight %}
 
@@ -77,8 +77,8 @@ You can drag and drop the pivot grid control from the toolbox (under Syncfusion 
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-<html> 
-    …… 
+<html>
+    ……
     ……
 
 <body>
@@ -131,14 +131,14 @@ This section illustrates how to populate the pivot grid control using a sample J
                         { Amount: 300, Country: "United States", Date: "FY 2007", Product: "Van", Quantity: 4, State: "South Carolina" }
         ];
     }
-</script> 
-     
+</script>
+
 {% endhighlight %}
-     
+
 The JSON data is set to the **"Data"** property present in the **"DataSource"** object. The **"DataSource"** object allows you to set both the data source and fields that should be displayed in the row, column, value, and filter section of the pivot grid control.
 
 {% highlight html %}
-  
+
 <ej:PivotGrid ID="PivotGrid1" runat="server" ClientIDMode="Static">
     <DataSource>
         <Rows>
@@ -159,12 +159,12 @@ The JSON data is set to the **"Data"** property present in the **"DataSource"** 
 
 The above code will generate a simple pivot grid with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![](Getting-Started_images/purejs.png)
+![ASP NET pivot grid with client mode](Getting-Started_images/purejs.png)
 
 ### Apply sorting
 
 You can sort a field to ascending or descending order by using the **"SortOrder"** property. The sorting is applicable only for row and column fields. By default, the fields are arranged in the ascending order.
- 
+
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server" ClientIDMode="Static">
@@ -185,7 +185,7 @@ You can sort a field to ascending or descending order by using the **"SortOrder"
 
 {% endhighlight %}
 
-![](Getting-Started_images/purejssorting.png)
+![Sorting in ASP NET pivot grid control](Getting-Started_images/purejssorting.png)
 
 ### Sort Row/Column by Date
 
@@ -224,11 +224,11 @@ N> To apply sorting by date, you need to specify the `format` and `formatString`
             //....
         ];
     }
-</script> 
+</script>
 
 {% endhighlight %}
 
-![](Getting-Started_images/sortbydate.png)
+![Sort by date in ASP NET pivot grid control](Getting-Started_images/sortbydate.png)
 
 ### Apply Filtering
 
@@ -275,7 +275,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-![](Getting-Started_images/purejsfiltering.png)
+![Filtering in ASP NET pivot grid control](Getting-Started_images/purejsfiltering.png)
 
 ### Apply summary types
 
@@ -306,9 +306,9 @@ Allows you to specify the required summary type to be used in summary cells of t
 </ej:PivotGrid>
 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
-{% endhighlight %}    
+{% endhighlight %}
 
-![](Getting-Started_images/purejssummarytype.png)
+![Summary types in ASP NET pivot grid control](Getting-Started_images/purejssummarytype.png)
 
 ## Creating a simple application with pivot grid and relational data source(server mode)
 
@@ -366,14 +366,14 @@ Scripts and style sheets are referred under the <head> tag in the **GettingStart
 ### Control initialization
 
 You can drag and drop the **pivot grid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control as shown in the following code sample of the **"GettingStarted.aspx"** page.
- 
+
 After placing the control in the web page, add the **'ScriptManager'** next to it to generate appropriate scripts.
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %> 
-<html> 
-    …… 
+<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+<html>
+    ……
     ……
 
 <body>
@@ -396,8 +396,8 @@ If you enter the code manually instead of drag and drop from the toolbox, then y
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
-        …… 
+    <assemblies>
+        ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -409,8 +409,8 @@ If you enter the code manually instead of drag and drop from the toolbox, then y
         <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-    
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+
     </assemblies>
 </compilation>
 
@@ -434,7 +434,7 @@ namespace PivotGridDemo
 {
     public class RelationalController: ApiController
     {
-    
+
     }
 }
 
@@ -705,7 +705,7 @@ namespace PivotGridDemo
                 con.Close();
                 return null;
             }
-    
+
             [System.Web.Http.ActionName("LoadReportFromDB")]
             [System.Web.Http.HttpPost]
             public Dictionary<string, object> LoadReportFromDB(Dictionary<string, object> jsonResult)
@@ -747,8 +747,8 @@ namespace PivotGridDemo
                 }
                 return dictionary;
             }
-    
-    
+
+
             private DataTable GetDataTable()
             {
                 SqlCeConnection con = new SqlCeConnection() { ConnectionString = conStringforDB };
@@ -817,11 +817,11 @@ public class Global: System.Web.HttpApplication
 
 Now, the **pivot grid** will be rendered with sales amount over a set of products across different customer geographic locations.
 
-![](Getting-Started_images/relational.png) 
+![ASP NET pivot grid control with relational server mode](Getting-Started_images/relational.png)
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as an endpoint binding relational data source to a simple pivot grid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as an endpoint binding relational data source to a simple pivot grid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/relational-connectivity#wcf).
 
 
 

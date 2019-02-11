@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OLAP Connectivity | PivotChart | ASP.NET | Syncfusion
-description: olap connectivity 
+description: olap connectivity
 platform: aspnet
 control: PivotChart
 documentation: ug
@@ -23,7 +23,7 @@ To connect to an OLAP cube available in SQL Server Analysis Service in the local
 
 {% highlight c# %}
 
-string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;"; 
+string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ To connect to an OLAP cube available in SQL Server Analysis Service in online se
 
 {% highlight c# %}
 
-string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"; 
+string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 **Adding a WCF service**
 
 To add a WCF service in an existing web application, right-click the project in the solution explorer and select **Add > New Item**. In the **Add New Item** window, select WCF service and name it **“OlapService.svc”**, and then click **Add**.
- 
+
 Now, the WCF service is added to your application, which, in-turn, comprises the following files. The utilization of these files will be explained in the immediate sections.
 
 * OlapService.svc
@@ -87,7 +87,7 @@ namespace PivotChartDemo
 **List of dependency libraries**
 
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
+
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
@@ -231,8 +231,8 @@ You can expose the services through the properties such as binding, contract, an
 * Binding: In your application, you can use **webHttpBinding** to post and receive requests and responses between the client-end and the service.
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
-The endpointBehaviors are illustrated as follows: 
- 
+The endpointBehaviors are illustrated as follows:
+
 {% highlight xml %}
 
 <system.serviceModel>
@@ -261,10 +261,10 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
     ……
     ……
 </system.serviceModel>
-    
+
 {% endhighlight %}
 
 Now, the pivot chart will be rendered with customer count over a period of fiscal years across different customer geographic locations.
 
-![](OLAP-Connectivity_images/ServerModeWCF.png)
+![ASP NET pivot chart control with OLAP wcf service](OLAP-Connectivity_images/ServerModeWCF.png)
 

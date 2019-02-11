@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ToolTip | PivotGrid | ASP.NET | Syncfusion 
+title:  ToolTip | PivotGrid | ASP.NET | Syncfusion
 description: ToolTip
 platform: aspnet
 control: PivotGrid
@@ -31,5 +31,5 @@ The pivot grid provides an option to animate the tooltip displayed in the grid. 
 
 {% endhighlight %}
 
-![](ToolTip_images/ToolTip.png)
+![Tooltip in ASP NET pivot grid control](ToolTip_images/ToolTip.png)
 

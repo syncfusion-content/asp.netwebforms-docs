@@ -12,7 +12,7 @@ documentation: ug
 ## Series point customization
 
 By using the `fill` and `border` properties of chart series, you can customize the pivot chart series color, border color, and border width.
- 
+
 {% highlight html %}
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -34,8 +34,8 @@ By using the `fill` and `border` properties of chart series, you can customize t
     </script>
 </body>
 
-</html>                                           
+</html>
 
 {% endhighlight %}
 
-![](Series_images/Series_img1.png)
+![Series customization in ASP NET pivot chart control](Series_images/Series_img1.png)

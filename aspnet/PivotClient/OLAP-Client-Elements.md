@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotClient Elements | PivotClient | ASP.NET | Syncfusion
-description: PivotClient elements 
+description: PivotClient elements
 platform: aspnet
 control: PivotClient
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 The cube selector allows you to select any one of the cubes available in the connected database. This can be achieved with a drop-down list displaying the list of cube names. By selecting a cube from the drop-down list, the corresponding cube elements get loaded.
 
-![](OLAP-Client-Elements_images/cubeSelector.png) 
+![Cube Selector in ASP NET pivot client control](OLAP-Client-Elements_images/cubeSelector.png)
 
 ## Cube dimension browser
 
@@ -23,13 +23,13 @@ The cube dimension browser is a tree view like structure that organizes the cube
 
 You can alter the report on fly through the drag-and-drop operation.
 
-![](OLAP-Client-Elements_images/ClientTreeview_Drop.png) 
+![Treenode drop in ASP NET pivot client control](OLAP-Client-Elements_images/ClientTreeview_Drop.png)
 
 ### Context menu
 
 You can alter the report by using the context menu.
 
-![](OLAP-Client-Elements_images/ClientTreeview_Menu.png) 
+![Context menu for tree view elements in ASP NET pivot client control](OLAP-Client-Elements_images/ClientTreeview_Menu.png)
 
 ### Types of nodes in cube dimension browser
 
@@ -130,45 +130,45 @@ The series axis defines one or more that are displayed along the chart’s X-axi
 
 The slicer axis is used as a filter to narrow the focus of the multidimensional data displayed in the chart/grid. The slicer axis allows you to analyze a member of the dimension in-depth. To display the member’s data in the slicer, the corresponding member must not be present on both categorical axis and series axis.
 
-![](OLAP-Client-Elements_images/Axis Element Builder.png) 
+![Axis element builder in ASP NET pivot client control](OLAP-Client-Elements_images/Axis Element Builder.png)
 
 ### Split button
 
 The split button highlights the elements in the axis element builder, and holds measures, dimensions, and named sets. When a dimension/hierarchy/level/named set node is dragged and dropped from the cube dimensional browser into the axis element builder, a split button is created and displayed along with the corresponding dimension/named set caption.
 
 When a measure node is dragged and dropped, the axis element builder will create a split button for holding the measures. The next time a measure is added, it will maintain the same single split button to hold the entire measure collection.
- 
+
 The split buttons can be removed with the help of remove button which is available on its side.
 
-![](OLAP-Client-Elements_images/Measure split button.png) 
+![Measure split button in JavScript pivot client control](OLAP-Client-Elements_images/Measure split button.png)
 
-![](OLAP-Client-Elements_images/date.png) 
+![Dimension split button in ASP NET pivot client control](OLAP-Client-Elements_images/date.png)
 
 ### Addition elements to an axis
 
 The measure, dimension, hierarchy, level, and named set elements can be dragged from the cube dimension browser and dropped into the axis element builder at the desired position by using the drag-and-drop operation. These elements can be moved from one axis to another by dragging an appropriate split button and dropping them at the desired position.
 
-![](OLAP-Client-Elements_images/addelement.png) 
+![Adding elements to an axis in ASP NET pivot client control](OLAP-Client-Elements_images/addelement.png)
 
 ### Remove elements from an axis
 
 To remove measures, dimension, hierarchy, level, and named set elements from the axis element builder, click the remove button available next to the split button.
 
-![](OLAP-Client-Elements_images/removeelement.png) 
+![Removing elements from an axis in ASP NET pivot client control](OLAP-Client-Elements_images/removeelement.png)
 
 ### Rearrange elements in an axis
 
 Rearranging can be done by dragging and dropping the elements at the desired position.
 
-![](OLAP-Client-Elements_images/rearrangeelement.png) 
+![Rearranging elements in an axis of ASP NET pivot client control](OLAP-Client-Elements_images/rearrangeelement.png)
 
-![](OLAP-Client-Elements_images/rearrange 1.png) 
+![Rearranged elements in ASP NET pivot client control](OLAP-Client-Elements_images/rearrange 1.png)
 
 ### Context menu
 
 You can alter the report by using the context menu.
 
-![](OLAP-Client-Elements_images/ClientBtn_Menu.png)
+![Context menu for pivot button in ASP NET pivot client control](OLAP-Client-Elements_images/ClientBtn_Menu.png)
 
 ## Elements editor
 
@@ -176,23 +176,23 @@ You can alter the report by using the context menu.
 
 The measure editor is a dialog that displays the collection of measures in the current report.
 
-![](OLAP-Client-Elements_images/measureeditor.png) 
+![Measure editor in ASP NET pivot client control](OLAP-Client-Elements_images/measureeditor.png)
 
 To remove a measure, click the remove icon next to the corresponding measure. To avoid removing the current selection, click cancel.
 
-![](OLAP-Client-Elements_images/deletemeasureeditor.png) 
+![Removing measure from ASP NET pivot client control](OLAP-Client-Elements_images/deletemeasureeditor.png)
 
 ### Member editor
 
 The member editor is a dialog that displays the members of the current hierarchy in a tree view structure.
 
-![](OLAP-Client-Elements_images/membereditor.png) 
+![Member editor in ASP NET pivot client control](OLAP-Client-Elements_images/membereditor.png)
 
 The check all and uncheck all option in the dialog allows you to select and unselect entire nodes for filtering. For more details about filtering, [click here](http://help.syncfusion.com/aspnet/pivotclient/olap-data-exploration#filtering-by-member).
 
 ## Toolbar
 
-![](OLAP-Client-Elements_images/toolbar.png) 
+![Toolbar in ASP NET pivot client control](OLAP-Client-Elements_images/toolbar.png)
 
 The options available in the toolbar are:
 
@@ -215,7 +215,7 @@ The options available in the toolbar are:
 
 Following are the options available for database report manipulation:
 
-![](OLAP-Client-Elements_images/Toolbar1.png)
+![Report manipulation icons in ASP NET pivot client control](OLAP-Client-Elements_images/Toolbar1.png)
 
 * **Save**: Saves the report collection by only one name in a database.
 * **Save As**: Saves the report collection by more than one name in the database.
@@ -229,50 +229,50 @@ Following are the options available for database report manipulation:
 
 This option allows you to create a new report collection with a single report by clearing the existing report collection. By clicking the new report icon in toolbar, the new report dialog opens as follows:
 
-![](OLAP-Client-Elements_images/newreport.png) 
+![New report in ASP NET pivot client control](OLAP-Client-Elements_images/newreport.png)
 
 After giving the required name and click OK, the report collection gets loaded with only one empty report with entered name. By clicking cancel, the new report creation gets canceled.
 
-![](OLAP-Client-Elements_images/newreport1.png) 
+![New report in ASP NET pivot client control](OLAP-Client-Elements_images/newreport1.png)
 
 ### Add report
 
 This option allows you to add a report to the existing report collection. By clicking the add report icon in the toolbar, the add report dialog opens to provide a name for the report to be added as shown below:
 
-![](OLAP-Client-Elements_images/addreport.png) 
+![Add report dialog in ASP NET pivot client control](OLAP-Client-Elements_images/addreport.png)
 
 After giving an appropriate name in the respective column and click OK, a report with the entered name is added to the collection. By clicking cancel, the report creation gets canceled.
 
-![](OLAP-Client-Elements_images/newreport1.png) 
+![Adding a report in ASP NET pivot client control](OLAP-Client-Elements_images/newreport1.png)
 
 ### Remove report
 
 This option allows you to remove the current/active report from the report collection. By clicking the remove icon on the toolbar, a dialog will open for user’s confirmation on removal of report as shown below:
 
-![](OLAP-Client-Elements_images/removereport.png) 
+![Remove report dialog in ASP NET pivot client control](OLAP-Client-Elements_images/removereport.png)
 
 Click OK to remove the report from the collection or click cancel to withdraw the removing operation.
-  
+
 This option works only if the report collection has more than one report. If not, the following dialog will open:
 
-![](OLAP-Client-Elements_images/aferremovereport.png) 
+![Alert dialog for single report in ASP NET pivot client control](OLAP-Client-Elements_images/aferremovereport.png)
 
 ### Rename report
 
 This option allows you to rename the current/active report. By clicking the rename icon on the toolbar, the following dialog will open:
 
-![](OLAP-Client-Elements_images/renamereport.png) 
+![Rename report dialog in ASP NET pivot client control](OLAP-Client-Elements_images/renamereport.png)
 
 After an appropriate name has been provided, click OK. The active report is refreshed with the new name.
 
-![](OLAP-Client-Elements_images/afterrenamereport.png) 
+![Renaming of the previous report in ASP NET pivot client control](OLAP-Client-Elements_images/afterrenamereport.png)
 
 ### Save
 This option saves the entire report collection by only one name to a database. The database is connected to the application through a connection string provided in the service.
 
 By clicking the save icon, the following save dialog will open:
 
-![](OLAP-Client-Elements_images/savereport.png)
+![Save report dialog in ASP NET pivot client control](OLAP-Client-Elements_images/savereport.png)
 
 After an appropriate name has been provided, click OK. The report collection will be saved to the connected database. Otherwise, click cancel to withdraw the saving operation.
 
@@ -281,30 +281,30 @@ This option saves the entire report collection by two or more names to a databas
 
 By clicking the save as icon, the following save as dialog will open:
 
-![](OLAP-Client-Elements_images/saveasreport.png)
+![Save As dialog in ASP NET pivot client control](OLAP-Client-Elements_images/saveasreport.png)
 
 After an appropriate name has been provided, click OK. The report collection will be saved to the connected database. Otherwise click cancel to withdraw the saving operation.
 
 ### Load
 The load option loads a saved report collection from the database through the service. By clicking the load icon on the toolbar, the following load dialog will open:
 
-![](OLAP-Client-Elements_images/loadreport.png)
+![Load dialog in ASP NET pivot client control](OLAP-Client-Elements_images/loadreport.png)
 
 Select a report from the report collection through the drop-down list and click OK for loading the selected report collection. Otherwise, click cancel to abort the report loading operation.
 
-![](OLAP-Client-Elements_images/loadreport1.png)
+![ASP NET pivot client control loaded with saved report](OLAP-Client-Elements_images/loadreport1.png)
 
 ### Remove
 This option removes the saved report from the report collection. By clicking the remove icon on the toolbar, a remove dialog will open for user’s confirmation for removal of the report as shown below:
 
-![](OLAP-Client-Elements_images/removerecord1.png)
+![Removing saved report from database of ASP NET pivot client control](OLAP-Client-Elements_images/removerecord1.png)
 
 Click OK to remove the report from the collection. Otherwise, click cancel to abort the remove operation.
 
 ### Rename
 Rename option allows you to rename the saved report. By clicking the rename icon on the toolbar, the following dialog will open:
 
-![](OLAP-Client-Elements_images/renameRecord.png)
+![Renaming saved report of ASP NET pivot client control](OLAP-Client-Elements_images/renameRecord.png)
 
 After an appropriate name has been provided, click OK. The active report is refreshed with the new name.
 
@@ -312,11 +312,11 @@ After an appropriate name has been provided, click OK. The active report is refr
 
 Report list drop-down contains the names of all reports in the report collection.
 
-![](OLAP-Client-Elements_images/reportlist.png) 
+![Report collection in ASP NET pivot client control](OLAP-Client-Elements_images/reportlist.png)
 
 Select the required report from the report list. The selected report will be set as active report, and loaded.
 
-![](OLAP-Client-Elements_images/afterreportlist.png) 
+![ASP NET pivot client control with selected report](OLAP-Client-Elements_images/afterreportlist.png)
 
 ## Pivot grid and pivot chart
 

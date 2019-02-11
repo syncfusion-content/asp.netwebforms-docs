@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Relational Connectivity | PivotClient | ASP.NET | Syncfusion
-description: relational connectivity 
+description: relational connectivity
 platform: aspnet
 control: PivotClient
 documentation: ug
@@ -48,8 +48,8 @@ namespace PivotClientDemo
 **List of dependency libraries**
 
 You can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -111,7 +111,7 @@ namespace PivotClientDemo
     public class RelationalService : IRelationalService
     {
     ……
-    …… 
+    ……
     }
 
     internal class ProductSales
@@ -514,6 +514,6 @@ N> In this example, the **"PivotClientDemo"** indicates the name and root namesp
 
 Now, the **pivot client** is rendered with pivot chart and pivot grid with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![](Getting-Started_images/relaionalwebapi.png)   
+![ASP NET pivot client control with relational wcf](Getting-Started_images/relaionalwebapi.png)
 
 

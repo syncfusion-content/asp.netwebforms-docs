@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart types
 
-Essential **PivotChart ASP.NET** supports 17 different types of chart as follows:
+Essential **PivotChart ASP.NET** supports 18 different types of chart as follows:
 
 * Column
 * Stacking column
@@ -28,6 +28,7 @@ Essential **PivotChart ASP.NET** supports 17 different types of chart as follows
 * Doughnut
 * Scatter
 * Bubble
+* WaterFall
 
 ## Column chart
 
@@ -43,7 +44,7 @@ The **column chart** is the most commonly used chart type. This uses vertical ba
 
 The following screenshot displays **column chart**:
 
-![](Chart-Types_images/Chart-Types_img1.png)
+![ASP NET column chart control](Chart-Types_images/Chart-Types_img1.png)
 
 Column chart
 {:.caption}
@@ -62,7 +63,7 @@ The **stacking column** chart is similar to column charts except the Y-values. T
 The following screenshot displays **stacking column chart**:
 
 
-![](Chart-Types_images/Chart-Types_img2.png) 
+![ASP NET stacking column chart control](Chart-Types_images/Chart-Types_img2.png)
 
 Stacking Column Chart
 {:.caption}
@@ -80,7 +81,7 @@ The **bar chart** displays horizontal bars for each point in the adjacent series
 
 The following screenshot displays **bar chart**:
 
-![](Chart-Types_images/Chart-Types_img3.png) 
+![ASP NET bar chart control](Chart-Types_images/Chart-Types_img3.png)
 
 Bar Chart
 {:.caption}
@@ -99,7 +100,7 @@ The **stacking bar chart** is a regular **bar** chart with the X-values stacked 
 
 The following screenshot displays **stacking bar chart**:
 
-![](Chart-Types_images/Chart-Types_img4.png) 
+![ASP NET stacking bar chart control](Chart-Types_images/Chart-Types_img4.png)
 
 Stacking Bar Chart
 {:.caption}
@@ -118,7 +119,7 @@ The **pie chart** is used to summarize a set of categorical data or display diff
 
 The following screenshot displays **pie chart**:
 
-![](Chart-Types_images/Chart-Types_img5.png) 
+![ASP NET pie chart control](Chart-Types_images/Chart-Types_img5.png)
 
 Pie Chart
 {:.caption}
@@ -137,7 +138,7 @@ The **pyramid chart** type displays the data in the form of a triangle. It helps
 The following screen shot displays **pyramid chart**:
 
 
-![](Chart-Types_images/Chart-Types_img6.png)
+![ASP NET pyramid chart control](Chart-Types_images/Chart-Types_img6.png)
 
 Pyramid Chart
 {:.caption}
@@ -159,7 +160,7 @@ The **funnel chart** type displays the data in the form of an inverted triangle.
 The following screenshot displays **funnel chart**:
 
 
-![](Chart-Types_images/Chart-Types_img14.png)
+![ASP NET funnel chart control](Chart-Types_images/Chart-Types_img14.png)
 
 Funnel Chart
 {:.caption}
@@ -179,14 +180,14 @@ The **line chart** joins the data points on a plot by using straight lines that 
 
 The following screenshot displays **line hart**:
 
-![](Chart-Types_images/Chart-Types_img7.png) 
+![ASP NET line chart control](Chart-Types_images/Chart-Types_img7.png)
 
 Line Chart
 {:.caption}
 
 ## Step line chart
 
-The **step line chart** uses horizontal and vertical lines to connect the data points resulting in a step like progression. 
+The **step line chart** uses horizontal and vertical lines to connect the data points resulting in a step like progression.
 
 {% highlight html %}
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
@@ -198,7 +199,7 @@ The **step line chart** uses horizontal and vertical lines to connect the data p
 
 The following screenshot displays **step line chart**:
 
-![](Chart-Types_images/Chart-Types_img8.png) 
+![ASP NET step line chart control](Chart-Types_images/Chart-Types_img8.png)
 
 Step Line Chart
 {:.caption}
@@ -216,7 +217,7 @@ The **spline chart** is similar to the line chart except that it connects differ
 
 The following screenshot displays **spline chart**:
 
-![](Chart-Types_images/Chart-Types_img9.png) 
+![ASP NET spline chart control](Chart-Types_images/Chart-Types_img9.png)
 
 Spline Chart
 {:.caption}
@@ -235,7 +236,7 @@ The **area chart** emphasizes the degree of change of values over a period of ti
 
 The following screenshot displays **area chart**:
 
-![](Chart-Types_images/Chart-Types_img10.png) 
+![ASP NET area chart control](Chart-Types_images/Chart-Types_img10.png)
 
 Area Chart
 {:.caption}
@@ -254,7 +255,7 @@ The **step area** chart is similar to the regular area chart except for a straig
 
 The following screenshot displays **step area chart**:
 
-![](Chart-Types_images/Chart-Types_img11.png) 
+![ASP NET step area chart control](Chart-Types_images/Chart-Types_img11.png)
 
 Step Area Chart
 {:.caption}
@@ -273,7 +274,7 @@ The **spline area** chart is similar to the area chart, but differs by connectin
 
 The following screenshot displays **spline area chart**:
 
-![](Chart-Types_images/Chart-Types_img12.png) 
+![ASP NET spline area chart control](Chart-Types_images/Chart-Types_img12.png)
 
 Spline Area Chart
 {:.caption}
@@ -292,7 +293,7 @@ The **stacking area** chart is similar to the regular area chart except for the 
 
 The following screenshot displays **stacking area chart**:
 
-![](Chart-Types_images/Chart-Types_img13.png) 
+![ASP NET stacking area chart control](Chart-Types_images/Chart-Types_img13.png)
 
 Stacking Area Chart
 {:.caption}
@@ -311,7 +312,7 @@ The **doughnut chart** is a doughnut like structure used to summarize a set of c
 
 The following screenshot displays **doughnut chart**:
 
-![](Chart-Types_images/DoughnutChart.png)
+![ASP NET doughnut chart control](Chart-Types_images/DoughnutChart.png)
 
 Doughnut Chart
 {:.caption}
@@ -330,7 +331,7 @@ The **scatter chart** displays data as a collection of points corresponding to t
 
 The following screenshot displays **scatter chart:**
 
-![](Chart-Types_images/ScatterChart.png) 
+![ASP NET scatter chart control](Chart-Types_images/ScatterChart.png)
 
 Scatter Chart
 {:.caption}
@@ -349,10 +350,26 @@ The **bubble chart** displays data as a collection of bubbles.
 
 The following screenshot displays **bubble chart:**
 
-![](Chart-Types_images/BubbleChart.png)
+![ASP NET bubble chart control](Chart-Types_images/BubbleChart.png)
 
 Bubble Chart
 {:.caption}
+
+## WaterFall chart
+
+The **waterfall chart** type is used to show how an initial value is increased and decreased by a series of intermediate values, leading to a final value.
+
+{% highlight html %}
+<ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" >
+    <CommonSeriesOptions type="WaterFall"/>
+    <Size Width="950px" Height="460px"></Size>
+</ej:PivotChart>
+
+{% endhighlight %}
+
+The following screenshot displays the **waterfall chart:**
+
+![ASP NET waterfall chart control](Chart-Types_images/WaterFall.png)
 
 ## Combination chart
 
@@ -370,7 +387,7 @@ The **combination chart** combines two or more series types in a single chart, b
     <ClientSideEvents Load="loadTheme" SeriesRendering="onSeriesRenders" />
     <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
-    
+
 <script>
 function onSeriesRenders(args) {
     this.model.series[5].type = ej.PivotChart.ChartTypes.Line;
@@ -382,4 +399,4 @@ function onSeriesRenders(args) {
 
 The following screenshot displays **combination chart**:
 
-![](Chart-Types_images/combinationalchart.png)
+![ASP NET combination of charts](Chart-Types_images/combinationalchart.png)

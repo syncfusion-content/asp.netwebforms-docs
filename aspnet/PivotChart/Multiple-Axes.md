@@ -38,7 +38,7 @@ You can customize the axes in the primary pivot chart itself. To achieve this, y
 {% highlight html %}
 
 <ej:PivotChart>
-//....
+<%--....--%>
   <Axes>
     <ej:Axis RowIndex="0" Name="yAxisConfig"/>
   </Axes>
@@ -65,14 +65,14 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/rowIndex_zero.png)
+![Axes customization at zeroth row index in ASP NET pivot chart control](Multiple_Axes_images/rowIndex_zero.png)
 
 ## Customizing axes at row index one
 
 {% highlight html %}
 
 <ej:PivotChart>
-//....
+<%--....--%>
   <Axes>
     <ej:Axis RowIndex="1" Name="yAxisConfig"/>
   </Axes>
@@ -98,14 +98,14 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/rowIndex_one.png)
+![Axes customization at first row index in ASP NET pivot chart control](Multiple_Axes_images/rowIndex_one.png)
 
 ## Customizing axes at column index of zero
 
 {% highlight html %}
 
 <ej:PivotChart>
-//....
+<%--....--%>
   <Axes>
     <ej:Axis ColumnIndex="0" Name="xAxisConfig"/>
   </Axes>
@@ -132,14 +132,14 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/columnindex_zero.png)
+![Axes customization at zeroth column index in ASP NET pivot chart control](Multiple_Axes_images/columnindex_zero.png)
 
 ## Customizing axes at column index of one
 
 {% highlight html %}
 
 <ej:PivotChart>
-//....
+<%--....--%>
   <Axes>
     <ej:Axis ColumnIndex="1" Name="xAxisConfig"/>
   </Axes>
@@ -165,7 +165,7 @@ return args;
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/columnindex_one.png)
+![Axes customization at first column index in ASP NET pivot chart control](Multiple_Axes_images/columnindex_one.png)
 
 ## Customizing series
 You can customize the series in multiple axes support with the help of **beforeSeriesRender** event. You can change the series type through the **onBeforeRender** event.
@@ -173,7 +173,7 @@ You can customize the series in multiple axes support with the help of **beforeS
 {% highlight html %}
 
 <ej:PivotChart>
-//....
+<%--....--%>
   <Axes>
     <ej:Axis Name="yAxisConfig"/>
   </Axes>
@@ -202,7 +202,7 @@ return args;
 
 **Note:** You have to use the same name in both name property of axes and xAxisName/yAxisName property of series in the above **beforeSeriesRender** event.
 
-![](Multiple_Axes_images/customize_series.png)
+![Series customization in ASP NET pivot chart control](Multiple_Axes_images/customize_series.png)
 
 To learn more about series properties, [`click here`](https://help.syncfusion.com/api/js/ejchart#members:series).
 
@@ -216,7 +216,7 @@ You can render the pivot chart with multiple axes by series index.
 {% highlight html %}
 
 <ej:PivotChart>
-//....
+<%--....--%>
   <Axes>
     <ej:Axis Name="y:0"/>
     <ej:Axis Name="x:1"/>
@@ -244,7 +244,7 @@ You can render the pivot chart with multiple axes by series index.
 {% highlight html %}
 
   <ej:PivotChart>
-  //....
+  <%--....--%>
   <Axes>
     <ej:Axis Name="y:0"/>
   </Axes>
@@ -252,14 +252,14 @@ You can render the pivot chart with multiple axes by series index.
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/seriesindex_zero.png)
+![Series customization at zeroth index in ASP NET pivot chart control](Multiple_Axes_images/seriesindex_zero.png)
 
 ### For X-axes
 
 {% highlight html %}
 
   <ej:PivotChart>
-  //....
+  <%--....--%>
   <Axes>
     <ej:Axis Name="x:0"/>
   </Axes>
@@ -267,7 +267,7 @@ You can render the pivot chart with multiple axes by series index.
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/seriesindex_one.png)
+![Series customization at first index in ASP NET pivot chart control](Multiple_Axes_images/seriesindex_one.png)
 
 ## Customizing PrimaryYAxis and axes properties
 
@@ -277,7 +277,7 @@ You can customize the **labelFormat** for both PrimaryYAxis and custom axes.
 {% highlight html %}
 
  <ej:PivotChart>
-  //....
+  <%--....--%>
   <Axes>
     <ej:Axis LabelFormat="n1"/>
   </Axes>
@@ -287,7 +287,7 @@ You can customize the **labelFormat** for both PrimaryYAxis and custom axes.
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/label_formats.png)
+![Customization of label formats in ASP NET pivot chart control](Multiple_Axes_images/label_formats.png)
 
 ### title
 You can customize the title for axes by the **title** property.
@@ -295,7 +295,7 @@ You can customize the title for axes by the **title** property.
 {% highlight html %}
 
  <ej:PivotChart>
-  //....
+  <%--....--%>
   <Axes>
     <ej:Axis Title-Text="Internet Sales Amount"/>
   </Axes>
@@ -306,4 +306,4 @@ You can customize the title for axes by the **title** property.
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/title.png)
+![Customization of title in ASP NET pivot chart control](Multiple_Axes_images/title.png)

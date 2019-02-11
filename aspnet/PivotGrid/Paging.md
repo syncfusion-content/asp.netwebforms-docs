@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging | PivotGrid | ASP.NET | Syncfusion 
+title: Paging | PivotGrid | ASP.NET | Syncfusion
 description: paging
 platform: aspnet
 control: PivotGrid
@@ -9,9 +9,7 @@ documentation: ug
 
 # Paging
 
-I> This feature is applicable only for the OLAP data source.
-
-## Pager 
+## Pager
 
 Paging helps to improve the rendering performance of the pivot grid control by dividing the large amount of data into several sections and displaying one section at a time. You can enable the paging option in the pivot grid by setting the [`EnablePaging`] property to true. You can provide the page size and current page details for each axis in the [`PagerOptions`] property.
 
@@ -24,7 +22,7 @@ In the **ejPivotPager** method, the enumeration property mode should be set to *
 
 <ej:PivotGrid ID="PivotGrid1" EnablePaging="true" runat="server" ClientIDMode="Static">
     <DataSource>
-        //...
+        <%--...--%>
         <PagerOptions CategoricalPageSize="5" SeriesPageSize="5" CategoricalCurrentPage="1" SeriesCurrentPage="1" />
     </DataSource>
 </ej:PivotGrid>
@@ -42,25 +40,25 @@ Following are the navigation options available in the pager:
 * Move next: Navigates to the next page from the current page.
 * Numeric box: Navigates to the desired page by entering an appropriate page number in the numeric value.
 
-![](Paging_images/paging.png)
+![Paging in ASP NET pivot grid control](Paging_images/paging.png)
 
 
 ## Virtual scrolling
 
-The virtual scrolling is a technique that allows you to view the pivot grid information page by page with the use of vertical and horizontal scrollbar. You can enable the virtual scrolling option in the pivot grid by setting the [`EnableVirtualScrolling`] property to true. You can provide the page size and current page details for each axis in the [`PagerOptions`] property.
+The virtual scrolling is a technique that allows you to view the pivot grid information page by page with the use of vertical and horizontal scrollbar. You can enable the virtual scrolling option in the pivot grid by setting the `EnableVirtualScrolling` property to true. You can provide the page size and current page details for each axis in the `PagerOptions` property.
 
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" EnableVirtualScrolling="true" runat="server" ClientIDMode="Static">
     <DataSource>
-        //...
+        <%--...--%>
         <PagerOptions CategoricalPageSize="5" SeriesPageSize="5" CategoricalCurrentPage="1" SeriesCurrentPage="1" />
     </DataSource>
 </ej:PivotGrid>
 
 {% endhighlight %}
 
-![](Paging_images/virtual-scrolling.png)
+![Virtual scrolling in ASP NET pivot grid control](Paging_images/virtual-scrolling.png)
 
 ## Page settings
 
@@ -78,7 +76,7 @@ For client mode, the page setting for categorical and series axes should be set 
 
 <ej:PivotGrid ID="PivotGrid1" EnablePaging="true" runat="server" ClientIDMode="Static">
     <DataSource>
-        //...
+        <%--...--%>
         <PagerOptions CategoricalPageSize="5" SeriesPageSize="5" CategoricalCurrentPage="1" SeriesCurrentPage="1" />
     </DataSource>
 </ej:PivotGrid>

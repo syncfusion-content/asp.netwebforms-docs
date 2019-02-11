@@ -9,8 +9,6 @@ documentation: ug
 
 # Splitter
 
-I> This feature is not applicable for the OLAP data source that is bound from the server-side.
-
 You can resize the cube dimension browser and axis element builder by setting the `EnableSplitter` property to true. This property is disabled by default.
 
 {% highlight html %}
@@ -32,11 +30,11 @@ You can resize the cube dimension browser and axis element builder by setting th
 
 {% endhighlight %}
 
-![](Splitter_images/Splitter1.png)
+![Left move of splitter in ASP NET pivot client control](Splitter_images/Splitter1.png)
 
-![](Splitter_images/Splitter2.png)
+![Resizing axis element builder in ASP NET pivot client control](Splitter_images/Splitter2.png)
 
-![](Splitter_images/Splitter3.png)
+![Right move of splitter in ASP NET pivot client control](Splitter_images/Splitter3.png)
 
-![](Splitter_images/Splitter4.png)
+![Resizing cube dimension browser in ASP NET pivot client control](Splitter_images/Splitter4.png)
 

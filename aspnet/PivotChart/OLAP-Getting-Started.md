@@ -33,12 +33,12 @@ Register the referenced assemblies in Web.config files available at the root of 
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
+    <assemblies>
         ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />    
-        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />            
+        <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
     </assemblies>
 </compilation>
@@ -55,7 +55,7 @@ The scripts and style sheets that are required to render the pivot chart control
 [Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available in online (CDN link).
 
 Scripts and style sheets are referred under the <head> tag in the **Default.aspx** file.
-    
+
 {% highlight html %}
 
 <head>
@@ -63,7 +63,7 @@ Scripts and style sheets are referred under the <head> tag in the **Default.aspx
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 </head>
-    
+
 {% endhighlight %}
 
 ### Initialize pivot chart
@@ -75,7 +75,7 @@ You can drag and drop the **pivot chart** control from the toolbox (under Syncfu
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-<html> 
+<html>
 <head>
 .....
 .....
@@ -129,10 +129,10 @@ Initializes the OLAP data source for the pivot chart control as shown below:
 
 Now, the **pivot chart** is rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
 
-![](OLAP-Getting-Started_images/PopulatePivotChartWithDataSource.png) 
+![ASP NET pivot chart control with OLAP client mode](OLAP-Getting-Started_images/PopulatePivotChartWithDataSource.png)
 
 ## Creating a simple application with pivot chart and OLAP data source (server mode)
- 
+
 This section covers the information required to create a simple pivot chart bound to OLAP data source.
 
 N> ASP.NET empty web application contains a service that will transfer the data to server-side, process it, and return it to client-side for control rendering and re-rendering. The service utilized for communication can be WCF or WebAPI based on user requirement.
@@ -165,19 +165,19 @@ Register the referenced assemblies in Web.config files at the root of the applic
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
-        …… 
+    <assemblies>
+        ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Linq.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Olap.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-        <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.Compression.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+        <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     </assemblies>
 </compilation>
 
@@ -195,7 +195,7 @@ The scripts and style sheets that are required to render the pivot chart control
 [Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available in online (CDN Link).
 
 Scripts and style sheets are referred under the **head** tag in the **Default.aspx** file.
-    
+
 {% highlight html %}
 
 <head>
@@ -214,7 +214,7 @@ You can drag and drop the **pivot chart** control from the toolbox (under Syncfu
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-<html> 
+<html>
 <head>
 .....
 .....
@@ -235,7 +235,7 @@ You can drag and drop the **pivot chart** control from the toolbox (under Syncfu
 </body>
 
 </html>
-    
+
 {% endhighlight %}
 
 The **“Url”** property in pivot chart control points the service endpoint, where the data is processed and fetched in the form of JSON. The services used in the pivot chart control as endpoint are WCF and WebAPI.
@@ -250,7 +250,7 @@ N> The above "Default.aspx" contains WebAPI URL, which is "/Olap". If WCF servic
 To add a WebAPI controller in your existing web application, right-click the project in the solution explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it  “OlapController.cs”, and then click **Add.**
 
 Now, the WebAPI controller is added to your application, which, in-turn, comprises the following file. The utilization of this file will be explained in the following sections.
- 
+
 * OlapController.cs
 
 N> While adding the WebAPI controller class, add the mandatory suffix “Controller”. For example, in the demo, the controller is named as “OlapController”.
@@ -263,7 +263,7 @@ namespace PivotChartDemo
 {
     public class OlapController : ApiController
     {
-    
+
     }
 }
 
@@ -310,7 +310,7 @@ namespace PivotChartDemo
 **Service methods in WebAPI controller**
 
 Now, you can define the service methods in the OlapController class, find in the `OlapController.cs` file which was created while adding the WebAPI controller class to your web application.
- 
+
 {% highlight c# %}
 
 namespace PivotChartDemo
@@ -375,7 +375,7 @@ namespace PivotChartDemo
 **Configure routing in global application class**
 
 To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax”**, and then click **Add.**
- 
+
 After adding the **Global.asax** file, delete all methods in the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example:
 
 {% highlight c# %}
@@ -396,7 +396,7 @@ public class Global : System.Web.HttpApplication
 Now, the **pivot chart** is rendered with customer count over a period of fiscal years across different customer geographic locations.
 
 
-![](OLAP-Getting-Started_images/ServerMode.png) 
+![ASP NET pivot chart control with OLAP server mode](OLAP-Getting-Started_images/ServerMode.png)
 
 ### WCF
 

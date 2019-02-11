@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OLAP Connectivity | PivotGrid | ASP.NET | Syncfusion
-description: olap connectivity 
+description: olap connectivity
 platform: aspnet
 control: PivotGrid
 documentation: ug
@@ -26,7 +26,7 @@ To connect to an OLAP cube available in the SQL Server Analysis Service of the l
 
 {% highlight c# %}
 
-string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;"; 
+string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -37,7 +37,7 @@ To connect to an OLAP cube available in the SQL Server Analysis Service in onlin
 
 {% highlight c# %}
 
-string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"; 
+string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -58,7 +58,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;"; 
+string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
@@ -95,7 +95,7 @@ namespace PivotGridDemo
 **List of dependency libraries**
 
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
+
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
@@ -159,13 +159,13 @@ namespace PivotGridDemo
     public class OlapService: IOlapService
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
-        static int cultureIDInfoval = 1033; 
+        static int cultureIDInfoval = 1033;
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports            public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
         public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
         //Other codes
-        
+
     }
 }
 
@@ -232,7 +232,7 @@ namespace PivotGridDemo
     public class OlapService : IOlapService
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
-        static int cultureIDInfoval = 1033; 
+        static int cultureIDInfoval = 1033;
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports            public Dictionary<string, object> InitializeGrid(string action, string gridLayout, bool enablePivotFieldList, object customObject)
@@ -437,8 +437,8 @@ The endpointBehaviors are illustrated as follows:
 
 {% highlight xml %}
 
-<system.serviceModel> 
-    …… 
+<system.serviceModel>
+    ……
     ……
     <services>
         <service name="PivotGridDemo.OlapService">
@@ -453,10 +453,10 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
 {% highlight xml %}
 
 <system.serviceModel>
-    …… 
     ……
-    <behaviors> 
-        …… 
+    ……
+    <behaviors>
+        ……
         ……
         <endpointBehaviors>
             <behavior name="PivotGridDemo.OlapServiceAspNetAjaxBehavior">
@@ -471,5 +471,5 @@ N> In this example, the **"PivotGridDemo"** indicates the name and root namespac
 
 Now, the **pivot grid** will be rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
 
-![](Getting-Started_images/pivotgrid.png) 
+![ASP NET pivot grid control with OLAP server mode](Getting-Started_images/pivotgrid.png)
 

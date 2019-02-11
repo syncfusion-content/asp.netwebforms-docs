@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell-Editing | PivotGrid | ASP.NET | Syncfusion 
+title: Cell-Editing | PivotGrid | ASP.NET | Syncfusion
 description: cell editing
 platform: aspnet
 control: PivotGrid
@@ -12,7 +12,7 @@ documentation: ug
 I> This feature is applicable only for the relational data source.
 
 The cell editing allows you to edit and alter the values in the pivot grid. The summary values will be recreated based on the edited values. By selecting multiple cells (like in cell selection feature), you can edit multiple cells at the same time.
-  
+
 You can enable the cell editing option in the pivot grid by setting the `EnableCellEditing` property to true.
 
 {% highlight html %}
@@ -23,6 +23,6 @@ You can enable the cell editing option in the pivot grid by setting the `EnableC
 
 {% endhighlight %}
 
-![](Cell-Editing_images/celleditingclient.png)
+![Cell editing in ASP NET pivot grid control](Cell-Editing_images/celleditingclient.png)
 
 

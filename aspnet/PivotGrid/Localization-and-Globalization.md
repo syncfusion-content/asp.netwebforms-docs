@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization and globalization
 
-## Localization in pivot grid 
+## Localization in pivot grid
 
 You can localize the pivot grid controls text with a collection of localized strings by using the **"ej.PivotGrid.Locale"** for different cultures. By default, the pivot grid control is localized in **"en-US"** culture.
 
@@ -21,7 +21,7 @@ You can localize the pivot grid controls text with a collection of localized str
 
 <ej:PivotSchemaDesigner ID="PivotSchemaDesigner1" runat=server></ej:PivotSchemaDesigner>
 
-<ej:PivotPager ID="PivotPager1" runat="server" Mode="Both" TargetControlID="PivotGrid1"></ej:PivotPager> 
+<ej:PivotPager ID="PivotPager1" runat="server" Mode="Both" TargetControlID="PivotGrid1"></ej:PivotPager>
 
 <script type="text/javascript">
 function OnAfterServiceInvoke(args) {
@@ -105,7 +105,7 @@ Afficher les éléments pour lesquels
 LabelFilters
 </td>
 <td>
-Filtres d'étiquetage  
+Filtres d'étiquetage
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ Not Equals
 GreaterThan
 </td>
 <td>
-Supérieur 
+Supérieur
 </td>
 </tr>
 <tr>
@@ -201,7 +201,7 @@ Supérieur
 GreaterThanOrEqualTo
 </td>
 <td>
-supérieur ou égal à 
+supérieur ou égal à
 </td>
 </tr>
 <tr>
@@ -209,7 +209,7 @@ supérieur ou égal à
 LessThan
 </td>
 <td>
-Less Than 
+Less Than
 </td>
 </tr>
 <tr>
@@ -1636,12 +1636,12 @@ The following table lists the default keywords in French culture for the pivot p
 The content displayed within the pivot grid control is obtained from the OLAP cube.
 * To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"Data"** property that is present in the **"DataSource"**.
 * To bind the globalized content in the pivot grid control, set the **"Locale"** property to a specific culture and refer the specific culture file in the sample.
- 
+
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
- 
+
 {% highlight html %}
 
-//1036 refers to "fr-FR" culture.
+<%--1036 refers to "fr-FR" culture.--%>
         <ej:PivotGrid ID="PivotGrid1" runat="server" Locale="fr-FR">
             <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;">
                 <Rows>
@@ -1664,13 +1664,13 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 ## Localization and globalization of cube info (server mode)
 The content displayed within the pivot grid control is obtained from the OLAP cube.
- 
+
 * To get localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube.
 * To bind globalized content in the pivot grid control, set the **"Culture"** and `OverrideDefaultFormatStrings` properties in the OlapDataManager class to a specific culture.
 
 {% highlight c# %}
 
-//1036 refers to "fr-FR" culture.
+<%--1036 refers to "fr-FR" culture.--%>
 string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);
 DataManager.Culture = new System.Globalization.CultureInfo(1036);
@@ -1679,16 +1679,16 @@ DataManager.OverrideDefaultFormatStrings = true;
 {% endhighlight %}
 
 
-![](Localization_images/localization.png)
+![Localization support in ASP NET pivot grid OLAP mode](Localization_images/localization.png)
 
 ## Localization and globalization of relational info (client mode)
 The content displayed within the pivot grid control is obtained from relational data source.
- 
+
 * To get localized content, the relational data source must have localized headers, which will be directly applied to the pivot grid.
 * To globalize values that appear in the pivot grid, set the **"Format"** and **"Locale"** property to a specific culture, and refer to the specific culture file in the sample.
 
-N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".** 
- 
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
+
 {% highlight html %}
 
     <ej:PivotGrid ID="PivotGrid1" runat="server" Locale="fr-FR" ClientIDMode="Static">
@@ -1705,12 +1705,12 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
             </Values>
         </DataSource>
     </ej:PivotGrid>
-    
+
 {% endhighlight %}
 
 ## Localization and globalization of relational info (server mode)
 The content displayed within the pivot grid control is obtained from the relational data source.
- 
+
 * To get localized content, the relational data source must have localized headers, which will be directly applied to the pivot grid.
 * **“Format”** settings in the PivotComputationInfo class will globalize the values that appear in the pivot grid.
 
@@ -1725,7 +1725,7 @@ pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
 
 {% endhighlight %}
 
-![](Localization_images/relationallocalization.png)
+![Localization support ASP NET pivot grid relational server mode](Localization_images/relationallocalization.png)
 
 ## RTL
 
@@ -1738,5 +1738,5 @@ You can render the pivot grid control from right to left by setting the `EnableR
 
 {% endhighlight %}
 
-![](Localization_images/rtl.png) 
+![Right to Left, aka RTL support in ASP NET pivot grid control](Localization_images/rtl.png)
 

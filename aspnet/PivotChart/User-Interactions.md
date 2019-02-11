@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User-Interactions
+title: User-Interactions | PivotChart | ASP.NET | Syncfusion
 description: user interactions
 platform: aspnet
 control: PivotChart
@@ -25,7 +25,7 @@ The tooltip for data points can be enabled by using the **"Visible"** option of 
 
 {% endhighlight %}
 
-![](User-Interactions_images/tooltip.png) 
+![Tooltip in ASP NET pivot chart control](User-Interactions_images/tooltip.png)
 
 ### Tooltip template
 
@@ -52,7 +52,7 @@ HTML elements can be displayed in the tooltip by using the `Template` option. Th
 
 {% endhighlight %}
 
-![](User-Interactions_images/tooltiptemplate.png) 
+![Tooltip template in ASP NET pivot chart control](User-Interactions_images/tooltiptemplate.png)
 
 ### Tooltip customization
 
@@ -66,9 +66,9 @@ By using `Fill` and `Border` properties of tooltip, you can customize its backgr
     <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
-{% endhighlight %}   
+{% endhighlight %}
 
-![](User-Interactions_images/tooltipcustomization.png) 
+![Tooltip customization in ASP NET pivot chart control](User-Interactions_images/tooltipcustomization.png)
 
 ### Tooltip with rounded corners
 
@@ -82,9 +82,9 @@ The tooltip properties `Rx` and `Ry` are used to customize its corner radius.
     <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/tooltiprouded.png) 
+![Tooltip with rounded corners in ASP NET pivot chart control](User-Interactions_images/tooltiprouded.png)
 
 ## Zooming and panning
 
@@ -102,13 +102,13 @@ The following are the two ways to zoom the chart:
 <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/zooming.png) 
+![Zooming in ASP NET pivot chart control](User-Interactions_images/zooming.png)
 
 After zooming the chart, a zooming toolbar will appear with options to *zoom, pan, and reset*. Selecting the **“Pan”** will allow to view the chart and selecting the **“Reset”** will reset the zoomed chart.
 
-![](User-Interactions_images/pan.png) 
+![Panning in ASP NET pivot chart control](User-Interactions_images/pan.png)
 
 ### Types of zooming
 
@@ -118,7 +118,7 @@ N> By default, the value for the `Type` option in zooming is “x,y” (indicati
 
 {% highlight html %}
 
-//Enable horizontal zooming 
+//Enable horizontal zooming
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" Zooming-Enable="true" Zooming-Type="x" ClientIDMode="Static">
 <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
@@ -136,9 +136,9 @@ N> By default, the value for the `Type` option in zooming is “x,y” (indicati
 <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/scrollbar.png)
+![Scrollbar in ASP NET pivot chart control](User-Interactions_images/scrollbar.png)
 
 ## Marker and crosshair
 
@@ -149,7 +149,7 @@ In pivot chart, you can customize the marker `shape` with following symbols:
 * Rectangle
 * Circle
 * Cross
-* Diamond 
+* Diamond
 * Pentagon
 * Hexagon
 * Star
@@ -175,11 +175,11 @@ In pivot chart, you can customize the marker `shape` with following symbols:
     </script>
 </body>
 
-</html>                                           
+</html>
 
 {% endhighlight %}
 
-![](User-Interactions_images/marker.png) 
+![Marker customization in ASP NET pivot chart control](User-Interactions_images/marker.png)
 
 ### Enable crosshair and crosshair label
 
@@ -199,7 +199,7 @@ Crosshair helps you to view the value at mouse position or touch contact point. 
 
 {% endhighlight %}
 
-![](User-Interactions_images/crosshair.png) 
+![Visibility of crosshair label in ASP NET pivot chart control](User-Interactions_images/crosshair.png)
 
 ### Crosshair line and label customization
 
@@ -219,7 +219,7 @@ By using the `Line` property of crosshair, you can customize its line color and 
 
 {% endhighlight %}
 
-![](User-Interactions_images/crosshairline.png) 
+![Customization of crosshair line and label in ASP NET pivot chart control](User-Interactions_images/crosshairline.png)
 
 ## Trackball
 
@@ -237,7 +237,7 @@ Trackball can be enabled by setting both - `Visible` option of the crosshair to 
 
 {% endhighlight %}
 
-![](User-Interactions_images/trackball.png) 
+![Trackball in ASP NET pivot chart control](User-Interactions_images/trackball.png)
 
 ### Trackball marker and line customization
 
@@ -251,9 +251,9 @@ Shape and size of the trackball marker can be customized by using the `Shape` an
     <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/trackballmarker.png) 
+![Customization of Trackball in ASP NET pivot chart control](User-Interactions_images/trackballmarker.png)
 
 ## Highlight
 
@@ -278,14 +278,14 @@ The pivot chart provides highlighting support for the series and data points by 
     </script>
 </body>
 
-</html>                                           
+</html>
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ### Highlight mode
 
 You can set three different modes for highlighting data points and series by using the `mode` property of the `highlightSettings`.
- 
+
 * series
 * points
 * cluster
@@ -311,11 +311,11 @@ You can set three different modes for highlighting data points and series by usi
     </script>
 </body>
 
-</html>                                           
+</html>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/highlightmode.png) 
+![Highlight mode in ASP NET pivot chart control](User-Interactions_images/highlightmode.png)
 
 ### Customize the highlight styles
 
@@ -344,11 +344,11 @@ To customize the highlighted series, use `border.color`, `border.width`, and `op
     </script>
 </body>
 
-</html>                                            
+</html>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/customizehighlight.png) 
+![Highlight style in ASP NET pivot chart control](User-Interactions_images/customizehighlight.png)
 
 ### Patterns to highlight
 
@@ -396,11 +396,11 @@ The pivot chart provides pattern support for highlighting the data by setting an
     </script>
 </body>
 
-</html>                                            
+</html>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/patternhighlight.png) 
+![Highlight settings in ASP NET pivot chart control](User-Interactions_images/patternhighlight.png)
 
 ## Selection
 
@@ -426,7 +426,7 @@ The pivot chart provides selection support for the series and data points by cli
     </script>
 </body>
 
-</html>                                           
+</html>
 
 {% endhighlight %}
 
@@ -459,11 +459,11 @@ You can set three different selection modes for highlighting the data points and
     </script>
 </body>
 
-</html>                                           
+</html>
 
 {% endhighlight %}
 
-![](User-Interactions_images/selectionmode.png) 
+![Selection mode in ASP NET pivot chart control](User-Interactions_images/selectionmode.png)
 
 ### Customize the selection styles
 
@@ -491,11 +491,11 @@ To customize the selection styles, use the `border.color`, `border.width`, and `
     </script>
 </body>
 
-</html>                                          
+</html>
 
 {% endhighlight %}
 
-![](User-Interactions_images/customizeselection.png) 
+![Selection style in ASP NET pivot chart control](User-Interactions_images/customizeselection.png)
 
 ### Patterns for selection
 
@@ -542,8 +542,8 @@ The pivot chart provides pattern support for selecting the data by setting an ap
     </script>
 </body>
 
-</html>                                           
+</html>
 
 {% endhighlight %}
 
-![](User-Interactions_images/patternselecion.png) 
+![Selection settings in ASP NET pivot chart control](User-Interactions_images/patternselecion.png)

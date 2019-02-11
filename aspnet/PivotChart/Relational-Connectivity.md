@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Relational Connectivity | PivotChart | ASP.NET | Syncfusion
-description: relational connectivity 
+description: relational connectivity
 platform: aspnet
 control: PivotChart
 documentation: ug
@@ -46,8 +46,8 @@ namespace PivotChartDemo
 **List of dependency libraries**
 
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries could be found in the GAC (Global Assembly Cache).
- 
-To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+
+To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
 
@@ -71,7 +71,7 @@ Following are the list of namespaces to be added on top of the main class in the
 
 using System.ServiceModel.Activation;
 using Syncfusion.JavaScript;
-using Syncfusion.PivotAnalysis.Base; 
+using Syncfusion.PivotAnalysis.Base;
 
 namespace PivotChartDemo
 {
@@ -95,7 +95,7 @@ namespace PivotChartDemo
     public class RelationalService : IRelationalService
     {
         //....
-        //.... 
+        //....
     }
 
     internal class ProductSales
@@ -265,9 +265,9 @@ You can expose the services through the properties such as binding, contract, an
 1. Contract: This property indicates that the contract of the endpoint is exposed. Refer to the `IRelationalService` contract, and it is written as `PivotChartDemo.IRelationalService`.
 2. Binding: In your application, you can use `webHttpBinding` to post and receive requests and responses between the client-end and the service.
 3. behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
- 
+
 The endpointBehaviors are illustrated as follows:
- 
+
 {% highlight xml %}
 
 <system.serviceModel>
@@ -281,7 +281,7 @@ The endpointBehaviors are illustrated as follows:
     </services>
 </system.serviceModel>
 {% endhighlight %}
- 
+
 The endpointBehaviors contain all behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
 
 {% highlight xml %}
@@ -304,5 +304,5 @@ N> In this example, the **“PivotChartDemo”** indicates the name and root nam
 Now, the **pivot chart** will be rendered with amount over a set of products across different customer geographic locations.
 
 
-![](Relational-Connectivity_images/ServerModeWCF.png) 
+![ASP NET pivot chart control with relational wcf service](Relational-Connectivity_images/ServerModeWCF.png)
 

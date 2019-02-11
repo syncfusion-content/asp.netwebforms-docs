@@ -36,12 +36,12 @@ Register the referenced assemblies in the Web.config files available at the root
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
+    <assemblies>
         ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />            
+        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
     </assemblies>
 </compilation>
@@ -57,14 +57,14 @@ Create a GettingStarted.aspx page, and scripts and style sheets that are require
 
 Scripts and style sheets are referred under the <head> tag in the GettingStarted.aspx page.
 
-{% highlight html %}    
+{% highlight html %}
 
 <head>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
-    
-</head>    
+
+</head>
 
 {% endhighlight %}
 
@@ -77,8 +77,8 @@ You can drag and drop the pivot grid control from the toolbox (under Syncfusion 
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-<html> 
-    …… 
+<html>
+    ……
     ……
 
 <body>
@@ -117,12 +117,12 @@ Initializes the OLAP data source for the pivot grid control as shown below:
     </DataSource>
 </ej:PivotGrid>
 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-     
+
 {% endhighlight %}
 
 The above code will generate a simple pivot grid with "Fiscal" field in the row, "Customer Geography" field in the column, and "Internet Sales Amount" field in the value section.
 
-![](Getting-Started_images/OlapClientside.png)
+![ASP NET pivot grid control in OLAP client mode](Getting-Started_images/OlapClientside.png)
 
 
 ## Creating a simple application pivot grid and OLAP data source (server mode)
@@ -182,15 +182,15 @@ Scripts and style sheets are referred under the <head> tag in the **GettingStart
 ### Control initialization
 
 You can drag and drop the **pivot grid** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control as shown in the following code sample of the **"GettingStarted.aspx"** page.
- 
+
 After placing the control in the web page, add the **'ScriptManager'** next to it to generate appropriate scripts.
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %> 
+<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 
-<html> 
-    …… 
+<html>
+    ……
     ……
 
 <body>
@@ -214,8 +214,8 @@ If you enter the code manually instead of drag and drop from the toolbox, then y
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
-        …… 
+    <assemblies>
+        ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -226,11 +226,11 @@ If you enter the code manually instead of drag and drop from the toolbox, then y
         <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-    
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+
     </assemblies>
 </compilation>
-    
+
 {% endhighlight %}
 
 ### WebAPI
@@ -251,7 +251,7 @@ namespace PivotGridDemo
 {
     public class OlapController : ApiController
     {
-        
+
     }
 }
 
@@ -282,7 +282,7 @@ namespace PivotGridDemo
 {
     public class OlapController: ApiController
     {
-    
+
     }
 }
 
@@ -299,7 +299,7 @@ namespace PivotGridDemo
     public class OlapController : ApiController
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
-        static int cultureIDInfoval = 1033; 
+        static int cultureIDInfoval = 1033;
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
@@ -320,7 +320,7 @@ namespace PivotGridDemo
     public class OlapController : ApiController
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
-        static int cultureIDInfoval = 1033; 
+        static int cultureIDInfoval = 1033;
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
@@ -563,7 +563,7 @@ public class Global : System.Web.HttpApplication
 
 Now, the **PivotGrid** will be rendered with internet sales amount over a period of fiscal years across different customer geographic locations.
 
-![](Getting-Started_images/pivotgrid.png) 
+![ASP NET pivot grid control in OLAP server mode](Getting-Started_images/pivotgrid.png)
 
 ### WCF
 
