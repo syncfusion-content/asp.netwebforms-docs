@@ -263,9 +263,9 @@ Now, index value will be return in the DropDownListIndex method by matching the 
 
 Please refer the following links for Sample: [Sample] ( http://www.syncfusion.com/downloads/support/directtrac/166189/ze/SyncfusionDropdown_(3)884590000 )
 
-## MultiColumn and multiple rows items in dropdownlist
+## MultiColumn and multirow items in dropdownlist
 
-The DropDownList `template` property used to load the datasouce like mulitple coloumn and rows. Using css to customized the column and rows in dropdownlist template element. The dropdownlist popup customization shown below code:
+The DropDownList `template` property is used to load data source such as multiple columns and rows. Use CSS to customize the columns and rows in the drop-down-list template element. The drop-down-list pop up customization is shown in the following code.
 
 {% highlight c# %}
 
