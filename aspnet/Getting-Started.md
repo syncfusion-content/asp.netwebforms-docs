@@ -689,6 +689,8 @@ Reference Manager Pop-up with assemblies selected
 Selected Assemblies added to the Project reference
 {:.caption}
 
+N> We have removed dependency for Syncfusion.Core assembly since v13.2.0.29. If you are using the latest version, this assembly is not required in your application. Take a moment to look at the KB [link](https://www.syncfusion.com/kb/5211/why-is-the-syncfusion-core-assembly-missing-from-v13-2-0-29) for more information   
+
 ##### Registering Syncfusion Assemblies within the Web.config
 
 In your application’s web.config file, add the following assembly information within the <assemblies> tag.
