@@ -34,7 +34,7 @@ To show the icon in toolbar panel, we need to set the property `EnableCalculated
 
 {% endhighlight %}
 
-![Calculated member icon in ASP NET pivot client control](Calculated-Members_images/icon.png)
+![Calculated members icon in ASP NET pivot client control](Calculated-Members_images/icon.png)
 
 To insert a new calculated member, open the Calculated Member dialog by clicking the icon available in toolbar panel. We can define following options inside the dialog.
 
@@ -43,7 +43,7 @@ To insert a new calculated member, open the Calculated Member dialog by clicking
     Member Type - To specify the hierarchy of the member set in expression.
     Format String - To set the format for the calculated member.
 
-![Calculated member dialog in ASP NET pivot client control](Calculated-Members_images/dialog.png)
+![Calculated members dialog in ASP NET pivot client control](Calculated-Members_images/dialog.png)
 
 ## Through Code Behind
 

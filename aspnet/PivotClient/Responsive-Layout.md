@@ -30,4 +30,4 @@ The pivot client control supports responsive rendering based on the target devic
 
 {% endhighlight %}
 
-![Responsive layout of ASP NET pivot client control](Responsive-Layout_images/responsive.png)
+![Responsive layout in ASP NET pivot client control](Responsive-Layout_images/responsive.png)

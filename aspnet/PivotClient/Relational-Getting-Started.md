@@ -159,7 +159,7 @@ The JSON data is set to the **"Data"** property present in the **"DataSource"** 
 
 Now, the pivot client is rendered with pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![ASP NET pivot client control rendered with relational client mode](Getting-Started_images/purejs.png)
+![ASP NET pivot client control with relational client mode](Getting-Started_images/purejs.png)
 
 ## Creating a simple application with pivot client and relational data sources(server mode)
 
@@ -686,7 +686,7 @@ public class Global: System.Web.HttpApplication
 
 Now, the **pivot client** is rendered with the pivot chart, and the pivot grid is rendered with "Country" field in the row, "Product" field in the column, and "Amount" field in the value section.
 
-![JQuery pivot client control with relational server mode](Getting-Started_images/relaionalwebapi.png)
+![ASP NET pivot client control with relational server mode](Getting-Started_images/relaionalwebapi.png)
 
 ### WCF
 

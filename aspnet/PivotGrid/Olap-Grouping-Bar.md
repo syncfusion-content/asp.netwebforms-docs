@@ -68,7 +68,7 @@ You can also alter the report by using the context menu.
 
 Search option available in the grouping bar allows you to search a specific value that should be filtered from the list of values in the filter pop-up window.
 
-![Filtering icon in grouping bar of ASP NET pivot grid control](Grouping-Bar_images/OlapFilterIcon.png)
+![Filtering option in grouping bar of ASP NET pivot grid control](Grouping-Bar_images/OlapFilterIcon.png)
 
 ![Searching in member editor dialog of ASP NET pivot grid control](Grouping-Bar_images/olapclientsearching.png)
 

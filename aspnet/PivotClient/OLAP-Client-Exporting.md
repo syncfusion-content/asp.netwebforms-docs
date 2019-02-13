@@ -201,7 +201,7 @@ N> By default PivotChart will be exported as image format to Excel document.
 
 The below screenshot shows the control exported to Excel document showing its own format (Pivoting Chart).
 
-![Excel exporting in ASP NET pivot client control](Exporting_images/Export_ExcelChartClient.png)
+![Exporting format in ASP NET pivot client control](Exporting_images/Export_ExcelChartClient.png)
 
 ## Exporting Customization
 
