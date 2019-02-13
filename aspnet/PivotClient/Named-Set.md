@@ -18,7 +18,7 @@ You can bind the named sets in the pivot client by setting it's unique name in t
 {% highlight html %}
 
 <ej:PivotClient ID="PivotClient1" Title="OLAP Browser" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
         </Rows>

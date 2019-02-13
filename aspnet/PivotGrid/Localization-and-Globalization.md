@@ -1643,7 +1643,7 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 <%--1036 refers to "fr-FR" culture.--%>
         <ej:PivotGrid ID="PivotGrid1" runat="server" Locale="fr-FR">
-            <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;">
+            <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;">
                 <Rows>
                     <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field>
                 </Rows>

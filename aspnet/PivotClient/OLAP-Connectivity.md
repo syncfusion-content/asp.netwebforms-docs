@@ -37,7 +37,7 @@ To connect to an OLAP cube available in the SQL Server Analysis Service in onlin
 
 {% highlight c# %}
 
-string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -163,7 +163,7 @@ namespace PivotClientDemo
         PivotTreeMap treemapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
 
@@ -249,7 +249,7 @@ namespace PivotClientDemo
         PivotTreeMap treemapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
         public Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams)
         {

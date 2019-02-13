@@ -18,7 +18,7 @@ Grouping bar allows you to dynamically alter the report by filter and remove ope
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server" EnableGroupingBar="true">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
         </Rows>

@@ -32,7 +32,7 @@ To connect to an OLAP cube available in SQL Server Analysis Service in online se
 
 {% highlight c# %}
 
-string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
@@ -139,7 +139,7 @@ namespace PivotChartDemo
     public class OlapService : IOlapService
     {
         PivotChart htmlHelper = new PivotChart();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         //Other codes
 
     }
@@ -175,7 +175,7 @@ namespace PivotChartDemo
     public class OlapService : IOlapService
     {
         PivotChart htmlHelper = new PivotChart();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 
         public Dictionary<string, object> InitializeChart(string action, string customObject)
         {

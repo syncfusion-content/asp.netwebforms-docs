@@ -91,7 +91,7 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 //1036 refers to “fr-FR” culture.
     <ej:PivotChart ID="MyPivotChart1" runat="server" IsResponsive="true" Locale="fr-FR" ClientIDMode="Static">
-            <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;">
+            <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;">
                 .....
             </DataSource
             ....

@@ -106,7 +106,7 @@ Initializes the OLAP data source for the pivot chart control as shown below:
 {% highlight html %}
 
 <ej:PivotChart ID="MyPivotChart1" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
         </Rows>
@@ -299,7 +299,7 @@ namespace PivotChartDemo
 {
     public class OlapController : ApiController
     {
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         PivotChart htmlHelper = new PivotChart();
         //Other codes
     }
@@ -317,7 +317,7 @@ namespace PivotChartDemo
 {
     public class OlapController : ApiController
     {
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         PivotChart htmlHelper = new PivotChart();
 
         [System.Web.Http.ActionName("InitializeChart")]

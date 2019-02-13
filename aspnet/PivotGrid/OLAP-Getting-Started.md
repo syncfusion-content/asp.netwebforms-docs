@@ -100,7 +100,7 @@ Initializes the OLAP data source for the pivot grid control as shown below:
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
         </Rows>
@@ -300,7 +300,7 @@ namespace PivotGridDemo
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
         static int cultureIDInfoval = 1033;
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
@@ -321,7 +321,7 @@ namespace PivotGridDemo
     {
         Syncfusion.JavaScript.PivotGrid htmlHelper = new Syncfusion.JavaScript.PivotGrid();
         static int cultureIDInfoval = 1033;
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
 

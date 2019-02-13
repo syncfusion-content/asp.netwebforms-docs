@@ -18,7 +18,7 @@ You can bind the named sets in the pivot grid by setting it's unique name in the
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
         </Rows>

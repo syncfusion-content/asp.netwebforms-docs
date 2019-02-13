@@ -102,7 +102,7 @@ Initializes the OLAP data source for the pivot client control as shown below:
 {% highlight html %}
 
 <ej:PivotClient ID="PivotClient1" Title="OLAP Browser" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
         </Rows>
@@ -306,7 +306,7 @@ namespace PivotClientDemo
         PivotTreeMap treeMapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
 
@@ -329,7 +329,7 @@ namespace PivotClientDemo
         PivotTreeMap treeMapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
 
         [System.Web.Http.ActionName("InitializeClient")]

@@ -649,7 +649,7 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 {% highlight html %}
 
     <%--1036 refers to "fr-FR" culture.--%>
-    <ej:PivotClient ID="PivotClient1" runat="server" Locale="fr-FR"> <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;"> <Rows> <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field> </Rows> <Columns> </Columns> <Values> <ej:Field Axis="Column"> <Measures> <ej:MeasuresItems FieldName="[Measures].[Internet Sales Amount]" /> </Measures> </ej:Field> </Values> </DataSource> </ej:PivotClient>
+    <ej:PivotClient ID="PivotClient1" runat="server" Locale="fr-FR"> <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;"> <Rows> <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field> </Rows> <Columns> </Columns> <Values> <ej:Field Axis="Column"> <Measures> <ej:MeasuresItems FieldName="[Measures].[Internet Sales Amount]" /> </Measures> </ej:Field> </Values> </DataSource> </ej:PivotClient>
 
 {% endhighlight %}
 
