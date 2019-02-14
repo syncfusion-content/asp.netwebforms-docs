@@ -269,68 +269,68 @@ The DropDownList `template` property is used to load data source such as multipl
 
 {% highlight c# %}
 
-protected void Page_Load(object sender, EventArgs e)
-    {
-        List<Data> empl = new List<Data>();
-        empl.Add(new Data { text = "10" });
-        empl.Add(new Data { text = "30" });
-        empl.Add(new Data { text = "101" });
-        empl.Add(new Data { text = "50" });
-        selectColumn.DataSource = empl;
-    }
-public class Data
-    {
-        public string text { get; set; } 
-}
+     protected void Page_Load(object sender, EventArgs e)
+        {
+            List<Data> empl = new List<Data>();
+            empl.Add(new Data { text = "10" });
+            empl.Add(new Data { text = "30" });
+            empl.Add(new Data { text = "101" });
+            empl.Add(new Data { text = "50" });
+            selectColumn.DataSource = empl;
+        }
+        public class Data
+        {
+            public string text { get; set; }
+        }
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:DropDownList ID="selectColumn" runat="server" Template="<span><span class='ddlcolumn'>${text}</span><span class='ddlpages'>pages</span></span>" WatermarkText="Select the column" Width="600px" PopupHeight="500px" PopupWidth="600px" ClientSideOnCreate ="onCreate" ClientSideOnChange="onChange">
-</ej:DropDownList>
+  <ej:DropDownList ID="selectColumn" runat="server" Template="<span><span class='ddlcolumn'>${text}</span><span class='ddlpages'>pages</span></span>" WatermarkText="Select the column" Width="600px" PopupHeight="500px" PopupWidth="600px" ClientSideOnCreate ="onCreate" ClientSideOnChange="onChange">
+  </ej:DropDownList>
 
-<script>
-var ddlobj;
-function onCreate(e) {
+  <script>
+    var ddlobj;
+   function onCreate(e) {
     ddlobj = $("#<%=selectColumn.ClientID%>").data("ejDropDownList");
     var dateSpan = document.createElement('span');
     dateSpan.setAttribute("id", ddlobj._id + "_valueSpan");
     dateSpan.setAttribute("class", "e-valTemp");
     $(dateSpan).insertBefore(ddlobj.element);
-}
-function onChange(e) {
+  }
+ function onChange(e) {
     var page = "<span class='pagevaluetemp'>page</span>"
     ddlobj.wrapper.find('.e-valTemp')[0].innerHTML = e.selectedText + page;
-}
-</script>
-<style>
-.e-ddl-popup div>ul li {
+ }
+ </script>
+ <style>
+ .e-ddl-popup div>ul li {
     display: inline-flex;
     width: 110px;
     padding: 10px 5px 5px 5px;
-}
-.e-ddl-popup div>ul li.e-hover {
+ }
+ .e-ddl-popup div>ul li.e-hover {
     width: 100px;
     padding: 10px 5px 5px 5px;
-}
-.e-valTemp {
+ }
+ .e-valTemp {
     line-height: 28px;
     padding-left: 10px;
     font-weight: 300;
-}
-.pagevaluetemp {
+ }
+ .pagevaluetemp {
     padding: 3px;
-}
-.ddlcolumn {
+ }
+ .ddlcolumn {
     display: block;
     font-weight: 600;
-}
-.ddlpages {
+ }
+ .ddlpages {
     color: darkgray;
-}
-</style>
+ }
+ </style>
 
 {% endhighlight %}
 
-Please refer the following links for Sample: [Sample] ( http://www.syncfusion.com/downloads/support/directtrac/140579/ze/DropDown1353983443 )
+Please refer the  [link](http://www.syncfusion.com/downloads/support/directtrac/140579/ze/DropDown1353983443 ) for Sample
