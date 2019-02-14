@@ -149,6 +149,8 @@ The following output shows the output of menu with Width of "300px" in Desktop m
 
 ![](Responsive-Layout_images/Responsive-img1.png)
 
+Download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Menu-1983113660)
+
 ## Responsive in Mobile or Tablet:
 
 Menu will be displayed  in mobile or Tablet as shown in the below image:
