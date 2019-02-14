@@ -269,19 +269,19 @@ The DropDownList `template` property is used to load data source such as multipl
 
 {% highlight c# %}
 
-     protected void Page_Load(object sender, EventArgs e)
-        {
-            List<Data> empl = new List<Data>();
-            empl.Add(new Data { text = "10" });
-            empl.Add(new Data { text = "30" });
-            empl.Add(new Data { text = "101" });
-            empl.Add(new Data { text = "50" });
-            selectColumn.DataSource = empl;
-        }
-        public class Data
-        {
-            public string text { get; set; }
-        }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        List<Data> empl = new List<Data>();
+        empl.Add(new Data { text = "10" });
+        empl.Add(new Data { text = "30" });
+        empl.Add(new Data { text = "101" });
+        empl.Add(new Data { text = "50" });
+        selectColumn.DataSource = empl;
+    }
+    public class Data
+    {
+        public string text { get; set; }
+    }
 
 {% endhighlight %}
 
@@ -292,17 +292,17 @@ The DropDownList `template` property is used to load data source such as multipl
 
   <script>
     var ddlobj;
-   function onCreate(e) {
-    ddlobj = $("#<%=selectColumn.ClientID%>").data("ejDropDownList");
-    var dateSpan = document.createElement('span');
-    dateSpan.setAttribute("id", ddlobj._id + "_valueSpan");
-    dateSpan.setAttribute("class", "e-valTemp");
-    $(dateSpan).insertBefore(ddlobj.element);
-  }
- function onChange(e) {
-    var page = "<span class='pagevaluetemp'>page</span>"
-    ddlobj.wrapper.find('.e-valTemp')[0].innerHTML = e.selectedText + page;
- }
+    function onCreate(e) {
+        ddlobj = $("#<%=selectColumn.ClientID%>").data("ejDropDownList");
+        var dateSpan = document.createElement('span');
+        dateSpan.setAttribute("id", ddlobj._id + "_valueSpan");
+        dateSpan.setAttribute("class", "e-valTemp");
+        $(dateSpan).insertBefore(ddlobj.element);
+    }
+    function onChange(e) {
+        var page = "<span class='pagevaluetemp'>page</span>"
+        ddlobj.wrapper.find('.e-valTemp')[0].innerHTML = e.selectedText + page;
+    }
  </script>
  <style>
  .e-ddl-popup div>ul li {
