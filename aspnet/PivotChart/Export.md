@@ -520,7 +520,7 @@ For client mode, you should set the file name as parameter to the **“exportPiv
 function exportBtnClick(args)
 {
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
-    chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport", "fileName");
+    chartObj.exportPivotChart("https://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport", "fileName");
 }
 {% endhighlight %}
 

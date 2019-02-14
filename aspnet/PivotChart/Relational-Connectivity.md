@@ -12,7 +12,7 @@ documentation: ug
 ## Binding pivot chart to collection
 This section demonstrates binding a collection to the pivot chart control as a data source. For more information on this data source, refer to the following links:
 
-If you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](http://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode).
+If you are using WebAPI controller, refer to the “Datasource Initialization” section under the following [link](https://help.syncfusion.com/js/pivotchart/relational-getting-started#creating-a-simple-application-with-pivotchart-and-relational-datasource-server-mode).
 
 If you are using WCF Service, refer to the "Datasource Initialization" section below.
 

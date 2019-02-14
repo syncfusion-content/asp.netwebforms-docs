@@ -611,6 +611,6 @@ Now, the **pivot chart** will be rendered with amount over a set of products acr
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotChart/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/aspnet/PivotChart/relational-connectivity#wcf).
 
 

@@ -69,37 +69,37 @@ User-defined hierarchy organizes the members of a dimension into hierarchical st
 <th>Is Draggable</th>
 </tr>
 <tr>
-<td>{{ '![](OLAP-Client-Elements_images/Folder icon.png)' | markdownify }}</td>
+<td>{{ '![Folder icon in ASP NET pivot client control](OLAP-Client-Elements_images/Folder icon.png)' | markdownify }}</td>
 <td>Display Folder</td>
 <td>Display Folder</td>
 <td>False</td>
 </tr>
 <tr>
-<td>{{ '![](OLAP-Client-Elements_images/Measure icon.png)' | markdownify }}</td>
+<td>{{ '![Measure icon in ASP NET pivot client control](OLAP-Client-Elements_images/Measure icon.png)' | markdownify }}</td>
 <td>Measure</td>
 <td>Measure</td>
 <td>True</td>
 </tr>
 <tr>
-<td>{{ '![](OLAP-Client-Elements_images/Dimension icon.png)' | markdownify }}</td>
+<td>{{ '![Dimension icon in ASP NET pivot client control](OLAP-Client-Elements_images/Dimension icon.png)' | markdownify }}</td>
 <td>Dimension</td>
 <td>Dimension</td>
 <td>True</td>
 </tr>
 <tr>
-<td>{{ '![](OLAP-Client-Elements_images/user defined hierarchy.png)' | markdownify }}</td>
+<td>{{ '![User defined hierarchy icon in ASP NET pivot client control](OLAP-Client-Elements_images/user defined hierarchy.png)' | markdownify }}</td>
 <td>User Defined Hierarchy</td>
 <td>Hierarchy</td>
 <td>True</td>
 </tr>
 <tr>
-<td>{{ '![](OLAP-Client-Elements_images/attribute hierarchy.png)' | markdownify }}</td>
+<td>{{ '![Attribute hierarchy in ASP NET pivot client control](OLAP-Client-Elements_images/attribute hierarchy.png)' | markdownify }}</td>
 <td>Attribute Hierarchy</td>
 <td>Hierarchy</td>
 <td>True</td>
 </tr>
 <tr>
-<td>{{ '![](OLAP-Client-Elements_images/first level.png)' | markdownify }}<br/>
+<td>{{ '![First level icon icon in ASP NET pivot client control](OLAP-Client-Elements_images/first level.png)' | markdownify }}<br/>
 {{ '![](OLAP-Client-Elements_images/second level.png)' | markdownify }}<br/>
 {{ '![](OLAP-Client-Elements_images/third level.png)' | markdownify }}</td>
 <td>Levels (in order)</td>
@@ -107,7 +107,7 @@ User-defined hierarchy organizes the members of a dimension into hierarchical st
 <td>True</td>
 </tr>
 <tr>
-<td>{{ '![](OLAP-Client-Elements_images/names set element.png)' | markdownify }}</td>
+<td>{{ '![NamedSet icon in ASP NET pivot client control](OLAP-Client-Elements_images/names set element.png)' | markdownify }}</td>
 <td>Named Set</td>
 <td>Named Set</td>
 <td>True</td>
@@ -188,7 +188,7 @@ The member editor is a dialog that displays the members of the current hierarchy
 
 ![Member editor in ASP NET pivot client control](OLAP-Client-Elements_images/membereditor.png)
 
-The check all and uncheck all option in the dialog allows you to select and unselect entire nodes for filtering. For more details about filtering, [click here](http://help.syncfusion.com/aspnet/pivotclient/olap-data-exploration#filtering-by-member).
+The check all and uncheck all option in the dialog allows you to select and unselect entire nodes for filtering. For more details about filtering, [click here](https://help.syncfusion.com/aspnet/pivotclient/olap-data-exploration#filtering-by-member).
 
 ## Toolbar
 
@@ -320,7 +320,7 @@ Select the required report from the report list. The selected report will be set
 
 ## Pivot grid and pivot chart
 
-The [pivot grid](http://help.syncfusion.com/aspnet/pivotgrid/overview) and [pivot chart](http://help.syncfusion.com/aspnet/pivotchart/overview) controls will be rendered with respect to the operations done at axis element builder.
+The [pivot grid](https://help.syncfusion.com/aspnet/pivotgrid/overview) and [pivot chart](https://help.syncfusion.com/aspnet/pivotchart/overview) controls will be rendered with respect to the operations done at axis element builder.
 
 
 

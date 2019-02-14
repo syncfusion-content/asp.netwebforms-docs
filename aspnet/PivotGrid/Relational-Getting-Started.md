@@ -821,7 +821,7 @@ Now, the **pivot grid** will be rendered with sales amount over a set of product
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as an endpoint binding relational data source to a simple pivot grid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/relational-connectivity#wcf).
+This section demonstrates the utilization of WCF service as an endpoint binding relational data source to a simple pivot grid. For more details on this topic, [click here](https://help.syncfusion.com/aspnet/pivotgrid/relational-connectivity#wcf).
 
 
 

@@ -13,7 +13,7 @@ documentation: ug
 
 This section demonstrates binding a collection to the pivot grid control as data source. For more information on this data source, refer the following links:
 
-If you are using the WebAPI controller, refer the "Datasource Initialization" section under the following [link](http://help.syncfusion.com/aspnet/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
+If you are using the WebAPI controller, refer the "Datasource Initialization" section under the following [link](https://help.syncfusion.com/aspnet/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
 
 If you are using the WCF Service, refer the "Datasource Initialization" section below:
 

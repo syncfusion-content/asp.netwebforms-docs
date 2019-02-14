@@ -65,7 +65,7 @@ The document name can be customized. Following code sample illustrates this proc
     </ej:PivotClient>
 
         function Export(args) {
-            args.url = "http://js.syncfusion.com/demos/ejservices/api/JSPivotClientExport/ExportPivotClient";
+            args.url = "https://js.syncfusion.com/demos/ejservices/api/JSPivotClientExport/ExportPivotClient";
             args.fileName="File name is customized here";
         }
 

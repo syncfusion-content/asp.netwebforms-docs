@@ -65,4 +65,4 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 
 {% endhighlight %}
 
-![](KPI_images/namedset.png)
+![Named set in ASP NET pivot client control](KPI_images/namedset.png)

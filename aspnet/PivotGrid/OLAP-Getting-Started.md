@@ -567,6 +567,6 @@ Now, the **PivotGrid** will be rendered with internet sales amount over a period
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding the OLAP data source to a simple pivot grid. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding the OLAP data source to a simple pivot grid. For more details on this topic, [click here](https://help.syncfusion.com/aspnet/pivotgrid/olap-connectivity#wcf).
 
 

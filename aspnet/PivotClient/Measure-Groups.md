@@ -21,6 +21,6 @@ In Cube Dimension Browser, the tree view can be viewed in a filtered manner thro
 
 By selecting a measure group from the drop-down list, the Cube Dimension Browser tree view displays the related measures and dimensions as follows:
 
-![List of Measure groups in ASP NET pivot client control](Measure-Groups_images/measuregroup.png)
+![Measure group in ASP NET pivot client control](Measure-Groups_images/measuregroup.png)
 
-![Measure Group in ASP NET pivot client control](Measure-Groups_images/measuregroup1.png)
+![Internet sales Measure Group in ASP NET pivot client control](Measure-Groups_images/measuregroup1.png)
