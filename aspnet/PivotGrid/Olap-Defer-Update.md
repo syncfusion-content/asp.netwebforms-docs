@@ -13,7 +13,7 @@ I> This feature is applicable for the OLAP data source only at server mode.
 
 The defer update support allows you to refresh the control only on-demand and not during every UI interaction.
 
-{% highlight html %} 
+{% highlight html %}
 
 <cc1:PivotGrid ID="PivotGrid1" runat=server url="/PivotGridService" ClientIDMode="Static">
     <ClientSideEvents AfterServiceInvoke="OnAfterServiceInvoke" /> </cc1:PivotGrid>
@@ -36,5 +36,5 @@ The defer update support allows you to refresh the control only on-demand and no
 
 {% endhighlight %}
 
-![](Defer-Update_images/Defer-Update_images1.png)
+![Defer update in ASP NET pivot grid OLAP server mode](Defer-Update_images/Defer-Update_images1.png)
 

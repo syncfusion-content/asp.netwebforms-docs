@@ -9,7 +9,7 @@ documentation: ug
 
 # Pivot table field list
 
-## Initialization  
+## Initialization
 
 The field list, also known as Pivot Schema Designer, allows you to add, rearrange, filter, and remove fields to show the data in the pivot grid exactly the way as you desired.
 
@@ -21,6 +21,21 @@ To initialize the pivot table field list, define a "div" tag with an appropriate
 ### Client mode
 
 {% highlight html %}
+
+<%--...--%>
+
+<head runat="server">
+    <style>
+        #PivotGrid1 {
+            height: 600px;
+            width: 50%;
+            overflow: auto;
+            float:left;
+    }
+    </style>
+</head>
+
+<%--...--%>
 
 <ej:PivotGrid ID="PivotGrid1" Url="" runat="server" ClientIDMode="Static">
     <DataSource>
@@ -62,9 +77,9 @@ To initialize the pivot table field list, define a "div" tag with an appropriate
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/RelationalClientside.png)
+![Field list support in ASP NET pivot grid control with client mode](PivotTable-Field-List_images/RelationalClientside.png)
 
-### Server mode 
+### Server mode
 
 {% highlight html %}
 
@@ -90,18 +105,18 @@ To initialize the pivot table field list, define a "div" tag with an appropriate
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/RelationalServerMode.png)
+![Field list support in ASP NET pivot grid control with server mode](PivotTable-Field-List_images/RelationalServerMode.png)
 
 
-## Layout 
+## Layout
 
 The top portion of the layout shows the field or cube items in a categorized way. They can dynamically be added to the report by the drag and drop option or through the simple check box selection.
- 
+
 Item(s) selected will be placed in the row section by default except numeric based item(s) or measures, which will alone be placed in the value section by default.
 
 The bottom portion of the layout is segregated as follows:
 
-* Report filter: Exclusively designed to filter an item(s) placed in this particular position of the layout. 
+* Report filter: Exclusively designed to filter an item(s) placed in this particular position of the layout.
 * Value section: The value label usually displays the numeric value item(s) present in the report.
 * Column section: It is used to display item(s) as column header and values in the pivot grid control.
 * Row section: It is used to display item(s) as row header and values in the pivot grid control.
@@ -112,43 +127,43 @@ The bottom portion of the layout is segregated as follows:
 
 You can alter the report on fly through the drag and drop operation. You can drag any item from the field list and drop into column, row, value, or filter section available at the bottom of the field list.
 
-![](PivotTable-Field-List_images/RelationalDragnDrop.png) 
+![Drag and drop in field list of ASP NET pivot grid control](PivotTable-Field-List_images/RelationalDragnDrop.png)
 
 ### By drag and drop to grid headers
 
 You can drag and drop the elements from the field list to grid headers.
 
-![](PivotTable-Field-List_images/HeaderDrop.png)
+![Drag and drop in grouping bar of ASP NET pivot grid control](PivotTable-Field-List_images/HeaderDrop.png)
 
-![](PivotTable-Field-List_images/HeaderDrop1.png)
+![Drag and drop in grouping bar of ASP NET pivot grid control](PivotTable-Field-List_images/HeaderDrop1.png)
 
-![](PivotTable-Field-List_images/HeaderDrop2.png)
+![Drag and drop in grouping bar of ASP NET pivot grid control](PivotTable-Field-List_images/HeaderDrop2.png)
 
 ### By tree view selection
 
 You can alter the report on fly through the check and uncheck option as an alternate. By default, the fields will be added to the row label when checked.
 
-![](PivotTable-Field-List_images/Relationalchecknuncheck.png) 
+![Filtering in field list of ASP NET pivot grid control](PivotTable-Field-List_images/Relationalchecknuncheck.png)
 
  ### By context menu
- 
+
 You can alter the report by using the context menu.
 
-![](PivotTable-Field-List_images/Pivotbutton_Context.png)
+![Context menu in pivot button of field list](PivotTable-Field-List_images/Pivotbutton_Context.png)
 
-![](PivotTable-Field-List_images/Treeview_Context.png)
+![Context menu in tree view elements of field list](PivotTable-Field-List_images/Treeview_Context.png)
 
 ## Searching values
 Search option available in the field list allows you to search a specific value that should be filtered from the list of values in the filter pop-up window.
 
-![](PivotTable-Field-List_images/RelationalFilterIcon.png)
+![Shows tree drop icon to open member editor dialog in field list](PivotTable-Field-List_images/RelationalFilterIcon.png)
 
-![](PivotTable-Field-List_images/relationaldialogsearch.png)
+![Shows searching in member editor dialog through field list](PivotTable-Field-List_images/relationaldialogsearch.png)
 
 ## Filtering
 Values can be filtered by checking/unchecking the check box beside them in the filter pop-up window. At least, one value should present in the checked state while filtering, or else, the OK button will be disabled.
 
-![](PivotTable-Field-List_images/RelationalFilterIcon.png) 
+![Tree drop icon in field list of ASP NET pivot grid control](PivotTable-Field-List_images/RelationalFilterIcon.png)
 
-![](PivotTable-Field-List_images/RelationalFilterDialog.png) 
+![Filtering in field list of ASP NET pivot grid control](PivotTable-Field-List_images/RelationalFilterDialog.png)
 

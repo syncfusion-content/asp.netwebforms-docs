@@ -35,11 +35,11 @@ I> By default, the JSON export mode will be applied for server and client mode.
             //...
         </DataSource>
     </ej:PivotGrid>
-     
+
     //For PivotGrid in Server Mode.
     <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../OlapService" IsResponsive="true">
     </ej:PivotGrid>
-    
+
     <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
     </ej:Button>
     <script type="text/javascript">
@@ -50,7 +50,7 @@ I> By default, the JSON export mode will be applied for server and client mode.
     </script>
 </body>
 
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -70,7 +70,7 @@ protected void PivotGrid_ServerExcelExporting(object sender, Syncfusion.JavaScri
     string fileName = "Sample";
     pGrid.ExportToExcel(fileName, args["args"].ToString(), HttpContext.Current.Response);
 }
-        
+
 {% endhighlight %}
 
 ### Excel export
@@ -95,8 +95,8 @@ To achieve Excel export, the **"excelExport"** server-side event is triggered an
           pGridObj.exportPivotGrid("excelExport","fileName");
        }
     </script>
-    
-{% endhighlight %}  
+
+{% endhighlight %}
 
 Following server-side event method should be added to the code behind file of the application:
 
@@ -137,8 +137,8 @@ To achieve Word export, the **"wordExport"** server-side event is triggered and 
           pGridObj.exportPivotGrid("wordExport","fileName");
        }
     </script>
-    
-{% endhighlight %}  
+
+{% endhighlight %}
 
 Following server-side event method should be added to the code behind file of the application:
 
@@ -179,8 +179,8 @@ To achieve Word export, the **"pdfExport"** server-side event is triggered and t
           pGridObj.exportPivotGrid("pdfExport","fileName");
        }
     </script>
-    
-{% endhighlight %}  
+
+{% endhighlight %}
 
 Following server-side event method should be added to the code behind file of the application:
 
@@ -222,8 +222,8 @@ To achieve CSV export, the **"csvExport"** server-side event is triggered and th
           pGridObj.exportPivotGrid("csvExport","fileName");
        }
     </script>
-    
-{% endhighlight %}  
+
+{% endhighlight %}
 
 Following server-side event method should be added to the code behind file of the application:
 
@@ -272,7 +272,7 @@ To perform exporting with the use of pivot engine available in server-side, the 
     <ej:PivotGrid ID="PivotGrid1" runat="server" Url="../OLAPService" IsResponsive="true">
         <ClientSideEvents  BeforeExport="Export"/>
     </ej:PivotGrid>
-    
+
     <ej:Button runat="server" ClientSideOnClick="exportBtnClick" Text="Export">
     </ej:Button>
     <script type="text/javascript">
@@ -286,7 +286,7 @@ To perform exporting with the use of pivot engine available in server-side, the 
     </script>
 </body>
 
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -355,7 +355,7 @@ function exportBtnClick(args)
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
 }
 
-{% endhighlight %}  
+{% endhighlight %}
 
 ### Word export
 
@@ -399,7 +399,7 @@ function exportBtnClick(args)
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.PDF);
 }
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ### CSV export
 
@@ -416,7 +416,7 @@ function exportBtnClick(args)
     pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.CSV);
 }
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ### File format selection
 
@@ -452,7 +452,7 @@ N> By default excel document will be exported to ".xls" format using PivotEngine
     </script>
 </body>
 
-</html>                                            
+</html>
 
 {% endhighlight %}
 
@@ -517,7 +517,7 @@ You can add the title and description to the exporting document by using the tit
           var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
           //JSON export
           pGridObj.exportPivotGrid("excelExport","fileName");
-          //PivotEngine Export 
+          //PivotEngine Export
           pGridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
        }
         function Exporting(args) {
@@ -603,7 +603,7 @@ void pGrid_WordExport(object sender, Syncfusion.DocIO.DLS.WordDocument document)
 {
     //You can customize exporting document here.
 }
- 
+
 //Following service method needs to be added in WCF/WebAPI for PivotEngine Export.
 
 [System.Web.Http.ActionName("Export")]
@@ -651,7 +651,7 @@ When paging is enabled, you can export the complete data by enabling the `Enable
 {% highlight html %}
 <html>
 //...
-<body>    
+<body>
     <ej:PivotGrid ID="PivotGrid1" runat="server" EnableCompleteDataExport="true">
     </ej:PivotGrid>
 	//...
@@ -662,16 +662,16 @@ When paging is enabled, you can export the complete data by enabling the `Enable
 
 The below screenshot shows the PivotGrid control exported to Excel document.
 
-![](Exporting_images/ExportOLAPExcel.png)
+![Excel exporting in ASP NET pivot grid control](Exporting_images/ExportOLAPExcel.png)
 
 The following screenshot shows the pivot grid control exported to a Word document.
 
-![](Exporting_images/ExportOLAPWord.png)
+![Word exporting in ASP NET pivot grid control](Exporting_images/ExportOLAPWord.png)
 
 The following screenshot shows the pivot grid control exported to a PDF document:
 
-![](Exporting_images/ExportOLAPPDF.png)
+![PDF exporting in ASP NET pivot grid control](Exporting_images/ExportOLAPPDF.png)
 
 The following screenshot shows the pivot grid control exported to a CSV document:
 
-![](Exporting_images/ExportOLAPCSV.png)
+![CSV exporting in ASP NET pivot grid control](Exporting_images/ExportOLAPCSV.png)

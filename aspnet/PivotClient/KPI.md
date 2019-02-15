@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key-Performance-Indicator-KPI
+title: Key-Performance-Indicator-KPI | PivotClient | ASP.NET | Syncfusion
 description: key performance indicator (KPI)
 platform: aspnet
 control: PivotClient
@@ -27,7 +27,7 @@ To enable KPI option set the property `EnableKPI` to `true`.
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotClient1" EnableKPI="true" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field>
         </Rows>
@@ -45,10 +45,10 @@ To enable KPI option set the property `EnableKPI` to `true`.
         </Values>
     </DataSource>
 </ej:PivotGrid>
-        
+
 {% endhighlight %}
 
-![](KPI_images/clientmode-kpi.png)
+![KPI in ASP NET pivot client with OLAP client mode](KPI_images/clientmode-kpi.png)
 
 ## Server Mode
 
@@ -90,5 +90,5 @@ olapReport.SeriesElements.Add(dimensionElementRow);
 
 {% endhighlight %}
 
-![](KPI_images/KPI.png)
+![KPI in ASP NET pivot client with OLAP server mode](KPI_images/KPI.png)
 

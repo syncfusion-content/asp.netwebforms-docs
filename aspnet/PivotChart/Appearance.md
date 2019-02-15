@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | PivotChart | ASP.NET WebForms | Syncfusion
 description: appearance
 platform: aspnet
 control: PivotChart
@@ -34,14 +34,14 @@ By using the `Theme` property, you can set the desired theme in the pivot chart.
 
 {% highlight html %}
 
-//Using gradient theme
+<%--Using gradient theme--%>
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc"  Theme="GradientLight" ClientIDMode="Static">
   <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
 {% endhighlight %}
 
-![](Appearance_images/themes.png)
+![ASP NET pivot chart control rendered with built-in theme](Appearance_images/themes.png)
 
 ## Pivot chart - area customization
 
@@ -51,14 +51,14 @@ To customize the pivot chart border, use the `Border` property in the pivot char
 
 {% highlight html %}
 
-//Customize the chart border and opacity
+<%--Customize the chart border and opacity--%>
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc"  Border-Width="2" Border-Color="#FF0000" ClientIDMode="Static">
 <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
 {% endhighlight %}
 
-![](Appearance_images/bordercustomize.png)
+![Border customization for ASP NET pivot chart control](Appearance_images/bordercustomize.png)
 
 ### Background customization
 
@@ -67,14 +67,14 @@ The background of the pivot chart control can be customized by using the `Backgr
 {% highlight html %}
 
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
-    //Setting background for Chart area
+    <%--Setting background for Chart area--%>
     <ChartArea Background="skyblue"></ChartArea>
     <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
 {% endhighlight %}
 
-![](Appearance_images/backgroundcutomize.png)
+![Background customization for ASP NET pivot chart control](Appearance_images/backgroundcutomize.png)
 
 ### Grid bands customization
 
@@ -83,7 +83,7 @@ By using the `AlternateGridBand` property of the axis, you can provide different
 {% highlight html %}
 
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
-    //Customizing horizontal grid bands at even position
+    <%--Customizing horizontal grid bands at even position--%>
     <primaryYaxis>
         <AlternateGridBand Even-Fill="#A7A9AB" Even-Opacity="0.1" />
     </primaryYaxis>
@@ -92,7 +92,7 @@ By using the `AlternateGridBand` property of the axis, you can provide different
 
 {% endhighlight %}
 
-![](Appearance_images/gridbands.png)
+![Grid band customization for ASP NET pivot chart control](Appearance_images/gridbands.png)
 
 ### Animation
 
@@ -101,9 +101,9 @@ You can enable the animation by using the `EnableAnimation` property under the `
 {% highlight html %}
 
 <ej:PivotChart ID="MyPivotChart1" runat="server" Url="/RelationalChartService.svc" ClientIDMode="Static">
-    //Enabling animation in series
+    <%--Enabling animation in series--%>
     <CommonSeriesOptions EnableAnimation="True" />
     <Size Width="950px" Height="460px"></Size>
 </ej:PivotChart>
 
-{% endhighlight %}   
+{% endhighlight %}

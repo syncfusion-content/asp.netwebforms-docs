@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Filtering and Soritng | PivotGrid | ASP.NET | Syncfusion
+title: Advanced Filtering and Sorting | PivotGrid | ASP.NET | Syncfusion
 description: advance filtering and sorting
 platform: aspnet
 control: PivotGrid
@@ -13,12 +13,12 @@ It allows you to filter and sort the field members in the pivot grid.
 
 ### Client mode
 
-In client mode, you can enable the Advanced Filtering and Sorting option in the pivot grid by setting the [`EnableAdvancedFilter`] property under the [`DataSource`] to true.
+In client mode, you can enable the Advanced Filtering and Sorting option in the pivot grid by setting the `EnableAdvancedFilter` property under the `DataSource` to true.
 
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" EnableAdvancedFilter ="true" runat="server">
-    //...
+    <%--...--%>
 </ej:PivotGrid>
 
 {% endhighlight %}
@@ -30,32 +30,32 @@ In server mode, you can enable the Advanced Filtering and Sorting option in the 
 {% highlight html %}
 
 <ej:PivotGrid ID=" PivotGrid1" runat="server" EnableAdvancedFilter ="true">
-    //...
+    <%--...--%>
 </ej:PivotGrid>
 
 {% endhighlight %}
 
 ## Sorting
 
-Sorting provides an option to sort the members of a field either in ascending or descending order. 
+Sorting provides an option to sort the members of a field either in ascending or descending order.
 
 I> This feature is not applicable for the OLAP data source bound from the server-side.
 
-![](AdvanceFiltering_images/sorting.png)
+![Sorting options in ASP NET pivot grid control](AdvanceFiltering_images/sorting.png)
 
 ## Label filtering
 
-The label filtering provides an option to filter the members of a field purely based on their caption. 
+The label filtering provides an option to filter the members of a field purely based on their caption.
 
-![](AdvanceFiltering_images/filtering.png)
+![Label filtering options in ASP NET pivot grid control](AdvanceFiltering_images/filtering.png)
 
-![](AdvanceFiltering_images/filtering_dialog.png)
+![Label filter dialog in ASP NET pivot grid control](AdvanceFiltering_images/filtering_dialog.png)
 
 
 ## Value filtering
 
 The value filtering provides an option to filter the members based on total values of the appropriate measure between the members of the level.
 
-![](AdvanceFiltering_images/valuefilter.png)
+![Value filtering options in ASP NET pivot grid control](AdvanceFiltering_images/valuefilter.png)
 
-![](AdvanceFiltering_images/valuefilter_dialog.png)
+![Value filter dialog in ASP NET pivot grid control](AdvanceFiltering_images/valuefilter_dialog.png)

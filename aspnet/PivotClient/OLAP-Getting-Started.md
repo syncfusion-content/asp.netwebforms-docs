@@ -34,12 +34,12 @@ Register the referenced assemblies in Web.config files available at the root of 
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
+    <assemblies>
         ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Pivot, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />            
+        <add assembly="Syncfusion.EJ.Export, Version= {{ site.45esreleaseversion}}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
 
     </assemblies>
 </compilation>
@@ -56,15 +56,15 @@ Scripts and style sheets that are required to render the pivot client control in
 
 Scripts and style sheets are referred under the <head> tag in the GettingStarted.aspx page.
 
-{% highlight html %}    
+{% highlight html %}
 
 <head>
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
-    
-</head>    
+
+</head>
 
 {% endhighlight %}
 
@@ -79,8 +79,8 @@ After placing the control in the web page, add **'ScriptManager'** next to it to
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-<html> 
-    …… 
+<html>
+    ……
     ……
 
 <body>
@@ -102,7 +102,7 @@ Initializes the OLAP data source for the pivot client control as shown below:
 {% highlight html %}
 
 <ej:PivotClient ID="PivotClient1" Title="OLAP Browser" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
         <Rows>
             <ej:Field FieldName="[Date].[Fiscal]"></ej:Field>
         </Rows>
@@ -119,12 +119,12 @@ Initializes the OLAP data source for the pivot client control as shown below:
     </DataSource>
 </ej:PivotClient>
 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-     
+
 {% endhighlight %}
 
 Now, the pivot client is rendered with pivot chart and pivot grid with "Customer Geography" field in the column, "Fiscal" field in the row and "Internet Sales Amount" field in the value section.
 
-![](Getting-Started_images/OlapClientside.png)
+![ASP NET pivot client control with OLAP client mode](Getting-Started_images/OlapClientside.png)
 
 
 ## Creating a simple application pivot client and OLAP data sources (server mode)
@@ -186,14 +186,14 @@ Scripts and style sheets are referred under the <head> tag in the **GettingStart
 ### Control initialization
 
 You can drag and drop the **pivot client** control from the toolbox (under **Syncfusion BI Web** category) or manually define the control as shown in the following code sample of the **"GettingStarted.aspx"** page.
- 
+
 After placing the control in the web page, add **'ScriptManager'** next to it to generate appropriate scripts.
 
 {% highlight html %}
 
-<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %> 
-<html> 
-    …… 
+<%@ Register Assembly="Syncfusion.EJ.Pivot, Version={{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
+<html>
+    ……
     ……
 
 <body>
@@ -217,8 +217,8 @@ If you enter the code manually instead of drag and drop from the toolbox, then y
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
-        …… 
+    <assemblies>
+        ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.EJ.Web, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -230,11 +230,11 @@ If you enter the code manually instead of drag and drop from the toolbox, then y
         <add assembly="Syncfusion.PivotAnalysis.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
         <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" /> 
-    
+        <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+
     </assemblies>
 </compilation>
-    
+
 {% endhighlight %}
 
 ### WebAPI
@@ -255,7 +255,7 @@ namespace PivotClientDemo
 {
     public class OlapController : ApiController
     {
-        
+
     }
 }
 
@@ -286,7 +286,7 @@ namespace PivotClientDemo
 {
     public class OlapController: ApiController
     {
-    
+
     }
 }
 
@@ -306,7 +306,7 @@ namespace PivotClientDemo
         PivotTreeMap treeMapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
 
@@ -329,7 +329,7 @@ namespace PivotClientDemo
         PivotTreeMap treeMapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
 
         [System.Web.Http.ActionName("InitializeClient")]
@@ -618,7 +618,7 @@ namespace PivotClientDemo
             {
                 currentRptName = (row.ItemArray[0] as string).Replace("##" + operationalMode.ToLower() + "#>>#" + analysisMode.ToLower(), "");
                 if (currentRptName.Equals(jsonResult["reportName"].ToString()))
-                {                  
+                {
                     byte[] reportByte = new byte[2 * 1024];
                     reportByte = (row.ItemArray[1] as byte[]);
                     if (operationalMode.ToLower() == "servermode" && analysisMode == "olap")
@@ -740,7 +740,7 @@ public class Global : System.Web.HttpApplication
 
 Now, the **pivot client** is rendered with pivot chart and pivot grid showing customer count over a period of fiscal years.
 
-![](Getting-Started_images/olapwebapi.png) 
+![ASP NET pivot client control with OLAP server mode](Getting-Started_images/olapwebapi.png)
 
 ### WCF
 

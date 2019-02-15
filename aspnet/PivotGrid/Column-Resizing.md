@@ -21,7 +21,7 @@ The property `EnableColumnResizing` adjusts the width of each column based on th
     //...
 </ej:PivotGrid>
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ## Column Width Based on Text
 
@@ -33,6 +33,6 @@ The property `ResizeColumnsToFit` automatically adjusts the width of each column
     //...
 </ej:PivotGrid>
 
-![](Column-Resizing_images/columnresizing.png)
+{% endhighlight %}
 
-{% endhighlight %} 
+![Column resizing in ASP NET pivot grid control](Column-Resizing_images/columnresizing.png)
