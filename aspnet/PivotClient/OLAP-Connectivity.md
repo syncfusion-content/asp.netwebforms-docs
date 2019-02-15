@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OLAP Connectivity | PivotClient | ASP.NET | Syncfusion
-description: olap connectivity 
+description: olap connectivity
 platform: aspnet
 control: PivotClient
 documentation: ug
@@ -26,7 +26,7 @@ To connect to an OLAP cube available in the SQL Server Analysis Service of the l
 
 {% highlight c# %}
 
-string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;"; 
+string connectionString = "Data source=localhost; Initial Catalog=Adventure Works DW;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -37,7 +37,7 @@ To connect to an OLAP cube available in the SQL Server Analysis Service in onlin
 
 {% highlight c# %}
 
-string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"; 
+string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
@@ -48,7 +48,7 @@ To connect to an OLAP cube available in the Mondrian Server through XML/A, the h
 
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
+string connectionString = @"Data Source = https://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
 
@@ -58,7 +58,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% highlight c# %}
 
-string connectionString = @"Data Source = http://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;"; 
+string connectionString = @"Data Source = https://localhost:8080/cva_s/xmla; Initial Catalog = CVAS;";
 OlapDataManager DataManager = new OlapDataManager(connectionString);
 DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.ActivePivot;
 
@@ -95,7 +95,7 @@ namespace PivotClientDemo
 **List of dependency libraries**
 
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
+
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]. And if you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
@@ -163,10 +163,10 @@ namespace PivotClientDemo
         PivotTreeMap treemapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
         //Other codes
-        
+
     }
 }
 
@@ -249,7 +249,7 @@ namespace PivotClientDemo
         PivotTreeMap treemapHelper = new PivotTreeMap();
         PivotChart chartHelper = new PivotChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = "";//Enter appropriate connection string to connect database for saving and loading operation of reports
         public Dictionary<string, object> InitializeClient(string action, string customObject, string clientParams)
         {
@@ -321,7 +321,7 @@ namespace PivotClientDemo
 
         public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport,string clientReports, string headerInfo, string layout)
         {
-            OlapDataManager DataManager = new OlapDataManager(connectionString);             
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
             DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(currentReport));
             DataManager.Reports = pivotClientHelper.DeserializedReports(clientReports);
             return pivotClientHelper.GetJsonData(action, DataManager, cellPosition, headerInfo, layout);
@@ -571,8 +571,8 @@ The endpointBehaviors are illustrated as follows:
 
 {% highlight xml %}
 
-<system.serviceModel> 
-    …… 
+<system.serviceModel>
+    ……
     ……
     <services>
         <service name="PivotClientDemo.OlapService">
@@ -587,11 +587,9 @@ The endpointBehaviors contain all behaviors for an endpoint. You can link each e
 {% highlight xml %}
 
 <system.serviceModel>
-    …… 
     ……
-    <behaviors> 
-        …… 
-        ……
+    ……
+    <behaviors>
         <endpointBehaviors>
             <behavior name="PivotClientDemo.OlapServiceAspNetAjaxBehavior">
                 <enableWebScript /> </behavior>
@@ -605,5 +603,5 @@ N> In this example, the **"PivotClientDemo"** indicates the name and root namesp
 
 Now, the **pivot client** is rendered with pivot chart and pivot grid showing customer count over a period of fiscal years.
 
-![](Getting-Started_images/olapwebapi.png) 
+![ASP NET pivot client control with OLAP server mode](Getting-Started_images/olapwebapi.png)
 

@@ -18,7 +18,7 @@ The pivot grid control supports hyperlink option to link data for each individua
 * **EnableValueCellHyperlink**: Enables hyperlink for a value cell.
 
 Also, hyperlink option provides separate events for row header, column header, and value and summary cells as mentioned below:
- 
+
 * **ColumnHeaderHyperlinkClick**: Returns column header information through the event by clicking the hyperlink.
 * **RowHeaderHyperlinkClick**: Returns row header information through the event by clicking the hyperlink.
 * **SummaryCellHyperlinkClick**: Returns summary cell information through the event by clicking the hyperlink.
@@ -30,7 +30,7 @@ Also, hyperlink option provides separate events for row header, column header, a
 <ej:PivotGrid ID="PivotGrid1" runat="server">
         <HyperlinkSettings EnableColumnHeaderHyperlink="true" EnableValueCellHyperlink="true" EnableRowHeaderHyperlink="true" EnableSummaryCellHyperlink="true" />
         <ClientSideEvents ValueCellHyperlinkClick="CellClickEvent" RowHeaderHyperlinkClick="CellClickEvent" ColumnHeaderHyperlinkClick="CellClickEvent" SummaryCellHyperlinkClick="CellClickEvent" />
-</ej:PivotGrid> 
+</ej:PivotGrid>
 
 <script type="text/javascript">
     CellClickEvent = function (evt) {
@@ -40,7 +40,7 @@ Also, hyperlink option provides separate events for row header, column header, a
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/hyperlink.png)
+![Hyperlink in ASP NET pivot grid control](PivotGrid-Elements_images/hyperlink.png)
 
 ## Selection
 You can select a particular range of value cells from the pivot grid and manipulate/display them. The cell selection is applicable only for value cells and you can enable this functionality by setting the `EnableCellSelection` property to true.
@@ -51,7 +51,7 @@ The **"CellSelection"** event will be triggered as soon as the selection process
 
 <ej:PivotGrid ID="PivotGrid1" runat="server" EnableCellSelection="true" >
     <ClientSideEvents CellSelection="valueCellClick"/>
-</ej:PivotGrid> 
+</ej:PivotGrid>
 
 <script type="text/javascript">
     valueCellClick = function (evt) {
@@ -64,7 +64,7 @@ The **"CellSelection"** event will be triggered as soon as the selection process
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/cellselection.png)
+![Cell selection in ASP NET pivot grid control](PivotGrid-Elements_images/cellselection.png)
 
 ## Cell context
 The cell context allows you to perform any custom operation by right-clicking the cell. For example, you can create and display the context menu by right-clicking the cell.
@@ -75,7 +75,7 @@ The cell context is enabled by setting the `EnableCellContext` property to true.
 
 <ej:PivotGrid ID="PivotGrid1" runat="server" EnableCellContext="true">
     <clientsideevents CellContext="cell_RightClick" />
-</ej:PivotGrid> 
+</ej:PivotGrid>
 
 <script type="text/javascript">
     cell_RightClick = function (evt) {
@@ -107,13 +107,13 @@ The conditional formatting allows you to highlight the particular cells with cer
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/FormatDialog.png)
+![Conditional formatting dialog in ASP NET pivot grid control](PivotGrid-Elements_images/FormatDialog.png)
 
-![](PivotGrid-Elements_images/FormattedGrid.png)
+![ASP NET pivot grid control with conditional formatting](PivotGrid-Elements_images/FormattedGrid.png)
 
 ### Export
 
-You can export the pivot grid with highlighted particular cells along with its formatting styles. 
+You can export the pivot grid with highlighted particular cells along with its formatting styles.
 
 Limitations for Word:
 
@@ -137,5 +137,5 @@ The following border styles are alone supported:
 
 Also, the border size is not supported.
 
-![](PivotGrid-Elements_images/conditional_export.png)
+![Excel exporting with conditional formatting in ASP NET pivot grid control](PivotGrid-Elements_images/conditional_export.png)
 

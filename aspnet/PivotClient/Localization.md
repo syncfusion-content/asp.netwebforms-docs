@@ -304,7 +304,7 @@ Types de graphiques</td></tr>
 <tr>
 <td>Sort</td>
 <td>Trier</td>
-</tr>  
+</tr>
 <tr>
 <td>SelectField</td>
 <td>sélectionnez Champ</td>
@@ -316,7 +316,7 @@ Types de graphiques</td></tr>
 <tr>
 <td>ValueFilterLabel</td>
 <td>Voir les articles pour lesquels</td>
-</tr>    
+</tr>
 <tr>
 <td>LabelFilters</td>
 <td>Filtres d'étiquetage</td>
@@ -332,15 +332,15 @@ Types de graphiques</td></tr>
 <tr>
 <td>EndsWith</td>
 <td>Se termine par</td>
-</tr>     
+</tr>
 <tr>
 <td>NotEndsWith</td>
 <td>Non Se termine par</td>
-</tr>   
+</tr>
 <tr>
 <td>Contains</td>
 <td>Contient</td>
-</tr>    
+</tr>
 <tr>
 <td>NotContains</td>
 <td>Ne contient pas</td>
@@ -356,23 +356,23 @@ Types de graphiques</td></tr>
 <tr>
 <td>Equals</td>
 <td>Équivaut à</td>
-</tr>     
+</tr>
 <tr>
 <td>Top10</td>
 <td>"Top Count"</td>
-</tr>    
+</tr>
 <tr>
 <td>EqualTo</td>
 <td>Égal à</td>
-</tr>     
+</tr>
 <tr>
 <td>NotEquals</td>
 <td>pas equals</td>
-</tr>     
+</tr>
 <tr>
 <td>GreaterThan</td>
 <td>Plus grand que</td>
-</tr>     
+</tr>
 <tr>
 <td>GreaterThanOrEqualTo</td>
 <td>Plus grand ou égal à</td>
@@ -382,7 +382,7 @@ Types de graphiques</td></tr>
 <td>LessThan</td>
 <td>Moins que</td>
 </tr>
-     
+
 <tr>
 <td>LessThanOrEqualTo</td>
 <td>Inférieur ou égal à</td>
@@ -392,7 +392,7 @@ Types de graphiques</td></tr>
 <td>Between</td>
 <td>Entre</td>
 </tr>
-     
+
 <tr>
 <td>NotBetween</td>
 <td>Entre pas</td>
@@ -642,23 +642,23 @@ The content displayed within the pivot client control is obtained from the OLAP 
 
 * To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"Data"** property present in the **"DataSource"**.
 * To bind the globalized content in the pivot client control, set the **"Locale"** property to a specific culture and the specific culture file is referred in the sample.
-   
- 
+
+
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
- 
+
 {% highlight html %}
 
-    //1036 refers to "fr-FR" culture.
-    <ej:PivotClient ID="PivotClient1" runat="server" Locale="fr-FR"> <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;"> <Rows> <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field> </Rows> <Columns> </Columns> <Values> <ej:Field Axis="Column"> <Measures> <ej:MeasuresItems FieldName="[Measures].[Internet Sales Amount]" /> </Measures> </ej:Field> </Values> </DataSource> </ej:PivotClient>
+    <%--1036 refers to "fr-FR" culture.--%>
+    <ej:PivotClient ID="PivotClient1" runat="server" Locale="fr-FR"> <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036;"> <Rows> <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field> </Rows> <Columns> </Columns> <Values> <ej:Field Axis="Column"> <Measures> <ej:MeasuresItems FieldName="[Measures].[Internet Sales Amount]" /> </Measures> </ej:Field> </Values> </DataSource> </ej:PivotClient>
 
 {% endhighlight %}
 
-![](Localization_images/localization.png)
+![Localization and globalization of cube in OLAP client mode](Localization_images/localization.png)
 
 ## Localization and globalization of cube info (server mode)
 
 The content displayed within the pivot client control is obtained from the OLAP cube.
- 
+
 * To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture in the OLAP cube.
 * To bind the globalized content in the pivot client control, set the **"Culture"** and `OverrideDefaultFormatStrings` properties in the OlapDataManager class to a specific culture.
 
@@ -673,17 +673,17 @@ The content displayed within the pivot client control is obtained from the OLAP 
 
 {% endhighlight %}
 
-![](Localization_images/localization-servermode.png)
+![Localization and globalization of cube in OLAP server mode](Localization_images/localization-servermode.png)
 
 
 ## Localization and globalization of relational info (client mode)
 The content displayed within the pivot client control is obtained from the relational data source.
- 
+
 * To get the localized content, the relational data source must have localized headers in them which will be directly applied to pivot client.
 * To globalize the values appeared in the pivot client, set the **"Format"** and **"Locale"** properties accordingly. Also the specific culture file is referred in the sample.
 
-N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".** 
- 
+N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
+
 {% highlight html %}
 
     <ej:PivotClient ID="PivotClient1" runat="server" Locale="fr-FR" ClientIDMode="Static">
@@ -699,14 +699,14 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
             </Values>
         </DataSource>
     </ej:PivotClient>
-    
+
 {% endhighlight %}
 
-![](Localization_images/relational-localization.png)
+![Localization and globalization in ASP NET pivot client with relational cient mode](Localization_images/relational-localization.png)
 
 ## Localization and globalization of relational info (server mode)
 The content displayed within the pivot client control is obtained from the relational data source.
- 
+
 * To get the localized content, the relational data source must have localized headers in them which will be directly applied to the pivot client.
 * **“Format”** settings in PivotComputationInfo class will globalize the values appeared in the pivot client.
 
@@ -721,7 +721,7 @@ The content displayed within the pivot client control is obtained from the relat
 
 {% endhighlight %}
 
-![](Localization_images/relational-localization.png)
+![Localization and globalization in ASP NET pivot client with relational server mode](Localization_images/relational-localization.png)
 
 ## RTL
 
@@ -746,5 +746,5 @@ You can render the pivot client control from right to left by setting the `Enabl
 
 {% endhighlight %}
 
-![](Localization_images/rtl.png) 
+![RTL support in ASP NET pivot client control](Localization_images/rtl.png)
 

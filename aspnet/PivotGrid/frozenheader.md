@@ -14,47 +14,47 @@ Allows you to freeze the header of the grid, so that it will be always visible w
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server">
-    //...
+    <%--...--%>
     <FrozenHeaderSettings EnableFrozenHeaders="true"></FrozenHeaderSettings>
 </ej:PivotGrid>
 
 {% endhighlight %}
 
-![](FrozenHeader_images/row_col_freeze.png)
+![Frozen header, aka Freeze headers support in ASP NET pivot grid control](FrozenHeader_images/row_col_freeze.png)
 
 You can also freeze the row/column headers individually by setting the below properties:
 
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server">
-    //...
-    <FrozenHeaderSettings EnableFrozenRowHeaders="true"></FrozenHeaderSettings> //To Freeze the Row headers
+    <%--...--%>
+    <FrozenHeaderSettings EnableFrozenRowHeaders="true"></FrozenHeaderSettings>  <%--To Freeze the Row headers--%>
 </ej:PivotGrid>
 
 {% endhighlight %}
 
-![](FrozenHeader_images/row_freeze.png)
+![Frozen row headers in ASP NET pivot grid control](FrozenHeader_images/row_freeze.png)
 
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server">
-    //...
-    <FrozenHeaderSettings EnableFrozenColumnHeaders="true"></FrozenHeaderSettings> //To Freeze the Column headers
+    <%--...--%>
+    <FrozenHeaderSettings EnableFrozenColumnHeaders="true"></FrozenHeaderSettings> <%--To Freeze the Column headers--%>
 </ej:PivotGrid>
-    
+
 {% endhighlight %}
 
-![](FrozenHeader_images/col_freeze.png)
+![Frozen column headers in ASP NET pivot grid control](FrozenHeader_images/col_freeze.png)
 
 We can also set the size of the scroller (horizontal and vertical) in PivotGrid by using below property.
 
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server">
-    //...
+    <%--...--%>
     <FrozenHeaderSettings ScrollerSize=18></FrozenHeaderSettings>
 </ej:PivotGrid>
-    
+
 {% endhighlight %}
 
-![](FrozenHeader_images/scroll_size.png)
+![Scroller size in ASP NET pivot grid control](FrozenHeader_images/scroll_size.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Drill Through | PivotGrid | ASP.NET | Syncfusion 
+title:  Drill Through | PivotGrid | ASP.NET | Syncfusion
 description:  drill through
 platform: aspnet
 control: PivotGrid
@@ -9,21 +9,21 @@ documentation: ug
 
 # Drill through
 
-The drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set the [`EnableDrillThrough`] property to true. Raw items are obtained through the [`DrillThrough`] event, using which you can bind them to an external widget for a precise view.
+The drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set the `EnableDrillThrough` property to true. Raw items are obtained through the `DrillThrough` event, using which you can bind them to an external widget for a precise view.
 
 ## OLAP
 
 N> The drill-through is supported in the pivot grid only when you configure and enable the drill-through action at the cube.
 
-![](DrillThrough_images/pivotgrid.png)
+![Drill through support in ASP NET pivot grid control](DrillThrough_images/pivotgrid.png)
 
-By clicking any value cell, the Drill Through Information dialog will be opened. It consists of a grid with data that is associated with the measure values of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions that are associated with this measure are alone displayed in the grid. 
+By clicking any value cell, the Drill Through Information dialog will be opened. It consists of a grid with data that is associated with the measure values of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions that are associated with this measure are alone displayed in the grid.
 
-![](DrillThrough_images/DrillThroughData.png)
+![Drill through data in ASP NET pivot grid control](DrillThrough_images/DrillThroughData.png)
 
 By clicking the Hierarchy Selector that is displayed below the grid, the Hierarchy Selector dialog will be opened. It consists of dimensions that are associated with the measure of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog.
 
-![](DrillThrough_images/hierarchy_selector.png)
+![Hierarchy selector in ASP NET pivot grid control](DrillThrough_images/hierarchy_selector.png)
 
 By dragging and dropping the respective hierarchies and clicking OK, the drill through MDX query will be framed and executed internally, and then it will provide the raw items back through the "drillThrough" event. In this example, the obtained raw items are bounded to the ejGrid widget. Refer the following code sample and screenshot:
 
@@ -32,7 +32,7 @@ By dragging and dropping the respective hierarchies and clicking OK, the drill t
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server" EnableDrillThrough="true" ClientIDMode="Static">
-    //...
+    <%--...--%>
     <ClientSideEvents DrillThrough="drilledData" />
 </ej:PivotGrid>
 
@@ -66,7 +66,7 @@ By dragging and dropping the respective hierarchies and clicking OK, the drill t
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" url="/Olap" runat="server" EnableDrillThrough="true" ClientIDMode="Static">
-    //...
+    <%--...--%>
     <ClientSideEvents DrillThrough="drilledData" />
 </ej:PivotGrid>
 
@@ -111,7 +111,7 @@ For WebAPI controller, the following methods should be added:
 [System.Web.Http.HttpPost]
 public string DrillThroughHierarchies(Dictionary<string, object> jsonResult)
 {
-    OlapDataManager DataManager = new OlapDataManager(connectionString);              
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
     DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
     return htmlHelper.DrillthroughHierarchies(DataManager, jsonResult["layout"].ToString(), jsonResult["cellPos"].ToString());
 }
@@ -123,7 +123,7 @@ public Dictionary<string, object> DrillThroughDataTable(Dictionary<string, objec
     OlapDataManager DataManager = new OlapDataManager(connectionString);
     DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
     return htmlHelper.DrillthroughDataTable(DataManager, jsonResult["layout"].ToString(), jsonResult["cellPos"].ToString(), jsonResult["selector"].ToString());
-}  
+}
 
 {% endhighlight %}
 
@@ -148,33 +148,43 @@ public Dictionary<string, object> DrillThroughDataTable(string currentReport, st
 {% endhighlight %}
 
 
-![](DrillThrough_images/drill_data.png)
+![Drill through data in ASP NET pivot grid OLAP server mode](DrillThrough_images/drill_data.png)
 
 ## Relational
 
-To enable drill-through support, set the [`EnableDrillThrough`] property to true. Raw items are obtained through the [`DrillThrough`] event.
+To enable drill-through support, set the `EnableDrillThrough` property to true. Raw items are obtained through the `DrillThrough` event.
 
 {% highlight html %}
 
 <ej:PivotGrid ID="PivotGrid1" EnableGroupingBar="true" EnableDrillThrough="true" runat="server" ClientIDMode="Static">
-    //...
-   <ClientSideEvents DrillThrough="drillData" />
+    <%--...--%>
+   <ClientSideEvents Load="onLoad" DrillThrough="drillData" />
 </ej:PivotGrid>
 
 <script type="text/javascript">
+    function onLoad(args) {
+        this.model.analysisMode = "pivot";
+    }
+
     function drillData(args) {
     gridData = args.selectedData;
-    var dialogContent = ej.buildTag("div#Grid", {height:"50px"})[0].outerHTML;
+    var dialogContent = ej.buildTag("div#Grid", { })[0].outerHTML;
     ejDialog = ej.buildTag("div#clientDialog.e-clientDialog", dialogContent, { "opacity": "1" }).attr("title", "Drill Through Information")[0].outerHTML;
     $(ejDialog).appendTo("#" + this._id);
-    this.element.find(".e-clientDialog").ejDialog({ width: "70%", height: "100%", content: "#" + this._id, enableResize: false, close: ej.proxy(ej.Pivot.closePreventPanel, this) });
-        
+    this.element.find(".e-clientDialog").ejDialog({ width: "auto", height: "300px", content: "#" + this._id, enableResize: false, close: ej.proxy(ej.Pivot.closePreventPanel, this) });
+
     $("#Grid").ejGrid({
         dataSource: gridData,
-        });
+        allowScrolling: true,
+        scrollSettings: { width: "85%" },
+        allowPaging: true,
+        allowResizing: true,
+        allowResizeToFit: true,
+        pageSettings: {pageSize: 8}
+    });
 }
 </script>
 
 {% endhighlight %}
 
-![](DrillThrough_images/DrillThroughRelational.png)
+![Drill through data in ASP NET pivot grid relational mode](DrillThrough_images/DrillThroughRelational.png)

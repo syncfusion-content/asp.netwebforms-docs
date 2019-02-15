@@ -15,11 +15,11 @@ A layout in summary cells, which are positioned at the bottom of each parent mem
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Layout="Normal"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService.svc" Layout="Normal"></ej:PivotGrid>
 
 {% endhighlight %}
 
-![](Grid-Layout_images/layout-normal.png) 
+![Normal layout in ASP NET pivot grid control](Grid-Layout_images/layout-normal.png)
 
 ## No summaries layout
 
@@ -29,11 +29,11 @@ A layout in summary cells, which are completely hidden and the child members app
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Layout="NoSummaries"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService.svc" Layout="NoSummaries"></ej:PivotGrid>
 
 {% endhighlight %}
 
-![](Grid-Layout_images/layout-nosummary.png) 
+![No summaries layout in ASP NET pivot grid control](Grid-Layout_images/layout-nosummary.png)
 
 
 ## Excel-like layout
@@ -42,13 +42,13 @@ A layout in summary cells, which are positioned besides each parent member and t
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Layout="ExcelLikeLayout"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService.svc" Layout="ExcelLikeLayout"></ej:PivotGrid>
 
 {% endhighlight %}
 
-![](Grid-Layout_images/layout-excel.png) 	
+![Excel like layout in ASP NET pivot grid control](Grid-Layout_images/layout-excel.png)
 
-## Top summary Layout 
+## Top summary Layout
 
 I> This feature is applicable only for the OLAP data source at server mode.
 
@@ -56,9 +56,9 @@ A layout in summary cells, which are positioned at the top of each parent member
 
 {% highlight html %}
 
-<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService" Layout="NormalTopSummary"></ej:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat="server" Url="/PivotGridService.svc" Layout="NormalTopSummary"></ej:PivotGrid>
 
 {% endhighlight %}
 
-![](Grid-Layout_images/layout-top.png)  
+![Top summary layout in ASP NET pivot grid control](Grid-Layout_images/layout-top.png)
 

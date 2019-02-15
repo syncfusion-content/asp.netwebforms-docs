@@ -9,25 +9,25 @@ documentation: ug
 
 # Drill through
 
-I> This feature is applicable only for the OLAP data source.
-
 The drill-through retrieves the raw items that are used to create a specified cell. To enable drill-through support, set the [`EnableDrillThrough`] property to true. Raw items are obtained through the [`DrillThrough`] event, using which you can bind them to an external widget for a precise view.
 
 N> Drill-through is supported in the pivot grid only when you configure and enable the drill-through action at the cube.
 
-![](DrillThrough_images/pivotclient.png)
+![DrillThrough support in ASP NET pivot client control](DrillThrough_images/pivotclient.png)
 
 By clicking any value cell, the Drill Through Information dialog will be opened. It consists of grid with the data that are associated with measure values of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions that are associated with this measure are alone displayed in the grid.
 
-![](DrillThrough_images/DrillThroughData.png)
+![DrillThrough data in ASP NET pivot client control](DrillThrough_images/DrillThroughData.png)
 
-By clicking the Hierarchy Selector button that is displayed below the grid, the Hierarchy Selector dialog will be opened. It consists of dimensions that are associated with the measure of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog. 
+By clicking the Hierarchy Selector button that is displayed below the grid, the Hierarchy Selector dialog will be opened. It consists of dimensions that are associated with the measure of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog.
 
-![](DrillThrough_images/hierarchy_selector.png)
+![Hierarchy selector in ASP NET pivot client control](DrillThrough_images/hierarchy_selector.png)
 
 Drag and drop the respective hierarchies and click OK. The drill through MDX query will be framed and executed internally and provides back the raw items through "DrillThrough" event. In this example, the obtained raw items are bounded to the ejGrid widget. Refer to the following code sample and screenshot:
 
-## Client mode
+## OLAP
+
+### Client mode
 
 {% highlight html %}
 
@@ -61,7 +61,7 @@ Drag and drop the respective hierarchies and click OK. The drill through MDX que
 
 {% endhighlight %}
 
-## Server mode
+### Server mode
 
 {% highlight html %}
 
@@ -111,7 +111,7 @@ For WebAPI controller, the following methods should be added:
 [System.Web.Http.HttpPost]
 public string DrillThroughHierarchies(Dictionary<string, object> jsonResult)
 {
-    OlapDataManager DataManager = new OlapDataManager(connectionString);              
+    OlapDataManager DataManager = new OlapDataManager(connectionString);
     DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
     return pivotClientHelper.DrillthroughHierarchies(DataManager, jsonResult["layout"].ToString(), jsonResult["cellPos"].ToString());
 }
@@ -123,7 +123,7 @@ public Dictionary<string, object> DrillThroughDataTable(Dictionary<string, objec
     OlapDataManager DataManager = new OlapDataManager(connectionString);
     DataManager.SetCurrentReport(OLAPUTILS.Utils.DeserializeOlapReport(jsonResult["currentReport"].ToString()));
     return pivotClientHelper.DrillthroughDataTable(DataManager, jsonResult["layout"].ToString(), jsonResult["cellPos"].ToString(), jsonResult["selector"].ToString());
-}  
+}
 
 {% endhighlight %}
 
@@ -148,4 +148,44 @@ public Dictionary<string, object> DrillThroughDataTable(string currentReport, st
 {% endhighlight %}
 
 
-![](DrillThrough_images/drill_data.png)
+![DrillThrough data in ASP NET pivot client OLAP server mode](DrillThrough_images/drill_data.png)
+
+## Relational
+
+To enable drill-through support, set the `enableDrillThrough` property to true. Raw items are obtained through the `drillThrough` event.
+
+{% highlight html %}
+
+<ej:PivotClient ID=" PivotClient1" Url="/Olap" runat="server" EnableDrillThrough="true" ClientIDMode="Static">
+        //...
+        <ClientSideEvents DrillThrough="drilledData" Load="onLoad" />
+</ej:PivotClient>
+
+<script type="text/javascript">
+
+    function onLoad(args) {
+        this.model.analysisMode = "pivot";
+    }
+
+    function drilledData(args) {
+        gridData = args.selectedData;
+        var dialogContent = ej.buildTag("div#Grid", { })[0].outerHTML;
+        ejDialog = ej.buildTag("div#clientDialog.e-clientDialog", dialogContent, { "opacity": "1" }).attr("title", "Drill Through Information")[0].outerHTML;
+        $(ejDialog).appendTo("#" + this._id);
+        this.element.find(".e-clientDialog").ejDialog({ width: "70%", content: "#" + this._id, enableResize: false, close: ej.proxy(ej.Pivot.closePreventPanel, this) });
+
+        $("#Grid").ejGrid({
+            dataSource: gridData,
+            allowScrolling: true,
+            scrollSettings: { width: "85%" },
+            allowPaging: true,
+            allowResizing: true,
+            allowResizeToFit: true,
+            pageSettings: {pageSize: 8}
+        });
+    }
+</script>
+
+{% endhighlight %}
+
+![DrillThrough data in ASP NET pivot client relational](DrillThrough_images/relational_drilledData.png)

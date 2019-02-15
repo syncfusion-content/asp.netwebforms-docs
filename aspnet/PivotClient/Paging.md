@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging | PivotClient | ASP.NET | Syncfusion 
+title: Paging | PivotClient | ASP.NET | Syncfusion
 description: paging
 platform: aspnet
 control: PivotClient
@@ -13,9 +13,9 @@ I> This feature is applicable only for the OLAP data source.
 
 Paging helps to improve the rendering performance of the pivot client control by dividing the large amount of data into sections and displaying one section at a time.
 
-## Using pager 
+## Using pager
 
-You can enable the pager in the pivot client by setting the [`EnablePaging`] property to true. You can provide the page size and current page details for each axis through [`PagerOptions`] property.
+You can enable the pager in the pivot client by setting the `EnablePaging` property to true. You can provide the page size and current page details for each axis through `PagerOptions` property.
 
 ### Client Mode
 
@@ -23,7 +23,7 @@ You can enable the pager in the pivot client by setting the [`EnablePaging`] pro
 
 <ej:PivotClient ID="PivotClient1" EnablePaging="true" runat="server">
     <DataSource>
-        //...
+        <%--...--%>
         <PagerOptions CategoricalPageSize="5" SeriesPageSize="5" CategoricalCurrentPage="1" SeriesCurrentPage="1" />
     </DataSource>
 </ej:PivotClient>
@@ -34,24 +34,24 @@ You can enable the pager in the pivot client by setting the [`EnablePaging`] pro
 
 {% highlight html %}
 
-<ej:PivotClient ID="PivotClient1" runat="server"  url ="/OlapService" EnablePaging="true"> </ej:PivotClient>
+<ej:PivotClient ID="PivotClient1" runat="server"  url ="/OlapService.svc" EnablePaging="true"> </ej:PivotClient>
 
 {% endhighlight %}
 
 Following are the navigation options available in the pager:
 
 * Move first: Navigates to the first page.
-* Move last: Navigates to the last page. 
+* Move last: Navigates to the last page.
 * Move previous: Navigates to the previous page from the current page.
 * Move next: Navigates to the next page from the current page.
 * Numeric box: Navigates to the desired page by entering an appropriate page number in numeric value.
 
-![](Paging_images/paging.png)
+![Paging in ASP NET pivot client control](Paging_images/paging.png)
 
 
 ## Using virtual scrolling
 
-The virtual scrolling is a technique that allows you to view the pivot client information page by page with the use of vertical and horizontal scrollbar. You can enable the virtual scrolling option in the pivot client by setting the [`EnableVirtualScrolling`] property to true. You can provide the page size and current page details for each axis through the [`PagerOptions`] property. 
+The virtual scrolling is a technique that allows you to view the pivot client information page by page with the use of vertical and horizontal scrollbar. You can enable the virtual scrolling option in the pivot client by setting the `EnableVirtualScrolling` property to true. You can provide the page size and current page details for each axis through the `PagerOptions` property.
 
 ### Client mode
 
@@ -59,10 +59,10 @@ The virtual scrolling is a technique that allows you to view the pivot client in
 
 <ej:PivotClient ID="PivotClient1" EnableVirtualScrolling="true" runat="server">
     <DataSource>
-        //...
+        <%--...--%>
         <PagerOptions CategoricalPageSize="5" SeriesPageSize="5" CategoricalCurrentPage="1" SeriesCurrentPage="1" />
     </DataSource>
-</ej:PivotClient> 
+</ej:PivotClient>
 
 {% endhighlight %}
 
@@ -70,11 +70,11 @@ The virtual scrolling is a technique that allows you to view the pivot client in
 
 {% highlight html %}
 
-<ej:PivotClient ID="PivotClient1" runat="server"  url ="/OlapService" EnableVirtualScrolling="true" > </ej:PivotClient>
+<ej:PivotClient ID="PivotClient1" runat="server"  url ="/OlapService.svc" EnableVirtualScrolling="true" > </ej:PivotClient>
 
 {% endhighlight %}
 
-![](Paging_images/virtual-scrolling.png)
+![Virtual scrolling in ASP NET pivot client control](Paging_images/virtual-scrolling.png)
 
 ## Page settings
 
@@ -91,10 +91,10 @@ For client mode, the page setting for categorical and series axes should be set 
 
 <ej:PivotClient ID="PivotClient1" EnablePaging="true" runat="server">
     <DataSource>
-        //...
+        <%--...--%>
         <PagerOptions CategoricalPageSize="5" SeriesPageSize="5" CategoricalCurrentPage="1" SeriesCurrentPage="1" />
     </DataSource>
-</ej:PivotClient> 
+</ej:PivotClient>
 
 {% endhighlight %}
 

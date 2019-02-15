@@ -33,7 +33,7 @@ Register the referred assemblies in Web.config files available at the root of th
 {% highlight xml %}
 
 <compilation debug="true" targetFramework="4.5">
-    <assemblies> 
+    <assemblies>
         ……
         ……
         <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -54,7 +54,7 @@ The scripts and style sheets that are required to render the pivot chart control
 [Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available in online (CDN link).
 
 Scripts and style sheets are referred under the <head> tag in the **Default.aspx** file.
-    
+
 {% highlight html %}
 
 <head>
@@ -74,7 +74,7 @@ You can drag and drop the **pivot chart** control from the toolbox (under Syncfu
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-<html> 
+<html>
 <head>
 .....
 .....
@@ -95,12 +95,12 @@ You can drag and drop the **pivot chart** control from the toolbox (under Syncfu
 </body>
 
 </html>
-    
- {% endhighlight %}   
+
+ {% endhighlight %}
 
 ### Populate pivot chart with data
 
-This section illustrates how to populate the pivot chart control by using a sample JSON data as shown below: 
+This section illustrates how to populate the pivot chart control by using a sample JSON data as shown below:
 
 {% highlight html %}
 
@@ -126,13 +126,13 @@ This section illustrates how to populate the pivot chart control by using a samp
         </form>
     </body>
 </html>
-    
+
 {% endhighlight %}
 
 The JSON data is set to the **"Data"** property present in the **"DataSource"** object. The **"DataSource"** object allows you to set both data source and fields that should be displayed in the row, column, value, and filter section of the pivot chart control.
-  
+
 {% highlight html %}
-  
+
 <!DOCTYPE html>
 <html>
 
@@ -169,19 +169,19 @@ The JSON data is set to the **"Data"** property present in the **"DataSource"** 
         </form>
     </body>
 </html>
-    
+
 {% endhighlight %}
 
 Now, the **pivot chart** will be rendered with amount over a set of products across different customer geographic locations.
 
-![](Relational-Getting-Started_images/PopulatePivotChartWithData.png) 
+![ASP NET pivot chart control with relational client mode](Relational-Getting-Started_images/PopulatePivotChartWithData.png)
 
 ### Apply sorting
 
 You can sort a field to ascending or descending order by using the `SortOrder` property. Sorting is applicable only for the row and column fields.
 
 N> By default, fields are arranged in ascending order.
- 
+
 {% highlight html %}
 
 <ej:PivotChart ID="MyPivotChart1" runat="server" ClientIDMode="Static">
@@ -200,10 +200,10 @@ N> By default, fields are arranged in ascending order.
 <Size Width="100%" Height="460px"></Size>
 </ej:PivotChart>
 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
- 
+
 {% endhighlight %}
 
-![](Relational-Getting-Started_images/ApplySorting.png) 
+![Sorting support in ASP NET pivot chart control](Relational-Getting-Started_images/ApplySorting.png)
 
 ### Apply filtering
 
@@ -251,7 +251,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-![](Relational-Getting-Started_images/ApplyFiltering.png) 
+![Filtering support in ASP NET pivot chart control](Relational-Getting-Started_images/ApplyFiltering.png)
 
 ## Creating a simple application with pivot chart and relational data sources (server mode)
 
@@ -285,8 +285,8 @@ Register the referred assemblies in Web.config files available at the root of th
 
 {% highlight xml %}
 
-<compilation debug="true" targetFramework="4.5.1">
-    <assemblies> 
+<compilation debug="true" targetFramework="4.5">
+    <assemblies>
         ……
         ……
     <add assembly="Syncfusion.EJ, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -300,10 +300,10 @@ Register the referred assemblies in Web.config files available at the root of th
     <add assembly="Syncfusion.Pdf.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <add assembly="Syncfusion.XlsIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <add assembly="Syncfusion.DocIO.Base, Version= {{ site.45esreleaseversion }}, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-    
+
     </assemblies>
 </compilation>
-    
+
 {% endhighlight %}
 
 
@@ -318,7 +318,7 @@ The scripts and style sheets that are required to render the pivot chart control
 [Click here](http://help.syncfusion.com/js/cdn) here to know more about scripts and style sheets available in online (CDN link).
 
 Scripts and style sheets are referred under the <head> tag in the **Default.aspx** file.
-    
+
 {% highlight html %}
 
 <head>
@@ -337,7 +337,7 @@ You can drag and drop the **pivot chart** control from the toolbox (under Syncfu
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Web" TagPrefix="ej" %>
 <%@ Register Assembly="Syncfusion.EJ.Pivot" Namespace="Syncfusion.JavaScript.Models" TagPrefix="ej" %>
 
-<html> 
+<html>
 <head>
 .....
 .....
@@ -384,7 +384,7 @@ namespace PivotChartDemo
 {
     public class RelationalController: ApiController
     {
-    
+
     }
 }
 
@@ -397,7 +397,7 @@ The following are the list of namespaces to be added on top of the main class in
 {% highlight c# %}
 
 using Syncfusion.JavaScript;
-using Syncfusion.PivotAnalysis.Base; 
+using Syncfusion.PivotAnalysis.Base;
 
 namespace PivotChartDemo
 {
@@ -586,7 +586,7 @@ namespace PivotChartDemo {
 **Configure routing in global application class**
 
 To add a Global.asax in your existing web application, right-click the project in the solution explorer and select **Add > New** item. In the **Add New Item** window, select **Global Application** class and name it **“Global.asax”**, and then click **Add.**
- 
+
 After adding the **Global.asax** file, delete all methods in the **Global** class and add the namespace **“using System.Web.Http;”**, and then configure the routing as shown in the following code example.
 
 {% highlight c# %}
@@ -607,10 +607,10 @@ public class Global : System.Web.HttpApplication
 
 Now, the **pivot chart** will be rendered with amount over a set of products across different customer geographic locations.
 
-![](Relational-Getting-Started_images/ServerMode.png) 
+![ASP NET pivot chart control in relational server mode](Relational-Getting-Started_images/ServerMode.png)
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/PivotChart/relational-connectivity#wcf-1).
+This section demonstrates the utilization of WCF service as endpoint binding the relational data source to a simple pivot chart. For more details on this topic, [click here](https://help.syncfusion.com/aspnet/PivotChart/relational-connectivity#wcf).
 
 

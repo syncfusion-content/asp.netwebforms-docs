@@ -45,5 +45,5 @@ Allows you to specify the required summary type to be used in the summary cells 
 
 {% endhighlight %}
 
-![](Getting-Started_images/purejssummarytype.png)
+![Summary types in ASP NET pivot grid control](Getting-Started_images/purejssummarytype.png)
 

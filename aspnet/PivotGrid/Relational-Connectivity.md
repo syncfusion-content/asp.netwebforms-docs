@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Relational Connectivity | PivotGrid | ASP.NET | Syncfusion
-description: relational connectivity 
+description: relational connectivity
 platform: aspnet
 control: PivotGrid
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 This section demonstrates binding a collection to the pivot grid control as data source. For more information on this data source, refer the following links:
 
-If you are using the WebAPI controller, refer the "Datasource Initialization" section under the following [link](http://help.syncfusion.com/aspnet/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
+If you are using the WebAPI controller, refer the "Datasource Initialization" section under the following [link](https://help.syncfusion.com/aspnet/pivotgrid/relational-getting-started#creating-a-simple-application-with-pivotgrid-and-relational-datasource-server-mode).
 
 If you are using the WCF Service, refer the "Datasource Initialization" section below:
 
@@ -48,7 +48,7 @@ namespace PivotGridDemo
 **List of dependency libraries**
 
 Next, you can add the below-mentioned dependency libraries to your web application. These libraries can be found in the GAC (Global Assembly Cache).
- 
+
 To add them to your web application, right-click **References** in the solution explorer and select **Add Reference**. In the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found.
 
 N> If you have installed any version of Essential Studio, then the location of Syncfusion libraries is [system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies].
@@ -109,7 +109,7 @@ namespace PivotGridDemo
     public class RelationalService : IRelationalService
     {
     ……
-    …… 
+    ……
     }
 
     internal class ProductSales
@@ -269,8 +269,6 @@ namespace PivotGridDemo
         PivotGrid htmlHelper = new PivotGrid();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         Dictionary<string, object> dict = new Dictionary<string, object>();
-        static int cultureIDInfoval = 1033;
-        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
         string conStringforDB = ""; //Enter appropriate connection string to connect database for saving and loading operation of reports
 
         public Dictionary<string, object> InitializeGrid(string action)
@@ -482,6 +480,6 @@ N> In this example, the **"PivotGridDemo"** indicates the name and root namespac
 
 Now, **pivot grid** will be rendered with sales amount over a set of products across different customer geographic locations.
 
-![](Getting-Started_images/relational.png)
+![ASP NET pivot grid control with relational server mode](Getting-Started_images/relational.png)
 
 

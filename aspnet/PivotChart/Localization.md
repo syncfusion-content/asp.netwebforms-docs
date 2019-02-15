@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization  | PivotChart | ASP.NET | Syncfusion
-description: localization 
+description: localization
 platform: aspnet
 control: PivotChart
 documentation: ug
@@ -84,14 +84,14 @@ The content displayed within the pivot chart control is obtained from the OLAP c
 
 * To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture of the **"Data"** property present in the **"DataSource"**.
 * To bind the globalized content in the pivot chart control, set the **"Locale"** property to a specific culture and refer to the specific culture file in the sample.
- 
+
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
- 
+
 {% highlight html %}
 
 //1036 refers to “fr-FR” culture.
     <ej:PivotChart ID="MyPivotChart1" runat="server" IsResponsive="true" Locale="fr-FR" ClientIDMode="Static">
-            <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;">
+            <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll;Locale Identifier=1036;">
                 .....
             </DataSource
             ....
@@ -105,10 +105,10 @@ The content displayed within the pivot chart control is obtained from the OLAP c
 
 * To get the localized string based on different cultures, set the **"Locale Identifier"** in the connection string to a specific culture of the OLAP cube.
 * To bind the globalized content in pivot grid control, set the **"Culture"** and **"OverrideDefaultFormatStrings"** properties in the OlapDataManager class to a specific culture.
- 
+
  {% highlight c# %}
 
-//1036 refers to “fr-FR” culture.
+<%--1036 refers to “fr-FR” culture.--%>
 string connectionString = "Data Source=localhost; Initial Catalog=Adventure Works DW; Locale Identifier=1036;";
 DataManager = new OlapDataManager(connectionString);
 DataManager.Culture = new System.Globalization.CultureInfo(1036);
@@ -116,4 +116,4 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 {% endhighlight %}
 
-![](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png) 
+![Localization support in ASP NET pivot chart control](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png)

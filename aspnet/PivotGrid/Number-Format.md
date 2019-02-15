@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number format  | PivotGrid | ASP.NET | Syncfusion
-description: number format 
+description: number format
 platform: aspnet
 control: PivotGrid
 documentation: ug
@@ -54,15 +54,17 @@ Allows you to specify the required number format which is to be used in values o
 
 {% endhighlight %}
 
-![](Number-Format_images/RelationalClient.png)
+![Number formatting in ASP NET pivot grid relational client mode](Number-Format_images/RelationalClient.png)
 
 ### Server mode
 
  You can set the number format through the `Format` property. You should specify the format to the property as per the MS standard notation.
- 
+
+{% highlight C# %}
+
 private PivotReport BindDefaultData()
     {
-        
+
         PivotReport pivotSetting = new PivotReport();
         pivotSetting.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldHeader = "Product", TotalHeader = "Total" });
         pivotSetting.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total" });
@@ -71,7 +73,9 @@ private PivotReport BindDefaultData()
         return pivotSetting;
     }
 
-![](Number-Format_images/RelationalServer.png)
+{% endhighlight %}
+
+![Number formatting in ASP NET pivot grid relational server mode](Number-Format_images/RelationalServer.png)
 
 ## OLAP
 
@@ -80,7 +84,7 @@ private PivotReport BindDefaultData()
 {% highlight js %}
 
 <ej:PivotGrid ID="PivotGrid1" runat="server">
-    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="http://bi.syncfusion.com/olap/msmdpump.dll">
+    <DataSource Catalog="Adventure Works DW 2008 SE" Cube="Adventure Works" Data="https://bi.syncfusion.com/olap/msmdpump.dll">
       <Rows>
         <ej:Field FieldName="[Customer].[Customer Geography]"></ej:Field>
       </Rows>
@@ -103,17 +107,19 @@ private PivotReport BindDefaultData()
 
 {% endhighlight %}
 
-![](Number-Format_images/OlapClient.png)
+![Number formatting in ASP NET pivot grid OLAP client mode](Number-Format_images/OlapClient.png)
 
 ### Server mode
 
- The OLAP server mode supports the following number formats in addition to the above mentioned formats: 
+ The OLAP server mode supports the following number formats in addition to the above mentioned formats:
 * General
 * RoundTrip
 * FixedPoint
 * HexaDecimal
 
 N> You can set the number format through the `Format` property.
+
+{% highlight C# %}
 
 private OlapReport CreateOlapReport()
 {
@@ -138,4 +144,6 @@ private OlapReport CreateOlapReport()
      return olapReport;
 }
 
-![](Number-Format_images/OlapServer.png)
+{% endhighlight %}
+
+![Number formatting in ASP NET pivot grid OLAP server mode](Number-Format_images/OlapServer.png)

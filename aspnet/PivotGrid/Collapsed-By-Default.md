@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Collapse by default | PivotGrid | ASP.NET | Syncfusion 
+title:  Collapse by default | PivotGrid | ASP.NET | Syncfusion
 description: Collapse by default
 platform: aspnet
 control: PivotGrid
@@ -21,5 +21,5 @@ Allows you to collapse all members that are displayed in the grid. You can enabl
 {% endhighlight %}
 
 
-![](Collapse-By-Default_images/Collapse-Members.png)
+![Collapse by default layout in ASP NET pivot grid control](Collapse-By-Default_images/Collapse-Members.png)
 

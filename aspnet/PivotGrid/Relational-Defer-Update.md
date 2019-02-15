@@ -15,10 +15,10 @@ The defer update support allows you to refresh the control only on-demand and no
 
 {% highlight html %}
 
-<cc1:PivotGrid ID="PivotGrid1" runat=server url="/RelationalService" ClientIDMode="Static" >
-    <ClientSideEvents AfterServiceInvoke="OnAfterServiceInvoke" /> </cc1:PivotGrid>
+<ej:PivotGrid ID="PivotGrid1" runat=server url="/RelationalService.svc" ClientIDMode="Static" >
+    <ClientSideEvents AfterServiceInvoke="OnAfterServiceInvoke" /> </ej:PivotGrid>
 
-<cc1:PivotSchemaDesigner ID="PivotSchemaDesigner" runat=server></cc1:PivotSchemaDesigner>
+<ej:PivotSchemaDesigner ID="PivotSchemaDesigner" runat=server></ej:PivotSchemaDesigner>
 
 <script type="text/javascript">
     OnAfterServiceInvoke = function(evt) {
@@ -36,5 +36,5 @@ The defer update support allows you to refresh the control only on-demand and no
 
 {% endhighlight %}
 
-![](Defer-Update_images/RelationalDeferUpdate.png)
+![Defer update support in ASP NET pivot grid control](Defer-Update_images/RelationalDeferUpdate.png)
 
