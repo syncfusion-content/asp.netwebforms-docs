@@ -11,7 +11,7 @@ documentation: ug
 
 I> This feature is applicable for Relational datasource alone (in Client Mode).
 
-Allows the user to categorize the date type field and showcase them based on year, quarter, month and day formats.  
+Allows the user to categorize the date type field and showcase them based on year, quarter, month and day formats.
 
 {% highlight html %}
 
@@ -23,7 +23,7 @@ Allows the user to categorize the date type field and showcase them based on yea
         </Columns>
     </DataSource>
 </ej:PivotGrid>
-   
+
 {% endhighlight %}
 
 The type of date fields are given in the GettingStarted.aspx.cs as shown in the below snippet.
@@ -31,7 +31,7 @@ The type of date fields are given in the GettingStarted.aspx.cs as shown in the 
 {% highlight c# %}
 
 protected void Page_Load(object sender, EventArgs e)
-{    
+{
     this.PivotGrid1.Model.DataSource.Columns[0].GroupByDate.Interval = new List<string>() { "yyyy", "qqq", "MMMM", "dd-MMM" };
 }
 
@@ -39,9 +39,9 @@ protected void Page_Load(object sender, EventArgs e)
 
 The properties associated with group by date option is,
 
-* Format - To set the data type format. 
+* Format - To set the data type format.
 * FormatString - Specifies the structure of the date format.
 * Delimiter - Specifies the separator of the date values.
 * GroupByDate.Interval - Specifies the pattern in which date type to be displayed.
 
-![](GroupByDate_images/group_by_date.png)
+![Group by date support in ASP NET pivot grid control](GroupByDate_images/group_by_date.png)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Value sorting
 
-I> This feature is applicable for the relational data source only at client mode.
+I> This feature is applicable only for the relational data source.
 
 The value sorting allows you to sort the columns and rows based on value fields.
 
@@ -17,7 +17,7 @@ The headers of the column to be sorted is given in the `HeaderText` property und
 Also you can sort column by clicking the column header. On clicking the same header once again will reverse the sorting direction.
 
 {% highlight js %}
-  
+
 <ej:PivotGrid ID="PivotGrid1" runat="server" ClientIDMode="Static">
     <DataSource>
         <Rows>
@@ -36,9 +36,9 @@ Also you can sort column by clicking the column header. On clicking the same hea
 
 {% endhighlight %}
 
-![](Value-Sorting_images/Before.png) 
+![ASP NET pivot grid control before applying value sorting](Value-Sorting_images/Before.png)
 
-![](Value-Sorting_images/After.png) 
+![ASP NET pivt grid control after applying value sorting](Value-Sorting_images/After.png)
 
 
 
