@@ -18,7 +18,7 @@ This section encompasses the details on how to configure the RangeNavigator and 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 RangeNavigator
-{:.caption} 
+{:.caption}
 
 ### Create a simple ASP.NET Application for RangeNavigator
 
@@ -28,8 +28,8 @@ You can create a new ASP.NET RangeNavigator using Syncfusion ASP.NET website tem
 
    ![](Getting-Started_images/Getting-Started_img2.png)
    New Web site dialog box
-   {:.caption} 
-   
+   {:.caption}
+
 2. On the upper-right corner, select .NET Framework 4.5.
 
 3. In the Installed Templates pane, expand either Visual Basic or Visual C# and then click Web.
@@ -46,46 +46,46 @@ You can create a new ASP.NET RangeNavigator using Syncfusion ASP.NET website tem
 
 9. Configure web.config files for assemblies
 
-   * The following assemblies references are added properly in web.config file.  
+   * The following assemblies references are added properly in web.config file.
 
-   ~~~ html	
-	
+   ~~~ html
+
 		<compilation debug="true" targetFramework="4.5">
-		
+
 			<assemblies>
-			
+
 				<add assembly="Syncfusion.EJ.Web, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89"/>
-				
+
 				<add assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89"/>
-				
+
 			</assemblies>
-			
-		</compilation>	
-		
+
+		</compilation>
+
 		<httpRuntime targetFramework="4.5" />
-		
-		<pages> 
-		
+
+		<pages>
+
 			<controls>
-			
+
 				<add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ.Web, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
-				
+
 				<add namespace="Syncfusion.JavaScript.Web" assembly="Syncfusion.EJ, Version=12.2450.0.36, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" tagPrefix="ej"/>
-				
+
 				<add  namespace="Syncfusion.JavaScript.DataVisualization.Models" assembly="Syncfusion.EJ" tagPrefix="ej"/>
-				
+
 			</controls>
-			
-		</pages>	
-		
+
+		</pages>
+
    ~~~
 
 10.Syncfusion .CSS  and Script files are added in Content and Script folder
-    
+
    ![](Getting-Started_images/Getting-Started_img3.png)
 
 11.ASP Script Manager, Syncfusion CSS and Scripts file references are added from the respective folder in Site.Master page.
-    
+
    ![](Getting-Started_images/Getting-Started_img4.png)
 
 12.Syncfusion EJ and EJ.Web assembly added in website property page
@@ -111,11 +111,11 @@ The following Screen shot displays the RangeNavigator with a range from 2010 Jan
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 RangeNavigator with a range from 2010 January 1st to December 31st.
-{:.caption} 
+{:.caption}
 
 ### Add series
 
-To add a series to RangeNavigator, you need to set `DataSource` property, as given in the following code example. 
+To add a series to RangeNavigator, you need to set `DataSource` property, as given in the following code example.
 
 You can add JSON data to the Range Navigator using the Datasource property.
 
@@ -142,6 +142,8 @@ dataTable.Add(new NavigatorData(new DateTime(2011, 12, 31), 15));
 this.RangeNavigator1.DataSource = dataTable;
 
 this.RangeNavigator1.DataBind();
+
+[Serializable]
 
 class NavigatorData
 
@@ -195,12 +197,12 @@ class NavigatorData
 In Default.ASPX specify the type of series you want to render using “Type” property. And specify the Datasource to the series of RangeNavigator.
 
 {% highlight html %}
-<ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">        
+<ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">
 
     </ej:RangeNavigator>
 {% endhighlight %}
 
-The following screenshot displays the RangeNavigator with the type series as “line”. 
+The following screenshot displays the RangeNavigator with the type series as “line”.
 
 ![](Getting-Started_images/Getting-Started_img9.png)
 RangeNavigator with the type series as “line”.
@@ -213,7 +215,7 @@ Tooltip can be customized for RangeNavigator using `TooltipSettings` option. You
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue">
 
-<TooltipSettings Visible="true" LabelFormat="MMM/yyyy" TooltipDisplayMode="always"></TooltipSettings>        
+<TooltipSettings Visible="true" LabelFormat="MMM/yyyy" TooltipDisplayMode="always"></TooltipSettings>
 
 </ej:RangeNavigator>
 {% endhighlight %}
@@ -226,9 +228,9 @@ label format Tooltip in RangeNavigator
 
 ### Update Chart
 
-RangeNavigator is used along with the controls like chart and grid to view the range of data selected in RangeNavigator. 
+RangeNavigator is used along with the controls like chart and grid to view the range of data selected in RangeNavigator.
 
-In order to update chart, whenever the selected range changes in RangeNavigator, you need to use RangeChanged event of RangeNavigator and then update the chart with the selected data in this event. 
+In order to update chart, whenever the selected range changes in RangeNavigator, you need to use RangeChanged event of RangeNavigator and then update the chart with the selected data in this event.
 
 Now, add the DataSource to the series and provide the field name to get the values from the DataSource in `XName` and `YName` options and also trigger the RangeChanged event for updating the chart.
 
@@ -277,9 +279,9 @@ this.RangeNavigator1.DataBind();
 
         <ej:Series Name="Product A" Type="Line" XName="xDate" YName="yValue"></ej:Series>
 
-       </Series>     
+       </Series>
 
-</ej:Chart> 
+</ej:Chart>
 
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" XName="xDate" YName="yValue" onClientSideRangeChanged="onRangeChanged">
 
@@ -318,11 +320,11 @@ RangeNavigator is updated when the selected range is changed.
 
 ### Set value type
 
-RangeNavigator can also be used with numerical values. You can specify the data type using `ValueType` option. 
+RangeNavigator can also be used with numerical values. You can specify the data type using `ValueType` option.
 
-First let’s create a DataSource for Chart Series with integer Values. 
+First let’s create a DataSource for Chart Series with integer Values.
 
-{% highlight c# %} 
+{% highlight c# %}
 List < NavigatorData > dataTable = new List < NavigatorData > ();
 
 dataTable.Add(new NavigatorData(0, 10));
@@ -391,8 +393,8 @@ class NavigatorData
 
 }
 {% endhighlight %}
-		
-In Default.ASPX specify the DataSource to the series and provide the field name to get the values from the DataSource in XName and YName options series and also set the ValueType property to “numeric” as given in the following code example. 
+
+In Default.ASPX specify the DataSource to the series and provide the field name to get the values from the DataSource in XName and YName options series and also set the ValueType property to “numeric” as given in the following code example.
 
 {% highlight html %}
 <ej:RangeNavigator ID="RangeNavigator1" runat="server" ValueType="numeric">
@@ -403,12 +405,12 @@ In Default.ASPX specify the DataSource to the series and provide the field name 
 
     </Series>
 
-</ej:RangeNavigator>   
+</ej:RangeNavigator>
 {% endhighlight %}
 
 The following screenshot displays the RangeNavigator with numerical values:
 
-![](Getting-Started_images/Getting-Started_img12.png) 
+![](Getting-Started_images/Getting-Started_img12.png)
 
 RangeNavigator with numerical values
 {:.caption}
