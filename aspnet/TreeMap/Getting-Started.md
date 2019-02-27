@@ -83,6 +83,7 @@ TreeMap/ TreeMap.aspx.cs
 
 {% highlight C# %}
 
+[Serializable]
 public class TreeMapPopulationData
 
 {
@@ -149,7 +150,7 @@ N> Population data is referred from [List of continents by population](http://en
 
          <head>
 
-            <title> Getting Started with Maps </title>    
+            <title> Getting Started with Maps </title>
 
                     <!--  jquery script  -->
 
@@ -165,7 +166,7 @@ N> Population data is referred from [List of continents by population](http://en
 
                    <!-- JS Render widget -->
 
-                   <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>   
+                   <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js" type="text/javascript"></script>
 
 
 
@@ -173,7 +174,7 @@ N> Population data is referred from [List of continents by population](http://en
 
           <body>
           </body>
-       
+
        </html>
 
    ~~~
@@ -183,16 +184,16 @@ N> Population data is referred from [List of continents by population](http://en
 
    ~~~ html
 
-		<html>   
+		<html>
 
-			  <body> 
+			  <body>
 
 					<div style="min-height:404px">
 
-				    </div> 
+				    </div>
 
 
-			  </body>      
+			  </body>
 
 		</html>
 
@@ -203,24 +204,24 @@ N> Population data is referred from [List of continents by population](http://en
 
    ~~~ html
 
-		<html>   
+		<html>
 
-			  <body> 
+			  <body>
 
 				 <div style="min-height:404px">
 
 
 
-					 <ej:Treemap ID="treemap" runat="server">     
+					 <ej:Treemap ID="treemap" runat="server">
 
 						</ej:Treemap>
 
 
 
-				  </div> 
+				  </div>
 
 
-			  </body>      
+			  </body>
 
 		</html>
 
@@ -237,7 +238,7 @@ N> Population data is referred from [List of continents by population](http://en
 
 
 
-            this.treemap.DataSource = TreeMapPopulationData.GetData();           
+            this.treemap.DataSource = TreeMapPopulationData.GetData();
 
         }
 
@@ -248,7 +249,7 @@ N> Population data is referred from [List of continents by population](http://en
 
 The `DataSource` property accepts the collection values as input. For example, you can provide the list of objects as input.
 
-#### Weight Value Path 
+#### Weight Value Path
 
 You can calculate the size of the object using `WeightValuePath` of TreeMap.
 
@@ -282,9 +283,9 @@ You can calculate the size of the object using `WeightValuePath` of TreeMap.
 
    ~~~
 
-The following image displays a TreeMap with default properties using the above code. 
+The following image displays a TreeMap with default properties using the above code.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 ### GroupTreeMap Items using Levels
@@ -330,19 +331,19 @@ protected void Page_Load(object sender, EventArgs e)
 
     </ej:Treemap>
 
-</div>        
+</div>
 
 {% endhighlight %}
 
 The following screenshot displays grouping of TreeMapItems using Levels
 
-![](Getting-Started_images/Getting-Started_img4.png) 
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 ### Customizing TreeMap Appearance by Range
 
-You can differentiate the nodes based on its value and color ranges using `RangeColorMapping`. You can also define the color value range using From and To properties. 
+You can differentiate the nodes based on its value and color ranges using `RangeColorMapping`. You can also define the color value range using From and To properties.
 
 #### Color Value Path
 
@@ -394,7 +395,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays customized TreeMap Appearance by Range.
 
-![](Getting-Started_images/Getting-Started_img5.png) 
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 ### Enable Tooltip
@@ -455,7 +456,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the TreeMap when the Tooltip is enabled.
 
-![](Getting-Started_images/Getting-Started_img6.png) 
+![](Getting-Started_images/Getting-Started_img6.png)
 
 TreeMap with tooltip option
 {:.caption}
@@ -468,7 +469,7 @@ You can set `ShowLegend` property value to ‘true’ to make a Legend visible.
 
 #### Label for Legend
 
-You can customize the labels of the legend item using LegendLabel property of RangeColorMapping. 
+You can customize the labels of the legend item using LegendLabel property of RangeColorMapping.
 
 The following code sample displays how to add labels for legend in a TreeMap.
 
@@ -518,4 +519,4 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the TreeMap when Legends are enabled.
 
-![](Getting-Started_images/Getting-Started_img7.png) 
+![](Getting-Started_images/Getting-Started_img7.png)

@@ -104,7 +104,7 @@ public partial class flatCollection : Page
 }
 
 
-
+[Serializable]
 public class SalesData
 
 {
@@ -161,9 +161,9 @@ public class SalesData
 
 <ej:Treemap ID="treemap" runat="server" WeightValuePath = "Population" ColorValuePath = "Growth">
 
-</ej:Treemap>       
+</ej:Treemap>
 
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeMapLevels_images/TreeMapLevels_img2.png) 
+![](TreeMapLevels_images/TreeMapLevels_img2.png)

@@ -3,7 +3,7 @@ layout: post
 title: Data Binding | BulletGraph | ASP.NET Webforms | Syncfusion
 description: data binding
 platform: aspnet
-control: BulletGraph	
+control: BulletGraph
 documentation: ug
 ---
 
@@ -13,13 +13,13 @@ Bullet Graph supports binding JSON data from a remote server or data created in 
 
 ## Local Data
 
-Data available in client-side (local data) can be bound with Bullet Graph using Fields property. This property provides option to specify data source, fields representing progress measure bar value, comparative measure value and category value. 
+Data available in client-side (local data) can be bound with Bullet Graph using Fields property. This property provides option to specify data source, fields representing progress measure bar value, comparative measure value and category value.
 {% tabs %}
 
 {% highlight c# %}
 
 
-
+    [Serializable]
     public class BulletData
 
     {
@@ -34,7 +34,7 @@ Data available in client-side (local data) can be bound with Bullet Graph using 
 
         public string Category
 
-        { get; set; }	
+        { get; set; }
 
     }
 
@@ -53,7 +53,7 @@ Data available in client-side (local data) can be bound with Bullet Graph using 
 
 {% highlight html %}
 
-<ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">                        
+<ej:BulletGraph ID="BulletGraph1" Width="600px" Height="120px" runat="server">
 
             <QuantitativeScaleSettings>
 
@@ -82,7 +82,7 @@ Bullet Graph provides option to bind data from a remote server using ejDataManag
 {% highlight html %}
 
 
-        <ej:BulletGraph ID="BulletGraph1" QualitativeRangeSize="60" Width="600px" Height="120px" runat="server">                        
+        <ej:BulletGraph ID="BulletGraph1" QualitativeRangeSize="60" Width="600px" Height="120px" runat="server">
 
             <QuantitativeScaleSettings Minimum="5" Maximum="45" Interval="10">
 
@@ -150,7 +150,7 @@ Bullet Graph provides option to bind data from a remote server using ejDataManag
 
 The following screenshot displays a Bullet Graph bounded with data from a remote server
 
-![](Data-Binding_images/Data-Binding_img2.png)  
+![](Data-Binding_images/Data-Binding_img2.png)
 
 
 

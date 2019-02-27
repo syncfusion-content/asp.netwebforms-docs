@@ -35,8 +35,10 @@ public partial class Sparkline : Page
             data.Add(new SparklineData("Dec", 32));
             this.Sparkline1.DataSource = data;
             this.DataBind();
-       } 
+       }
    }
+
+   [Serializable]
     public class SparklineData {
         public string Month;
         public double Sales;
@@ -51,21 +53,21 @@ public partial class Sparkline : Page
 
 {% highlight html %}
 
-<ej:Sparkline ClientIDMode="Static" ID="Sparkline1" XName="Month" YName="Sales" runat="server">           
+<ej:Sparkline ClientIDMode="Static" ID="Sparkline1" XName="Month" YName="Sales" runat="server">
 </ej:Sparkline>
 
 {% endhighlight %}
 
-![](Working-with-Data_images/Working-with-Data_img1.png) 
+![](Working-with-Data_images/Working-with-Data_img1.png)
 
-2. You can also bind an array of data to Sparkline by using `DataSource` property.  
+2. You can also bind an array of data to Sparkline by using `DataSource` property.
 
 {% highlight html %}
 
 public partial class Sparkline : Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {   
+        {
             List<SparklineData> data = new List<SparklineData>();
             Double[] y1 = { 2, 6, -1, 1, 12, 5, -2, 7, -3, 5, 8, 10};
             data.Add(new SparklineData(0, y1));
@@ -76,6 +78,6 @@ public partial class Sparkline : Page
 
 {% endhighlight %}
 
-![](Working-with-Data_images/Working-with-Data_img2.png) 
+![](Working-with-Data_images/Working-with-Data_img2.png)
 
 

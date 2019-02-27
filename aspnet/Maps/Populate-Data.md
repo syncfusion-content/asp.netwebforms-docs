@@ -13,7 +13,7 @@ In this section you can learn how to populate shape data for providing Data inpu
 
 ## Shape Data
 
-The Shape Data collection describing geographical shape information can be obtained from [GEOJSON format shapes](http://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip). 
+The Shape Data collection describing geographical shape information can be obtained from [GEOJSON format shapes](http://www.syncfusion.com/uploads/user/uploads/Maps_GeoJSON.zip).
 
 In this example, USA shape is used as shape data by utilizing the “United States of America.json” file in the following folder structure obtained from downloaded Maps_GeoJSON folder.
 
@@ -37,7 +37,7 @@ public object GetUSA()
 
             return new MapData(allText);
 
-        } 
+        }
 
 
 
@@ -45,7 +45,7 @@ public object GetUSA()
 
 ## Data Binding
 
-The Maps control supports data binding with the DataSource property in the shape layers. 
+The Maps control supports data binding with the DataSource property in the shape layers.
 
 ## Properties required
 
@@ -59,7 +59,7 @@ The following properties in shape layers is be used for binding data in Maps con
 
 The DataSource property accepts the collection values as input. For example, you can provide the list of objects as input.
 
-## Shape Data Path 
+## Shape Data Path
 
 The ShapeDataPath property is used to refer the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The ShapeDataPath and the ShapePropertyPath properties are related to each other (refer to ShapePropertyPath for more details).
 
@@ -67,7 +67,7 @@ The ShapeDataPath property is used to refer the data ID in DataSource. For examp
 
 The ShapePropertyPath property is similar to the ShapeDataPath that refers to the column name in the Data property of shape layers to identify the shape. Wen the values of the ShapeDataPath property in the DataSource property and the value of ShapePropertyPath in the Data property match, then the associated object from the DataSource is bound to the corresponding shape.
 
-The datasource is populated with JSON data relative to shape data and stored in JSON object. The USA population as datasource is used for better understanding. 
+The datasource is populated with JSON data relative to shape data and stored in JSON object. The USA population as datasource is used for better understanding.
 
   “Map.aspx.cs” is populated with data of USA Population and maintained as a list. After populating the data, you can refer to both shape data and datasource as illustrated in the following “Map.aspx.cs”.
 
@@ -75,9 +75,9 @@ The datasource is populated with JSON data relative to shape data and stored in 
 
 {% highlight c# %}
 
-public List<CountyPopulationData> GetUSPopulationData() 
-{            
-   List<CountyPopulationData> populationData = new List<CountyPopulationData>            
+public List<CountyPopulationData> GetUSPopulationData()
+{
+   List<CountyPopulationData> populationData = new List<CountyPopulationData>
    {
 	new CountyPopulationData(){ Name= "California", Population=38332521},
 	new CountyPopulationData(){ Name= "Texas", Population=26448193},
@@ -130,36 +130,38 @@ public List<CountyPopulationData> GetUSPopulationData()
 	new CountyPopulationData(){ Name= "North Dakota", Population=723393},
 	new CountyPopulationData(){ Name= "District of Columbia", Population=646449},
 	new CountyPopulationData(){ Name= "Vermont", Population=626630},
-	new CountyPopulationData(){ Name= "Wyoming", Population=582658}            
-  };            
-  return populationData;        
-}    
-public class CountyPopulationData    
- {    
- 
-   public string name; 
-   
-   public string Name        
-   {           
-   get { return name; }            
-   set { name = value; }        
-   }  
-   
+	new CountyPopulationData(){ Name= "Wyoming", Population=582658}
+  };
+  return populationData;
+}
+
+[Serializable]
+public class CountyPopulationData
+ {
+
+   public string name;
+
+   public string Name
+   {
+   get { return name; }
+   set { name = value; }
+   }
+
    public double population;
-   
-   public double Population        
-   {           
-   get { return population; }            
-   set { population = value; }        
-   }   
-   
- }        
-   protected void Page_Load(object sender, EventArgs e)        
-   {            
-    (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();            
-    (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();        
-   } 
-   
+
+   public double Population
+   {
+   get { return population; }
+   set { population = value; }
+   }
+
+ }
+   protected void Page_Load(object sender, EventArgs e)
+   {
+    (this.map.Layers[0] as ShapeLayer).DataSource = Election_Result.GetUSPopulationData();
+    (this.map.Layers[0] as ShapeLayer).ShapeData = this.GetUSA();
+   }
+
 {% endhighlight %}
 
 The JSON object “populationData” is used as dataSource in the following code example.
@@ -174,6 +176,6 @@ The JSON object “populationData” is used as dataSource in the following code
 
         </Layers>
 
-     </ ej:Map > 
+     </ ej:Map >
 
 {% endhighlight %}
