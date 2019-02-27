@@ -24,14 +24,14 @@ The following assemblies need to be referenced in your application for using Ess
 
 Follow the steps given below to deploy the application in the development server by referencing the assembly in **GAC**.
 
-* Web.config file should be configured according to the referenced assemblies. 
+* Web.config file should be configured according to the referenced assemblies.
 * To deploy your application, you have to ensure that the above referenced assemblies (in your web.config files) are present in the GAC.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 And, add the Syncfusion namespace in the Web.config file.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![](Getting-Started_images/Getting-Started_img2.png)
 
 N> If you are referring Syncfusion assemblies manually from bin folder to create ASP SunburstChart, then remove Culture, Version and PublicKeyToken attributes used in all files.
 
@@ -40,17 +40,17 @@ N> If you are referring Syncfusion assemblies manually from bin folder to create
 
 By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jQuery and Syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jQuery and Syncfusion script files.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![](Getting-Started_images/Getting-Started_img3.png)
 
 {% highlight html %}
 
 
     <!--  jquery script  -->
     <script src="http://cdn.syncfusion.com/html/assets/external/jquery-1.10.2.min.html"></script>
-    
+
     <!-- Essential html UI widget -->
     <script src="http://cdn.syncfusion.com/{{site.releaseversion}}/html/web/ej.web.all.min.html"></script>
-    
+
 {% endhighlight %}
 
 ## Initialize Sunburst Chart
@@ -59,7 +59,7 @@ By default, Syncfusion JavaScript source files has been included into the EJ.Web
 
 {% highlight html %}
 
-<ej:SunburstChart ID="Container" runat="server" >        
+<ej:SunburstChart ID="Container" runat="server" >
 </ej:SunburstChart>
 
 {% endhighlight %}
@@ -70,6 +70,7 @@ Now, let’s see how to plot data source to the SunburstChart. First, let us gen
 
 {% highlight C# %}
 
+[Serializable]
  public class DefaultData
     {
         public string Category { get; set; }
@@ -90,13 +91,13 @@ Now, let’s see how to plot data source to the SunburstChart. First, let us gen
            data.Add(new DefaultData() { Category = "Employees", Country = "USA", JobDescription = "Technical",     JobGroup = "Developers", JobRole = "Web",     EmployeesCount =70 });
            data.Add(new DefaultData() { Category = "Employees", Country = "USA", JobDescription = "Management",                                                  EmployeesCount =40 });
            data.Add(new DefaultData() { Category = "Employees", Country = "USA", JobDescription = "Accounts",                                                    EmployeesCount =60 });
-           
+
            data.Add(new DefaultData() { Category = "Employees", Country = "India",   JobDescription = "Technical",     JobGroup = "Testers",                         EmployeesCount = 43 });
            data.Add(new DefaultData() { Category = "Employees", Country = "India",   JobDescription = "Technical",     JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 125});
            data.Add(new DefaultData() { Category = "Employees", Country = "India",   JobDescription = "Technical",     JobGroup = "Developers", JobRole = "Web",     EmployeesCount = 60 });
            data.Add(new DefaultData() { Category = "Employees", Country = "India",   JobDescription = "HR Executives",                                              EmployeesCount = 70 });
            data.Add(new DefaultData() { Category = "Employees", Country = "India",   JobDescription = "Accounts",                                                   EmployeesCount = 45 });
-          
+
            data.Add(new DefaultData() { Category = "Employees", Country = "Germany", JobDescription = "Sales",         JobGroup = "Executive",                       EmployeesCount = 30 });
            data.Add(new DefaultData() { Category = "Employees", Country = "Germany", JobDescription = "Sales",         JobGroup = "Analyst",                         EmployeesCount = 40 });
            data.Add(new DefaultData() { Category = "Employees", Country = "Germany", JobDescription = "Marketing",                                                  EmployeesCount = 50  });
@@ -105,7 +106,7 @@ Now, let’s see how to plot data source to the SunburstChart. First, let us gen
            data.Add(new DefaultData() { Category = "Employees", Country = "Germany", JobDescription = "Technical",     JobGroup = "Developers", JobRole = "Web",     EmployeesCount = 27 });
            data.Add(new DefaultData() { Category = "Employees", Country = "Germany", JobDescription = "Management",                                                 EmployeesCount = 33  });
            data.Add(new DefaultData() { Category = "Employees", Country = "Germany", JobDescription = "Accounts",                                                   EmployeesCount = 55  });
-           
+
            data.Add(new DefaultData() { Category = "Employees", Country = "UK",      JobDescription = "Technical",     JobGroup = "Testers",                         EmployeesCount = 45 });
            data.Add(new DefaultData() { Category = "Employees", Country = "UK",      JobDescription = "Technical",     JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 96 });
            data.Add(new DefaultData() { Category = "Employees", Country = "UK",      JobDescription = "Technical",     JobGroup = "Developers", JobRole = "Web",     EmployeesCount = 55 });
@@ -115,7 +116,7 @@ Now, let’s see how to plot data source to the SunburstChart. First, let us gen
            data.Add(new DefaultData() { Category = "Employees", Country = "France", JobDescription= "Technical",     JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 65 });
            data.Add(new DefaultData() { Category = "Employees", Country = "France", JobDescription= "Technical",     JobGroup = "Developers", JobRole = "Web",     EmployeesCount = 27 });
            data.Add(new DefaultData() { Category = "Employees", Country = "France", JobDescription="Marketing",                                                     EmployeesCount= 50 });
-           return data; 
+           return data;
         }
     }
 
@@ -139,19 +140,19 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-3.Render the SunburstChart with the Datasource and Levels,the following code snippet is used 
+3.Render the SunburstChart with the Datasource and Levels,the following code snippet is used
 
 
 {% highlight HTML %}
 
- <ej:SunburstChart  ID="container" runat="server"  ValueMemberPath="EmployeesCount" >     
+ <ej:SunburstChart  ID="container" runat="server"  ValueMemberPath="EmployeesCount" >
                 <Levels>
                 <ej:SunburstLevel GroupMemberPath="Country"></ej:SunburstLevel>
                 <ej:SunburstLevel GroupMemberPath="JobDescription"></ej:SunburstLevel>
                 <ej:SunburstLevel GroupMemberPath="JobGroup"></ej:SunburstLevel>
                 <ej:SunburstLevel GroupMemberPath="JobRole"></ej:SunburstLevel>
-            </Levels>                                        
-        </ej:SunburstChart> 
+            </Levels>
+        </ej:SunburstChart>
 {% endhighlight %}
 
 3. The final ASPX file appears as follows
@@ -159,25 +160,25 @@ protected void Page_Load(object sender, EventArgs e)
 {% highlight html %}
 
 	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head> 
+	<head>
 	 <!--  jquery script  -->
     <script src="http://cdn.syncfusion.com/html/assets/external/jquery-1.10.2.min.html"></script>
- 
+
     <!-- Essentialcshtml UI widget -->
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/html/web/ej.web.all.min.html"></script>
-    
+
 	<div>
 
-	<ej:SunburstChart  ID="container" runat="server"  ValueMemberPath="EmployeesCount" >     
+	<ej:SunburstChart  ID="container" runat="server"  ValueMemberPath="EmployeesCount" >
                 <Levels>
                 <ej:SunburstLevel GroupMemberPath="Country"></ej:SunburstLevel>
                 <ej:SunburstLevel GroupMemberPath="JobDescription"></ej:SunburstLevel>
                 <ej:SunburstLevel GroupMemberPath="JobGroup"></ej:SunburstLevel>
                 <ej:SunburstLevel GroupMemberPath="JobRole"></ej:SunburstLevel>
-            </Levels>                                        
-        </ej:SunburstChart> 
+            </Levels>
+        </ej:SunburstChart>
         </div>
-	
+
 	</body>
 
 	</html>
@@ -187,13 +188,13 @@ protected void Page_Load(object sender, EventArgs e)
 
 ## Add Title to the Sunburst Chart
 
-The title of the Sunburst chart is used to provide quick information to the user about the data being plotted in the Sunburst Chart. You can add it by using the `Text`property of the `Title` 
+The title of the Sunburst chart is used to provide quick information to the user about the data being plotted in the Sunburst Chart. You can add it by using the `Text`property of the `Title`
 
 {% highlight html %}
 
 <ej:SunburstChart  ID="container" runat="server">
-   <Title Text="Employees Count"></Title>                           
-</ej:SunburstChart> 
+   <Title Text="Employees Count"></Title>
+</ej:SunburstChart>
 {% endhighlight %}
 
 ## Enable Legend
@@ -203,8 +204,8 @@ You can enable or disable the legend by using the `Visible`property present insi
 {% highlight html %}
 
 <ej:SunburstChart  ID="container" runat="server">
-  <Legend Visible="true"></Legend>                        
-</ej:SunburstChart> 
+  <Legend Visible="true"></Legend>
+</ej:SunburstChart>
 
 {% endhighlight %}
 
@@ -215,8 +216,8 @@ The data labels are used to improve the readability of the Sunburst chart. This 
 {% highlight html %}
 
 <ej:SunburstChart  ID="container" runat="server">
- <DataLabelSettings Visible="true"></DataLabelSettings>                     
-</ej:SunburstChart> 
+ <DataLabelSettings Visible="true"></DataLabelSettings>
+</ej:SunburstChart>
 
 {% endhighlight %}
 

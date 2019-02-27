@@ -239,7 +239,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
         }
 
 
-
+   [Serializable]
     public class CountyPopulationData
 
     {
