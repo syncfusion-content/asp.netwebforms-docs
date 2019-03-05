@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data-Binding | ListView | ASP.NET Webforms | Syncfusion
-description: data binding
+description: The Syncfusion ASP.NET Web Forms ListView component provides a simple and consistent way for applications to present and interact with data.
 platform: aspnet
 control: ListView
 documentation: ug

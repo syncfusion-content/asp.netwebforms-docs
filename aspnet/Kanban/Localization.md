@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization with Kanban widget for Syncfusion Essential ASP.NET
-description: How to use localization
+description: This section explains how to provide support for localization in the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

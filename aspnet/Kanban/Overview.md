@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Kanban | ASP.NET Webforms | Syncfusion
-description: overview
+description: This section explains the short description of basic features on the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

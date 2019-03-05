@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence | AutoComplete | ASP.NET Webforms | Syncfusion
-description: state persistence
+description: This section explains how to perform state persistence in the Syncfusion ASP.NET Web Forms Autocomplete component.
 platform: aspnet
 control: AutoComplete
 documentation: ug
