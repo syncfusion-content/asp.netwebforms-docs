@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | Kanban | ASP.NET Webforms | Syncfusion
-description: getting started
+description: This section explains how to render the Syncfusion ASP.NET Web Forms Kanban component and its basic functionalities.
 platform: aspnet
 control: Kanban
 documentation: ug

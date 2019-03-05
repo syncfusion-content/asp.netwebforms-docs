@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cards with Kanban widget for Syncfusion Essential ASP.NET
-description: How to define the cards and its features
+description: This section explains how to define the basic structure of cards and their features of the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

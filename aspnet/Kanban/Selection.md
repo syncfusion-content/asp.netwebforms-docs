@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection with Kanban widget for Syncfusion Essential ASP
-description: How to enable selection and its functionalities
+description: This section explains how to select and hover the card of the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

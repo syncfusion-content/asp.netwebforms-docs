@@ -1,7 +1,7 @@
 ---
 layout: post
 title: grouped list | ListView | ASP.NET Webforms | Syncfusion
-description: grouped list
+description: This section explains how to group the set of items in the Syncfusion ASP.NET Web Forms ListView component.
 platform: aspnet
 control: ListView
 documentation: ug
