@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu with Kanban widget for Syncfusion Essential ASP.NET
-description: How to enable contextMenu and its functionalities
+description: This section explains how to enable context menu and its functionalities using the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding | AutoComplete | ASP.NET Webforms | Syncfusion
-description: data-binding
+description: This section explains how to bind the data source key value mapping in the Syncfusion ASP.NET Web Forms Autocomplete component.
 platform: aspnet
 control: AutoComplete
 documentation: ug

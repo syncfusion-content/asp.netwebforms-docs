@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | ListView | ASP.NET Webforms | Syncfusion
-description: overview
+description: This section explains the short description of basic features on the Syncfusion ASP.NET Web Forms ListView component.
 platform: aspnet
 control: ListView
 documentation: ug

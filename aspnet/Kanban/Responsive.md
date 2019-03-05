@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive Kanban widget for Syncfusion Essential ASP
-description: Responsive Kanban with scrollers
+description: This section explains the responsive behavior of the Syncfusion ASP.NET Web Forms Kanban component based on the client browser width and height.
 platform: aspnet
 control: Kanban
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | AutoComplete | ASP.NET Webforms | Syncfusion
-description: overview
+description: This section explains the basic functionalities of the Syncfusion ASP.NET Web Forms Autocomplete textbox component.
 platform: aspnet
 control: AutoComplete
 documentation: ug

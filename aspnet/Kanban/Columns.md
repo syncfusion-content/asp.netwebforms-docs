@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns with Kanban widget for Syncfusion Essential ASP.NET
-description: How to define the columns and its features
+description: This section explains how to define the columns and their features of the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

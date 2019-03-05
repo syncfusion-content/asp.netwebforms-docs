@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behavior Settings | AutoComplete | ASP.NET Webforms | Syncfusion
-description: behavior settings
+description: This section explains how to change the behavior of Syncfusion ASP.NET Web Forms Autocomplete textbox.
 platform: aspnet
 control: AutoComplete
 documentation: ug

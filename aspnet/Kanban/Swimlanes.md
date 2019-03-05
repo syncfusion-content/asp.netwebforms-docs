@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swimlanes with Kanban widget for Syncfusion Essential ASP.NET
-description: How to enable Kanban with Swimlanes
+description: This section explains the horizontal categorization of issues in the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

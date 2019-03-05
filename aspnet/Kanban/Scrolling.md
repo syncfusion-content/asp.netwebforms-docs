@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrolling with Kanban widget for Syncfusion Essential ASP
-description: How to enable scrolling and its functionalities
+description: This section explains how to achieve the scrolling behavior of the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug
