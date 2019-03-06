@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MultiSelection modes | AutoComplete | ASP.NET Webforms | Syncfusion
-description: multiselection modes
+description: This section explains how to select multiple data in the Syncfusion ASP.NET Web Forms Autocomplete suggestion list.
 platform: aspnet
 control: AutoComplete
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Print Kanban | Kanban | ASP.NET Webforms | Syncfusion
-description: print kanban
+description: This section explains how to perform printing feature using the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WorkFlows | Kanban | ASP.NET Webforms | Syncfusion
-description: WorkFlows
+description: This section explains the flow of cards between the Kanban columns in the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug
