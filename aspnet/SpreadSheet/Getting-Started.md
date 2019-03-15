@@ -181,5 +181,7 @@ Use shortcut [`Ctrl + S`](http://help.syncfusion.com/aspnet/spreadsheet/keyboard
 
 N> 1. For more details about `Export` refer following [`link`](http://help.syncfusion.com/aspnet/spreadsheet/open-and-save#save "link")
 N> 2. For more details about `Server Configuration` refer following [`link`](http://help.syncfusion.com/aspnet/spreadsheet/open-and-save#server-configuration "link")
+N> 3. For more details about `Client dependencies` refer the following [`link`](https://help.syncfusion.com/js/spreadsheet/dependencies "link")
+N> 4. For more details about `Server dependencies` refer the following [`link`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#server-dependencies "link")
 
 
