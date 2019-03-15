@@ -21,18 +21,29 @@ The procedure that are followed in manual integration process is entirely automa
 
 ## Using Syncfusion Project Template
 
-Syncfusion provides the Visual Studio Project Template support for ASP.NET (EJWEB) components that will automatically include all the Syncfusion ASP.NET control’s client and server side dependencies are preconfigured and copied to the appropriate folders. Following are the steps to create an ASP.NET web site.
+Syncfusion provides the Visual Studio Project Template support for ASP.NET (EJWEB) components that will automatically include all the Syncfusion ASP.NET control’s client and server side dependencies are preconfigured and copied to the appropriate folders. The following steps help you to create the **Syncfusion ASP.NET (Essential JS 1) application** through the **Visual Studio Project Template:**
 
-Step 1: Select File > New > Web Site. <BR>
-Step 2: Choose Templates > Visual C# > Syncfusion ASP.NET Web Site. <BR>
-Step 3: Set a name and location for the project.<BR>
-Step 4: Click OK to create the project. <BR>
+1.  To create a Syncfusion ASP.NET (Essential JS 1) project, follow either one of the options below:
 
-![](Getting-Started_images/Getting-Started_img1.png)
+    **Option 1:**   
+    Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET (Essential JS 1) > Create New Syncfusion Web Project…** or **Create New Syncfusion WebSite Project…** in **Visual Studio**.
+       
+    ![](Getting-Started_images/Syncfusion_Menu_ProjectTemplate.png)
 
-Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+	N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
 
-![](Getting-Started_images/Getting-Started_img31.png)
+	**Option 2:**   
+    Choose **File > New > Project** and navigate to **Syncfusion > Web > Syncfusion ASP.NET Web Application** or **Syncfusion ASP.NET Web Site** in **Visual Studio**.
+
+2. Choose Templates > Visual C# > Syncfusion ASP.NET Web Site. <BR>
+3. Set a name and location for the project.<BR>
+4. Click OK to create the project. <BR>
+
+   ![](Getting-Started_images/Getting-Started_img1.png)
+
+   Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+
+   ![](Getting-Started_images/Getting-Started_img31.png)
 
 Add your required controls in the ASPX Page. The code for adding DatePicker control within the “Default.aspx” file are as follows.
 
