@@ -64,12 +64,12 @@ You can set formula for a cell by specifying `Value` property in cell data bindi
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![Formula](Formulas_images/Formula_img10.png)
+![Formula](Formulas_images/Formula_img6.png)
 
 Cell Reference from Same sheet
 {:.caption}
 
-![Formula](Formulas_images/Formula_img11.png)
+![Formula](Formulas_images/Formula_img7.png)
 
 Cell Reference from different sheets
 
