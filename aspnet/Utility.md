@@ -28,9 +28,19 @@ The following steps direct you to use the Syncfusion Project Conversion in the e
 
 1. Open an existing Microsoft ASP.NET Project or create a new Microsoft ASP.NET Project.
 
-2. Right-click the **Project** from Solution Explorer and select **Syncfusion VS Extensions**, then choose the **Convert to Syncfusion ASP.NET Application**. Refer to the following screenshot for more information.
+2.  To open Project Conversion Wizard, follow either one of the options below:   
+    
+    **Option 1:**  
+    Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET (EJ1) > Convert to Syncfusion ASP.NET Application…** in **Visual Studio**.
 
-   ![](Utility_images/Project-Conversion_img1.jpeg)
+    ![Syncfusion Essential JS 1 ASP.NET Web Forms Project Conversion via Syncfusion menu](Utility_images/Syncfusion_Menu_Project_Conversion1.png)
+
+    N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+
+    **Option 2:**    
+    Right-click the Project from Solution Explorer, select **Syncfusion Essential JS 1**, and choose the **Convert to Syncfusion ASP.NET (Essential JS 1) Application...** Refer to the following screenshot for more information.
+
+    ![Syncfusion Essential JS 1 ASP.NET Web Forms Project Conversion add-in](Utility_images/Project-Conversion_img1.png)
 
 3. Project Conversion Wizard opens to configure the project.
 
@@ -112,11 +122,21 @@ I>	The Syncfusion ASP.NET Web Application Project Migration utility is available
 
 ### Migrate Syncfusion Project 
 
-The following steps direct you to migrate your existing Syncfusion ASP.NET application.
+The following steps help you to migrate your existing Syncfusion ASP.NET application.
 
-1. Right-click the **Syncfusion ASP.NET Project** from Solution Explorer and select **Syncfusion VS Extensions**. Then choose **Migrate the Project to Another version**.
+1. To open Migration Wizard, follow either one of the options below: 
 
-   ![](Utility_images/Project-Migration_img1.jpeg)
+   **Option 1:**   
+   Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET (EJ1) > Migrate Project…** in **Visual Studio**.
+
+   ![Syncfusion Essential JS 1 ASP.NET Web Forms Project Migration via Syncfusion menu](Utility_images/Syncfusion_Menu_Project_Migration1.png)
+
+   N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+
+   **Option 2:**  
+   Right-click the **Syncfusion ASP.NET Application** from Solution Explorer and select **Syncfusion Essential JS 1**. Choose **Migrate the Essential JS 1 Project to Another version…**
+
+   ![Syncfusion Essential JS 1 ASP.NET Web Forms Project Migration add-in](Utility_images/Project-Migration_img1.png)
 
 2. The **Project Migration** window appears. Choose the required Essential Studio version that has to be installed in the machine.
 
@@ -144,9 +164,19 @@ Syncfusion provides support for Sample Creator utility that allows you to create
 
 Sample Creator can be downloaded from the Syncfusion Dashboard. After installing the complete Essential Studio suite or ASP.NET setup, the following steps will help you to create the Syncfusion ASP.NET Project via the Sample Creator utility.
 
-1. Launch the Syncfusion Essential Studio Dashboard and select the ASP.NET platform. Then, select the **Sample Creator** button to launch the ASP.NET Sample Creator Wizard. Refer to the following screenshot for more information.
+1. To launch ASP.NET (Essential JS 1) Sample Creator application, follow either one of the options below: 
 
-   ![](Sample-Creator_images/SampleCreator_img1.jpeg)
+   **Option 1:**   
+   Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET (EJ1) > Launch Sample Creator…** in **Visual Studio**.
+
+   ![Syncfusion Essential JS 1 ASP.NET Web Forms control panel to launch Syncfusion Essential JS 1 ASP.NET Web Forms Sample Creator](Sample-Creator_images/Syncfusion_Menu_Sample_Creator.png)
+
+   N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+
+   **Option 2:**  
+   Launch the Syncfusion ASP.NET (EJ1) Control Panel. Select the Sample Creator button to launch the ASP.NET (Essential JS 1) Sample Creator application. Refer to the following screenshot for more information.
+
+   ![Syncfusion Essential JS 1 ASP.NET Web Forms control panel to launch Syncfusion Essential JS 1 ASP.NET Web Forms Sample Creator](Sample-Creator_images/SampleCreator_img1.png)
 
 2. Syncfusion Sample Creator Wizard displays the **Controls and its Feature Selection** section.
 
