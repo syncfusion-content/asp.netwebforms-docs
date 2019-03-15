@@ -72,6 +72,7 @@ Cell Reference from Same sheet
 ![Formula](Formulas_images/Formula_img7.png)
 
 Cell Reference from different sheets
+{:.caption}
 
 ### Method
 
