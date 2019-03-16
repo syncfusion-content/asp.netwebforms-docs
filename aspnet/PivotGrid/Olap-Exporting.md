@@ -675,3 +675,5 @@ The following screenshot shows the pivot grid control exported to a PDF document
 The following screenshot shows the pivot grid control exported to a CSV document:
 
 ![CSV exporting in ASP NET pivot grid control](Exporting_images/ExportOLAPCSV.png)
+
+N> Grand total can be hidden while exporting the document.
