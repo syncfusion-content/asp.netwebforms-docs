@@ -28,7 +28,7 @@ This section describes the system requirements of Syncfusion ASP.NET platform fo
 
 ### Development Environment
 
-* Microsoft Visual Studio 2010/ 2012/2013/2015/2017
+* Microsoft Visual Studio 2010/ 2012/2013/2015/2017/2019
 * .NET Framework 4.0/4.5/4.5.1/4.6
 * Microsoft SQL Server 2005 or higher
 * Web browsers with **JavaScript** enabled
