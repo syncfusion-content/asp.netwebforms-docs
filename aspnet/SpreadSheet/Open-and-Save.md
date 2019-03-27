@@ -24,7 +24,6 @@ function loadFromJSON() {
 
 {% endhighlight %}
 
-
 When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
 
 ## Open 
@@ -74,40 +73,7 @@ To load excel documents initially from server side, set `ImportOnLoad` as `true`
 
 {% endhighlight %}
 
-![](Open-and-Save_images/Open-and-Save_img1.png)
-
-### Methods
-
-To open an excel document, [`import`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
-
-#### Stream
-Spreadsheet can open excel document as a stream and the document stream was either from the client side or it can be specified in server side. The code snippets to open excel document as a stream from client side are as follows,
-
-{% highlight javascript %}
-
-function fileOpen(args) {
-    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet"),
-    stream = args.files[0]; // file stream from ejUploadbox
-    excelObj["import"]({ file: stream });
-}
-
-{% endhighlight %}
-
-
-#### File URL
-Spreadsheet can open excel document from specified file URL. The file URL can be specified either from client side or in server side.
-The code snippets to open excel document as URL from client side are as follows,
-
-{% highlight javascript %}
-
-function fileOpen() {
-    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
-    excelObj["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
-}
-
-{% endhighlight %}
-
-The code snippets to specify excel document in server side are as follows,
+The code snippets to process excel document in 'SpreadsheetHandler.ashx' are as follows,
 
 {% highlight c# %}
 
@@ -160,6 +126,41 @@ The code snippets to specify excel document in server side are as follows,
         }
 
 {% endhighlight %}
+
+![](Open-and-Save_images/Open-and-Save_img1.png)
+
+### Methods
+
+To open an excel document, [`import`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
+
+#### Stream
+Spreadsheet can open excel document as a stream and the document stream was either from the client side or it can be specified in server side. The code snippets to open excel document as a stream from client side are as follows,
+
+{% highlight javascript %}
+
+function fileOpen(args) {
+    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet"),
+    stream = args.files[0]; // file stream from ejUploadbox
+    excelObj["import"]({ file: stream });
+}
+
+{% endhighlight %}
+
+
+#### File URL
+Spreadsheet can open excel document from specified file URL. The file URL can be specified either from client side or in server side.
+The code snippets to open excel document as URL from client side are as follows,
+
+{% highlight javascript %}
+
+function fileOpen() {
+    var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
+    excelObj["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
+}
+
+{% endhighlight %}
+
+> Refer `SpreadsheetHandler.ashx` under [`Initial Load`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#initial-settings `Initial Load`) for server side processing.
 
 ### User Interface
 
