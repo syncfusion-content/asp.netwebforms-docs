@@ -89,31 +89,31 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 
 2.	Open the downloaded executable location in the command window, and run the following commands to download and install the required NuGet packages to a project specified in the package.config.  
 
-~~~
-#install specified package in default project from specified package source for Windows Platform 
-nuget.exe install <Package name | ConfigFilePath > <Options>
+    ~~~
+    #install specified package in default project from specified package source for Windows Platform 
+    nuget.exe install <Package name | ConfigFilePath > <Options>
 
-#install specified package in default project from specified package source for MAC/Linux Platform 
-mono nuget.exe install <Package name | ConfigFilePath > <Options>
-~~~
+    #install specified package in default project from specified package source for MAC/Linux Platform 
+    mono nuget.exe install <Package name | ConfigFilePath > <Options>
+    ~~~
 
-N> configFilePath is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
+    N> configFilePath is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
 
-**For example:**
+    **For example:**
 
-~~~
-#install specific package for Windows 
-nuget.exe install “Syncfusion.AspNet”
+    ~~~
+    #install specific package for Windows 
+    nuget.exe install “Syncfusion.AspNet”
 
-#install all package which mention in package.config path for Windows 
-nuget.exe install “C:\Users\SyncfusionApplication\package.config”
+    #install all package which mention in package.config path for Windows 
+    nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
-#install specific package for Mac and Linux 
-mono nuget.exe install “Syncfusion.AspNet”
+    #install specific package for Mac and Linux 
+    mono nuget.exe install “Syncfusion.AspNet”
 
-#install all package which mention in package.config path for Mac and Linux 
-mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
-~~~
+    #install all package which mention in package.config path for Mac and Linux 
+    mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
+    ~~~
 
 N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
