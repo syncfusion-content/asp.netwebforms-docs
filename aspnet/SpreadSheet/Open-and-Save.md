@@ -24,7 +24,6 @@ function loadFromJSON() {
 
 {% endhighlight %}
 
-
 When you open an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. [`Server configuration`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#server-configuration "Server configuration") is used for this process.
 
 ## Open 
@@ -34,8 +33,62 @@ The Spreadsheet can open excel documents as like excel application with its data
 {% highlight html %}
 
 <ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
-      <ImportSettings ImportMapper="SpreadsheetHandler.ashx" />
+    <ImportSettings ImportMapper="SpreadsheetHandler.ashx" />
 </ej:Spreadsheet>
+
+{% endhighlight %}
+
+The below code snippets is to read and converted excel document into client side Spreadsheet model using `Spreadsheet.Open()` in 'SpreadsheetHandler.ashx' are as follows,
+
+{% highlight c# %}
+
+ public void ProcessRequest(HttpContext context)
+        {
+            string password = "password", sheetIndex = "sheetIndex", dataContainer = "dataContainer", allowSheetOnDemand = "allowSheetOnDemand";
+            bool isImport = true;
+            var files = context.Request.Files;
+            NameValueCollection form = context.Request.Form;
+            ImportRequest importRequest = new ImportRequest();
+            if (files.Count == 0)
+                importRequest.Url = form["url"];
+            else
+            {
+                var obj = files[0];
+                if (obj.ContentType.IndexOf("image") > -1)
+                {
+                    importRequest.File = new HttpPostedFileWrapper(files[0]);
+                    isImport = false;
+                }
+                else
+                {
+                    importRequest.FileStream = obj.InputStream;
+                    importRequest.FileType = obj.FileName.Split('.')[obj.FileName.Split('.').Length - 1];
+                    importRequest.File = null;
+                }
+            }
+            if (isImport)
+            {
+                string[] keys = form.AllKeys;
+                if (keys.Contains(password))
+                    importRequest.Password = form[password];
+                if (keys.Contains(allowSheetOnDemand))
+                    importRequest.AllowSheetOnDemand = bool.Parse(form[allowSheetOnDemand]);
+                if (keys.Contains(sheetIndex))
+                    importRequest.SheetIndex = int.Parse(form[sheetIndex]);
+                if (keys.Contains(dataContainer))
+                    importRequest.DataContainer = form.GetValues(dataContainer);
+            }
+            string str = Spreadsheet.Open(importRequest);
+            context.Response.Write(str);
+        }
+
+        public bool IsReusable
+        {
+            get
+            {
+                return false;
+            }
+        }
 
 {% endhighlight %}
 
@@ -93,7 +146,6 @@ function fileOpen(args) {
 
 {% endhighlight %}
 
-
 #### File URL
 Spreadsheet can open excel document from specified file URL. The file URL can be specified either from client side or in server side.
 The code snippets to open excel document as URL from client side are as follows,
@@ -107,59 +159,7 @@ function fileOpen() {
 
 {% endhighlight %}
 
-The code snippets to specify excel document in server side are as follows,
-
-{% highlight c# %}
-
- public void ProcessRequest(HttpContext context)
-        {
-            string password = "password", sheetIndex = "sheetIndex", dataContainer = "dataContainer", allowSheetOnDemand = "allowSheetOnDemand";
-            bool isImport = true;
-            var files = context.Request.Files;
-            NameValueCollection form = context.Request.Form;
-            ImportRequest importRequest = new ImportRequest();
-            if (files.Count == 0)
-                importRequest.Url = form["url"];
-            else
-            {
-                var obj = files[0];
-                if (obj.ContentType.IndexOf("image") > -1)
-                {
-                    importRequest.File = new HttpPostedFileWrapper(files[0]);
-                    isImport = false;
-                }
-                else
-                {
-                    importRequest.FileStream = obj.InputStream;
-                    importRequest.FileType = obj.FileName.Split('.')[obj.FileName.Split('.').Length - 1];
-                    importRequest.File = null;
-                }
-            }
-            if (isImport)
-            {
-                string[] keys = form.AllKeys;
-                if (keys.Contains(password))
-                    importRequest.Password = form[password];
-                if (keys.Contains(allowSheetOnDemand))
-                    importRequest.AllowSheetOnDemand = bool.Parse(form[allowSheetOnDemand]);
-                if (keys.Contains(sheetIndex))
-                    importRequest.SheetIndex = int.Parse(form[sheetIndex]);
-                if (keys.Contains(dataContainer))
-                    importRequest.DataContainer = form.GetValues(dataContainer);
-            }
-            string str = Spreadsheet.Open(importRequest);
-            context.Response.Write(str);
-        }
-
-        public bool IsReusable
-        {
-            get
-            {
-                return false;
-            }
-        }
-
-{% endhighlight %}
+> Refer `SpreadsheetHandler.ashx` under [`Open`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#open `open`) for server side processing.
 
 ### User Interface
 

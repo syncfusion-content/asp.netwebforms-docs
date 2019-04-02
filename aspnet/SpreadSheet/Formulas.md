@@ -7,7 +7,7 @@ documentation: Ug
 ---
 # Formulas
 
-Formulas are used for calculation of data in sheet. You can refer the formula cell reference in following ways,
+Formulas are used for calculation of data in sheet. You can refer the formula cell address in following ways,
 
 1. Cell reference from same sheet
 2. Cell reference from different sheets
