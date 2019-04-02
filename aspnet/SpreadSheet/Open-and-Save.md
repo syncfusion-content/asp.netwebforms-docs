@@ -33,47 +33,12 @@ The Spreadsheet can open excel documents as like excel application with its data
 {% highlight html %}
 
 <ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
-      <ImportSettings ImportMapper="SpreadsheetHandler.ashx" />
+    <ImportSettings ImportMapper="SpreadsheetHandler.ashx" />
 </ej:Spreadsheet>
 
 {% endhighlight %}
 
-Following file types can be opened in Spreadsheet
-
-* XLS
-* XLSX
-* CSV
-
-[`Click`](http://asp.syncfusion.com/demos/web/spreadsheet/importexport.aspx "Click") here to view online demo sample.
-You can open excel documents in following ways,
-
-1. Initial settings
-2. Methods
-3. User Interface
-
-### Initial settings
-
-The Spreadsheet can load excel documents initially. The document can be specified either from client side or in server side.
-To load excel documents initially from client side, set `ImportUrl` as excel file URL in `ImportSettings`. The code snippets for document initial load on client side are as follows,
-
-{% highlight html %}
-
-<ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
-      <ImportSettings ImportUrl="http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx" ImportMapper="SpreadsheetHandler.ashx" />
-</ej:Spreadsheet>
-
-{% endhighlight %}
-
-To load excel documents initially from server side, set `ImportOnLoad` as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
-
-{% highlight html %}
-<ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
-      <ImportSettings ImportOnLoad="true" ImportUrl="http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx" ImportMapper="SpreadsheetHandler.ashx" />
-</ej:Spreadsheet>
-
-{% endhighlight %}
-
-The code snippets to process excel document in 'SpreadsheetHandler.ashx' are as follows,
+The below code snippets is to read and converted excel document into client side Spreadsheet model using `Spreadsheet.Open()` in 'SpreadsheetHandler.ashx' are as follows,
 
 {% highlight c# %}
 
@@ -127,6 +92,41 @@ The code snippets to process excel document in 'SpreadsheetHandler.ashx' are as 
 
 {% endhighlight %}
 
+Following file types can be opened in Spreadsheet
+
+* XLS
+* XLSX
+* CSV
+
+[`Click`](http://asp.syncfusion.com/demos/web/spreadsheet/importexport.aspx "Click") here to view online demo sample.
+You can open excel documents in following ways,
+
+1. Initial settings
+2. Methods
+3. User Interface
+
+### Initial settings
+
+The Spreadsheet can load excel documents initially. The document can be specified either from client side or in server side.
+To load excel documents initially from client side, set `ImportUrl` as excel file URL in `ImportSettings`. The code snippets for document initial load on client side are as follows,
+
+{% highlight html %}
+
+<ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
+      <ImportSettings ImportUrl="http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx" ImportMapper="SpreadsheetHandler.ashx" />
+</ej:Spreadsheet>
+
+{% endhighlight %}
+
+To load excel documents initially from server side, set `ImportOnLoad` as `true` and assign document stream or URL in the server. The code snippets for document initial load from server side are as follows,
+
+{% highlight html %}
+<ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
+      <ImportSettings ImportOnLoad="true" ImportUrl="http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx" ImportMapper="SpreadsheetHandler.ashx" />
+</ej:Spreadsheet>
+
+{% endhighlight %}
+
 ![](Open-and-Save_images/Open-and-Save_img1.png)
 
 ### Methods
@@ -146,7 +146,6 @@ function fileOpen(args) {
 
 {% endhighlight %}
 
-
 #### File URL
 Spreadsheet can open excel document from specified file URL. The file URL can be specified either from client side or in server side.
 The code snippets to open excel document as URL from client side are as follows,
@@ -160,7 +159,7 @@ function fileOpen() {
 
 {% endhighlight %}
 
-> Refer `SpreadsheetHandler.ashx` under [`Initial Load`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#initial-settings `Initial Load`) for server side processing.
+> Refer `SpreadsheetHandler.ashx` under [`Open`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#open `open`) for server side processing.
 
 ### User Interface
 
