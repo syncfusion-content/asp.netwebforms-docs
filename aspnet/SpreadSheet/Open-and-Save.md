@@ -38,7 +38,7 @@ The Spreadsheet can open excel documents as like excel application with its data
 
 {% endhighlight %}
 
-The below code snippets is to read and converted excel document into client side Spreadsheet model using `Spreadsheet.Open()` in 'SpreadsheetHandler.ashx' are as follows,
+The below code snippets is used to read and converted excel document into client side Spreadsheet model using `Spreadsheet.Open()` in 'SpreadsheetHandler.ashx' are as follows,
 
 {% highlight c# %}
 
@@ -159,7 +159,7 @@ function fileOpen() {
 
 {% endhighlight %}
 
-> Refer `SpreadsheetHandler.ashx` under [`Open`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#open `open`) for server side processing.
+> Refer `SpreadsheetHandler.ashx` under [`Open`](https://help.syncfusion.com/aspnet/spreadsheet/open-and-save#open "open") for server side processing.
 
 ### User Interface
 
