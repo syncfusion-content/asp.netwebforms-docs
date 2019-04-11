@@ -454,7 +454,7 @@ If you want to upload more than 4 MB files in FileExplorer, you should specify t
 
 {% highlight razor %}
 
-<httpRuntime targetFramework="4.6" maxRequestLength="2147483647"executionTimeout="1600" requestLengthDiskThreshold="2147483647" /> 
+<httpRuntime maxRequestLength="2147483647" /> 
      
 <system.webServer> 
     <security> 
