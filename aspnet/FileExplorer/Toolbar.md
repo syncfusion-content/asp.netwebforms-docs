@@ -450,6 +450,27 @@ This property has the below sub properties with the default values:
 
 **AutoUpload**: when you enable this property, the upload action performed automatically after select the files. When you disable this property, it shows a confirmation dialog with the selected file details and perform the upload action on press the “upload” button.
 
+If you want to upload more than 4 MB files in FileExplorer, you should specify the [maxRequestLength](https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx) and [maxAllowedContentLength](https://msdn.microsoft.com/en-us/library/ms689462(v=vs.90).aspx) attribute in webconfig file. Please check the below code block.
+
+{% highlight razor %}
+
+<httpRuntime targetFramework="4.6" maxRequestLength="2147483647"executionTimeout="1600" requestLengthDiskThreshold="2147483647" /> 
+     
+<system.webServer> 
+    <security> 
+      <requestFiltering> 
+        <requestLimits maxAllowedContentLength="3221225472" /> 
+      </requestFiltering> 
+    </security> 
+… 
+</system.webServer> 
+
+{% endhighlight %}
+
+Please find [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/uploadsettings-2078164286) for your reference.
+
+N> maxRequestLength is measured in kilobytes and maxAllowedContentLength is measured in bytes.
+
 During upload process following events will be triggered, {{'[beforeUploadSend](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeuploadsend)'| markdownify}}, {{'[beforeUploadDialogOpen](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeuploaddialogopen)'| markdownify}}, {{'[beforeUpload](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeupload)'| markdownify}}, {{'[uploadError](https://help.syncfusion.com/api/js/ejfileexplorer#events:uploaderror)'| markdownify}}, {{'[uploadSuccess](https://help.syncfusion.com/api/js/ejfileexplorer#events:uploadsuccess)'| markdownify}} and {{'[uploadComplete](https://help.syncfusion.com/api/js/ejfileexplorer#events:uploadcomplete)'| markdownify}}. You can customize the upload settings with these events
 
 In the view page, add FileExplorer element and specify the upload settings as shown below
