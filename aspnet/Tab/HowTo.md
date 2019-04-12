@@ -155,7 +155,7 @@ When clicking the submit button on page, validation is done for all the controls
 
 Sample can be downloaded [here](http://www.syncfusion.com/downloads/support/directtrac/228450/ze/SyncfusionEJValidation1538397475 )
 
-## Navigating from one tab to another using code behind action. 
+## Navigate from one tab to another using code behind action. 
 
 Users can navigate from one tab item to another tab item through code behind using the `selectedItemIndex` property. In the following example, three ASP Link buttons have been used to navigate between tabs through server-side click event.
 
