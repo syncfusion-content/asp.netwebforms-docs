@@ -155,3 +155,104 @@ When clicking the submit button on page, validation is done for all the controls
 
 Sample can be downloaded [here](http://www.syncfusion.com/downloads/support/directtrac/228450/ze/SyncfusionEJValidation1538397475 )
 
+## Navigate from one tab to another using code behind action. 
+
+Users can navigate from one tab item to another tab item through code behind using the `selectedItemIndex` property. In the following example, three ASP Link buttons have been used to navigate between tabs through server-side click event.
+
+{% tabs %}
+
+    {% highlight html %}
+
+       <ej:Tab ID="DefaulttabContent" runat="server" Width="600px" ShowCloseButton="true" HeaderPosition="Top" EnablePersistence="false" EnableTabScroll="false" EnableRTL="false">
+        <Items>
+            <ej:TabItem Id="steelman" Text="Man of Steel">
+                <ContentSection>
+                    <table>
+                        <tr>
+                            <td class="movies-img" >
+                                <img src="../Content/images/tab/mos.png" alt="mos" />
+                            </td>
+                            <td >
+                                <div>
+                                    <span class="movie-header">Man of Steel</span><br />
+                                    <span>Movie Info:</span>
+                                    <p>
+                                        A young boy learns that he has extraordinary powers and is not of this Earth.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </ContentSection>
+            </ej:TabItem>
+            <ej:TabItem Id="woldwar" Text="World War Z">
+                <ContentSection>
+                    <table>
+                        <tr>
+                            <td class="movies-img" >
+                                <img src="../Content/images/tab/wwz.png" alt="mos" />
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="movie-header">World War Z</span><br />
+                                    <span>Movie Info:</span>
+                                    <p>
+                                        The story revolves around United Nations employee Gerry Lane (Pitt).
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </ContentSection>
+            </ej:TabItem>
+            <ej:TabItem Id="university" Text="Monsters University">
+                <ContentSection>
+                    <table>
+                        <tr>
+                            <td class="movies-img" >
+                                <img src="../Content/images/tab/mu.png" alt="mos" />
+                            </td>
+                            <td>
+                                <div>
+                                    <span class="movie-header">Monsters University</span><br />
+                                    <span>Movie Info:</span>
+                                    <p>
+                                        Mike Wazowski and James P. Sullivan are an inseparable pair, but that wasn't always the case. 
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </ContentSection>
+            </ej:TabItem>
+        </Items>
+    </ej:Tab>
+    <br /> 
+    <asp:LinkButton ID="Link0" runat="server" OnClick="Link0_Click" CssClass="border">Navigate to Index 0</asp:LinkButton> 
+    <asp:LinkButton ID="Link1" runat="server" OnClick="Link1_Click" CssClass="border">Navigate to Index 1</asp:LinkButton> 
+    <asp:LinkButton ID="Link2" runat="server" OnClick="Link2_Click" CssClass="border">Navigate to Index 2</asp:LinkButton> 
+          
+	{% endhighlight %}
+
+    {% highlight c# %}
+
+         protected void Link0_Click(object sender, EventArgs e) 
+        { 
+            this.DefaulttabContent.SelectedItemIndex = 0; 
+        } 
+ 
+        protected void Link1_Click(object sender, EventArgs e) 
+        { 
+            this.DefaulttabContent.SelectedItemIndex = 1; 
+        } 
+ 
+        protected void Link2_Click(object sender, EventArgs e) 
+        { 
+            this.DefaulttabContent.SelectedItemIndex = 2; 
+        } 
+ 
+    {% endhighlight %}
+    
+{% endtabs %}
+
+Sample can be downloaded [here](http://www.syncfusion.com/downloads/support/directtrac/232942/ze/SyncfusionASPTab-1898026650)  
