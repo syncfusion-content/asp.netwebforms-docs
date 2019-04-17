@@ -449,7 +449,7 @@ The following screenshot displays the output for the XML Data binding.
 
 
 
-### LINQ-to-SQL Data binding
+## LINQ-to-SQL Data binding
 
 The LINQ data source is used to bind Menu data via LINQ to SQL. The property ContextTypeName indicates the location of the data source. You have to mention exact table name of your database in TableName property. The id of LinqDataSource must be provided to DataSourceID of Menu. Define a LINQ-to-SQL data source in the web page and configure the data source as per your requirement by using the database.
 
@@ -461,7 +461,7 @@ In the Design page, assign values for DataTextField, DataIdField, DataParentIdFi
 
 
 
-<ej:Menu ID="TreeSQL" DataTextField="Text" DataSourceID="linq" DataIdField="ID"
+     <ej:Menu ID="TreeSQL" DataTextField="Text" DataSourceID="linq" DataIdField="ID"
 
         DataParentIdField="ParentID" runat="server">
 
@@ -481,5 +481,45 @@ The following screenshot displays the output for the above code example.
 
 ![](Data-binding_images/Data-binding_img5.png) 
 
+## Data binding from DataTable
+
+The DataTable is a table representation of data. It provides a collection of columns and rows to store data in grid format. The menu items can be rendered from this DataTable using SQL commands. 
+
+In the following code example, dataSource for menu is set from DataTable.
+ 
+{% highlight html %}
+
+      <ej:Menu ID="Menu1" runat="server"></ej:Menu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+  
+    protected void Page_Load(object sender, EventArgs e)
+        {
+            string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Linq_To_SQL.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection con = new SqlConnection(constr);
+            con.Open();
+            SqlDataAdapter adpt = new SqlDataAdapter();
+            SqlCommand command = new SqlCommand("select * from  Databinding", con); //select from corresponding table.
+            adpt.SelectCommand = command;
+            DataTable dt = new DataTable();
+            adpt.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                Menu1.DataSource = dt;
+                Menu1.DataTextField = "Text";
+                Menu1.DataIdField = "Id";
+                Menu1.DataParentIdField = "ParentId";
+                Menu1.DataBind();
+            }
+        }
 
 
+{% endhighlight %}
+
+Sample can be downloaded [here](http://www.syncfusion.com/downloads/support/directtrac/233237/ze/Menu921663815)
+
+Now , the menu will be displayed as shown below
+
+![DataTable](Data-binding_images/Data-binding_img6.png) 
