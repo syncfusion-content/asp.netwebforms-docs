@@ -13,6 +13,183 @@ NuGet is a package manager for the .NET framework. The NuGet client tools simpli
 
 N> You can use the Syncfusion ASP.NET Web Forms NuGet packages without installing the Essential Studio or ASP.NET Web Forms platform installation to implement the Syncfusion ASP.NET controls.
 
+## NuGet Packages Structure
+
+The following structure is maintained for ASP.NET platform NuGet packages from 2015 Volume 2(v13.2.0.29). The latest package cannot be updated because of the installed Syncfusion NuGet packages prior version of 2015 Volume 2(V13.2.0.29). To update Syncfusion NuGet packages latest or above version of 2015 Volume 1 Service Pack-2(v13.1.0.30), uninstall the existing packages and install the following required package manually.
+
+<table>
+   <tr>
+		<td colspan="1" rowspan="2">
+			Categories/Package Name<br/>
+		</td>
+		<td colspan="1" rowspan="2">
+			Supported Controls<br/>
+		</td>
+		<td colspan="1" rowspan="2">
+			Assemblies<br/>
+		</td>
+		<td colspan="2" rowspan="1">
+			Assets<br/>
+		</td>
+		<td>
+			Dependencies<br/>
+		</td>
+	</tr>
+    <tr>
+		<td>
+			Scripts<br/>
+		</td>
+		<td>
+			CSS<br/>
+		</td>
+		<td>
+			<br/>
+		</td>
+	</tr>
+  	<tr>
+		<td>
+			Syncfusion.AspNet<br/>
+		</td>
+		<td>
+			Grid<br/>Data Visualization<br/>Layout<br/>Editors<br/>Navigation<br/>Notification<br/>To know more information about the controls for above categories navigate to the following link.<br/> {{'<http://www.syncfusion.com/products/aspnet>'| markdownify }}<br/><br/>
+		</td>
+		<td>
+			EJ.Web<br/>
+		</td>
+		<td>
+			ej.webform.min.js<br/><br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.Web.Base<br/>
+            Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+		<tr>
+		<td>
+			Syncfusion.AspNet.PdfViewer<br/>
+		</td>
+		<td>
+			Pdf Viewer<br/>
+		</td>
+		<td>
+			EJ.PdfViewer<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.AspNet<br/>
+            Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.AspNet.ReportViewer<br/>
+		</td>
+		<td>
+			Report Viewer<br/>
+		</td>
+		<td>
+			Shared.WPF<br/>RichTextBoxAdv.WPF<br/>Chart.WPF<br/>GridCommon.WPF<br/>Grid.WPF<br/>SfMaps.WPF<br/>ReportControls.WPF<br/>ReportWriter.Base<br/>EJ.ReportViewer<br/>Gauge.WPF<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.AspNet<br/>Syncfusion.Web.Base<br/>Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.AspNet.FileFormats<br/>
+		</td>
+		<td>
+			Excel<br/>Word<br/>PDF<br/>Power Point(Preview)<br/>
+		</td>
+		<td>
+			DocToPDFConverter.Base<br/>ExcelToPDFConverter.Base<br/>PresentationToPDFConverter.Base<br/>HtmlConverter.Base<br/>OfficeChartToImageConverter.WPF<br/>ExcelChartToImageConverter.WPF<br/>SfChart.WPF<br/>Shared.WPF<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.AspNet.Pivot<br/>
+		</td>
+		<td>
+			Pivot Grid<br/>Pivot Chart<br/>Pivot Client<br/>Pivot Gauge<br/>
+		</td>
+		<td>
+			Olap.Base<br/>EJ.Pivot<br/>PivotAnalysis.Base<br/>
+		</td>
+		<td>
+			ej.webform.min.js<br/><br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.Web.Base<br/>Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+	</tr>
+  <tr>
+		<td>
+			Syncfusion.Web.Base<br/>
+		</td>
+    <td>
+			-<br/>
+		</td>
+		<td>
+			Linq.Base<br/>EJ<br/>EJ.Export<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Syncfusion.JavaScript<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Syncfusion.Web.FileFormatsBase<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			Compression.Base<br/>XlsIO.Base<br/>Pdf.Base<br/>DocIO.Base<br/>OfficeChart.Base<br/>Presentation.Base<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+		<td>
+			-<br/>
+		</td>
+	</tr>
+</table>
+
 ## Installing NuGet Packages
 
 ### Using NuGet Package Manager
