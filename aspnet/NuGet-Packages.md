@@ -9,9 +9,9 @@ documentation: ug
 
 # NuGet Packages
 
-NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion ASP.NET Web Forms NuGet packages without installing the Essential Studio or ASP.NET Web Forms platform installation to development with the Syncfusion ASP.NET controls. From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion components are available as NuGet packages at [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
-N> You can use the Syncfusion ASP.NET Web Forms NuGet packages without installing the Essential Studio or ASP.NET Web Forms platform installation to implement the Syncfusion ASP.NET controls.
+N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 
 ## Installing NuGet Packages
 
