@@ -138,7 +138,7 @@ If you want to refer to the CDN links instead of the direct script and CSS refer
 
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> 
 
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.webform.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/common/ej.webform.min.js"></script>
 
 </head>    
 
