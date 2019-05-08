@@ -29,7 +29,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
    N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2**  
-   Right-click the Project file in Solution Explorer, then select the command Syncfusion Troubleshooter…
+   Right-click the Project file in Solution Explorer, then select the command **Syncfusion Troubleshooter…**
 
    ![Syncfusion Troubleshooter add-in](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img1.png)
 
