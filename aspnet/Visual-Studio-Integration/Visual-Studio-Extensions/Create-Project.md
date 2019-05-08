@@ -18,7 +18,7 @@ Use the following steps to create the **Syncfusion ASP.NET (Essential JS 1) Appl
 1. To create a Syncfusion ASP.NET (Essential JS 1) Web Forms project, follow either one of the options below:
 
    **Option 1**  
-   Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET Web Froms (EJ1) > Create New Syncfusion Web Project…** or **Create New Syncfusion WebSite Project…** in **Visual Studio**.
+   Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET Web Forms (EJ1) > Create New Syncfusion Web Project…** or **Create New Syncfusion WebSite Project…** in **Visual Studio**.
 
    ![Choose Syncfusion ASP.NET Web Application or Syncfusion ASP.NET Web Site from Visual Studio new project dialog via Syncfusion menu](Create-Project_images/Syncfusion_Menu_ProjectTemplate.png)
 
