@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotGrid | PivotGrid | ASP.NET | Syncfusion
-description: This document illustrates overview of PivotGrid control in ASP.NET platform. PivotGrid is a business component to visualize relational and OLAP data sources in tabular format
+description: It is an overview of PivotGrid control in ASP.NET platform. PivotGrid component visualizes relational and OLAP data sources in tabular format
 platform: aspnet
 control: PivotGrid
 documentation: ug
