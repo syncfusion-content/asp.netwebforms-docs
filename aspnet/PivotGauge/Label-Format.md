@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Label Format | PivotGauge | ASP.NET | Syncfusion
-description: label format
+description: This document illustrates that how to define label format feature and its functionalities in ASP.NET PivotGauge control
 platform: aspnet
 control: PivotGauge
 documentation: ug

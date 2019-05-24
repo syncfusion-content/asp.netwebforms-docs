@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout | PivotGauge | ASP.NET | Syncfusion
-description: layout 
+description: This document illustrates that how to define layouts and its functionalities in ASP.NET PivotGauge control
 platform: aspnet
 control: PivotGauge
 documentation: ug

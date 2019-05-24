@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping Bar | PivotGrid | ASP.NET | Syncfusion
-description: grouping bar
+description: This document illustrates that how to enable grouping bar feature and its functionalities in ASP.NET PivotGrid control with relational mode
 platform: aspnet
 control: PivotGrid
 documentation: ug
