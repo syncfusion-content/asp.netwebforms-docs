@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotClient | PivotClient | ASP.NET | Syncfusion
-description: This document illustrates overview of PivotClient control in ASP.NET platform. PivotClient is a lightweight component to visualize relational and OLAP data sources in a graphical and tabular formats
+description: It is an overview of PivotClient control in ASP.NET platform. PivotClient visualizes relational and OLAP data sources in a graphical and tabular formats
 platform: aspnet
 control: PivotClient
 documentation: ug
