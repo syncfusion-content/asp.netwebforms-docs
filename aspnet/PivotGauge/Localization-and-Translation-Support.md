@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | PivotGauge | ASP.NET | Syncfusion
-description: localization
+description: This document illustrates that how to define localization with respective to the modes in ASP.NET PivotGauge control
 platform: aspnet
 control: PivotGauge
 documentation: ug

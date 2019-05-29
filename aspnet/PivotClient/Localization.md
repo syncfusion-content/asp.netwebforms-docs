@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | PivotClient | ASP.NET | Syncfusion
-description: localization 
+description: This document illustrates that how to define localization with respective to the modes in ASP.NET PivotClient control
 platform: aspnet
 control: PivotClient
 documentation: ug

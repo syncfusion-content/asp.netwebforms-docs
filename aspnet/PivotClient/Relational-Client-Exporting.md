@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting | PivotClient | ASP.NET | Syncfusion
-description: exporting
+description: This document illustrates that how to define exporting and its customization in ASP.NET PivotClient control with relational mode
 platform: aspnet
 control: PivotClient
 documentation: ug

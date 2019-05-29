@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | PivotTreeMap | ASP.NET | Syncfusion
-description: localization 
+description: This document illustrates that how to define localization with respective to the modes in ASP.NET PivotTreeMap control 
 platform: aspnet
 control: PivotTreeMap
 documentation: ug
@@ -43,5 +43,5 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 {% endhighlight %}
 
-![](Localization_images/localization.png) 
+![Localization in ASP NET pivot tree map control](Localization_images/localization.png) 
 

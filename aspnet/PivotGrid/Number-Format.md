@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number format  | PivotGrid | ASP.NET | Syncfusion
-description: number format
+description: This document illustrates that how to define number formats and its types in ASP.NET PivotGrid control
 platform: aspnet
 control: PivotGrid
 documentation: ug

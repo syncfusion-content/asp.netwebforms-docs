@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calculated Field | PivotGrid | ASP.NET | Syncfusion
-description: calculated field
+description: This document illustrates that how to define calculated field through code-behind/UI in ASP.NET PivotGrid control 
 platform: aspnet
 control: PivotGrid
 documentation: ug

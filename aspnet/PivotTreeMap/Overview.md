@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotTreeMap | PivotTreeMap | ASP.NET | Syncfusion
-description: overview
+description: It is an overview of PivotTreeMap control in ASP.NET platform. PivotTreeMap visualizes relational and OLAP data in the form of nested nodes
 platform: aspnet
 control: PivotTreeMap
 documentation: ug
