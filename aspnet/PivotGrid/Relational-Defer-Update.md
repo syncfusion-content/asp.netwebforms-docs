@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Defer-Update | PivotGrid | ASP.NET | Syncfusion
-description: defer update
+description: This document illustrates that how to enable defer-update in server mode of ASP.NET PivotGrid control
 platform: aspnet
 control: PivotGrid
 documentation: ug

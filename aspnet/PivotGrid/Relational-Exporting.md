@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting | PivotGrid | ASP.NET | Syncfusion
-description: exporting
+description: This document illustrates that how to define exporting and its customization in ASP.NET PivotGrid control
 platform: aspnet
 control: PivotGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Types | PivotChart | ASP.NET | Syncfusion
-description: chart types
+description: This document illustrates that how to define chart types and its customization in ASP.NET PivotChart control
 platform: aspnet
 control: PivotChart
 documentation: ug
