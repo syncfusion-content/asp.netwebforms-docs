@@ -1,6 +1,6 @@
 ---
 title: Schedule - Responsiveness
-description: Display Scheduler with responsiveness
+description: This section explains the responsive behavior of the Syncfusion ASP.NET Web Forms Schedule control based on the client browser width and height.
 platform: aspnet
 control: schedule
 documentation: ug

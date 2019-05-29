@@ -1,6 +1,6 @@
 ---
 title: How-to
-description: Custom Configuration with Schedule control
+description: The how to section explain more functionalities or informations about Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: Schedule
 documentation: ug
