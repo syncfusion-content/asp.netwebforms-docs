@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drill Operation | PivotChart | ASP.NET | Syncfusion
-description: drill operation
+description: This document illustrates drill operation with respective to the modes of ASP.NET PivotChart control
 platform: aspnet
 control: PivotChart
 documentation: ug

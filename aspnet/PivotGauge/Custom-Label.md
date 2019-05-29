@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom labels | PivotGauge | ASP.NET | Syncfusion
-description: custom labels
+description: This document illustrates that how to enable custom labels and its functionalities in ASP.NET PivotGauge control
 platform: aspnet
 control: PivotGauge
 documentation: ug

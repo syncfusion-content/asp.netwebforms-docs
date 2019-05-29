@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scale | PivotGauge | ASP.NET | Syncfusion
-description: scale
+description: This document illustrates that how to enable scales and its customization in ASP.NET PivotGauge control
 platform: aspnet
 control: PivotGauge
 documentation: ug

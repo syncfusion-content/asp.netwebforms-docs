@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend | PivotChart | ASP.NET | Syncfusion
-description: legend
+description: This document illustrates that how to define legend and its customization in ASP.NET PivotChart control
 platform: aspnet
 control: PivotChart
 documentation: ug

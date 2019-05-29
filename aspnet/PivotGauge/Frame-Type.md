@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Frame Type | PivotGauge | ASP.NET | Syncfusion
-description: frame type 
+description: This document illustrates that how to define frames and its types with respective to the angles and scales in ASP.NET PivotGauge control
 platform: aspnet
 control: PivotGauge
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pointers | PivotGauge | ASP.NET | Syncfusion
-description: pointers
+description: This document illustrates that how to enable pointers and its customization in ASP.NET PivotGauge control
 platform: aspnet
 control: PivotGauge
 documentation: ug
