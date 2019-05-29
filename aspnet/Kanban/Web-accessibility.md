@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web accessibility with Kanban widget for Syncfusion Essential ASP.NET
-description: Web accessibilties standard used in Kanban
+description: This section explains how to enable web accessibility support on the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

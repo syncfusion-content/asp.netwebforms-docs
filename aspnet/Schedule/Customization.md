@@ -1,6 +1,6 @@
 ---
 title: Schedule - Customization	
-description: Customization of working hours, date, and appointment window
+description: This section explains how to customize working hours, date, appointment window and their features of the Syncfusion ASP.NET Web Forms Schedule component.
 platform: aspnet
 control: schedule
 documentation: ug

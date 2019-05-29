@@ -1,6 +1,6 @@
 ---
 title: Schedule - Views
-description: View options available in Scheduler
+description: This section explains how to enable the view options and its functionalities using the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: schedule
 documentation: ug

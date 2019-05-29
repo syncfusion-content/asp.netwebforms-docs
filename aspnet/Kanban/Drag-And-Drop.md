@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Kanban widget with Drag and drop behavior for Syncfusion Essential ASP.NET
-description: How to drag and drop Kanban cards.
+title: Drag and Drop | Kanban | ASP.NET | Syncfusion
+description: This section explains how to drag and drop Kanban cards and their features of the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
 documentation: ug

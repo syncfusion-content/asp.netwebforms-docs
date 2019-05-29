@@ -1,6 +1,6 @@
 ---
 title: Schedule - Overview
-description: Schedule Introduction
+description: This section explains the short description of basic features on the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: schedule
 documentation: ug

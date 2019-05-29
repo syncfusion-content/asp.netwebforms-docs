@@ -1,6 +1,6 @@
 ---
 title: Schedule - Template
-description: Customize Scheduler with various available template options
+description: This section explains how to define the templates and its functionalities using the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: schedule
 documentation: ug

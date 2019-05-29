@@ -1,6 +1,6 @@
 ---
 title: Export, import and print the Schedule with its appointments	
-description: Export-Import/Print the complete Scheduler or specific appointment alone
+description: Export-Import/Print the complete Scheduler or specific appointment alone using the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: schedule
 documentation: ug
