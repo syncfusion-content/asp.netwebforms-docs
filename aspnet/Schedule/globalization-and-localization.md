@@ -1,6 +1,6 @@
 ---
-title: Globalization and Localization
-description: Globalizing and localizing Scheduler
+title: Globalization and Localization with Scheduler for Syncfusion Essential ASP.NET
+description: This section explains how to provide support for localization in the Syncfusion ASP.NET Web Forms Schedule component.
 platform: aspnet
 control: schedule
 documentation: ug

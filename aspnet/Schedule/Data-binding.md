@@ -1,6 +1,6 @@
 ---
 title: Data binding with Schedule	
-description: Binding local and remote data to Scheduler
+description: Databinding is used to show the different binding of adaptor section using Syncfusion ASP.NET Web Forms Schedule component.
 platform: aspnet
 control: schedule
 documentation: ug

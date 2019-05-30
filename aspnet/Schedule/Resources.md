@@ -1,6 +1,6 @@
 ---
 title: Schedule - Resource handling with multiple option
-description: Handling multiple resources in Scheduler
+description: This section explains how to handle multiple resources support on the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: schedule
 documentation: ug
