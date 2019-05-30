@@ -1,6 +1,6 @@
 ---
 title: Setting dimension
-description: Setting dimension for Schedule control
+description: This section explains how to define the dimensions and its functionalities using the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: schedule
 documentation: ug

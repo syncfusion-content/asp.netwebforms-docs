@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Server-side events of ASP.NET Web Forms Scheduler
-description: Complete server-side events available in Scheduler along with its accessible argument details.
+description: Complete server-side events available in Scheduler along with its accessible argument details on the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: Schedule
 documentation: ug
