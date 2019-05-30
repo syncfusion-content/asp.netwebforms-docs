@@ -1,6 +1,6 @@
 ---
 title: Keyboard support with shortcut keys
-description: Accessing Scheduler actions through Keyboard shortcuts 
+description: This section explains how to enable keyboard navigation support on the ASP.NET Web Forms Schedule control. 
 platform: aspnet
 control: schedule
 documentation: ug

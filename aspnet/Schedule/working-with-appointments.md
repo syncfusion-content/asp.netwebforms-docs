@@ -1,6 +1,6 @@
 ---
 title: Working with appointments
-description: Working with Scheduler appointments and its related options like Recurrence.
+description: Working with Scheduler appointments and its related options like Recurrence using the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: schedule
 documentation: ug
