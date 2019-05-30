@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Validation of Syncfusion Essential ASP.NET
-description: How to validate the Syncfusion controls.
+title: ASP.NET Web Forms Controls Validation | ASP.NET | Syncfusion
+description: This section describes how to validate the syncfusion controls using jQuery validator and ASP.NET validator.
 platform: aspnet
 control: Introduction
 documentation: ug
 
 ---
-# Validation
+# ASP.NET Web Forms Controls Validation
 
 Syncfusion controls can be validated in two ways.
 
@@ -90,4 +90,4 @@ To validate the DatePicker control using ASP validator, follow the code sample:
 
 Executing the above code will validate the DatePicker control values on every form submit before post back occurs as given in the following.
 
-![](Validation_images/1.png)
+![DatePicker control validation in asp.net web forms](Validation_images/1.png)
