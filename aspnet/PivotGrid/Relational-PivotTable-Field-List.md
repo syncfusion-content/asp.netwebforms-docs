@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotTable Field List | PivotGrid | ASP.NET Web Forms | Syncfusion
-description: This section describes how to grid control performs the add, rearrange, filter, and remove fields operations. 
+description: This section describes how to performs the add, rearrange, filter, and remove fields operations in pivot grid control. 
 platform: aspnet
 control: PivotGrid
 documentation: ug
