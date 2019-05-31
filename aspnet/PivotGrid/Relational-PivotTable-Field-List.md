@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotTable Field List | PivotGrid | ASP.NET | Syncfusion
-description: pivotTable field list
+title: PivotTable Field List | PivotGrid | ASP.NET Web Forms | Syncfusion
+description: It is known as Pivot Schema Designer, allows you to add, rearrange, filter, and remove fields to show the data in the pivot grid exactly the way as you desired. 
 platform: aspnet
 control: PivotGrid
 documentation: ug
 ---
 
-# Pivot table field list
+# Pivot Table Field List
 
 ## Initialization
 
