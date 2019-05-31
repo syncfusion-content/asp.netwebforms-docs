@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotTable Field List | PivotGrid | ASP.NET | Syncfusion
-description: pivotTable field list
+title: PivotTable Field List | PivotGrid | ASP.NET Web Forms | Syncfusion
+description: This section describes how to perform the operations add, rearrange, filter, and remove fields in pivot table field list of ASP.NET WebForms Pivot grid control.
 platform: aspnet
 control: PivotGrid
 documentation: ug
 ---
 
-# Pivot table field list
+# Pivot Table Field List
 
 ## Initialization
 
