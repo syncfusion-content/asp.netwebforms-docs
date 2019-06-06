@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show tooltips when mouse hovers over objects
-description: How to show/hide tooltips when mouse hovers over objects or during interaction?
+title: Tooltip | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to show/hide tooltips when mouse hovers over objects or during interaction.
 platform: aspnet
 control: Diagram
 documentation: ug

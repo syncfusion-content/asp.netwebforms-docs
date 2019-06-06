@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visually represent a business process with its functional blocks/departments
-description: How to visually represent a business process and the relationships among its functional blocks?
+title: Swimlane | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains about how to visually represent a business process and the relationships among its functional blocks.
 platform: aspnet
 control: Control Name undefined
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Explore the frequently used built-in commands
-description: How to explore and use the built-in commands?
+title: Commands | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to explore and use the built-in commands in the Diagram control.
 platform: aspnet
 control: Diagram
 documentation: ug

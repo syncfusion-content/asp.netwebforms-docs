@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialize the Diagram as JSON and load Diagram from serialized JSON
-description: serialization
+title: Serialization | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to process saving and loading for state persistence of the Diagram.
 platform: aspnet
 control: Diagram
 documentation: ug

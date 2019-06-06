@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Track the history of changes and revert/restore them when required
-description: undo and redo
+title: Undo-Redo | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to revert/restore the changes using Undo and Redo commands in the Diagram control.
 platform: aspnet
 control: Diagram
 documentation: ug

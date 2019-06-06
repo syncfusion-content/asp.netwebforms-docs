@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group two or more relevant objects
-description: How to group two or more nodes and connectors?
+title: Group | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to use the Essential Diagram control Grouping functionality and its behavior in ASP.NET Webform.
 platform: aspnet
 control: Diagram
 documentation: ug
