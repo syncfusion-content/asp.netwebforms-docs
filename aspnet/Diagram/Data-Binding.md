@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populate Diagram from external data sources
-description: How to populate the Diagram from the local data, remote data, or HTML tables?
+title: Data-Binding | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains about how to populate the Diagram from the local data, remote data, or HTML tables.
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -315,11 +315,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 ![](Data-Binding_images/Data-Binding_img5.png) 
 
-# CRUD
+## CRUD
 
 * This feature allows the user to read the DataSource and perform add/edit/delete the data in datasource at runtime.
 
-## Read DataSource
+### Read DataSource
 
 * This feature allows you to define nodes and connectors collection in the DataSource and ConnectionDataSource respectively.
 * We can set the data collection in the model’s DataSourceSettings DataSource property. The nodes will be generated based on the data specified in the DataSource. 
@@ -362,11 +362,11 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## How to perform Editing at runtime
+### How to perform Editing at runtime
 
 We need to specify the URL for create/update/destroy of nodes and connectors.
 
-## InsertData
+### InsertData
 
 * The following code example illustrates how to send the newly added/inserted data from client to server side.
 
@@ -422,7 +422,7 @@ diagram.insertData();
 {% endhighlight %}
 {% endtabs %}
 
-## UpdateData
+### UpdateData
 
 * The following code example illustrates how to send the updated data from client to the server side.
 
@@ -480,7 +480,7 @@ diagram.updateData();
 {% endhighlight %}
 {% endtabs %}
 
-## DeleteData
+### DeleteData
 
 The following code example illustrates how to send the deleted data from client to the server side.
 

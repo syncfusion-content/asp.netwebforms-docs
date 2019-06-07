@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalize and Localize the Diagram control
-description: How to globalize and localize the Diagram control?
+title: Localization | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains the process of providing controls in different cultures to help you set your own culture easily.
 platform: aspnet
 control: Diagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Draw shapes, selection rectangles, or Pan Diagram, when you click and drag over the Digram surface
-description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
+title: Tools | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains about how to draw shapes or pan Diagram by clicking and dragging over the Diagram surface.
 platform: aspnet
 control: Diagram
 documentation: ug

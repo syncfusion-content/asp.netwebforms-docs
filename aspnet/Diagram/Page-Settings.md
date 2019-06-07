@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the size and appearance of single or multiple Diagram pages
-description: How to customize the size and appearance of the Diagram pages?
+title: Page-Settings | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to customize the size and appearance of the Diagram pages.
 platform: aspnet
 control: Diagram
 documentation: ug
