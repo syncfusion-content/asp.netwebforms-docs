@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable/Disable the optional features
-description: How to Enable/Disable the optional features of ejDiagram?
+title: Constraints | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to use the Constraints to enable or disable certain behaviors of the diagram, node, and connector.
 platform: aspnet
 control: Diagram
 documentation: ug

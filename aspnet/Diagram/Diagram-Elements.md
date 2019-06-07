@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diagram Elements | Diagram | ASP.NET Webforms | Syncfusion
+title: Diagram-Elements | Diagram | ASP.NET Webforms | Syncfusion
 description: diagram elements
 platform: aspnet
 control: Diagram

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout nodes and connectors in an organized structure
-description: How to arrange nodes by using the automatic layouts?
+title: Automatic-Layout | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to Layout the nodes and connectors in an organized structure Diagram control.
 platform: aspnet
 control: Diagram
 documentation: ug

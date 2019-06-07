@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add text annotations to Diagram objects to textually describe them
-description: How to textually describe nodes and connectors?
+title: Label | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to use Essential Diagram control Label's functionality and its behavior.
 platform: aspnet
 control: Diagram
 documentation: ug

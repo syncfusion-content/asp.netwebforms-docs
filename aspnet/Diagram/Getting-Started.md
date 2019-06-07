@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Syncfusion Essential Diagram for ASP.NET Webforms
+title: Getting-Started | Diagram | ASP.NET Webform | Syncfusion
 description: Getting started walk through to create your first Flow Diagram and Organizational Chart Diagram.
 platform: aspnet
 control: Diagram

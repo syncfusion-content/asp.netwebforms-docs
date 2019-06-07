@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create custom connection points to draw connections with any specific point of node
-description: How to draw connections with specific points of node?
+title: Ports | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to draw/create connections between the nodes with specific points.
 platform: aspnet
 control: Diagram
 documentation: ug

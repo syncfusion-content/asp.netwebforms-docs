@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pick the type of node among the predefined nodes and shapes
-description: How to choose the type of the node with respect to the requirement? 
+title: Shapes | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to choose the type of the node with respect to the requirement in the Diagram control. 
 platform: aspnet
 control: Diagram
 documentation: ug
