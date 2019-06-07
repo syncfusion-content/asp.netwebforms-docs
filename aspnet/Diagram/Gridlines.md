@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add gridlines behind nodes and connectors to ease alignments
-description: How to add gridlines behind nodes and connectors?
+title: GridLines | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to add the functionalities of the gridlines behind nodes and connectors in Diagram control.
 platform: aspnet
 control: Diagram
 documentation: ug
@@ -81,9 +81,9 @@ Diagram.Model.SnapSettings = new SnapSettings()
 
 ![](Gridlines_images/Gridlines_img2.png)
 
-# Snapping
+## Snapping
 
-## Snap To Lines
+### Snap To Lines
 
 This feature allows the Diagram objects to snap to the nearest intersection of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
@@ -98,7 +98,7 @@ Snapping to gridlines can be enabled/disabled with the `SnapSettings.SnapConstra
 
 To enable/disable snapping to horizontal/vertical lines, refer to [Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.SnapSettings~SnapConstraints.html "Constraints")
 
-## Customization of Snap Intervals
+### Customization of Snap Intervals
 
 By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the property, `snapInterval`. The following code example illustrates how to customize the snap intervals.
 
@@ -114,7 +114,7 @@ Diagram.Model.SnapSettings = new SnapSettings()
 };
 {% endhighlight %}
 
-## Snap To Objects
+### Snap To Objects
 
 The snap-to-object provides visual cues to assist with aligning and spacing Diagram elements. A node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as smart guides.
 

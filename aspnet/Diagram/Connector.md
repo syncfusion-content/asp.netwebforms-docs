@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Draw a line connecting two points, nodes or ports
-description: How to draw a line to connect points, nodes, or ports?
+title: Connectors | Diagram | ASP.NET Webform | Syncfusion
+description: This section explains how to draw a line and create the connection between the nodes or ports in the Diagram control.
 platform: aspnet
 control: Diagram
 documentation: ug

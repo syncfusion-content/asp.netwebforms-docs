@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ruler is used to measure the distance of nodes and connectors from origin of the page.
-description:  how to measure the distance of Nodes and Connectors?
+title: Rulers | Diagram | ASP.NET Webform | Syncfusion
+description:  This section explains how to use Diagram's Ruler to measure the distance of nodes and connectors from the origin of the page.
 platform: aspnet
 control: Diagram
 documentation: ug

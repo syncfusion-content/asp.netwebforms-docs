@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview Control | Diagram | ASP.NET Webforms | Syncfusion
-description: overview control
+description: This section explains how to see a preview or an overall view of the entire content of a Diagram.
 platform: aspnet
 control: Diagram
 documentation: ug
