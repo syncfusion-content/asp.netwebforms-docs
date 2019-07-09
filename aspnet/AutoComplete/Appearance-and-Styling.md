@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling | AutoComplete | ASP.NET Webforms | Syncfusion
+title: Appearance and Styling | AutoComplete | ASP.NET | Syncfusion
 description: This section explains how to customize the appearance and styles of the Syncfusion ASP.NET Web Forms Autocomplete textbox.
 platform: aspnet
 control: AutoComplete

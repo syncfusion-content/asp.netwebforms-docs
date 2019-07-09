@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling | Accordion | ASP.NET Webforms | Syncfusion
+title: Appearance and Styling | Accordion | ASP.NET Webforms |Syncfusion
 description: appearance and styling
 platform: aspnet
 control: Accordion 

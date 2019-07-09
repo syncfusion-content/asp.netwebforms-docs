@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in ComboBox widget for Syncfusion Essential ASP.NET WebForm
+title: Filtering in ComboBox widget for Syncfusion ASP.NET WebForms
 description: Describes about the filtering in ComboBox widget for Syncfusion Essential ASP.NET WebForm
 platform: aspnet
 control: ComboBox

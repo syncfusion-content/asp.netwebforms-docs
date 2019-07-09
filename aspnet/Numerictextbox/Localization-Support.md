@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization Support | NumericTextbox | ASP.NET Webforms | Syncfusion
+title: Globalization Support | NumericTextbox | ASP.NET | Syncfusion
 description: globalization support
 platform: aspnet
 control: NumericTextbox

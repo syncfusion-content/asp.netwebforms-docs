@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cleanup elements when copy paste from MSWord to RichTextEditor widget
+title: Cleanup elements when copy paste from MSWord to RichTextEditor
 description: Cleanup elements when copy paste from MSWord to RichTextEditor widget
 platform: aspnet
 control: RTE

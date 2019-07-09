@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data binding in DropDownList control for Syncfusion ASP.NET WebForm
+title: Data binding in DropDownList | Syncfusion | ASP.NET WebForms
 description: Describes about the data binding in DropDownList control for Syncfusion ASP.NET WebForm
 platform: aspnet
 control: DropDownList
