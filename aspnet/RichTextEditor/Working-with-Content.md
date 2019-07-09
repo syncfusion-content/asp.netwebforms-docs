@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with content related operation in RichTextEditor control for Syncfusion Essential ASP.NET
+title: Working with content related operation|RTE|Syncfusion|ASP.NET
 description: Working with Content related changes in RichTextEditor control
 platform: aspnet
 control: RTE

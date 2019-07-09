@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior Settings | NumericTextbox | ASP.NET Webforms | Syncfusion
+title: Behavior Settings | NumericTextbox | ASP.NET | Syncfusion
 description: behavior settings
 platform: aspnet
 control: NumericTextbox

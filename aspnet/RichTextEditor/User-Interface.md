@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Interface for the RichTextEditor control for Syncfusion Essential ASP.NET
+title: User Interface for the RichTextEditor | Syncfusion | ASP.NET
 description: User Interface for RichTextEditor control (toolbar, content area, and footer)
 platform: aspnet
 control: RTE

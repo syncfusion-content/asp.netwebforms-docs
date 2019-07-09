@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validation in RichTextEditor control for Syncfusion Essential ASP.NET Webform
+title: Validation in RichTextEditor | Syncfusion | ASP.NET Webform
 description: Validation to format the RichTextEditor control's content
 platform: aspnet
 control: RTE

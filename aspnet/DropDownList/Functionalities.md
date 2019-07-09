@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Functionalities in the DropDownList control for Syncfusion ASP.NET WebForm
+title: Functionalities in DropDownList | Syncfusion | ASP.NET WebForms
 description: Functionalities in the DropDownList control for Syncfusion ASP.NET WebForm
 platform: aspnet
 control: DropDownList
