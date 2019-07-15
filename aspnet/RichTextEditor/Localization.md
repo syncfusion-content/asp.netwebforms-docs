@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization with RichTextEditor control for Syncfusion Essential ASP.NET
+title: Localization with RichTextEditor | Syncfusion | ASP.NET
 description: Initialize the RichTextEditor control with specified Localization  
 platform: aspnet 
 control: RTE

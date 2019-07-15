@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Find and Replace  in RichTextEditor control for Syncfusion Essential ASP.NET Webform
+title: Find and Replace in RichTextEditor | Syncfusion | ASP.NET
 description: Find and Replace in RichTextEditor control
 platform: aspnet
 control: RTE
