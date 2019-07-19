@@ -45,7 +45,7 @@ To draw a shape, you need to set the JSON of that shape to the `drawType` proper
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Tools_images/Tools_img1.png)
+![draw a rectangle at run time](/aspnet/Diagram/Tools_images/Tools_img1.png)
 
 The following code example illustrates how to draw a path.
 
@@ -69,7 +69,7 @@ The following code example illustrates how to draw a path.
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Tools_images/Tools_img3.png)
+![draw a path](/aspnet/Diagram/Tools_images/Tools_img3.png)
 
 ### Connectors
 
@@ -92,7 +92,7 @@ To draw connectors, you have to set the JSON of the connector to `drawType` prop
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Tools_images/Tools_img2.png)
+![draw a straight line connector](/aspnet/Diagram/Tools_images/Tools_img2.png)
 
 ### Text 
 
@@ -133,7 +133,7 @@ Diagram allows to create the polyline segments with straight lines and angled ve
 
 Once you activate the polyline tool, you can also able to draw the polyline connector on diagram page.
 
-![](/aspnet/Diagram/Tools_images/Tools_img4.png)
+![draw the polyline connector](/aspnet/Diagram/Tools_images/Tools_img4.png)
 
 ## Tool Selection
 

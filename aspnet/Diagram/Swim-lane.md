@@ -54,7 +54,7 @@ The following code example illustrates how to add a swimlane to the Diagram thro
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Swim-lane_images/Swim-lane_img2.png)
+![add a swimlane to the Diagram through nodes collection](/aspnet/Diagram/Swim-lane_images/Swim-lane_img2.png)
 
 ## Headers
 
@@ -84,7 +84,7 @@ Swimlane allows to define a header to textually describe it. The `Header` proper
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Swim-lane_images/Swim-lane_img3.png)
+![define swimlane header](/aspnet/Diagram/Swim-lane_images/Swim-lane_img3.png)
 
 ### Update Header
 
@@ -228,7 +228,7 @@ To add nodes to a lane, You need to add them to the `Children` collection of lan
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Swim-lane_images/Swim-lane_img4.png)
+![add nodes to a lane](/aspnet/Diagram/Swim-lane_images/Swim-lane_img4.png)
 
 ## Phase
 
@@ -282,7 +282,7 @@ The following code example illustrates how to add a phase on initializing swimla
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Swim-lane_images/Swim-lane_img5.png)
+![add a phase on initializing swimlane](/aspnet/Diagram/Swim-lane_images/Swim-lane_img5.png)
 
 ### Add phase at runtime
 

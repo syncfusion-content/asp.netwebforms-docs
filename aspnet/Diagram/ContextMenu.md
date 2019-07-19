@@ -24,7 +24,7 @@ The following code illustrates how to enable the default context menu items.
 {% endhighlight %}
 
 
-![](ContextMenu_images/contextmenu.png)
+![enable the default context menu items](ContextMenu_images/contextmenu.png)
 
 ## Customize Context Menu
 
@@ -68,7 +68,7 @@ The following code example illustrates how to customize the icon of context menu
 }
 {% endhighlight %}
 
-![](ContextMenu_images/Contextmenu_img2.png)
+![customize the icon of context menu items](ContextMenu_images/Contextmenu_img2.png)
 
 ## Context Menu Events
 

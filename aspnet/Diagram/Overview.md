@@ -13,7 +13,7 @@ The Essential Diagram ASP.NET creates rich Visio-like applications. Its Framewor
 
 
 
- ![](Overview_images/Overview_img1.png) 
+ ![Diagram is zoomed/panned with overview](Overview_images/Overview_img1.png) 
 
  Diagram
  {:.caption} 

@@ -88,7 +88,7 @@ public Array GetData()
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![bind local data with the Diagram](Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -140,7 +140,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Binding_images/Data-Binding_img2.png)
+![bind remote data to the Diagram](Data-Binding_images/Data-Binding_img2.png)
 
 ## HTML Table Data
 
@@ -257,7 +257,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Binding_images/Data-Binding_img4.png)
+![convert HTML table to the Diagram](Data-Binding_images/Data-Binding_img4.png)
 
 ## SQL data for ASP.NET
 
@@ -313,7 +313,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Binding_images/Data-Binding_img5.png) 
+![create SQL binding](Data-Binding_images/Data-Binding_img5.png) 
 
 ## CRUD
 
