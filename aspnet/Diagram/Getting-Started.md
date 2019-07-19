@@ -46,7 +46,7 @@ This section explains briefly you on how to create a Diagram in your application
 
 3\. This creates an empty diagram
 
-![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img1.png)
+![creates an empty diagram](/aspnet/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
 
 #### Adding the List of Namespaces
@@ -123,7 +123,7 @@ N> `Labels` property is an array, which indicates that more than one label can b
 
 Added node will be displayed in diagram as shown below.
 
-![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img2.png)
+![Added node displayed in diagram](/aspnet/Diagram/Getting-Started_images/Getting-Started_img2.png)
 
 ### Connect nodes
 
@@ -191,7 +191,7 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 
 * `Connector` connects the two nodes as shown below.
 
-![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img3.png)
+![Connector connects the two nodes](/aspnet/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
 * Default values for all connectors can be set using default settings. For example if all connectors have same 'Labels' appearance, we can move such properties into `DefaultSettings.Connector` by using below below code example.
 
@@ -308,7 +308,7 @@ Similarly we can add required nodes and connectors to form a complete flow diagr
 
 Final flow chart will looks as shown below.
 
-![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img4.png)
+![Final flow chart](/aspnet/Diagram/Getting-Started_images/Getting-Started_img4.png)
 
 ## Automatic organization chart
 
@@ -434,4 +434,4 @@ Following code examples indicate how to define the default appearance of node an
 
 * The Employee details are displayed in the Diagram as follows.
 
-![](/aspnet/Diagram/Getting-Started_images/Getting-Started_img5.png)
+![Employee details are displayed in the Diagram](/aspnet/Diagram/Getting-Started_images/Getting-Started_img5.png)

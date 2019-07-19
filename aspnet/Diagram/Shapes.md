@@ -39,7 +39,7 @@ Texts can be added to the Diagram as text nodes. For text nodes, the text node c
 
 {% endhighlight %}
  
-![](/aspnet/Diagram/Shapes_images/Shapes_img59.png)
+![create a text node](/aspnet/Diagram/Shapes_images/Shapes_img59.png)
 
 ## Image
 Diagram allows to add images as image nodes. For image nodes,the **image** node can be created with ImageNode class. In addition, the `Source` property of node enables you to set the image source. The following code illustrates how an **Image** node is created.
@@ -58,7 +58,7 @@ Diagram allows to add images as image nodes. For image nodes,the **image** node 
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img60.png)
+![create an image node](/aspnet/Diagram/Shapes_images/Shapes_img60.png)
 
 ## HTML
 
@@ -91,7 +91,7 @@ Diagram allows to add images as image nodes. For image nodes,the **image** node 
 
 {% endhighlight %}
  
-![](/aspnet/Diagram/Shapes_images/Shapes_img61.png)
+![create an HTML node](/aspnet/Diagram/Shapes_images/Shapes_img61.png)
 
 N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation. 
 
@@ -127,7 +127,7 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img62.png)
+![create a native node](/aspnet/Diagram/Shapes_images/Shapes_img62.png)
 
 N> Like HTML node, Native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template. 
 
@@ -151,7 +151,7 @@ The following code example illustrates how to create a basic shape.
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img1.png)
+![create a masic node](/aspnet/Diagram/Shapes_images/Shapes_img1.png)
 
 
 N> When the `Shape` is not set for a basic shape, it is considered a "rectangle".
@@ -179,11 +179,11 @@ Path node is a commonly used basic shape that allows visually to represent the g
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img58.png)
+![create a path node](/aspnet/Diagram/Shapes_images/Shapes_img58.png)
 
 The list of basic shapes are as follows.
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img2.png)
+![list of basic shapes ](/aspnet/Diagram/Shapes_images/Shapes_img2.png)
 
 ## Flow Shapes
 
@@ -204,11 +204,11 @@ The flow shapes are used to represent the process flow. It is used for analyzing
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img3.png)
+![create a flow shape](/aspnet/Diagram/Shapes_images/Shapes_img3.png)
 
 The list of flow shapes are as follows.
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img4.png)
+![list of flow shapes](/aspnet/Diagram/Shapes_images/Shapes_img4.png)
 
 ## BPMN Shapes
 
@@ -229,7 +229,7 @@ BPMN shapes are used to represent the internal business procedure in a graphical
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img5.png)
+![create a simple business process](/aspnet/Diagram/Shapes_images/Shapes_img5.png)
 
 N> The default value for the property `Shape` is "Event".
 
@@ -237,12 +237,12 @@ The list of BPMN shapes are as follows.
 
 | Shape | Image |
 |---|---|
-| Event | ![](/aspnet/Diagram/Shapes_images/Shapes_img6.png) |
-| Gateway | ![](/aspnet/Diagram/Shapes_images/Shapes_img7.png) |
-| Task | ![](/aspnet/Diagram/Shapes_images/Shapes_img8.png) |
-| Message | ![](/aspnet/Diagram/Shapes_images/Shapes_img9.png) |
-| DataSource | ![](/aspnet/Diagram/Shapes_images/Shapes_img10.png) |
-| DataObject | ![](/aspnet/Diagram/Shapes_images/Shapes_img11.png) |
+| Event | ![BPMN event shape](/aspnet/Diagram/Shapes_images/Shapes_img6.png) |
+| Gateway | ![BPMN gateway shape](/aspnet/Diagram/Shapes_images/Shapes_img7.png) |
+| Task | ![BPMN task shape](/aspnet/Diagram/Shapes_images/Shapes_img8.png) |
+| Message | ![BPMN message shape](/aspnet/Diagram/Shapes_images/Shapes_img9.png) |
+| DataSource | ![BPMN dataSource shape](/aspnet/Diagram/Shapes_images/Shapes_img10.png) |
+| DataObject | ![BPMN dataObject shape](/aspnet/Diagram/Shapes_images/Shapes_img11.png) |
 
 The BPMN shapes and its types are explained as follows.
 
@@ -272,29 +272,29 @@ The `Event` property of the node allows you to define the type of the event. The
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img12.png)
+![create a BPMN Event](/aspnet/Diagram/Shapes_images/Shapes_img12.png)
 
 | Event | Image |
 |---|---|
-| Start | ![](/aspnet/Diagram/Shapes_images/Shapes_img13.png) |
-| NonInterruptingStart | ![](/aspnet/Diagram/Shapes_images/Shapes_img14.png) |
-| Intermediate | ![](/aspnet/Diagram/Shapes_images/Shapes_img15.png) |
-| NonInterruptingIntermediate | ![](/aspnet/Diagram/Shapes_images/Shapes_img16.png) |
-| End | ![](/aspnet/Diagram/Shapes_images/Shapes_img17.png) |
+| Start | ![BPMN Start Event](/aspnet/Diagram/Shapes_images/Shapes_img13.png) |
+| NonInterruptingStart | ![BPMN NonInterruptingStart Event](/aspnet/Diagram/Shapes_images/Shapes_img14.png) |
+| Intermediate | ![BPMN Intermediate Event](/aspnet/Diagram/Shapes_images/Shapes_img15.png) |
+| NonInterruptingIntermediate | ![BPMN NonInterruptingIntermediate Event](/aspnet/Diagram/Shapes_images/Shapes_img16.png) |
+| End | ![BPMN End Event ](/aspnet/Diagram/Shapes_images/Shapes_img17.png) |
 
 Event triggers are notated as icons inside the circle and they represent the specific details of the process. The `Triggers` property of node allows you to set the type of trigger and by default, it is set as "None". The following table illustrates the type of event triggers.
 
 | Triggers | Image |
 |---|---|
-| Message | ![](/aspnet/Diagram/Shapes_images/Shapes_img18.png) |
-| Compensation | ![](/aspnet/Diagram/Shapes_images/Shapes_img19.png) |
-| Error | ![](/aspnet/Diagram/Shapes_images/Shapes_img20.png) |
-| Escalation | ![](/aspnet/Diagram/Shapes_images/Shapes_img21.png) |
-| Link | ![](/aspnet/Diagram/Shapes_images/Shapes_img22.png) |
-| Multiple | ![](/aspnet/Diagram/Shapes_images/Shapes_img23.png) |
-| Parallel | ![](/aspnet/Diagram/Shapes_images/Shapes_img24.png) |
-| Signal | ![](/aspnet/Diagram/Shapes_images/Shapes_img25.png) |
-| Timer | ![](/aspnet/Diagram/Shapes_images/Shapes_img26.png) |
+| Message | ![ BPMN Message Triggers](/aspnet/Diagram/Shapes_images/Shapes_img18.png) |
+| Compensation | ![BPMN Compensation Triggers](/aspnet/Diagram/Shapes_images/Shapes_img19.png) |
+| Error | ![BPMN Error Triggers](/aspnet/Diagram/Shapes_images/Shapes_img20.png) |
+| Escalation | ![BPMN Escalation Triggers](/aspnet/Diagram/Shapes_images/Shapes_img21.png) |
+| Link | ![BPMN Link Triggers](/aspnet/Diagram/Shapes_images/Shapes_img22.png) |
+| Multiple | ![BPMN Multiple Triggers](/aspnet/Diagram/Shapes_images/Shapes_img23.png) |
+| Parallel | ![BPMN Parallel Triggers](/aspnet/Diagram/Shapes_images/Shapes_img24.png) |
+| Signal | ![BPMN Signal Triggers](/aspnet/Diagram/Shapes_images/Shapes_img25.png) |
+| Timer | ![BPMN Timer Triggers](/aspnet/Diagram/Shapes_images/Shapes_img26.png) |
 
 ### Gateway
 
@@ -315,7 +315,7 @@ Gateway is used to control the flow of a process. It is represented as a diamond
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img27.png)
+![create a BPMN Gateway](/aspnet/Diagram/Shapes_images/Shapes_img27.png)
 
 N> By default, the `Gateway` will be set as "None".
 
@@ -323,11 +323,11 @@ There are several types of gateways as tabulated
 
 | Gateways | Image |
 |---|---|
-| Complex | ![](/aspnet/Diagram/Shapes_images/Shapes_img28.png) |
-| EventBased | ![](/aspnet/Diagram/Shapes_images/Shapes_img29.png) |
-| Exclusive | ![](/aspnet/Diagram/Shapes_images/Shapes_img30.png) |
-| Inclusive | ![](/aspnet/Diagram/Shapes_images/Shapes_img31.png) |
-| Parallel | ![](/aspnet/Diagram/Shapes_images/Shapes_img32.png) |
+| Complex | ![BPMN Complex Gateway](/aspnet/Diagram/Shapes_images/Shapes_img28.png) |
+| EventBased | ![BPMN EventBased Gateway](/aspnet/Diagram/Shapes_images/Shapes_img29.png) |
+| Exclusive | ![BPMN Exclusive Gateway](/aspnet/Diagram/Shapes_images/Shapes_img30.png) |
+| Inclusive | ![BPMN Inclusive Gateway](/aspnet/Diagram/Shapes_images/Shapes_img31.png) |
+| Parallel | ![BPMN Parallel Gateway](/aspnet/Diagram/Shapes_images/Shapes_img32.png) |
 
 ### Activity
 
@@ -356,7 +356,7 @@ To create a BPMN activity, you need to set the `Shape` as "Activity". You also n
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img33.png)
+![create an activity](/aspnet/Diagram/Shapes_images/Shapes_img33.png)
 
 The different activities of BPMN process are listed as follows.
 
@@ -381,20 +381,20 @@ The `Task` property of node allows you to define the `Type` of task such as send
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img34.png)
+![create different types of BPMN tasks](/aspnet/Diagram/Shapes_images/Shapes_img34.png)
 
 The various types of BPMN tasks are tabulated as follows.
 
 | Task Type | Image |
 |---|---|
-| Service | ![](/aspnet/Diagram/Shapes_images/Shapes_img35.png) |
-| Send | ![](/aspnet/Diagram/Shapes_images/Shapes_img36.png) |
-| Receive | ![](/aspnet/Diagram/Shapes_images/Shapes_img37.png) |
-| Instantiating Receive | ![](/aspnet/Diagram/Shapes_images/Shapes_img38.png) |
-| Manual | ![](/aspnet/Diagram/Shapes_images/Shapes_img39.png) |
-| Business Rule | ![](/aspnet/Diagram/Shapes_images/Shapes_img40.png) |
-| User | ![](/aspnet/Diagram/Shapes_images/Shapes_img41.png) |
-| Script | ![](/aspnet/Diagram/Shapes_images/Shapes_img42.png) |
+| Service | ![BPMN Service tasks](/aspnet/Diagram/Shapes_images/Shapes_img35.png) |
+| Send | ![BPMN Send tasks](/aspnet/Diagram/Shapes_images/Shapes_img36.png) |
+| Receive | ![BPMN Receive tasks](/aspnet/Diagram/Shapes_images/Shapes_img37.png) |
+| Instantiating Receive | ![BPMN Instantiating Receive tasks](/aspnet/Diagram/Shapes_images/Shapes_img38.png) |
+| Manual | ![BPMN Manual tasks](/aspnet/Diagram/Shapes_images/Shapes_img39.png) |
+| Business Rule | ![BPMN Business Rule tasks](/aspnet/Diagram/Shapes_images/Shapes_img40.png) |
+| User | ![BPMN User tasks](/aspnet/Diagram/Shapes_images/Shapes_img41.png) |
+| Script | ![BPMN Script tasks](/aspnet/Diagram/Shapes_images/Shapes_img42.png) |
 
 #### Loop
 
@@ -423,15 +423,15 @@ Loop is a task that is internally being looped. The `Loop` property of task allo
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img43.png)
+![define the type of loop](/aspnet/Diagram/Shapes_images/Shapes_img43.png)
 
 The following table contains various types of BPMN loops.
 
 | Loops | Task | SubProcess |
 |---|---|---|
-| Standard | ![](/aspnet/Diagram/Shapes_images/Shapes_img44.png) | ![](/aspnet/Diagram/Shapes_images/Shapes_img45.png) |
-| SequenceMultiInstance | ![](/aspnet/Diagram/Shapes_images/Shapes_img46.png) | ![](/aspnet/Diagram/Shapes_images/Shapes_img47.png) |
-| ParallelMultiInstance | ![](/aspnet/Diagram/Shapes_images/Shapes_img48.png) | ![](/aspnet/Diagram/Shapes_images/Shapes_img49.png) |
+| Standard | ![Standard Task](/aspnet/Diagram/Shapes_images/Shapes_img44.png) | ![Standard SubProcess](/aspnet/Diagram/Shapes_images/Shapes_img45.png) |
+| SequenceMultiInstance | ![SequenceMultiInstance Task](/aspnet/Diagram/Shapes_images/Shapes_img46.png) | ![SequenceMultiInstance SubProcess](/aspnet/Diagram/Shapes_images/Shapes_img47.png) |
+| ParallelMultiInstance | ![ParallelMultiInstance Task](/aspnet/Diagram/Shapes_images/Shapes_img48.png) | ![ParallelMultiInstance SubProcess](/aspnet/Diagram/Shapes_images/Shapes_img49.png) |
 
 #### Compensation
 
@@ -459,7 +459,7 @@ Compensation is triggered when operation is partially failed and you can enable 
         </ej:Diagram>
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img50.png)
+![Compensation is triggered when operation is partially failed](/aspnet/Diagram/Shapes_images/Shapes_img50.png)
 
 #### Call
 
@@ -482,7 +482,7 @@ A call activity is a global sub-process that is reused at various points of the 
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img51.png)
+![call activity is a global sub-process ](/aspnet/Diagram/Shapes_images/Shapes_img51.png)
 
 #### Ad-Hoc
 
@@ -505,7 +505,7 @@ An ad hoc subprocess is a group of tasks that are executed in any order or skipp
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img52.png)
+![An ad hoc subprocess is a group of tasks that are executed in any order](/aspnet/Diagram/Shapes_images/Shapes_img52.png)
 
 #### Boundary
 
@@ -532,9 +532,9 @@ The following table contains various types of BPMN boundaries.
 
 | Boundary | Image |
 |---|---|
-| Call | ![](/aspnet/Diagram/Shapes_images/Shapes_img53.png) |
-| Event | ![](/aspnet/Diagram/Shapes_images/Shapes_img54.png) |
-| Default | ![](/aspnet/Diagram/Shapes_images/Shapes_img55.png) |
+| Call | ![BPMN Call boundaries](/aspnet/Diagram/Shapes_images/Shapes_img53.png) |
+| Event | ![BPMN Event boundaries](/aspnet/Diagram/Shapes_images/Shapes_img54.png) |
+| Default | ![BPMN Default boundaries](/aspnet/Diagram/Shapes_images/Shapes_img55.png) |
 
 ### Data
 
@@ -555,7 +555,7 @@ A data object represents information flowing through the process, such as data p
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img56.png)
+![A data object represents information flowing through the process](/aspnet/Diagram/Shapes_images/Shapes_img56.png)
 
 ### Datasource
 
@@ -577,4 +577,4 @@ DataSource is used to store or access data associated with a business process. T
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Shapes_images/Shapes_img57.png)
+![DataSource is used to store or access data associated with a business process](/aspnet/Diagram/Shapes_images/Shapes_img57.png)

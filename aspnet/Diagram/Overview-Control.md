@@ -11,7 +11,7 @@ documentation: ug
 
 **Overview** control allows you to see a preview or an overall view of the entire content of a Diagram. This helps you to look at the overall picture of a large Diagram and also to navigate, pan, or zoom, on a particular position of the page.
 
-![](/aspnet/Diagram/Overview-Control_images/Overview-Control_img1.png)
+![overall picture of a large Diagram](/aspnet/Diagram/Overview-Control_images/Overview-Control_img1.png)
 
 When you work on a very large Diagram, you may not know the part you are actually working on, or navigation from one part to another might be difficult. One solution for navigation is to zoom out the entire Diagram and find where you are. Then, you can zoom in a particular area you want to. This solution is not suitable when you need some frequent navigation.
 
@@ -45,5 +45,5 @@ In overview, the view port of the Diagram is highlighted with a red colored rect
 * Choose a particular region by clicking and dragging - Navigates to the specified region
 
 The following image shows how the Diagram is zoomed/panned with overview.
-![](/aspnet/Diagram/Overview-Control_images/Overview-Control_img2.png)
+![Diagram is zoomed/panned with overview](/aspnet/Diagram/Overview-Control_images/Overview-Control_img2.png)
   

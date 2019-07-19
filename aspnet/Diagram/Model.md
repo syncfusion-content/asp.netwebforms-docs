@@ -19,7 +19,7 @@ The Diagram model represents the data to render the Diagram and to manipulate th
         
 {% endhighlight %}
 
-![](/aspnet/Diagram/Model_images/Model_img1.png)
+![define Diagram model](/aspnet/Diagram/Model_images/Model_img1.png)
 
 To explore more model properties, refer to [Model Properties](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.DiagramProperties_members.html "Model Properties").
 

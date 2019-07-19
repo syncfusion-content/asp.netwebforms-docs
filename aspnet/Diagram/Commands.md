@@ -50,9 +50,9 @@ diagram.align("left");
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img1.png)
+![left center and right alignment](Commands_images/Commands_img1.png)
 
-![](Commands_images/Commands_img2.png)
+![Top middle and bottom alignment](Commands_images/Commands_img2.png)
 
 ## Space
 
@@ -72,9 +72,9 @@ diagram.spaceDown();
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img3.png)
+![Place the selected objects on the page at the space across](Commands_images/Commands_img3.png)
 
-![](Commands_images/Commands_img4.png)
+![Place the selected objects on the page at the space down](Commands_images/Commands_img4.png)
 
 ## Sizing
 
@@ -97,7 +97,7 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img5.png)
+![Execution of the size commands](Commands_images/Commands_img5.png)
 
 
 ## Clipboard
@@ -119,7 +119,7 @@ diagram.paste();
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img6.png)
+![Execution the clipboard commands](Commands_images/Commands_img6.png)
 
 ## Grouping
 
@@ -152,7 +152,7 @@ diagram.bringToFront();
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img7.png)
+![visually brings the selected element to front](Commands_images/Commands_img7.png)
 
 ### sendToBack Command
 
@@ -165,7 +165,7 @@ diagram.sendToBack();
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img8.png)
+![visually moves the selected element behind all the other nodes](Commands_images/Commands_img8.png)
 
 ### moveForward Command
 
@@ -178,7 +178,7 @@ diagram.moveForward();
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img9.png)
+![visually moves the selected element over the nearest overlapping element](Commands_images/Commands_img9.png)
 
 ### sendBackward Command
 
@@ -191,7 +191,7 @@ diagram.sendBackward();
 
 {% endhighlight %}
 
-![](Commands_images/Commands_img10.png)
+![visually moves the selected element behind the underlying element](Commands_images/Commands_img10.png)
 
 ## Zoom
 
@@ -253,7 +253,7 @@ diagram.nudge("up", 5);
 
 The corresponding arrow keys are used to move the selected elements towards up, down, left, or right direction by 1 pixel.
 
-![](Commands_images/Commands_img11.png)
+![move the selected elements by 1 pixel.](Commands_images/Commands_img11.png)
 
 Nudge commands are particularly useful for accurate placement of elements.
 
