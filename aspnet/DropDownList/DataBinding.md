@@ -347,7 +347,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 {% endtabs %}
 
 
-![](DataBinding_images/DataBinding_img1.jpeg)
+![Local Data](DataBinding_images/DataBinding_img1.jpeg)
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/> 
            

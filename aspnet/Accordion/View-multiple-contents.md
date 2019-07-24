@@ -69,7 +69,7 @@ In an ASPX page, define a <div> element that is a container for Accordion co
 
 Following screenshot is the output for Accordion control on EnableMultipleOpen set to true.
 
- ![](View-multiple-contents_images/View-multiple-contents_img1.png)
+ ![Multiple panel](View-multiple-contents_images/View-multiple-contents_img1.png)
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data binding | Toolbar | ASP.NET | Syncfusion
-description: data binding
+description: Toolbar data binding for Webforms
 platform: aspnet
 control: Toolbar
 documentation: ug
@@ -269,7 +269,7 @@ Refer to the following code example to render the Toolbar Control
 
 The following screenshot displays the output of the above code.
 
-![](Data-binding_images/Data-binding_img1.png) 
+![Local data](Data-binding_images/Data-binding_img1.png) 
 
 ## Remote Data
 
@@ -301,7 +301,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the output of the above code. 
 
- ![](Data-binding_images/Data-binding_img2.png) 
+ ![Remote Data](Data-binding_images/Data-binding_img2.png) 
 
 
 
@@ -329,7 +329,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 The following screenshot displays the output of the above code.
 
-![](Data-binding_images/Data-binding_img4.png)
+![SQL Data](Data-binding_images/Data-binding_img4.png)
 
 
 
@@ -445,7 +445,7 @@ public class ToolData
 
 The following screenshot displays the output of the above code.
 
- ![](Data-binding_images/Data-binding_img5.png)
+ ![Object Data](Data-binding_images/Data-binding_img5.png)
 
 
 
@@ -527,7 +527,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 
 
-![](Data-binding_images/Data-binding_img6.png) 
+![XML Data](Data-binding_images/Data-binding_img6.png) 
 
 
 
@@ -548,4 +548,4 @@ The LINQ DataSource is used to bind the Toolbar data via LINQ to SQL. The proper
 {% endhighlight %}
 
 
-![](Data-binding_images/Data-binding_img7.png)
+![LINQ to SQL Data](Data-binding_images/Data-binding_img7.png)

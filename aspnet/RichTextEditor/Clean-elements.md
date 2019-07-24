@@ -51,11 +51,11 @@ This will convert an unformatted html element (MOS XML format) content to a prop
 {% endhighlight %}
 
 Pasted Content before Cleanup:
-![](Clean-Elements-images/beforecleanup.png)
+![Pasted Content before Cleanup](Clean-Elements-images/beforecleanup.png)
 
-![](Clean-Elements-images/Element1.png)
+![Pasted Content element](Clean-Elements-images/Element1.png)
 
 Pasted Content after Cleanup:
-![](Clean-Elements-images/Aftercleanup.png)
+![Pasted Content after Cleanup](Clean-Elements-images/Aftercleanup.png)
 
-![](Clean-Elements-images/Element2.png)
+![Pasted element](Clean-Elements-images/Element2.png)

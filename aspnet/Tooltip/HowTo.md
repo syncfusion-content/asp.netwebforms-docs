@@ -172,7 +172,7 @@ Defines the style for the tooltip layout and table as follows.
     
 {% endhighlight %}
 
-![](HowTo_images/ajax.png)
+![Ajax Content](HowTo_images/ajax.png)
 
 ## Integration with the Slider control
 
@@ -244,7 +244,7 @@ function onStop(args){
         
 {% endhighlight %}
 
-![](HowTo_images/slider.png)
+![Integration with Slider](HowTo_images/slider.png)
 
 ## Tip(arrow) customization
 
@@ -302,7 +302,7 @@ Defines the style for the tip as follow as
     
 {% endhighlight %}
 
-![](HowTo_images/tip.png)
+![Tip(arrow) customization](HowTo_images/tip.png)
 
 ## Initialize Tooltip for the target element
 
@@ -351,7 +351,7 @@ The example below demonstrates how to create a Tooltip for multiple targets elem
 
 {% endhighlight %}
 
-![](Target_images/target.png)
+![Tooltip with target](Target_images/target.png)
 
 Apply the following styles to the form element.
 

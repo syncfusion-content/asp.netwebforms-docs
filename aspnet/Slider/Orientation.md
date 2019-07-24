@@ -43,7 +43,7 @@ In an ASPX page, define the Slider control and configure the Orientation propert
 
 The following screenshot displays the output of the above code example.
 
- ![](Orientation_images/Orientation_img1.png)
+ ![Slider Orientation](Orientation_images/Orientation_img1.png)
 
 
 

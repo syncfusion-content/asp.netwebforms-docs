@@ -39,13 +39,13 @@ The following screenshot displays the UploadBox control with customized file siz
 
 You can browse and upload the files within the FileSize.
 
- ![](File-Size_images/File-Size_img1.png)
+ ![Maximum File Size](File-Size_images/File-Size_img1.png)
 
 
 
 You cannot browse and upload the files with exceeded FileSize.
 
- ![](File-Size_images/File-Size_img2.png)
+ ![Exceeded File Size](File-Size_images/File-Size_img2.png)
 
 
 
@@ -120,7 +120,7 @@ N>  maxRequestLength is measured in kilobytes.
 
 N> maxAllowedContentLength is measured in bytes.
 
-![](File-Size_images/File-Size_img3.png)
+![Maximum File Size](File-Size_images/File-Size_img3.png)
 
 
 N> * When you configure both maxAllowedContentLength and maxRequestLength attributes, then maxAllowedContentLength can be run. 
@@ -131,4 +131,4 @@ N> * When the upload file’s size exceeds maxRequestLength value, you get an ex
 N>
 N> * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
 
-![](File-Size_images/File-Size_img4.png)
+![Limitations](File-Size_images/File-Size_img4.png)

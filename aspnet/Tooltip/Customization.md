@@ -69,7 +69,7 @@ By default you can add any text or image to the Tooltip. To customize the toolti
     
 {% endhighlight %}
 
-![](Customization_images/template.png)
+![Template](Customization_images/template.png)
 
 ### Tooltip’s title customization
 
@@ -106,7 +106,7 @@ Tooltip title can be customized with the image or any HTML element.
 
 {% endhighlight %}
 
-![](Customization_images/title.png)
+![Title customization](Customization_images/title.png)
 
 ## Animation Effects
 
@@ -259,7 +259,7 @@ A close button will be shown with the Tooltip. The button element (i.e. close bu
        
 {% endhighlight %}
 
-![](ClosingBehaviour_images/sticky.png)
+![Sticky](ClosingBehaviour_images/sticky.png)
 
 You can also have Tooltip with a title, in which case the button will lye within it:
 
@@ -273,6 +273,6 @@ You can also have Tooltip with a title, in which case the button will lye within
        
 {% endhighlight %}
 
-![](ClosingBehaviour_images/title.png)
+![Sticky Mode](ClosingBehaviour_images/title.png)
 
     

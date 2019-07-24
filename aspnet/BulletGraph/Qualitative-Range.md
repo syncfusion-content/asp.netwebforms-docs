@@ -51,7 +51,7 @@ Qualitative Range represents the quality of a specific range in quantitative sca
 
 The following screenshot displays Bullet Graph with different qualitative ranges in different colors. In this image, range 0 to 35 represents bad performance, 35 to 50 represents average performance, 50 to 75 represents that the performance is above average, 75 to 90 represents good performance and above 90 represents excellent performance.
 
-![](Qualitative-Range_images/Qualitative-Range_img1.png)
+![Qualitative Range](Qualitative-Range_images/Qualitative-Range_img1.png)
 
 
 

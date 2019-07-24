@@ -89,28 +89,28 @@ Add the following code example in your ASPX page to render the Textbox control.
 
 The output for Mask Edit Textbox with its properties.
 
-![](Mask-Edit-Properties_images/Mask-Edit-Properties_img1.png)
+![Edit Textbox](Mask-Edit-Properties_images/Mask-Edit-Properties_img1.png)
 
 MaskEdit with MaskFormat
 {:.caption}
 
- ![](Mask-Edit-Properties_images/Mask-Edit-Properties_img2.png)
+ ![MaskFormat](Mask-Edit-Properties_images/Mask-Edit-Properties_img2.png)
 
 MaskEdit with HidePromptOnLeave
 {:.caption}
 
 
-![](Mask-Edit-Properties_images/Mask-Edit-Properties_img3.png)
+![HidePromptOnLeave](Mask-Edit-Properties_images/Mask-Edit-Properties_img3.png)
 
 MaskEdit with prompt focus
 {:.caption}
 
- ![](Mask-Edit-Properties_images/Mask-Edit-Properties_img4.png)
+ ![MaskEdit with focus](Mask-Edit-Properties_images/Mask-Edit-Properties_img4.png)
 
 MaskEdit with InputMode text
 {:.caption}
 
-![](Mask-Edit-Properties_images/Mask-Edit-Properties_img5.png) 
+![InputMode text](Mask-Edit-Properties_images/Mask-Edit-Properties_img5.png) 
 
 MaskEdit with CustomCharacter
 {:.caption}

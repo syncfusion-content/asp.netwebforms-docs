@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling | Tab | ASP.NET | Syncfusion
-description: appearance and styling
+description: Tab appearance and styling
 platform: aspnet
 control: Tab
 documentation: ug
@@ -97,7 +97,7 @@ Add the following CSS for header image customization.
 
 The following screenshot illustrates the Tab with the customized header image. 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![Header Image Customization](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 
 
@@ -149,7 +149,7 @@ Add the following ASPX to render Tab with Rounder corners.
 
 The following screenshot illustrates the Tab with Rounded corners.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![Rounded corners](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 
 
@@ -195,7 +195,7 @@ Add the following ASPX to render the Tab with Enable/Disable.
 
 The following screenshot illustrates the Tab with disabled format.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+![Enable/Disable](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 
 
@@ -241,7 +241,7 @@ Add the following ASPX to render the Tab with Reload icon.
 
 The following screenshot illustrates the Tab with reload icon.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![Reload Icon](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
 
@@ -291,7 +291,7 @@ Add the following ASPX to render Tab with customized Collapsible mode.
 
 The following screenshot illustrates the Tab with customized collapsible mode.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
+![Collapsible Tabs](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
 
 
 
@@ -345,7 +345,7 @@ Add the following ASPX to render Tab with customized height and height adjust mo
 
 The following screenshot illustrates the Tab with customized height and height adjust mode.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
+![Adjusting Tab Height](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
 
 
 
@@ -391,7 +391,7 @@ Add the following ASPX to render the Tab with customized Width.
 
 The following screenshot illustrates the Tab with customized Width.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
+![Adjusting Tab Width](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
 
 
 
@@ -475,7 +475,7 @@ Add the following styles
 
 The following screenshot illustrates the Tab with customized style.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
+![Theme](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
 
 ## Scroll of the Grid inside Tab
 
