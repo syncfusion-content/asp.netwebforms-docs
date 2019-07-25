@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data binding | Menu | ASP.NET Webforms | Syncfusion
-description: data binding
+description: Menu data binding for Webforms
 platform: aspnet
 control: Menu
 documentation: ug
@@ -111,7 +111,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the output of the above code example. 
 
-![](Data-binding_images/Data-binding_img1.png) 
+![Remote Data](Data-binding_images/Data-binding_img1.png) 
 
 
 
@@ -145,7 +145,7 @@ SelectCommand="SELECT * FROM [TreeBind]"></asp:SqlDataSource>
 
 The following screenshot displays the output for the above code example.                                                                                                       
 
-![](Data-binding_images/Data-binding_img2.png) 
+![SQL Data](Data-binding_images/Data-binding_img2.png) 
 
 
 
@@ -349,7 +349,7 @@ public class MenuSource
 
 The following screenshot displays the output for the above code example.  
     
-![](Data-binding_images/Data-binding_img3.png) 
+![Object Data binding](Data-binding_images/Data-binding_img3.png) 
 
 
 
@@ -445,7 +445,7 @@ Load the menu items in the XML data as illustrated in the following code example
 
 The following screenshot displays the output for the XML Data binding.                                                                                                       
 
-![](Data-binding_images/Data-binding_img4.png) 
+![XML Data binding](Data-binding_images/Data-binding_img4.png) 
 
 
 
@@ -479,7 +479,7 @@ In the Design page, assign values for DataTextField, DataIdField, DataParentIdFi
 
 The following screenshot displays the output for the above code example.                                                                                                       
 
-![](Data-binding_images/Data-binding_img5.png) 
+![LINQ-to-SQL Data binding](Data-binding_images/Data-binding_img5.png) 
 
 ## Data binding from DataTable
 

@@ -83,7 +83,7 @@ Required field and min value validation is demonstrated in the below given examp
 				
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img10.jpeg)
+![Validation Messages ](Functionalities_images/Functionalities_img10.jpeg)
 
 ## Integration with ASP Validator
 
@@ -144,10 +144,10 @@ To use ASP.NET validator with DropDownList control, set the ID of the DropDownLi
  
  Executing the above code will validate the DropDownList control values on every form submit before post back occurs as given below.
  
- ![](Functionalities_images/IntegrationwithASPValidator_img1.png)
+ ![ASP Validator](Functionalities_images/IntegrationwithASPValidator_img1.png)
  
- ![](Functionalities_images/IntegrationwithASPValidator_img2.png)
+ ![Integration with ASP Validator](Functionalities_images/IntegrationwithASPValidator_img2.png)
  
  Output after postback on form submit
  
- ![](Functionalities_images/IntegrationwithASPValidator_img3.png)
+ ![Postback Form Submit](Functionalities_images/IntegrationwithASPValidator_img3.png)

@@ -109,7 +109,7 @@ class GroupsList
 
 {% endtabs %}
 
-![](HowTo-images/image1.png)
+![Cascading](HowTo-images/image1.png)
 
 ## Show the list items with icons
 
@@ -234,7 +234,7 @@ In the following sample, showcase that how to work autofill with ComboBox.
 
 {% endtabs %}
 
-![](HowTo-images/image2.png)
+![AutoFill](HowTo-images/image2.png)
 
 ## Validation of ComboBox using jQuery Validator
 

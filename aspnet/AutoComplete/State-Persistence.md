@@ -31,7 +31,7 @@ In the design page, add an AutoComplete element from ToolBox and set EnablePersi
 
 The following screenshot is the output for AutoComplete when EnablePersistence is set to true.
 
-![](State-Persistence_images/State-Persistence_img1.png)
+![State Persistence](State-Persistence_images/State-Persistence_img1.png)
 
 
 
@@ -307,7 +307,7 @@ Configure the template structure for AutoComplete control by including a &lt;div
 
 The following image is the output for AutoComplete control with template support.
 
-![](State-Persistence_images/State-Persistence_img2.png)
+![Templates](State-Persistence_images/State-Persistence_img2.png)
 
 
 

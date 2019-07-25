@@ -83,7 +83,7 @@ Required field and minWordCount values validation is demonstrated in the below g
    
 {% endhighlight %}
 
-![](Additional_images/Validation.jpg)
+![Validation Messages](Additional_images/Validation.jpg)
 
 ## Using ASP.NET Validator
 
@@ -109,4 +109,4 @@ To use ASP.NET validator with RichTextEditor control, set the ID of the RichText
 
 Executing the above code will validate the RichTextEditor control values on every form submit before post back occurs.
 
-![](Additional_images/ValidatorASP.png)
+![ASP.NET Validator](Additional_images/ValidatorASP.png)

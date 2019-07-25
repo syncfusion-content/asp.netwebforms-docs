@@ -27,7 +27,7 @@ In the ASPX page, include the following TimePicker control and configure the Tim
 
 Run the above code to render the following output.
 
- ![](Time-Format_images/Time-Format_img1.png) 
+ ![Time Format](Time-Format_images/Time-Format_img1.png) 
 
 
 

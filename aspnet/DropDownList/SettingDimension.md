@@ -61,7 +61,7 @@ N> By default popup list is shown on DropDownList button click but you can displ
     
 {% endtabs %}
 
-![](SettingDimension_images/SettingDimension_img1.jpeg)
+![Limit the number of items](SettingDimension_images/SettingDimension_img1.jpeg)
 
 ## Popup resizing 
 
@@ -138,7 +138,7 @@ To show a resize handle in the popup list, use EnablePopupResize property. You c
 {% endtabs %}
 
 
-![](SettingDimension_images/SettingDimension_img2.jpeg)
+![Popup resizing ](SettingDimension_images/SettingDimension_img2.jpeg)
 
-![](SettingDimension_images/SettingDimension_img3.jpeg)
+![Resizing](SettingDimension_images/SettingDimension_img3.jpeg)
 

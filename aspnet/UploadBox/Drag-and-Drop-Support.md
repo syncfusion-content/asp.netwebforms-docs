@@ -13,7 +13,7 @@ The UploadBox control provides the drag and drop support. You can simply drag-a
 
 The following screenshot displays the drag and drop support.
 
- ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png)
+ ![Drag and Drop](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png)
 
 
 
@@ -73,7 +73,7 @@ In CSS, configure the custom styles for drag and drop.
 
 The following screenshot displays the output for the above code.
 
- ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png)
+ ![Dragged file uploaded](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png)
 
 
 
@@ -138,7 +138,7 @@ In CSS, configure the custom styles for drag and drop.
 
  The following screenshot displays the output for the above code.
 
- ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png)
+ ![Drag Area text](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png)
 
 
 
@@ -160,7 +160,7 @@ In the ASPX page, configure UploadBox element to enable the drag and drop in the
 
 The following screenshot displays the output for the above code.
 
- ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png)
+ ![Drop area size](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png)
 
 
 
@@ -234,7 +234,7 @@ The following screenshot displays the output for the above code.
 
 
 
- ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png)
+ ![Droppable area](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png)
 
 
 

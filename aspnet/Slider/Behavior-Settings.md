@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behavior Settings | Slider | ASP.NET | Syncfusion
-description: behavior settings 
+description: Slider behavior settings for Webforms 
 platform: aspnet
 control: Slider
 documentation: ug
@@ -29,7 +29,7 @@ In an ASPX page, define the Slider control and configure the Height and Width pr
 
 The following screenshot displays the output of the above code example.
 
-![](Behavior-Settings_images/Behavior-Settings_img1.png)
+![Slider Width](Behavior-Settings_images/Behavior-Settings_img1.png)
 
 
 ## IncrementStep
@@ -48,7 +48,7 @@ In an ASPX page, define the Slider control and configure the IncrementStep prope
 
 The following screenshot displays the output of the above code example.
 
-![](Behavior-Settings_images/Behavior-Settings_img2.png)
+![IncrementStep](Behavior-Settings_images/Behavior-Settings_img2.png)
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behavior Settings | Tab | ASP.NET | Syncfusion
-description: behavior settings
+description: Tab behavior settings for Webforms
 platform: aspnet
 control: Tab
 documentation: ug
@@ -57,7 +57,7 @@ Add the following ASPX for simple Tab creation with Close Button.
 
 The following screenshot illustrates the Tab with Close Button. 
 
-![](Behavior-Settings_images/Behavior-Settings_img1.png) 
+![Close Button](Behavior-Settings_images/Behavior-Settings_img1.png) 
 
 
 
@@ -108,7 +108,7 @@ Add the following ASPX for Tab orientation.
 
 The following screenshot illustrates the sub Tab with vertical orientation. 
 
-![](Behavior-Settings_images/Behavior-Settings_img2.png) 
+![Orientation](Behavior-Settings_images/Behavior-Settings_img2.png) 
 
 
 

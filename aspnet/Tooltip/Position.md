@@ -56,7 +56,7 @@ Apply the following styles to show the Tooltip.
     
 {% endhighlight %}
 
-![](Position_images/position.png)
+![Position](Position_images/position.png)
 
 N> By default, the Tooltips "center bottom" corner is placed at the center top of the target element.
 

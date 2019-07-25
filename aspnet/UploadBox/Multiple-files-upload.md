@@ -28,6 +28,6 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
 
 The following screenshot displays the output.
 
-![](Multiple-files-upload_images/Multiple-files-upload_img1.png)
+![Multiple files upload](Multiple-files-upload_images/Multiple-files-upload_img1.png)
 
-![](Multiple-files-upload_images/Multiple-files-upload_img2.png)
+![File Upload](Multiple-files-upload_images/Multiple-files-upload_img2.png)

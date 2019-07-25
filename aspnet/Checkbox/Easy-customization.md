@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Easy customization | Checkbox | ASP.NET Webforms | Syncfusion
-description: easy customization
+description: Checkbox easy customization
 platform: aspnet
 control: Checkbox
 documentation: ug
@@ -41,7 +41,7 @@ Run the above code to render the following output.
 
 
 
-![](Easy-customization_images/Easy-customization_img1.png)
+![Checked status](Easy-customization_images/Easy-customization_img1.png)
 
 
 
@@ -73,7 +73,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 Run the above code to render the following output.
 
-![](Easy-customization_images/Easy-customization_img2.png)
+![Tri-State](Easy-customization_images/Easy-customization_img2.png)
 
 
 
@@ -125,7 +125,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 Run the above code to render the following output.
 
-![](Easy-customization_images/Easy-customization_img3.png)
+![Check State](Easy-customization_images/Easy-customization_img3.png)
 
 
 
@@ -166,7 +166,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 Run the above code to render the following output.
 
 
-![](Easy-customization_images/Easy-customization_img4.png)
+![Checkbox Size](Easy-customization_images/Easy-customization_img4.png)
 
 
 
@@ -190,7 +190,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 Run the above code to render the following output.
 
-![](Easy-customization_images/Easy-customization_img5.png)
+![Text](Easy-customization_images/Easy-customization_img5.png)
 
 
 
@@ -217,7 +217,7 @@ In the ASPX page, add the following input elements to configure Checkbox.
 
 Run the above code to render the following output.
 
-![](Easy-customization_images/Easy-customization_img6.png)
+![Rounded corner](Easy-customization_images/Easy-customization_img6.png)
 
 ## Styles Customization
 
@@ -267,7 +267,7 @@ In the following example, the border color and border width of the active CheckB
 
 {% endhighlight %}
 
-![](Easy-customization_images/Easy-customization_img7.png)
+![Customization](Easy-customization_images/Easy-customization_img7.png)
 
 
 
