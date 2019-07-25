@@ -16,13 +16,13 @@ This section explains how to add and use a PDF viewer control in your web applic
 
 Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
 
-![](Gettingstarted_images/Gettingstarted_img1.jpeg)
+![Getting started application](Gettingstarted_images/Gettingstarted_img1.jpeg)
 
 **Adding Web Form**
 
 Add a new Web Form to the project and name it as **Default.aspx**
 
-![](Gettingstarted_images/Gettingstarted_img2.jpeg)
+![Getting started project](Gettingstarted_images/Gettingstarted_img2.jpeg)
 
 #### Add References, Scripts, Styles
 
@@ -229,7 +229,7 @@ Add below code snippet to Default.aspx. Here, PDF viewer uses the hosted service
 
 Add new folder **WebApi** in the solution and create new Web API Controller Class to it. Name it as **PdfViewerController** and click Add.
 
-![](Gettingstarted_images/Gettingstarted_img3.jpeg)
+![Getting started controller](Gettingstarted_images/Gettingstarted_img3.jpeg)
 
 Replace the below code in the PdfViewerController.cs
 
@@ -291,7 +291,7 @@ N> Please, create a folder named **Data** in the project location and add the PD
 
 Right-Click the Project, select Add and select Global.asax file from the listed templates.
 
-![](Gettingstarted_images/Gettingstarted_img4.jpeg)
+![Getting started project](Gettingstarted_images/Gettingstarted_img4.jpeg)
 
 You can route the Web API in Application_Start event in the Global.asax file as follows.
 
@@ -372,5 +372,5 @@ Map the controller absolutely in the production environment by using the **Virtu
 
 Run the sample and you will see the PDF viewer control as in the below screenshot.
 
-![](Gettingstarted_images/Gettingstarted_img5.png)
+![Getting started PDF viewer](Gettingstarted_images/Gettingstarted_img5.png)
 
