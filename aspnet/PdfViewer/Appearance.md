@@ -41,6 +41,6 @@ By default, ‘flat-azure’ theme is applied to PDF viewer. You can change the 
 
 The following screenshot shows the PDF viewer in ‘gradient-saffron’ theme:
 
-![](Appearance_images/Appearance_img1.png)
+![PDF Viewer Appearance](Appearance_images/Appearance_img1.png)
 
 

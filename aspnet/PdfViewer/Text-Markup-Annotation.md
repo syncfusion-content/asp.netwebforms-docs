@@ -25,7 +25,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot shows the PDF viewer with the PDF documents containing text markup annotations:
 
-![](Text-Markup-Annotation_images/Text_Markup_Annotations_img1.png)
+![Text markup annotation icon](Text-Markup-Annotation_images/Text_Markup_Annotations_img1.png)
 
 **Enable or Disable the text markup annotations**
 
@@ -129,7 +129,7 @@ pdfviewerObj.addAnnotation(ej.PdfViewer.AnnotationType.Underline);
 
 The colorpicker control is provided in the text markup annotation tools to select the desired color for the text markup annotation to be added in the document.
 
-![](Text-Markup-Annotation_images/Text_Markup_Annotations_img2.png)
+![Text markup annotation colorpicker](Text-Markup-Annotation_images/Text_Markup_Annotations_img2.png)
 
 When the text markup annotation is added in the PDF document, the annotationAdd event will be triggered in the control. The event method can be defined using the AnnotationAdd property of the control.
 
@@ -154,7 +154,7 @@ Right click the text markup annotation in the PDF document, the context menu wil
 
 The following screenshot shows that the notes have been added to a text markup annotation in the PDF document:
 
-![](Text-Markup-Annotation_images/Text_Markup_Annotations_img3.png)
+![Text markup annotation notes](Text-Markup-Annotation_images/Text_Markup_Annotations_img3.png)
 
 **Editing the text markup annotation**
 
@@ -178,7 +178,7 @@ function annotationPropertiesChanged(args) {
 
 The following screenshot shows the properties window used for editing the properties of a text markup annotation:
 
-![](Text-Markup-Annotation_images/Text_Markup_Annotations_img4.png)
+![Text markup annotation properties](Text-Markup-Annotation_images/Text_Markup_Annotations_img4.png)
 
 The annotationDelete event will be triggered in the control when the text markup annotation in the PDF document is deleted. The event method can be defined using the AnnotationDelete property of the control.
 
