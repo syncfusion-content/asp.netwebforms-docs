@@ -48,7 +48,7 @@ Selects the item in the popup list based on the keyed in value. If the time take
     
 {% endtabs %}
 
-![](Functionalities_images/Functionalities_img8.jpeg)
+![Incremental Search](Functionalities_images/Functionalities_img8.jpeg)
 
 ## Filter search
 
@@ -88,7 +88,7 @@ N> Items are filtered based on “contains” filter type by default.
     
 {% endtabs %}
 
-![](Functionalities_images/Functionalities_img9.jpeg)
+![Filter search](Functionalities_images/Functionalities_img9.jpeg)
 
 I> When VirtualScrolling enabled with searching, then filter will be applied only on the DropDownList items available at the moment.
 
@@ -106,9 +106,9 @@ EnableServerFiltering If set to true, the filtering operations performed in the 
 
 {% endhighlight %}
 
-![](ServerFiltering_images/ServerFiltering_image3.png)
+![Server Filtering](ServerFiltering_images/ServerFiltering_image3.png)
 
 This sample raises the query on Customer service. Returns ContactName records for customers with ContactName containing the string “d”.
 
-![](ServerFiltering_images/ServerFiltering_image1.png)
+![Server Filtering with string](ServerFiltering_images/ServerFiltering_image1.png)
 

@@ -196,7 +196,7 @@ To select an item initially you can pass the item’s value via Value or SelectI
     
 {% endtabs %}
 
-![](Functionalities_images/Functionalities_img1.png)
+![Using value or text](Functionalities_images/Functionalities_img1.png)
 
 N> To retrieve the selected item’s value you can use Value property in code behind.
 
@@ -268,7 +268,7 @@ You can select a single or more than one item by passing index values to the pro
     
 {% endtabs %}
 
-![](Functionalities_images/Functionalities_img2.png)
+![Indices](Functionalities_images/Functionalities_img2.png)
 
 I> To use "SelectedIndices" property, you should enable either ShowCheckbox or MultiSelectMode property First.
 
@@ -401,7 +401,7 @@ The below given example explains the behavior of grouping with List data binding
     
 {% endtabs %}
 
-![](Functionalities_images/Functionalities_img3.jpeg)
+![Grouping](Functionalities_images/Functionalities_img3.jpeg)
 
 N> Grouping has restrictions in the following scenarios, <BR>
 1.  It is not supported on using HTML "select" element with predefined set of options<BR>
@@ -435,7 +435,7 @@ N> Grouping has restrictions in the following scenarios, <BR>
         
 {% endhighlight %}
 
-![](Functionalities_images/Functionalities_img4.jpeg)
+![Restricted Grouping](Functionalities_images/Functionalities_img4.jpeg)
 
 I> Virtual scrolling is not supported with Grouping.
 
@@ -568,9 +568,9 @@ Configuring the data items for cascading to the series of DropDownList is demons
     
 {% endtabs %}
 
-![](Functionalities_images/Functionalities_img5.jpeg)
+![Cascading](Functionalities_images/Functionalities_img5.jpeg)
 
-![](Functionalities_images/Functionalities_img6.jpeg)
+![Cascading Dropdown](Functionalities_images/Functionalities_img6.jpeg)
 
 ### Binding the data source to the cascading DropDownList using cascade event
 
@@ -669,7 +669,7 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
     
 {% endtabs %}
 
-![](Functionalities_images/Functionalities_img7.jpeg)
+![Cascade event](Functionalities_images/Functionalities_img7.jpeg)
 
 ### Multi-Level Cascading
 

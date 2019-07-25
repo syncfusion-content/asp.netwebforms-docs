@@ -37,7 +37,7 @@ In the design page, define the AutoComplete control and configure the FilterType
 
 The following screenshot is the output for AutoComplete control that filters the list items based on the GreaterThanOrEqual option.
 
-![](Behavior-Settings_images/Behavior-Settings_img1.png)
+![Filter type](Behavior-Settings_images/Behavior-Settings_img1.png)
 
 
 
@@ -71,7 +71,7 @@ In the design page define the AutoComplete control and enable the AutoFill for i
 
 The following screenshot is the output for AutoComplete when EnableAutoFill is set to true.
 
-![](Behavior-Settings_images/Behavior-Settings_img2.png)
+![AutoFill](Behavior-Settings_images/Behavior-Settings_img2.png)
 
 
 
@@ -103,7 +103,7 @@ In the design page, define the AutoComplete control and configure the sorting fo
 
 The following screenshot is the output for AutoComplete when “SortOrder” is configured.
 
-![](Behavior-Settings_images/Behavior-Settings_img3.png)
+![Sorting](Behavior-Settings_images/Behavior-Settings_img3.png)
 
 
 
@@ -165,7 +165,7 @@ EnableDistinct="true"/>
 
 The following screenshot is the output for AutoComplete when EnableDistinct is set to true.
 
-![](Behavior-Settings_images/Behavior-Settings_img4.png)
+![Distinct List items](Behavior-Settings_images/Behavior-Settings_img4.png)
 
 
 
@@ -197,7 +197,7 @@ In the design page, define the AutoComplete control and configure the ShowPopupB
 
 The following screenshot is the output for AutoComplete when ShowPopupButton is enabled.
 
-![](Behavior-Settings_images/Behavior-Settings_img5.png)
+![Popup button](Behavior-Settings_images/Behavior-Settings_img5.png)
 
 
 
@@ -229,7 +229,7 @@ In the design page, define the AutoComplete control and configure ReadOnly prope
 
 The following screenshot is the output for the AutoComplete textbox configured to restrict editing.
 
-![](Behavior-Settings_images/Behavior-Settings_img6.png)
+![Restrict editing](Behavior-Settings_images/Behavior-Settings_img6.png)
 
 
 
@@ -257,7 +257,7 @@ In the design page, define the AutoComplete control and set the text for EmptyRe
 
 The following screenshot is the output of the AutoComplete textbox, when the list doesn’t return any value.
 
-![](Behavior-Settings_images/Behavior-Settings_img7.png) 
+![Empty Result](Behavior-Settings_images/Behavior-Settings_img7.png) 
 
 
 

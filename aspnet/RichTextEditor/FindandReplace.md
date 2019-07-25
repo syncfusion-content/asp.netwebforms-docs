@@ -70,7 +70,7 @@ Replaces the entire matches with the specified text.
 </tr>
 </table>
 
-![](FindandReplace_images/img1.png)
+![Find and Replace](FindandReplace_images/img1.png)
 
 N> Before performing the Replace/ReplaceAll action, we must do the find action to validate the match’s availability.  
 

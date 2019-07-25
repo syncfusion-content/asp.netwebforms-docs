@@ -33,7 +33,7 @@ In the design page define the AutoComplete control and configure its dimensions 
 
 The following image is the output for AutoComplete textbox with customized dimensions.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![Adjusting AutoComplete](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 
 
@@ -59,7 +59,7 @@ In the design page, define the AutoComplete control and configure the ShowRounde
 
 The following screenshot is the output for AutoComplete when ShowRoundedCorner is set to true.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Rounded corner](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
@@ -87,7 +87,7 @@ In the design page, define the AutoComplete control and set a text value for Wat
 
 The following screenshot is the output for AutoComplete when WatermarkText is defined.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![Watermark text](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
 
@@ -111,7 +111,7 @@ In the design page, define the AutoComplete control and set the value for PopupH
 
 The following screenshot is the output for AutoComplete, after configuring the height and width of the popup panel.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![Adjusting Suggestion list size](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
 
@@ -135,7 +135,7 @@ In the design page, define the AutoComplete control and set the value for DelayS
 
 The following image is the output for AutoComplete, this takes 1000ms to display the popup panel list items.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
+![PopUp Time Delay](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
 
 
 
@@ -231,7 +231,7 @@ In the design page, define the AutoComplete control and set the value for CssCla
 
 The following screenshot is the output of an AutoComplete textbox configured based on CSS class.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
+![CSS Class](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 
 

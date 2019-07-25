@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling | Accordion | ASP.NET Webforms |Syncfusion
-description: appearance and styling
+description: Accordion appearance and styling
 platform: aspnet
 control: Accordion 
 documentation: ug
@@ -148,7 +148,7 @@ Output for Accordion control when panel height is set to Auto so that the maximu
 
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+ ![Appearance-and-Styling](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 
 
@@ -219,7 +219,7 @@ In an ASPX page, define the Accordion control and add the contents correspondin
 Output for accordion control when “ShowRoundedCorner” is set to “true” is as follows.
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+ ![Enabling Rounded corner property](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
@@ -291,7 +291,7 @@ Output for Accordion control with customized icons is as follows.
 
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+ ![Customize Accordion icon](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 
 
@@ -562,7 +562,7 @@ Define CSS class for customizing the Accordion. Here the “customCss” class i
 
 Output for Accordion with customized CSS property to hide the Accordion icon and format its content is as follows.
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+ ![Accordion using CSS class](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
 

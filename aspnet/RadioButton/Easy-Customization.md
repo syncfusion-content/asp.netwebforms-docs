@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Easy Customization | RadioButton | ASP.NET | Syncfusion
-description: easy customization
+description: RadioButton easy customization
 platform: aspnet
 control: RadioButton
 documentation: ug
@@ -52,7 +52,7 @@ Configure the CSS styles to align the radio buttons.
 </style>
 {% endhighlight %}
 
-![](Easy-Customization_images/Easy-Customization_img1.png)
+![Checked status](Easy-Customization_images/Easy-Customization_img1.png)
 
 ## Text
 
@@ -91,7 +91,7 @@ Configure the CSS styles to align the radio buttons.
 </style>
 {% endhighlight %}
 
-![](Easy-Customization_images/Easy-Customization_img2.png)
+![Text](Easy-Customization_images/Easy-Customization_img2.png)
 
 ## Size
 
@@ -179,7 +179,7 @@ Configure the CSS styles to align the radio buttons
 </style>
 {% endhighlight %}
 
-![](Easy-Customization_images/Easy-Customization_img3.png)
+![Size](Easy-Customization_images/Easy-Customization_img3.png)
 
 ## RTL Support 
 
@@ -231,7 +231,7 @@ Configure the CSS styles to align the RadioButtons.
 
 {% endhighlight %}
 
-![](Easy-Customization_images/Easy-Customization_img4.png)
+![RTL Support](Easy-Customization_images/Easy-Customization_img4.png)
 
 ## Styles Customization
 
@@ -280,4 +280,4 @@ In the following example, the border color and border width of the active RadioB
 
 {% endhighlight %}
 
-![](Easy-Customization_images/Easy-Customization_img5.png)
+![Customization](Easy-Customization_images/Easy-Customization_img5.png)

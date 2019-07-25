@@ -156,7 +156,7 @@ At the time of AJAX call, the content is fetched from the external file.
 
 The following screenshot illustrates the First Tab with the sub Tab control by using Load on Demand. 
 
-![](Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img1.png) 
+![Ajax Content](Ajax-Content-Load-Load-on-Demand_images/Ajax-Content-Load-Load-on-Demand_img1.png) 
 
 
 
