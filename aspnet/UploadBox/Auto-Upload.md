@@ -23,7 +23,7 @@ By default, the value is set to false, and so the Upload button is clicked to up
 
 The following screenshot displays the output when AutoUpload is set to false.
 
-![](Auto-Upload_images/Auto-Upload_img1.png)
+![Auto Upload](Auto-Upload_images/Auto-Upload_img1.png)
 
 
 
@@ -43,4 +43,4 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
 
 The following screenshot displays the output.
 
-![](Auto-Upload_images/Auto-Upload_img2.png)
+![Save and Remove](Auto-Upload_images/Auto-Upload_img2.png)

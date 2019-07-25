@@ -70,7 +70,7 @@ In an ASPX page, define the Accordion control and add the contents correspondin
  Output for Accordion control with collapsible headers.
 
 
- ![](Header-customization_images/Header-customization_img1.png)
+ ![Collapsible Settings](Header-customization_images/Header-customization_img1.png)
 
 ## Enable Header expand
 
@@ -137,7 +137,7 @@ In an ASPX page, define the Accordion control and add the contents correspond
 Output for Accordion control that expands header on mouseout event is as follows.
 
 
- ![](Header-customization_images/Header-customization_img2.png)
+ ![Header expand](Header-customization_images/Header-customization_img2.png)
 
 ## Set selected header
   
@@ -203,7 +203,7 @@ In an ASPX page, define the Accordion control and add the contents correspond
 
 Output for Accordion control with the selected item by index is as follows.
 
- ![](Header-customization_images/Header-customization_img3.png)
+ ![Single selection](Header-customization_images/Header-customization_img3.png)
 
 
 
@@ -284,6 +284,6 @@ protected void Page_Load(object sender, EventArgs e)
 
 Output for Accordion control with the multiple selected items is as follows.
 
- ![](Header-customization_images/Header-customization_img4.png)
+ ![Multiple selection](Header-customization_images/Header-customization_img4.png)
 
 

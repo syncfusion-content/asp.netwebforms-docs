@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and styling | UploadBox | ASP.NET | Syncfusion
-description: appearance and styling 
+description: UploadBox appearance and styling 
 platform: aspnet
 control: UploadBox
 documentation: ug
@@ -57,8 +57,9 @@ In the ASPX page, add the UploadBox element and configure the texts in code behi
 
 N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Remove File Action section).
 
-The following screenshot displays the output UploadBox with customized button text.![](Appearance-and-styling_images/Appearance-and-styling_img1.png)
+The following screenshot displays the output UploadBox with customized button text.
 
+![Customizing Button Text](Appearance-and-styling_images/Appearance-and-styling_img1.png)
 
 
 ## Customizing Upload Dialog
@@ -107,7 +108,7 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
 
 The following screenshot displays the output.
 
-![](Appearance-and-styling_images/Appearance-and-styling_img2.png)
+![Customizing Upload Dialog](Appearance-and-styling_images/Appearance-and-styling_img2.png)
 
 
 
@@ -129,7 +130,7 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
  
 The following screenshot displays the output.
 
-![](Appearance-and-styling_images/Appearance-and-styling_img3.png)
+![Show or Hide File details](Appearance-and-styling_images/Appearance-and-styling_img3.png)
 
 ## Customize the file details 
 
@@ -155,7 +156,7 @@ The following screenshot displays the output.
 
 
 
-![](Appearance-and-styling_images/Appearance-and-styling_img4.png)
+![Customize the file details](Appearance-and-styling_images/Appearance-and-styling_img4.png)
 
 
 
@@ -183,7 +184,7 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
 
 The following screenshot displays the output. Here the dialog behaves as Modal and cannot be dragged or repositioned and closes when upload is complete
 
-![](Appearance-and-styling_images/Appearance-and-styling_img5.png)
+![Upload file Dialog actions and position](Appearance-and-styling_images/Appearance-and-styling_img5.png)
 
 
 
@@ -229,7 +230,7 @@ Add the following code to your Master &ASPX page to initialize the Uploadbox 
 
 Run the code to get the following output.
 
-![](Appearance-and-styling_images/Appearance-and-styling_img6.png)
+![Theme](Appearance-and-styling_images/Appearance-and-styling_img6.png)
 
 
 
@@ -329,4 +330,4 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
 
 The following screenshot displays the output.
 
-![](Appearance-and-styling_images/Appearance-and-styling_img7.png)
+![CSS Class](Appearance-and-styling_images/Appearance-and-styling_img7.png)

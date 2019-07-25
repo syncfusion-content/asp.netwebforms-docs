@@ -14,7 +14,7 @@ keywords: ComboBox, ComboBox, Populating data
 
 1. Create an ASP.NET Web Forms application and add ComboBox control to the Default.aspx page.
 
-    ![](Getting-Started_images/Getting-Started_img1.png)
+    ![Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 2. Once the control is dragged and dropped into the page the embedded resource will add dependent script and CSS files from Syncfusion.EJ.Web assembly and the assembly will be referred from GAC. This will add the following appSetting key in web.config file to load resource files.
 
@@ -31,7 +31,7 @@ N> Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting
 
 3. Configure the ComboBox control using smart tag, to add ComboBox items
 
-    ![](Getting-Started_images/Getting-Started_img2.png)
+    ![Smart Tag](Getting-Started_images/Getting-Started_img2.png)
 
 ## Binding data source
 

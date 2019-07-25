@@ -63,7 +63,7 @@ Add the following code example to the corresponding ASPX page to render the Tool
 
 The following screenshot displays the Toolbar output with the embedded controls.
 
- ![](Template-Support_images/Template-Support_img1.png) 
+ ![Template](Template-Support_images/Template-Support_img1.png) 
 
 
 

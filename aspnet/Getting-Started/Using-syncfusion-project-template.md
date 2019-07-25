@@ -16,7 +16,7 @@ Syncfusion provides the Visual Studio Project Template support for ASP.NET (EJWE
     **Option 1:**   
     Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET (Essential JS 1) > Create New Syncfusion Web Project…** or **Create New Syncfusion WebSite Project…** in **Visual Studio**.
        
-    ![](../Getting-Started_images/Syncfusion_Menu_ProjectTemplate.png)
+    ![Project Template](../Getting-Started_images/Syncfusion_Menu_ProjectTemplate.png)
 
 	N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
 
@@ -27,11 +27,11 @@ Syncfusion provides the Visual Studio Project Template support for ASP.NET (EJWE
 3. Set a name and location for the project.<BR>
 4. Click OK to create the project. <BR>
 
-   ![](../Getting-Started_images/Getting-Started_img1.png)
+   ![Project Creation](../Getting-Started_images/Getting-Started_img1.png)
 
    Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
-   ![](../Getting-Started_images/Getting-Started_img31.png)
+   ![Syncfusion License](../Getting-Started_images/Getting-Started_img31.png)
 
 Add your required controls in the ASPX Page. The code for adding DatePicker control within the “Default.aspx” file are as follows.
 
@@ -43,12 +43,12 @@ Add your required controls in the ASPX Page. The code for adding DatePicker cont
 
 * Another way of adding control into the Default.aspx page is by making use of the Toolbox option present in the Visual Studio. You need to just drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page, and the required control code will automatically gets generated.
 
-![](../Getting-Started_images/Getting-Started_img2.png)
+![Adding Control](../Getting-Started_images/Getting-Started_img2.png)
 
 
 * Finally build and run the project by pressing F5, so that you can now see the output similar to the following screenshot in your web browser.
 
-![](../Getting-Started_images/Getting-Started_img13.png)
+![Output Image](../Getting-Started_images/Getting-Started_img13.png)
 
 N> The Script Manager is mandatory in order to place our control initialization script in the page.<BR>
 Ensure whether the “ScriptManager” is added in the “Site.Master” or else add the “ScriptManager” to your web page. <BR>

@@ -34,7 +34,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endtabs %}
 
-![](Grouping_images/Grouping_image1.png)
+![Grouping](Grouping_images/Grouping_image1.png)
 
 ## Customization
 

@@ -211,7 +211,7 @@ The following screenshot is the output for AutoComplete control with local data 
 
 
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![Data Binding](Data-Binding_images/Data-Binding_img1.png)
 
 
 
@@ -270,7 +270,7 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 
 The following screenshot is the output for AutoComplete control with remote data binding.
 
-![](Data-Binding_images/Data-Binding_img2.png)
+![Remote data](Data-Binding_images/Data-Binding_img2.png)
 
 
 
@@ -326,7 +326,7 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 
 The following screenshot is the output for AutoComplete control with SQL data binding.
 
-![](Data-Binding_images/Data-Binding_img4.png) 
+![SQL data](Data-Binding_images/Data-Binding_img4.png) 
 
 
 
@@ -497,7 +497,7 @@ DataTextField="Text" DataUniqueKeyField="ID" />
 
 The following screenshot is the output for AutoComplete control with ObjectDataSource data binding.
 
-![](Data-Binding_images/Data-Binding_img5.png) 
+![Object DataSource](Data-Binding_images/Data-Binding_img5.png) 
 
 
 
@@ -522,7 +522,7 @@ The following steps explain local data binding of a list data to an AutoComplete
 
 Define a LINQ-to-SQL data source in the web page and configure the data source as per your requirement by using the database. In the following code example, an SQL table with TerritoryID and TerritoryDescription in var char type is used, to create a DBML class.
 
-![](Data-Binding_images/Data-Binding_img6.png)
+![LINQ-to-SQL data](Data-Binding_images/Data-Binding_img6.png)
 
 In the Design page, add an AutoComplete element from ToolBox and assign values for DataTextField and DataUniqueKeyField. In DataSourceID field, assign the ID of the existing LINQ-to-SQL data source. 
 
@@ -558,7 +558,7 @@ DataTextField="TerritoryDescription" DataUniqueKeyField="TerritoryID" />
 
 The following screenshot is the output for AutoComplete control with LINQ-to-SQL data binding.
 
-![](Data-Binding_images/Data-Binding_img7.png) 
+![LINQ-to-SQL databind](Data-Binding_images/Data-Binding_img7.png) 
 
 
 

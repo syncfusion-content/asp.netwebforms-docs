@@ -47,7 +47,7 @@ function filtering(e) {
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image1.png)
+![Filtering](Filtering_images/Filtering_image1.png)
 
 ## Limit the minimum filter character
 
@@ -93,7 +93,7 @@ function filtering(e) {
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image2.png)
+![Minimum filter character](Filtering_images/Filtering_image2.png)
 
 ## Change the filter type
 
@@ -136,7 +136,7 @@ function filtering(e) {
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image3.png)
+![Filter type](Filtering_images/Filtering_image3.png)
 
 ## Case sensitive filtering
 
@@ -180,4 +180,4 @@ function filtering(e) {
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image4.png)
+![Case sensitive filtering](Filtering_images/Filtering_image4.png)

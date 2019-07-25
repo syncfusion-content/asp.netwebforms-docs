@@ -75,7 +75,7 @@ MultiSelectMode="None"/>
 
 The following screenshot is the output for AutoComplete control with configured multiple selection.
 
-![](MultiSelection-modes_images/MultiSelection-modes_img1.png)
+![MultiSelection Mode](MultiSelection-modes_images/MultiSelection-modes_img1.png)
 
 
 
@@ -205,7 +205,7 @@ In the Design page, add an AutoComplete element from ToolBox and assign values f
 
 The following screenshot is the output for AutoComplete control that provides grouping.
 
-![](MultiSelection-modes_images/MultiSelection-modes_img2.png)
+![Grouping](MultiSelection-modes_images/MultiSelection-modes_img2.png)
 
 
 

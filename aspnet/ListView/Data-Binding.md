@@ -84,7 +84,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 Run the code to get the following output
 
-![](Data-Binding_images/Data-Binding_img1.png) 
+![Local Data Binding](Data-Binding_images/Data-Binding_img1.png) 
 
 ## Remote Data Binding
 
@@ -106,7 +106,7 @@ OData is a standardized protocol for creating and consuming data. You can provi
 Run the code to get the following output
 
 
-![](Data-Binding_images/odata_img1.png)
+![Remote Data Binding](Data-Binding_images/odata_img1.png)
 
 ### OData4
 
@@ -125,7 +125,7 @@ ODataV4Adaptor is used for consuming data from OData V4 Service. To consume ODat
 
 Run the code to get the following output.
 
-![](Data-Binding_images/odata4_img1.png)
+![OData4](Data-Binding_images/odata4_img1.png)
 
 ### WebAPI Adaptor
 
@@ -142,7 +142,7 @@ You can use the following code example to use WebAPI adaptor.
 
 Run the code to get the following output.
 
-![](Data-Binding_images/webapiadaptor_img1.png)
+![WebAPI Adaptor](Data-Binding_images/webapiadaptor_img1.png)
 
 
 ## FieldSettings
@@ -180,11 +180,11 @@ Please refer the following code examples.
 
 Run the code to get the following output
 
-![](Data-Binding_images/Data-Binding_img2.png) 
+![Field Settings](Data-Binding_images/Data-Binding_img2.png) 
 
 
 When you click on the parent item, it navigates to its corresponding child list item as follows.
 
 
-![](Data-Binding_images/Data-Binding_img3.png) 
+![BreadCrumbs](Data-Binding_images/Data-Binding_img3.png) 
 

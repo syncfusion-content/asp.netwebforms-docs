@@ -33,7 +33,7 @@ If you want to insert an image from online source like Google, ping, etc., you n
     
 {% endhighlight %}
 
-![](ImageandFilebrowser_images/ImageandFilebrowser_img1.png)
+![Image from Online Source](ImageandFilebrowser_images/ImageandFilebrowser_img1.png)
 
 ## Insert a Image from Your Computer
 
@@ -88,7 +88,7 @@ public static object FileActionDefault(string ActionType, string Path, string Ex
     
 {% endhighlight %}        
 
-![](ImageandFilebrowser_images/ImageandFilebrowser_img2.png)
+![Image from Your Computer](ImageandFilebrowser_images/ImageandFilebrowser_img2.png)
 
 
 N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](http://helpjs.syncfusion.com/js/fileexplorer/overview#).
@@ -97,7 +97,7 @@ N> FileExplorer component has been implemented and integrated with the editor in
 
 You can set or modify the properties of an image by using the image dialog. It allows you to add links, apply border and set additional styles to the images. The editor provides an option to specify the alternate text for an image, if the image cannot be displayed.
 
-![](ImageandFilebrowser_images/ImageandFilebrowser_img3.png)
+![Image Properties](ImageandFilebrowser_images/ImageandFilebrowser_img3.png)
 
 
 ## Resize an Image
@@ -110,7 +110,7 @@ N> Set the default height and width of the Images which was inserted into the RT
 
 You can resize an image manually by selecting an image. And drag the handle until the image is resized to the desired size. 
 
-![](ImageandFilebrowser_images/ImageandFilebrowser_img4.png)
+![Resize an Image](ImageandFilebrowser_images/ImageandFilebrowser_img4.png)
 
 
 ### Set Width and Height
@@ -135,7 +135,7 @@ The editor provides you to set the width and height properties to change the siz
 
 {% endhighlight %}
 
-![](ImageandFilebrowser_images/ImageandFilebrowser_img5.png)
+![Set Width and Height](ImageandFilebrowser_images/ImageandFilebrowser_img5.png)
 
 ## Suppression of the Image Browser
 

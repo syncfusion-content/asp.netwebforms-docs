@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behavior Settings | NumericTextbox | ASP.NET | Syncfusion
-description: behavior settings
+description: Numeric TextBox behavior settings
 platform: aspnet
 control: NumericTextbox
 documentation: ug
@@ -88,7 +88,7 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 
 The following screenshot displays the output of the NumericTextbox with and without enableStrictMode.
 
-![](Behavior-Settings_images/Behavior-Settings_img3.png) 
+![Strict Mode](Behavior-Settings_images/Behavior-Settings_img3.png) 
 
 
 
