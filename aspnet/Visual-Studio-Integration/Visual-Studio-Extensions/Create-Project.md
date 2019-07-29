@@ -39,7 +39,7 @@ Use the following steps to create the **Syncfusion ASP.NET (Essential JS 1) Appl
 
     **Project Configurations**
 
-    **Proejct Type:** Choose the required Project Type either Website or WebApplication.
+    **Project Type:** Choose the required Project Type either Website or WebApplication.
 
     ![Choose required Project Type version](Create-Project_images/Syncfusion-Project-Templates-img3.png)
 
@@ -53,7 +53,7 @@ Use the following steps to create the **Syncfusion ASP.NET (Essential JS 1) Appl
 
    **Assemblies From:** Choose the assembly location, from where the assembly is added to the project.
 
-   ![Choose the assembly location from where it is going to be added to the project](Create-Project_images/Syncfusion-Project-Templates-img6.png)
+   ![Choose the assembly location from where it is going to be added to the prject](Create-Project_images/Syncfusion-Project-Templates-img6.png)
 
    **Assets From:** Choose the Syncfusion Essential JS assets to ASP.NET Web Forms Project, either NuGet, CDN or Installed Location.
 
@@ -63,7 +63,7 @@ Use the following steps to create the **Syncfusion ASP.NET (Essential JS 1) Appl
 
    ![Choose the Version](Create-Project_images/Syncfusion-Project-Templates-img8.png)
 
-4. Select the controls which Assemblies and Scripts need to be added to the prjoect and click the create button then Syncfusion ASPNET Web Forms project created 
+4. Select the controls which Assemblies and Scripts need to be added to the project and click the create button then Syncfusion ASPNET Web Forms project created 
 
     ![Syncfusion Essential ASP.NET Web Feature selection](Create-Project_images/Syncfusion-Project-Templates-img9.png)
 
