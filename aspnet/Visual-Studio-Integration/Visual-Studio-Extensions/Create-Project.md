@@ -35,7 +35,7 @@ Use the following steps to create the **Syncfusion ASP.NET (Essential JS 1) Appl
 
 3.Choose the options to configure the Syncfusion ASP.NET Web Forms Application by using the following Project Configuration window.
 
-    ![Syncfusion Essential JS 1 ASP.NET Web Forms Project configuration wizard](Create-Project_images/Syncfusion-Project-Templates-img2.png)
+   ![Syncfusion Essential JS 1 ASP.NET Web Forms Project configuration wizard](Create-Project_images/Syncfusion-Project-Templates-img2.png)
 
 **Project Configurations**
 
