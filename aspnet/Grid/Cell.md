@@ -178,6 +178,11 @@ N> The following features are not supported with Cell Merging
 N> 1. Normal Mode Editing
 N> 2. Inline Mode Editing
 N> 3. Inline TemplateForm Mode Editing
+N> 4. Grouping
+N> 5. Virtual Scrolling
+N> 6. Frozen Columns
+N> 7. Cell Selection Modes
+N> 8. Column Selection
 
 The following code example describes the above behavior.
 
