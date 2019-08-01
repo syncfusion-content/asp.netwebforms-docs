@@ -16,7 +16,7 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 
 | Drag | Resize | Rotate |
 |---|---|---|
-| ![](/aspnet/Diagram/Tooltip_images/Tooltip_img1.png) | ![](/aspnet/Diagram/Tooltip_images/Tooltip_img2.png) | ![](/aspnet/Diagram/Tooltip_images/Tooltip_img3.png) |
+| ![displays the node dragging information](/aspnet/Diagram/Tooltip_images/Tooltip_img1.png) | ![displays the node resizing information](/aspnet/Diagram/Tooltip_images/Tooltip_img2.png) | ![displays the node rotation information](/aspnet/Diagram/Tooltip_images/Tooltip_img3.png) |
 
 ### Disable default tooltip
 
@@ -99,7 +99,7 @@ public partial class DiagramFeatures: System.Web.UI.Page {
 {% endhighlight %} 
 {% endtabs %} 
 
-![](/aspnet/Diagram/Tooltip_images/Tooltip_img4.png)
+![show tooltip when mouse hovers over any node](/aspnet/Diagram/Tooltip_images/Tooltip_img4.png)
 
 ### Disable tooltip at runtime
 
@@ -231,7 +231,7 @@ public partial class DiagramFeatures: System.Web.UI.Page {
 {% endhighlight %} 
 {% endtabs %} 
 
-![](/aspnet/Diagram/Tooltip_images/Tooltip_img5.png)
+![position the tooltip around object](/aspnet/Diagram/Tooltip_images/Tooltip_img5.png)
 
 ### Tooltip relative to mouse position
 
@@ -290,6 +290,6 @@ public partial class DiagramFeatures: System.Web.UI.Page {
 {% endhighlight %} 
 {% endtabs %} 
 
-![](/aspnet/Diagram/Tooltip_images/Tooltip_img6.png)
+![show tooltip at mouse position](/aspnet/Diagram/Tooltip_images/Tooltip_img6.png)
 
 

@@ -82,7 +82,7 @@ public Array GetData()
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img1.png)
+![Hierarchical Layout for organization structure](Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its **ExcludeFromLayout** property as true.
 
@@ -167,7 +167,7 @@ public Array GetData(){
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img2.png) 
+![The nodes in a radial tree structure](Automatic-Layout_images/Automatic-Layout_img2.png) 
 
 ## Organizational Chart
 
@@ -250,7 +250,7 @@ public Array GetData(){
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img3.png)
+![Organizational Chart of an organization and its relationships](Automatic-Layout_images/Automatic-Layout_img3.png)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -302,12 +302,12 @@ The following table illustrates the different chart orientations and chart types
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](Automatic-Layout_images/Automatic-Layout_img4.png) |
-| | Right | Arranges the child nodes horizontally at the right side of parent. | ![](Automatic-Layout_images/Automatic-Layout_img5.png) |
-| | Center | Arranges the children like standard tree layout orientation. | ![](Automatic-Layout_images/Automatic-Layout_img6.png) |
-| Vertical | Left | Vertically arranges the children at the left side of parent | ![](Automatic-Layout_images/Automatic-Layout_img7.png) |
-| | Right | Vertically arranges the children at the right side of parent | ![](Automatic-Layout_images/Automatic-Layout_img8.png) |
-| | Alternate | Vertically arranges the children at both left and right sides of parent | ![](Automatic-Layout_images/Automatic-Layout_img9.png) |
+| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![Horizontal left alignment](Automatic-Layout_images/Automatic-Layout_img4.png) |
+| | Right | Arranges the child nodes horizontally at the right side of parent. | ![Horizontal right alignment](Automatic-Layout_images/Automatic-Layout_img5.png) |
+| | Center | Arranges the children like standard tree layout orientation. | ![Horizontal center alignment](Automatic-Layout_images/Automatic-Layout_img6.png) |
+| Vertical | Left | Vertically arranges the children at the left side of parent | ![Vertical left alignment](Automatic-Layout_images/Automatic-Layout_img7.png) |
+| | Right | Vertically arranges the children at the right side of parent | ![Vertical right alignment](Automatic-Layout_images/Automatic-Layout_img8.png) |
+| | Alternate | Vertically arranges the children at both left and right sides of parent | ![Vertical  center alignment](Automatic-Layout_images/Automatic-Layout_img9.png) |
 
 The following code example illustrates how to set the vertical right arrangement to the leaf level trees.
 
@@ -386,7 +386,7 @@ public Array GetData(){
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img10.png)
+![Vertical right arrangement to the leaf level trees](Automatic-Layout_images/Automatic-Layout_img10.png)
 
 ### Assistant
 
@@ -460,7 +460,7 @@ public Array GetData(){
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img11.png)
+![Assistants are child item that have a different relationship with the parent node](Automatic-Layout_images/Automatic-Layout_img11.png)
 
 ## Customize Layout
 
@@ -532,7 +532,7 @@ public Array GetData(){
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img12.png)
+![Arrange the nodes in a BottomToTop orientation](Automatic-Layout_images/Automatic-Layout_img12.png)
 
 ### Fixed Node
 
@@ -600,7 +600,7 @@ public Array GetData(){
 
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img13.png) 
+![Arrange the nodes with reference to the position of a fixed node](Automatic-Layout_images/Automatic-Layout_img13.png) 
 
 ### Expand and collapse
 

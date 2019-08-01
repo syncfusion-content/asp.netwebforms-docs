@@ -56,6 +56,6 @@ The following code illustrates how to provide localization support for Context M
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Localization_images/Localization_img1.png)
+![provide localization support for Context Menu items](/aspnet/Diagram/Localization_images/Localization_img1.png)
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.
