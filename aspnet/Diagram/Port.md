@@ -11,15 +11,15 @@ documentation: ug
 
 Essential Diagram for ASP.NET provides support to define custom ports for making connections.
 
-![](/aspnet/Diagram/Port_images/Port_img3.png)
+![connections between the nodes with multiple ports](/aspnet/Diagram/Port_images/Port_img3.png)
 
 When a connector is connected between two nodes, its end points are automatically docked to node's nearest boundary as shown in the following image. 
 
-![](/aspnet/Diagram/Port_images/Port_img4.png)
+![connector is connected between ports of two nodes](/aspnet/Diagram/Port_images/Port_img4.png)
 
 Ports act as the connection points of node and allows to create connections with only those specific points as shown in the following image.
 
-![](/aspnet/Diagram/Port_images/Port_img5.png)
+![Ports act as the connection points of node](/aspnet/Diagram/Port_images/Port_img5.png)
 
 ## Create Port
 
@@ -75,7 +75,7 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Port_images/Port_img1.png)
+![add ports to node at runtime](/aspnet/Diagram/Port_images/Port_img1.png)
 
 To explore the set of properties for defining a port, refer to [Port Properties](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Port_members.html  "Port Properties")
 
@@ -123,7 +123,7 @@ The following code illustrates how to change the appearance of port.
 
 {% endhighlight %}
 
-![](/aspnet/Diagram/Port_images/Port_img2.png)
+![change the appearance of port](/aspnet/Diagram/Port_images/Port_img2.png)
 
 ## Constraints
 

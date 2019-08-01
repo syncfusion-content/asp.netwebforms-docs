@@ -22,7 +22,7 @@ The `SnapSettings.SnapConstraints` enables you to show/hide the gridlines. The f
 </ej:Diagram> 
 {% endhighlight %}
 
-![](Gridlines_images/Gridlines_img1.png)
+![show or hide gridlines](Gridlines_images/Gridlines_img1.png)
 
 To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.SnapSettings~SnapConstraints.html  "Constraints")
 
@@ -40,7 +40,7 @@ The `HorizontalGridLines` and `VerticalGridLines` properties allow to customize 
 </ej:Diagram>
 {% endhighlight %}
 
-![](Gridlines_images/Gridlines_img4.png)
+![customize the appearance of gridlines](Gridlines_images/Gridlines_img4.png)
 
 ### Line Intervals
 
@@ -79,7 +79,7 @@ Diagram.Model.SnapSettings = new SnapSettings()
 };
 {% endhighlight %}
 
-![](Gridlines_images/Gridlines_img2.png)
+![customize the thickness of lines and the line intervals](Gridlines_images/Gridlines_img2.png)
 
 ## Snapping
 
@@ -127,4 +127,4 @@ The `EnableSnapToObject` property allows you to enable/disable smart guides. The
 </ej:Diagram> 
 {% endhighlight %}
 
-![](Gridlines_images/Gridlines_img4.png)
+![enable/disable the smart guides](Gridlines_images/Gridlines_img4.png)

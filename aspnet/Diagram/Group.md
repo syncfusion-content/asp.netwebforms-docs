@@ -166,7 +166,7 @@ group.Children.Add(node4);
 Diagram.Model.Nodes.Add(group);
 {% endhighlight %}
 
-![](/aspnet/Diagram/Group_images/Group_img9.png)
+![add a canvas panel](/aspnet/Diagram/Group_images/Group_img9.png)
 
 ### Stack
 
@@ -211,7 +211,7 @@ group.Children.Add(node3);
 Diagram.Model.Nodes.Add(group);
 {% endhighlight %}
 
-![](/aspnet/Diagram/Group_images/Group_img10.png)
+![add a stack panel](/aspnet/Diagram/Group_images/Group_img10.png)
 
 ## Difference between a basic group and containers
 

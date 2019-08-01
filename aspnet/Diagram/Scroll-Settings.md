@@ -33,7 +33,7 @@ Diagram allows you to pan the Diagram before loading, so that any desired region
 
 In the example given below, the vertical scroll bar is scrolled down by 50px and horizontal scroll bar is scrolled to right by 100px. 
 
-![](/aspnet/Diagram/Scroll-Settings_images/Scroll-Settings_img1.png)
+![the vertical scroll bar](/aspnet/Diagram/Scroll-Settings_images/Scroll-Settings_img1.png)
 
 ## Update scroll status
 

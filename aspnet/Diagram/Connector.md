@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
-![](Connector_images/Connector_img1.png)
+![Connector with node to node connection](Connector_images/Connector_img1.png)
 
 ## Create Connector
 
@@ -35,7 +35,7 @@ The `SourcePoint` and `TargetPoint` properties of connector allow you to define 
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img2.png)
+![add a connector through connector collection](Connector_images/Connector_img2.png)
 
 ### Add connector at run time
 
@@ -61,7 +61,7 @@ diagram.add(connector);
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img3.png)
+![add connector at runtime](Connector_images/Connector_img3.png)
 
 ### Connectors from palette
 
@@ -141,7 +141,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img4.png)
+![connector connect with two nodes](Connector_images/Connector_img4.png)
 
 N> By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with connection ports.
 
@@ -211,7 +211,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img5.png)
+![port to port connections](Connector_images/Connector_img5.png)
 
 ## Segments
 
@@ -242,7 +242,7 @@ To create a straight line, you should specify the `Type` of the segment as "stra
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/connector_img6.png)
+![create a default straight segment](Connector_images/connector_img6.png)
 
 The `Point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
@@ -269,7 +269,7 @@ The `Point` property of straight segment allows you to define the end point of i
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img7.png)
+![define the end point of a straight segment](Connector_images/Connector_img7.png)
 
 ### Orthogonal
 
@@ -296,7 +296,7 @@ Set the segment `Type` as "Orthogonal" to create a default orthogonal segment. T
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img8.png)
+![create a default orthogonal segment](Connector_images/Connector_img8.png)
 
 The `Length` and `Direction` properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
@@ -321,15 +321,15 @@ The `Length` and `Direction` properties allow to define the flow and length of s
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img9.png)
+![create customized orthogonal segments](Connector_images/Connector_img9.png)
 
 #### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes. The following images illustrate how orthogonal segments are re-routed.
 
-![](Connector_images/Connector_img10.png)
+![avoid overlapping with the source and target nodes](Connector_images/Connector_img10.png)
 
-![](Connector_images/Connector_img11.png)
+![avoid overlapping with the source and target nodes](Connector_images/Connector_img11.png)
 
 N> Overlapping with source and target nodes are only avoided. Other nodes are not considered as obstacles.
 
@@ -358,7 +358,7 @@ To create a bezier segment, the `Segment.Type` is set as `Bezier`. The following
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img12.png)
+![create a default Bezier segment](Connector_images/Connector_img12.png)
 
 The `Point1` and `Point2` properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the Bezier segments with control points.
 
@@ -385,7 +385,7 @@ The `Point1` and `Point2` properties of bezier segment enable you to set the con
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img13.png)
+![configure the Bezier segments with control points](Connector_images/Connector_img13.png)
 
 The `Vector1` and `Vector2` properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
 
@@ -409,7 +409,7 @@ var connector = {
 connectors.push(connector);
 {% endhighlight %}
 
-![](Connector_images/Connector_img14.png)
+![configure a bezier curve with vectors](Connector_images/Connector_img14.png)
 
 ### Complex segments
 
@@ -436,7 +436,7 @@ Multiple segments can be defined one after another. To create a connector with m
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img15.png)
+![create a connector with multiple segments](Connector_images/Connector_img15.png)
 
 ## Decorator
 
@@ -479,7 +479,7 @@ The `Shape` property of decorator allows to define the shape of the decorators. 
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img16.png)
+![create decorators of various shapes](Connector_images/Connector_img16.png)
 
 ## Padding
 
@@ -512,7 +512,7 @@ The `SourcePadding` and `TargetPadding` properties of connector define the space
         </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img17.png)
+![define the space to be left between the connection end points and nodes](Connector_images/Connector_img17.png)
 
 The `ConnectorPadding` property of node defines the space to be left between the node bounds and its edges. The following code example illustrates how to leave the space between a node and its connections.
 
@@ -535,7 +535,7 @@ Connector connector = new Connector() { Name = "flow1", SourceNode = "task1", Ta
 Diagram.Model.Connectors.Add(connector);
 {% endhighlight %}
 
-![](Connector_images/Connector_img18.png)
+![space between a node and its connections](Connector_images/Connector_img18.png)
 
 The `ConnectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports and its connections.
 
@@ -568,7 +568,7 @@ Connector connector = new Connector() {
 Diagram.Model.Connectors.Add(connector);
 {% endhighlight %}
 
-![](Connector_images/Connector_img19.png)
+![space between ports and its connections](Connector_images/Connector_img19.png)
 
 ## Bridging
 
@@ -591,7 +591,7 @@ Connector connector = new Connector()
 Diagram.Model.Constraints = DiagramConstraints.Default | DiagramConstraints.Bridging;
 {% endhighlight %}
 
-![](Connector_images/Connector_img20.png)
+![enable line bridging](Connector_images/Connector_img20.png)
 
 The direction of the bridge can be customized with the property `BridgeDirection`. BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
@@ -609,7 +609,7 @@ Diagram.Model.Constraints = DiagramConstraints.Default | DiagramConstraints.Brid
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img21.png)
+![draw the bridge at the bottom direction](Connector_images/Connector_img21.png)
 
 **Limitation**: Bezier segments do not support bridging.
 
@@ -644,7 +644,7 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img22.png)
+![create connectors with rounded corners](Connector_images/Connector_img22.png)
 
 ## Appearance
 
@@ -688,7 +688,7 @@ The following code example illustrates how to customize the appearance of the de
 </ej:Diagram>
 {% endhighlight %}
 
-![](Connector_images/Connector_img23.png)
+![customize the appearance of the decorator](Connector_images/Connector_img23.png)
 
 ## Interaction
 Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/aspnet/Diagram/Interaction#connection-editing "Connection Editing").

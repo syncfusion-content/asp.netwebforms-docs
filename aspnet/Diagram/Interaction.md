@@ -1,4 +1,4 @@
----
+	---
 layout: post
 title: Interaction | Diagram | ASP.NET Webform | Syncfusion
 description: This section explains about how to select and edit the nodes and connectors during runtime in Diagram control.
@@ -18,7 +18,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img1.png)
+![selected elements are visually represented](/aspnet/Diagram/Interaction_images/Interaction_img1.png)
 
 ### Selecting a group
 
@@ -38,7 +38,7 @@ Multiple elements can be selected with the following ways.
 
 Multiple selected elements are visually represented as shown.
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img2.png)
+![Multiple selected elements are visually represented ](/aspnet/Diagram/Interaction_images/Interaction_img2.png)
 
 ### Select/Unselect elements programmatically
 
@@ -91,7 +91,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/aspnet/Diagram/Gridlines#snapping "Snapping").
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img3.png)
+![dragging nodes](/aspnet/Diagram/Interaction_images/Interaction_img3.png)
 
 ## Resize
 
@@ -99,7 +99,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 * When one corner of the selector is dragged, opposite corner is in a static position.
 * While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/aspnet/Diagram/Gridlines#snapping "Snapping").
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img4.png)
+![resizing nodes](/aspnet/Diagram/Interaction_images/Interaction_img4.png)
 
 ## Rotate
 
@@ -108,7 +108,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
 * For more information about pivot, refer to [Position](/aspnet/Diagram/Node#position "Position").
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img5.png)
+![rotating node](/aspnet/Diagram/Interaction_images/Interaction_img5.png)
 
 ## Connection editing
 
@@ -118,7 +118,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img6.png)
+![end point dragging of connector](/aspnet/Diagram/Interaction_images/Interaction_img6.png)
 
 ### Straight segment editing
 
@@ -130,17 +130,17 @@ Source and target points of the selected connectors are represented with two han
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img7.png)
+![adjust the length of adjacent segments](/aspnet/Diagram/Interaction_images/Interaction_img7.png)
 
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img8.png)
+![maintain proper routing of orthogonality between segments](/aspnet/Diagram/Interaction_images/Interaction_img8.png)
 
 ### Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img9.png)
+![dragging the control thumbs](/aspnet/Diagram/Interaction_images/Interaction_img9.png)
 
 ## Drag and drop nodes over other elements
 
@@ -228,7 +228,7 @@ $("#DiagramContent").ejDiagram({
 });
 {% endhighlight %}
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img10.png)
+![draw a user handle](/aspnet/Diagram/Interaction_images/Interaction_img10.png)
 
 ### Appearance
 
@@ -265,7 +265,7 @@ $("#DiagramContent").ejDiagram({
 });
 {% endhighlight %}
 
-![](/aspnet/Diagram/Interaction_images/Interaction_img11.png)
+![customize the appearance of the user handle](/aspnet/Diagram/Interaction_images/Interaction_img11.png)
 
 ## Zoom pan
 
