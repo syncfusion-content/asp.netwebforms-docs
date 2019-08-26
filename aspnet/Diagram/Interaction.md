@@ -1,4 +1,4 @@
-	---
+---
 layout: post
 title: Interaction | Diagram | ASP.NET Webform | Syncfusion
 description: This section explains about how to select and edit the nodes and connectors during runtime in Diagram control.
