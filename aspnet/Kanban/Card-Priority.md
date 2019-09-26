@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cards prioritization with Kanban widget | Essential ASP.NET
+title: Cards prioritization with ASP.NET Kanban widget |Syncfusion
 description: The priority property is used to reorder the cards position in any desired place by dropping the card in Syncfusion ASP.NET Web Forms Kanban component.
 documentation: ug
 control: Kanban
