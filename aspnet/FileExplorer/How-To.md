@@ -940,3 +940,30 @@ We have prepared a demo based on above steps, please refer this.
 [http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET-1612924042.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FTPASPNET-1612924042.zip#)
 
 
+## Render FileExplorer inside Dialog
+
+FileExplorer can be rendered directly inside `<DialogContent>` tag of Dialog. `adjustSize` method of FileExplorer has to be invoked in open event of Dialog to display the FileExplorer with proper dimensions within Dialog. Refer to the following code
+
+{% highlight html %}
+
+    <ej:Dialog runat="server" ID="dialog1" Width="880" Height="500" ClientSideOnOpen="Open" Title="FileExplorer">
+            <DialogContent>
+                <ej:FileExplorer ID="fileexplorer" runat="server" IsResponsive="true" AjaxAction="FileExplorerFeatures.aspx/FileActionDefault" Path="~/content/images/FileExplorer/" Locale="en-US" Layout="Tile" EnableResize="false">
+                    <AjaxSettings>
+                        <Download Url="downloadFile.ashx{0}" />
+                        <Upload Url="uploadFiles.ashx{0}" />
+                    </AjaxSettings>
+                </ej:FileExplorer>
+            </DialogContent>
+        </ej:Dialog>
+    </div>
+    <script>
+        function Open() {
+            var instance = $("#<%=fileexplorer.ClientID%>").data("ejFileExplorer");
+            instance.adjustSize();
+        }
+    </script>
+
+{% endhighlight %}
+
+Sample can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/FileExplorer168234357)
