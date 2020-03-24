@@ -419,7 +419,7 @@ namespace WebSampleBrowser.Grid
 
 ## Title for summary
 
-Title name of any summary value can be change using the `Title` property of `SummaryColumns`. Title displaying column can be altered by using the `TitleColumn`.
+Title name of any summary value can be change using the `Title` property of `SummaryColumns`. Title displaying column can be set using the `TitleColumn`.
 
 {% tabs %}
 
