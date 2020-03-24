@@ -417,6 +417,129 @@ namespace WebSampleBrowser.Grid
 ![](Summary_images/Summary_img3.PNG)
 
 
+## Title for summary
+
+Title name of any summary value can be change using the `Title` property of `SummaryColumns`. Title displaying column can be altered by using the `TitleColumn`.
+
+{% tabs %}
+
+{% highlight html %}
+
+   <div>
+
+      <ej:Grid ID="OrdersGrid" runat="server" AllowPaging="true" ShowSummary="true">
+
+           <SummaryRows>
+
+                <ej:SummaryRow Title="Summation" TitleColumn="EmployeeID">
+
+                    <SummaryColumn>
+
+                       <ej:SummaryColumn SummaryType="Sum" Format="{0:C}" DisplayColumn="Freight" DataMember="Freight" />
+
+                    </SummaryColumn>
+
+                </ej:SummaryRow>
+
+           </SummaryRows>
+
+              <Columns>
+
+                <ej:Column Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" TextAlign="Right" Width="80" />
+
+                <ej:Column Field="EmployeeID" HeaderText="Employee ID" TextAlign="Right" Width="80" />
+
+                <ej:Column Field="ShipCity" HeaderText="Ship City" Width="90" />
+
+                <ej:Column Field="ShipCountry" HeaderText="Ship Country" Width="100" />
+
+                <ej:Column Field="Freight" HeaderText="Freight" TextAlign="Right" Width="80" Format="{0:C}" />
+
+              </Columns>
+
+      </ej:Grid>
+
+    </div>
+
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+namespace WebSampleBrowser.Grid
+
+{
+
+    public partial class CustomSummary : System.Web.UI.Page
+
+    {
+
+        List<Orders> order = new List<Orders>();
+
+        protected void Page_Load(object sender, EventArgs e)
+
+        {
+
+            BindDataSource();
+
+        }
+
+        private void BindDataSource()
+
+        {
+            int orderId = 10247;
+           
+            int empId = 0;
+            for (int i = 1; i < 9; i++)
+            {
+                order.Add(new Orders(orderId + 1, "VINET", empId + 1, 32.38, new DateTime(2014, 12, 25), "Reims", "France"));
+                order.Add(new Orders(orderId + 2, "TOMSP", empId + 2, 11.61, new DateTime(2014, 12, 21), "Munster", "Germany"));
+                order.Add(new Orders(orderId + 3, "ANATER", empId + 3, 45.34, new DateTime(2014, 10, 18), "Berlin", "Brazil"));
+                order.Add(new Orders(orderId + 4, "ALFKI", empId + 4, 37.28, new DateTime(2014, 11, 23), "Mexico","France" ));
+                order.Add(new Orders(orderId + 5, "FRGYE", empId + 5, 67.00, new DateTime(2014, 05, 05), "Colchester","Belgium"));
+                order.Add(new Orders(orderId + 5, "FRGYE", empId + 5, 67.00, new DateTime(2014, 05, 05), "Colchester", "Brazil"));
+                orderId += 5;
+                empId += 5;
+            }
+            this.OrdersGrid.DataSource = order;
+            this.OrdersGrid.DataBind();
+        }
+
+        [Serializable]
+        public class Orders
+        {
+            public Orders()
+            {
+
+            }
+            public Orders(int orderId, string customerId, int empId, double freight, DateTime orderDate, string shipCity, string shipCountry)
+            {
+                this.OrderID = orderId;
+                this.CustomerID = customerId;
+                this.EmployeeID = empId;
+                this.Freight = freight;
+                this.OrderDate = orderDate;
+                this.ShipCity = shipCity;
+                this.ShipCountry = shipCountry;
+            }
+            public int? OrderID { get; set; }
+            public string CustomerID { get; set; }
+            public int? EmployeeID { get; set; }
+            public double? Freight { get; set; }
+            public DateTime? OrderDate { get; set; }
+            public string ShipCity { get; set; }
+            public string ShipCountry { get; set; }
+        }
+    }
+
+}}
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](Summary_images/Summary_img8.PNG)
+
 
 ## Group Summary
 
