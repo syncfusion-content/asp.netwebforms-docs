@@ -935,7 +935,7 @@ The following output is displayed as a result of the above code example.
 
 ### Infinite or Continuous Mode:
 
-In Infinite or Continuous Mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the `VirtualScrollMode`  property as `Continuous`.
+In Infinite or Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the `VirtualScrollMode`  property as `Continuous`.
 
 The following code example describes the above behavior.
 
