@@ -7,11 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-## Adding header and footer in the Exported file (Excel, Word or PDF)
+# Adding header and footer in the Exported file (Excel, Word or PDF)
 
 We can add header and footer in the exported file while exporting the grid control.
 
-# Adding header and footer in Excel sheet
+## Adding header and footer in Excel sheet
 
 Using the Range Text property and SetValue method of the XlsIO IRange Class, we can add headers and footers in Excel sheet. 
 
@@ -65,7 +65,7 @@ Using the Range Text property and SetValue method of the XlsIO IRange Class, we 
 {% endhighlight %}
 {% endtabs %}
 
-# Adding header and footer in Exported Word document
+## Adding header and footer in Exported Word document
 
 We can add header and footer to the word document using the HeadersFooters property in the WHeadersFooters class of the DocIO namespace. We can create an instance of the IWParagraph class and append the header/footer text to it using the AppendText method.
 
@@ -122,7 +122,7 @@ We can add header and footer to the word document using the HeadersFooters prope
 {% endhighlight %}
 {% endtabs %}
 
-# Adding header and footer in Exported PDF document
+## Adding header and footer in Exported PDF document
 
 We can add header/footer to a PDF documents using PdfPageTemplateElement class. The header and footer can contain any types of element including dynamic fields.
 
