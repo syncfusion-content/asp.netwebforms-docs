@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom labels | LinearGauge | ASP.NET Webforms | Syncfusion
-description: custom labels
+description: Learn about Custom Labels support in Syncfusion ASP.NET Webforms Linear Gauge control and more details.
 platform: aspnet
 control: Linear Gauge
 documentation: ug

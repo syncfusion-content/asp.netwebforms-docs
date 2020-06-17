@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Labels | CircularGauge | ASP.NET Webforms | Syncfusion
-description:  labels
+description:  Learn about Labels support in Syncfusion ASP.NET Webforms Circular Gauge control and more details.
 platform: aspnet
 control: Circular Gauge
 documentation: ug

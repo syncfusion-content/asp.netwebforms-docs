@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | CircularGauge | ASP.NET Webforms | Syncfusion
-description: overview
+description: Learn about the overview of Syncfusion ASP.NET Webforms CircularGauge control and more details.
 platform: aspnet
 control: Circular Gauge
 documentation: ug

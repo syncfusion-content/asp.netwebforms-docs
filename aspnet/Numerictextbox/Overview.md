@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | NumericTextbox | ASP.NET Webforms | Syncfusion
-description: overview
+description: Learn about the overview of Syncfusion ASP.NET Webforms NumericTextbox control and more details.
 platform: aspnet
 control: NumericTextbox
 documentation: ug

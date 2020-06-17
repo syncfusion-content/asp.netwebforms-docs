@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | DigitalGauge | ASP.NET Webforms | Syncfusion
-description: overview
+description: Learn about the overview of Syncfusion ASP.NET Webforms DigitalGauge control and more details.
 platform: aspnet
 control: Digital Gauge
 documentation: ug
