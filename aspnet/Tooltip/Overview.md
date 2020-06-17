@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Tooltip | ASP.NET | Syncfusion
-description: overview
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Tooltip control and more details.
 platform: aspnet
 control: Tooltip Control
 documentation: ug

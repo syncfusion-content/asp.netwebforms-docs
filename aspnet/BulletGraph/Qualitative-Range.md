@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Qualitative Range | BulletGraph	 | ASP.NET Webforms | Syncfusion
-description: qualitative range
+description: Learn about Qualitative Range support in Syncfusion ASP.NET Webforms BulletGraph control and more details.
 platform: aspnet
 control: BulletGraph	
 documentation: ug

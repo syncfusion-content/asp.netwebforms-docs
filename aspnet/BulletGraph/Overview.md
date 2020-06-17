@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | BulletGraph | ASP.NET Webforms | Syncfusion
-description: overview
+description: Learn here about getting started with Syncfusion ASP.NET Webforms BulletGraph control and more details.
 platform: aspnet
 control: BulletGraph	
 documentation: ug

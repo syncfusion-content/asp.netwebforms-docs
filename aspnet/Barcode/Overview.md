@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Barcode | ASP.NET Webforms | Syncfusion
-description: overview
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Barcode control and more details.
 platform: aspnet
 control: Barcode
 documentation: ug

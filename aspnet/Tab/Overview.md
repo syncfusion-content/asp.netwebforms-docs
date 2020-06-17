@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Tab | ASP.NET | Syncfusion
-description: overview
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Tab control and more details.
 platform: aspnet
 control: Tab
 documentation: ug

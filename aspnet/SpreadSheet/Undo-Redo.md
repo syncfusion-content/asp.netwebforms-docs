@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Undo Redo with Spreadsheet widget for Syncfusion Essential JS
-description: How to enable Undo Redo and its functionalities
+description: Learn about Undo Redo support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform:  aspnet
 control: Spreadsheet
 documentation: ug

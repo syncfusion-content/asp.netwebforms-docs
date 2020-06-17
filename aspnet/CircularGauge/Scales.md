@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scales | CircularGauge | ASP.NET Webforms | Syncfusion
-description: scales
+description: Learn about Scales support in Syncfusion ASP.NET Webforms Circular Gauge control and more details.
 platform: aspnet
 control: Circular Gauge
 documentation: ug

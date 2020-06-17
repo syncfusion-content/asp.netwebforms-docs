@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Slider | ASP.NET | Syncfusion
-description: overview
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Slider control and more details.
 platform: aspnet
 control: Slider
 documentation: ug

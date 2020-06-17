@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SpreadSheet | ASP.NET Webforms | Syncfusion 
-description: overview
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform:  aspnet
 control: Spreadsheet
 documentation: ug
