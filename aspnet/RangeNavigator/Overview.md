@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | RangeNavigator | ASP.NET | Syncfusion
-description: Learn here about getting started with Syncfusion ASP.NET Webforms RangeNavigator control and more details.
+description: Learn about the overview of Syncfusion ASP.NET Webforms RangeNavigator control and more details.
 platform: aspnet
 control: RangeNavigator
 documentation: ug

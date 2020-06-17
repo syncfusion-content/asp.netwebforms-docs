@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | DigitalGauge | ASP.NET Webforms | Syncfusion
-description: Learn here about getting started with Syncfusion ASP.NET Webforms Digital Gauge control and more details.
+description: Learn about the overview of Syncfusion ASP.NET Webforms DigitalGauge control and more details.
 platform: aspnet
 control: Digital Gauge
 documentation: ug

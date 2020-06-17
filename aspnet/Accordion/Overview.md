@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Accordion | ASP.NET Webforms | Syncfusion
-description: Learn here about getting started with Syncfusion ASP.NET Webforms Accordion control and more details.
+description: Learn about the overview of Syncfusion ASP.NET Webforms Accordion control and more details.
 platform: aspnet
 control: Accordion 
 documentation: ug

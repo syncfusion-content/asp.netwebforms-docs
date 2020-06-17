@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | LinearGauge | ASP.NET Webforms | Syncfusion
-description: Learn here about getting started with Syncfusion ASP.NET Webforms Linear Gauge control and more details.
+description: Learn about the overview of Syncfusion ASP.NET Webforms LinearGauge control and more details.
 platform: aspnet
 control: Linear Gauge
 documentation: ug
