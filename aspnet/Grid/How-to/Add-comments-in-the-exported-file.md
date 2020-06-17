@@ -7,11 +7,11 @@ control: Grid
 documentation: ug
 ---
 
-## Adding comments in the Exported file (Excel, Word or PDF)
+# Adding comments in the Exported file (Excel, Word or PDF)
 
 We can add comments in the exported file while exporting the grid control.
 
-# Adding comments in Excel sheet
+## Adding comments in Excel sheet
 
 Using the Range property and AddComment method of the XlsIO IRange Class, we will add comments to any cell of particular range in Excel sheet. 
 
@@ -59,7 +59,7 @@ The following screenshot displays the exported grid with comments added to cells
 
 ![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img1.png)
 
-# Adding Comments in Exported Word document
+## Adding Comments in Exported Word document
 
 We can add comments to the word document using the AppendComment method in the WComment class of the DocIO namespace. We can traverse through the required row/cell with the help of WTable class and thus can append the comment to the table cell.
 
@@ -107,7 +107,7 @@ The following screenshot shows the exported grid with comments added to the docu
 
 ![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img2.png)
 
-# Adding Comments in Exported PDF document
+## Adding Comments in Exported PDF document
 
 We can add comments to a PDF documents using the annotation support provided in the PDF namespace. The Annotation added can be of any format such as freeTextAnnotation, popUpAnnotation, LineAnnotation etc., Based on our requirement, we can add annotation which is available under Syncfusion.Pdf.Interactive namespace.
 
