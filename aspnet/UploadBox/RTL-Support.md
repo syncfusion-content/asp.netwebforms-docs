@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RTL Support | UploadBox | ASP.NET | Syncfusion
-description: rtl support 
+description: Learn about RTL Support in Syncfusion ASP.NET Webforms UploadBox control and more details. 
 platform: aspnet
 control: UploadBox
 documentation: ug

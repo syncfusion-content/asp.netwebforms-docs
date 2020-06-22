@@ -1,6 +1,6 @@
 ---
 title: Formatting with Spreadsheet widget for Syncfusion Essential JS
-description: How to use different types of formatting in Spreadsheet and configure its properties.
+description: Learn about Formatting support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform: aspnet
 control: Spreadsheet
 documentation: UG

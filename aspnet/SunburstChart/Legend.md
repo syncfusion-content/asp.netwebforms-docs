@@ -1,6 +1,6 @@
 ---
 layout: post
-title: legend
+title: Legend | SunburstChart | ASP.NET Webforms | Syncfusion
 description: Learn how to add and customize the legnds in Sunburst Chart.
 platform: aspnet 
 control: SunburstChart

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | DataManager | ASP.NET Webforms | Syncfusion
-description: getting started 
+description: Learn here about getting started with Syncfusion ASP.NET Webforms DataManager control and more details. 
 platform: aspnet
 control: DataManager
 documentation: ug
