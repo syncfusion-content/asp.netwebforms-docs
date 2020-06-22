@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu with Spreadsheet widget for Syncfusion Essential JS
-description: How to use the Spreadsheet Context Menu
+description: Learn about Context Menu support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform:  aspnet
 control: Spreadsheet
 documentation: ug
