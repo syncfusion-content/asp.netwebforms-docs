@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard with Spreadsheet widget for Syncfusion Essential JS
-description: Learn about Clipboard support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
+description: Learn about clipboard support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform: aspnet
 control: Spreadsheet
 documentation: ug

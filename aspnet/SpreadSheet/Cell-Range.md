@@ -1,6 +1,6 @@
 ---
 title: Cell Range with Spreadsheet widget for Syncfusion Essential JS
-description: Learn about Cell Range support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
+description: Learn about cell range support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform: aspnet
 control: Spreadsheet
 documentation: ug

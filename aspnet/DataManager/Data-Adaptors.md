@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Adaptors | DataManager | ASP.NET Webforms | Syncfusion
-description: Learn about Data Adaptors support in Syncfusion ASP.NET Webforms DataManager control and more details.
+description: Learn about data adaptors support in Syncfusion ASP.NET Webforms DataManager control and more details.
 platform: aspnet
 control: DataManager
 documentation: ug
