@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Character Settings | DigitalGauge | ASP.NET Webforms | Syncfusion
-description: Learn about Character Settings support in Syncfusion ASP.NET Webforms Digital Gauge control and more details.
+description: Learn about character settings support in Syncfusion ASP.NET Webforms Digital Gauge control and more details.
 platform: aspnet
 control: Digital Gauge
 documentation: ug

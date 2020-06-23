@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Label | SunburstChart | ASP.NET Webforms | Syncfusion
-description: Learn how to customize Data Label in Syncfusion ASP.NET Webforms Sunburst Chart control.
+description: Learn about data label support in Syncfusion ASP.NET Webforms SunburstChart control and more details.
 platform: aspnet
 control: SunburstChart
 documentation: ug
