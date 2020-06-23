@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RTL Support | NumericTextbox | ASP.NET Webforms | Syncfusion
-description: Learn about rtl support in Syncfusion ASP.NET Webforms NumericTextbox control and more details.
+description: Learn about RTL support in Syncfusion ASP.NET Webforms NumericTextbox control and more details.
 platform: aspnet
 control: NumericTextbox
 documentation: ug
