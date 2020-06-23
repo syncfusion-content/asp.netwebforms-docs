@@ -1,6 +1,6 @@
 ---
 title: Data binding with Spreadsheet widget for Syncfusion Essential JS
-description: Learn about Data binding support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
+description: Learn about data binding support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform: aspnet
 control: Spreadsheet
 documentation: ug

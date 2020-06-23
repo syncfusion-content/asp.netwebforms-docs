@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scales | LinearGauge | ASP.NET Webforms | Syncfusion
-description: Learn about Scales support in Syncfusion ASP.NET Webforms Linear Gauge control and more details.
+description: Learn about scales support in Syncfusion ASP.NET Webforms Linear Gauge control and more details.
 platform: aspnet
 control: Linear Gauge
 documentation: ug
