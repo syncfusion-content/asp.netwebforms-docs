@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | TimePicker | ASP.NET | Syncfusion
-description: overview
+description: Learn about the overview of Syncfusion ASP.NET Webforms TimePicker control and more details.
 platform: aspnet
 control: TimePicker
 documentation: ug

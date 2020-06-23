@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RadioButton | RadioButton | ASP.NET | Syncfusion
-description: overview
+title: Overview | RadioButton | ASP.NET | Syncfusion
+description: Learn about the overview of Syncfusion ASP.NET Webforms RadioButton control and more details.
 platform: aspnet
 control: RadioButton
 documentation: ug

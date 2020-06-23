@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Segment Settings | DigitalGauge | ASP.NET Webforms | Syncfusion
-description: segment settings
+description: Learn about segment settings support in Syncfusion ASP.NET Webforms Digital Gauge control and more details.
 platform: aspnet
 control: Digital Gauge
 documentation: ug
