@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Levels | SunburstChart | ASP.NET Webforms | Syncfusion
-description: Learn how to customize various Levels in Syncfusion ASP.NET Webforms Sunburst Chart control.
+description: Learn about levels support in Syncfusion ASP.NET Webforms SunburstChart control and more details.
 platform: aspnet
 control: SunburstChart
 documentation: ug
