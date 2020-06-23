@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Query | DataManager | ASP.NET Webforms | Syncfusion
-description: query
+description: Learn about query support in Syncfusion ASP.NET Webforms DataManager control and more details.
 platform: aspnet
 control: DataManager
 documentation: ug

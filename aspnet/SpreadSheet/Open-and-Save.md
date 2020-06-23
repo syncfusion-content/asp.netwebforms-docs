@@ -1,6 +1,6 @@
 ---
 title: Open and Save with Spreadsheet widget for Syncfusion Essential JS
-description: How to perform Open and Save and configure its functionalities like server mapper, import URL etc.
+description: Learn about open and save support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform: aspnet
 control: Spreadsheet
 documentation: ug
