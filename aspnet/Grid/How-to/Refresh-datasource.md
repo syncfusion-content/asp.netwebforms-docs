@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Refresh datasource
+# Refresh datasource
 
 Grid allows you to refresh datasource dynamically after Grid initialization. It is useful to refresh Grid datasource.
 
