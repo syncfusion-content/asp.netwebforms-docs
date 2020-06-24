@@ -8,7 +8,7 @@ documentation: ug
 keywords: pdfviewer, PDF viewer
 ---
 
-## Toolbar Customization
+# Toolbar Customization
 
 **Customizing default toolbar**
 
