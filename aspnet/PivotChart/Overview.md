@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotChart | PivotChart | ASP.NET | Syncfusion
+title: Overview | PivotChart | ASP.NET | Syncfusion
 description: It is an overview of PivotChart control in ASP.NET platform. PivotChart visualizes relational and OLAP data sources in a graphical format
 platform: aspnet
 control: PivotChart
