@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Levels | SunburstChart | ASP.NET Webforms | Syncfusion
-description: Learn about data levels support in Syncfusion ASP.NET Webforms SunburstChart control and more details.
+description: Learn about levels support in Syncfusion ASP.NET Webforms SunburstChart control and more details.
 platform: aspnet
 control: SunburstChart
 documentation: ug
