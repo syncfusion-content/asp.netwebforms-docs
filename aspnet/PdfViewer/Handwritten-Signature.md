@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Handwritten Signature
+# Handwritten Signature
 
 The PDF viewer supports  adding handwritten signatures into the PDF document. The handwritten signature support reduces the paper work of reviewing the content and verify it digitally. 
 
