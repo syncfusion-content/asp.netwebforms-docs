@@ -120,22 +120,22 @@ Example</th></tr>
 <tr>
 <td>
 NumericTextBox </td><td>
-{{ '[TextBoxes](https://help.syncfusion.com/cr/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.Models.EditorProperties_properties.html)'  | markdownify }} </td><td>
+{{ '[TextBoxes](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.Models.EditorProperties.html)'  | markdownify }} </td><td>
 &lt;NumericEditOptions DecimalPlaces="2"/&gt;</td></tr>
 <tr>
 <td>
 DatePicker </td><td>
-{{ '[DatePicker](https://help.syncfusion.com/cr/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.Models.DatePickerProperties_properties.html)' | markdownify }} </td><td>
+{{ '[DatePicker](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.Models.DatePickerProperties.html)' | markdownify }} </td><td>
 &lt;DateEditOptions ButtonText="now"/&gt;</td></tr>
 <tr>
 <td>
 DateTimePicker</td><td>
-{{ '[DateTimePicker](https://help.syncfusion.com/cr/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.Models.DateTimePickerProperties_properties.html)' | markdownify }} </td><td>
+{{ '[DateTimePicker](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.Models.DateTimePickerProperties.html)' | markdownify }} </td><td>
 &lt;DateTimeEditOptions Enabled="true"/&gt;</td></tr>
 <tr>
 <td>
 DropDownList</td><td>
-{{ '[DropDownList](https://help.syncfusion.com/cr/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.Models.DropDownListProperties_properties.html)' | markdownify }} </td><td>
+{{ '[DropDownList](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.Models.DropDownListProperties.html)' | markdownify }} </td><td>
 &lt;DropDownEditOptions ShowCheckbox="true"/&gt;</td></tr>
 </table>
 
