@@ -157,7 +157,7 @@ Response data should be in JSON format with key name as "{{'**files**'| markdown
 }
 <br/><br/>
 
-Note: If needed, customer can also add additional data along with existing properties of “{{'[FileExplorerDirectoryContent](https://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.FileExplorerDirectoryContent.html#)'| markdownify }}” class.
+Note: If needed, customer can also add additional data along with existing properties of “{{'[FileExplorerDirectoryContent](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.FileExplorerDirectoryContent.html#)'| markdownify }}” class.
 <br/>
 </td>
 <td>
