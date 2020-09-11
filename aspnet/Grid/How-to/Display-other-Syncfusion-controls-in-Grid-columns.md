@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Display other Syncfusion controls in Grid columns
+# Display other Syncfusion controls in Grid columns
 
 We can display the other Syncfusion controls using `Template` property of Grid columns and `TemplateRefresh` event of Grid control.
 

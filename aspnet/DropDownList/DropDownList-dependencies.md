@@ -7,7 +7,7 @@ control: DropDownList
 documentation: ug
 ---
 
-##DropDownList Dependencies
+# DropDownList Dependencies
 
 The external script dependencies of the DropDownList control are,
 

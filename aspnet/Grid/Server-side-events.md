@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Server side event arguments in ASP Grid
+# Server side event arguments in ASP Grid
 
 This section explains in detail about the various server-side events available in the **ASP Grid control** and the arguments that are obtained server-side. 
 
