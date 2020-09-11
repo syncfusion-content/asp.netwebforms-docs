@@ -7,7 +7,7 @@ control: Circular Gauge
 documentation: ug
 ---
 
-## Ticks
+# Ticks
 
 `Ticks` are used to mark some values on the scale. Based on the tick’s `Value` you can set the labels on the required position.
 

@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Perform Grid Actions on External button click
+# Perform Grid Actions on External button click
 
 ### CRUD operations
 
