@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Appearance
+# Appearance
 
 You can apply themes to the PDF viewer to match the themes of your application.
 
