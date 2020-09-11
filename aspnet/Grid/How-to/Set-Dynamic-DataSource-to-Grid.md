@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-## Set Dynamic DataSource to Grid
+# Set Dynamic DataSource to Grid
 
 Grid control is capable of updating its dataSource as and when required. Grid method “dataSource” helps in achieving this and in this method parameter, you have to pass the new dataSource as JSON array.
 

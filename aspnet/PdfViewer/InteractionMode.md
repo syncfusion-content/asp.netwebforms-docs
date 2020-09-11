@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Interaction Mode
+# Interaction Mode
 
 The PDF viewer control provides interaction modes for easy interaction with the PDF documents in the control. Selection mode and Panning mode are the two interaction modes.
 

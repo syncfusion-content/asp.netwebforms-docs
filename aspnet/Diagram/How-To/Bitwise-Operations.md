@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-## Bitwise Operations
+# Bitwise Operations
 
 ### Bitwise Operation
 
