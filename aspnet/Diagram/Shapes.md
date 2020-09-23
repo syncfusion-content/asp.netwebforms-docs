@@ -133,7 +133,7 @@ N> Like HTML node, Native node also cannot be exported to image format. Fill col
 
 ## Basic Shapes
 
-The Basic shapes are common shapes that are used to represent the geometrical information visually. Its `Shape` property can be set with any one of the built-in [Basic Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BasicShape~Shape.html "Basic Shapes"). 
+The Basic shapes are common shapes that are used to represent the geometrical information visually. Its `Shape` property can be set with any one of the built-in [Basic Shapes](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.BasicShape.html#Syncfusion_JavaScript_DataVisualization_Models_Diagram_BasicShape_Shape "Basic Shapes"). 
 The following code example illustrates how to create a basic shape. 
 
 {% highlight aspx-cs %}
@@ -187,7 +187,7 @@ The list of basic shapes are as follows.
 
 ## Flow Shapes
 
-The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, node can be created with FlowShape class. Its `Shape` property can be set with any one of the built-in [Flow Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.FlowShape~Shape.html "Flow Shapes") and by default, it is considered as "Process". The following code example illustrates how to create a flow shape. 
+The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, node can be created with FlowShape class. Its `Shape` property can be set with any one of the built-in [Flow Shapes](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.FlowShape.html#Syncfusion_JavaScript_DataVisualization_Models_Diagram_FlowShape_Shape "Flow Shapes") and by default, it is considered as "Process". The following code example illustrates how to create a flow shape. 
 
 {% highlight aspx-cs %}
 
@@ -212,7 +212,7 @@ The list of flow shapes are as follows.
 
 ## BPMN Shapes
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, node can be created with BPMNNode class and its `Shape` should be set as any one of the built-in [BPMN Shapes](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BPMNNode~Shape.html "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a BPMN shape, node can be created with BPMNNode class and its `Shape` should be set as any one of the built-in [BPMN Shapes](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.BPMNNode.html#Syncfusion_JavaScript_DataVisualization_Models_Diagram_BPMNNode_Shape "BPMN Shapes"). The following code example illustrates how to create a simple business process. 
 
 {% highlight aspx-cs %}
 
@@ -298,7 +298,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 ### Gateway
 
-Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `Shape` property of node should be set as "Gateway" and the `Gateway` property can be set with any of the appropriate [Gateways](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BPMNNode~Gateway.html "Gateways"). The following code example illustrates how to create a BPMN Gateway.
+Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `Shape` property of node should be set as "Gateway" and the `Gateway` property can be set with any of the appropriate [Gateways](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.BPMNNode.html#Syncfusion_JavaScript_DataVisualization_Models_Diagram_BPMNNode_Gateway "Gateways"). The following code example illustrates how to create a BPMN Gateway.
 
 {% highlight aspx-cs %}
 
@@ -338,7 +338,7 @@ There are two types of activities .They are listed as follows.
 * Task – Occurs within a process and it is not broken down to finer level of detail.
 * Subprocess – Occurs within a process and it is broken down to finer level of detail.
 
-To create a BPMN activity, you need to set the `Shape` as "Activity". You also need to set the type of the [BPMN Activity](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.BPMNNode~Activity.html "BPMN Activity") by using the `Activity` property of node. By default, the type of the `Activity` is set as "Task". The following code example illustrates how to create an activity.
+To create a BPMN activity, you need to set the `Shape` as "Activity". You also need to set the type of the [BPMN Activity](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.BPMNNode.html#Syncfusion_JavaScript_DataVisualization_Models_Diagram_BPMNNode_Activity "BPMN Activity") by using the `Activity` property of node. By default, the type of the `Activity` is set as "Task". The following code example illustrates how to create an activity.
 
 {% highlight aspx-cs %}
 
