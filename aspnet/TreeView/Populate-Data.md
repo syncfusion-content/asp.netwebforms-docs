@@ -10,7 +10,7 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Populate Data
 
 # Populate Data
 
-TreeView can be populated with local or remote data source by using a property [DataSource](http://help.syncfusion.com/cr/cref_files/aspnetmvc/Syncfusion.EJ~Syncfusion.JavaScript.TreeViewFieldsBuilder~Datasource.html), which is the member of **TreeView**
+TreeView can be populated with local or remote data source by using a property [DataSource](https://help.syncfusion.com/cr/aspnetmvc/Syncfusion.JavaScript.TreeViewFieldsBuilder.html#Syncfusion_JavaScript_TreeViewFieldsBuilder_Datasource_Syncfusion_JavaScript_DataSource_), which is the member of **TreeView**
 
 In TreeView, you should use **DataField** based properties to go with data source. It specifies the mapping fields for the data source to receive the data, query to process the data and field mappers to map the data members.
 

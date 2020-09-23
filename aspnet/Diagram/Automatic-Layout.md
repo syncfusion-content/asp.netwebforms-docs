@@ -466,11 +466,11 @@ public Array GetData(){
 
 Orientation, spacings, and position of layout can be customized with a set of properties.
 
-To explore layout properties, refer to [Layout Properties](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout_members.html "Layout Properties").
+To explore layout properties, refer to [Layout Properties](http://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout.html "Layout Properties").
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orientation using `Layout.Orientation`. For more information about orientation, refer to [Layout Orientations](http://help.syncfusion.com/CR/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout~Orientation.html "Layout Orientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orientation using `Layout.Orientation`. For more information about orientation, refer to [Layout Orientations](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout.html#Syncfusion_JavaScript_DataVisualization_Models_Diagram_Layout_Orientation "Layout Orientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
