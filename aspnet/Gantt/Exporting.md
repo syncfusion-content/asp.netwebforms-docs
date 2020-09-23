@@ -326,7 +326,7 @@ The following code snippets shows how to bind `ServerPdfQueryCellInfo` event in 
 
 [Click](https://asp.syncfusion.com/demos/web/gantt/GanttConditionalExporting.aspx) here to view the online demo sample with above code example.
 
-N> Refer this [link](http://help.syncfusion.com/cr/cref_files/aspnetmvc/Syncfusion.EJ.Export~Syncfusion.EJ.Export.PdfTreeGridCellStyle_members.html) to know more about what are the properties are available in PDF cell and it's type values.
+N> Refer this [link](http://help.syncfusion.com/cr/aspnet/Syncfusion.EJ.Export.PdfTreeGridCellStyle.html) to know more about what are the properties are available in PDF cell and it's type values.
 
 ### Customize PDF taskbar
 

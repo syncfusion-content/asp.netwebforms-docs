@@ -47,7 +47,7 @@ You can add a label to a node/connector by defining the label object and adding 
 
 ![Label Properties](/aspnet/Diagram/Label_images/Label_img1.png)
 
-To explore more label properties, refer to [Label Properties](http://help.syncfusion.com/cr/cref_files/aspnet/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.Models.Diagram.Label_members.html "Label Properties").
+To explore more label properties, refer to [Label Properties](http://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Label.html "Label Properties").
 
 ## Update Label at runtime
 
