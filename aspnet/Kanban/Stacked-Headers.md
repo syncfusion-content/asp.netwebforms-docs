@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Headers with Kanban widget for Syncfusion Essential ASP.NET
+title: Stacked Headers in Kanban widget | Essential ASP.NET | Syncfusion
 description: This section explains how to define the stacked headers in the Syncfusion ASP.NET Web Forms Kanban component.
 platform: aspnet
 control: Kanban
