@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data presentation with Spreadsheet widget for Syncfusion Essential ASP.NET.
+title: Data presentation | Essential ASP.NET Spreadsheet | Syncfusion
 description: How to perform the proper representation of data with Syncfusion Essential ASP.NET Spreadsheet widget.
 platform: aspnet
 control: Spreadsheet

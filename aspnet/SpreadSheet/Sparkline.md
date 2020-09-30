@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline with Spreadsheet widget for Syncfusion Essential ASP.NET
+title: Sparkline | Essential ASP.NET Spreadsheet Widget | Syncfusion
 description: How to perform the sparkline chart customization in Syncfusion Essential ASP.NET Spreadsheet widget.
 platform: aspnet
 control: Spreadsheet
