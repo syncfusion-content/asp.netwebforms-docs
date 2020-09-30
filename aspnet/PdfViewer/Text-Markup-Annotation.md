@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text markup annotation | PDF viewer | ASP.NET Webforms | Syncfusion
+title: Text markup annotation | ASP.NET Webforms PDF viewer | Syncfusion
 description: Learn about text markup annotation support in Syncfusion ASP.NET Webforms PDF viewer control and more details.
 platform: aspnet
 control: PDF viewer
