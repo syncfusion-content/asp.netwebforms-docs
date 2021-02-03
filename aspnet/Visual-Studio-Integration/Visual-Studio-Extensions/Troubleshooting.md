@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Troubleshooting
+# Troubleshoot the project
 
 Troubleshoot the project with the Syncfusion configuration and apply the fix like, wrong .NET Framework version of added Syncfusion assembly to the project or missing any Syncfusion dependent assembly of a referred assembly. The Syncfusion Troubleshooter can do the following:
 
@@ -79,7 +79,7 @@ The Syncfusion Troubleshooter deals with the following assembly reference issues
 
 3. .NET Framework version mismatching (Syncfusion Assemblies) with project’s .NET Framework version. Find the supported .NET Framework details for Syncfusion assemblies in the following link,
 
-   <https://help.syncfusion.com/common/essential-studio/supported-environments#net-framework> 
+   <https://help.syncfusion.com/common/essential-studio/assembly-information#supported-framework-version-for-essential-studio-assemblies> 
 
    **For Instance:** The.NET Framework of the application is v4.6 and “Syncfusion.EJ.PdfViewer” assembly (v16.4400.0.42 & .NET Framework version 4.0) referred in same application. The Syncfusion Troubleshooter will show Syncfusion assembly .NET Framework version is incompatible with project’s .NET Framework version.
 
