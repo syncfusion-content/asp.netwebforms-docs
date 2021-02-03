@@ -15,6 +15,8 @@ I> The Syncfusion ASP.NET Web Application Project Conversion utility is availabl
 
 The following steps help you use the Syncfusion Project conversion in the existing ASP.NET application:
 
+> Before use, the Syncfusion ASP.NET Web Forms Project Conversion, check whether the **ASP.NET Web Forms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. Also, check whether the corresponding Essential Studio version build installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Conversion will not be shown.
+
 1. Open an existing Microsoft ASP.NET Project or create a new Microsoft ASP.NET Project.
 
 2. Open the conversion dialog by either one of the options below: 
