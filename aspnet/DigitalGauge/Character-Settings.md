@@ -49,7 +49,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-![](Character-Settings_images/Character-Settings_img1.png)
+![ASPNET DigitalGauge Character-Settings image1](Character-Settings_images/Character-Settings_img1.png)
 
 Digital Gauge control with character setting
 {:.caption} 
@@ -110,7 +110,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-![](Character-Settings_images/Character-Settings_img2.png)
+![ASPNET DigitalGauge Character-Settings image2](Character-Settings_images/Character-Settings_img2.png)
 
 
 Digital Gauge control with character type as seven segment
@@ -169,7 +169,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-![](Character-Settings_images/Character-Settings_img3.png)
+![ASPNET DigitalGauge Character-Settings image3](Character-Settings_images/Character-Settings_img3.png)
 
 Digital Gauge control with position text based on the background image
 {:.caption} 
@@ -224,7 +224,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-![](Character-Settings_images/Character-Settings_img4.png)
+![ASPNET DigitalGauge Character-Settings image4](Character-Settings_images/Character-Settings_img4.png)
 
 
 Digital Gauge control with shadow option

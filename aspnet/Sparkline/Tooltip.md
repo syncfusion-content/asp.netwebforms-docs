@@ -21,7 +21,7 @@ The `Tooltip` follows the pointer movement and is used to indicate the value of 
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img1.png)
+![ASPNET Sparkline Tooltip Image1](Tooltip_images/Tooltip_img1.png)
 
 ## Tooltip Customization
 
@@ -38,7 +38,7 @@ You can customize the tooltip `Fill`, `Border` `Color`, `Width` and `Font` prope
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img3.png)
+![ASPNET Sparkline Tooltip Image3](Tooltip_images/Tooltip_img3.png)
 
 ## Tooltip Template   
 
@@ -59,4 +59,4 @@ HTML elements can be displayed in the tooltip by using the `Template` option of 
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img2.png)
+![ASPNET Sparkline Tooltip Image2](Tooltip_images/Tooltip_img2.png)

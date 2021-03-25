@@ -97,7 +97,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
- ![](Labels_images/Labels_img2.png)
+ ![ASPNET CircularGauge labels image2](Labels_images/Labels_img2.png)
 
 
 ### Unit text and Position
@@ -156,7 +156,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
- ![](Labels_images/Labels_img3.png)
+ ![ASPNET CircularGauge labels image3](Labels_images/Labels_img3.png)
 
 
 
@@ -211,7 +211,7 @@ You can achieve multiple labels such as minor and major `Type` in a **Gauge** sa
 
 Execute the above code to render the following output.
 
- ![](Labels_images/Labels_img4.png)
+ ![ASPNET CircularGauge labels image4](Labels_images/Labels_img4.png)
 
 
 

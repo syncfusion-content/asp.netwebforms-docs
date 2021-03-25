@@ -86,7 +86,7 @@ To bind local data to the Spreadsheet, you can assign a List to the worksheet `D
 {% endtabs %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img1.png)
+![ASPNET Spreadsheet Data-Binding Image1](Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -125,7 +125,7 @@ To bind remote data to the Spreadsheet, you can assign a service data as an inst
 
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img2.png)
+![ASPNET Spreadsheet Data-Binding Image2](Data-Binding_images/Data-Binding_img2.png)
 
 ### Offline Mode
 
@@ -165,7 +165,7 @@ The following code illustrates offline data binding for Spreadsheet,
 {% endtabs %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img2.png)
+![ASPNET Spreadsheet Data-Binding Image3](Data-Binding_images/Data-Binding_img2.png)
 
 N> For further reference about `offline` property in `ej.DataManager` refer following [`link`](http://help.syncfusion.com/aspnet/datamanager/data-binding#offline-mode "link")
 
@@ -260,7 +260,7 @@ An HTML Table element can also be used as the data source of Spreadsheet. To use
 {% endtabs %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img3.png)
+![ASPNET Spreadsheet Data-Binding Image4](Data-Binding_images/Data-Binding_img3.png)
 
 ## Ways to bind data in Spreadsheet
 
@@ -501,7 +501,7 @@ You can specify particular row with `index` property and its height with `Height
 {% endtabs %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img4.png)
+![ASPNET Spreadsheet Data-Binding Image5](Data-Binding_images/Data-Binding_img4.png)
 
 ### Range Binding
 
@@ -608,7 +608,7 @@ The following code illustrates range binding in Spreadsheet
 {% endtabs %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img5.png)
+![ASPNET Spreadsheet Data-Binding Image6](Data-Binding_images/Data-Binding_img5.png)
 
 ### Sheet Binding
 
@@ -714,5 +714,5 @@ The following code illustrates sheet binding in Spreadsheet
 {% endtabs %}
 
 The following output is displayed as a result of the above code snippets. 
-![](Data-Binding_images/Data-Binding_img6.png)
+![ASPNET Spreadsheet Data-Binding Image7](Data-Binding_images/Data-Binding_img6.png)
 

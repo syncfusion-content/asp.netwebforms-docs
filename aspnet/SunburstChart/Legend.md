@@ -18,7 +18,7 @@ The legend is used to represent the first level of items in the Sunburst Chart.T
 
  {% endhighlight %}
 
-![](Legend_images/Legend_img1.png)
+![ASPNET SunburstChart Legend Image1](Legend_images/Legend_img1.png)
 
 ## Legend Icon 
 
@@ -38,7 +38,7 @@ You can specify different shapes of legend icon by using the **Shape** property 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png)
+![ASPNET SunburstChart Legend Image2](Legend_images/Legend_img2.png)
  
 ## Positioning the Legend
 
@@ -52,7 +52,7 @@ By using the **Position** property, you can position the legend at left, right, 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png)
+![ASPNET SunburstChart Legend Image3](Legend_images/Legend_img3.png)
  
 ### Customization
 
@@ -69,7 +69,7 @@ You can change the size of the legend items by using the **ItemStyle-Width** and
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img4.png)
+![ASPNET SunburstChart Legend Image4](Legend_images/Legend_img4.png)
 
 ## Legend Size
 
@@ -85,7 +85,7 @@ By default, legend takes 20% of the height horizontally when it was placed on th
 
 {% endhighlight %}
 
- ![](Legend_images/Legend_img5.png)
+ ![ASPNET SunburstChart Legend Image5](Legend_images/Legend_img5.png)
 
 ## Legend Row and Columns
 
@@ -104,7 +104,7 @@ You can arrange the legend items horizontally and vertically by using the **RowC
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png)
+![ASPNET SunburstChart Legend Image6](Legend_images/Legend_img6.png)
  
 ## LegendInteractivity
 
@@ -130,7 +130,7 @@ Used to highlight specific category while clicking on legend item
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img7.png)
+![ASPNET SunburstChart Legend Image7](Legend_images/Legend_img7.png)
  
 ## Toggle Segment Visibility
 
@@ -147,6 +147,6 @@ Used to disable the specific category while clicking on legend item.
 {% endhighlight %}
 
 
-![](Legend_images/Legend_img8.png)
+![ASPNET SunburstChart Legend Image8](Legend_images/Legend_img8.png)
 
 

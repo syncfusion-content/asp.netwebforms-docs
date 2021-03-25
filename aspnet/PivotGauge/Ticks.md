@@ -53,5 +53,5 @@ The appearance of the tick can be customized through the following properties:
 
 {% endhighlight %}
 
-![](Ticks_images/TickCustomization.png) 
+![ASPNET PivotGauge Ticks TickCustomizationImage](Ticks_images/TickCustomization.png) 
 

@@ -165,7 +165,7 @@ JSONAdaptor is used to process JSON data. It contains methods to process the giv
 
 The result of above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img1.png)
+![ASPNET DataManager Data-Adaptors image1](Data-Adaptors_images/Data-Adaptors_img1.png)
 
 ## URL Adaptor
 
@@ -293,7 +293,7 @@ URL Adaptor of DataManager can be used when you want to use remote service to re
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img2.png)
+![ASPNET DataManager Data-Adaptors image2](Data-Adaptors_images/Data-Adaptors_img2.png)
 
 ## WebMethod Adaptor
 
@@ -366,7 +366,7 @@ WebMethod Adaptor supports Model Binding, using DataManager class, for the Grid 
 
 N> The data parameter name must be “value”
 
-![](Data-Adaptors_images/Data-Adaptors_img2.png)
+![ASPNET DataManager Data-Adaptors image3](Data-Adaptors_images/Data-Adaptors_img2.png)
 
 ## OData Adaptor
 
@@ -455,7 +455,7 @@ OData Adaptor that is extended from URL Adaptor, is used for consuming data thro
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img3.png)
+![ASPNET DataManager Data-Adaptors image4](Data-Adaptors_images/Data-Adaptors_img3.png)
 
 ## WebAPI Adaptor
 
@@ -541,7 +541,7 @@ WebApi Adaptor, extended from UrlAdaptor, of DataManager is used for retrieving 
 
 Result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img4.png)
+![ASPNET DataManager Data-Adaptors image5](Data-Adaptors_images/Data-Adaptors_img4.png)
 
 ## RemoteSave Adaptor
 
@@ -671,7 +671,7 @@ RemoteSaveAdaptor, extended from JsonAdaptor of DataManager, is used for binding
 
 Result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img5.png)
+![ASPNET DataManager Data-Adaptors image6](Data-Adaptors_images/Data-Adaptors_img5.png)
 
 ## Custom Adaptor
 
@@ -754,7 +754,7 @@ Using Custom Adaptor, you can override the existing method of Extended Adaptor,
 
 Result of above code example is as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img6.png)
+![ASPNET DataManager Data-Adaptors image7](Data-Adaptors_images/Data-Adaptors_img6.png)
 
 ## Cache Adaptor
 

@@ -37,4 +37,4 @@ The tooltip appearance can be customized by overriding its CSS class.
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip.png) 
+![ASPNET PivotGauge Tooltip TooltipImage](Tooltip_images/Tooltip.png) 

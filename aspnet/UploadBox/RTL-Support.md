@@ -25,7 +25,7 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
 
 The following screenshot displays the output for RTL support.
 
- ![](RTL-Support_images/RTL-Support_img1.png)
+ ![ASPNET UploadBox RTL-Support Image1](RTL-Support_images/RTL-Support_img1.png)
 
 
 

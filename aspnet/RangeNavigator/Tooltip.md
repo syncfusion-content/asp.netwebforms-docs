@@ -37,7 +37,7 @@ RangeNavigator provides support for you to customize the text display in the too
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img1.png)
+![ASPNET RangeNavigator Tooltip Image1](Tooltip_images/Tooltip_img1.png)
 
 Tool Tip
 {:.caption}
@@ -67,7 +67,7 @@ Some of the `LabelFormat` for DateTime data are as follows:
 </ej:RangeNavigator>
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img2.png)
+![ASPNET RangeNavigator Tooltip Image2](Tooltip_images/Tooltip_img2.png)
 
 labelFormat
 {:.caption}
@@ -106,7 +106,7 @@ Tooltip get displayed only when we move the slider.</td></tr>
 </ej:RangeNavigator>
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img3.png) 
+![ASPNET RangeNavigator Tooltip Image3](Tooltip_images/Tooltip_img3.png) 
 
 Tool Tip display mode
 {:.caption}

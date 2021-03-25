@@ -121,7 +121,7 @@ You can bind the DataManager with Grid by defining the ID of DataManager in the 
 
 When you execute it, the following table is displayed.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASPNET DataManager Getting-Started image1](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -167,7 +167,7 @@ The select property of ejQuery is used to retrieve the specified columns from th
 
 When you execute the filter query and binding the result to the Grid, the following table is displayed.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![ASPNET DataManager Getting-Started image2](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -205,7 +205,7 @@ The sortBy property of ejQuery is used to sort the records based on the field an
 		
 		{% endhighlight %}
 
-When you execute the sort query and binding the result to the table, the following table is displayed.![](Getting-Started_images/Getting-Started_img3.png)
+When you execute the sort query and binding the result to the table, the following table is displayed.![ASPNET DataManager Getting-Started image3](Getting-Started_images/Getting-Started_img3.png)
 
 
 ## Page

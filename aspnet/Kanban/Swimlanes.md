@@ -58,7 +58,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlanes_images/Swimlanes_img1.png)
+![ASPNET Kanban Swimlanes Image1](Swimlanes_images/Swimlanes_img1.png)
 
 ## Customized swimlane header text
 
@@ -141,7 +141,7 @@ Refer to the following code example.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlanes_images/swimlane_img6.png)
+![ASPNET Kanban Swimlanes Image6](Swimlanes_images/swimlane_img6.png)
 
 ## Empty swimlane row on Kanban board
 
@@ -222,7 +222,7 @@ public partial class KanbanController : Controller
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlanes_images/swimlane_img7.png)
+![ASPNET Kanban Swimlanes Image7](Swimlanes_images/swimlane_img7.png)
 
 ## Drag And Drop between swim lanes
 
@@ -279,7 +279,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlanes_images/Swimlanes_img2.png)
+![ASPNET Kanban Swimlanes Image2](Swimlanes_images/Swimlanes_img2.png)
 
 ## Unassigned swim lane group
 
@@ -333,7 +333,7 @@ The following code example describes the above behavior.
 
 The output of the above code example.
 
-![](Swimlanes_images/Swimlanes_img3.png)
+![ASPNET Kanban Swimlanes Image3](Swimlanes_images/Swimlanes_img3.png)
 
 ### Using user defined values
 
@@ -379,4 +379,4 @@ The following code example describes the above behavior.
 
 The output of the above code example.
 
-![](Swimlanes_images/Swimlanes_img4.png)
+![ASPNET Kanban Swimlanes Image4](Swimlanes_images/Swimlanes_img4.png)

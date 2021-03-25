@@ -233,7 +233,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/Localization_img1.png)
+![ASPNET Kanban Localization image1](Localization_images/Localization_img1.png)
 
 ## Right to Left (RTL)
 
@@ -310,4 +310,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/Localization_img2.png)
+![ASPNET Kanban Localization image2](Localization_images/Localization_img2.png)

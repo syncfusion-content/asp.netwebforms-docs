@@ -39,7 +39,7 @@ The “select” query of the data manager is used to select only some particula
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img1.png)
+![ASPNET DataManager Query image1](Query_images/Query_img1.png)
 
 ## From
 
@@ -67,7 +67,7 @@ The “from” query of the data manager is used to select the table from where 
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img2.png)
+![ASPNET DataManager Query image2](Query_images/Query_img2.png)
 
 ## Clone
 
@@ -115,7 +115,7 @@ The “clone” query of the data manager is used to duplicate the query. The fo
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img3.png)
+![ASPNET DataManager Query image3](Query_images/Query_img3.png)
 
 ## Expand
 
@@ -145,7 +145,7 @@ The “expand” query of the data manager is used to perform complex data bindi
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img4.png)
+![ASPNET DataManager Query image4](Query_images/Query_img4.png)
 
 
 

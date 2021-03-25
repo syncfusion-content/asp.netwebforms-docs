@@ -137,7 +137,7 @@ You can set multiple scales for a single Linear Gauge control by using an array 
 
 Execute the above code to render the following output.
 
-![](Scales_images/Scales_img1.png)
+![ASPNET LinearGauge Scales Image1](Scales_images/Scales_img1.png)
 
 
 
@@ -219,7 +219,7 @@ Scale is the basic element of Linear Gauge. Scale collection is directly added t
 
 Execute the above code to render the following output.
 
-![](Scales_images/Scales_img2.png)
+![ASPNET LinearGauge Scales Image2](Scales_images/Scales_img2.png)
 
 
 
@@ -306,7 +306,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](Scales_images/Scales_img3.png)
+![ASPNET LinearGauge Scales Image3](Scales_images/Scales_img3.png)
 
 
 
@@ -388,7 +388,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](Scales_images/Scales_img4.png)
+![ASPNET LinearGauge Scales Image4](Scales_images/Scales_img4.png)
 
 
 
@@ -467,7 +467,7 @@ For rectangular scale type, the scale renders with rectangular structure. Refer 
 
 Execute the above code to render the following output.
 
-![](Scales_images/Scales_img5.png)
+![ASPNET LinearGauge Scales Image5](Scales_images/Scales_img5.png)
 
 
 
@@ -552,7 +552,7 @@ For rounded rectangular scale type, the scale renders as rectangular structure b
 
 Execute the above code to render the following output.
 
-![](Scales_images/Scales_img6.png)
+![ASPNET LinearGauge Scales Image6](Scales_images/Scales_img6.png)
 
 
 
@@ -632,5 +632,5 @@ For thermometer scale type, the scale renders as thermometer structure with roun
 
 Execute the above code to render the following output.
 
-![](Scales_images/Scales_img7.png)
+![ASPNET LinearGauge Scales Image7](Scales_images/Scales_img7.png)
 

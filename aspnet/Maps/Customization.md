@@ -61,7 +61,7 @@ The above properties of ShapeSettings are applied only when AutoFill property va
 
 
 
-![](Customization_images/Customization_img1.png)
+![ASPNET Map Customization Image1](Customization_images/Customization_img1.png)
 
 _Map_
 
@@ -174,7 +174,7 @@ When the underlying value is below any of the given sorted range or above the so
 
 
 
-![](Customization_images/Customization_img2.png)
+![ASPNET Map Customization Image2](Customization_images/Customization_img2.png)
 
 _Map with fill_
 
@@ -246,7 +246,7 @@ Here “Map.aspx.cs” is populated with data of USA Election in “Map.aspx.cs�
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img3.png)
+![ASPNET Map Customization Image3](Customization_images/Customization_img3.png)
 
 _Map with fill color_
 
@@ -285,7 +285,7 @@ N> While setting color for map by using `ColorPath` property, do not set any oth
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img8.png) 
+![ASPNET Map Customization Image8](Customization_images/Customization_img8.png) 
 
 While binding color path for map, it is possible to render legend for each shape in the map. To achieve this, set the `TextPath` for legend. `TextPath` contains another field name in the datasource. As per the text, content in the field legend will be generated. 
 
@@ -324,7 +324,7 @@ While binding color path for map, it is possible to render legend for each shape
 
 
 
-![](Customization_images/Customization_img9.png) 
+![ASPNET Map Customization Image9](Customization_images/Customization_img9.png) 
 
             
 
@@ -370,7 +370,7 @@ The ColorPalette property can be set with Palette1, Palette2, Palette3 and Custo
 
 
 
-![](Customization_images/Customization_img4.png) 
+![ASPNET Map Customization Image4](Customization_images/Customization_img4.png) 
 
 _Map with color palette property_
 
@@ -427,7 +427,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-![](Customization_images/Customization_img5.png)
+![ASPNET Map Customization Image5](Customization_images/Customization_img5.png)
 
 _Map with custom palette_
 
@@ -460,7 +460,7 @@ The tooltip is displayed only when you set ShowTooltip to “true” in the shap
 
 
 
-![](Customization_images/Customization_img6.png)
+![ASPNET Map Customization Image6](Customization_images/Customization_img6.png)
 
 _Map with Tooltip_
 
@@ -524,7 +524,7 @@ The TooltipTemplate property is used for customizing the template for tooltip.
 The following screenshot illustrates a map control displaying a Tooltip with template.
 
 
-![](Customization_images/Customization_img7.png)
+![ASPNET Map Customization Image7](Customization_images/Customization_img7.png)
 
 _Map with tooltip template_
 

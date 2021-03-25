@@ -79,7 +79,7 @@ public class empList
 
 {% endtabs %}
 
-![](Templates_images/Templates_image1.png)
+![ASPNET ComboBox Templates image1](Templates_images/Templates_image1.png)
 
 ## Group template
 
@@ -201,7 +201,7 @@ public class empList
 
 {% endtabs %}
 
-![](Templates_images/Templates_image2.png)
+![ASPNET ComboBox Templates image2](Templates_images/Templates_image2.png)
 
 ## Footer template
 
@@ -278,7 +278,7 @@ public class empList
 
 {% endtabs %}
 
-![](Templates_images/Templates_image3.png)
+![ASPNET ComboBox Templates image3](Templates_images/Templates_image3.png)
 
 ## No records template
 
@@ -324,7 +324,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endtabs %}
 
-![](Templates_images/Templates_image4.png)
+![ASPNET ComboBox Templates image4](Templates_images/Templates_image4.png)
 
 ## Action failure template
 
@@ -371,4 +371,4 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endtabs %}
 
-![](Templates_images/Templates_image5.png)
+![ASPNET ComboBox Templates image5](Templates_images/Templates_image5.png)

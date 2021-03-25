@@ -63,7 +63,7 @@ N> By default, the placement takes the value "near", whereas other enumeration v
 
 {% endhighlight  %}
 
-![](Ranges_images/AppearanceCustomization.png)
+![ASPNET PivotGauge Ranges AppearanceCustomizationImage](Ranges_images/AppearanceCustomization.png)
 
 N> When you set both the position properties - "DistanceFromScale" and "Placement" for a range, preference is given to the value that is set in the "DistanceFromScale" property.
 
@@ -87,4 +87,4 @@ Multiple ranges can be added to the `RangeCollection` in the scales option withi
 
 {% endhighlight %}
 
-![](Ranges_images/MultipleRanges.png)
+![ASPNET PivotGauge Ranges MultipleRangesImage](Ranges_images/MultipleRanges.png)

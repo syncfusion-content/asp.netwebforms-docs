@@ -89,7 +89,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img.png)
+![ASPNET Kanban Columns image](Columns_images/column_img.png)
 
 ## Multiple Key Mapping
 
@@ -143,7 +143,7 @@ The following code example and screenshot which describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img9.png)
+![ASPNET Kanban Columns image9](Columns_images/column_img9.png)
 
 ## Headers
 
@@ -225,7 +225,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img1.png)
+![ASPNET Kanban Columns image1](Columns_images/column_img1.png)
 
 ## Width
 
@@ -278,7 +278,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img2.png)
+![ASPNET Kanban Columns image2](Columns_images/column_img2.png)
 
 ## Visibility 
 
@@ -332,7 +332,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img3.png)
+![ASPNET Kanban Columns image3](Columns_images/column_img3.png)
 
 ## Toggle 
 
@@ -386,7 +386,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img4.png)
+![ASPNET Kanban Columns image4](Columns_images/column_img4.png)
 
 ## Allow Dragging
 
@@ -439,7 +439,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img5.png)
+![ASPNET Kanban Columns image5](Columns_images/column_img5.png)
 
 ## Allow Dropping
 
@@ -492,7 +492,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img6.png)
+![ASPNET Kanban Columns image6](Columns_images/column_img6.png)
 
 ## Items Count
 
@@ -545,7 +545,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img7.png)
+![ASPNET Kanban Columns image7](Columns_images/column_img7.png)
 
 ## Customize Items Count Text
 
@@ -600,7 +600,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img8.png)
+![ASPNET Kanban Columns image8](Columns_images/column_img8.png)
 
 ## Display Empty Column
 
@@ -656,4 +656,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img10.png)
+![ASPNET Kanban Columns image10](Columns_images/column_img10.png)

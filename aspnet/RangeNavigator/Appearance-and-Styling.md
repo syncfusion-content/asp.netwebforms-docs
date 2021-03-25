@@ -48,7 +48,7 @@ The lower level labels font `Color`, `FontFamily`, `FontStyle`, `FontWeight`, `O
 
 {% endhighlight %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![ASPNET RangeNavigator Appearance-and-Styling Image1](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 Customize labels
 {:.caption} 
@@ -84,7 +84,7 @@ The following screen shot illustrates both the lower and higher level labels tha
 
 The following screenshot illustrates a RangeNavigator with labels inside the control after specifying the labelPlacement as inside.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![ASPNET RangeNavigator Appearance-and-Styling Image2](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 RangeNavigator with labels inside the control
 {:.caption} 
@@ -141,7 +141,7 @@ You can also customize the `Border` `Color` and `Width`, `Fill`, `GridLineStyle`
 </ej:RangeNavigator>
 {% endhighlight %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![ASPNET RangeNavigator Appearance-and-Styling Image3](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 Customize RangeNavigator
 {:.caption}
@@ -180,7 +180,7 @@ RangeNavigator `Theme` is a set of pre-defined options that are applied to the c
 
 {% endhighlight %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
+![ASPNET RangeNavigator Appearance-and-Styling Image4](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 
 Themes
 {:.caption}

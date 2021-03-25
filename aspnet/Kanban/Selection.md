@@ -91,4 +91,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Selection_images/Selection_img1.png)
+![ASPNET Kanban Selection Image1](Selection_images/Selection_img1.png)
