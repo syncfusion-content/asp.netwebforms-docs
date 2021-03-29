@@ -65,4 +65,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/Filtering_img1.png)
+![ASPNET Kanban Filtering image1](Filtering_images/Filtering_img1.png)

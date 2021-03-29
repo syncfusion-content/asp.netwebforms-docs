@@ -20,7 +20,7 @@ To render a Line type Sparkline, set the `Type` as **line**. To change the color
 
 {% endhighlight %}
 
-![](Sparkline-Types_images/Sparkline-Types_img1.png)
+![ASPNET Sparkline Sparkline-Types Image1](Sparkline-Types_images/Sparkline-Types_img1.png)
 
 ## Column Type
 
@@ -33,7 +33,7 @@ To render a Column Sparkline, set the type as **column** To change the color of 
 
 {% endhighlight %}
 
-![](Sparkline-Types_images/Sparkline-Types_img2.png)
+![ASPNET Sparkline Sparkline-Types Image2](Sparkline-Types_images/Sparkline-Types_img2.png)
 
 ## Area Type
 
@@ -46,7 +46,7 @@ To render an Area Sparkline, you can specify the type as **area**. To change the
 
 {% endhighlight %}
 
-![](Sparkline-Types_images/Sparkline-Types_img3.png)
+![ASPNET Sparkline Sparkline-Types Image3](Sparkline-Types_images/Sparkline-Types_img3.png)
 
 ## WinLoss Type
 
@@ -59,7 +59,7 @@ WinLoss Sparkline render as a column segment and it show the positive, negative 
 
 {% endhighlight %}
 
-![](Sparkline-Types_images/Sparkline-Types_img4.png)
+![ASPNET Sparkline Sparkline-Types Image4](Sparkline-Types_images/Sparkline-Types_img4.png)
 
 ## Pie Type
 
@@ -78,4 +78,4 @@ this.Sparkline1.Palette = new List<string>() { "#ff3399", "#33ccff"};
 
 {% endhighlight %}
 
-![](Sparkline-Types_images/Sparkline-Types_img5.png)
+![ASPNET Sparkline Sparkline-Types Image5](Sparkline-Types_images/Sparkline-Types_img5.png)

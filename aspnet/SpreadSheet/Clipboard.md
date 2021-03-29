@@ -101,6 +101,6 @@ function loadComplete() {
 
 The following output is displayed as a result of the above code example.
 
-![](Clipboard_images/Clipboard_img1.png)
+![ASPNET Spreadsheet Clipboard Image1](Clipboard_images/Clipboard_img1.png)
 
 N> Similarly you can perform clipboard operations for shapes( Chart and Image).

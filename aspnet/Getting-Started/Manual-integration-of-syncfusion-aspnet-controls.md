@@ -17,11 +17,11 @@ Follow the below steps to create a normal ASP.NET Web application
 
 1. Start the Visual Studio. Create a new Web Forms application by selecting File -> New -> Project and save it with a meaningful name as shown in the following.
 
-![](../Getting-Started_images/Getting-Started_img22.png)
+![ASPNET Introduction Getting-Started image22](../Getting-Started_images/Getting-Started_img22.png)
 
 2. ASP.NET Web application is created successfully. Now you can build and run your application by pressing Ctrl+F5, it shows something similar to the following screenshot in your web browser.
 
-![](../Getting-Started_images/Getting-Started_img14.png)
+![ASPNET Introduction Getting-Started image14](../Getting-Started_images/Getting-Started_img14.png)
 
 You have successfully created your first simple ASP.NET web application and now it is time to add some other essential things to your application that allows you to make use of our Syncfusion ASP.NET controls into it.
 
@@ -39,12 +39,12 @@ N> C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\
 
 When you navigate to the above location, you can find the files shown in the following image that you need to copy entirely and paste it into your root application.
 
-![](../Getting-Started_images/Getting-Started_img15.png)
+![ASPNET Introduction Getting-Started image15](../Getting-Started_images/Getting-Started_img15.png)
 
 Before pasting it into your application, create a folder structure with names ej/web within the Content folder of your application and place all the copied files into it as shown in the following.
 
 
-![](../Getting-Started_images/Getting-Started_img16.png)
+![ASPNET Introduction Getting-Started image16](../Getting-Started_images/Getting-Started_img16.png)
 Solution Explorer - Project with CSS files copied into the Content folder
 {:.caption}
 
@@ -95,7 +95,7 @@ N> Example for "Syncfusion Installed location" is "C:\Program Files (x86)\Syncfu
 
 Now, create a folder named `ej` under the Scripts folder of your application and place the copied files ej.web.all.min.js and ej.webform.min.js into it as shown in the following.
 
-![](../Getting-Started_images/Getting-Started_img17.png)
+![ASPNET Introduction Getting-Started image17](../Getting-Started_images/Getting-Started_img17.png)
 Solution Explorer - Script files copied into the Scripts folder of the project
 {:.caption}
 
@@ -159,13 +159,13 @@ Here, we will see how to add the DatePicker control into the newly created Syncf
 
 You just need to drag the required control from the toolbox and then drop it into the Content section of the Default.aspx page, so that the required control code gets generated automatically and also the required dependent assembly get registered automatically.
 
-![](../Getting-Started_images/Getting-Started_img23.png)
+![ASPNET Introduction Getting-Started image23](../Getting-Started_images/Getting-Started_img23.png)
 Toolbox
 {:.caption}
 
 2.	When you drag and drop the DatePicker control into the Default.aspx page, the page looks as the image shown in the following with the automatic control code generated and the required assemblies registered.
 
-![](../Getting-Started_images/Getting-Started_img24.png)
+![ASPNET Introduction Getting-Started image24](../Getting-Started_images/Getting-Started_img24.png)
 Default.aspx page with DatePicker control code and assembly registered for it at the top
 {:.caption}
 
@@ -188,13 +188,13 @@ The reference to the Syncfusion assemblies can be added to your application in e
 
 1.	Once you have installed the Essential Studio package in your system, the Syncfusion assemblies are automatically registered in the GAC. You can easily add the reference assemblies to your project by choosing Add Reference option as shown in the following.
 
-![](../Getting-Started_images/Getting-Started_img25.png)
+![ASPNET Introduction Getting-Started image25](../Getting-Started_images/Getting-Started_img25.png)
 Right click on the References --> choose Add Reference option
 {:.caption}
 
 2.	Now the Reference Manager pop-up will appear on the screen. In that pop-up, select the required assemblies from the Extensions tab as follows, by choosing the appropriate versions (13.1450.0.21). The version to be chosen for the reference assemblies is based on the Framework used in the application.
 
-![](../Getting-Started_images/Getting-Started_img26.png)
+![ASPNET Introduction Getting-Started image26](../Getting-Started_images/Getting-Started_img26.png)
 Reference Manager Pop-up
 {:.caption}
 
@@ -202,7 +202,7 @@ Reference Manager Pop-up
 
 1.	Add the reference assemblies to your project by choosing Add Reference option as shown in the following.
 
-![](../Getting-Started_images/Getting-Started_img25.png)
+![ASPNET Introduction Getting-Started image2](../Getting-Started_images/Getting-Started_img25.png)
 Right click on the References --> choose Add Reference option
 {:.caption}
 
@@ -214,7 +214,7 @@ N> For example, If you have installed the Essential Studio package within C:\Pro
 
 N> C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}
 
-![](../Getting-Started_images/Getting-Started_img27.png)
+![ASPNET Introduction Getting-Started image27](../Getting-Started_images/Getting-Started_img27.png)
 Reference Manager Pop-up with Browse button clicked
 {:.caption}
 
@@ -226,13 +226,13 @@ N> <installed location>\Syncfusion\Essential Studio\{{ site.releaseversion }}\pr
 For example, If you have installed the Essential Studio package within C:\Program Files (x86), navigate to the following location. <BR>
 C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}\4.5
 
-![](../Getting-Started_images/Getting-Started_img28.png)
+![ASPNET Introduction Getting-Started image28](../Getting-Started_images/Getting-Started_img28.png)
 Reference Manager Pop-up with assemblies selected
 {:.caption}
 
 4.	Once the assembly selection is done, click OK to add the selected references to your project. You can view the assembly references added to your application, in the solution explorer as shown in the following.
 
-![](../Getting-Started_images/Getting-Started_img29.png)
+![ASPNET Introduction Getting-Started image29](../Getting-Started_images/Getting-Started_img29.png)
 Selected Assemblies added to the Project reference
 {:.caption}
 
@@ -272,12 +272,12 @@ N> Add the DatePicker code within the Content section, by removing the unwanted 
 
 2.	Also register the required assemblies within the Default.aspx page at the top where you are using the control as shown in the following.
 
-![](../Getting-Started_images/Getting-Started_img30.png)
+![ASPNET Introduction Getting-Started image30](../Getting-Started_images/Getting-Started_img30.png)
 
 3. Finally build and run the project by pressing F5, so that you can now see the output similar to the following screenshot in your web browser.
 
 
-![](../Getting-Started_images/Getting-Started_img21.png)
+![ASPNET Introduction Getting-Started image21](../Getting-Started_images/Getting-Started_img21.png)
 DatePicker control displaying on the web browser
 {:.caption}
 

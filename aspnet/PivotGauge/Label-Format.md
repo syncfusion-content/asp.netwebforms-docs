@@ -37,4 +37,4 @@ The number format for label values can be set to any of the following types:
 
 {% endhighlight %}
 
-![](Label-Format_images/labelformat.png) 
+![ASPNET PivotGauge Label-Format Image](Label-Format_images/labelformat.png) 

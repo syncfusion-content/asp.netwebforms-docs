@@ -82,7 +82,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img1.png)
+![ASPNET Kanban Editing image1](Editing_images/Editing_img1.png)
 
 ## Edit modes
 
@@ -150,7 +150,7 @@ The following code example describes the above behavior
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img1.png)
+![ASPNET Kanban Editing image2](Editing_images/Editing_img1.png)
 
 
 ### Dialog Template Form
@@ -312,7 +312,7 @@ While using template, you can change the elements that are defined in the `templ
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img2.png)
+![ASPNET Kanban Editing image3](Editing_images/Editing_img2.png)
 
 ### External Form
 
@@ -374,7 +374,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img11.png)
+![ASPNET Kanban Editing image11](Editing_images/editing_img11.png)
 
 Form Position:
 
@@ -440,7 +440,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img12.png)
+![ASPNET Kanban Editing image12](Editing_images/editing_img12.png)
 
 ### External Template Form
 
@@ -569,7 +569,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img13.png)
+![ASPNET Kanban Editing image13](Editing_images/editing_img13.png)
 
 ## Cell edit type and its params
 
@@ -689,7 +689,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img3.png)
+![ASPNET Kanban Editing image4](Editing_images/Editing_img3.png)
 
 
 ## Column Validation
@@ -851,7 +851,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img4.png)
+![ASPNET Kanban Editing image5](Editing_images/Editing_img4.png)
 
 ## Persisting data in server
 
@@ -940,7 +940,7 @@ The following code example describes the above behavior.
 
 Please refer to the below screenshot.
 
-![](Editing_images/Editing_img5.png)
+![ASPNET Kanban Editing image6](Editing_images/Editing_img5.png)
 
 Using `DataOperations` helper class you can perform Kanban action at server side. The in-built methods that we have provided in the `DataOperations` class are listed below.
 
@@ -1005,7 +1005,7 @@ The following code example describes the above behavior.
 
 The newly added card details are bound to the `added` parameter. Please refer the below image.
 
-![](Editing_images/Editing_img6.png)
+![ASPNET Kanban Editing image7](Editing_images/Editing_img6.png)
 
 ### Update Card
 
@@ -1042,7 +1042,7 @@ The following code example describes the above behavior.
 
 The updated card details are bound to the `changed` parameter. Please refer the below image.
 
-![](Editing_images/Editing_img7.png)
+![ASPNET Kanban Editing image8](Editing_images/Editing_img7.png)
 
 ### Delete Card
 
@@ -1075,4 +1075,4 @@ The following code example describes the above behavior.
 
 The deleted card details are bound to the `deleted` parameter. Please refer the below image.
 
-![](Editing_images/Editing_img8.png)
+![ASPNET Kanban Editing image9](Editing_images/Editing_img8.png)

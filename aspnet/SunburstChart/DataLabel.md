@@ -20,7 +20,7 @@ You can enable or disable the data labels by setting the **visible** property of
 
  {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img1.png)
+![ASPNET SunburstChart DataLabel Image1](DataLabel_images/DataLabel_img1.png)
 
 ## Label Overflow mode
 
@@ -39,7 +39,7 @@ The following code shows how to set Hide and Trim mode.
 
  {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img2.png) 
+![ASPNET SunburstChart DataLabel Image2](DataLabel_images/DataLabel_img2.png) 
 
 {% highlight html %}
 
@@ -49,7 +49,7 @@ The following code shows how to set Hide and Trim mode.
 
  {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img3.png)
+![ASPNET SunburstChart DataLabel Image3](DataLabel_images/DataLabel_img3.png)
 
 ## Label Rotation Mode
 You can rotate the data label by using *SunburstLabelRotationMode* property. By default, the SunburstLabelRotationMode is set as **angle**. 
@@ -64,7 +64,7 @@ The following code shows how to set SunburstLabelRotationMode as normal and angl
 
  {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img4.png)
+![ASPNET SunburstChart DataLabel Image4](DataLabel_images/DataLabel_img4.png)
 
 {% highlight html %}
 
@@ -74,7 +74,7 @@ The following code shows how to set SunburstLabelRotationMode as normal and angl
 
 {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img5.png)
+![ASPNET SunburstChart DataLabel Image5](DataLabel_images/DataLabel_img5.png)
  
 ## Customizing the data labels
 You can customize the appearance of the data point using the `Font` property.
@@ -90,4 +90,4 @@ You can customize the appearance of the data point using the `Font` property.
 
 {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img6.png)
+![ASPNET SunburstChart DataLabel Image6](DataLabel_images/DataLabel_img6.png)

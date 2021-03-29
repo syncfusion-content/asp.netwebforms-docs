@@ -13,25 +13,25 @@ Digital Gauge for Essential Studio encompasses the visualization of the segmente
 
 * Seven Segment
 
-![](/aspnet/DigitalGauge/Overview_images/Overview_img2.png)
+![ASPNET DigitalGauge Overview image2](/aspnet/DigitalGauge/Overview_images/Overview_img2.png)
 
 * Fourteen Segment
 
-![](/aspnet/DigitalGauge/Overview_images/Overview_img3.png)
+![ASPNET DigitalGauge Overview image3](/aspnet/DigitalGauge/Overview_images/Overview_img3.png)
 
 * Sixteen Segment
 
-![](/aspnet/DigitalGauge/Overview_images/Overview_img4.png)
+![ASPNET DigitalGauge Overview image4](/aspnet/DigitalGauge/Overview_images/Overview_img4.png)
 
 * EightCrossEightDotMatrix
 
-![](/aspnet/DigitalGauge/Overview_images/Overview_img5.png)
+![ASPNET DigitalGauge Overview image5](/aspnet/DigitalGauge/Overview_images/Overview_img5.png)
 
 * EightCrossEightSquareMatrix
 
-![](/aspnet/DigitalGauge/Overview_images/Overview_img6.png)
+![ASPNET DigitalGauge Overview image6](/aspnet/DigitalGauge/Overview_images/Overview_img6.png)
 
-![](Overview_images/Overview_img1.png)
+![ASPNET DigitalGauge Overview image1](Overview_images/Overview_img1.png)
 
 Digital Gauge
 {:.caption} 

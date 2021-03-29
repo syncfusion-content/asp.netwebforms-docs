@@ -31,7 +31,7 @@ RangeNavigator is also used with numeric data and the ValueType for this data is
 
 The following screenshot displays the RangeNavigator with numeric data.
 
-![](Range-Types_images/Range-Types_img1.png)
+![ASPNET RangeNavigator Range-Types Image1](Range-Types_images/Range-Types_img1.png)
 
 RangeNavigator with numeric data.
 {:.caption}
@@ -50,7 +50,7 @@ By default the ValueType of the RangeNavigator is “datetime” and represents 
 </ej:RangeNavigator>
 {% endhighlight %}
 
-![](Range-Types_images/Range-Types_img2.png) 
+![ASPNET RangeNavigator Range-Types Image2](Range-Types_images/Range-Types_img2.png) 
 
 RangeNavigator with DateTime values
 {:.caption}
@@ -83,7 +83,7 @@ The DateTime range type contains an `IntervalType` property that sets the DateTi
 </ej:RangeNavigator>
 {% endhighlight %}
 
-![](Range-Types_images/Range-Types_img3.png)
+![ASPNET RangeNavigator Range-Types Image3](Range-Types_images/Range-Types_img3.png)
 
 Date Time property
 {:.caption}

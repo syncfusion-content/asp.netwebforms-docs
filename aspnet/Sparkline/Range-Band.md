@@ -19,5 +19,5 @@ The range band feature is used to highlight a particular range along the y-axis 
 
 {% endhighlight %}
 
-![](Range-Band_images/Range-Band_img1.png)
+![ASPNET Sparkline Range-Band Image1](Range-Band_images/Range-Band_img1.png)
 

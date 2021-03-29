@@ -96,7 +96,7 @@ Execute the above code to render the following output.
 
 
 
- ![](Custom-labels_images/Custom-labels_img1.png)
+ ![ASPNET CircularGauge Custom labels image1](Custom-labels_images/Custom-labels_img1.png)
 
 
 ## Multiple Custom Labels
@@ -147,7 +147,7 @@ You can set multiple custom labels in a single Circular Gauge by adding an array
 
 Execute the above code to render the following output.
 
- ![](Custom-labels_images/Custom-labels_img2.png)
+ ![ASPNET CircularGauge Custom labels image2](Custom-labels_images/Custom-labels_img2.png)
 
 
 
@@ -226,7 +226,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
- ![](Custom-labels_images/Custom-labels_img3.png)
+ ![ASPNET CircularGauge Custom labels image1](Custom-labels_images/Custom-labels_img3.png)
 
 
 

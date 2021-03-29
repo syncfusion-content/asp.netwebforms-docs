@@ -55,7 +55,7 @@ The appearance of the custom labels can be changed through the following propert
 
 {% endhighlight %}
 
-![](Custom-Label_images/AppearanceCustomization.png) 
+![ASPNET PivotGauge Custom-Label Image](Custom-Label_images/AppearanceCustomization.png) 
 
 ## Multiple custom labels
 
@@ -86,4 +86,4 @@ Multiple ranges can be added in the `CustomLabelCollection` to the scales option
 
 {% endhighlight %}
 
-![](Custom-Label_images/MultipleCustomLabels.png) 
+![ASPNET PivotGauge Custom-Label Image1](Custom-Label_images/MultipleCustomLabels.png) 

@@ -79,7 +79,7 @@ Label collection can be directly added to the scale object. Refer the following 
 
 Execute the above code to render the following output.
 
-![](Labels_images/Labels_img1.png)
+![ASPNET LinearGauge Labels Image1](Labels_images/Labels_img1.png)
 
 
 
@@ -159,7 +159,7 @@ BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light.png"/>
 Execute the above code to render the following output.
 
 
-![](Labels_images/Labels_img2.png)
+![ASPNET LinearGauge Labels Image2](Labels_images/Labels_img2.png)
 
 
 
@@ -247,7 +247,7 @@ BackgroundImageUrl="../Content/images/gauge/Gauge_linear_light1.png" />
 Execute the above code to render the following output.
 
 
-![](Labels_images/Labels_img3.png)
+![ASPNET LinearGauge Labels Image3](Labels_images/Labels_img3.png)
 
 
 
