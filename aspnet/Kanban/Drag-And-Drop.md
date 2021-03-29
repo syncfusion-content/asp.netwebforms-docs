@@ -122,11 +122,11 @@ The following code example describes the above behavior.
 
 The following output is displayed before dropping Kanban cards.
 
-![](DragDrop_images/drag_and_drop_img2.png) 
+![ASPNET Kanban DragDrop image2](DragDrop_images/drag_and_drop_img2.png) 
 
 The following output is displayed after dropping Kanban cards.
 
-![](DragDrop_images/drag_and_drop_img3.png) 
+![ASPNET Kanban DragDrop image3](DragDrop_images/drag_and_drop_img3.png) 
 
 ### See Also
 
@@ -246,8 +246,8 @@ The following code example describes the above behavior.
 
 The following output is displayed before dropping the cards on Grid.
 
-![](DragDrop_images/drag_and_drop_img4.png)
+![ASPNET Kanban DragDrop image4](DragDrop_images/drag_and_drop_img4.png)
 
 The following output is displayed after dropping the cards on Grid.
 
-![](DragDrop_images/drag_and_drop_img5.png)
+![ASPNET Kanban DragDrop image5](DragDrop_images/drag_and_drop_img5.png)

@@ -64,7 +64,7 @@ A data source can be bound to a Grid through DataManager control. The DataManage
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![ASPNET DataManager Data-Binding image1](Data-Binding_images/Data-Binding_img1.png)
 
 ## REST Services
 
@@ -91,7 +91,7 @@ OData is standardized protocol for creating and consuming data. You can retrieve
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img2.png)
+![ASPNET DataManager Data-Binding image2](Data-Binding_images/Data-Binding_img2.png)
 
 ### OData V4
 
@@ -122,7 +122,7 @@ The request and response to the service from the DataManager is illustrated as f
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img4.png)
+![ASPNET DataManager Data-Binding image4](Data-Binding_images/Data-Binding_img4.png)
 
 ## WebAPI binding
 
@@ -172,7 +172,7 @@ The request to the Web API and response is illustrated as follows.
 
 The result for the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img6.png)
+![ASPNET DataManager Data-Binding image6](Data-Binding_images/Data-Binding_img6.png)
 
 ## Other Web Services binding
 
@@ -254,7 +254,7 @@ In the above code snippet, we have created web services by using the ASP.NET web
 
 {% endhighlight %}
 
-![](Data-Binding_images/Data-Binding_img7.png)
+![ASPNET DataManager Data-Binding image7](Data-Binding_images/Data-Binding_img7.png)
 
 ## Complex Data Sorting
 
@@ -321,6 +321,6 @@ You can perform a data operation based on nested column data and bind to the dat
 
 {%endhighlight%}
 
-![](WEBFORMS_Sorting_images/complexdata.png)
+![ASPNET DataManager WEBFORMS_Sorting image](WEBFORMS_Sorting_images/complexdata.png)
 
 

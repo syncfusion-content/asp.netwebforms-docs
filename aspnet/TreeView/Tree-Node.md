@@ -11,7 +11,7 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Tree Node
 
 TreeView node is structured with expand/ collapse arrow, checkbox, image and text as shown in below.
 
-![](Tree-Node_images/Tree-Node_img1.jpeg)
+![ASPNET TreeView Tree-Node Image1](Tree-Node_images/Tree-Node_img1.jpeg)
 
 Also TreeView node object holds the following properties.
 

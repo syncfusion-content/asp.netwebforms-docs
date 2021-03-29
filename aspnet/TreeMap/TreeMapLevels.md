@@ -79,7 +79,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endhighlight %}
 
-![](TreeMapLevels_images/TreeMapLevels_img1.png)
+![ASPNET TreeMap TreeMapLevels Image1](TreeMapLevels_images/TreeMapLevels_img1.png)
 
 
 ## HierarchicalLevel
@@ -166,4 +166,4 @@ public class SalesData
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeMapLevels_images/TreeMapLevels_img2.png)
+![ASPNET TreeMap TreeMapLevels Image2](TreeMapLevels_images/TreeMapLevels_img2.png)

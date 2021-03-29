@@ -19,7 +19,7 @@ The Gauge control for Essential Studio displays numerical information in the for
 
 
 
-![](Overview_images/Overview_img1.png)
+![ASPNET LinearGauge Overview Image1](Overview_images/Overview_img1.png)
 
 Three basic scale designs available are : rectangle, rounded rectangle, and thermometer.
 

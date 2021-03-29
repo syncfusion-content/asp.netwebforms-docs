@@ -38,7 +38,7 @@ Needle type pointer is the default pointer which is always located at the center
 
 {% endhighlight %}
 
-![](Pointers_images/NeedlePointer.png) 
+![ASPNET PivotGauge Pointers NeedlePointerImage](Pointers_images/NeedlePointer.png) 
 
 For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamond, Pentagon, Circle, Slider, Pointer, Wedge, Trapezoid, RoundedRectangle, and Image.
 
@@ -56,7 +56,7 @@ For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamo
 
 {% endhighlight %}
 
-![](Pointers_images/MarkerPointer.png) 
+![ASPNET PivotGauge Pointers MarkerPointerImage](Pointers_images/MarkerPointer.png) 
 
 ## Adding pointer collection
 
@@ -77,7 +77,7 @@ The pointer collection can be directly added to the scales option within the piv
 
 {% endhighlight  %}
 
-![](Pointers_images/AddingPointerCollection.png)
+![ASPNET PivotGauge Pointers AddingPointerCollectionImage](Pointers_images/AddingPointerCollection.png)
 
 ## Appearance customization
 
@@ -111,7 +111,7 @@ The appearance of the pointer can be customized through the following properties
 
 {% endhighlight %}
 
-![](Pointers_images/AppearanceCustomization.png) 
+![ASPNET PivotGauge Pointers AppearanceCustomizationImage](Pointers_images/AppearanceCustomization.png) 
 
 ## Pointer position
 
@@ -137,7 +137,7 @@ N> Both the properties can be applied only if the pointer type is set to marker.
 
 {% endhighlight %}
 
-![](Pointers_images/PointerPosition.png)
+![ASPNET PivotGauge Pointers PointerPositionImage](Pointers_images/PointerPosition.png)
 
 ## Pointer image
 
@@ -160,7 +160,7 @@ It is possible to replace the pointers with an image. To view the pointers as an
 
 {% endhighlight %}
 
-![](Pointers_images/PointerImage.png)
+![ASPNET PivotGauge Pointers PointerImage](Pointers_images/PointerImage.png)
 
 ## Pointer value text
 
@@ -198,4 +198,4 @@ To display the current value of pointers in the pivot gauge control, the **"Poin
 
 {% endhighlight %}
 
-![](Pointers_images/PointerValueText.png)
+![ASPNET PivotGauge Pointers PointerValueTextImage](Pointers_images/PointerValueText.png)

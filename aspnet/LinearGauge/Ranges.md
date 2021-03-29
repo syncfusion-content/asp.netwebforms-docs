@@ -98,7 +98,7 @@ Range collection can be directly added to the scale object. Refer the following 
 Execute the above code to render the following output.
 
 
-![](Ranges_images/Ranges_img1.png)
+![ASPNET LinearGauge Ranges Image1](Ranges_images/Ranges_img1.png)
 
 
 
@@ -172,7 +172,7 @@ Execute the above code to render the following output.
 
 
 
-![](Ranges_images/Ranges_img2.png)
+![ASPNET LinearGauge Ranges Image2](Ranges_images/Ranges_img2.png)
 
 
 
@@ -237,7 +237,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](Ranges_images/Ranges_img3.png)
+![ASPNET LinearGauge Ranges Image3](Ranges_images/Ranges_img3.png)
 
 
 
@@ -302,7 +302,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](Ranges_images/Ranges_img4.png)
+![ASPNET LinearGauge Ranges Image4](Ranges_images/Ranges_img4.png)
 
 
 
@@ -391,7 +391,7 @@ You can set multiple ranges by adding an array of range objects. Refer the follo
 
 Execute the above code to render the following output.
 
-![](Ranges_images/Ranges_img5.png)
+![ASPNET LinearGauge Ranges Image5](Ranges_images/Ranges_img5.png)
 
 
 

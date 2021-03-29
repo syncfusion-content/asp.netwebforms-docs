@@ -40,4 +40,4 @@ You can define the levels as shown in the below code example
 
 The following screenshot illustrates the Sunburst Chart with different levels
 
-![](Levels_images/Levels_img1.png)
+![ASPNET SunburstChart Levels Image1](Levels_images/Levels_img1.png)

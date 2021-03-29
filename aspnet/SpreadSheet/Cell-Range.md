@@ -87,7 +87,7 @@ function loadComplete(args) {
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img1.png)
+![ASPNET Spreadsheet Cell-Ranges Image1](Cell-Ranges_images/Cell-Ranges_img1.png)
 
 ## Cell Navigation
 
@@ -286,7 +286,7 @@ function loadComplete(args) {
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img2.png)
+![ASPNET Spreadsheet Cell-Ranges Image2](Cell-Ranges_images/Cell-Ranges_img2.png)
 
 ## Drag and Drop
 
@@ -340,7 +340,7 @@ function loadComplete(args) {
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img3.png)
+![ASPNET Spreadsheet Cell-Ranges Image3](Cell-Ranges_images/Cell-Ranges_img3.png)
 
 ## Auto Fill
 
@@ -494,7 +494,7 @@ The following code example describes the above behavior.
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img5.png)
+![ASPNET Spreadsheet Cell-Ranges Image5](Cell-Ranges_images/Cell-Ranges_img5.png)
 
 ## Hyperlink
 
@@ -565,7 +565,7 @@ The following code example describes the above behavior.
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img6.png)
+![ASPNET Spreadsheet Cell-Ranges Image6](Cell-Ranges_images/Cell-Ranges_img6.png)
 
 ## Merge Cell
 
@@ -650,7 +650,7 @@ function loadComplete(args) {
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img7.png)
+![ASPNET Spreadsheet Cell-Ranges Image7](Cell-Ranges_images/Cell-Ranges_img7.png)
 
 ### Unmerge Cells
 
@@ -706,4 +706,4 @@ function loadComplete(args) {
 
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img8.png)
+![ASPNET Spreadsheet Cell-Ranges Image8](Cell-Ranges_images/Cell-Ranges_img8.png)

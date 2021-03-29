@@ -81,7 +81,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img1.png)
+![ASPNET Spreadsheet Editing Image1](Editing_images/Editing_img1.png)
 
 ## Read-Only cells
 
@@ -137,7 +137,7 @@ function loadComplete(args) {
 
 The following output is displayed as a result of editing in Spreadsheet which is rendered with above code example.
 
-![](Editing_images/Editing_img2.png)
+![ASPNET Spreadsheet Editing Image2](Editing_images/Editing_img2.png)
 
 ## Events
 

@@ -20,7 +20,7 @@ The gauges can be arranged in specified number of rows by using the `RowsCount` 
 
 {% endhighlight %}
 
-![](Layout_images/RowBased.png) 
+![ASPNET PivotGauge Layout RowBasedImage](Layout_images/RowBased.png) 
 
 ## Column-wise layout
 
@@ -33,5 +33,5 @@ The gauges can be arranged in specified number of columns by using the `ColumnsC
 
 {% endhighlight %}
 
-![](Layout_images/ColumnBased.png)
+![ASPNET PivotGauge Layout ColumnBasedImage](Layout_images/ColumnBased.png)
 

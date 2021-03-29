@@ -955,12 +955,12 @@ In the view page, add a TreeView element and map the properties defined in to t
 
 The following screenshot displays the load on demand for local data source in TreeView control.
 
-![](Populate-Data_images/Populate-Data_img5.png)
+![ASPNET TreeView Populate-Data Image5](Populate-Data_images/Populate-Data_img5.png)
 
 While expanding the parent node
 {:.caption}
 
-![](Populate-Data_images/Populate-Data_img6.png)
+![ASPNET TreeView Populate-Data Image6](Populate-Data_images/Populate-Data_img6.png)
 
 After expanding the parent node
 {:.caption}

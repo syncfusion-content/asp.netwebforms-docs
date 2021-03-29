@@ -46,7 +46,7 @@ Scale collection is directly added to the Gauge object. Refer the following code
 
 Execute the above code to render the following output.
 
- ![](Scales_images/Scales_img1.png)
+ ![ASPNET CircularGauge Scale image1](Scales_images/Scales_img1.png)
 
 ## Scale Customization
 
@@ -88,7 +88,7 @@ Execute the above code to render the following output.
 
 
 
- ![](Scales_images/Scales_img2.png)
+ ![ASPNET CircularGauge Scale image2](Scales_images/Scales_img2.png)
 
 
 ### Pointer Cap
@@ -122,7 +122,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
- ![](Scales_images/Scales_img3.png) 
+ ![ASPNET CircularGauge Scale image3](Scales_images/Scales_img3.png) 
 
 
 
@@ -235,7 +235,7 @@ You can set Multiple scales for a single Circular Gauge control by using an arra
 
 Execute the above code to render the following output.
 
- ![](Scales_images/Scales_img5.png)
+ ![ASPNET CircularGauge Scale image5](Scales_images/Scales_img5.png)
 
 
 

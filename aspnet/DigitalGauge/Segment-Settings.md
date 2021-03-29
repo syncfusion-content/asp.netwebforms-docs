@@ -50,7 +50,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-![](Segment-Settings_images/Segment-Settings_img1.png)
+![ASPNET DigitalGauge Segment-Settings image1](Segment-Settings_images/Segment-Settings_img1.png)
 
 
 Digital Gauge control with segment settings
@@ -96,7 +96,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 
 
-![](Segment-Settings_images/Segment-Settings_img2.png)
+![ASPNET DigitalGauge Segment-Settings image2](Segment-Settings_images/Segment-Settings_img2.png)
 
 Digital Gauge control with segment dimension
 {:.caption} 

@@ -77,6 +77,6 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight  %}
 {% endtabs %}
 
-![](Drill-Down-Support_images/Drill-Down-Support_img1.png) 
+![ASPNET TreeMap Drill-Down-Support Image1](Drill-Down-Support_images/Drill-Down-Support_img1.png) 
 
-![](Drill-Down-Support_images/Drill-Down-Support_img2.png) 
+![ASPNET TreeMap Drill-Down-Support Image2](Drill-Down-Support_images/Drill-Down-Support_img2.png) 

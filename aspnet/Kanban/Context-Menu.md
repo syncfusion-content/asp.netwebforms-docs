@@ -190,9 +190,9 @@ Please find the below table for default context menu items and its actions.
 
 The following output is displayed as a result of the above code example
     
-![](Context-Menu_images/context_img1.png)
+![ASPNET Kanban Context-Menu image1](Context-Menu_images/context_img1.png)
 
-![](Context-Menu_images/context_img2.png)
+![ASPNET Kanban Context-Menu image2](Context-Menu_images/context_img2.png)
 
 ## Custom Context Menu
 
@@ -250,7 +250,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context-Menu_images/context_img3.png)
+![ASPNET Kanban Context-Menu image3](Context-Menu_images/context_img3.png)
 
 ## Sub Context Menu
 
@@ -323,7 +323,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example. 
 
-![](Context-Menu_images/context_img4.png)
+![ASPNET Kanban Context-Menu image4](Context-Menu_images/context_img4.png)
     
 
 
