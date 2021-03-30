@@ -21,7 +21,7 @@ The full circle frame allows the pivot gauge to display in a circular shape. The
 
 {% endhighlight  %}
 
-![](Frame-Type_images/FullCircle.png) 
+![ASPNET PivotGauge Frame-Type FullCircleImage](Frame-Type_images/FullCircle.png) 
 
 ## Half circle
 
@@ -39,4 +39,4 @@ Half circle frame allows the pivot gauge to display in a semi-circular shape. Th
 
 {% endhighlight  %}
 
-![](Frame-Type_images/HalfCircle.png) 
+![ASPNET PivotGauge Frame-Type HalfCircleImage](Frame-Type_images/HalfCircle.png) 

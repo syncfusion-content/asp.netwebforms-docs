@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OverView of the DropDownList control for Syncfusion ASP.NET WebForm
+title: OverView of the DropDownList control for ASP.NET WebForm
 description: OverView of the DropDownList control for Syncfusion ASP.NET WebForm 
 platform: aspnet
 control: DropDownList

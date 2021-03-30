@@ -64,7 +64,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img1.png)
+![ASPNET Kanban Scrolling Image1](Scrolling_images/Scrolling_img1.png)
 
 ## Set Width and Height in percentage
 
@@ -117,7 +117,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img2.png)
+![ASPNET Kanban Scrolling Image2](Scrolling_images/Scrolling_img2.png)
 
 ## Set Width as auto
 
@@ -172,7 +172,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img3.png)
+![ASPNET Kanban Scrolling Image3](Scrolling_images/Scrolling_img3.png)
 
 ## Enabling freeze swim lane
 
@@ -227,6 +227,6 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img4.png)
+![ASPNET Kanban Scrolling Image4](Scrolling_images/Scrolling_img4.png)
 
 N> `AllowFreezeSwimlane` is applicable when swim lane grouping enabled by setting `SwimlaneKey`.

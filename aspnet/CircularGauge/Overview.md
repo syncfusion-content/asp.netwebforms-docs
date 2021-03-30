@@ -18,7 +18,7 @@ The CircularGauge control visualizes the numerical values of scales in a circula
 * Ranges
 * Indicators
 
- ![](Overview_images/Overview_img1.png)
+ ![ASPNET CircularGauge Overview image1](Overview_images/Overview_img1.png)
 
 
 The gauge display can also be customized either as a full circle or a half circle based on individual requirements. Among other helpful features, the CircularGauge control also includes advanced user interactivity.

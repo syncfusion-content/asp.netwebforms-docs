@@ -70,4 +70,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Stacked-Headers_images/Stacked-Headers_img1.png)
+![ASPNET Kanban Stacked-Headers Image1](Stacked-Headers_images/Stacked-Headers_img1.png)

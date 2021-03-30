@@ -92,7 +92,7 @@ protected void Page_Load(object sender, EventArgs e)
 	
 {% endhighlight %}
 
- ![](TreeMap-Elements_images/TreeMap-Elements_img1.png)
+ ![ASPNET TreeMap TreeMap-Elements Image1](TreeMap-Elements_images/TreeMap-Elements_img1.png)
 
 ### Interactive Legend
 
@@ -122,7 +122,7 @@ You can provide the left and right labels to interactive legend by using `LeftLa
 
 {% endhighlight %}
 
-![](TreeMap-Elements_images/Interactive_Legend.png)
+![ASPNET TreeMap TreeMap-Elements Image2](TreeMap-Elements_images/Interactive_Legend.png)
 
 ### Header
 
@@ -174,7 +174,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
- ![](TreeMap-Elements_images/TreeMap-Elements_img2.png) 
+ ![ASPNET TreeMap TreeMap-Elements Image3](TreeMap-Elements_images/TreeMap-Elements_img2.png) 
 
 ### Customizing the header
 
@@ -202,7 +202,7 @@ The text in the header can be customized by triggering the event `HeaderTemplate
 {% endhighlight %}
 
 
-![](TreeMap-Elements_images/TreeMap-Elements_img4.png)
+![ASPNET TreeMap TreeMap-Elements Image4](TreeMap-Elements_images/TreeMap-Elements_img4.png)
 
 ### Label
 
@@ -256,7 +256,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeMap-Elements_images/TreeMap-Elements_img3.png)
+![ASPNET TreeMap TreeMap-Elements Image5](TreeMap-Elements_images/TreeMap-Elements_img3.png)
 
 ## Customizing the Overflow labels
 

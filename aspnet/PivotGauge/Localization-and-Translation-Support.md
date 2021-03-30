@@ -74,4 +74,4 @@ For server mode, set the **"Culture"** and **"OverrideDefaultFormatStrings"** pr
 
 {% endhighlight %}
 
-![](Localization-and-Translation-Support_images/Localization.png) 
+![ASPNET PivotGauge Localization-and-Translation-Support Image](Localization-and-Translation-Support_images/Localization.png) 

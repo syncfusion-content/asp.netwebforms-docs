@@ -24,7 +24,7 @@ By default, the legend will not be displayed in the circular gauge. You can enab
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img1.png)
+![ASPNET CircularGauge Legend image1](Legend_images/Legend_img1.png)
 
 
 [Click](http://asp.syncfusion.com/demos/web/circulargauge/legend.aspx) here to view the online demo sample for  legend in the circular Gauge.
@@ -60,7 +60,7 @@ By using the `Position` property, you can position the legend at *left*, *right*
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png)
+![ASPNET CircularGauge Legend image2](Legend_images/Legend_img2.png)
 
 ### Legend Alignment
 
@@ -76,7 +76,7 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png)
+![ASPNET CircularGauge Legend image3](Legend_images/Legend_img3.png)
 
 ## Customization
 
@@ -109,7 +109,7 @@ To change the legend item shape, you have to specify the desired shape in the `S
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img4.png)
+![ASPNET CircularGauge Legend image4](Legend_images/Legend_img4.png)
 
 
 ### Legend Item Size and Border
@@ -131,7 +131,7 @@ You can change the size of the legend items by using the `Width` and `Height` pr
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.png)
+![ASPNET CircularGauge Legend image5](Legend_images/Legend_img5.png)
 
 ### Legend size
 
@@ -149,7 +149,7 @@ You can change the default legend size by using the `Size` property of the legen
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png)
+![ASPNET CircularGauge Legend image6](Legend_images/Legend_img6.png)
 
 
 ### Legend Item Padding
@@ -167,7 +167,7 @@ You can control the spacing between the legend items by using the `ItemPadding` 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img7.png)
+![ASPNET CircularGauge Legend image7](Legend_images/Legend_img7.png)
 
 ### Legend border
 
@@ -185,7 +185,7 @@ You can customize the legend border by using the `Border` option in the legend.
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img8.png)
+![ASPNET CircularGauge Legend image8](Legend_images/Legend_img8.png)
 
 ### Font of the legend text
 
@@ -204,7 +204,7 @@ The `Font` of the legend item text can be customized by using properties such as
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img9.png)
+![ASPNET CircularGauge Legend image9](Legend_images/Legend_img9.png)
 
 ## Events
 

@@ -127,7 +127,7 @@ To load excel documents initially from server side, set `ImportOnLoad` as `true`
 
 {% endhighlight %}
 
-![](Open-and-Save_images/Open-and-Save_img1.png)
+![ASPNET Spreadsheet Open-and-Save Image1](Open-and-Save_images/Open-and-Save_img1.png)
 
 ### Methods
 

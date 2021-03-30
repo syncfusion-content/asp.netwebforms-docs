@@ -42,7 +42,7 @@ You can create a Kanban with a highly customizable look and feel. This section d
  
    For more information about SQL data source configuration refer the following link: [https://msdn.microsoft.com/en-us/library/dz12d98w.aspx](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx)
    
-   ![](Getting-Started_images/Getting_Started_img1.png) 
+   ![ASPNET Kanban Getting-Started image1](Getting-Started_images/Getting_Started_img1.png) 
 
 ## Data Binding
 
@@ -90,7 +90,7 @@ You can bind data to the Kanban control by either locally or remotely. Assign th
 
 {% endtabs %}  
 
-![](Getting-Started_images/Getting_Started_img2.png) 
+![ASPNET Kanban Getting-Started image2](Getting-Started_images/Getting_Started_img2.png) 
 
 N> ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](http://help.syncfusion.com/aspnet/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
@@ -147,7 +147,7 @@ In order to display cards in Kanban control, you need to map the database fields
 
 {% endtabs %}  
 
-![](Getting-Started_images/Getting_Started_img3.png) 
+![ASPNET Kanban Getting-Started image3](Getting-Started_images/Getting_Started_img3.png) 
 
 N> `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” and “Editing” Features.
 
@@ -198,7 +198,7 @@ N> `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” and 
 
 {% endtabs %}  
 
-![](Getting-Started_images/Getting_Started_img4.png) 
+![ASPNET Kanban Getting-Started image4](Getting-Started_images/Getting_Started_img4.png) 
 
 ## Adding Filters
 
@@ -251,4 +251,4 @@ Filters allows to filter the collection of cards from `DataSource` which meets t
 
 {% endtabs %}  
 
-![](Getting-Started_images/Getting_Started_img5.png)  
+![ASPNET Kanban Getting-Started image5](Getting-Started_images/Getting_Started_img5.png)  

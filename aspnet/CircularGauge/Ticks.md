@@ -88,7 +88,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](Ticks_images/Ticks_img2.png)
+![ASPNET CircularGauge Ticks image2](Ticks_images/Ticks_img2.png)
 
 
 

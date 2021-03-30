@@ -79,7 +79,7 @@ Custom labels collection can be directly added to the scale object. Refer the fo
 
 Execute the above code to render the following output.
 
-![](Custom-labels_images/Custom-labels_img1.png)
+![ASPNET LinearGauge Custom-labels Image1](Custom-labels_images/Custom-labels_img1.png)
 
 
 
@@ -156,7 +156,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](Custom-labels_images/Custom-labels_img2.png)
+![ASPNET LinearGauge Custom-labels Image2](Custom-labels_images/Custom-labels_img2.png)
 
 
 
@@ -225,7 +225,7 @@ To set the location of the custom label in Linear Gauge, position property is us
 
 Execute the above code to render the following output.
 
-![](Custom-labels_images/Custom-labels_img3.png)
+![ASPNET LinearGauge Custom-labels Image3](Custom-labels_images/Custom-labels_img3.png)
 
 
 
@@ -302,4 +302,4 @@ You can set multiple custom labels in a single Linear Gauge by adding an array o
 
 Execute the above code to render the following output.
 
-![](Custom-labels_images/Custom-labels_img4.png)
+![ASPNET LinearGauge Custom-labels Image4](Custom-labels_images/Custom-labels_img4.png)

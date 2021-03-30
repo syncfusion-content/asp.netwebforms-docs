@@ -23,7 +23,7 @@ The scale can be added within the pivot gauge control.
 
 {% endhighlight  %}
 
-![](Scales_images/AddingScale.png) 
+![ASPNET PivotGauge Scales AddingScaleImage](Scales_images/AddingScale.png) 
 
 ## Scale customization
 
@@ -48,7 +48,7 @@ The pointer cap is a circular shape element which is located at the center of th
 
 {% endhighlight  %}
 
-![](Scales_images/PointerCap.png)
+![ASPNET PivotGauge Scales PointerCapImage](Scales_images/PointerCap.png)
 
 ### Appearance
 The appearance of the scale can be customized through the following properties:
@@ -77,4 +77,4 @@ The `ShowIndicators`, `ShowTicks`, `ShowRanges`, `ShowPointers`, and `ShowScaleB
 
 {% endhighlight  %}
 
-![](Scales_images/Appearance.png)
+![ASPNET PivotGauge Scales AppearanceImage](Scales_images/Appearance.png)

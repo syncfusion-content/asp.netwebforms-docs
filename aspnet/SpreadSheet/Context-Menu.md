@@ -53,23 +53,23 @@ The following code example describes the above behavior.
 </ej:Spreadsheet> 
 {% endhighlight %}
 
-![](Context-Menu_images/context-menu_img1.png)
+![ASPNET Spreadsheet Context-Menu Image1](Context-Menu_images/context-menu_img1.png)
 
 ContextMenu at Cell
 {:.caption}
 
 
-![](Context-Menu_images/context-menu_img2.png)
+![ASPNET Spreadsheet Context-Menu Image2](Context-Menu_images/context-menu_img2.png)
 
 ContextMenu at Column Header
 {:.caption}
 
-![](Context-Menu_images/context-menu_img3.png)
+![ASPNET Spreadsheet Context-Menu Image3](Context-Menu_images/context-menu_img3.png)
 
 ContextMenu at Row Header
 {:.caption}
 
-![](Context-Menu_images/context-menu_img4.png)
+![ASPNET Spreadsheet Context-Menu Image4](Context-Menu_images/context-menu_img4.png)
 
 ContextMenu at Pager
 {:.caption}

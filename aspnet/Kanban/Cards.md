@@ -118,7 +118,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/Cards_img1.png)
+![ASPNET Kanban Cards image1](Cards_images/Cards_img1.png)
 
 ## Template
 
@@ -258,7 +258,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/Cards_img2.png)
+![ASPNET Kanban Cards image2](Cards_images/Cards_img2.png)
 
 ## Tooltip
 
@@ -320,7 +320,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/Cards_img3.png)
+![ASPNET Kanban Cards image3](Cards_images/Cards_img3.png)
 
 ## Template
 
@@ -451,7 +451,7 @@ The following code example describes the tooltip template.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/Cards_img4.png)
+![ASPNET Kanban Cards image4](Cards_images/Cards_img4.png)
 
 ## Collapsible Cards
 
@@ -525,4 +525,4 @@ The following code example describes the collapsible cards.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img5.png)
+![ASPNET Kanban Cards image5](Cards_images/cards_img5.png)

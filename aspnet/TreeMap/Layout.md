@@ -50,7 +50,7 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout_images/Layout_img1.png)
+![ASPNET TreeMap Layout Image1](Layout_images/Layout_img1.png)
 
 ### SliceAndDiceAuto Layout
 
@@ -70,7 +70,7 @@ SliceAndDiceAuto layout creates rectangles with high aspect ratio and displays t
 
 {% endhighlight %}
 
-![](Layout_images/Layout_img2.png) 
+![ASPNET TreeMap Layout Image2](Layout_images/Layout_img2.png) 
 
 ### SliceAndDiceHorizontal Layout
 
@@ -89,7 +89,7 @@ SliceAndDiceHorizontal layout creates rectangles with high aspect ratio and disp
 {% endhighlight %}
 
 
- ![](Layout_images/Layout_img3.png) 
+ ![ASPNET TreeMap Layout Image3](Layout_images/Layout_img3.png) 
 
 
 
@@ -110,4 +110,4 @@ SliceAndDiceVertical layout creates rectangles with high aspect ratio and displa
 {% endhighlight  %}
 
 
-![](Layout_images/Layout_img4.png) 
+![ASPNET TreeMap Layout Image4](Layout_images/Layout_img4.png) 
