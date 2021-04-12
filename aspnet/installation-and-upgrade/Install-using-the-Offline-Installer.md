@@ -69,7 +69,7 @@ The following procedure illustrates how to install Essential Studio ASP.NET plat
 6.  If any previous version installed for current platform, Click Next in the same Advanced Options screen to select the versions to be uninstalled.
 
 
-    ![Advanced options](Platform_images/Step-by-Step-Installation_img5.png)
+    ![Advanced options](Platform_images/Step-by-Step-Installation_img7.png)
 	
 	
 	N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
@@ -77,19 +77,22 @@ The following procedure illustrates how to install Essential Studio ASP.NET plat
 
 7.	Click Proceed.
 
-	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img6.png)
+	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img10.png)
 	
 	
 	N> If any version is selected to uninstall, pop up screen will appear for confirmation, if continue is selected, the Progress screen will display the uninstall progress and install progress respectively. If none of the version is selected to uninstall, install progress alone will be progressed.
 	
 	
-	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img7.png)
+	![Uninstalling wizard](Platform_images/Step-by-Step-Installation_img8.png)
+	
+	
+	![Installing wizard](Platform_images/Step-by-Step-Installation_img5.png)
 	
 	
 	N> The Completed screen is displayed once the ASP.NET platform is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
 
     
-	![Installation completed](Platform_images/Step-by-Step-Installation_img8.png)
+	![Installation completed](Platform_images/Step-by-Step-Installation_img9.png)
 
 
 8. Click the **Launcher Control Panel** link to launch the [Syncfusion Control Panel](https://help.syncfusion.com/common/essential-studio/utilities#dashboard ) after installing.
