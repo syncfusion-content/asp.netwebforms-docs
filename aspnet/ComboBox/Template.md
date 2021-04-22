@@ -110,7 +110,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endtabs %}
 
-![](Templates_images/Templates_image6.png)
+![ASPNET ComboBox Templates image6](Templates_images/Templates_image6.png)
 
 ## Header template
 
