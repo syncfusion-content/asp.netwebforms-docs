@@ -9,8 +9,7 @@ documentation: ug
 
 # System Requirement
 
-This section describes the system requirements of Syncfusion ASP.NET platform for development.
-
+The system requirements for using our Syncfusion ASP.NET Web Forms platform are as follows
 
 ### Operating Systems
 

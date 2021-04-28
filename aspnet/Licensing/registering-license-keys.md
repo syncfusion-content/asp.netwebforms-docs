@@ -19,6 +19,8 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 
 N> Place the license key between double quotes.  Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered.
 
+### ASP.NET Web Forms
+
 You can register the license key in Application_Start method of **Global.asax.cs/Global.asax**
 
 {% tabs %}
