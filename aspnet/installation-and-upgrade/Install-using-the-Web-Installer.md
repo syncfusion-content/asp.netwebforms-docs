@@ -73,7 +73,7 @@ The steps below show how to install Essential Studio ASP.NET Web Forms Web Insta
 
 7.  The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
-    ![Install and samples location for install](WebInstaller/Step-by-Step-Installation_img8.png)
+    ![Install and samples location for install](WebInstaller/Step-by-Step-Installation_img23.png)
 	
 	**Additional settings**
 	
