@@ -47,7 +47,7 @@ You can specify the chart size in percentage by using the Size property. The cha
 
 <div id="Chart1" style="width:700px; height:500px">  
    <ej:Chart ID="Chart1" runat="server">    
-       <Size Width="90%" Height="80%"></Size>
+       <Size Width="80%"></Size>
    </ej:Chart>
 </div>
 
