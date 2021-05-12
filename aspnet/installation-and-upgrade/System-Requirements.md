@@ -9,8 +9,7 @@ documentation: ug
 
 # System Requirement
 
-This section describes the system requirements of Syncfusion ASP.NET platform for development.
-
+The system requirements for using our Syncfusion ASP.NET Web Forms platform are as follows
 
 ### Operating Systems
 
@@ -24,7 +23,7 @@ This section describes the system requirements of Syncfusion ASP.NET platform fo
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 5 GB of available space may be required. However, 500 MB free space is required in boot drive even if you are installing in other drive.
+* Hard disc: up to 3 GB of free space may be required
 
 ### Development Environment
 
@@ -37,10 +36,21 @@ This section describes the system requirements of Syncfusion ASP.NET platform fo
 
 Syncfusion components are also mostly compatible with all the major browsers that we are using these days. It includes the following:
 
-* Internet Explorer 8+
-* Microsoft Edge
-* Mozilla Firefox 22 +
-* Chrome 17 +
-* Opera 12 +
-* Safari 5 +
 
+<table>
+<tr>
+<th>Chrome</th>
+<th>Mozilla Firefox</th>
+<th>Opera</th>
+<th>Microsoft Edge</th>
+<th>Safari</th>
+<th>Microsoft Internet Explorer</th>
+</tr>
+<tr>
+<td>17 +</td>
+<td>22 +</td>
+<td>12 +</td>
+<td>Latest</td>
+<td>5 +</td>
+<td>8 +</td>
+</tr></table>
