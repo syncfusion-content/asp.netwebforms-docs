@@ -85,6 +85,35 @@ You can bind data to the Kanban control by either locally or remotely. Assign th
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           public class Tasks
+           {
+              public Tasks()
+              {
+              }
+              public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+              {
+                  this.Id = Id;
+                  this.Status = Status;
+                  this.Summary = Summary;
+                  this.Type = Type;
+                  this.Priority = Priority;
+                  this.Tags = Tags;
+                  this.Estimate = Estimate;
+                  this.Assignee = Assignee;
+                  this.ImgUrl = ImgUrl;
+                  this.RankId = RankId;
+              }
+              public int Id { get; set; }
+              public string Status { get; set; }
+              public string Summary { get; set; }
+              public string Type { get; set; }
+              public string Priority { get; set; }
+              public string Tags { get; set; }
+              public double Estimate { get; set; }
+              public string Assignee { get; set; }
+              public string ImgUrl { get; set; }
+              public int RankId { get; set; }
+          }
 
 {% endhighlight  %}
 
@@ -142,6 +171,35 @@ In order to display cards in Kanban control, you need to map the database fields
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           public class Tasks
+           {
+              public Tasks()
+              {
+              }
+              public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+              {
+                  this.Id = Id;
+                  this.Status = Status;
+                  this.Summary = Summary;
+                  this.Type = Type;
+                  this.Priority = Priority;
+                  this.Tags = Tags;
+                  this.Estimate = Estimate;
+                  this.Assignee = Assignee;
+                  this.ImgUrl = ImgUrl;
+                  this.RankId = RankId;
+              }
+              public int Id { get; set; }
+              public string Status { get; set; }
+              public string Summary { get; set; }
+              public string Type { get; set; }
+              public string Priority { get; set; }
+              public string Tags { get; set; }
+              public double Estimate { get; set; }
+              public string Assignee { get; set; }
+              public string ImgUrl { get; set; }
+              public int RankId { get; set; }
+          }
 
 {% endhighlight  %}
 
@@ -193,6 +251,35 @@ N> `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” and 
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           public class Tasks
+           {
+              public Tasks()
+              {
+              }
+              public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+              {
+                  this.Id = Id;
+                  this.Status = Status;
+                  this.Summary = Summary;
+                  this.Type = Type;
+                  this.Priority = Priority;
+                  this.Tags = Tags;
+                  this.Estimate = Estimate;
+                  this.Assignee = Assignee;
+                  this.ImgUrl = ImgUrl;
+                  this.RankId = RankId;
+              }
+              public int Id { get; set; }
+              public string Status { get; set; }
+              public string Summary { get; set; }
+              public string Type { get; set; }
+              public string Priority { get; set; }
+              public string Tags { get; set; }
+              public double Estimate { get; set; }
+              public string Assignee { get; set; }
+              public string ImgUrl { get; set; }
+              public int RankId { get; set; }
+          }
 
 {% endhighlight  %}
 
@@ -246,6 +333,35 @@ Filters allows to filter the collection of cards from `DataSource` which meets t
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           public class Tasks
+           {
+              public Tasks()
+              {
+              }
+              public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+              {
+                  this.Id = Id;
+                  this.Status = Status;
+                  this.Summary = Summary;
+                  this.Type = Type;
+                  this.Priority = Priority;
+                  this.Tags = Tags;
+                  this.Estimate = Estimate;
+                  this.Assignee = Assignee;
+                  this.ImgUrl = ImgUrl;
+                  this.RankId = RankId;
+              }
+              public int Id { get; set; }
+              public string Status { get; set; }
+              public string Summary { get; set; }
+              public string Type { get; set; }
+              public string Priority { get; set; }
+              public string Tags { get; set; }
+              public double Estimate { get; set; }
+              public string Assignee { get; set; }
+              public string ImgUrl { get; set; }
+              public int RankId { get; set; }
+          }
 
 {% endhighlight  %}
 
