@@ -183,6 +183,35 @@ Please find the below table for default context menu items and its actions.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           public class Tasks
+           {
+              public Tasks()
+              {
+              }
+              public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+              {
+                  this.Id = Id;
+                  this.Status = Status;
+                  this.Summary = Summary;
+                  this.Type = Type;
+                  this.Priority = Priority;
+                  this.Tags = Tags;
+                  this.Estimate = Estimate;
+                  this.Assignee = Assignee;
+                  this.ImgUrl = ImgUrl;
+                  this.RankId = RankId;
+              }
+              public int Id { get; set; }
+              public string Status { get; set; }
+              public string Summary { get; set; }
+              public string Type { get; set; }
+              public string Priority { get; set; }
+              public string Tags { get; set; }
+              public double Estimate { get; set; }
+              public string Assignee { get; set; }
+              public string ImgUrl { get; set; }
+              public int RankId { get; set; }
+          }
 
 {% endhighlight %}
     
@@ -243,6 +272,35 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           public class Tasks
+           {
+              public Tasks()
+              {
+              }
+              public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+              {
+                  this.Id = Id;
+                  this.Status = Status;
+                  this.Summary = Summary;
+                  this.Type = Type;
+                  this.Priority = Priority;
+                  this.Tags = Tags;
+                  this.Estimate = Estimate;
+                  this.Assignee = Assignee;
+                  this.ImgUrl = ImgUrl;
+                  this.RankId = RankId;
+              }
+              public int Id { get; set; }
+              public string Status { get; set; }
+              public string Summary { get; set; }
+              public string Type { get; set; }
+              public string Priority { get; set; }
+              public string Tags { get; set; }
+              public double Estimate { get; set; }
+              public string Assignee { get; set; }
+              public string ImgUrl { get; set; }
+              public int RankId { get; set; }
+          }
 
 {% endhighlight  %}
     
@@ -316,6 +374,35 @@ The following code example describes the above behavior.
             this.Kanban.DataSource = Task;
             this.Kanban.DataBind();
            }
+           public class Tasks
+           {
+              public Tasks()
+              {
+              }
+              public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+              {
+                  this.Id = Id;
+                  this.Status = Status;
+                  this.Summary = Summary;
+                  this.Type = Type;
+                  this.Priority = Priority;
+                  this.Tags = Tags;
+                  this.Estimate = Estimate;
+                  this.Assignee = Assignee;
+                  this.ImgUrl = ImgUrl;
+                  this.RankId = RankId;
+              }
+              public int Id { get; set; }
+              public string Status { get; set; }
+              public string Summary { get; set; }
+              public string Type { get; set; }
+              public string Priority { get; set; }
+              public string Tags { get; set; }
+              public double Estimate { get; set; }
+              public string Assignee { get; set; }
+              public string ImgUrl { get; set; }
+              public int RankId { get; set; }
+          }
 
 {% endhighlight  %}
     
@@ -324,7 +411,3 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example. 
 
 ![ASPNET Kanban Context-Menu image4](Context-Menu_images/context_img4.png)
-    
-
-
-
