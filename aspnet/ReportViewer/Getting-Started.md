@@ -17,7 +17,7 @@ This section explains how to configure a ReportViewer component in web applicati
 
 Open Visual Studio and create a new project by clicking New Project. Select the Web category, select the ASP.NET Empty Web Application template, and then click OK. The following screenshot displays the Project Creation Wizard.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.png) 
 
 Project Creation Wizard
 {:.caption}
@@ -28,14 +28,14 @@ To create a new Web Forms in the application
 
 1. Right-Click on the project and select Add
 
-   ![](Getting-Started_images/Getting-Started_img3.png) 
+   ![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.png) 
    
    New Item Wizard
    {:.caption}
    
 2. Click New Item and select Web Form from the listed templates
 
-   ![](Getting-Started_images/Getting-Started_img4.png) 
+   ![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png) 
    
    Adding Web Forms
    {:.caption}
@@ -49,7 +49,7 @@ To create a new Web Forms in the application
 
 1. In the Solution Explorer, right-click the References folder and then click Add Reference
 
-   ![](Getting-Started_images/Getting-Started_img5.png) 
+   ![Getting-Started_images5](Getting-Started_images/Getting-Started_img5.png) 
    
    Adding Reference
    {:.caption}
@@ -102,12 +102,12 @@ N> Use the following code example while adding scripts and styles.
 
 1. Drag the ReportViewer control from the Syncfusion Web Toolbox onto the Design Page
 
-   ![](Getting-Started_images/Getting-Started_img8.png) 
+   ![Getting-Started_images8](Getting-Started_images/Getting-Started_img8.png) 
    
    ReportViewer Control in Toolbox
    {:.caption} 
    
-   ![](Getting-Started_images/Getting-Started_img9.png)
+   ![Getting-Started_images9](Getting-Started_images/Getting-Started_img9.png)
    
    ReportViewer Control in Source Tab Section
    {:.caption} 
@@ -129,7 +129,7 @@ N> Use the following code example while adding scripts and styles.
 
 The ASP.NET ReportViewer uses WebApi services to process the report file and process the request from control.
 
-![](Getting-Started_images/Getting-Started_img10.png) 
+![Getting-Started_images10](Getting-Started_images/Getting-Started_img10.png) 
 
 Adding WebApi Controller
 {:.caption} 
@@ -183,7 +183,7 @@ namespace ReportViewerDemo.Api
 
 1. Right-click the project and select Add and select Global.asax file from the listed templates.
 
-   ![](Getting-Started_images/Getting-Started_img11.png) 
+   ![Getting-Started_images11](Getting-Started_images/Getting-Started_img11.png) 
    
    Adding Global.asax
    {:.caption} 
@@ -218,7 +218,7 @@ namespace ReportViewerDemo.Api
 
 Run the sample application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img12.png)  
+![Getting-Started_images12](Getting-Started_images/Getting-Started_img12.png)  
 
 ReportViewer with Sales Dashboard Report
 {:.caption}
@@ -250,7 +250,7 @@ ReportViewer supports to load RDL/RDLC files from SSRS Server. The following ste
    ~~~
 3. Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img13.png) 
+   ![Getting-Started_images13](Getting-Started_images/Getting-Started_img13.png) 
  
    Report from SSRS
    {:.caption}
@@ -314,7 +314,7 @@ The ReportViewer has data binding support to visualize the RDLC reports. The fol
 
 3. Run the application and you can see the ReportViewer on the page as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img14.png) 
+   ![Getting-Started_images14](Getting-Started_images/Getting-Started_img14.png) 
  
    Product List RDLC Report
    {:.caption}

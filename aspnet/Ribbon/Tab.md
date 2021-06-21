@@ -106,4 +106,4 @@ The manipulation of given text tab in the ribbon control can be done by using  [
 
 {% endhighlight %}
 
-![](Tab_images/Tab_img1.png)
+![Tab_images1](Tab_images/Tab_img1.png)

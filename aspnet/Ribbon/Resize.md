@@ -80,7 +80,7 @@ Set `IsResponsive` as true to enable resizing in Ribbon.If client width is above
 
 {% endhighlight %}
 
-![](Resize_images/Resize_img1.png)
+![Resize_images1](Resize_images/Resize_img1.png)
 
 ## Mobile Layout
 
@@ -129,7 +129,7 @@ Set `IsResponsive` as true to enable responsive mode in Ribbon.
 
 {% endhighlight %}
 
-![](Resize_images/responsive1.png)
+![Resize_images2](Resize_images/responsive1.png)
 {:caption}
 Ribbon Responsive with tab content 
 
@@ -185,7 +185,7 @@ N> To make the Ribbon control to react as responsive in mobile devices, it is ne
 
 {% endhighlight %}
 
-![](Resize_images/responsive2.png)
+![Resize_images3](Resize_images/responsive2.png)
 {:caption}
 Ribbon Responsive with MobileToolbar 
 
@@ -193,16 +193,16 @@ Ribbon Responsive with MobileToolbar
 
 The customized layout for  Quick Access Toolbar, backstage, gallery can be seen following screen shots.
  
- ![](Resize_images/responsive3.png)
+ ![Resize_images3](Resize_images/responsive3.png)
  {:caption}
 Ribbon Responsive with Quick Access Toolbar 
  
- ![](Resize_images/responsive4.png)
- ![](Resize_images/responsive5.png)
+ ![Resize_images4](Resize_images/responsive4.png)
+ ![Resize_images5](Resize_images/responsive5.png)
  {:caption}
 Ribbon Responsive with backstage
  
- ![](Resize_images/responsive6.png)
+ ![Resize_images6](Resize_images/responsive6.png)
  {:caption}
 Ribbon Responsive with gallery
 
@@ -357,4 +357,4 @@ For each group shirked for resizing, Custom Class will be added based on group t
 
 {% endtabs %}
 
-![](Resize_images/Resize_img2.png)
+![Resize_images2](Resize_images/Resize_img2.png)

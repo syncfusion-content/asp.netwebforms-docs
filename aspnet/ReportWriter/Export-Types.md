@@ -22,7 +22,7 @@ reportWriter.Save(Sample.pdf, WriterFormat.PDF);
 
 ~~~
 
-![](ASP_Images/RDLExportPdf.png) 
+![ASP_Images1](ASP_Images/RDLExportPdf.png) 
 
 ### Exporting Report as Word
 
@@ -35,7 +35,7 @@ reportWriter.Save(Sample.doc, WriterFormat.Word);
 
 ~~~
 
-![](ASP_Images/RDLExportWord.png) 
+![ASP_Images2](ASP_Images/RDLExportWord.png) 
 
 ### Exporting Report as Excel
 
@@ -48,7 +48,7 @@ reportWriter.Save(Sample.xls, WriterFormat.Excel);
 
 ~~~
 
-![](ASP_Images/RDLExportExcel.png) 
+![ASP_Images3](ASP_Images/RDLExportExcel.png) 
 
 ### Exporting Report as HTML
 
@@ -61,7 +61,7 @@ reportWriter.Save(Sample.html, WriterFormat.HTML);
 
 ~~~
 
-![](ASP_Images/RDLExportHtml.png) 
+![ASP_Images4](ASP_Images/RDLExportHtml.png) 
 
 ### Exporting Report as PPT
 
@@ -74,4 +74,4 @@ reportWriter.Save(Sample.ppt, WriterFormat.PPT);
 
 ~~~
 
-![](ASP_Images/RDLExportPPT.png) 
+![ASP_Images5](ASP_Images/RDLExportPPT.png) 

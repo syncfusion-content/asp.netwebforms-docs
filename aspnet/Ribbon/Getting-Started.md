@@ -38,7 +38,7 @@ Define the Application Tab with `Type` as `Menu` to render simple Ribbon control
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png)
 
 N> _Set the required `Width` to Ribbon, else default parent container or window width will be considered_
 
@@ -46,7 +46,7 @@ N> _Set the required `Width` to Ribbon, else default parent container or window 
 
 2. Drag and drop the Ribbon control in the Index.aspx page from the toolbox.
  
- ![](Getting-Started_images/Getting-Started_img2.png)
+ ![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.png)
  
   
 ## Adding Tabs
@@ -55,7 +55,7 @@ N> _Set the required `Width` to Ribbon, else default parent container or window 
  
  The following screenshot shows designer page of ApplicationTab.
  
- ![](Getting-Started_images/Getting-Started_img3.png)
+ ![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.png)
  
  
  {% highlight html %}
@@ -79,7 +79,7 @@ N> _Set the required `Width` to Ribbon, else default parent container or window 
 
 {% endhighlight %}
  
-![](Getting-Started_images/Getting-Started_img4.png)
+![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png)
 
 
 ## Configuring Groups
@@ -90,7 +90,7 @@ Create TabGroup item with `Text` specified and add ContentGroupCollection to Con
 
 The following screenshot shows designer page of TabGroupCollection
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Getting-Started_images5](Getting-Started_images/Getting-Started_img5.png)
 
 {% highlight html %}
 
@@ -126,7 +126,7 @@ The following screenshot shows designer page of TabGroupCollection
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Getting-Started_images6](Getting-Started_images/Getting-Started_img6.png)
 
 ## Adding Controls to Group
 
@@ -200,13 +200,13 @@ Syncfusion ASP.NET Controls can be added to group’s content with corresponding
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Getting-Started_images7](Getting-Started_images/Getting-Started_img7.png)
 
 ## User Interface
 
 Ribbon component able to integrate any custom components and customized their functionality in application end. Our Ribbon component is similar to Microsoft products(Word). The Ribbon UI consists of several sections like Application Tab, Quick Access Toolbar, Tab, Contextual Tab, Gallery and etc.The following screenshot shows the diagrammatic detail of Ribbon UI:
 
-![](Getting-Started_images/Ribbon.png)
+![Getting-Started_images8](Getting-Started_images/Ribbon.png)
 
 From above screenshot, you can see Ribbon has several subcomponents for different functionalities. The upcoming sections explains the brief details of each functionalities and their customizations.
 
