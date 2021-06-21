@@ -95,4 +95,4 @@ For further information on – how to refer the required culture scripts into yo
 
 {% endhighlight %}
 
-![](Localization_images/localization_img1.png)
+![Localization_images1](Localization_images/localization_img1.png)

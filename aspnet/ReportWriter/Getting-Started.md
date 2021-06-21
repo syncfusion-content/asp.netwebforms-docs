@@ -17,7 +17,7 @@ This section illustrates how to add ReportWriter to the ASP.NET application. It 
 
 Create a new ASP.NET Empty web application project by selecting the WEB category from the listed project template in Microsoft Visual Studio IDE.
 
-![](ASP_Images/Getting-Started_img1.png) 
+![Getting-Started_img1](ASP_Images/Getting-Started_img1.png) 
    
 ### Create ASPX Page
 
@@ -25,17 +25,17 @@ To create a new Web Forms in the application.
 
 1. Right-Click on the project and select Add.
  
-   ![](ASP_Images/Getting-Started_img2.png)
+   ![Getting-Started_img2](ASP_Images/Getting-Started_img2.png)
 
 2. Click New Item and select Web Form from the listed templates.
 
-   ![](ASP_Images/Getting-Started_img3.png)
+   ![Getting-Started_img3](ASP_Images/Getting-Started_img3.png)
 
 ### Add References   
 
 1. In the Solution Explorer, Right-click on the References folder and then click Add Reference.
 
-   ![](ASP_Images/Getting-Started_img4.png) 
+   ![Getting-Started_img4](ASP_Images/Getting-Started_img4.png) 
 
 2. Add the following assemblies and click OK.
  
@@ -198,11 +198,11 @@ Now you need to register the below mentioned two namespaces in the web.config fi
    
 4. Run the application. The following output displays ReportWriter export options, Select the export option and click on Generate button.
 
-   ![](ASP_Images/Getting-Started_img5.png) 
+   ![Getting-Started_img5](ASP_Images/Getting-Started_img5.png) 
    
 5. The following output displays exported report in PDF format.
 
-   ![](ASP_Images/Getting-Started_img6.png)
+   ![Getting-Started_img6](ASP_Images/Getting-Started_img6.png)
  
 ## Generate RDL Reports
 
