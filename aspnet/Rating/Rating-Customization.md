@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rating Customization | Rating | ASP.NET | Syncfusion
-description: Lear here about rating customization in Syncfusion Essential Studio ASP.NET Rating control, and more.
+description: Learn here about rating customization in Syncfusion Essential Studio ASP.NET Rating control, and more.
 platform: aspnet
 control: Rating
 documentation: ug
