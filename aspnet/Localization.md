@@ -16,7 +16,7 @@ If you need to make the Syncfusion components to follow a user-specified culture
 
 For example, you can see our Syncfusion DatePicker control localized in fr-FR culture as shown in the following:
 
-![](Core_images/Localization1.png)
+![Core_images1](Core_images/Localization1.png)
 
 To localize any of our Syncfusion components into a particular culture, it is necessary to refer to the following specified scripts in your application.
 
@@ -48,7 +48,7 @@ ii.	Applying the user-defined localized words collection.
 
 The date formats, day names, and month names are automatically translated into the specific culture based on the culture-code assigned to the locale property, as these date related common conversions are processed as built-in within the source. Here, the above code will render the DatePicker control in French culture, as shown in the following.
 
-![](Core_images/Localization2.png)
+![Core_images2](Core_images/Localization2.png)
 
 ### Steps for defining locale property in the DatePicker control (uses built-in localized texts)
 
@@ -101,7 +101,7 @@ N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\asset
 
 6.	Now build and run the application by pressing F5, you can see something similar to the following screenshot in your web browser where the DatePicker widget displays the localized texts.
 
-![](Core_images/Localization3.png)
+![Core_images3](Core_images/Localization3.png)
 
 ## Applying the user-defined localized words collection in Grid control
 
@@ -247,4 +247,4 @@ N> C:\Program Files (x86)\Syncfusion\Essential Studio\13.1.0.21\JavaScript\asset
 
 7.	Now build and run the application by pressing F5. You can see something similar to the following screenshot in your web browser where the Grid control displays the appropriate localized texts. Now double click on any of the row – the edit record dialog will pops-up with the localized words as shown in the following:
 
-![](Core_images/Localization4.png)
+![Core_images4](Core_images/Localization4.png)
