@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling | Rating | ASP.NET | Syncfusion
-description: appearance and styling
+description: Learn here about appearance and styling in Syncfusion Essential Studio ASP.NET Rating control, and more.
 platform: aspnet
 control: Rating
 documentation: ug
@@ -43,7 +43,7 @@ Add the following code example to the corresponding ASPX to render the Rating�
 
 The following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance-and-Styling_images1](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## Adjusting Rating Size
 
@@ -143,7 +143,7 @@ Add the following styles for Rating.
 
 The following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Appearance-and-Styling_images2](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ## Theme
 
@@ -207,4 +207,4 @@ Define the style for the Rating control.
 
 The following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![Appearance-and-Styling_images3](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
