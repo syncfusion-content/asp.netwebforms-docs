@@ -64,7 +64,7 @@ Such visual indications through keyboard navigation are very useful for the acce
 
 Each and every widget available within the Syncfusion Essential JavaScript suite has its unique behavior and responds appropriately to the keyboard actions. As an example, look onto the below 3 editors placed on the same page and how to navigate between them through keyboard.
 
- ![](Core_images/Accessibility1.png)
+ ![Core_images1](Core_images/Accessibility1.png)
 
 Initially, the focus is on the first editor (numeric textbox) that is indicated with the text selection and the border effect provided for the widget’s outline through CSS.
 Having the current focus on the numeric text box, now pressing the up arrow will increase the numeric value and down arrow will decrease the value. Pressing tab key will advance the focus to the next widget present in the page. Here the percentage textbox that is placed as second will get focused on pressing the tab key.

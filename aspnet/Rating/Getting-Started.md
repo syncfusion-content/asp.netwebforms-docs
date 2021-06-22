@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Rating | ASP.NET | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Rating Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Rating control, its elements, and more.
 platform: aspnet
 control: Rating
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Rating
 
 This section explains briefly how to create a Rating control in the ASP.NET MVC.
 
@@ -17,7 +17,7 @@ ASP.NET Rating helps you to select the number of stars that represent Rating. H
 
 The following screenshot demonstrates the functionality of a Rating control with a Rating range of 0 to 5.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.jpeg)
 
 In the above screenshot, you can rate the movie by selecting a corresponding movie.
 
@@ -230,7 +230,7 @@ Add the following styles to the corresponding view page to show the Rating in 
 
 Execute the above code to render the following output.
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 N> Add necessary images to the mentioned directory. &lt;project directory&gt;/Images/rating/yourimage.png
@@ -271,7 +271,7 @@ Add the following code example to the corresponding ASPX page to set MinValue
 
 Execute the above code to render the following output.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png)
 
 ### Set Precision
 
@@ -345,4 +345,4 @@ Add the following code example to the corresponding view page to set Precision t
 
 Execute the above code to render the following output.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Getting-Started_images5](Getting-Started_images/Getting-Started_img5.png)

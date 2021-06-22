@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rating Customization | Rating | ASP.NET | Syncfusion
-description: rating customization
+description: Learn here about rating customization in Syncfusion Essential Studio ASP.NET Rating control, and more.
 platform: aspnet
 control: Rating
 documentation: ug
@@ -44,7 +44,7 @@ In an ASPX page add the following code to render the Rating with the customiz
 
 The following screenshot displays the output of the above code example.
 
-![](Rating-Customization_images/Rating-Customization_img1.png) 
+![Rating-Customization_images1](Rating-Customization_images/Rating-Customization_img1.png) 
 
 
 ## Min Value
@@ -80,7 +80,7 @@ Add the following code example to the corresponding ASPX page to render the Rat
 
 The following screenshot displays the output of the above code example.
 
-![](Rating-Customization_images/Rating-Customization_img2.png)
+![Rating-Customization_images2](Rating-Customization_images/Rating-Customization_img2.png)
 
 
 ## Max Value
@@ -116,7 +116,7 @@ Add the following code example to the corresponding ASPX page to render the Ra
 
 The following screenshot displays the output of the above code example.
 
-![](Rating-Customization_images/Rating-Customization_img3.png)
+![Rating-Customization_images3](Rating-Customization_images/Rating-Customization_img3.png)
 
 ## Set Precision
 
@@ -179,7 +179,7 @@ Add the following code example to the corresponding ASPX page to render the Ra
 
 The following screenshot displays the output of the above code example.
 
-![](Rating-Customization_images/Rating-Customization_img4.png)
+![Rating-Customization_images4](Rating-Customization_images/Rating-Customization_img4.png)
 
 ## Increment Step
 
@@ -214,7 +214,7 @@ Add the following code example to the corresponding ASPX page to render the Ra
 
 The following screenshot displays the output of the above code example.
 
-![](Rating-Customization_images/Rating-Customization_img5.png)
+![Rating-Customization_images5](Rating-Customization_images/Rating-Customization_img5.png)
 
 ## Resetting values
 
@@ -263,7 +263,7 @@ Add the following code example to the corresponding ASPX page to render the Ra
 
 The following screenshot displays the output of the above code example.
 
-![](Rating-Customization_images/Rating-Customization_img6.png)
+![Rating-Customization_images6](Rating-Customization_images/Rating-Customization_img6.png)
 
 ## Read Only
 
@@ -299,7 +299,7 @@ Add the following code example to the corresponding ASPX page to render Ratin
 
 The following screenshot displays the output of the above code example.
 
-![](Rating-Customization_images/Rating-Customization_img7.png)
+![Rating-Customization_images7](Rating-Customization_images/Rating-Customization_img7.png)
 
 ## Enable or Disable
 
@@ -334,4 +334,4 @@ Add the following code example to the corresponding ASPX page to render the Ra
 
 The following screenshot displays the output of the above code example.
 
-![](Rating-Customization_images/Rating-Customization_img8.png)
+![Rating-Customization_images8](Rating-Customization_images/Rating-Customization_img8.png)
