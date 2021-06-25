@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Text Markup Annotation
+# Text Markup Annotation in ASP.NET Web Forms PDF Viewer
 
 The PDF viewer control supports adding text markup annotations in the PDF documents. The control also renders the existing text markup annotations from the PDF document when the document is loaded in it.
 
