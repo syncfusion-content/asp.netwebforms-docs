@@ -69,7 +69,7 @@ Use the following steps to create the **Syncfusion ASP.NET (Essential JS 1) Appl
 
    ![Syncfusion Essential ASP.NET Web Feature selection](Create-Project_images/Syncfusion-Project-Templates-img9.png)
 
-   ![Syncfusion Essential ASP.NET Web Feature selection](Create-Project_images/Syncfusion-Project-Templates-img14.png)
+   ![Syncfusion Essential ASP.NET Web Feature selection](Create-Project_images/Syncfusion-Project-Templates-img14.PNG)
 
 5.The required Syncfusion Assembly references, Scripts, and CSS and required Web.config entries have been added to the project.
 
