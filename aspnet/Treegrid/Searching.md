@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Searching | TreeGrid | ASP.NET | Syncfusion
-description: Searching
+title: Searching in ASP.NET TreeGrid control | Syncfusion
+description: Learn here all about the searching feature of Syncfusion ASP.NET Web Forms TreeGrid control and more.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-## Searching
+# Searching in ASP.NET Web Forms TreeGrid
 
 The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the `ToolbarSettings.ToolbarItems` property. The following code example explains how to integrate search textbox in toolbar.
 

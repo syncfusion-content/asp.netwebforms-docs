@@ -119,4 +119,4 @@ Copy the required file globalize.culture.fr-FR.min.js into the Scripts folder of
 
 {% endhighlight %}
 
-![](Core_images/Globalization1.png)
+![Core_images1](Core_images/Globalization1.png)
