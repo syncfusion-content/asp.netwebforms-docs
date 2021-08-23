@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ASP.NET
-description: Overview of Syncfusion Essential ASP.NET
+title: About Essential ASP.NET Web Forms Control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential ASP.NET Web Forms control, its features, and more.
 platform: aspnet
 control: Introduction
 documentation: ug
 
 ---
-# Overview
+# Essential ASP.NET Web Forms Overview
 
 Essential Studio for ASP.NET is a set of server-side wrappers for Essential JavaScript controls that enables you to create Essential Studio’s HTML5 JavaScript controls through ASP.NET Designer and/or Code Behind file. It includes rich designer support, server-side events, and better ViewState handling for all server-side wrappers.
 
