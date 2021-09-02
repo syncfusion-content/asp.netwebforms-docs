@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Drag and Drop | ListBox | ASP.NET Webforms | Syncfusion
-description: drag and drop
+description: Learn here all about drag and drop in Syncfusion ASP.NET Webforms ListBox Control, its elements, and more.
 platform: aspnet
 control: ListBox
 documentation: ug
 ---
 
-# Drag and Drop
+# Drag and Drop in ASP.NET Webforms ListBox
 
 A list item can be moved from a widget to another ListBox widget. Also the order of list items can be changed. This can be achieved using the drag and drop support.
 
@@ -116,9 +116,9 @@ public partial class AllowDrag : System.Web.UI.Page
 N> In the above example we have restricted “listbox1” as draggable element and the “listbox2” as droppable element. In this case we can’t drag an item from “listbox2” to “listbox1”. If we want to achieve two way drag and drop, we need to enable both AllowDrag and AllowDrop properties in both ListBox widgets configuration.
 
 
- ![](Drag-and-Drop_images/Drag-and-Drop_img1.png)
+ ![Drag-and-Drop_images1](Drag-and-Drop_images/Drag-and-Drop_img1.png)
  
- ![](Drag-and-Drop_images/Drag-and-Drop_img2.png)
+ ![Drag-and-Drop_images2](Drag-and-Drop_images/Drag-and-Drop_img2.png)
 
 ## Dynamically set data source on drag and drop
 
@@ -214,9 +214,9 @@ Item reordering can be done within a ListBox widget by enabling both “AllowDra
 {% endhighlight %}
 
 
-![](Drag-and-Drop_images/Drag-and-Drop_img3.png)
+![Drag-and-Drop_images3](Drag-and-Drop_images/Drag-and-Drop_img3.png)
 
-![](Drag-and-Drop_images/Drag-and-Drop_img4.png)
+![Drag-and-Drop_images4](Drag-and-Drop_images/Drag-and-Drop_img4.png)
 
 
 N> The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](http://help.syncfusion.com/js/api/ejlistbox)” and “[moveDown](http://help.syncfusion.com/js/api/ejlistbox)”.
