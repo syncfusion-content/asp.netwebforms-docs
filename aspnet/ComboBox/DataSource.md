@@ -1,14 +1,14 @@
 ---
 layout: post
 title: DataSource with ComboBox widget for Syncfusion ASP.NET WebForm
-description: Describes about data source functionalities in ComboBox control for Syncfusion ASP.NET WebForm
+description: Describes about data source functionalities in ComboBox control for Syncfusion ASP.NET WebForm, its elements, and more.
 platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, ComboBox, data binding, SQL, LINQ, Xml, Entity, Access
 ---
 
-# Data Source
+# Data Source in ASP.NET WebForm ComboBox
 
 ASP.NET includes data source controls that allow you to work with different types of data sources such as a database, an XML file, or a middle-tier business object. Data source controls connect to and retrieve data from a data source and make it available for other controls (ComboBox, Grid, Schedule) to bind to, without requiring code. They can also support modifying data.
 
@@ -59,7 +59,7 @@ N> Change the username with your system name in the following connection string.
 
 Output of the above steps.
 
-![](DataSource_images/DataSource_image1.png)
+![DataSource_images1](DataSource_images/DataSource_image1.png)
 
 ## LinqDataSource
 
@@ -103,7 +103,7 @@ N> Change the username with your system name in the following connection string.
 
 Output of the above steps
 
-![](DataSource_images/DataSource_image2.png)
+![DataSource_images2](DataSource_images/DataSource_image2.png)
 
 ## ObjectDataSource
 

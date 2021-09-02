@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | TimePicker | ASP.NET | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion ASP.NET Web Forms TimePicker Control, its elements, and more.
 platform: aspnet
 control: TimePicker
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Web Forms TimePicker
 
 This section explains briefly how to create a TimePicker in your application with ASP.NET.
 
@@ -17,7 +17,7 @@ The Essential ASP.NET TimePicker provides support to display a TimePicker in you
 
 The following screenshot illustrates the functionality of a TimePicker with a time range of morning to evening. You can select a time to book a table, from a period of 9.00 AM to 6.00 PM for the current day. This avoids selecting a time prior to the morning.
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png) 
 
 ### Create a TimePicker 
 
@@ -100,7 +100,7 @@ Add the following styles to show the TimePicker control.
 The following screenshot displays the TimePicker control.
 
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.png) 
 
 
 ### Set the Min and Max Values
@@ -123,7 +123,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The above code example displays the following output.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
@@ -143,7 +143,7 @@ The following code example shows how to set Time interval.
 
 Run the above code to achieve the desired result. You can select the date and time in the TimePicker within the given range of one hour interval. This scenario is illustrated in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img4.png) 
+![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png) 
 
 
 
@@ -168,7 +168,7 @@ The following code example shows how to display the acknowledgment message.
 
 The following screenshot displays the acknowledgment message.
 
-![](Getting-Started_images/Getting-Started_img5.png) 
+![Getting-Started_images5](Getting-Started_images/Getting-Started_img5.png) 
 
 ### Create Two TimePickers
 
@@ -270,7 +270,7 @@ Display the acknowledge message by using following script.
 
 Run the above code to achieve the desired result. By selecting the Start Time in the first TimePicker, you can select the End Time within the given range. This restricts you from selecting false time. This scenario is illustrated in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img6.png) 
+![Getting-Started_images6](Getting-Started_images/Getting-Started_img6.png) 
 
 You can also add additional functionalities such as localization and time formats to the TimePicker. 
 

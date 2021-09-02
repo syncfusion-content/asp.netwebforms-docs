@@ -94,7 +94,7 @@ I> When VirtualScrolling enabled with searching, then filter will be applied onl
 
 ## Server Filtering
 
-Server filtering for displaying only a fixed amount of dataset from the whole dataset. In general, DropDownList displays just the data returned from the server. This feature is convenient for you to apply when the user does not want to see the whole dataset in the popup wrapper.
+Server filtering for displaying only a fixed amount of dataset from the whole dataset. In general, [DropDownList](https://www.syncfusion.com/jquery/aspnet-web-forms-ui-controls/dropdown-list) displays just the data returned from the server. This feature is convenient for you to apply when the user does not want to see the whole dataset in the popup wrapper.
 EnableServerFiltering If set to true, the filtering operations performed in the remote service and returns the result.
 
 {% highlight html %}
