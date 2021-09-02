@@ -1,11 +1,11 @@
 ---
-title: Getting Started | SpreadSheet | ASP.NET Webforms | Syncfusion
-description: How to create a Spreadsheet with data source, apply format and export it as excel file.
+title: Getting Started with ASP.NET Webforms SpreadSheet Control | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Webforms SpreadSheet Control, its elements, and more.
 platform: aspnet
 control: Spreadsheet
 documentation: ug
 ---
-# Getting started
+# Getting started with ASP.NET Webforms SpreadSheet
 
 This section explains you the steps required to populate the Spreadsheet with data, format, and export it as excel file. This section covers only the minimal features that you need to know to get started with the Spreadsheet.
 
@@ -15,7 +15,7 @@ This section explains you the steps required to populate the Spreadsheet with da
 
 2. Drag and drop the SpreadSheet control in the Index.aspx page from the toolbox.
  
- ![](Getting-Started_images/Getting-Started_img4.png)
+ ![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png)
 
 
 The Spreadsheet is rendered based on default `Width` and `Height`. You can also customize the Spreadsheet dimension by setting the `Width` and `Height` property in `ScrollSettings`.
@@ -30,7 +30,7 @@ The Spreadsheet is rendered based on default `Width` and `Height`. You can also 
 
 Now, the Spreadsheet is rendered with default row and column count.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png)
 
 ## Populate Spreadsheet with data
 
@@ -111,7 +111,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.png)
 
 N> For more details about `data binding` refer following [`link`](http://help.syncfusion.com/aspnet/spreadsheet/data-binding "link")
 
@@ -135,7 +135,7 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.png)
 
 N> For more details about `Conditional Formatting` refer following [`link`](http://help.syncfusion.com/js/spreadsheet/data-presentation#conditional-formatting "link")
 

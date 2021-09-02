@@ -1,14 +1,14 @@
 ---
 layout: post
 title: CheckBox with DropDownList widget for Syncfusion ASP.NET WebForm
-description: Describes about Checkbox functionalities in DropDownList control for Syncfusion ASP.NET WebForm
+description: Describes about Checkbox functionalities in DropDownList control for Syncfusion ASP.NET WebForm, its elements, and more.
 platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: Checkbox, dropdown, Selection Modes, Visual Mode, Delimiter
 ---
 
-# Checkbox
+# Checkbox in ASP.NET WebForm DropDownList
 
 DropDownList displays checkboxes to the left of each item when you set <b>ShowCheckbox</b> property to true. It allows you to select more than one item at a time from DropDownList. Popup list stays open until the user finishes selection. When you click on an item’s text or checkbox then the checkbox checked status get change.
 
@@ -26,7 +26,7 @@ DropDownList displays checkboxes to the left of each item when you set <b>ShowCh
 
 {% endhighlight %}
 
-![ ](Checkbox_images/Checkbox_img1.jpeg)
+![Checkbox_images1](Checkbox_images/Checkbox_img1.jpeg)
 
 N> if you want to showcase the DropDownList with default checked items on data binding, specify Selected field with Boolean values.
 
@@ -59,7 +59,7 @@ N> if you want to showcase the DropDownList with default checked items on data b
     
 {% endtabs %}
 
-![ ](Checkbox_images/Checkbox_img2.jpeg)
+![Checkbox_images2](Checkbox_images/Checkbox_img2.jpeg)
 
 ## Selection Modes
 
@@ -88,7 +88,7 @@ Each checked item’s text is appended to the textbox with delimiter “,” by 
     
 {% endhighlight %}
     
-![ ](Checkbox_images/Checkbox_img3.jpeg)
+![Checkbox_images3](Checkbox_images/Checkbox_img3.jpeg)
 
 ### Visual Mode
 
@@ -108,4 +108,4 @@ When you enable this option in DropDownList control, each checked item’s text 
     
 {% endhighlight %}
 
-![ ](Checkbox_images/Checkbox_img4.jpeg)
+![Checkbox_images4](Checkbox_images/Checkbox_img4.jpeg)

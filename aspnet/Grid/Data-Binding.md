@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Binding | Grid | ASP.NET Webforms | Syncfusion
-description: data binding
+description: Learn here all about data binding support in Syncfusion ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in ASP.NET Webforms Grid
 
 The `DataSource` Grid property allows to bind datasource as the instance of one of the following types.
 

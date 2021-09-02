@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Exporting | Grid | ASP.NET Webforms | Syncfusion
-description: exporting
+description: Learn here all about exporting support in Syncfusion ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Exporting
+# Exporting in ASP.NET Webforms Grid
 
 Exporting feature provides support to export Grid data into excel, word and PDF files. The tool bar has ExcelExport, WordExport, PdfExport icons that are used to perform exporting. When you click the toolbar exporting icon, it internally invokes the export() public method of Grid object to make export. You can also invoke export() method manually to make export.
 
@@ -196,7 +196,7 @@ public partial class ExcelExporting : System.Web.UI.Page
 
 {% endtabs %}
 
-![](Exporting_images/Exporting_img1.png)
+![Exporting_images1](Exporting_images/Exporting_img1.png)
 
 ##  Multiple exporting
 

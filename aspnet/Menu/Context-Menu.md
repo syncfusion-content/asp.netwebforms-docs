@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Context Menu | Menu | ASP.NET Webforms | Syncfusion
-description: context menu
+description: Learn here all about context menu support in Syncfusion ASP.NET Webforms Menu Control, its elements, and more.
 platform: aspnet
 control: Menu
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu support in ASP.NET Webforms Menu
 
 A context menu is a type of menu in a graphical user interface (GUI) that appears when you perform right click operation. In this menu control you can use a context menu by specifying the type of menu as ContextMenu. A context also provides the supports for nested level of menu items.
 
@@ -135,7 +135,7 @@ Add the following code example in your style section
 
 The following screenshot displays the output of the above code example.
 
-![](Context-Menu_images/Context-Menu_img1.png) 
+![Context-Menu_images1](Context-Menu_images/Context-Menu_img1.png) 
 
 
 
@@ -559,7 +559,7 @@ Add the following code example in ASPX section.
 
 The following screenshot displays the output of the above code example.
 
-![](Context-Menu_images/Context-Menu_img2.png) 
+![Context-Menu_images2](Context-Menu_images/Context-Menu_img2.png) 
 
 
 
@@ -695,7 +695,7 @@ The following screenshot displays the output for the above code example.
 
 
 
-![](Context-Menu_images/Context-Menu_img3.png) 
+![Context-Menu_images3](Context-Menu_images/Context-Menu_img3.png) 
 
 
 
@@ -829,7 +829,7 @@ Add the following code example in the ASPX page.
 
 The following screenshot displays the output for the above code example.
 
-![](Context-Menu_images/Context-Menu_img4.png) 
+![Context-Menu_images4](Context-Menu_images/Context-Menu_img4.png) 
 
 
 
@@ -957,7 +957,7 @@ Add the following code example in the ASPX page to display the Menu control with
 
 The following screenshot displays the output for the above code example. 
 
-![](Context-Menu_images/Context-Menu_img5.png)
+![Context-Menu_images5](Context-Menu_images/Context-Menu_img5.png)
 
 
 

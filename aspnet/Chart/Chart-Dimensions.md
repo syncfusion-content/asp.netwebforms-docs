@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart Dimensions | Chart | ASP.NET Webforms | Syncfusion
-description: chart dimensions
+description: Learn here all about chart dimensions in Syncfusion ASP.NET Webforms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# Chart Dimensions
+# Chart Dimensions in ASP.NET Webforms Chart
 
 You can set the size of the chart directly on the chart or to the container of the chart. When you do not specify the size, it takes 450px as the height and window size as its width, by default. 
 
@@ -36,7 +36,7 @@ You can also set the chart dimension by using the **Size** property of the chart
 
 {% endhighlight %}
 
-![](Chart-Dimensions_images/Chart-Dimensions_img1.png)
+![Chart-Dimensions_images1](Chart-Dimensions_images/Chart-Dimensions_img1.png)
 
 
 ## Setting size relative to the container size
@@ -54,7 +54,7 @@ You can specify the chart size in percentage by using the Size property. The cha
 
 {% endhighlight %}
 
-![](Chart-Dimensions_images/Chart-Dimensions_img2.png)
+![Chart-Dimensions_images2](Chart-Dimensions_images/Chart-Dimensions_img2.png)
 
 
 ## Responsive chart

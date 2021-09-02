@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Appearance and Styling | Button | ASP.NET Webforms | Syncfusion
-description: appearance and styling 
+description: Learn here about appearance and styling in Syncfusion ASP.NET Webforms Button Control, its elements, and more.
 platform: aspnet
 control: Button
 documentation: ug
 ---
 
-# Appearance and Styling 
-
-## Theme support
+# Appearance and Styling in ASP.NET Webforms Button
 
 You can control the style and appearance of Button control based on CSS classes. In order to apply styles to the Button control, you can refer two files namely, ej.widgets.core.min.css and ej.theme.min.css. When you refer the ej.widgets.all.min.css file, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project as ej.widgets.all.min.css is the combination of these two. 
 
@@ -152,6 +150,6 @@ Configure the CSS styles to apply on buttons.
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance-and-Styling_images1](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
