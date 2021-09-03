@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Grid | ASP.NET Webforms | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Webforms Grid Control | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms Grid
 
 This section explains briefly about how to create a Grid in your application with ASP.NET.
 
@@ -17,18 +17,18 @@ You can create a Grid with a highly customizable look and feel. You can use th
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png)
 
 
 
 1. Create a Syncfusion ASP.NET Web Forms application.
 2. Add a Grid in the Index.aspx page. 
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.png)
 
 3. Configure the Grid control with SQL data source using smart tag.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.png)
 
 
    ~~~ html
@@ -51,7 +51,7 @@ You can create a Grid with a highly customizable look and feel. You can use th
 
 4. By Columns definition, the TextAlign property allows you to align the text of the columns. The Width property is used to define the width of the columns and the Format property allows you to format the particular column’s value.
 
-   ![](Getting-Started_images/Getting-Started_img5.png) 
+   ![Getting-Started_images5](Getting-Started_images/Getting-Started_img5.png) 
 
    ~~~ html
 
@@ -71,7 +71,7 @@ The following screenshot displays a Grid with the sales data.
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png) 
+![Getting-Started_images6](Getting-Started_images/Getting-Started_img6.png) 
 
 
 
@@ -99,7 +99,7 @@ The following screenshot displays a Grid with paging.
 
 
 
-![](Getting-Started_images/Getting-Started_img7.jpeg)
+![Getting-Started_images7](Getting-Started_images/Getting-Started_img7.jpeg)
 
 
 
@@ -129,7 +129,7 @@ To enable filtering, use the AllowFiltering property of Grid as follows.
 The following screenshot shows Grid with filtering option.
 
 
-![](Getting-Started_images/Getting-Started_img8.jpeg)
+![Getting-Started_images8](Getting-Started_images/Getting-Started_img8.jpeg)
 
 
 
@@ -141,7 +141,7 @@ To enable grouping, use the AllowGrouping property of Grid as follows.
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png) 
+![Getting-Started_images9](Getting-Started_images/Getting-Started_img9.png) 
 
 
 
@@ -168,7 +168,7 @@ To enable grouping, use the AllowGrouping property of Grid as follows.
 The following screenshot shows the analysis of shipment details by grouping ShipName.
 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![Getting-Started_images10](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -180,7 +180,7 @@ The following code example shows how you can enable ShowSummary.
 
 
 
-![](Getting-Started_images/Getting-Started_img11.png)
+![Getting-Started_images11](Getting-Started_images/Getting-Started_img11.png)
 
 
 {% highlight html %}
@@ -209,4 +209,4 @@ The following code example shows how you can enable ShowSummary.
 
 The following screenshot shows the group summary.
 
-![](Getting-Started_images/Getting-Started_img12.png) 
+![Getting-Started_images12](Getting-Started_images/Getting-Started_img12.png) 

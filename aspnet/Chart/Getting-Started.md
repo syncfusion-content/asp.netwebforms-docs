@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Chart  | ASP.NET Webforms | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Webforms Chart Control | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms Chart
 
 This section explains you on how to create a simple Chart in your application with ASP.NET and covers only the minimal features that you need to know to get started with the Chart.
 
@@ -27,11 +27,11 @@ Follow the steps given below to deploy the application in the development server
 * Web.config file should be configured according to the referenced assemblies. 
 * To deploy your application, you have to ensure that the above referenced assemblies (in your web.config files) are present in the GAC.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png)
 
 And, add the Syncfusion namespace in the Web.config file.
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.png) 
 
 N> If you are referring Syncfusion assemblies manually from bin folder to create ASP Chart, then remove Culture, Version and PublicKeyToken attributes used in all, and nodes.
 
@@ -40,7 +40,7 @@ N> If you are referring Syncfusion assemblies manually from bin folder to create
 
 By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jQuery and Syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jQuery and Syncfusion script files.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.png) 
 
 {% highlight html %}
 
@@ -69,7 +69,7 @@ Add the following code in the default.aspx file to create the Chart control in V
 
 Now, the Chart is rendered with some auto-generated random values and with default Column chart type.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png)
 
 
 Initialize the chart by using the ejChart method. The chart is rendered to the size of its container, by default. You can also customize the chart dimension either by setting the width and height of the container element as in the above code example or by using the **Size** option of the Chart. Refer to the [`Chart Dimensions`](chart-dimensions.html) to know more about setting the size of the chart.
@@ -145,7 +145,7 @@ Next, map the Month and Sales values in the data source to the Line series by se
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Getting-Started_images5](Getting-Started_images/Getting-Started_img5.png)
 
 
 Since the data is related to Sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the “${value}K” to the **LabelFormat** option of the axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
@@ -163,7 +163,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Getting-Started_images6](Getting-Started_images/Getting-Started_img6.png)
 
 
 Refer [`Axis`]() section to know more about axis types, adding multiple axes and other customization options.
@@ -189,7 +189,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Getting-Started_images7](Getting-Started_images/Getting-Started_img7.png)
 
 
 There are situations where the default label content is not sufficient to the user. In this case, you can use the **Template** option to format the label content with some additional information.
@@ -227,7 +227,7 @@ The following code example shows how to set the id of the above template to Temp
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![Getting-Started_images8](Getting-Started_images/Getting-Started_img8.png)
 
 
 Refer to the [`Data Markers`](Data-Markers.html) section to know more about the options available to customize it.
@@ -248,7 +248,7 @@ You can enable or disable the legend by using the Visible option in the **Legend
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![Getting-Started_images9](Getting-Started_images/Getting-Started_img9.png)
 
 
 Refer to the [`Legend`](Legend.html) section to know more about how to position legend and customize its appearance.
@@ -271,7 +271,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![Getting-Started_images10](Getting-Started_images/Getting-Started_img10.png)
 
 
 Refer to the [`Tooltip`](user-interactions.html) section to know more about formatting tooltip contents and customizing its appearance.
@@ -288,7 +288,7 @@ You need to add a title to the chart to provide quick information to the user ab
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img11.png)
+![Getting-Started_images11](Getting-Started_images/Getting-Started_img11.png)
 
 
 Refer to the [`Chart Title`](chart-title.html) section to know more about aligning Title, customizing its appearance and adding SubTitle to the chart.
