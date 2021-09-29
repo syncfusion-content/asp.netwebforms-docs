@@ -9,15 +9,15 @@ documentation: ug
 
 # Toolbox Configuration
 
-The Syncfusion Toolbox Installer utility adds the Syncfusion ASP.NET Web Forms controls into the Visual Studio .NET toolbox.
+The Syncfusion Toolbox Installer utility incorporates the Syncfusion ASP.NET Web Forms components into the Visual Studio.NET toolbox.
 
-N> Toolbox configuration support is not available for the Visual Studio Express Edition. However, you can manually configure the Syncfusion controls into the Visual Studio Express Toolbox. To do so, refer the [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
+N> Toolbox configuration support is not available in the Visual Studio Express Edition. However, you can manually configure the Syncfusion components in the Visual Studio Express Toolbox. To do so, see [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
 
-Syncfusion controls will be automatically configured in the Visual Studio toolbox, while installing the Syncfusion ASP.NET Web Forms installer, if the <b>“Configure Syncfusion Controls in Visual Studio”</b> checkbox is selected from installer UI.
+If the <b>“Configure Syncfusion components in Visual Studio”</b> checkbox is selected from the installer UI while installing the Syncfusion ASP.NET Web Forms installer, Syncfusion components will be automatically configured in the Visual Studio toolbox.
 
-Use the following steps to adds the Syncfusion ASP.NET Web Forms controls through the Syncfusion Toolbox Installer:
+To add the Syncfusion ASP.NET Web Forms components via the Syncfusion Toolbox Installer, perform the following steps:
 
-1. To launch Toolbox configuration utility, follow either one of the options below:
+1. To launch the Toolbox configuration utility, select one of the following options:
 
    **Option 1:**   
    Open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
@@ -29,7 +29,7 @@ Use the following steps to adds the Syncfusion ASP.NET Web Forms controls throug
 
    ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
+   N> From Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
 2. Toolbox Installer will be opened.
 
@@ -44,14 +44,15 @@ Use the following steps to adds the Syncfusion ASP.NET Web Forms controls throug
    * Install VS2013 – Configures Framework 4.5.1 Syncfusion controls in VS 2013 toolbox.
    * Install VS2015 – Configures Framework 4.6 Syncfusion controls in VS 2015 toolbox.
    * Install VS2017 – Configures Framework 4.6 Syncfusion controls in VS 2017 toolbox.
-   * Install VS2019 – Configures Framework 4.6 Syncfusion controls in VS 2019 toolbox
+   * Install VS2019 – Configures Framework 4.6 Syncfusion controls in VS 2019 toolbox.
+   * Install VS2022 – Configures Framework 4.6 Syncfusion components in VS 2022 toolbox.
    
-    N> You can also configure Syncfusion controls from a lower version Framework assembly to higher version of Visual Studio.
+    N> You can also configure Syncfusion components from a lower version Framework assembly to higher version of Visual Studio.
    
-3. An Information message is displayed indicating the successful configuration of Toolbox. Click OK.
+3. An Information message is displayed, indicating that Toolbox has been successfully configured. Click OK.
 
    ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img3.png)
    
    
-   N> * You must reset the toolbox, when the installed controls are not reflected properly in the Toolbox. * This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}.
+   N> * You must reset the toolbox, when the installed components  are not reflected properly in the Toolbox. * This tool configures only the components  that are located under {Installed Location}\Assemblies\{Framework version}.
    
