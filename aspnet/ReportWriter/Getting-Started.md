@@ -50,7 +50,7 @@ To create a new Web Forms in the application.
    * Syncfusion.Shared.Wpf
    * Syncfusion.XlsIO.Base  
  
-   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\{{ site.releaseversion }}\Assemblies
+   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\19.1.0.63\Assemblies
  
 ### Registering Assemblies within the Web.config file  
 
