@@ -21,7 +21,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 
-![ASP.NET Gantt Getting -Started img1](Getting-Started_images/Getting-Started_img1.png) 
+![ASP.NET Gantt -Getting -Started img1](Getting-Started_images/Getting-Started_img1.png) 
 
 Elements of a Gantt chart
 {:.caption}
