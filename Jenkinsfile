@@ -17,7 +17,7 @@ String platform='ASP.NET';
            {
 		     checkout scm
 			 
-			 def branchCommit = '"' + 'https://api.gitlab.com/repos/syncfusion-content/asp.netwebforms-docs/pulls/' + env.pullRequestId + '/files'
+			 def branchCommit = '"' + 'https://api.github.com/repos/syncfusion-content/asp.netwebforms-docs/pulls/' + env.pullRequestId + '/files'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
             def ChangeFiles= branchCommitDetails.split('"filename": ');
@@ -38,7 +38,7 @@ String platform='ASP.NET';
 		    }
 			 
 		   //Checkout the ug_spellchecker from development Source
-	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.githubCredentialId, url: 'https://gitlab.com/syncfusion-content/ug_spellchecker.git']]])
+	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.githubCredentialId, url: 'https://github.com/syncfusion-content/ug_spellchecker.git']]])
 		 
 	  }
 	  
