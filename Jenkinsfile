@@ -17,7 +17,7 @@ String platform='ASP.NET';
            {
 		     checkout scm
 			 
-			 def branchCommit = '"' + 'https://api.gitlab.com/repos/syncfusion-content/asp.netwebforms-docs/pulls/' + env.pullRequestId + '/files'
+			 def branchCommit = '"' + 'https://api.github.com/repos/syncfusion-content/asp.netwebforms-docs/pulls/' + env.pullRequestId + '/files'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
             def ChangeFiles= branchCommitDetails.split('"filename": ');
