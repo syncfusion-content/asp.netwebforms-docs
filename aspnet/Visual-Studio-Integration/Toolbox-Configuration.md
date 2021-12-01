@@ -56,3 +56,7 @@ To add the Syncfusion ASP.NET Web Forms components via the Syncfusion Toolbox In
    
    N> * You must reset the toolbox, when the installed components  are not reflected properly in the Toolbox. * This tool configures only the components  that are located under {Installed Location}\Assemblies\{Framework version}.
    
+## Configuring toolbox in Visual Studio 2022   
+
+From 2021 Volume 3, Syncfusion started providing toolbox support for .NET framework in Visual Studio 2022 Toolbox. After installing the Syncfusion ASP.NET WebForms installer, Syncfusion controls will be automatically configured in the Visual Studio 2022 toolbox for ASP.NET WebForms projects.
+   
