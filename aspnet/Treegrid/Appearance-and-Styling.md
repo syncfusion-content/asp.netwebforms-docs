@@ -47,7 +47,7 @@ You can apply the theme (Gradient lime) to the TreeGrid control by using the s
 
 The following screenshot shows the TreeGrid control with Gradient-lime theme.
 
-![ASP.NET Treegrid Appearence and styling img1](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![ASP.NET Treegrid Appearence and styling](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## Configuring CSS class
 
@@ -76,9 +76,9 @@ The following code example shows how to apply different background color for eac
 
 The below screenshot shows the output of above code example.
 
-![ASP.NET Treegrid Appearence and styling img2](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![ASP.NET Treegrid Configuring CSS Class](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
-![ASP.NET Treegrid Appearence and styling img3](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![ASP.NET Treegrid Configuring CSS Class](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 ## Customize rows and cells
 
@@ -112,4 +112,4 @@ function rowDataBound(args) {
 
 The below screenshot shows the output of above code example.
 
-![ASP.NET Treegrid Appearence and styling img4](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![ASP.NET Treegrid Customize rows and cells](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)

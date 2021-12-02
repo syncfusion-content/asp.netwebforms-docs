@@ -61,6 +61,6 @@ In the ASPX page, add the following button elements to configure Button with var
 
 
 
-![ASP.NET Button Type img1](Button-Type_images/Button-Type_img1.png)
+![ASP.NET Button Type](Button-Type_images/Button-Type_img1.png)
 
 
