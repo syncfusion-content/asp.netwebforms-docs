@@ -91,13 +91,13 @@ Add the following code example in your ASPX page.
 
 The following screenshot displays the output for the above code example.  
 
-![ASP.NET Menu Navigation img1](Navigation_images/Navigation_img1.png) 
+![ASP.NET Menu Navigation displaying the output code](Navigation_images/Navigation_img1.png) 
 
 
 
 When you click on “Google” that is present under “Search engine”, it navigates to the link that you have specified in the code example. Then the output is as follows.
 
-![ASP.NET Menu Navigation img2](Navigation_images/Navigation_img2.png) 
+![ASP.NET Menu Navigation to the specified code](Navigation_images/Navigation_img2.png) 
 
 
 
