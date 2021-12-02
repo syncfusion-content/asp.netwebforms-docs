@@ -76,7 +76,7 @@ The following code example shows how to apply different background color for eac
 
 The below screenshot shows the output of above code example.
 
-![ASP.NET Treegrid Getting Started img2](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![ASP.NET Treegrid Appearence and styling img2](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ![ASP.NET Treegrid Appearence and styling img3](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
