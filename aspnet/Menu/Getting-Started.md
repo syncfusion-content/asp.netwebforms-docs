@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | Menu | ASP.NET Webforms | Syncfusion
-description: Learn here all about getting started with Syncfusion ASP.NET Web Forms Menu control, its elements and more.
+description:Learn here all about getting started with Syncfusion ASP.NET Web Forms Menu control, its elements and more.
 platform: aspnet
 control: Menu
 documentation: ug
