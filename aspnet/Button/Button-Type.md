@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Button Type | Button | ASP.NET Webforms | Syncfusion
-description: button type
+description:Learn here all about Button Type support in Syncfusion ASP.NET Web Forms Button control, its elements and more.
 platform: aspnet
 control: Button
 documentation: ug
 ---
 
-# Button Type
+# Button Type in ASP.NET Button
 
 Button is used as normal click button, submitting form data, resetting the form data to its initial value. According to the usage of button, you can render the button in three types. By using the Type property, you can easily render the button in following types.
 

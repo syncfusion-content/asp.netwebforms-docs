@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling | TreeGrid | ASP.NET | Syncfusion
-description: appearance and styling
+description:Learn here all about Appearance and Styling support in syncfusion ASP.NET Web Forms TreeGrid control,its elements and more
 platform: aspnet
 control: TreeGrid
 documentation: ug

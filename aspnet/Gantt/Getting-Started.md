@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | Gantt | ASP.NET Webforms | Syncfusion
-description: getting started
+description:Learn here all about getting started support with Syncfusion ASP.NET Web Forms Gantt control,its elements and more.
 platform: aspnet
 control: Gantt
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Gantt
 
 This section explains briefly about how to create a Gantt chart in your application with ASP.NET.
 
@@ -29,7 +29,7 @@ Elements of a Gantt chart
 
 * Toolbar – It is a collection of toolbar buttons to add, edit, and delete a task. You can outdent and indent a task using outdent and indent buttons. Following screen shot illustrates the function of each toolbar button,
 
-  ![APS.NET Gantt chart Toolbar](Getting-Started_images/Getting-Started_img2.png)
+  ![APS.NET Gantt Chart Toolbar](Getting-Started_images/Getting-Started_img2.png)
   Toolbar of Gantt chart
   {:.caption}
   
@@ -42,7 +42,7 @@ Elements of a Gantt chart
 * Task Relationship – It determines when to start or finish a task.
 * Interactive Editing – You can edit the duration of a task by dragging or resizing the task bar. Following screen shot illustrates this.
 
-  ![APS.NET Gantt chart editing option](Getting-Started_images/Getting-Started_img3.png)
+  ![APS.NET Gantt Chart Editing Option](Getting-Started_images/Getting-Started_img3.png)
 
 Editing options Gantt chart
 {:.caption}
@@ -51,7 +51,7 @@ Editing options Gantt chart
 
 In this tutorial, you will learn how to create a simple Gantt chart, add tasks and subtasks, and set relationship between tasks for design phase of software project. The following screen shot displays the output after completing this tutorial.
 
-![ASP.NET Simple Gantt chart](Getting-Started_images/Getting-Started_img4.png) 
+![ASP.NET Simple Gantt Chart](Getting-Started_images/Getting-Started_img4.png) 
 
 Simple Gantt chart
 {:.caption}
@@ -320,7 +320,7 @@ Simple Gantt chart
 
 The following screenshot displays the Gantt.
 
-![APS.NET Gantt chart Getting Started](Getting-Started_images/Getting-Started_img5.png)
+![APS.NET Gantt Chart Getting Started](Getting-Started_images/Getting-Started_img5.png)
 
 Gantt chart
 {:.caption}
@@ -344,7 +344,7 @@ Gantt control contains the toolbar options to edit, search, expand and collapse 
 {% endhighlight %}
 The following screen shot displays a Tool bar in Gantt.
 
-![ASP.NET Toolbar in Gantt chart](Getting-Started_images/Getting-Started_img6.png) 
+![ASP.NET Toolbar in Gantt Chart](Getting-Started_images/Getting-Started_img6.png) 
 
 Toolbar in Gantt chart
 {:.caption}
@@ -443,7 +443,7 @@ The following screen shot displays Gantt chart with Enable Context menu option.
 
 
 
-![ASP.NET Gantt control with Enable Editing options](Getting-Started_images/Getting-Started_img10.png)  
+![ASP.NET Gantt control with enable editing options](Getting-Started_images/Getting-Started_img10.png)  
 
 Gantt control with Enable Editing options
 {:.caption}
