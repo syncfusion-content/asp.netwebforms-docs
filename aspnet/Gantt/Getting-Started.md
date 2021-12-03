@@ -21,7 +21,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 
-![ASP.NET Elements of a Gantt chart](Getting-Started_images/Getting-Started_img1.png) 
+![ASP.NET Gantt chart element](Getting-Started_images/Getting-Started_img1.png) 
 
 Elements of a Gantt chart
 {:.caption}
@@ -42,7 +42,7 @@ Elements of a Gantt chart
 * Task Relationship – It determines when to start or finish a task.
 * Interactive Editing – You can edit the duration of a task by dragging or resizing the task bar. Following screen shot illustrates this.
 
-  ![APS.NET Editing option Gantt chart](Getting-Started_images/Getting-Started_img3.png)
+  ![APS.NET Gantt chart editing option](Getting-Started_images/Getting-Started_img3.png)
 
 Editing options Gantt chart
 {:.caption}
@@ -320,7 +320,7 @@ Simple Gantt chart
 
 The following screenshot displays the Gantt.
 
-![APS.NET Gantt chart](Getting-Started_images/Getting-Started_img5.png)
+![APS.NET Gantt chart Getting Started](Getting-Started_images/Getting-Started_img5.png)
 
 Gantt chart
 {:.caption}
@@ -592,7 +592,7 @@ public class ResourceList
 The following screen shot displays resource allocation for tasks in Gantt.
 
 
-![ASP.NET chart displays resources allocation for task in Gantt](Getting-Started_images/Getting-Started_img12.png)
+![ASP.NET Gantt chart displays resources allocation for task](Getting-Started_images/Getting-Started_img12.png)
 
 
 
