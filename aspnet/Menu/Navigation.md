@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation | Menu | ASP.NET Webforms | Syncfusion
-description:Learn all about Navigation support in Syncfusion ASP.NET Web Forms Menu control, its elements and more.
+description: Learn all about Navigation support in Syncfusion ASP.NET Web Forms Menu control, its elements and more.
 platform: aspnet
 control: Menu
 documentation: ug
