@@ -73,7 +73,7 @@ Initialize the Menu control with the following CSS.
 
 Output of above steps
 
-![ASP.NET Menu initializing the  control](Getting-Started_images/Getting-Started_img2.png) 
+![ASP.NET Menu initializing the control](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
