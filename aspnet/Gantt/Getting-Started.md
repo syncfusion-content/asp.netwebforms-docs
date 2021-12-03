@@ -29,7 +29,7 @@ Elements of a Gantt chart
 
 * Toolbar – It is a collection of toolbar buttons to add, edit, and delete a task. You can outdent and indent a task using outdent and indent buttons. Following screen shot illustrates the function of each toolbar button,
 
-  ![APS.NET Toolbar of Gantt chart](Getting-Started_images/Getting-Started_img2.png)
+  ![APS.NET Gantt chart Toolbar](Getting-Started_images/Getting-Started_img2.png)
   Toolbar of Gantt chart
   {:.caption}
   
