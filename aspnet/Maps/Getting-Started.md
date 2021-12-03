@@ -7,7 +7,7 @@ control: Maps
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Maps.
+# Getting Started with ASP.NET Maps
 
 This section explains briefly about how to create Maps in your application with ASP.NET.
 

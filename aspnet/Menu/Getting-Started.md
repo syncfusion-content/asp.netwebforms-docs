@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Menu.
+# Getting Started with ASP.NET Menu
 
 ## Create Syncfusion Menu in ASP.NET
 
