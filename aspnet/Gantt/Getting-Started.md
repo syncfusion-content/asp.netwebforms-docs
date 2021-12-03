@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | Gantt | ASP.NET Webforms | Syncfusion
-description:Learn here all about getting started support with Syncfusion ASP.NET Web Forms Gantt control,its elements and more.
+description: Learn here all about getting started support with Syncfusion ASP.NET Web Forms Gantt control,its elements and more.
 platform: aspnet
 control: Gantt
 documentation: ug

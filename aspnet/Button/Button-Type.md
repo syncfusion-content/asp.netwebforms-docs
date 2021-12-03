@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Button Type | Button | ASP.NET Webforms | Syncfusion
-description:Learn here all about Button Type support in Syncfusion ASP.NET Web Forms Button control, its elements and more.
+description: Learn here all about Button Type support in Syncfusion ASP.NET Web Forms Button control, its elements and more.
 platform: aspnet
 control: Button
 documentation: ug
