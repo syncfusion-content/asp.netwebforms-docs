@@ -73,7 +73,7 @@ Initialize the Menu control with the following CSS.
 
 Output of above steps
 
-![ASP.NET Menu initializing the menu control](Getting-Started_images/Getting-Started_img2.png) 
+![ASP.NET Menu initializing the  control](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
@@ -129,7 +129,7 @@ Every Menu contains a list of Menu items with list of sub level Menu items. From
 
 The following screenshot displays the resultant output Menu without sub menu item.
 
-![ASP.NET Menu displaying the resaultant output menu](Getting-Started_images/Getting-Started_img3.png) 
+![ASP.NET Menu displaying the resultant output menu](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
