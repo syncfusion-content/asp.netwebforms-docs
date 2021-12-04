@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | Maps | ASP.NET Webforms | Syncfusion
-description: getting started
+description: Learn here all about getting started with Syncfusion ASP.NET Web Forms Maps control, its elements and more.
 platform: aspnet
 control: Maps
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Maps
 
 This section explains briefly about how to create Maps in your application with ASP.NET.
 
