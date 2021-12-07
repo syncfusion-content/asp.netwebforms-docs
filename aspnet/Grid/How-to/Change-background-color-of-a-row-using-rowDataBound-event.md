@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change background color of a row using rowDataBound event 
-description: Learn here all about changing background color of a row using rowdatabound event with syncfusion ASP.NET Webforms Grid control,its element.
+title: Change background color of a row using row Data Bound  
+description: Learn here all about changing background color of a row using rowdatabound event support in Syncfusion ASP.NET Webforms Grid control.
 platform: aspnet
 control: Grid
 documentation: ug
