@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# Change background color of a row using rowDataBound in ASP.NET Grid
+# Change background color of a row using rowDataBound event 
 
 
 
