@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio aspnet products
+title: Download process for Syncfusion ES aspnet products
 description: Learn how to download and install Syncfusion Essential Studio ASP.NET and deploy the Syncfusion aspnet component
 platform: aspnet
 control: Installation and Deployment
@@ -10,7 +10,7 @@ documentation: ug
 
 # Download ASP.NET Web Forms Installer
 
-The Syncfusion ASP.NET Web Forms installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/aspnet-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
+The Syncfusion ASP.NET Web Forms installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/jquery/aspnet-web-forms-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 
    -	Trial Installer
    -	Licensed Installer

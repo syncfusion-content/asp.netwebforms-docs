@@ -2,7 +2,7 @@
 layout: post
 title: Major Version to Service Pack Version| ASP.NET Web Forms | Syncfusion
 description: this section provides the information about upgrading the ASP.NET Web Forms projects from major version to service pack version
-platform: ASP.NET Web Forms
+platform: ASP.NET
 control: Essential Studio
 documentation: ug
 ---

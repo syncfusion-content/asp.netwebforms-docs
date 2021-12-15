@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio aspnet products
-description: Learn how to install and deploy the Syncfusion aspnet component
+title: Download process for Syncfusion ES aspnet products
+description: Learn how to download,install and deploy the Syncfusion Essential Studio aspnet component
 platform: aspnet
 control: Installation and Deployment
 documentation: ug
