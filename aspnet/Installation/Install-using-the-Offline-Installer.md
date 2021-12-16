@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio aspnet products
-description: Learn how to install and deploy the Syncfusion aspnet component
+title: Download process for Syncfusion ES aspnet products
+description: Learn how to download, install and deploy the Syncfusion Essential Studio ASP.NET Web Forms component
 platform: aspnet
 control: Installation and Deployment
 documentation: ug
@@ -10,13 +10,13 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/aspnet/installation-and-upgrade/download) section to learn how to get the ASP.NET Web Forms trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/aspnet/installation/download) section to learn how to get the ASP.NET Web Forms trial or licensed installer.
 
 ## Installing with UI   
 
 The steps below show how to install the Essential Studio ASP.NET Web Forms installer.
 
-1.	Open the Syncfusion ASP.NET Web Forms offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+1.	Open the Syncfusion ASP.NET Web Forms offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
     ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
