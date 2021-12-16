@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Getting Started | Menu | ASP.NET Webforms | Syncfusion
-description: getting started 
+description: Learn here all about getting started with Syncfusion ASP.NET Web Forms Menu control, its elements and more.
 platform: aspnet
 control: Menu
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with ASP.NET Menu
 
 ## Create Syncfusion Menu in ASP.NET
 
 The ASP.NET Menu supports you to display a Menu of list-out items. This Menu is based on UL-LI hierarchy, where the sub-list items can be rendered as the sub-menu items. You can also render the Menu control with local and remote data source.  From the following guideline, you can learn how to customize the Menu control for a website. In this case, Syncfusion’s website Menu is used to explain this topic. The following screenshot displays the appearance of Menu.
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![ASP.NET Menu Getting Started](Getting-Started_images/Getting-Started_img1.png) 
 
 
 
@@ -73,7 +73,7 @@ Initialize the Menu control with the following CSS.
 
 Output of above steps
 
-![](Getting-Started_images/Getting-Started_img2.png) 
+![ASP.NET Menu initializing the control](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
@@ -129,7 +129,7 @@ Every Menu contains a list of Menu items with list of sub level Menu items. From
 
 The following screenshot displays the resultant output Menu without sub menu item.
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![ASP.NET Menu displaying the resultant output menu](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
@@ -437,7 +437,7 @@ The following code example describes how to initialize first level sub menu item
 
 Execute the above code example to render the following output Menu with sub menu item.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![ASP.NET Menu initializing sub level menu items](Getting-Started_images/Getting-Started_img4.png)
 
 
 ### Define multiple level Menu items
@@ -532,7 +532,7 @@ To initialize multiple level sub menu items use the following code example.
 
 The following screenshot is the resultant output Menu with multiple level sub menu item.
 
-![](Getting-Started_images/Getting-Started_img5.png) 
+![ASP.NET Menu defining multiple level menu items](Getting-Started_images/Getting-Started_img5.png) 
 
 
 

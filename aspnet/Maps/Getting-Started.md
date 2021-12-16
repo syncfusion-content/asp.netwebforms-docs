@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | Maps | ASP.NET Webforms | Syncfusion
-description: getting started
+description: Learn here all about getting started with Syncfusion ASP.NET Web Forms Maps control, its elements and more.
 platform: aspnet
 control: Maps
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Maps
 
 This section explains briefly about how to create Maps in your application with ASP.NET.
 
@@ -15,7 +15,7 @@ This section explains briefly about how to create Maps in your application with 
 
 You can configure an Essential ASP.NET Map with simple steps. In this example, you can learn how to configure USA population map with customized appearance and tooltip.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET Maps Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 Map
 {:.caption}
@@ -36,11 +36,11 @@ Follow the steps given below to deploy the application in the development server
 * Web.config file should be configured according to the referenced assemblies.
 * To deploy your application, you have to ensure that the above referenced assemblies (in your web.config files) are present in the GAC.
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![ASP.NET Maps Referencing Syncfusion Assemblies](Getting-Started_images/Getting-Started_img7.png)
 
 And, add the Syncfusion namespace in the Web.config file.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![ASP.NET Maps adding sycfusion namespace](Getting-Started_images/Getting-Started_img8.png)
 
 N> If you are referring Syncfusion assemblies manually from bin folder to create ASP Maps, then remove Culture, Version and PublicKeyToken attributes used in all files.
 
@@ -48,7 +48,7 @@ N> If you are referring Syncfusion assemblies manually from bin folder to create
 
 By default, Syncfusion JavaScript source files has been included into the EJ.Web assembly as an embedded source. So we no need to refer jQuery and Syncfusion scripts externally. For debugging purpose want to refer script files externally, set false to **LoadEJResourcesFromAssembly** in Web.config file as shows in the below image and refer jQuery and Syncfusion script files.
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![ASP.NET Map adding script reference](Getting-Started_images/Getting-Started_img9.png)
 
 {% highlight html %}
 
@@ -416,7 +416,7 @@ new CountyPopulationData(){ Name= "Wyoming", Population=582658}
 The above code renders a map with default properties and shape input provided through data in layers.
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![ASP.NET Map with default properties](Getting-Started_images/Getting-Started_img2.png)
 
 Map with default properties
 {:.caption}
@@ -507,7 +507,7 @@ You can customize the shape’s color by using Fill, Stroke and StrokeThickness 
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![ASP.NET Customized Map](Getting-Started_images/Getting-Started_img3.png)
 
 Customized Map
 {:.caption}
@@ -586,7 +586,7 @@ The following screenshot illustrates a map with gradient color property enable.
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![ASP.NET Customized Map by range](Getting-Started_images/Getting-Started_img4.png)
 
 Customized Map by range
 {:.caption}
@@ -657,7 +657,7 @@ The following screenshot illustrates a Map control displaying a Tooltip.
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![ASP.NET Map With tooltip](Getting-Started_images/Getting-Started_img5.png)
 
 Map with tooltip
 {:.caption}
@@ -736,7 +736,7 @@ The following screenshot illustrates a map displaying an interactive legend.
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![ASP.NET Map With interactive Legend](Getting-Started_images/Getting-Started_img6.png)
 
 Map with interactive Legend
 {:.caption}

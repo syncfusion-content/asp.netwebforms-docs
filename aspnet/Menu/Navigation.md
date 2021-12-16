@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Navigation | Menu | ASP.NET Webforms | Syncfusion
-description: navigation
+description: Learn all about Navigation support in Syncfusion ASP.NET Web Forms Menu control, its elements and more.
 platform: aspnet
 control: Menu
 documentation: ug
 ---
 
-# Navigation
+# Navigation ASP.NET Menu
 
 Navigation in Menu control is the default usage to navigate into the other web page. You can navigate to another page in the menu item by giving link to the menu items. Navigation in Menu control can be achieved by placing “href” path to the URL property in Menu items. Use following code example for navigating in Menu control.
 
@@ -91,13 +91,13 @@ Add the following code example in your ASPX page.
 
 The following screenshot displays the output for the above code example.  
 
-![](Navigation_images/Navigation_img1.png) 
+![ASP.NET Menu Navigation displaying the output code](Navigation_images/Navigation_img1.png) 
 
 
 
 When you click on “Google” that is present under “Search engine”, it navigates to the link that you have specified in the code example. Then the output is as follows.
 
-![](Navigation_images/Navigation_img2.png) 
+![ASP.NET Menu Navigation to the specified code](Navigation_images/Navigation_img2.png) 
 
 
 
