@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EnableDisable the Slider | Slider | ASP.NET | Syncfusion
+title: Enable or Disable in ASP.NET Slider | Syncfusion
 description: Learn here all about enable or disable slider support in Syncfusion ASP.NET Slider control, its element, and more
 platform: aspnet
 control: Slider
