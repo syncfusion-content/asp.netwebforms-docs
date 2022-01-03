@@ -63,7 +63,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![SqlDataSource in Data-Binding](Data-Binding_images/Data-Binding_img1.png)
+![SqlDataSource in ASP.NET Grid](Data-Binding_images/Data-Binding_img1.png)
 
 {% seealso %} 
 Refer to this [link](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx) for more information on SqlDataSource.
@@ -96,7 +96,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![SqlDataSource with LoadOnDemand in Data-Binding Grid](Data-Binding_images/Data-Binding_img21.png)
+![SqlDataSource with LoadOnDemand in ASP.NET Grid](Data-Binding_images/Data-Binding_img21.png)
  
 
 ### ObjectDataSource
@@ -165,7 +165,7 @@ public class Employee
 
 The following output is displayed as a result of the above code example.
 
-![Object Data Source in Data-Binding Grid](Data-Binding_images/Data-Binding_img2.png)
+![Object Data Source in ASP.NET Grid](Data-Binding_images/Data-Binding_img2.png)
 
 {% seealso %} 
 Refer to this [link](https://msdn.microsoft.com/en-us/library/9a4kyhcx.aspx) for more information on ObjectDataSource.
@@ -205,7 +205,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Xml DataSource in Data-Binding Grid](Data-Binding_images/Data-Binding_img3.png)
+![Xml DataSource in ASP.NET Grid](Data-Binding_images/Data-Binding_img3.png)
 
 {% seealso %}  
 Refer to this [link](https://msdn.microsoft.com/en-us/library/494y92bs.aspx) for more information on XmlDataSource
@@ -262,7 +262,7 @@ namespace Grid
 
 The following output is displayed as a result of the above code example.
 
-![DataManager in Data-Binding Grid](Data-Binding_images/Data-Binding_img4.png)
+![DataManager in ASP.NET Grid](Data-Binding_images/Data-Binding_img4.png)
 
 
 ## IEnumerable
@@ -308,7 +308,7 @@ namespace Grid
 
 The following output is displayed as a result of the above code example.
 
-![IEnumerable in Data-Binding Grid](Data-Binding_images/Data-Binding_img5.png)
+![IEnumerable in ASP.NET Grid](Data-Binding_images/Data-Binding_img5.png)
 
 
 ## Entity Framework
@@ -348,7 +348,7 @@ namespace Grid
 
 The following output is displayed as a result of the above code example.
 
-![Entity Framework in Data-Binding Grid](Data-Binding_images/Data-Binding_img6.png)
+![Entity Framework in ASP.NET Grid](Data-Binding_images/Data-Binding_img6.png)
 
 {% seealso %}  
 For more information on creating and consuming Entity Framework, please refer this [link]( http://www.asp.net/web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1)
@@ -392,7 +392,7 @@ namespace Grid.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![LINQ to SQL in Data-Binding Grid](Data-Binding_images/Data-Binding_img7.png)
+![LINQ to SQL in ASP.NET Grid](Data-Binding_images/Data-Binding_img7.png)
 
 
 {% seealso %}
@@ -463,7 +463,7 @@ namespace EJGrid.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![DataTable in Data-Binding Grid](Data-Binding_images/Data-Binding_img8.png)
+![DataTable in ASP.NET Grid](Data-Binding_images/Data-Binding_img8.png)
 
 
 ## ITypedList Binding
@@ -557,7 +557,7 @@ namespace EJGrid.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![ITypedList Binding in Data-Binding Grid](Data-Binding_images/Data-Binding_img9.png)
+![ITypedList Binding in ASP.NET Grid](Data-Binding_images/Data-Binding_img9.png)
 
 
 ## WebService 
@@ -587,7 +587,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![WebService in Data-Binding Grid](Data-Binding_images/Data-Binding_img10.png)
+![WebService in ASP.NET Grid](Data-Binding_images/Data-Binding_img10.png)
 
 
 ## WCF Data Service / OData Service
@@ -620,7 +620,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Open Data Service in Data-Binding Grid](Data-Binding_images/Data-Binding_img11.png)
+![Open Data Service in ASP.NET Grid](Data-Binding_images/Data-Binding_img11.png)
 
 
 ## ODataV4 Service
@@ -648,7 +648,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Open DataV4 Service in Data-Binding Grid](Data-Binding_images/Data-Binding_img12.png)
+![Open DataV4 Service in ASP.NET Grid](Data-Binding_images/Data-Binding_img12.png)
 
 ## Web API Service
 
@@ -695,7 +695,7 @@ namespace EJGrid.Controllers {
 
 The following output is displayed as a result of the above code example.
 
-![Web API Service in Data-Binding Grid](Data-Binding_images/Data-Binding_img13.png)
+![Web API Service in ASP.NET Grid](Data-Binding_images/Data-Binding_img13.png)
 
 
 ## HTML Table binding
@@ -781,7 +781,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![HTML Table binding in Data-Binding Grid](Data-Binding_images/Data-Binding_img14.png)
+![HTML Table binding in ASP.NET Grid](Data-Binding_images/Data-Binding_img14.png)
 
 
 ## Miscellaneous
@@ -811,7 +811,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Load On Demand in Data-Binding Grid](Data-Binding_images/Data-Binding_img15.png)
+![Load On Demand in ASP.NET Grid](Data-Binding_images/Data-Binding_img15.png)
 
 
 ### Load at once
@@ -842,7 +842,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Load at once in Data-Binding Grid](Data-Binding_images/Data-Binding_img16.png)
+![Load at once in ASP.NET Grid](Data-Binding_images/Data-Binding_img16.png)
 
 
 ### Data caching
@@ -875,7 +875,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Data caching Load On Demand in Data-Binding Grid](Data-Binding_images/Data-Binding_img17.png)
+![Data caching Load On Demand in ASP.NET Grid](Data-Binding_images/Data-Binding_img17.png)
 
 
 #### Load at once
@@ -961,7 +961,7 @@ The reference to the Data Source object will be added to Session.
 
 The following output is displayed as a result of the above code example.
 
-![Data caching Load at once in Data-Binding Grid](Data-Binding_images/Data-Binding_img22.png)
+![Data caching Load at once in ASP.NET Grid](Data-Binding_images/Data-Binding_img22.png)
 
 
 ### Custom request parameters and HTTP Header
@@ -991,7 +991,7 @@ N> Attempting to add custom parameters with key name same as any default AJAX pa
 
 The following output is displayed as a result of the above code example.
 
-![Adding request parameters in Data-Binding Grid](Data-Binding_images/Data-Binding_img18.png)
+![Adding request parameters in ASP.NET Grid](Data-Binding_images/Data-Binding_img18.png)
 
 
 #### Adding custom HTTP headers
@@ -1023,7 +1023,7 @@ N>  To add custom headers to the DataManager through JavaScript, refer to this [
 The following output is displayed as a result of the above code example.
 
 
-![Adding custom HTTP headers in Data-Binding Grid](Data-Binding_images/Data-Binding_img19.png)
+![Adding custom HTTP headers in ASP.NET Grid](Data-Binding_images/Data-Binding_img19.png)
 
 
 ### Handling HTTP Errors
@@ -1075,7 +1075,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Handling HTTP errors in Data-Binding Grid](Data-Binding_images/Data-Binding_img20.png)
+![Handling HTTP errors in ASP.NET Grid](Data-Binding_images/Data-Binding_img20.png)
 
 
 
