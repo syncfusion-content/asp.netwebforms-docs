@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CRUD Data Operations | DataManager | ASP.NET Webforms | Syncfusion
-description: CRUD Data Operations
+title: CRUD Data Operations in ASP.NET Webforms DataManager | Syncfusion
+description: Learn here all about CRUD Data Operations support in Syncfusion ASP.NET Webforms DataManager control,its element, and more. 
 platform: aspnet
 control: DataManager
 documentation: ug
