@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started in ASP.NET Webforms
 
 This section explains briefly about how to create a Gantt chart in your application with ASP.NET.
 
