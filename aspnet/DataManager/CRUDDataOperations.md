@@ -9,7 +9,7 @@ keywords: Insert of Records, Delete, Update, Read, Remove, Add Fields
 
 ---
 
-# CRUD Data Operations
+# CRUD Data Operations in ASP.NET DataManager
 
 The DataManager fully supports the CRUD (Create, Read, Update, Destroy) data operations. However, it must be combined with some user interface or another Syncfusion UI widget such as the Grid, ListView, etc.
 
@@ -99,7 +99,7 @@ The insert method of the data manager is used to add a new record to the table. 
 
 {% endhighlight %}
 
-![](Editing_images/LocalInsert.png) 
+![Local Insert in ASP.NET DataManager](Editing_images/LocalInsert.png) 
 
 
 ### Update
@@ -182,7 +182,7 @@ The update method is used to update the modified changes made to a record in the
 
 {% endhighlight %}
 
-![](Editing_images/LocalUpdate.png) 
+![Local Update in ASP.NET DataManager](Editing_images/LocalUpdate.png) 
 
 
 ### Remove
@@ -264,7 +264,7 @@ The remove function receives the items to be deleted in the Data Table. The func
 
 {% endhighlight %}
 
-![](Editing_images/LocalRemove.png) 
+![Local Remove in ASP.NET DataManager](Editing_images/LocalRemove.png) 
 
 ## Remote CRUD Operations
 
@@ -468,7 +468,7 @@ The insert method of the data manager is used to add a new record to the table. 
 {% endhighlight %}
 
 
-![](Editing_images/RemoteInsert.png) 
+![Remote Insert in ASP.NET DataManager](Editing_images/RemoteInsert.png) 
 
 
 ### Update
@@ -514,7 +514,7 @@ The update method is used to update the modified changes made to a record in the
 
 {% endhighlight %}
 
-![](Editing_images/RemoteUpdate.png) 
+![Remote Update in ASP.NET DataManager](Editing_images/RemoteUpdate.png) 
 
 ### Remove
 
@@ -558,7 +558,7 @@ The remove action submits the data items that should be deleted, or just its IDs
 
 {% endhighlight %}
 
-![](Editing_images/RemoteRemove.png) 
+![Remote Remove in ASP.NET DataManager](Editing_images/RemoteRemove.png) 
 
 ## Batch Edit
 
@@ -638,7 +638,7 @@ Batch Editing is a unique feature, where requests to add, remove and change are 
 
 Result of the above code example is illustrated as follows.
 
-![](Editing_images/Editing_img1.png)
+![Batch Editing in ASP.NET DataManager](Editing_images/Editing_img1.png)
 
 Batch Editing
 {:.caption}
