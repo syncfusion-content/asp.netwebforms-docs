@@ -1,13 +1,13 @@
 ---
 layout: post
-title: EnableDisable the Slider | Slider | ASP.NET | Syncfusion
-description: enable/disable the slider
+title: Enable or Disable in ASP.NET Slider | Syncfusion
+description: Learn here all about enable or disable slider support in Syncfusion ASP.NET Slider control,its element, and more
 platform: aspnet
 control: Slider
 documentation: ug
 ---
 
-# Enable/Disable the Slider
+# Enable or Disable in ASP.NET Slider
 
 Slider control includes an option to enable/disable it. When you disable the Slider, it is displayed in a blur state and you cannot perform any operations in it.
 
@@ -25,7 +25,7 @@ In an ASPX page, define the Slider control and set the Enabled property to false
 
 The following screenshot displays the output of the above code example.
 
- ![](EnableDisable-the-Slider_images/EnableDisable-the-Slider_img1.png)
+ ![Enable in ASP.NET Slider](EnableDisable-the-Slider_images/EnableDisable-the-Slider_img1.png)
 
 
 
