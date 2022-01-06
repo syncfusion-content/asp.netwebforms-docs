@@ -298,5 +298,5 @@ So based on the value in the record, you can set the background color of the row
 {% endtabs %}
 
 The following screenshot displays the grid with background color changed for few records
-s
+
 ![Change background color of a row using rowDataBound event in ASP.NET Grid](Change-background-color-of-a-row-using-rowDataBound-event_images/Change-background-color-of-a-row-using-rowDataBound-event_img1.png)
