@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance and Styling | TreeGrid | ASP.NET | Syncfusion
-description: appearance and styling
+description: Learn here all about Appearance and Styling in Syncfusion ASP.NET Web Forms TreeGrid control,its elements, and more.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling 
 
 You can customize the look and feel of the TreeGrid control by applying themes.
 
@@ -47,8 +47,7 @@ You can apply the theme (Gradient lime) to the TreeGrid control by using the s
 
 The following screenshot shows the TreeGrid control with Gradient-lime theme.
 
-![]
-(Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance and Styling in ASP.NET Treegrid](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## Configuring CSS class
 
@@ -77,9 +76,9 @@ The following code example shows how to apply different background color for eac
 
 The below screenshot shows the output of above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Appearance and Styling in ASP.NET Treegrid](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![Configuring CSS Class in ASP.NET Treegrid](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 ## Customize rows and cells
 
@@ -113,4 +112,4 @@ function rowDataBound(args) {
 
 The below screenshot shows the output of above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![Customize rows and cells in ASP.NET Treegrid](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
