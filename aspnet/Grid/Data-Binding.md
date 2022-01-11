@@ -66,7 +66,7 @@ The following output is displayed as a result of the above code example.
 ![ASPNET_Grid_Data-Binding_Image](Data-Binding_images/Data-Binding_img1.png)
 
 {% seealso %} 
-Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/dz12d98w(v=vs.140)?redirectedfrom=MSDN) for more information on SqlDataSource.
+Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/dz12d98w(v=vs.140)) for more information on SqlDataSource.
 {% endseealso %}
 
 
@@ -168,7 +168,7 @@ The following output is displayed as a result of the above code example.
 ![ASPNET_Grid_ObjectDataSource_Image](Data-Binding_images/Data-Binding_img2.png)
 
 {% seealso %} 
-Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/9a4kyhcx(v=vs.140)?redirectedfrom=MSDN) for more information on ObjectDataSource.
+Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/9a4kyhcx(v=vs.140)) for more information on ObjectDataSource.
 {% endseealso %}
 
 ### XmlDataSource
@@ -208,7 +208,7 @@ The following output is displayed as a result of the above code example.
 ![ASPNET_Grid_XmlDataSource_Image](Data-Binding_images/Data-Binding_img3.png)
 
 {% seealso %}  
-Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/494y92bs(v=vs.140)?redirectedfrom=MSDN) for more information on XmlDataSource
+Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/494y92bs(v=vs.140)) for more information on XmlDataSource
 {% endseealso %}
 
 

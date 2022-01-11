@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-## Line Chart in ASP.NET Webforms Chart
+# Line Chart in ASP.NET Webforms Chart
 
 To render a Line Chart, set the series **Type** as **Line** in the chart series. To change the line segment color, you can use the **Fill** property of the series.
 
@@ -29,7 +29,7 @@ To render a Line Chart, set the series **Type** as **Line** in the chart series.
 [Click](http://asp.syncfusion.com/demos/web/chart/defaultfunctionalities.aspx) here to view the Line Chart online demo sample.
 
 
-### Change the line width
+## Change the line width
 
 To change the width of the line segment, you can use the **Width** property in the series.
 
