@@ -21,7 +21,7 @@ Gantt chart is used to edit and visualize project schedule and also to track pro
 
 
 
-![ASPNET_Gantt_Elements_Getting-Started_images](Getting-Started_images/Getting-Started_img1.png) 
+![ASPNET_Gantt_Elements_Getting-Startedimages](Getting-Started_images/Getting-Started_img1.png) 
 
 Elements of a Gantt chart
 {:.caption}
@@ -29,7 +29,7 @@ Elements of a Gantt chart
 
 * Toolbar – It is a collection of toolbar buttons to add, edit, and delete a task. You can outdent and indent a task using outdent and indent buttons. Following screen shot illustrates the function of each toolbar button,
 
-  ![ASPNET_Gantt_Toolbar_Getting-Started_images](Getting-Started_images/Getting-Started_img2.png)
+  ![ASPNET_Gantt_Toolbar_Getting-Startedimages](Getting-Started_images/Getting-Started_img2.png)
   Toolbar of Gantt chart
   {:.caption}
   
@@ -42,7 +42,7 @@ Elements of a Gantt chart
 * Task Relationship – It determines when to start or finish a task.
 * Interactive Editing – You can edit the duration of a task by dragging or resizing the task bar. Following screen shot illustrates this.
 
-  ![ASPNET_Gantt_Editing_Getting-Started_images](Getting-Started_images/Getting-Started_img3.png)
+  ![ASPNET_Gantt_Editing_Getting-Startedimages](Getting-Started_images/Getting-Started_img3.png)
 
 Editing options Gantt chart
 {:.caption}
@@ -51,7 +51,7 @@ Editing options Gantt chart
 
 In this tutorial, you will learn how to create a simple Gantt chart, add tasks and subtasks, and set relationship between tasks for design phase of software project. The following screen shot displays the output after completing this tutorial.
 
-![ASPNET_Gantt_Simple_Getting-Started_images](Getting-Started_images/Getting-Started_img4.png) 
+![ASPNET_Gantt_Simple_Getting-Startedimages](Getting-Started_images/Getting-Started_img4.png) 
 
 Simple Gantt chart
 {:.caption}
@@ -320,7 +320,7 @@ Simple Gantt chart
 
 The following screenshot displays the Gantt.
 
-![ASPNET_Gantt_Getting-Started_images](Getting-Started_images/Getting-Started_img5.png)
+![ASPNET_Gantt_Getting-Startedimages](Getting-Started_images/Getting-Started_img5.png)
 
 Gantt chart
 {:.caption}
@@ -344,7 +344,7 @@ Gantt control contains the toolbar options to edit, search, expand and collapse 
 {% endhighlight %}
 The following screen shot displays a Tool bar in Gantt.
 
-![ASPNET_Gantt_EnableToolbar_Getting-Started_images](Getting-Started_images/Getting-Started_img6.png) 
+![ASPNET_Gantt_EnableToolbar_Getting-Startedimages](Getting-Started_images/Getting-Started_img6.png) 
 
 Toolbar in Gantt chart
 {:.caption}
@@ -415,7 +415,7 @@ Modify the task details through user interaction like resizing and dragging the 
 
 The following screen shot displays the Gantt control with Enable Editing options.
 
-![ASPNET_Gantt_TaskbarEditing_Getting-Started_images](Getting-Started_images/Getting-Started_img8.png)
+![ASPNET_Gantt_TaskbarEditing_Getting-Startedimages](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -443,7 +443,7 @@ The following screen shot displays Gantt chart with Enable Context menu option.
 
 
 
-![ASPNET_Gantt_EnableContextMenu_Getting-Started_images](Getting-Started_images/Getting-Started_img10.png)  
+![ASPNET_Gantt_EnableContextMenu_Getting-Startedimages](Getting-Started_images/Getting-Started_img10.png)  
 
 Gantt control with Enable Editing options
 {:.caption}
@@ -490,7 +490,7 @@ You can show the relationship in tasks by using the PredecessorMapping as follow
 
 The following screen shot displays the relationship between tasks.
 
-![ASPNET_Gantt_FF_Getting-Started_images](Getting-Started_images/Getting-Started_img11.png)
+![ASPNET_Gantt_FF_Getting-Startedimages](Getting-Started_images/Getting-Started_img11.png)
 
 Gantt chart with relationships between tasks
 {:.caption}
@@ -592,7 +592,7 @@ public class ResourceList
 The following screen shot displays resource allocation for tasks in Gantt.
 
 
-![ASPNET_Gantt_Resources_Getting-Started_images](Getting-Started_images/Getting-Started_img12.png)
+![ASPNET_Gantt_Resources_Getting-Startedimages](Getting-Started_images/Getting-Started_img12.png)
 
 
 

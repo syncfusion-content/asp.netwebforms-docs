@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons in ASP.NET Webforms Button Control | Syncfusion
-description: Learn here all about Icons support in Syncfusion Essential Studio ASP.NET Webforms Chart Control, its elements, and more.
+description: Learn here all about Icons support in Syncfusion Essential Studio ASP.NET Webforms Button Control, its elements, and more.
 platform: aspnet
 control: Button
 documentation: ug

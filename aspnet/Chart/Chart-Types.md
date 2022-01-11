@@ -1440,7 +1440,7 @@ You can change the scatter size by using the **Size** property of the series mar
 
 {% endhighlight %}
 
-![ASPNET_Scatter_Chart_Image](Chart-Types_images/Chart-Types_img60.png)
+![ASPNET_Scatter_ChartImage](Chart-Types_images/Chart-Types_img60.png)
 
 
 ## HiLoOpenClose Chart 
