@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Types | Chart | ASP.NET Webforms | Syncfusion
-description: chart types
+title: Chart Types in ASP.NET Webforms Chart Control | Syncfusion
+description: Learn here all about chart types support in Syncfusion Essential Studio ASP.NET Webforms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
 documentation: ug

@@ -63,7 +63,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![ASPNET_Grid_Data-Binding_Image](Data-Binding_images/Data-Binding_img1.png)
 
 {% seealso %} 
 Refer to this [link](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx) for more information on SqlDataSource.
@@ -96,7 +96,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img21.png)
+![ASPNET_Grid_LoadOnDemand_Image](Data-Binding_images/Data-Binding_img21.png)
  
 
 ### ObjectDataSource
@@ -165,7 +165,7 @@ public class Employee
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img2.png)
+![ASPNET_Grid_ObjectDataSource_Image](Data-Binding_images/Data-Binding_img2.png)
 
 {% seealso %} 
 Refer to this [link](https://msdn.microsoft.com/en-us/library/9a4kyhcx.aspx) for more information on ObjectDataSource.
@@ -205,7 +205,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img3.png)
+![ASPNET_Grid_XmlDataSource_Image](Data-Binding_images/Data-Binding_img3.png)
 
 {% seealso %}  
 Refer to this [link](https://msdn.microsoft.com/en-us/library/494y92bs.aspx) for more information on XmlDataSource
@@ -262,7 +262,7 @@ namespace Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img4.png)
+![ASPNET_Grid_DataManager_Image](Data-Binding_images/Data-Binding_img4.png)
 
 
 ## IEnumerable
@@ -308,7 +308,7 @@ namespace Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img5.png)
+![ASPNET_Grid_IEnumerable_Image](Data-Binding_images/Data-Binding_img5.png)
 
 
 ## Entity Framework
@@ -348,7 +348,7 @@ namespace Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img6.png)
+![ASPNET_Grid_EntityFramework_Image](Data-Binding_images/Data-Binding_img6.png)
 
 {% seealso %}  
 For more information on creating and consuming Entity Framework, please refer this [link]( http://www.asp.net/web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1)
@@ -392,7 +392,7 @@ namespace Grid.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img7.png)
+![ASPNET_Grid_LINQtoSQL_Image](Data-Binding_images/Data-Binding_img7.png)
 
 
 {% seealso %}
@@ -463,7 +463,7 @@ namespace EJGrid.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img8.png)
+![ASPNET_Grid_DataTable_Image](Data-Binding_images/Data-Binding_img8.png)
 
 
 ## ITypedList Binding
@@ -557,7 +557,7 @@ namespace EJGrid.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img9.png)
+![ASPNET_Grid_ITypedListBinding_Image](Data-Binding_images/Data-Binding_img9.png)
 
 
 ## WebService 
@@ -587,7 +587,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img10.png)
+![ASPNET_Grid_WebService_Image](Data-Binding_images/Data-Binding_img10.png)
 
 
 ## WCF Data Service / OData Service
@@ -620,7 +620,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img11.png)
+![ASPNET_Grid_WCFDataService_Image](Data-Binding_images/Data-Binding_img11.png)
 
 
 ## ODataV4 Service
@@ -648,7 +648,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img12.png)
+![ASPNET_Grid_ODataV4Service_Image](Data-Binding_images/Data-Binding_img12.png)
 
 ## Web API Service
 
@@ -695,7 +695,7 @@ namespace EJGrid.Controllers {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img13.png)
+![ASPNET_Grid_WebAPIService_Image](Data-Binding_images/Data-Binding_img13.png)
 
 
 ## HTML Table binding
@@ -781,7 +781,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img14.png)
+![ASPNET_Grid_Tablebinding_Image](Data-Binding_images/Data-Binding_img14.png)
 
 
 ## Miscellaneous
@@ -811,7 +811,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img15.png)
+![ASPNET_Grid_LoadOnDemand_Image](Data-Binding_images/Data-Binding_img15.png)
 
 
 ### Load at once
@@ -842,7 +842,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img16.png)
+![ASPNET_Grid_Loadatonce_Image](Data-Binding_images/Data-Binding_img16.png)
 
 
 ### Data caching
@@ -875,7 +875,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img17.png)
+![ASPNET_Grid_LoadOnDemand_Image](Data-Binding_images/Data-Binding_img17.png)
 
 
 #### Load at once
@@ -961,7 +961,7 @@ The reference to the Data Source object will be added to Session.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img22.png)
+![ASPNET_Grid_Session_Image](Data-Binding_images/Data-Binding_img22.png)
 
 
 ### Custom request parameters and HTTP Header
@@ -991,7 +991,7 @@ N> Attempting to add custom parameters with key name same as any default AJAX pa
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img18.png)
+![ASPNET_Grid_requestparameters_Image](Data-Binding_images/Data-Binding_img18.png)
 
 
 #### Adding custom HTTP headers
@@ -1023,7 +1023,7 @@ N>  To add custom headers to the DataManager through JavaScript, refer to this [
 The following output is displayed as a result of the above code example.
 
 
-![](Data-Binding_images/Data-Binding_img19.png)
+![ASPNET_Grid_HTTPheaders_Image](Data-Binding_images/Data-Binding_img19.png)
 
 
 ### Handling HTTP Errors
@@ -1075,7 +1075,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img20.png)
+![ASPNET_Grid_HTTPErrors_Image](Data-Binding_images/Data-Binding_img20.png)
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Button Type | Button | ASP.NET Webforms | Syncfusion
-description: button type
+description: Learn here all about Button Type support in Syncfusion Essential Studio ASP.NET Webforms Button Control, its elements, and more.
 platform: aspnet
 control: Button
 documentation: ug
@@ -61,6 +61,6 @@ In the ASPX page, add the following button elements to configure Button with var
 
 
 
-![](Button-Type_images/Button-Type_img1.png)
+![ASPNET_Button-Type_Image](Button-Type_images/Button-Type_img1.png)
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | DateTimePicker | ASP.NET Webforms | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Webforms DateTimePicker | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Webforms DateTimePicker control, its elements, features, and more.
 platform: aspnet
 control: DateTimePicker
 documentation: ug
