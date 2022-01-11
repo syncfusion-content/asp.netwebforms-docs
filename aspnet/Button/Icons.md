@@ -7,7 +7,7 @@ control: Button
 documentation: ug
 ---
 
-# Icons
+# Icons in ASP.NET Webforms Button
 
 The Essential Studio provide icons library that contains the number of in-built icons that can be applied for CSS class names to elements and refer **“ej.widgets.all.core.min.css”** file. Use the following syntax to apply class names.
 

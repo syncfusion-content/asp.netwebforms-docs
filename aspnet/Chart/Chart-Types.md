@@ -7,9 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# ChartTypes
-
-## Line Chart
+## Line Chart in ASP.NET Webforms Chart
 
 To render a Line Chart, set the series **Type** as **Line** in the chart series. To change the line segment color, you can use the **Fill** property of the series.
 
@@ -1442,7 +1440,7 @@ You can change the scatter size by using the **Size** property of the series mar
 
 {% endhighlight %}
 
-![60](Chart-Types_images/Chart-Types_img60.png)
+![ASPNET_Scatter_Chart_Image](Chart-Types_images/Chart-Types_img60.png)
 
 
 ## HiLoOpenClose Chart 

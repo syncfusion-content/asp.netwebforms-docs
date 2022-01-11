@@ -7,7 +7,7 @@ control: DateTimePicker
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms DateTimePicker
 
 This section explains briefly how to create a **DateTimePicker** in your application with the ASP.NET.
 

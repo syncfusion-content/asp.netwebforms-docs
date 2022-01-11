@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Axis
+# Axis in ASP.NET Webforms Chart
 
 **Charts** typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis.
 
