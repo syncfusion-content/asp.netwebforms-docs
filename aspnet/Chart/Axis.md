@@ -314,7 +314,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![ASPNET Chart datetimerange](Axis_images/axis_img13.png)
+![ASPNET Chart datetime range](Axis_images/axis_img13.png)
 
 
 ### Date time intervals
@@ -637,7 +637,7 @@ Date time labels can be formatted by using the **LabelFormat** property of the a
 
 {% endhighlight %}
 
-![ASPNET Chart datetimevalues](Axis_images/axis_img24.png)
+![ASPNET Chart datetime values](Axis_images/axis_img24.png)
 
 
 The following table describes the result of applying some common date time formats to the labelFormat property
@@ -724,7 +724,7 @@ Axis can be positioned anywhere in chart area using the **CrossesAt** property o
 
 {% endhighlight %}
 
-![ASPNET Chart AxisCrossing](Axis_images/axis_img52.png)
+![ASPNET Chart Axis Crossing](Axis_images/axis_img52.png)
 
 
 #### Crossing a specific Axis
@@ -743,7 +743,7 @@ The **CrossesInAxis** property takes axis name as input and determines the axis 
 
 {% endhighlight %}
 
-![ASPNET Chart specificAxis](Axis_images/axis_img53.png)
+![ASPNET Chart specific Axis](Axis_images/axis_img53.png)
 
 Axis will be placed in the opposite side if value of *CrossesAt* property is greater than the maximum value of crossing axis (axis name provided through *CrossesInAxis* property or primary Y axis for horizontal axis).
 
@@ -759,7 +759,7 @@ Axis will be placed in the opposite side if value of *CrossesAt* property is gre
 
 {% endhighlight %}
 
-![ASPNET Chart specificAxis](Axis_images/axis_img54.png)
+![ASPNET Chart specific Axis](Axis_images/axis_img54.png)
 
 #### Positioning the axis elements while crossing
 
@@ -985,7 +985,7 @@ Axis can be inversed by using the **IsInversed** property of the axis. The defau
 
 **Chart after inversing the axes**
 
-![ASPNET Chart Inversing Axis](Axis_images/axis_img35.png)
+![ASPNET Chart Inversing the Axis](Axis_images/axis_img35.png)
    
 
 ### Place axes at the opposite side
@@ -1033,7 +1033,7 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 **Chart after setting maximum labels one per 100 pixels**
 
-![ASPNET Chart Max Axis](Axis_images/axis_img39.png)
+![ASPNET Chart Max labels Axis](Axis_images/axis_img39.png)
 
 
 

@@ -443,7 +443,7 @@ The following screen shot displays Gantt chart with Enable Context menu option.
 
 
 
-![ASPNET_Gantt_EnableContextMenu_Getting-Startedimages](Getting-Started_images/Getting-Started_img10.png)  
+![ASPNET Gantt EnableContextMenu GettingStarted](Getting-Started_images/Getting-Started_img10.png)  
 
 Gantt control with Enable Editing options
 {:.caption}
