@@ -1,12 +1,12 @@
 ---
 title: Getting Started | FileExplorer | ASP.NET Web | Syncfusion
-description: To get start with FileExplorer by adding references
+description: Learn here about getting started with Syncfusion ASP.NET Webforms FileExplorer control, its elements, features, and more.
 platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, Getting Started
 ---
-# Getting Started
+# Getting Started with ASP.NET Webforms FileExplorer
 
 The following section is briefly explain the things to get started with FileExplorer control.
 
@@ -312,6 +312,6 @@ Include following code block in “downloadFile.ashx.cs” file.
     
 Once you have completed the above steps, you will get an output like below.
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
+![ASPNET FileExplorer GettingStarted](GettingStarted_images/GettingStarted_img1.jpeg)
 
 N> In the [section](how-to#file-handling-operations), you can know the details about file handling operations, which are performed at server side of “FileExplorer”.
