@@ -7,7 +7,7 @@ control: Visual Studio Extensions
 documentation: ug
 ---
 
-# Check for Updates
+# Check for Updates in Syncfusion ASP.NET Web Forms
 
 Syncfusion provides Extensions to update the most recent version of the Essential Studio release. Installing the most recent version ensures that you always have the most up-to-date features, fixes, and improvements.
 

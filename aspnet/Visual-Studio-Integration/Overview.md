@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Overview
+# Syncfusion ASP.NET Web Forms Extension
 
 The Syncfusion ASP.NET (Essential JS 1) Visual Studio Extensions can be accessed via the Syncfusion Menu to create and configure Visual Studio projects with Syncfusion references. Microsoft Visual Studio 2013 or higher is required to use the Syncfusion ASP.NET Extensions.
 
