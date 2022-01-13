@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Chart Types | Chart | ASP.NET Webforms | Syncfusion
-description: chart types
+title: Chart Types in ASP.NET Webforms Chart Control | Syncfusion
+description: Learn here all about chart types support in Syncfusion Essential Studio ASP.NET Webforms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# ChartTypes
-
-## Line Chart
+# Line Chart in ASP.NET Webforms Chart
 
 To render a Line Chart, set the series **Type** as **Line** in the chart series. To change the line segment color, you can use the **Fill** property of the series.
 
@@ -31,7 +29,7 @@ To render a Line Chart, set the series **Type** as **Line** in the chart series.
 [Click](http://asp.syncfusion.com/demos/web/chart/defaultfunctionalities.aspx) here to view the Line Chart online demo sample.
 
 
-### Change the line width
+## Change the line width
 
 To change the width of the line segment, you can use the **Width** property in the series.
 
@@ -1442,7 +1440,7 @@ You can change the scatter size by using the **Size** property of the series mar
 
 {% endhighlight %}
 
-![60](Chart-Types_images/Chart-Types_img60.png)
+![ASPNET Scatter Chart Types](Chart-Types_images/Chart-Types_img60.png)
 
 
 ## HiLoOpenClose Chart 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis | Chart | ASP.NET Webforms | Syncfusion
-description: axis
+title: Axis in ASP.NET Webforms Chart Control | Syncfusion
+description: Learn here all about Axis support in Syncfusion Essential Studio ASP.NET Webforms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
 
-# Axis
+# Axis in ASP.NET Webforms Chart
 
 **Charts** typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis.
 
@@ -41,7 +41,7 @@ Category axis displays the text labels instead of numbers. To use the categorica
 {% endhighlight %}
 
 
-![](Axis_images/axis_img1.png)
+![ASPNET Chart Axis](Axis_images/axis_img1.png)
 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/column.aspx) here to view our online demo sample that uses Category axis.
@@ -67,7 +67,7 @@ Labels in the category axis can be placed on the ticks by setting the **LabelPla
 
 {% endhighlight %}
 
-![](Axis_images/axis_img2.png)
+![ASPNET Chart Place labels on ticks](Axis_images/axis_img2.png)
 
 
 ### Display labels after a fixed interval
@@ -90,7 +90,7 @@ To display the labels after a fixed interval n, you can set the **Interval** pro
 
 {% endhighlight %}
 
-![](Axis_images/axis_img3.png)
+![ASPNET Chart interval](Axis_images/axis_img3.png)
 
 
 ### Indexed Category Axis
@@ -119,11 +119,11 @@ Category axis can also plot points based on index value of data points. Index ba
 {% endhighlight %}
 
 
-![](Axis_images/axis_img50.png)
+![ASPNET Chart Category Axis](Axis_images/axis_img50.png)
 
 **While Category axis isIndexed value false**
 
-![](Axis_images/axis_img51.png)
+![ASPNET Chart Category Axis isIndexed](Axis_images/axis_img51.png)
 
 
 ## Numeric Axis 
@@ -140,7 +140,7 @@ Numeric axis uses numerical scale and displays numbers as labels. To use numeric
 
 {% endhighlight %}
 
-![](Axis_images/axis_img4.png)
+![ASPNET Chart Numeric Axis](Axis_images/axis_img4.png)
 
 
 ### Customize numeric range
@@ -159,7 +159,7 @@ To customize the range of an axis, you can use the **Range** property of the axi
 
 {% endhighlight %}
 
-![](Axis_images/axis_img5.png)
+![ASPNET Chart Numeric range](Axis_images/axis_img5.png)
 
 
 #### Customizing numeric interval
@@ -177,7 +177,7 @@ Axis interval can be customized by using the **Interval** property of the axis r
 
 {% endhighlight %}
 
-![](Axis_images/axis_img6.png)
+![ASPNET Chart numeric interval](Axis_images/axis_img6.png)
 
 
 ### Apply padding to the range
@@ -203,7 +203,7 @@ When the value of the RangePadding property is **None**, padding can not be appl
 
 {% endhighlight %}
 
-![](Axis_images/axis_img7.png)
+![ASPNET Chart Range](Axis_images/axis_img7.png)
 
 
 #### Round
@@ -222,12 +222,12 @@ When the value of RangePadding property is **Round**, the axis range is rounded 
 
 **Chart before rounding axis range**
 
-![](Axis_images/axis_img8.png)
+![ASPNET Chart Round](Axis_images/axis_img8.png)
 
 
 **Chart after rounding axis range**
 
-![](Axis_images/axis_img9.png)
+![ASPNET Chart Axis Range](Axis_images/axis_img9.png)
 
 
 **Additional**
@@ -244,7 +244,7 @@ When the value of the RangePadding property is **Additional**, the axis range is
 
 {% endhighlight %}
 
-![](Axis_images/axis_img10.png)
+![ASPNET Chart Axis](Axis_images/axis_img10.png)
 
 
 **Normal**
@@ -261,7 +261,7 @@ When the value of the RangePadding property is **Normal**, the padding is applie
 
 {% endhighlight %}
 
-![](Axis_images/axis_img11.png)
+![ASPNET Chart Normal Axis](Axis_images/axis_img11.png)
 
 
 #### Customizing the starting range of the axis
@@ -276,7 +276,7 @@ By default the Y axis will be always calculated from the value 0 for column, bar
 
 {% endhighlight %}
 
-![](Axis_images/axis_img66.png)
+![ASPNET Chart starting range of axis](Axis_images/axis_img66.png)
 
 
 ## DateTime Axis
@@ -293,7 +293,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![](Axis_images/axis_img12.png)
+![ASPNET Chart DateTime Axis](Axis_images/axis_img12.png)
 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/datetimeaxis.aspx) here to view our online demo sample for date time axis.
@@ -314,7 +314,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![](Axis_images/axis_img13.png)
+![ASPNET Chart datetime range](Axis_images/axis_img13.png)
 
 
 ### Date time intervals
@@ -343,7 +343,7 @@ Essential Chart supports the following types of interval for date time axis.
 {% endhighlight %}
 
 
-![](Axis_images/axis_img14.png)
+![ASPNET Chart Datetimeintervals](Axis_images/axis_img14.png)
 
 
 
@@ -369,7 +369,7 @@ When the value of the RangePadding property is **None**, padding is applied to t
 
 {% endhighlight %} 
 
-![](Axis_images/axis_img15.png)
+![ASPNET Chart padding](Axis_images/axis_img15.png)
 
 
 **Round**
@@ -388,12 +388,12 @@ When the value of the RangePadding property is **Round**, the axis range is roun
 
 **Chart before rounding axis range**
 
-![](Axis_images/axis_img16.png)
+![ASPNET Chart rounding Axis](Axis_images/axis_img16.png)
 
 
 **Chart after rounding axis range**
 
-![](Axis_images/axis_img17.png)
+![ASPNET Chart rounding Axis](Axis_images/axis_img17.png)
 
 
 **Additional** 
@@ -410,7 +410,7 @@ When the value of the RangePadding property is **Additional**, the range is roun
 
 {% endhighlight %} 
 
-![](Axis_images/axis_img18.png)
+![ASPNET Chart Additional Axis](Axis_images/axis_img18.png)
 
 
 ## DateTime Category Axis
@@ -425,7 +425,7 @@ DateTime category axis takes date time value as input but behaves like category 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img63.png)
+![ASPNET Chart DateTimeCategory Axis](Axis_images/axis_img63.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/datetimecategoryaxis.aspx) here to view our online demo sample for date time axis.
 
@@ -444,7 +444,7 @@ Axis range can be customized by using the **Range** property to set the **Minimu
 
 {% endhighlight %}
 
-![](Axis_images/axis_img64.png)
+![ASPNET Chart DateTimeCategory Range Axis](Axis_images/axis_img64.png)
 
 ### DateTime Category intervals
 
@@ -468,7 +468,7 @@ Essential Chart supports the following types of interval for date time category 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img65.png)
+![ASPNET Chart DateTimeCategory Intervals Axis](Axis_images/axis_img65.png)
 
 
 ## Logarithmic Axis
@@ -486,7 +486,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 {% endhighlight %}
 
 
-![](Axis_images/axis_img19.png)
+![ASPNET Chart Logarithmic Axis](Axis_images/axis_img19.png)
 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/logaxis.aspx) here to view our online demo sample link for logarithmic axis.
@@ -506,7 +506,7 @@ Logarithmic range can be customized by using the Range property of the axis to c
 
 {% endhighlight %}
 
-![](Axis_images/axis_img20.png)
+![ASPNET Chart Logarithmic Range](Axis_images/axis_img20.png)
 
 
 ### Logarithmic base
@@ -523,7 +523,7 @@ Logarithmic base can be customized by using the **LogBase** property of the axis
 
 {% endhighlight %}
 
-![](Axis_images/axis_img21.png)
+![ASPNET Chart Logarithmic Base](Axis_images/axis_img21.png)
 
 
 ### Logarithmic interval
@@ -541,7 +541,7 @@ Logarithmic axis interval can be customized by using the Interval property of th
 
 {% endhighlight %}
 
-![](Axis_images/axis_img22.png)
+![ASPNET Chart Logarithmic Intervals](Axis_images/axis_img22.png)
       
 
 ## Label Format
@@ -560,7 +560,7 @@ Numeric labels can be formatted by using the **LabelFormat** property. Numeric v
 
 {% endhighlight %}
 
-![](Axis_images/axis_img23.png)
+![ASPNET Chart numeric labels](Axis_images/axis_img23.png)
 
 
 The following table describes the result of applying some commonly used label formats on numeric values. 
@@ -637,7 +637,7 @@ Date time labels can be formatted by using the **LabelFormat** property of the a
 
 {% endhighlight %}
 
-![](Axis_images/axis_img24.png)
+![ASPNET Chart datetime values](Axis_images/axis_img24.png)
 
 
 The following table describes the result of applying some common date time formats to the labelFormat property
@@ -701,7 +701,7 @@ Prefix and suffix can be added to the category labels by using the LabelFormat p
 
 {% endhighlight %}
 
-![](Axis_images/axis_img25.png)
+![ASPNET Chart Custom label format](Axis_images/axis_img25.png)
 
 
 ## Common axis features
@@ -724,7 +724,7 @@ Axis can be positioned anywhere in chart area using the **CrossesAt** property o
 
 {% endhighlight %}
 
-![](Axis_images/axis_img52.png)
+![ASPNET Chart Axis Crossing](Axis_images/axis_img52.png)
 
 
 #### Crossing a specific Axis
@@ -743,7 +743,7 @@ The **CrossesInAxis** property takes axis name as input and determines the axis 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img53.png)
+![ASPNET Chart specific Axis](Axis_images/axis_img53.png)
 
 Axis will be placed in the opposite side if value of *CrossesAt* property is greater than the maximum value of crossing axis (axis name provided through *CrossesInAxis* property or primary Y axis for horizontal axis).
 
@@ -759,7 +759,7 @@ Axis will be placed in the opposite side if value of *CrossesAt* property is gre
 
 {% endhighlight %}
 
-![](Axis_images/axis_img54.png)
+![ASPNET Chart specific Axis](Axis_images/axis_img54.png)
 
 #### Positioning the axis elements while crossing
 
@@ -777,7 +777,7 @@ The `ShowNextToAxisLine` property is used for controlling the axis elements move
 
 {% endhighlight %}
 
-![](Axis_images/axis_img67.png)
+![ASPNET Chart Crossing AxisElements](Axis_images/axis_img67.png)
 
 ### Axis Visibility
 
@@ -793,7 +793,7 @@ Axis visibility can be controlled by using the **Visible** property of the axis.
 
 {% endhighlight %}
 
-![](Axis_images/axis_img26.png)
+![ASPNET Chart Axis Visibility](Axis_images/axis_img26.png)
 
 
 ### Axis title
@@ -814,7 +814,7 @@ The **Title** property in the axis provides options to customize the text and fo
 
 {% endhighlight %}
 
-![](Axis_images/axis_img27.png)
+![ASPNET Chart Axis title](Axis_images/axis_img27.png)
 
 You can modify the position of the axis title either inside or outside the chart area using the property **Position**. By default, it will be placed outside the chart area. In addition, you can also change the alignment of the title to near, far and center by **Alignment** property, using **Offset** property you can change the position with respect to pixels.
 
@@ -826,7 +826,7 @@ You can modify the position of the axis title either inside or outside the chart
 
 {% endhighlight %}
 
-![](Axis_images/axis_img62.png)
+![ASPNET Chart Axis title](Axis_images/axis_img62.png)
 
 ### Label customization
 
@@ -844,7 +844,7 @@ The **Font** property of the axis provides options to customize the FontFamily, 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img28.png)
+![ASPNET Chart Label customization](Axis_images/axis_img28.png)
 
 #### Axis Labels Line Break
 
@@ -870,7 +870,7 @@ For category value type, **<br>** can be specified in x value of data points.
 
 {% endhighlight %}
 
-![](Axis_images/axis_img68.png)
+![ASPNET Chart Axis LabelsLine Break](Axis_images/axis_img68.png)
 
 For numeric, datetime and datetimeCategory value type, **<br>** can be specified in labelFormat.
 
@@ -883,7 +883,7 @@ For numeric, datetime and datetimeCategory value type, **<br>** can be specified
 
 {% endhighlight %}
 
-![](Axis_images/axis_img69.png)
+![ASPNET Chart Axis](Axis_images/axis_img69.png)
 
 ### Label and tick positioning
  
@@ -899,7 +899,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 {% endhighlight %}
 
-![](Axis_images/axis_img29.png)
+![ASPNET Chart Label tick](Axis_images/axis_img29.png)
 
 
 ### Edge labels placement
@@ -918,12 +918,12 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 **Chart before setting edge label placement to X-axis**
 
-![](Axis_images/axis_img30.png)
+![ASPNET Chart Edge labels](Axis_images/axis_img30.png)
 
 
 **Chart after setting edge label placement to X-axis**
 
-![](Axis_images/axis_img31.png)
+![ASPNET Chart after setting edge label Axis](Axis_images/axis_img31.png)
 
 
 ### Grid lines customization
@@ -942,7 +942,7 @@ The **MajorGridLines** and **MinorGridLines** properties in the axis are used to
 
 {% endhighlight %}
 
-![](Axis_images/axis_img32.png)
+![ASPNET Chart Gridlines](Axis_images/axis_img32.png)
 
 
 ### Tick lines customization
@@ -961,7 +961,7 @@ The **MajorTickLines** and **MinorTickLines** properties in the axis are used to
 
 {% endhighlight %}
 
-![](Axis_images/axis_img33.png)
+![ASPNET Chart Ticklines](Axis_images/axis_img33.png)
 
   
 ### Inversing axis
@@ -980,12 +980,12 @@ Axis can be inversed by using the **IsInversed** property of the axis. The defau
 
 **Chart before inversing the axes**
 
-![](Axis_images/axis_img34.png)
+![ASPNET Chart Inversing Axis](Axis_images/axis_img34.png)
 
 
 **Chart after inversing the axes**
 
-![](Axis_images/axis_img35.png)
+![ASPNET Chart Inversing the Axis](Axis_images/axis_img35.png)
    
 
 ### Place axes at the opposite side
@@ -1004,12 +1004,12 @@ The **OpposedPosition** property of axis can be used to place the axis at the op
 
 **Chart with X and Y axes at normal position**
 
-![](Axis_images/axis_img36.png)
+![ASPNET Chart Placeaxes](Axis_images/axis_img36.png)
 
 
 **Chart with Y-axis at opposed position**
 
-![](Axis_images/axis_img37.png)
+![ASPNET Chart Y-Axis](Axis_images/axis_img37.png)
 
 
 ### Maximum number of labels per 100 pixels
@@ -1028,12 +1028,12 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 **Chart before setting maximum labels per 100 pixels**
 
-![](Axis_images/axis_img38.png)
+![ASPNET Chart Max Axis](Axis_images/axis_img38.png)
 
 
 **Chart after setting maximum labels one per 100 pixels**
 
-![](Axis_images/axis_img39.png)
+![ASPNET Chart Max labels Axis](Axis_images/axis_img39.png)
 
 
 
@@ -1041,7 +1041,7 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 Multiple axes can be used in the Chart and chart area can be split into multiple panes to draw multiple series with multiple axes.
 
-![](Axis_images/axis_img40.png)
+![ASPNET Chart Axis](Axis_images/axis_img40.png)
 
 
 An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **Axes** collection and then you can associate it to a series by specifying the name of the axis to the **XAxisName** or **YAxisName** property of the series.
@@ -1066,7 +1066,7 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 
 
-![](Axis_images/axis_img41.png)
+![ASPNET Chart Multiple Axis](Axis_images/axis_img41.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/multipleaxes.aspx) here to view the multiple axis online demo sample.
 
@@ -1087,7 +1087,7 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 
 
-![](Axis_images/axis_img42.png)
+![ASPNET Chart Smart Axis](Axis_images/axis_img42.png)
 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/smartaxislabel.aspx) here to view our online demo sample for smart axis labels.
@@ -1096,36 +1096,36 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 The following screenshot displays the result, when the LabelIntersectAction property is set as **Rotate45**.
 
-![](Axis_images/axis_img43.png)
+![ASPNET Chart Rotate45 Axis](Axis_images/axis_img43.png)
 
 
 The following screenshot displays the result, when the LabelIntersectAction property is set as **Rotate90**.
 
-![](Axis_images/axis_img44.png)
+![ASPNET Chart Rotate90 Axis](Axis_images/axis_img44.png)
 
 
 The following screenshot displays the result, when the LabelIntersectAction property is set as **Wrap**.
 
-![](Axis_images/axis_img45.png)
+![ASPNET Chart Wrap Axis](Axis_images/axis_img45.png)
 
 
 The following screenshot displays the result, when of setting the **trim** as value to the LabelIntersectAction property.
 
-![](Axis_images/axis_img46.png)
+![ASPNET Chart trim Axis](Axis_images/axis_img46.png)
 
 
 The following screenshot displays the result, when the LabelIntersectAction property is set as **Hide**.
 
-![](Axis_images/axis_img47.png)
+![ASPNET Chart Hide Axis](Axis_images/axis_img47.png)
 
 
 The following screenshot displays the result, when the LabelIntersectAction property is set as **MultipleRows **.
 
-![](Axis_images/axis_img48.png)
+![ASPNET Chart MultipleRows Axis](Axis_images/axis_img48.png)
 
 The following screenshot displays the result, when the LabelIntersectAction property is set as **WrapByWord**.
 
-![](Axis_images/axis_img49.png)
+![ASPNET Chart WrapByWord Axis](Axis_images/axis_img49.png)
 
 ## Multi-level Labels
 Axis can be customized with multiple levels of labels using the **MultiLevelLabels** property. These labels are placed based on the start and end range values and we can add any number of labels to an axis.
@@ -1143,7 +1143,7 @@ Axis can be customized with multiple levels of labels using the **MultiLevelLabe
 
 {% endhighlight %}
 
-![](Axis_images/axis_img57.png)
+![ASPNET Chart Multi level Labels](Axis_images/axis_img57.png)
 
 ### Customizing the multi-Level labels
 The color, width and type of the border can be customized. The default border type is **Rectangle**. And the other supported border types are namely brace, curly brace, without top/bottom border and none. 
@@ -1161,7 +1161,7 @@ The color, width and type of the border can be customized. The default border ty
 
 {% endhighlight %}
 
-![](Axis_images/axis_img58.png)
+![ASPNET Chart Multi level Labels](Axis_images/axis_img58.png)
 
 The text of the labels can be customized using the **Text** and **Font** properties 
 
@@ -1178,7 +1178,7 @@ The text of the labels can be customized using the **Text** and **Font** propert
      
 {% endhighlight %}
 
-![](Axis_images/axis_img59.png)
+![ASPNET Chart Text](Axis_images/axis_img59.png)
 
 You can change the alignment of the text to far, near and center position using the **TextAlignment** property. By default, the text will be center aligned. 
 
@@ -1195,7 +1195,7 @@ You can change the alignment of the text to far, near and center position using 
        
 {% endhighlight %}
 
-![](Axis_images/axis_img60.png)
+![ASPNET Chart TextAlignment](Axis_images/axis_img60.png)
 
 You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property **TextOverflow**
 
@@ -1214,7 +1214,7 @@ You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width 
 
 The below screenshot shows the trimmed multi-level labels
 
-![](Axis_images/axis_img61.png)
+![ASPNET Chart trimmed multi level labels](Axis_images/axis_img61.png)
 
 And these labels can be placed in various rows using the **Level** property.
 [Click](http://asp.syncfusion.com/demos/web/chart/multilevellabels.aspx) here to view the multi-level labels online demo sample.
