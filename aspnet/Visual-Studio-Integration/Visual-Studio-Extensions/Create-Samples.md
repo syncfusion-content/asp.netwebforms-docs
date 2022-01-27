@@ -61,23 +61,7 @@ To create the Syncfusion ASP.NET (Essential JS 1) Application using the Sample C
 
       ![The project successfully created using Syncfusion Essential JS 1 ASP.NET Web Forms Sample Creator](Create-Samples_images/SampleCreator-img6.png)
 
-   3. The new Syncfusion ASP.NET (Essential JS 1) project is created with the resources.
-
-      * Added the required Controllers and View files in the project.
-
-        ![Required ASPX and Class files for Syncfusion Essential JS 1 ASP.NET Web Forms controls](Create-Samples_images/SampleCreator-img7.png)
-
-      * Under Project Reference, the necessary Syncfusion assemblies are added for selected components.
-
-        ![Required reference assemblies for Syncfusion Essential JS 1 ASP.NET Web Forms controls](Create-Samples_images/SampleCreator-img8.png)
-
-      * Syncfusion ASP.NET (Essential JS 1) scripts and theme files were included.
-
-        ![Required Scripts and Themes files for Syncfusion Essential JS 1 ASP.NET Web Forms controls](Create-Samples_images/SampleCreator-img9.png)
-
-      * Configure the Web.Config file by adding the Syncfusion reference assemblies, namespaces and controls.
-
-        ![Required Web.config assembliesa and namespaces entry for Syncfusion Essential JS 1 ASP.NET Web Forms controls](Create-Samples_images/SampleCreator-img10.png)
+   3. The new Syncfusion ASP.NET Web Forms sample is created. Required view file for selected controls, selected style, scripts and corresponding Syncfusion assemblies are added in the created sample.
 
 
    
