@@ -1,12 +1,12 @@
 ---
-title: Getting started with Schedule component	
-description: Rendering a basic Scheduler with remote data
+title: Getting started with ASPNET WebForms Schedule Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASPNET WebForms Schedule Control, its elements, and more.
 platform: aspnet
 control: schedule
 documentation: ug
 keywords: ejschedule, schedule, schedule widget, js schedule 
 ---
-# Getting Started
+# Getting Started with ASPNET WebForms Schedule
 
 Follow the steps mentioned in the [Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) page of the Introduction part to create an ASP.NET application with the required assemblies, scripts and stylesheet reference.
 Simply drag and drop the Scheduler control into the designer area to add it into the application, so that the following Schedule rendering code gets automatically generated in the Source code section.
@@ -79,7 +79,7 @@ N> To make use of the *DataObjectMethod* in your current page, need to define th
 
 Now to bind the above defined data to the Scheduler, drag and drop the **ObjectDataSource** from the toolbox into the design area which generates the following code,
 
- ![](getting-started_images/toolbox-VS.png)
+ ![ASPNET WebForms Schedule Getting Started](getting-started_images/toolbox-VS.png)
  
 {% highlight html %}
 
@@ -120,4 +120,4 @@ Map the Scheduler data fields with the appropriate appointmentSettings propertie
 To bind the data from database or any other dataSources, refer [here](/aspnet/schedule/data-binding).
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASPNET WebForms Schedule dataSources](Getting-Started_images/Getting-Started_img1.png)

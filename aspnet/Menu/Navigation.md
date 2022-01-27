@@ -7,7 +7,7 @@ control: Menu
 documentation: ug
 ---
 
-# Navigation ASP.NET Menu
+# Navigation in ASP.NET WebForms Menu
 
 Navigation in Menu control is the default usage to navigate into the other web page. You can navigate to another page in the menu item by giving link to the menu items. Navigation in Menu control can be achieved by placing “href” path to the URL property in Menu items. Use following code example for navigating in Menu control.
 
