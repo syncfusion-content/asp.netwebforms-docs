@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multiple Columns | AutoComplete | ASP.NET Webforms | Syncfusion
-description: multiple columns
+title: Multiple Columns in ASP.NET WebForms AutoComplete Control | Syncfusion
+description: Learn here about multiple columns support in Syncfusion Essential ASP.NET WebForms AutoComplete Control, its elements, and more.
 platform: aspnet
 control: AutoComplete
 documentation: ug
 ---
 
-# Multiple Columns
+# Multiple Columns in ASP.NET WebForms AutoComplete
 
 The Autocomplete allows list of data to be displayed in several columns and column collection can be defined and customized through the **MultiColumnSettings** property.
 
@@ -66,5 +66,5 @@ Add the below code in corresponding code behind.
 
 The following screenshot is the output for AutoComplete control with configured multiple columns.
 
-![](multicolumn_images/multicolumn_img1.png)
+![ASP.NET WebForms AutoComplete Multiple Columns](multicolumn_images/multicolumn_img1.png)
 

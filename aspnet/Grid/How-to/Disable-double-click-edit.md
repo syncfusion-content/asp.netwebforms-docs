@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Disable double click edit | Grid | ASP.NET Webforms | Syncfusion
-description: disable double-click edit
+title: Disable double click edit in ASP.NET Webforms Grid Control| Syncfusion
+description: Learn here about disable double-click edit in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-## Disable double-click edit
+# Disable double click edit in ASPNET Webforms Grid
 
 The AllowEditOnDblClick property can be set as True to enable editing the record by double-clicking it. When it is set as False, it cannot be edited by double-clicking it. In that case, you can edit the record by using the Toolbar option only.
 
@@ -53,7 +53,7 @@ The AllowEditOnDblClick property can be set as True to enable editing the record
 
 The following output is displayed as a result of the above code example.
 
-![](Disable-double-click-edit_images/Disable-double-click-edit_img1.png) 
+![ASPNET Webforms Grid Disable double click edit](Disable-double-click-edit_images/Disable-double-click-edit_img1.png) 
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | Button | ASP.NET Webforms | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Essential ASP.NET WebForms Button Control, its elements, and more.
 platform: aspnet
 control: Button
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET WebForms Button
 
 This section explains you briefly on how to create a **Button** in your application with ASP.NET
 
@@ -17,7 +17,7 @@ This section explains you briefly on how to create a **Button** in your applicat
 
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET WebForms Button Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 
 ## Create Button control
@@ -101,7 +101,7 @@ Add the following styles to show the Button control in the center of a web pag
 
 {% endhighlight %}
 
-![C:/Users/jeganprakash/Desktop/Documentation/Images/Button/1.PNG](Getting-Started_images/Getting-Started_img2.png)
+![ASP.NET WebForms Create Button](Getting-Started_images/Getting-Started_img2.png)
 
 
 ## Create Office Ribbon Control
@@ -186,11 +186,11 @@ Add Function Definition from click event to Button function. 
 <table>
 <tr>
 <td>
-{{ '![C:/Users/jeganprakash/Desktop/Documentation/Images/Button/3.PNG](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
+{{ '![ASP.NET WebForms Button Create Office](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 </td></tr>
 <tr>
 <td>
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
+{{ '![ASP.NET WebForms Create Office Button](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 </td></tr>
 </table>
 
