@@ -1,20 +1,18 @@
 ---
 layout: post
-title: behavior settings
-description: behavior settings
+title: Behavior Settings in ASP.NET DateRangePicker Control | Syncfusion
+description: Learn here about behavior settings in Syncfusion Essential ASP.NET Webforms DateRangePicker Control, its elements, and more.
 platform: aspnet
 control: DateRangePicker
 documentation: ug
 keywords: value, Separator, range
 ---
 
-## Behavior Settings
+# Behavior Settings in ASP.NET Webforms DateRangePicker
 
 DateRangePicker has some default behavior settings which helps you to perform more operation by Built-in.
 
-### Selected Date Range
-
-#### Value
+## Selected Date Range
 
 DateRangePicker value can be selected through picking two date values from available two DatePicker calendar or you can set it by using **Value** property.
 
@@ -38,7 +36,7 @@ DateRangePicker value can be selected through picking two date values from avail
         
 {% endhighlight %}
 
-##### Separator
+### Separator
 
 The value of the DateRangePicker popup will presented with two date strings which is separated by **Separator** (e.g. “"11/1/2016 - 11/2/2017"”). Separator will be “- “by default and this can be changed using API called **Separator**. Please check with below code example to setting/changing the separator using **Separator** API.
 
@@ -52,7 +50,7 @@ The value of the DateRangePicker popup will presented with two date strings whic
 {% endhighlight %}
 
 
-![](separator_images\separator_img1.png)
+![ASPNET DateRangePicker Separator](separator_images\separator_img1.png)
 
 #### Start Date
 
@@ -103,7 +101,7 @@ Below code will explain to use the **EndDate** API to set the end Date in popup.
 End Date can be set to popup by entering the date into the second input box in popup
 
 
-### Preset Ranges
+#### Preset Ranges
 
 We can make use of preset range for easy selection on popup. 
 
@@ -136,7 +134,7 @@ We can make use of preset range for easy selection on popup.
         }
 {% endhighlight %}
 
-![](presetranges_images\presetranges_img1.png)
+![ASPNET DateRangePicker Preset Ranges](presetranges_images\presetranges_img1.png)
 
 These ranges can be processed and updated to popup by using the **setRange** method also like below code example.
 
@@ -166,7 +164,7 @@ These ranges can be processed and updated to popup by using the **setRange** met
 {% endhighlight %}
 
 
-### TimePicker Option
+#### TimePicker Option
 
 The ranges can be set with time value also by enable the TimePicker in popup using **EnableTimePicker** API. Each start date and end date, have separate Time Pickers. Please check with the below code example to enable the time picker.
 
@@ -179,7 +177,7 @@ The ranges can be set with time value also by enable the TimePicker in popup usi
 
 {% endhighlight %}
 
-![](timepickeroption_images\timepickeroption_img1.png)
+![ASPNET DateRangePicker TimePicker Option](timepickeroption_images\timepickeroption_img1.png)
 
 
 

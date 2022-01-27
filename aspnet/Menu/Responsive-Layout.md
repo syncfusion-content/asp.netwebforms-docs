@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Responsive Layout | Menu | ASP.NET Webforms | Syncfusion
-description: responsive layout
+title: Responsive Layout in ASP.NET WebForms Menu Control | Syncfusion
+description: Learn here about responsive layout support in Syncfusion Essential ASP.NET WebForms Menu Control, its elements, and more.
 platform: aspnet
 control: Menu
 documentation: ug
 ---
 
-# Responsive Layout
+# Responsive Layout in ASP.NET WebForms Menu
 
 Responsive Layout is aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors). In order to get responsive layout, add ej.responsive.css file in your sample. CDN link for the responsive CSS file is as follows.
 
@@ -139,7 +139,7 @@ Add the following code example in your ASPX page.
 
 The following screenshot displays the output for the above code example. 
 
-![](Responsive-Layout_images/Responsive.png) 
+![ASP.NET WebForms Menu Responsive Layout](Responsive-Layout_images/Responsive.png) 
 
 ## Responsive in Desktop:
 
@@ -147,7 +147,7 @@ When menu width is small and window width is normal as desktop ,only the  overfl
 
 The following output shows the output of menu with Width of "300px" in Desktop mode
 
-![](Responsive-Layout_images/Responsive-img1.png)
+![ASP.NET WebForms Menu Responsive in Desktop](Responsive-Layout_images/Responsive-img1.png)
 
 Download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Menu-1983113660)
 
@@ -155,7 +155,7 @@ Download the sample [here](http://www.syncfusion.com/downloads/support/directtra
 
 Menu will be displayed  in mobile or Tablet as shown in the below image:
 
-![](Responsive-Layout_images/responsivemenu.png)
+![ASP.NET WebForms Menu Responsive in Mobile or Tablet](Responsive-Layout_images/responsivemenu.png)
 
 N> Window width below  767px is considered as Mobile or Tablet mode in our menu.
 
