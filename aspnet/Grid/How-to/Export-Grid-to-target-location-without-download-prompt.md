@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# Export Grid to target location without download prompt(Excel, Word or PDF)
+# Export Grid to target location without download prompt
 
 In the Export method we have assigned the target location to save the exported file in the specified path. The target folder is placed using the Server.MapPath.
 
