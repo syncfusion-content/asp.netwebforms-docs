@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Load on demand in DropDownList control for Syncfusion ASP.NET WebForm
-description: Describes about the load on demand in DropDownList control for Syncfusion ASP.NET WebForm
+title: Load on demand in DropDownList control for Syncfusion ASP.NET WebForms
+description: Describes about the load on demand in Syncfusion ASP.NET WebForms DropDownList control, its elements, and more.
 platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, loadOnDemand
 
 ---
-## Load On Demand
+# Load On Demand in ASP.NET WebForms DropDownList
 
 Load on demand feature allows the DropDownList items load on request from the service/database, during only on click the DropDown icon or DropDownList. This functionality helps to improve performance on control initial rendering time. Because data items load on request. 
 
@@ -32,4 +32,4 @@ The loadOnDemand property is used to enable or disable the load on demand functi
 {% endhighlight %}
 
 
-![](LoadOnDemand_images/loadondemand.png)
+![ASP.NET WebForms DropDownList LoadOnDemand](LoadOnDemand_images/loadondemand.png)
