@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding | Grid | ASP.NET Webforms | Syncfusion
+title: Data Binding in ASP.NET Webforms Grid Control | Syncfusion
 description: Learn here all about data binding support in Syncfusion ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid

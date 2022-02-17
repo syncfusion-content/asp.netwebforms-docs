@@ -1,20 +1,18 @@
 ---
 layout: post
 title: Getting started with DropDownList control for Syncfusion ASP.NET WebForm
-description: To get start with DropDownList by adding references.
+description: Learn here about Getting Started with Syncfusion ASP.NET WebForms DropDownList Control, its elements, and more.
 platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Populating data
 ---
 
-# Getting Started
-
-## Creating your first DropDownList in ASP Web Forms
+# Creating your first DropDownList in ASP Web Forms
 
 1. Create an ASP.NET Web Forms application and add DropDownList control to the Default.aspx page.
 
-    ![](Getteing-Started_images/Getteing-Started_img3.jpeg)
+    ![ASP.NET WebForms DropDownList Getting Started](Getteing-Started_images/Getteing-Started_img3.jpeg)
 
 2. Once the control is dragged and dropped into the page the embedded resource will add dependent script and CSS files from Syncfusion.EJ.Web assembly and the assembly will be referred from GAC. This will add the following appSetting key in web.config file to load resource files.
 
@@ -31,7 +29,7 @@ N> Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting
 
 3. Configure the DropDownList control using smart tag, to add DropDownList items
 
-    ![](Getteing-Started_images/Getteing-Started_img4.jpeg)
+    ![ASP.NET WebForms DropDownList Configure using smart tag](Getteing-Started_images/Getteing-Started_img4.jpeg)
 
     Switching from Design view to Source the DropDownList code looks like the below. Syncfusion namespace will be registered and control will be initialized from the Syncfusion.EJ.Web namespace tag prefix "ej". The items to DropDownList are added using the DropDownListItem child element under Items.
 
@@ -56,7 +54,7 @@ N> Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting
 
 4. Execute the code to get the below output
 
-    ![](Getteing-Started_images/Getteing-Started_img1.jpeg)
+    ![ASP.NET WebForms DropDownList](Getteing-Started_images/Getteing-Started_img1.jpeg)
 
 ## Populating data
 
@@ -64,11 +62,11 @@ The DropDownList can be bounded to both local list data binding like SQLDataSour
 
 1. Configure the DropDownList control with SQL data source using smart tag.
 
-    ![](Getteing-Started_images/Getteing-Started_img5.jpeg)
+    ![ASP.NET WebForms DropDownList Populating data](Getteing-Started_images/Getteing-Started_img5.jpeg)
 
 2. Assign the values for DropDownList Mapper fields from the properties panel.
 
-    ![](Getteing-Started_images/Getteing-Started_img6.jpeg)
+    ![ASP.NET WebForms DropDownList Mapper fields](Getteing-Started_images/Getteing-Started_img6.jpeg)
 
     > Create a connection string in Web.config file using SQL database.
 
@@ -95,7 +93,7 @@ Switching from Design view to Source the DropDownList code looks like the below 
 
 3. Execute the code to get the below output 
 
-    ![](Getteing-Started_images/Getteing-Started_img2.jpeg)
+    ![ASP.NET WebForms DropDownList](Getteing-Started_images/Getteing-Started_img2.jpeg)
 
 ## Setting Dimensions
 

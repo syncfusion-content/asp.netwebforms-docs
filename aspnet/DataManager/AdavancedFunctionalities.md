@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Advanced Functionalities  | DataManager | ASP.NET Webforms | Syncfusion
-description: Advanced Functionalities
+title: Advanced Functionalities in ASP.NET Webforms DataManager | Syncfusion
+description: Learn here about Advanced Functionalities in Syncfusion ASP.NET Webforms DataManager Control, its elements and more.
 platform: aspnet
 control: DataManager
 documentation: ug
 keywords: Offline Support, Load on Demand, Customer Request Headers, HTML Table, Cross domain & JSONP
 
 ---
-# Advanced Functionalities
 
-## Offline Support
+# Offline Support in ASP.NET Webforms DataManager
 
 Offline support allows data-bound Syncfusion UI widgets to function without active server connection. Users can continue working with the data.
 
@@ -39,7 +38,7 @@ In the following code example, the offline property of the DataManager is set as
 
 {% endhighlight %}
 
-![](Data-Binding_images/Data-Binding_img8.png)
+![ASP.NET Webforms DataManager](Data-Binding_images/Data-Binding_img8.png)
 
 ## Load on demand
 
@@ -95,14 +94,14 @@ You can use the following code example for implementing load on demand using Dat
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img9.png)
+![ASP.NET Webforms DataManager Load on demand](Data-Binding_images/Data-Binding_img9.png)
 
 Load on demand {:.caption}
 
 The request and the response for the above code is send as follows.
 
 
-![](Data-Binding_images/Data-Binding_img10.png)
+![ASP.NET Webforms DataManager](Data-Binding_images/Data-Binding_img10.png)
 
 
 Demanded data {:.caption}
@@ -139,7 +138,7 @@ You can add custom request headers to every request made by the **DataManager** 
 
 The above method generates the request header with custom header as follows.
 
-![](Advanced_images/headers1.png) 
+![ASP.NET Webforms DataManager Custom Request Headers](Advanced_images/headers1.png) 
 
 ### Adding Custom Request Headers to every Request using pre-request callback **beforeSend**
 
@@ -205,7 +204,7 @@ You can set the custom headers using pre-request callback **beforeSend** as foll
 
 The above method generates the request header with custom header as follows.
 
-![](Advanced_images/headers3.png)
+![ASP.NET Webforms DataManager Custom Request](Advanced_images/headers3.png)
 
 ### Adding Custom Request Headers using **addParams** method
 
@@ -230,7 +229,7 @@ You can use the addParams method of ej.Query class, to add custom parameter to t
 
 The custom parameter will be passed along with the data request of the grid as follows.
 
-![](Advanced_images/headers2.png) 
+![ASP.NET Webforms DataManager Custom Request](Advanced_images/headers2.png) 
 
 ## Cross domain & JSONP
 
@@ -259,7 +258,7 @@ The **DataManager** contains support for creating cross domain request, you can 
 
 Result of above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img12.png) 
+![ASP.NET Webforms DataManager Cross domain & JSONP](Data-Binding_images/Data-Binding_img12.png) 
 
 ## HTML Table
 
@@ -308,6 +307,6 @@ Refer to the following code example for the **HTML** element binding using **Dat
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img13.png)
+![ASP.NET Webforms DataManager HTML Table](Data-Binding_images/Data-Binding_img13.png)
 
 
