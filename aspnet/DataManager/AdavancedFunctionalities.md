@@ -258,7 +258,7 @@ The **DataManager** contains support for creating cross domain request, you can 
 
 Result of above code example is illustrated as follows.
 
-![ASP.NET Webforms DataManager Cross domain & JSONP](Data-Binding_images/Data-Binding_img12.png) 
+![ASP.NET Webforms DataManager Cross domain](Data-Binding_images/Data-Binding_img12.png) 
 
 ## HTML Table
 

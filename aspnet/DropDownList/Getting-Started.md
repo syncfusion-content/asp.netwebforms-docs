@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with DropDownList control for Syncfusion ASP.NET WebForm
+title: Getting started with ASP.NET WebForms DropDownList Control| Syncfusion
 description: Learn here about Getting Started with Syncfusion ASP.NET WebForms DropDownList Control, its elements, and more.
 platform: aspnet
 control: DropDownList
