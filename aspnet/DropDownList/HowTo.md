@@ -7,7 +7,9 @@ control: DropDownList
 documentation: ug
 ---
 
-# Retrieve the selected item data from select event via arguments?
+# How To Section in ASP.NET Webform DropDownList
+
+## Retrieve the selected item data from select event via arguments?
 
 Bind the OnValueSelect event and you can retrieve the value from select event arguments in code behind. 
 

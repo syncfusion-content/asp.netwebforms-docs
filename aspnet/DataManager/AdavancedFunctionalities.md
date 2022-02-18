@@ -8,8 +8,9 @@ documentation: ug
 keywords: Offline Support, Load on Demand, Customer Request Headers, HTML Table, Cross domain & JSONP
 
 ---
+# Advanced Functionalities in ASP.NET Webforms DataManager
 
-# Offline Support in ASP.NET Webforms DataManager
+## Offline Support
 
 Offline support allows data-bound Syncfusion UI widgets to function without active server connection. Users can continue working with the data.
 
