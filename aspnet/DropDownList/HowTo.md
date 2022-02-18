@@ -7,7 +7,7 @@ control: DropDownList
 documentation: ug
 ---
 
-# How To Section in ASP.NET Webform DropDownList
+# How To Section in ASP.NET Webforms DropDownList
 
 ## Retrieve the selected item data from select event via arguments?
 
