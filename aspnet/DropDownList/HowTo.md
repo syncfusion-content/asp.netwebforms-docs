@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to - DropDownList control for Syncfusion ASP.NET Webform
-description: How To Section in DropDownList control for Syncfusion ASP.NET Webform
+title: DropDownList control for Syncfusion ASP.NET Webform
+description: Learn here about how To Section in DropDownList control for Syncfusion ASP.NET Webform, its elements and more.
 platform: aspnet
 control: DropDownList
 documentation: ug
 ---
 
-# How To
+# How To Section in ASP.NET Webforms DropDownList
 
 ## Retrieve the selected item data from select event via arguments?
 
@@ -49,7 +49,7 @@ Bind the OnValueSelect event and you can retrieve the value from select event ar
 
 In the following screenshot you can get the argument details for OnValueSelect event
 
-![](HowTo_images/HowTo_img3.jpeg)
+![ASP.NET Webforms DropDownList HowTo](HowTo_images/HowTo_img3.jpeg)
 
 ## Add check all option in popup list?
 
@@ -122,7 +122,7 @@ You can use HeaderTemplate property to add any HTML element. Code snippet to add
 
 The following screenshot exhibits the output of the above code,
 
-![](HowTo_images/HowTo_img2.jpeg)
+![ASP.NET Webforms DropDownList popup option](HowTo_images/HowTo_img2.jpeg)
 
 ## Dynamically bind the data to the DropDownList using ASP.NET data bound method called “onDataBound” method
 
@@ -179,7 +179,7 @@ The items can be added to the DropDownList in DataBound event using a generic Da
 
 In the OnDataBound event copy the current DataSource to a DataView instance and initiate a new row for the DataView table using DataRow instance. Based on the requirement add the dynamic items to the DataRow instance using the Data fields bound to the DropDownList control. Finally assign the updated DataView to the DropDownList data source. 
 
-![](HowTo_images/DataBound.jpg)
+![ASP.NET Webforms DropDownList Bind the data](HowTo_images/DataBound.jpg)
 
 ## Create user control as DropDownList, to set/get the items in DropDownList in code behind
 
