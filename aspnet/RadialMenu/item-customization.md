@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Item-Customization | Radial Menu | ASP.NET Webforms | Syncfusion
-description: item customization
+description: Learn here about item customization in Syncfusion ASP.NET Webforms Radial Menu Control, its elements, and more.
 platform: aspnet
 control: Radial Menu
 documentation: ug
 ---
 
-## Item Customization
+# Item Customization in ASP.NET Webforms Radial Menu
 
 You can customize individual **Radial Menu** items by using the items properties.
 
-### Adding image and text to RadialMenu items
+## Adding image and text to RadialMenu items
 
 The **ImageUrl** property specifies the URL of the image for the items. **Text** attribute is used to specify the item text. Refer to the following code example.
 
@@ -52,7 +52,7 @@ You can display the **Radial Menu** by performing desired action on the target c
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\item-customization_img1.png)
+![ASP.NET Webforms Radial Menu Adding image and text](item-customization_images\item-customization_img1.png)
 
 ### Adding events to Radial Menu items
 
@@ -127,7 +127,7 @@ Add the following script in your code.
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\item-customization_img2.png)
+![ASP.NET Webforms Radial Menu Adding events](item-customization_images\item-customization_img2.png)
 
 ### Badge Customization in Radial Menu Items
 
@@ -170,7 +170,7 @@ You can display the **Radial Menu** by performing desired action on the target c
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\item-customization_img3.png)
+![ASP.NET Webforms Radial Menu Badge Customization](item-customization_images\item-customization_img3.png)
 
 ### Slider support for Radial Menu Items
 
@@ -241,4 +241,4 @@ Add the following script in your code.
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\item-customization_img4.png)
+![ASP.NET Webforms Radial Menu Slider support](item-customization_images\item-customization_img4.png)
