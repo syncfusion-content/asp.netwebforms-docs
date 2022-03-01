@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | WaitingPopup | ASP.NET | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Essential ASP.NET WaitingPopup Control, its elements, and more.
 platform: aspnet
 control: WaitingPopup
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET WaitingPopup
 
 ## Create your first Waiting Popup in ASP.NET  
 
@@ -137,7 +137,7 @@ You can create a WEB Project and add the necessary assemblies, styles, and scr
 
 The following screenshot displays the User login.
 
- ![](Getting-Started_images/Getting-Started_img2.png) 
+ ![ASP.NET WaitingPopup getting started](Getting-Started_images/Getting-Started_img2.png) 
 
 
 
