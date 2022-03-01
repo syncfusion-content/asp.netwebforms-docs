@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Localization
+# Localization in ASP.NET Webforms Diagram
 
 * Localization is the process of providing controls in different cultures to help you set your own culture easily. Diagram provides localization support for Context Menu items.
 * The Diagram model’s `Locale` property is used to define the culture code. 
@@ -56,6 +56,6 @@ The following code illustrates how to provide localization support for Context M
 
 {% endhighlight %}
 
-![provide localization support for Context Menu items](/aspnet/Diagram/Localization_images/Localization_img1.png)
+![provide localization support for Context Menu items](Localization_images/Localization_img1.png)
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.

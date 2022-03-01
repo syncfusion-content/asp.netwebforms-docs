@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | Accordion | ASP.NET Webforms | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Essential ASP.NET WebForms Accordion Control, its elements, and more.
 platform: aspnet
 control: Accordion 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET WebForms Accordion
 
 ## Create your first Accordion in ASP.NET
 
@@ -177,7 +177,7 @@ The following steps describe the creation of Accordion control.
 
 Execute the above code sample to display the Accordion control with simple control list.
 
-![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/simple.PNG](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET WebForms Accordion simple control list](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -343,7 +343,7 @@ You can also open all the panels during initialization by using the SelectedItem
 
 Accordion control with EnableMultipleOpen property with value as true is illustrated in the following screenshot.
 
- ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/nround.PNG](Getting-Started_images/Getting-Started_img2.png)
+ ![ASP.NET WebForms Accordion EnableMultipleOpen property](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -505,7 +505,7 @@ N> ShowRoundedCorner _property is False by default.
 
 The following screenshot illustrates the Accordion control with rounded corners.
 
- ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/new/multt.PNG](Getting-Started_images/Getting-Started_img3.png)
+ ![ASP.NET WebForms Accordion rounded corners](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -673,7 +673,7 @@ Up/Down arrow icons are available in e-arrowheadup and e-arrowheaddown classes r
 
 The following screenshot illustrates the customization of SelectedHeader and Header of the Accordion control.
 
- ![C:/Users/Rajaveni/Desktop/JS Docs/Accordion/ssssssssssssss.PNG](Getting-Started_images/Getting-Started_img4.png)
+ ![ASP.NET WebForms Accordion SelectedHeader](Getting-Started_images/Getting-Started_img4.png)
 
 
 
