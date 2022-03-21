@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data binding| Chart  | ASP.NET Webforms | Syncfusion
-description: Learn how to bind Chart with JSON data from a remote server or locally in client browser.
+description: Learn how to bind Chart with JSON data in Syncfusion ASP.NET Webforms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# Working with Data
+# Working with Data in ASP.NET Webforms Chart
 
 ## Local Data
 
@@ -48,7 +48,7 @@ var chartData = [
    
 {% endhighlight %}
 
-![](Working-with-Data_images/Working-with-Data_img1.png)
+![ASP.NET Webforms Chart Working with Data](Working-with-Data_images/Working-with-Data_img1.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/localbinding.aspx) here to view the local data binding online demo sample.
 
@@ -74,7 +74,7 @@ var chartData = [
 
 {% endhighlight %}
 
-![](Working-with-Data_images/Working-with-Data_img2.png)
+![ASP.NET Webforms Chart using points](Working-with-Data_images/Working-with-Data_img2.png)
 
 ## Remote Data
 
@@ -99,7 +99,7 @@ this.Chart1.Series[0].DataSource = "http://mvc.syncfusion.com/Services/Northwnd.
 
 {% endhighlight %}
 
-![](Working-with-Data_images/Working-with-Data_img3.png)
+![ASP.NET Webforms Chart Remote Data](Working-with-Data_images/Working-with-Data_img3.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/remotebinding.aspx) here to view the remote data binding online demo sample.	
 
@@ -164,6 +164,6 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 {% endhighlight %}
 
 
-![](Working-with-Data_images/Working-with-Data_img4.png)
+![ASP.NET Webforms Chart AngularJS Data Binding](Working-with-Data_images/Working-with-Data_img4.png)
 
 [Click](http://ngjq.syncfusion.com/#/chart/line) here to view the AngularJS data binding online demo sample.	
