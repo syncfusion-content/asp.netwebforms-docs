@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactions available in Essential ASP.NET Chart
+title: Interactions available in ASP.NET Webforms Chart Control | Syncfusion
 description: What are the interactions available in Chart like tooltip, crosshair, trackball, highlighting, zooming and panning, etc..,
 platform: aspnet
 control: Chart
