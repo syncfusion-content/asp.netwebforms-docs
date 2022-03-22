@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactions available in Essential ASP.NET Chart
+title: Interactions available in ASP.NET Webforms Chart Control | Syncfusion
 description: What are the interactions available in Chart like tooltip, crosshair, trackball, highlighting, zooming and panning, etc..,
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# User Interactions
+# User Interactions in ASP.NET Webforms Chart
 
 ## Tooltip
 
@@ -27,7 +27,7 @@ Tooltip for the data points can be enabled by using the *Visible* option of the 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img1.png)
+![ASP.NET Webforms Chart Enable tooltip for data point](User-Interactions_images/User-Interactions_img1.png)
 
 ### Format the tooltip 
 
@@ -48,7 +48,7 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img2.png)
+![ASP.NET Webforms Chart Format the tooltip](User-Interactions_images/User-Interactions_img2.png)
 
 
 ### Tooltip Template
@@ -83,7 +83,7 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img3.png)
+![ASP.NET Webforms Chart Tooltip Template](User-Interactions_images/User-Interactions_img3.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/defaultfunctionalities.aspx) here to view the Tooltip template online demo sample.
 
@@ -127,7 +127,7 @@ The *Fill* and *Border* options are used to customize the background color and b
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img4.png)
+![ASP.NET Webforms Chart Customize the appearance of tooltip](User-Interactions_images/User-Interactions_img4.png)
 
 #### Tooltip with rounded corners
 
@@ -148,7 +148,7 @@ The options *RX* and *RY* are used to customize the corner radius of the tooltip
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img5.png)
+![ASP.NET Webforms Chart Tooltip with rounded corners](User-Interactions_images/User-Interactions_img5.png)
 
 ## Zooming and Panning
 
@@ -173,12 +173,12 @@ N> Pinch zooming is supported only in browsers that support multi-touch gestures
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img6.png)
+![ASP.NET Webforms Chart Enable Zooming](User-Interactions_images/User-Interactions_img6.png)
 
 
 After zooming the chart, a zooming toolbar will appear with options to *zoom*, *pan* and *reset*. Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
 
-![](User-Interactions_images/User-Interactions_img7.png)
+![ASP.NET Webforms Chart zooming](User-Interactions_images/User-Interactions_img7.png)
 
 [Click](http://mvc.syncfusion.com/demos/web/chart/zoomingandpanning) here to view the Zooming and Panning online demo sample.
 
@@ -216,7 +216,7 @@ The user can choose the items displayed in the zooming toolbar by specifying the
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img8.png)
+![ASP.NET Webforms Chart Customizing zooming toolbar](User-Interactions_images/User-Interactions_img8.png)
 
 ### Enable ScrollBar
 
@@ -234,7 +234,7 @@ Essential Chart provides scrollbar support to view the other portions of chart a
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img9.png)
+![ASP.NET Webforms Chart Enable ScrollBar](User-Interactions_images/User-Interactions_img9.png)
 
 ## Crosshair
 
@@ -262,7 +262,7 @@ Crosshair can be enabled by using the **Visible** option in the Crosshair. Cross
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img10.png)
+![ASP.NET Webforms Chart Enable Crosshair and Crosshair label](User-Interactions_images/User-Interactions_img10.png)
 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/crosshair.aspx) here to view the Crosshair online demo sample.
@@ -289,7 +289,7 @@ The *Fill* and *Border* options of the **CrosshairLabel** is used to customize t
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img11.png)
+![ASP.NET Webforms Chart Customize the Crosshair line and Crosshair label](User-Interactions_images/User-Interactions_img11.png)
 
 
 ## Trackball
@@ -311,7 +311,7 @@ Trackball can be enabled by setting the *Visible* option of the crosshair to *tr
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img12.png)
+![ASP.NET Webforms Chart](User-Interactions_images/User-Interactions_img12.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/trackball.aspx) here to view the Trackball online demo sample.
 
@@ -336,7 +336,7 @@ Shape and size of the trackball marker can be customized by using the *Shape* an
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img13.png)
+![ASP.NET Webforms Chart Customize trackball marker and trackball line](User-Interactions_images/User-Interactions_img13.png)
 
 
 ### Format Trackball tooltip
@@ -356,7 +356,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img14.png)
+![ASP.NET Webforms Chart Format Trackball tooltip](User-Interactions_images/User-Interactions_img14.png)
 
 
 You can able to show the trackball tooltip in two modes, using trackballTooltipSettings.
@@ -381,7 +381,7 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img30.png)
+![ASP.NET Webforms Chart Format Trackball](User-Interactions_images/User-Interactions_img30.png)
 
 
 ## Highlight
@@ -432,7 +432,7 @@ To highlight all the data points of the specified series, you can set the **Seri
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img15.png)
+![ASP.NET Webforms Chart Highlight Mode](User-Interactions_images/User-Interactions_img15.png)
 
 **Point mode**
 
@@ -451,7 +451,7 @@ To highlight a single point, you can set the **Point** value to the *Mode* optio
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img16.png)
+![ASP.NET Webforms Chart Point mode](User-Interactions_images/User-Interactions_img16.png)
 
 
 **Cluster mode**
@@ -471,7 +471,7 @@ To highlight the points that corresponds to the same index in all the series, se
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img17.png)
+![ASP.NET Webforms Chart](User-Interactions_images/User-Interactions_img17.png)
 
 ### Customize the highlight styles
 
@@ -492,7 +492,7 @@ To customize the highlighted series, use the *Color*, *Border* and *Opacity* opt
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img18.png)
+![ASP.NET Webforms Chart Customize the highlight styles](User-Interactions_images/User-Interactions_img18.png)
 
 ### Patterns to highlight
 
@@ -532,7 +532,7 @@ EjChart provides pattern support for highlighting the data by setting the value 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img19.png)
+![ASP.NET Webforms Chart Patterns to highlight](User-Interactions_images/User-Interactions_img19.png)
 
 
 #### Custom pattern
@@ -612,7 +612,7 @@ To select all the data points of the specified series, you can set the **Series*
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img20.png)
+![ASP.NET Webforms Chart Series mode](User-Interactions_images/User-Interactions_img20.png)
 
 **Point mode**
 
@@ -632,7 +632,7 @@ To highlight a single point, you can set the **Point** value to the *Mode* optio
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img21.png)
+![ASP.NET Webforms Chart Point mode](User-Interactions_images/User-Interactions_img21.png)
 
 
 **Cluster mode**
@@ -653,7 +653,7 @@ To select the points that corresponds to the same index in all the series, set t
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img22.png)
+![ASP.NET Webforms Chart Cluster mode](User-Interactions_images/User-Interactions_img22.png)
 
 **Range mode**
 
@@ -684,7 +684,7 @@ To fetch the selected area data points value, you can set the **Mode** as **Rang
 	
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img23.png)
+![ASP.NET Webforms Chart Range mode](User-Interactions_images/User-Interactions_img23.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/multipleselection.aspx) here to view the Multiple data selection online demo sample.
 
@@ -711,7 +711,7 @@ To select a data point or a series on mouse click based on the **SelectionSettin
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img24.png)
+![ASP.NET Webforms Chart User Interactions](User-Interactions_images/User-Interactions_img24.png)
 
 **Multiple Type**
 
@@ -729,7 +729,7 @@ For selecting multiple data points or series on mouse click, set **SelectionSett
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img25.png)
+![ASP.NET Webforms Chart Selection Type](User-Interactions_images/User-Interactions_img25.png)
 
 
 ### Customizing selection styles
@@ -751,7 +751,7 @@ To customize the selection styles, use the *Color*, *Border* and *Opacity* optio
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img26.png)
+![ASP.NET Webforms Chart Customizing selection styles](User-Interactions_images/User-Interactions_img26.png)
 
 
 ### Patterns for selection
@@ -792,7 +792,7 @@ EjChart provides pattern support for the data selection by setting the value to 
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img27.png)
+![ASP.NET Webforms Chart Patterns for selection](User-Interactions_images/User-Interactions_img27.png)
 
 
 #### Custom pattern
@@ -823,7 +823,7 @@ To create a custom pattern for selecting the data points, set the *Pattern* type
 {% endhighlight %}
 
 
-![](User-Interactions_images/User-Interactions_img28.png)
+![ASP.NET Webforms Chart Custom pattern](User-Interactions_images/User-Interactions_img28.png)
 
 
 ### Handling Series Selection
@@ -873,7 +873,7 @@ We can able to select the point/series programmatically on chart load, by settin
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img29.png)
+![ASP.NET Webforms Chart Selection on Load](User-Interactions_images/User-Interactions_img29.png)
 
 
 ## Data Editing
@@ -890,7 +890,7 @@ EjChart provides support to change the location of the rendered points. This can
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img31.png)
+![ASP.NET Webforms Chart Data Editing](User-Interactions_images/User-Interactions_img31.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/dragdrop.aspx) here to view the data editing online demo sample.
 
@@ -908,4 +908,4 @@ To drag the point along x and y axes, you can specify **type** as xy in **dragSe
 
 {% endhighlight %}
 
-![](User-Interactions_images/User-Interactions_img32.png)
+![ASP.NET Webforms Chart Customize Dragging direction](User-Interactions_images/User-Interactions_img32.png)

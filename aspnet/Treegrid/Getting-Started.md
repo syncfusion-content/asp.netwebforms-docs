@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | TreeGrid | ASP.NET | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion ASP.NET Webforms TreeGrid Control, its elements, and more.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms TreeGrid
 
 ## Create your first TreeGrid in ASP.NET
 
@@ -161,7 +161,7 @@ public class TaskDetailsCollection
 {% endhighlight  %}
 {% endtabs %}  
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET Webforms TreeGrid Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 Simple TreeGrid
 {:.caption}
@@ -179,7 +179,7 @@ TreeGrid control contains the toolbar options to Add, Edit, Delete, Cancel, Upda
 {% endhighlight %}
 
 The following screen shot displays a Toolbar in TreeGrid.
-![](Getting-Started_images/Getting-Started_img6.png)
+![ASP.NET Webforms TreeGrid Enable Toolbar](Getting-Started_images/Getting-Started_img6.png)
 
 Toolbar in TreeGrid
 {:.caption}
@@ -203,7 +203,7 @@ You can enable the multicolumn sorting in TreeGrid by setting `AllowMultiSorting
   
 {% endhighlight %}
 
-![](Getting-Started_images/Getting_ startedSorting.png)
+![ASP.NET Webforms TreeGrid Multicolumn Sorting](Getting-Started_images/Getting_ startedSorting.png)
 
 [Click](sorting) here to refer more details for TreeGrid Sorting.
 
@@ -220,7 +220,7 @@ You can enable editing in TreeGrid by using `EditSettings` property and it is il
 
 {% endhighlight %}
 
-![](Getting-Started_images/cellEditing.png)
+![ASP.NET Webforms TreeGrid Enable Editing](Getting-Started_images/cellEditing.png)
 
 [Click](editing) here to refer more details for TreeGrid Editing.
 
@@ -239,7 +239,7 @@ In TreeGrid, context menu can be enabled by `ContextMenuSettings` property. The 
 
 The following screenshot displays the context menu in TreeGrid control.
 
-![](Getting-Started_images/Context-Menu.png)
+![ASP.NET Webforms TreeGrid Enable Context Menu](Getting-Started_images/Context-Menu.png)
 
 TreeGrid with context menu
 {:.caption}
@@ -259,7 +259,7 @@ You can enable the column menu in TreeGrid, by setting the `ShowColumnChooser` a
 
 The following screenshot displays the column chooser in TreeGrid control.
 
-![](Getting-Started_images/columnMenu.png)
+![ASP.NET Webforms TreeGrid Enable Column Menu](Getting-Started_images/columnMenu.png)
 
 TreeGrid with column chooser
 {:.caption}
