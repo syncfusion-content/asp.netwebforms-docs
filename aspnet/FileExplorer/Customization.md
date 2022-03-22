@@ -1,12 +1,12 @@
 ---
 title: Customization | FileExplorer | ASP.NET Web | Syncfusion
-description: Customization support in FileExplorer
+description: learn here about Customization support in Syncfusion ASP.NET Webforms FileExplorer Control, its elements, and more.
 platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, Customization
 ---
-# Customization
+# Customization in ASP.NET Webforms FileExplorer
 
 ## Dimension Customization
 
@@ -71,11 +71,11 @@ The **large icons view** display the files and folders like a large size icons w
 **Changing the Layout views**
 You can change the layout of current view by the switcher which displays at right-bottom of footer in the FileExplorer. By clicking the grid and large icons view buttons you can change the layout of current view.
 
-![](Customization_images/Customization_img1.jpeg)
+![ASP.NET Webforms FileExplorer Customization](Customization_images/Customization_img1.jpeg)
 
 Also you can change the layout using toolbar option. While clicking this tool, popup opens with different layout types. Here you can choose any options.
 
-![](Customization_images/Customization_img2.jpeg)
+![ASP.NET Webforms FileExplorer Customizing the Content pane](Customization_images/Customization_img2.jpeg)
 
 Also the layout views can be changed through the “[Layout](http://help.syncfusion.com/js/api/ejfileexplorer#members:layout)” property. The [layoutChange](https://help.syncfusion.com/api/js/ejfileexplorer#events:layoutchange) event will be triggered whenever the layout view type is changed.
 
