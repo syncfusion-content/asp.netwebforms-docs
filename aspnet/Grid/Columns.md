@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Columns with Grid widget for Syncfusion Essential ASP.NET
-description: How to define the columns and its features
+description: How to define the columns in Syncfusion Essential ASP.NET Webforms Grid Control, its elements and more.
 platform: aspnet
 control: Grid
 documentation: ug
 --- 
-# Columns
+# Columns in ASP.NET Webforms Grid
 
 Column definitions are used as the `DataSource` schema in Grid and it plays vital role in rendering column values in required format. Grid operations such as sorting, filtering, editing would be performed based on the column definitions. The `Field` property of the `Columns` is necessary to map the datasource values in Grid columns.
 
@@ -82,7 +82,7 @@ The following code example shows auto-generate columns behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img1.png)
+![ASP.NET Webforms Grid Auto generation](Columns_images/Columns_img1.png)
 
 
 ### How to set isPrimaryKey for auto generated columns when editing is enabled:
@@ -206,7 +206,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img2.png)
+![ASP.NET Webforms Grid HeaderText](Columns_images/Columns_img2.png)
 
 ### Header Text alignment
 
@@ -250,7 +250,7 @@ namespace WebSampleBrowser.Grid
 {% endtabs %}  
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img3.png)
+![ASP.NET Webforms Grid Header Text alignment](Columns_images/Columns_img3.png)
 
 
 ### Header Template
@@ -302,7 +302,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img4.png)
+![ASP.NET Webforms Grid Header Template](Columns_images/Columns_img4.png)
 
 
 ## Text alignment
@@ -350,7 +350,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img5.png)
+![ASP.NET Webforms Grid Text alignment](Columns_images/Columns_img5.png)
 
 
 ## Format
@@ -393,7 +393,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img6.png)
+![ASP.NET Webforms Grid Format](Columns_images/Columns_img6.png)
 
 
 ## Width
@@ -434,7 +434,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img7.png)
+![ASP.NET Webforms Grid Width](Columns_images/Columns_img7.png)
 
 
 ## Resizing
@@ -552,7 +552,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img8.png)
+![ASP.NET Webforms Grid Resize to fit](Columns_images/Columns_img8.png)
 
 ## Reorder
 
@@ -593,7 +593,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img10.png)
+![ASP.NET Webforms Grid Reorder](Columns_images/Columns_img10.png)
 
 
 ## Visibility
@@ -634,7 +634,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img11.png)
+![ASP.NET Webforms Grid Visibility](Columns_images/Columns_img11.png)
 
 
 ## Unbound Column
@@ -686,7 +686,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img13.png)
+![ASP.NET Webforms Grid Unbound Column](Columns_images/Columns_img13.png)
 
 
 ## Column Template
@@ -695,7 +695,7 @@ HTML templates can be specified in the `Template` property of the particular col
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
-For template manipulation using JavaScript, either you can use JsRender [helper](https://www.jsviews.com/#helpers) function or `TemplateRefresh` grid event. For more information on `TemplateRefresh` event, refer [this link](https://help.syncfusion.com/aspnet/grid/how-to/display-other-syncfusion-controls-in-grid-columns "this link").
+For template manipulation using JavaScript, either you can use JsRender [helper](https://www.jsviews.com/#helpers) function or `TemplateRefresh` grid event. For more information on `TemplateRefresh` event, refer [this link](https://help.syncfusion.com/aspnet/grid/how-to/display-other-syncfusion-controls-in-grid-columns).
 
 N> If `Field` is not specified, you will not able to perform editing, grouping, filtering, sorting, search and summary functionalities in particular column.
 
@@ -765,7 +765,7 @@ namespace WebSampleBrowser.Grid
 {% endtabs %} 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img14.png)
+![ASP.NET Webforms Grid Column Template](Columns_images/Columns_img14.png)
 
 
 ## Controlling Grid actions
@@ -844,7 +844,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img15.png)
+![ASP.NET Webforms Grid Read only](Columns_images/Columns_img15.png)
 
 
 ## Expression Column
@@ -920,7 +920,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img16.png)
+![ASP.NET Webforms Grid Expression Column](Columns_images/Columns_img16.png)
 
 ## Command Column
 
@@ -984,7 +984,7 @@ namespace WebSampleBrowser.Grid
 {% endtabs %} 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img17.png)
+![ASP.NET Webforms Grid Default action buttons](Columns_images/Columns_img17.png)
 
 
 ### Custom buttons
@@ -1041,7 +1041,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img18.png)
+![ASP.NET Webforms Grid Custom buttons](Columns_images/Columns_img18.png)
 
 ## Column Chooser
 
@@ -1083,7 +1083,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img19.png)
+![ASP.NET Webforms Grid Column Chooser](Columns_images/Columns_img19.png)
 
 
 ## Foreign Key Column
@@ -1206,7 +1206,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img20.png)
+![ASP.NET Webforms Grid Foreign Key Column](Columns_images/Columns_img20.png)
 
 ## Customize column
 
@@ -1261,7 +1261,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img23.png)
+![ASP.NET Webforms Grid Customize column](Columns_images/Columns_img23.png)
 
 
 ## Type
@@ -1349,7 +1349,7 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/Columns_img24.png)
+![ASP.NET Webforms Grid Type](Columns_images/Columns_img24.png)
 
 ## Column Layout
 
@@ -1391,5 +1391,5 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img25.png)
+![ASP.NET Webforms Grid Column Layout](columns_images/columns_img25.png)
 
