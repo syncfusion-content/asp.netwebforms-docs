@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers and data labels in Essential ASP.NET Webforms Chart
+title: Markers and data labels in ASP.NET Webforms Chart Control | Syncfusion
 description: Learn here about Markers and data labels in Syncfusion Essential ASP.NET Webforms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
