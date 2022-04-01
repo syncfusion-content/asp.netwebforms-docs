@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Markers and data labels in Essential ASP.NET Webforms Chart
-description: Learn how to add markers and data point labels to a Chart series.
+description: Learn here about Markers and data labels in Syncfusion Essential ASP.NET Webforms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# Data Markers
+# Data Markers in ASP.NET Webforms Chart
 
 Data markers are used to provide information about the data point to the user. You can add a shape and label to adorn each data point.
 
@@ -42,7 +42,7 @@ The following code example explains on how to enable series marker and add shape
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img1.png)
+![ASP.NET Webforms Chart Add Shapes](Data-Markers_images/Data-Markers_img1.png)
 
 
 ## Add image as marker
@@ -68,7 +68,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img2.png)
+![ASP.NET Webforms Chart Add image as marker](Data-Markers_images/Data-Markers_img2.png)
 
 
 ## Add labels
@@ -94,7 +94,7 @@ The following code example shows how to enable data label and set its horizontal
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img3.png)
+![ASP.NET Webforms Chart Add labels](Data-Markers_images/Data-Markers_img3.png)
 
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text *"point.x"* and *"point.y"* to display corresponding data points x & y value.
@@ -142,7 +142,7 @@ The following code example shows how to add background shapes and set template t
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img4.png)
+![ASP.NET Webforms Chart data markers](Data-Markers_images/Data-Markers_img4.png)
 
 
 The appearance of the labels can be customized by using the *Font* and *Offset* options. The Offset option is used to move the labels vertically. Also, labels can be rotated by using the *Rotate* option.
@@ -166,7 +166,7 @@ The following code example shows how to rotate data label text and customize the
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img5.png)
+![ASP.NET Webforms Chart data label text](Data-Markers_images/Data-Markers_img5.png)
 
 
 You can position the label to the top, center or bottom position of the segment by using the **TextPosition** option for the chart types such as Column, Bar, Stacked bar, Stacked column, 100% Stacked bar, 100% Stacked column, Candle and OHLC.
@@ -189,7 +189,7 @@ The following code example shows how to set textPosition to display data label i
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img6.png)
+![ASP.NET Webforms Chart center or bottom position](Data-Markers_images/Data-Markers_img6.png)
 
 The label can be positioned inside or outside the perimeter of the series by using the **LabelPosition** option for the chart types such as Pie and Doughnut, .
 
@@ -221,17 +221,17 @@ The following code example shows how to set the LabelPosition,
 
 {% endhighlight %} 
 
-![](Data-Markers_images/Data-Markers_img7.png)
+![ASP.NET Webforms Chart LabelPosition](Data-Markers_images/Data-Markers_img7.png)
 
 
 The following screenshot displays the labels when the LabelPosition is set as *Inside* position.
 
-![](/js/Chart/Data-Markers_images/Data-Markers_img8.png)
+![ASP.NET Webforms Chart Inside position](Data-Markers_images/Data-Markers_img8.png)
 
 
 The following screenshot displays the labels when the LabelPosition is set as *OutsideExtended* position.
 
-![](Data-Markers_images/Data-Markers_img9.png)
+![ASP.NET Webforms Chart OutsideExtended position](Data-Markers_images/Data-Markers_img9.png)
 
 
 The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the enableWrap property. 
@@ -254,7 +254,7 @@ The label can be wrapped for pie, doughnut, funnel, and pyramid series by settin
 
 {% endhighlight %} 
 
-![](Data-Markers_images/Data-Markers_img13.png)
+![ASP.NET Webforms Chart enableWrap property](Data-Markers_images/Data-Markers_img13.png)
 
 
 
@@ -392,7 +392,7 @@ When the data is provided by using the Points option, you can add marker for eac
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img10.png)
+![ASP.NET Webforms Chart Customize specific points](Data-Markers_images/Data-Markers_img10.png)
 
 
 When the data is bound to the series by using the DataSource option, you can customize the points in the **SeriesRendering** event as illustrated  in the following code example,
@@ -450,7 +450,7 @@ When the data is bound to the series by using the DataSource option, you can cus
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img10.png)
+![ASP.NET Webforms Chart SeriesRendering](Data-Markers_images/Data-Markers_img10.png)
 
 
 ## Connect Line
@@ -476,7 +476,7 @@ This feature is used to connect label and data point by using a line. It can be 
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img11.png)
+![ASP.NET Webforms Chart Connect Line](Data-Markers_images/Data-Markers_img11.png)
 
 
 ## SmartLabels
@@ -504,7 +504,7 @@ The following code example shows how to enable smart labels,
 
 {% endhighlight %}
 
-![](Data-Markers_images/Data-Markers_img12.png)
+![ASP.NET Webforms Chart SmartLabels](Data-Markers_images/Data-Markers_img12.png)
 
 
 [Click](http://asp.syncfusion.com/demos/web/chart/pie.aspx) here to view the SmartLabels online demo sample.

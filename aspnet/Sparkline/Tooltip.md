@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip
-description: Learn how to add Tooltip to Sparkline .
+title: Tooltip support in ASP.NET WebForms Sparkline Control | Syncfusion
+description: Learn here about Tooltip support in Syncfusion Essential ASP.NET WebForms Sparkline Control, its elements, and more.
 platform: aspnet
 control: Sparkline
 documentation: ug
 ---
 
-## Tooltip  
+# Tooltip in ASP.NET WebForms Sparkline
 
 The `Tooltip` follows the pointer movement and is used to indicate the value of a point. This feature is applicable for line, column, pie, and area Sparkline. You can enable the tooltip by setting it’s `Visible` property as true. You can customize the tooltip `Fill`, `Border` and `Font`.
 
