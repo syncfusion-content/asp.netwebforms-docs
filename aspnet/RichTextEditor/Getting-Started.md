@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with RichTextEditor control for Syncfusion Essential ASP.NET
-description: Getting started with RichTextEditor and configure the toolbar and other functionalities.
+title: Getting started with RichTextEditor control for Syncfusion ASP.NET
+description: Learn here about Getting started with Syncfusion Essential RichTextEditor Control, its elements, and more.
 platform: aspnet
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Getting Started, Toolbar–Configuration, Setting the content, Getting the content
 
 ---
-# Getting Started
+# Getting Started with ASP.NET RichTextEditor
 
 This section explains the step-by-step instructions to create RichTextEditor in an ASP.NET web application.
 
@@ -16,7 +16,7 @@ This section explains the step-by-step instructions to create RichTextEditor in 
 
 1.	Create an ASP.NET Web Forms application and add RichTextEditor control to the Default.aspx page.
 
-    ![](GettingStarted_images/RTE.png)
+    ![ASP.NET RichTextEditor Getting Started](GettingStarted_images/RTE.png)
 
 2.  Once the control is dragged and dropped into the page,all the dependent scripts and CSS files will be loaded as an embedded resource from Syncfusion.EJ.Web. This will add the following appSetting key in web.config file to load resource files.
 
@@ -31,7 +31,7 @@ This section explains the step-by-step instructions to create RichTextEditor in 
         
 3.  Customize the RichTextEditor control using properties panel as well as set the value for the RichTextEditor as given below.
 
-    ![](GettingStarted_images/Property.png)
+    ![ASP.NET RichTextEditor Property](GettingStarted_images/Property.png)
 
     Switching from Design view to Source to view the RichTextEditor code.  
     
@@ -67,7 +67,7 @@ You can configure the toolbar with the tools as your application requires.
 	
 {% endhighlight %}
 
- ![](GettingStarted_images/Toolbar.png)
+ ![ASP.NET RichTextEditor Toolbar](GettingStarted_images/Toolbar.png)
 
 ## Setting and Getting Content
 
