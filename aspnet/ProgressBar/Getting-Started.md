@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | ProgressBar | ASP.NET | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Essential ASP.NET WebForms ProgressBar Control, its elements, and more.
 platform: aspnet
 control: ProgressBar
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET WebForms ProgressBar
 
 ## Create your first Progress Bar in ASP.NET
 
@@ -129,4 +129,4 @@ $(function () {
 
 The following screenshot displays the ProgressBar control.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET WebForms ProgressBar Getting Started](Getting-Started_images/Getting-Started_img1.png)

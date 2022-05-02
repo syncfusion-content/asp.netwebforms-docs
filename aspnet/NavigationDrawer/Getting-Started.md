@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Getting Started | NavigationDrawer | ASP.NET Webforms | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Navigation Drawer Control, its elements, and more.
 platform: aspnet
 control: Navigation Drawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms Navigation Drawer
 
 ## Create your first Navigation Drawer control in ASP.NET Webforms
 
 NavigationDrawer is a sliding panel that displays the list of navigation options on demand. That is, by default, it is not visible but you can display it on the left/right side of the screen by swiping or by clicking with desired target icon.                       
 
-![](Getting-Started_images/img1.png) 
+![ASP.NET Webforms Navigation Drawer Getting Started](Getting-Started_images/img1.png) 
 
 
 
@@ -139,7 +139,7 @@ You can display the drawer either by clicking on the target icon or by swiping f
 
 
 
-![](Getting-Started_images/img2.png) 
+![ASP.NET Webforms Navigation Drawer display](Getting-Started_images/img2.png) 
 
 
 
@@ -166,7 +166,7 @@ In the above code we have added targetId and contentId to find and navigate to s
 
 Run the above code to render the following output.
 
-![](Getting-Started_images/img3.png) 
+![ASP.NET Webforms Navigation Drawer navigate to sub pages](Getting-Started_images/img3.png) 
 
 
 You can load the appropriate content for the navigation items by updating the content through mouseDown handler of listview. You can define the handler and pass the method name with mouseDown attribute through listViewSettings. Also to view which item’s content is being loaded in the page, make the list selection to persist in the drawer by setting persistSelection as true. Refer to the following code example.
@@ -193,7 +193,7 @@ In the mouse down handler, you can hide the other content and display the respec
 
 Run the above code to render the following output. 
 
-![](Getting-Started_images/img3.png) 
+![ASP.NET Webforms Navigation Drawer display selected items](Getting-Started_images/img3.png) 
 
 
 

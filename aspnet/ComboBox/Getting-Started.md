@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting started with ComboBox | Syncfusion | ASP.NET WebForms
-description: To get start with ComboBox by adding references.
+description: Learn here about getting started with Syncfusion ASP.NET Webforms ComboBox Control, its elements, and more.
 platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, ComboBox, Populating data
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms ComboBox
 
 ## Creating your first ComboBox in ASP Web Forms
 
