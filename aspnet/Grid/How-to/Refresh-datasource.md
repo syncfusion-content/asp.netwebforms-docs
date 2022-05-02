@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Refresh datasource | Grid | ASP.NET Webforms | Syncfusion
-description: refresh datasource
+description: Learn here about refresh datasource in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Refresh datasource
+# Refresh datasource in ASP.NET Webforms Grid
 
 Grid allows you to refresh datasource dynamically after Grid initialization. It is useful to refresh Grid datasource.
 
@@ -147,13 +147,13 @@ The following screenshot displays the Grid data source before refreshing.
 
 
 
- ![](Refresh-datasource_images/Refresh-datasource_img1.png) 
+ ![ASP.NET Webforms Grid Refresh datasource](Refresh-datasource_images/Refresh-datasource_img1.png) 
 
 
 
 The following screenshot displays the Grid data source after refreshing.
 
-![](Refresh-datasource_images/Refresh-datasource_img2.png) 
+![ASP.NET Webforms Grid after refreshing datasource](Refresh-datasource_images/Refresh-datasource_img2.png) 
 
 
 
