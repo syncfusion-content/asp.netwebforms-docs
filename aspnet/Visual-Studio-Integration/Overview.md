@@ -21,11 +21,11 @@ I> The Syncfusion ASP.NET (Essential JS 1) menu option is available beginning wi
 
 The Syncfusion ASP.NET extensions provide the following add-ins in Visual Studio:
 
-1.	[Create Project](/aspnet/Visual-Studio-Integration/Visual-Studio-Integration/Create-Project): Creates the Syncfusion ASP.NET (Essential JS 1) Website or Web application by adding the necessary Syncfusion references, scripts, CSS, and Web.config entries.
-2.	[Convert Project](/aspnet/Visual-Studio-Integration/Visual-Studio-Integration/Convert-Project): Converts an existing ASP.NET Website or Web application to the Syncfusion ASP.NET (Essential JS 1) Website or Web application by importing the necessary Syncfusion assemblies and resource files.
-3.	[Upgrade Project](/aspnet/Visual-Studio-Integration/Visual-Studio-Integration/Upgrade-Project): Upgrades an existing Syncfusion ASP.NET Website or Web Application from one Essential Studio version to another.
-4.	[Create Samples](/aspnet/Visual-Studio-Integration/Visual-Studio-Integration/Create-Samples): Creates the Syncfusion ASP.NET (Essential JS 1) Website or Web application with sample code for required components and features.
-5.	[Troubleshooting](/aspnet/Visual-Studio-Integration/Visual-Studio-Integration/Troubleshooting): Troubleshoots the project with the Syncfusion configuration and applies the fix, such as a missing Framework Syncfusion assembly or a missing Syncfusion dependent assembly of a referred assembly.
+1.	[Create Project](/aspnet/Visual-Studio-Integration/Create-Project): Creates the Syncfusion ASP.NET (Essential JS 1) Website or Web application by adding the necessary Syncfusion references, scripts, CSS, and Web.config entries.
+2.	[Convert Project](/aspnet/Visual-Studio-Integration/Convert-Project): Converts an existing ASP.NET Website or Web application to the Syncfusion ASP.NET (Essential JS 1) Website or Web application by importing the necessary Syncfusion assemblies and resource files.
+3.	[Upgrade Project](/aspnet/Visual-Studio-Integration/Upgrade-Project): Upgrades an existing Syncfusion ASP.NET Website or Web Application from one Essential Studio version to another.
+4.	[Create Samples](/aspnet/Visual-Studio-Integration/Create-Samples): Creates the Syncfusion ASP.NET (Essential JS 1) Website or Web application with sample code for required components and features.
+5.	[Troubleshooting](/aspnet/Visual-Studio-Integration/Troubleshooting): Troubleshoots the project with the Syncfusion configuration and applies the fix, such as a missing Framework Syncfusion assembly or a missing Syncfusion dependent assembly of a referred assembly.
 6.	[Toolbox](/aspnet/Visual-Studio-Integration/Toolbox-Configuration): Configure the Syncfusion components into the Visual Studio .NET toolbox.
 
 **No project selected in Visual Studio**
