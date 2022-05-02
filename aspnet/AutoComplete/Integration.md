@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Integration | AutoComplete | ASP.NET Webforms | Syncfusion
-description: integration
+description: Learn here about integration support in Syncfusion Essential ASP.NET Webforms AutoComplete Control, its elements, and more.
 platform: aspnet
 control: AutoComplete
 documentation: ug
 ---
 
-# Integration
+# Integration support in ASP.NET Webforms AutoComplete
 
 ## AngularJS
 
@@ -154,7 +154,7 @@ In the Script section, define the data to be bid and by using AngularJS support,
 
 The following screenshot is the output of AutoComplete control with two way AngularJS binding.
 
-![](Integration_images/Integration_img1.png)
+![ASP.NET Webforms AutoComplete Integration](Integration_images/Integration_img1.png)
 
 
 
@@ -353,7 +353,7 @@ In the script section, add the code to bind observable values by using Knockout 
 
 The following screenshot is the result of the above code examples.
 
-![](Integration_images/Integration_img2.png) 
+![ASP.NET Webforms AutoComplete KnockoutJS](Integration_images/Integration_img2.png) 
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Toolbar with Grid widget for Syncfusion Essential ASP.NET
-description: How to enable toolbar and its actions 
+description: How to enable toolbar in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Toolbar 
+# Toolbar in ASP.NET Webforms Grid
 
 Toolbar can be shown by defining the `ShowToolbar` property of `ToolbarSettings` should be true. Toolbar has option to add default items in `ToolbarItems` property of `ToolbarSettings.` and customized items in `CustomToolbarItem` property of `ToolbarSettings`.
 
@@ -122,7 +122,7 @@ Search text in records</td></tr>
     
 {% endtabs %}  
 
-![](Toolbar_images/Toolbar_img1.png)
+![ASP.NET Webforms Grid Toolbar](Toolbar_images/Toolbar_img1.png)
 
 I>  `AllowAdding`, `AllowEditing`, `AllowDeleting`  property of `EditSettings` need to be enabled for add, edit, delete, save & cancel and `AllowSearching` property of `ToolbarItems` to be enabled while adding Search in toolbar to perform search action.
 
@@ -256,7 +256,7 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
 
 {% endtabs %}
 
-![](Toolbar_images/Toolbar_img2.png)
+![ASP.NET Webforms Grid Custom Toolbar items](Toolbar_images/Toolbar_img2.png)
 
 
 
