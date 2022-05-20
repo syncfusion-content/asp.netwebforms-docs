@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Getting Started | Captcha | ASP.NET Webforms | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Essential ASP.NET Webforms Captcha Control, its elements, and more.
 platform: aspnet
 control: Captcha
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms Captcha
 
 ## Create your first Captcha in ASP.NET 
 
 This section enables you to configure the Captcha control in your ASP.NET WEB application and also in learning how to use Captcha with auto validation in Web Forms.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET Webforms Captcha](Getting-Started_images/Getting-Started_img1.png)
 
 
 ### Create Captcha Control
@@ -85,7 +85,7 @@ N> Version= {{ site.45esreleaseversion }}  - It will vary depend up on .NET Fram
 
 The following screenshot displays the output of the above codes.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![ASP.NET Webforms Captcha creation](Getting-Started_images/Getting-Started_img2.png)
 
 
 ### Show AudioButton and Refresh
@@ -129,7 +129,7 @@ This method is used to handle AJAX post when refresh and validation actions are 
 
 The following screenshot displays the output of the above codes.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![ASP.NET Webforms Captcha Show AudioButton and Refresh](Getting-Started_images/Getting-Started_img3.png)
 
 
 ### Auto Validation   
@@ -422,6 +422,6 @@ Add the following code example to the corresponding CS page for Captcha with Aut
 
 The following screenshot is the output for the above code example.
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![ASP.NET Webforms Captcha Auto Validation](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
