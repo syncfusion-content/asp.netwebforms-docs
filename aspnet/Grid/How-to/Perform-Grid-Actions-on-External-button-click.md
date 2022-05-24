@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Perform Grid Actions on External button click | Grid | ASP.NET Webforms | Syncfusion
+title: Perform Grid Actions on External button click | Grid | ASP.NET | Syncfusion
 description:  Learn about Easy Customization support in Syncfusion ASP.Net Grid perform grid actions on external button click, its element and more.
 platform: aspnet
 control: Grid
