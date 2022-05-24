@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform Grid Actions on External button click | Grid | ASP.NET Webforms | Syncfusion
-description: perform grid actions on external button click
+title: Perform Grid Actions in ASP.NET Webforms Grid Control | Syncfusion
+description: Learn here about perform grid actions on external button click in Syncfusion ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
@@ -227,4 +227,4 @@ The following code example explains the above behavior.
 
 {% endtabs %}
 The following output is displayed as a result of the above code example.
-![](ExternalSearch_images/Actionswithexternalbutton_img1.png)
+![ASP.NET Webforms Grid Actionswithexternalbutton](ExternalSearch_images/Actionswithexternalbutton_img1.png)

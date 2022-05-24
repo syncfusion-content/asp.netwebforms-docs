@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Image-Customization | RadialSlider | ASP.NET | Syncfusion
-description: Image-Customization
+description: Learn here about Image Customization in Syncfusion Essential ASP.NET WebForms RadialSlider Control, its elements, and more.
 platform: aspnet
 control: RadialSlider
 documentation: ug
 ---
-# Image customization
+# Image customization in ASP.NET WebForms RadialSlider
 
 ## Customizing inner circle 
 
@@ -34,7 +34,7 @@ The **RadialSlider** property **InnerCircleImageClass** allow to set image for t
 
 The following screenshot illustrates the output of above code.
 
-![](image-customization_images\image-customization_img1.png)
+![ASP.NET WebForms RadialSlider image customization](image-customization_images\image-customization_img1.png)
 
 
 ### Using image URL 
@@ -49,7 +49,7 @@ The **RadialSlider** property **InnerCircleImageUrl** allow to set URL image to 
 
 The following screenshot illustrates the output of above code.
 
-![](image-customization_images\image-customization_img2.png)
+![ASP.NET WebForms RadialSlider image URL ](image-customization_images\image-customization_img2.png)
 
 
 
