@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | Captcha | ASP.NET Webforms | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion ASP.NET Webforms Captcha control, its elements, and more.
 platform: aspnet
 control: Captcha
 documentation: ug
