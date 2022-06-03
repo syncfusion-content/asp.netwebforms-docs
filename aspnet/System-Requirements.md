@@ -7,7 +7,7 @@ control: System Requirement
 documentation: ug
 ---
 
-# System requirements for ASP.NET Components
+# System Requirements for ASP.NET Components
 
 The system requirements for using our Syncfusion ASP.NET Web Forms platform are as follows
 
