@@ -1,13 +1,13 @@
 ---
 layout: post
-title: System requirements needed to use Syncfusion Essential aspnet components
-description: Learn what are the system requirements needed to use Syncfusion Essential aspnet components
+title: System Requirements in ASP.NET - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use Syncfusion ASP.NET Components.
 platform: aspnet
 control: System Requirement
 documentation: ug
 ---
 
-# System Requirement
+# System Requirements for ASP.NET Components
 
 The system requirements for using our Syncfusion ASP.NET Web Forms platform are as follows
 
