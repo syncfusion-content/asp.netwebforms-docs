@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data binding | ListBox | ASP.NET Webforms | Syncfusion
-description: data-binding 
+description: Learn more about Data Binding  support in Syncfusion ASP.NET ListBox control, its elements, and more.
 platform: aspnet
 control: ListBox
 documentation: ug
 ---
 
-# Data Binding 
+# Data Binding in ASP.NET ListBox
 
 The ListBox is populated with the node information taken from a data source. The ListBox supports binding data sources containing Object data, Remote data, XML Data, SQL Data and LINQ-to-SQL Data.
 
@@ -152,7 +152,7 @@ listBoxSample.DataSource = GetData();
 {% endhighlight %}
 {% endtabs %}
 
- ![](Databinding_images/Databinding_img1.png)
+ ![ASP.NET ListBox Data fields and configuration](Databinding_images/Databinding_img1.png)
 
 ## Remote data
 
@@ -193,7 +193,7 @@ listBoxSample.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/";
 
 {% endtabs %}
 
-![](Databinding_images/Databinding_img2.png)
+![ASP.NET ListBox Remote data](Databinding_images/Databinding_img2.png)
 
 
 ## SQL Data
@@ -202,7 +202,7 @@ ListBox provides extensive data binding support to populate ListBox nodes. There
 
 Define an SQL data source in the web page and configure the data source as per your requirement. The following screenshot illustrates the sample database used.
 
-![](Databinding_images/Databinding_img3.png)
+![ASP.NET ListBox SQL Data](Databinding_images/Databinding_img3.png)
 
 In the Design page, assign the values for DataTextField, DataValueField. In DataSourceID field assign the ID of the existing SQL data source.
 
@@ -217,7 +217,7 @@ In the Design page, assign the values for DataTextField, DataValueField. In Data
 
 {% endhighlight %}
 
-![](Databinding_images/Databinding_img4.png)
+![Assign ID of the existing SQL data source using ASP.NET ListBox](Databinding_images/Databinding_img4.png)
 
 
 ## LINQ-to-SQL Data
@@ -228,7 +228,7 @@ Define a LINQ-to-SQL data source in the web page and configure the data source a
 
 The following screenshot illustrates the sample database used.
 
-![](Databinding_images/Databinding_img5.jpeg)
+![ASP.NET ListBox LINQ-to-SQL Data](Databinding_images/Databinding_img5.jpeg)
 
 In the Design page, assign values for DataTextField, DataValueField. In DataSourceID field assign the ID of the existing LINQ-to-SQL data source.
 
@@ -246,7 +246,7 @@ In the Design page, assign values for DataTextField, DataValueField. In DataSour
 
 Output of the above steps
 
-![](Databinding_images/Databinding_img6.png)
+![Assign the ID of the existing LINQ-to-SQL data source using ASP.NET ListBox](Databinding_images/Databinding_img6.png)
 
 ## XML Data
 
@@ -381,7 +381,7 @@ Create a new XML file in App_Data folder as ‘ListBoxXml.xml’ and add the fol
 {% endhighlight %}
 
 
-![](Databinding_images/Databinding_img7.png)
+![ASP.NET ListBox XML Data](Databinding_images/Databinding_img7.png)
 
 ## Virtual Scrolling
 
@@ -423,9 +423,9 @@ protected void Page_Load(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Databinding_images/Databinding_img8.png)
+![ASP.NET ListBox Virtual Scrolling](Databinding_images/Databinding_img8.png)
 
-![](Databinding_images/Databinding_img9.png)
+![ASP.NET ListBox Normal Scrolling](Databinding_images/Databinding_img9.png)
 
 ### Continuous Scrolling
 
@@ -461,9 +461,9 @@ protected void Page_Load(object sender, EventArgs e)
 
 N> The “ItemRequestCount” property will work only when “VirtualScrollMode” is “Continuous”.
 
-![](Databinding_images/Databinding_img10.png)
+![ASP.NET ListBox Continuous Scrolling](Databinding_images/Databinding_img10.png)
 
-![](Databinding_images/Databinding_img11.png)
+![ASP.NET ListBox Virtual Scroll Mode ](Databinding_images/Databinding_img11.png)
 
 ### Handling errors
 
@@ -497,4 +497,4 @@ In remote binding, the server might not return data sometimes due to various rea
 {% endhighlight %}
 {% endtabs %}
 
-![](Databinding_images/Databinding_img12.png)
+![Handling Error using ASP.NET ListBox](Databinding_images/Databinding_img12.png)
