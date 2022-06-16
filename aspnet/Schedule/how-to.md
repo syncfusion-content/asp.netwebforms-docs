@@ -1,12 +1,12 @@
 ---
-title: How-to
+title: How to Section in ASP.NET Web Forms Schedule Control | Syncfusion
 description: The how to section explain more functionalities or informations about Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: Schedule
 documentation: ug
 keywords: globalize, localize, localization, globalization 
 ---
-# How To
+# How to Section in ASP.NET Web Forms Schedule
 
 ## Validate the Custom Appointment Window Fields
 

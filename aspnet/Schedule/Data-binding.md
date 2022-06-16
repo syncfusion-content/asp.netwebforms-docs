@@ -1,12 +1,12 @@
 ---
-title: Data binding with Schedule	
+title: Data binding support in ASP.NET Web Forms Schedule Control | Syncfusion
 description: Databinding is used to show the different binding of adaptor section using Syncfusion ASP.NET Web Forms Schedule component.
 platform: aspnet
 control: schedule
 documentation: ug
 keywords: data binding, local data, remote data 
 ---
-# Data Binding
+# Data Binding support in ASP.NET Web Forms Schedule
 
 ## Appointment Fields
 
