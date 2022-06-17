@@ -75,4 +75,4 @@ This header is used when issuing a preflight request to let the server know what
 
 {% endhighlight %}
 
-[For more details, please refer to this link:](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Access-Control-Allow-Headers)
+[For more details, please refer to this link:](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#access-control-allow-headers)
