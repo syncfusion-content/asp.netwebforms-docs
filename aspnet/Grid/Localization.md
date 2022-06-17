@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization with Grid widget for Syncfusion Essential ASP.NET
-description: How to use globalization and localization
+description: How to use globalization and localization in Syncfusion Essential ASP.NET Web Forms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
@@ -452,7 +452,7 @@ The Grid and Pager has its own locale labels for applying the information about 
 
 The output for the above code example is displayed as the following screenshot.
 
-![](Localization_images/Localization_img1.png) 
+![ASPNET Grid Localization](Localization_images/Localization_img1.png) 
 
 
 
@@ -804,7 +804,7 @@ ej.ExcelFilter.Locale["de-DE"] = {
 
 {% endtabs %}
 
-![](Localization_images/Localization_img2.png)
+![ASPNET Grid Globalization](Localization_images/Localization_img2.png)
 
 I> We have uploaded the predefined language packs for some commonly used cultures in [`this`](https://github.com/syncfusion/ej-global/tree/master/l10n) github location. Refer to the github location for getting the predefined language packs for the corresponding culture. The culture file has localized texts for all the Syncfusion controls.
 
@@ -952,7 +952,7 @@ public partial class Localization : System.Web.UI.Page
 {% endtabs %}
 
 
-![](Localization_images/Localization_img3.png)
+![ASPNET Grid RTL](Localization_images/Localization_img3.png)
 
 I> To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.culture.de-DE.min.js** file in your application, after the reference of ej.web.all.min.js file. For all culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/i18n) location.
 
@@ -1101,7 +1101,7 @@ public partial class Localization : System.Web.UI.Page
 
 
 
-![](Localization_images/Localization_img4.png)
+![ASPNET Grid local filter](Localization_images/Localization_img4.png)
 
 
 

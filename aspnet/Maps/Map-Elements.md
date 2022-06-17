@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Map Elements | Maps | ASP.NET Webforms | Syncfusion
-description: map elements
+description: Learn here about map elements in Syncfusion Essential ASP.NET WebForms Maps Control, its elements, and more.
 platform: aspnet
 control: Maps
 documentation: ug
 ---
 
-# Map Elements
+# Map Elements in ASP.NET WebForms Maps
 
 Map control contains a set of map elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using bound data.
 
@@ -91,7 +91,7 @@ The Markers property has a list of objects that contains the data for Annotation
 
 {% endtabs %}
 
-![](Map-Elements_images/Map-Elements_img1.png)
+![ASP.NET WebForms Maps Map Elements](Map-Elements_images/Map-Elements_img1.png)
 
 Map with markers
 {:.caption} 
@@ -152,7 +152,7 @@ Without Datasource, n number of markers can be added to shape layers with Marker
 
 
 
-![](Map-Elements_images/Map-Elements_img2.png)
+![ASP.NET WebForms Maps with label](Map-Elements_images/Map-Elements_img2.png)
 
 Map with label
 {:.caption} 
@@ -257,7 +257,7 @@ N> Tooltip and Color Mappings for bubble is to be set as similar to tooltip and 
 
 
 
-![](Map-Elements_images/Map-Elements_img3.png) 
+![ASP.NET WebForms Maps elements](Map-Elements_images/Map-Elements_img3.png) 
 
 Map with bubbles
 {:.caption} 
@@ -301,7 +301,7 @@ N> While settings color for bubbles by using `ColorPath`, do not set any other c
 {% endhighlight %}
 
 
-![](Map-Elements_images/Map-Elements_img7.png)
+![ASP.NET WebForms Maps bubbles](Map-Elements_images/Map-Elements_img7.png)
 
 While binding `ColorPath` for bubbles, it is possible to render the legend for each bubble. To achieve this, set the `TextPath` for legend. `TextPath` contains another field name in the datasource. As per the text, content in the field legend will be generated. 
 
@@ -342,7 +342,7 @@ While binding `ColorPath` for bubbles, it is possible to render the legend for e
 
 {% endhighlight %}
 
-![](Map-Elements_images/Map-Elements_img8.png)
+![ASP.NET WebForms Maps Elements](Map-Elements_images/Map-Elements_img8.png)
 
 
 ## Legend
@@ -422,7 +422,7 @@ N>  Here, Equal Color Mapping code sample for shapeSettings with color mappings 
 
 
 
-![](Map-Elements_images/Map-Elements_img4.png)
+![ASP.NET WebForms Maps with legend](Map-Elements_images/Map-Elements_img4.png)
 
 Map with legend
 {:.caption} 
@@ -469,7 +469,7 @@ N>  Here, Range Color Mapping code snippet for shapeSettings with color mappings
 
 
 
-![](Map-Elements_images/Map-Elements_img5.png)
+![ASP.NET WebForms Maps with interactive legend](Map-Elements_images/Map-Elements_img5.png)
 
 Map with interactive legend
 {:.caption} 
@@ -531,7 +531,7 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 {% endhighlight %}
 
-![](Map-Elements_images/Map-Elements_img6.png)
+![ASP.NET WebForms Maps Bubble Legend](Map-Elements_images/Map-Elements_img6.png)
 
 Bubble Legend
 {:.caption} 
