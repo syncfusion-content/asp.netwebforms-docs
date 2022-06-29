@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Upgrading Syncfusion ASP.NET components to latest version
+# Upgrading Syncfusion ASP.NET Web Forms components to latest version
 
 The Syncfusion ASP.NET migration add-in for Visual Studio allows you to migrate an existing Syncfusion ASP.NET application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
 
