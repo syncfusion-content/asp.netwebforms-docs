@@ -2,7 +2,7 @@
 layout: post
 title: Upgrading Syncfusion ASP.NET components to a latest version
 description: Learn here about the how upgrade Syncfusion ASP.NET components to a latest version from migrate extension.
-platform: ASP.NET
+platform: aspnet
 control: Upgrade
 documentation: ug
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrading Syncfusion ASP.NET installer to a latest version - Syncfusion
+title: Upgrading Syncfusion ASP.NET installer to a latest version
 description: Learn here about the how upgrade Syncfusion ASP.NET installer to a latest version from website and control panel.
 platform: aspnet
 control: Essential Studio
