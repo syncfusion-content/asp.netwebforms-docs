@@ -2,7 +2,7 @@
 layout: post
 title: Upgrading Syncfusion ASP.NET components to a latest version
 description: Learn here about the how upgrade Syncfusion ASP.NET components to a latest version from migrate extension.
-platform: ASP.NET
+platform: aspnet
 control: Upgrade
 documentation: ug
 
@@ -36,4 +36,4 @@ To migrate you’re existing Syncfusion ASP.NET application, follow the steps be
 
 3. Click the Migrate Button. The Syncfusion Reference Assemblies, Scripts, and CSS, Web. Config entries in the project are updated to the corresponding version.
 
-4. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your project since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio.
+4. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your project since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/aspnet/licensing/how-to-generate) to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio.
