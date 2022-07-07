@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grid Dependencies | Grid | ASP.NET Webforms | Syncfusion
-description: grid dependencies
+description: Learn here about grid dependencies in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Grid Dependencies
+# Grid Dependencies in ASP.NET Webforms Grid
 
 It is necessary to refer Grid dependent scripts and CSS files in your application, if you have not configured [Embedded Resources](https://help.syncfusion.com/aspnet/embeded-resources) in your application. You may ignore this section if you embed the resources from assembly.
 
