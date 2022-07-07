@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Enable Persistence with Grid widget for Syncfusion Essential ASP.NET
-description: How to persist grid state across page refresh
+title: Enable Persistence in ASP.NET Webforms Grid Control | Syncfusion
+description: Learn here about enable persistence in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Enable Persistence
+# Enable Persistence in ASP.NET Webforms Grid
 
 Enable Persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. State persistence stores Grid's model object in local storage while defining `EnablePersistence` as true. 
 
