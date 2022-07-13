@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  Format String | PivotGrid | ASP.NET | Syncfusion
-description: format string
+description: Learn here about format string support in Syncfusion Essential ASP.NET WebForms PivotGrid Control, its elements, and more.
 platform: aspnet
 control: PivotGrid
 documentation: ug
 ---
 
-### Format Strings
+# Format Strings in ASP.NET WebForms PivotGrid
 
 I> This feature is applicable only for Relational data source at Client Mode.
 
