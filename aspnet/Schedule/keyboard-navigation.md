@@ -1,12 +1,12 @@
 ---
-title: Keyboard support with shortcut keys
+title: Keyboard support in ASP.NET WebForms Schedule Control | Syncfusion
 description: This section explains how to enable keyboard navigation support on the ASP.NET Web Forms Schedule control. 
 platform: aspnet
 control: schedule
 documentation: ug
 keywords: keyboard, shortcuts 
 ---
-# Keyboard Navigation
+# Keyboard Navigation in ASP.NET WebForms Schedule
 
 The shortcut keys for accessing the sub-elements of the scheduler and other Scheduler actions are tabulated in the following table.
 

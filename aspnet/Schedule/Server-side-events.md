@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Server-side events of ASP.NET Web Forms Scheduler
+title: Server side events of ASP.NET WebForms Scheduler Control | Syncfusion
 description: Complete server-side events available in Scheduler along with its accessible argument details on the Syncfusion ASP.NET Web Forms Schedule control.
 platform: aspnet
 control: Schedule
 documentation: ug
 ---
 
-## Server-side events
+# Server side events in ASP.NET WebForms Scheduler
 
 This section explains in detail about the various server-side events available in the ASP.NET Web Forms Scheduler control and the arguments that are available on those events. 
 
