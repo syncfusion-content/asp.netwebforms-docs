@@ -39,13 +39,13 @@ void Application_Start(object sender, EventArgs e)
 
 {% highlight vb %}
 Sub Application_Start(ByVal sender As Object, ByVal e As EventArgs)
-	'Syncfusion Licensing Register
-	Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")
 	'Code that runs on application startup
 	AuthConfig.RegisterOpenAuth()
 	RouteConfig.RegisterRoutes(RouteTable.Routes)
 	System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(name:="DefaultApi", routeTemplate:="api/{controller}/{action}/{id}", defaults:=New With {.id = System.Web.Http.RouteParameter.[Optional]
 	   })
+	'Syncfusion Licensing Register
+	Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")
 End Sub
 {% endhighlight %}
 
