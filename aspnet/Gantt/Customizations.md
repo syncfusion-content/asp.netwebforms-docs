@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customizations | Gantt | ASP.NET Webforms | Syncfusion
-description: Customizations
+description: Learn here about Customizations support in Syncfusion ASP.NET Webforms Gantt Control, its elements, and more.
 platform: aspnet
 control: Gantt
 documentation: ug
 ---
 
-# Customizations 
+# Customizations in ASP.NET Webforms Gantt
 
 Gantt provides support for the following UI customizations,
 
@@ -82,7 +82,7 @@ The DOM structure and class names mentioned in the above code snippet is mandato
 
 The following screenshot shows the template for taskbars in Gantt.
 
-![](Customization_images/Customization_img1.png)
+![ASP.NET Webforms Gantt Mapping data source](Customization_images/Customization_img1.png)
 
 ## Task label template
 
@@ -106,7 +106,7 @@ The following code example explains how to set task name field as right label an
 
 The following screenshot shows Gantt with task labels mapped with different data source fields
 
-![](Customization_images/Customization_img4.png)
+![ASP.NET Webforms Gantt Task label templates](Customization_images/Customization_img4.png)
 
 ### Task label templates
 
@@ -154,7 +154,7 @@ You can find the online demo sample for task label templates in Gantt [here](htt
 
 The following screenshot shows Gantt with task label templates.
 
-![](Customization_images/Customization_img2.png)
+![ASP.NET Webforms Gantt Tooltip template](Customization_images/Customization_img2.png)
 
 ## Tooltip template
 
@@ -213,7 +213,7 @@ The following code example shows how to customize the tooltip.
 
 The following screenshot shows Gantt with task tooltip customization.
 
-![](Customization_images/Customization_img3.png)
+![ASP.NET Webforms Gantt Dependency tooltip](Customization_images/Customization_img3.png)
 
 ### Dependency tooltip
 
@@ -260,7 +260,7 @@ The default dependency tooltip in Gantt can be customized by using `PredecessorT
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![](Customization_images/Customization_img8.png)
+![ASP.NET Webforms Gantt Cell tooltip](Customization_images/Customization_img8.png)
 
 ### Cell tooltip 
 
@@ -305,7 +305,7 @@ TreeGrid part tooltip can also be customized using `CellTooltipTemplate` propert
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img5.png)
+![ASP.NET Webforms Gantt Taskbar Editing Tooltip](Customization_images/Customization_img5.png)
 
 You can find the online demo sample for tooltip templates for taskbars [here](https://mvc.syncfusion.com/demos/web/gantt/gantttooltiptemplate)
 
@@ -363,7 +363,7 @@ Taskbar editing tooltip can be customized by using `TaskbarEditingTooltipTemplat
 {% endhighlight %}
 
 The below screenshot shows the output of above code example.
-![](Customization_images/Customization_img6.png)
+![ASP.NET Webforms Gantt Customize taskbar editing tooltip](Customization_images/Customization_img6.png)
 
 #### Customize progress bar editing tooltip
 
@@ -391,4 +391,4 @@ Progress bar editing tooltip can be customized by using `ProgressbarTooltipTempl
 {% endhighlight %}
 
 The below screenshot shows the output of above code example.
-![](Customization_images/Customization_img7.png)
+![ASP.NET Webforms Gantt Customize progress bar editing tooltip](Customization_images/Customization_img7.png)
