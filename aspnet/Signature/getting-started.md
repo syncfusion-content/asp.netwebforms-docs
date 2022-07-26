@@ -1,19 +1,19 @@
 ---
 layout: post
-title: getting started
-description: getting started
+title: Getting Started with ASP.NET WebForms Signature Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential ASP.NET WebForms Signature Control, its elements, and more.
 platform: aspnet
 control: Signature
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET WebForms Signature
 
 The Signature simplifies creation of a signature capture in a browser, allowing a user to draw a signature using mouse or touch.
 
 This section helps to understand the getting started of the Signature widget with the step-by-step instructions. The following screenshot demonstrates the functionality of Signature widget.
 
-![](getting_started_images\gettingstarted_img1.png)
+![ASP.NET WebForms Signature getting started](getting_started_images\gettingstarted_img1.png)
 
 
 ## Creating your first Signature in ASP application
@@ -32,7 +32,7 @@ Initialize the corresponding Signature control in the ASPX page with the belo
 
 Execute the code to render a Signature widget as follows.
 
-![](getting_started_images\gettingstarted_img2.png)
+![ASP.NET WebForms Signature ASP application](getting_started_images\gettingstarted_img2.png)
 
 
 ## Adjusting Signature Size
@@ -49,7 +49,7 @@ The following code example is used to render the Signature control with customiz
 
 The following screenshot illustrates signature with customized width and height.
 
-![](getting_started_images\gettingstarted_img3.png)
+![ASP.NET WebForms Signature Adjusting Signature Size](getting_started_images\gettingstarted_img3.png)
 
 
 
