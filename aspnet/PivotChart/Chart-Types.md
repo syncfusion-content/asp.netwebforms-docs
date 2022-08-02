@@ -7,7 +7,7 @@ control: PivotChart
 documentation: ug
 ---
 
-# Chart types
+# Chart types in ASP.NET WebForms PivotChart
 
 Essential **PivotChart ASP.NET** supports 18 different types of chart as follows:
 
