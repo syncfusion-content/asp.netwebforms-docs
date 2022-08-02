@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Server side events | PivotChart | ASP.NET | Syncfusion
-description: server-side events
+description: Learn here about server side events in Syncfusion Essential ASP.NET WebForms PivotChart Control, its elements, and more.
 platform: aspnet
 control: PivotChart
 documentation: ug
 ---
 
-## Server-side: Event Arguments
+# Server side Event Arguments in ASP.NET WebForms PivotChart
 
 This section explains in detail about the various server-side events available in the control and the arguments that are passed to server-side. 
 
