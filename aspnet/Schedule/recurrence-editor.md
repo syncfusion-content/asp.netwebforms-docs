@@ -6,7 +6,7 @@ control: recurrence editor
 documentation: ug
 keywords: recurrence editor, recurrence widget, ejRecurrenceEditor, aspnet recurrence editor
 ---
-# Recurrence Editor
+# Recurrence Editor in ASP.NET Web Forms Schedule
 
 The Recurrence Editor includes the entire recurrence related information in a separate portable manner which can be either utilized as a separate widget or else can be embed within the appointment window of Scheduler to enable recurrence options within it. The recurrence rule can be easily generated based on the frequency selected. The customizations such as changing the labels of the recurrence editor is also possible to achieve through its properties. The frequencies available are Never, Daily, Weekly, Monthly, Yearly and Every weekday.
 
