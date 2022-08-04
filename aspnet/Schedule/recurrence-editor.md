@@ -1,5 +1,5 @@
 ---
-title: Getting started with RecurrenceEditor component and basic render.	 	
+title: Recurrence Editor in ASP.NET Web Forms Schedule Control | Syncfusion
 description: Rendering a basic Recurrence editor with properties and generate the recurrence rule for Recurrence editor.
 platform: aspnet
 control: recurrence editor
