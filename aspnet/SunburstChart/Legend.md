@@ -7,7 +7,7 @@ control: SunburstChart
 documentation: ug
 ---
 
-## Legend
+# Legend in ASP.NET Webforms SunburstChart
 The legend is used to represent the first level of items in the Sunburst Chart.The **Legend** can be initialized using the below code snippet
 
 {% highlight html %}
