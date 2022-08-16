@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend | SunburstChart | ASP.NET Webforms | Syncfusion
-description: Learn about legend support in Syncfusion ASP.NET Webforms SunburstChart control and more details.
+description: Learn about legend support in Syncfusion ASP.NET Webforms SunburstChart control, its elements, more details.
 platform: aspnet 
 control: SunburstChart
 documentation: ug
