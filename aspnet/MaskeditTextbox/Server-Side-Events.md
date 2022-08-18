@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Server Side Events | MaskEdit | ASP.NET Webforms | Syncfusion
-description: server side events
+title: Server Side Events MaskEdit ASP.NET Webforms | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Webforms MaskEdit, its elements, and more
 platform: aspnet
 control: MaskEdit
 documentation: ug
 ---
 
-## Server Side Events
+# Getting started with ASP.NET Webforms MaskEdit
 
 The server side events present in the MaskEditTextbox control are as follows.
 
