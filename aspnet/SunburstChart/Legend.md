@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend | SunburstChart | ASP.NET Webforms | Syncfusion
-description: Learn about legend support in Syncfusion ASP.NET Webforms SunburstChart control and more details.
+title: Legend in ASP.NET Webforms SunburstChart | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Webforms SunburstChart control, its elements, and more.
 platform: aspnet 
 control: SunburstChart
 documentation: ug
 ---
 
-## Legend
+# Legend in ASP.NET Webforms SunburstChart
 The legend is used to represent the first level of items in the Sunburst Chart.The **Legend** can be initialized using the below code snippet
 
 {% highlight html %}
