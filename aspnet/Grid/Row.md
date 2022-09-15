@@ -7,9 +7,9 @@ control: Grid
 documentation: ug
 ---
 
-# Row
+# Row in Essential ASPNET Grid
 
-## Details Template in Essential ASPNET Grid
+## Details Template
 
 Details Template feature provides a detailed view about additional information of each row. If you want to view the detailed information, you can expand a row. Using DetailsTemplate property to achieve detail template feature.
 
