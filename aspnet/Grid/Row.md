@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Row | Grid | ASP.NET Webforms | Syncfusion
-description: Learn here all about row support in Syncfusion Essential ASPNET Grid control, its elements, and more.
+description: Learn here all about row support in Syncfusion Essential ASP.NET Webforms Grid control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Row in Essential ASPNET Grid
+# Row in Essential ASP.NET Webforms Grid
 
 ## Details Template
 
