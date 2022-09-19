@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Display format | DateTimePicker | ASP.NET Webforms | Syncfusion
-description: display format
+description: Learn here all about display format support in Syncfusion Essential ASP.NET Webforms Date Time Picker control, its elements, and more.
 platform: aspnet
 control: DateTimePicker
 documentation: ug
 ---
 
-# Display format
+# Display format in  ASP.NET Webforms DateTimePicker
 
 ## DateTime format
 
@@ -74,7 +74,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-![](Display-format_images/Display-format_img1.png) 
+![ASPNET DateTimePicker date time format](Display-format_images/Display-format_img1.png) 
 
 
 
@@ -122,7 +122,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-![](Display-format_images/Display-format_img2.png) 
+![ASPNET DateTimePicker day header format](Display-format_images/Display-format_img2.png) 
 
 
 

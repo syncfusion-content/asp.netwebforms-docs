@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection | TreeGrid | ASP.NET MVC | Syncfusion
-description: selection
+title: Selection | TreeGrid | ASP.NET Webforms | Syncfusion
+description:  Learn here all about Selection support in Syncfusion Essential ASP.NET Webforms TreeGrid control, its elements, and more.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-# Selection
+#Selection in ASP.NET Webforms TreeGrid
 
 The TreeGrid control provides support for row and cell selections using `SelectionSettings` property. 
 
@@ -26,7 +26,7 @@ The following code example shows, how to disable the row selection in TreeGrid.
 
 The output of the TreeGrid with row selection is as follows.
 
-![](Selection_images/Selection_img1.png)
+![ASPNET TreeGrid row selection](Selection_images/Selection_img1.png)
 
 ### Selecting a row at initial load
 
@@ -56,7 +56,7 @@ The following code example explains how to enable multiple selection in TreeGrid
 
 The output of the TreeGrid with multiple row selection is as follows.
 
-![](Selection_images/Selection_img2.png)
+![ASPNET TreeGrid multiple row selection](Selection_images/Selection_img2.png)
 
 
 ### Selecting a row programmatically 
@@ -141,7 +141,7 @@ Find the code example below to enable the cell selection in TreeGrid.
 
 The output of the TreeGrid with cell selection is as follows.
 
-![](Selection_images/Selection_img3.png)
+![ASPNET TreeGrid cell selection](Selection_images/Selection_img3.png)
 
 It is possible to get the list of HTML elements of the selected cells at run-time using the [`getSelectedCells`](https://help.syncfusion.com/api/js/ejtreegrid#methods:getselectedcells "getSelectedCells") method.
 
@@ -173,7 +173,7 @@ $("#selectCells").click(function () {
 
 {% endhighlight %}
 
-![](Selection_images/Selection_img8.png)
+![ASPNET TreeGrid select cells dynamically](Selection_images/Selection_img8.png)
 
 ### Disabling cell selection for specific column
 
@@ -205,7 +205,7 @@ The following code example shows you to select multiple cells.
 
 The output of the TreeGrid with multiple cell selection is as follows.
 
-![](Selection_images/Selection_img4.png)
+![ASPNET TreeGrid multiple cell selection](Selection_images/Selection_img4.png)
 
 ### Customize cell selection action
 
@@ -246,7 +246,7 @@ It is possible to select/unselect all the TreeGrid rows using column header chec
 
 The output of the TreeGrid with checkbox enabled in column header.
 
-![](Selection_images/Selection_img5.png)
+![ASPNET TreeGrid checkbox selection](Selection_images/Selection_img5.png)
 
 ### Hierarchy selection
 It is possible to select the rows hierarchically using checkboxes in TreeGrid by enabling the `EnableHierarchySelection` property.
@@ -264,7 +264,7 @@ Following code snippet explains on enabling hierarchy selection in TreeGrid.
 
 The output of the TreeGrid with hierarchy selection enabled.
 
-![](Selection_images/Selection_img6.png)
+![ASPNET TreeGrid hierarchy selection](Selection_images/Selection_img6.png)
 
 ### Checkbox column
 
@@ -283,7 +283,7 @@ It is possible to change the default index of the checkbox column and we can dis
 
 The output of the TreeGrid with checkbox enabled in task name column.
 
-![](Selection_images/Selection_img7.png)
+![ASPNET TreeGrid checkbox column](Selection_images/Selection_img7.png)
 
 The index of the checkbox column can be changed at run-time using the [`updateCheckboxColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:updatecheckboxcolumn "updateCheckboxColumn") method. The index of the column in which the checkbox should be displayed is passed as the method parameter.
 

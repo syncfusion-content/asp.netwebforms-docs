@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Define value | ProgressBar | ASP.NET | Syncfusion
-description: define value
+description: Learn here all about Define value support in Syncfusion Essential ASP.NET Webforms ProgressBar control, its elements, and more.
 platform: aspnet
 control: ProgressBar
 documentation: ug
 ---
 
-# Define value
+# Define value in ASP.NET Webforms ProgressBar
 
 ## Value
 
@@ -22,7 +22,7 @@ Add the following code in the ASPX page in order to render the ProgressBar contr
 {% endhighlight %}
 
 The following screenshot displays the Assigning value to ProgressBar.            
-![](Define-value_images/Define-value_img1.png)
+![ASPNET ProgressBar value](Define-value_images/Define-value_img1.png)
 
 ## Percentage
 
@@ -38,7 +38,7 @@ Add the following code example to the ASPX page to render the Progress bar contr
 
 The following screenshot displays the Progress bar with Percentage.
 
-![](Define-value_images/Define-value_img2.png) 
+![ASPNET ProgressBar percentage](Define-value_images/Define-value_img2.png) 
 
 
 
@@ -56,7 +56,7 @@ Add the following code example in the ASPX page to render Minimum and Maximum va
 
 The following screenshot displays the Minimum and Maximum values. 
 
-![](Define-value_images/Define-value_img3.png)
+![ASPNET ProgressBar setting range](Define-value_images/Define-value_img3.png)
 
 ### Appearance and Styling
 
@@ -72,7 +72,7 @@ Add the following code example to the ASPX page.
 
 The following screenshot displays the maximum height and maximum width.                         
 
-![](Define-value_images/Define-value_img4.png)
+![ASPNET ProgressBar appearance and styling](Define-value_images/Define-value_img4.png)
 
 ## Custom text
 
@@ -88,7 +88,7 @@ Add the following code example in the ASPX page.
 
 The following screenshot displays the custom text.
 
-![](Define-value_images/Define-value_img5.png) 
+![ASPNET ProgressBar custom text](Define-value_images/Define-value_img5.png) 
 
 ## Theme
 
@@ -131,4 +131,4 @@ Add the following code example to the corresponding ASPX page to render Progress
 
 The following screenshot displays the customized style.
 
-![](Define-value_images/Define-value_img6.png) 
+![ASPNET ProgressBar theme](Define-value_images/Define-value_img6.png) 
