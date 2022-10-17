@@ -265,8 +265,8 @@ The angle, translation, and opacity of the Shadow can be customized with the `Sh
 
 ## Interaction
 
-Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/aspnet/Diagram/Interaction "Interaction").
+Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/aspnet/diagram/interaction "Interaction").
 
 ## Constraints
 
-The `Constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/aspnet/Diagram/Constraints#NodeConstraints "Node Constraints").
+The `Constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/aspnet/diagram/constraints#NodeConstraints "Node Constraints").
