@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Integration | MaskEdit | ASP.NET Webforms | Syncfusion
-description: integration
+description: Learn here all about Integration support in Syncfusion Essential ASP.NET Webforms MaskEdit control, its elements, and more.
 platform: aspnet
 control: MaskEdit
 documentation: ug
 ---
 
-# Integration
+# Integration in Essential ASP.NET Webforms MaskEdit
 
 ## AngularJS Support
 
@@ -116,13 +116,13 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
 The output of NumericTextbox controls with two-way AngularJS binding is as follows.
 
-![](Integration_images/Integration_img1.jpeg) 
+![Integration in ASP.NET Webforms MaskEdit](Integration_images/Integration_img1.jpeg) 
 
 
 
 
 
-![](Integration_images/Integration_img2.jpeg)
+![AngularJS Binding in ASP.NET Webforms MaskEdit](Integration_images/Integration_img2.jpeg)
 
 
 
@@ -261,7 +261,7 @@ The following example explains the how to bind data to the MaskEditTextbox cont
 
 The output of Knockout binding in MaskEditTextbox.
 
-![](Integration_images/Integration_img3.jpeg)
+![Knockout Binding in ASP.NET Webforms MaskEdit](Integration_images/Integration_img3.jpeg)
 
 
 
