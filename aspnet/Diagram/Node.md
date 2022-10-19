@@ -7,11 +7,11 @@ control: Diagram
 documentation: ug
 ---
 
-# Node
+# Node in ASP.NET Webforms Diagram
 
 Nodes are graphical object that represent visual data to be placed on the page.
 
-![Diagram node](/aspnet/Diagram/Node_images/Node_img1.png)
+![Diagram node](Node_images/Node_img1.png)
 
 ## Create Node
 
@@ -34,7 +34,7 @@ To create a node, You have to create the node tag and add that to `Nodes` collec
     
 {% endhighlight %}
 
-![add a node to the Diagram](/aspnet/Diagram/Node_images/Node_img2.png)
+![add a node to the Diagram](Node_images/Node_img2.png)
 
 ### Add node at runtime
 
@@ -62,7 +62,7 @@ Nodes can be added at runtime by using public method, `add`. The following code 
 
 {% endhighlight %}
 
-![add a node at run time](/aspnet/Diagram/Node_images/Node_img3.png)
+![add a node at run time](Node_images/Node_img3.png)
 
 ### Add node from palette
 
@@ -120,7 +120,7 @@ The following code illustrates how to change the `Pivot` value.
 
 {% endhighlight %}
 
-![pivot relates offset values with node boundaries](/aspnet/Diagram/Node_images/Node_img4.png)
+![pivot relates offset values with node boundaries](Node_images/Node_img4.png)
 
 ## Types
 
@@ -142,7 +142,7 @@ You can customize the appearance of a node by changing its fill colors, patterns
 
 {% endhighlight %}
 
-![customize the appearance of the shape](/aspnet/Diagram/Node_images/Node_img5.png)
+![customize the appearance of the shape](Node_images/Node_img5.png)
 
 ### Gradient
 
@@ -205,7 +205,7 @@ The `Gradient` property of Node allows you to define and applies the gradient ef
      
 {% endhighlight %}
 
-![the gradient effect to that node](/aspnet/Diagram/Node_images/Node_img6.png)
+![the gradient effect to that node](Node_images/Node_img6.png)
 
 ## Shadow
 
@@ -225,7 +225,7 @@ The `Gradient` property of Node allows you to define and applies the gradient ef
 {% endhighlight %}
 
 
-![add shadow effect to a node](/aspnet/Diagram/Node_images/Node_img7.png)
+![add shadow effect to a node](Node_images/Node_img7.png)
 
 The following code illustrates how to disable shadow effect at runtime.
 
@@ -261,7 +261,7 @@ The angle, translation, and opacity of the Shadow can be customized with the `Sh
             
 {% endhighlight %}
 
-![customize shadow](/aspnet/Diagram/Node_images/Node_img8.png)
+![customize shadow](Node_images/Node_img8.png)
 
 ## Interaction
 
