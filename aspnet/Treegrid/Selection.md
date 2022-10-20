@@ -7,7 +7,7 @@ control: TreeGrid
 documentation: ug
 ---
 
-# Selection in Essential ASP.NET WebForms TreeGrid
+# Selection in ASP.NET WebForms TreeGrid
 
 The TreeGrid control provides support for row and cell selections using `SelectionSettings` property. 
 

@@ -6,7 +6,7 @@ control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, How To
 ---
-# How To Section in Essential ASP.NET WebForms File Explorer
+# How To Section in ASP.NET WebForms File Explorer
 
 ## File handling operations
 

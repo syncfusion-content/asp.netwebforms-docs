@@ -7,7 +7,7 @@ control: MaskEdit
 documentation: ug
 ---
 
-# Integration in Essential ASP.NET Webforms MaskEdit
+# Integration in ASP.NET Webforms MaskEdit
 
 ## AngularJS Support
 
