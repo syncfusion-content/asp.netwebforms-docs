@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Connector
+# Connector in ASP.NET Webforms Diagram
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
@@ -691,7 +691,7 @@ The following code example illustrates how to customize the appearance of the de
 ![customize the appearance of the decorator](Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/aspnet/Diagram/Interaction#connection-editing "Connection Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/aspnet/diagram/interaction#connection-editing "Connection Editing").
 
 ## Constraints
-The `Constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/aspnet/Diagram/Constraints#connectorconstraints "Connector Constraints").
+The `Constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/aspnet/diagram/constraints#connectorconstraints "Connector Constraints").
