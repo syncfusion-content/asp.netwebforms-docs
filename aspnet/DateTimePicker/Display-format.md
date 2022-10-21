@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Display format | DateTimePicker | ASP.NET Webforms | Syncfusion
-description: display format
+description: Learn here all about display format support in Syncfusion Essential ASPNET DateTimePicker control, its elements, and more.
 platform: aspnet
 control: DateTimePicker
 documentation: ug
 ---
 
-# Display format
+# Display format with ASPNET DateTimePicker
 
 ## DateTime format
 

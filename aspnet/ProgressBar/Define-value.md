@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Define value | ProgressBar | ASP.NET | Syncfusion
-description: define value
+description: Learn here all about define value support in Syncfusion Essential ASPNET ProgressBar control, its elements, and more.
 platform: aspnet
 control: ProgressBar
 documentation: ug
 ---
 
-# Define value
+# Define value with ASPNET ProgressBar
 
 ## Value
 
