@@ -78,7 +78,7 @@ For more information about data source, refer to [Data Binding](/aspnet/Diagram/
 
 ### Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/aspnet/Diagram/Tools#drawing-tools:connectors "Draw Connectors").
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/aspnet/diagram/tools#drawing-tools:connectors "Draw Connectors").
 
 ## Update Connector at runtime
 

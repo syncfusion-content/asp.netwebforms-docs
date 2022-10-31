@@ -1,13 +1,13 @@
 ---
 layout: post
 title: RTL Support | CurrencyTextBox | ASP.NET Webforms | Syncfusion
-description: rtl support
+description: Learn here about rtl support in Syncfusion Essential ASP.NET Webforms CurrencyTextBox Control, its elements, and more.
 platform: aspnet
 control: Currency TextBox
 documentation: ug
 ---
 
-# RTL Support
+# RTL Support in ASP.NET Webforms CurrencyTextBox
 
 The CurrencyTextbox provides RTL (Right-To-Left) support. The alignment of the CurrencyTextbox can be changed from Left-To-Right into Right-To-Left. It accepts Boolean values. The default value is false.
 
@@ -27,7 +27,7 @@ Add the following code to your ASPX page to render the CurrencyTextbox control w
 
 The output when the EnableRTL is true. 
 
-![](RTL-Support_images/RTL-Support_img1.png)
+![ASP.NET Webforms CurrencyTextBox RTL Support](RTL-Support_images/RTL-Support_img1.png)
 
 
 
