@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Localization Support | CurrencyTextBox | ASP.NET Webforms | Syncfusion
-description: localization support
+description: Learn here about localization support in Syncfusion Essential ASP.NET Webforms CurrencyTextBox Control, its elements, and more.
 platform: aspnet
 control: Currency TextBox
 documentation: ug
 ---
 
-# Globalization Support
+# Globalization Support in ASP.NET Webforms CurrencyTextBox
 
 **Globalization** is language support based on the culture in CurrencyTextBox. You can achieve the **Globalization** using “**locale”** property in CurrencyTextBox. 
 
 The CurrencyTextBox widget provides multi-language support using globalization. You can customize the CurrencyTextBox with your own language style by using this feature. You can change the globalization by using the **locale** property. The default value for **locale** property is **en-US** in CurrencyTextBox controls. Also you can specify the [currencySymbol](https://help.syncfusion.com/api/js/ejtextboxes#members:currencysymbol) property when the user wants to overwrite the currency symbol commonly instead of the current culture symbol.
 
 More than 350 culture specific files are available to localize the value. To know more about EJ globalize support, please refer the below link      
- [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
+ [https://help.syncfusion.com/js/localization](https://help.syncfusion.com/js/localization) 
  
  N> All the culture-specific script files are available within the below specified location, once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
@@ -61,11 +61,11 @@ Add the following code to your ASPX page to render the CurrencyTextbox control.
 
 The screenshots of the CurrencyTextbox with es-ES locale and en-US locale.
 
-![](Localization-Support_images/Localization-Support_img1.png)
+![ASP.NET Webforms CurrencyTextBox Configuring Localization](Localization-Support_images/Localization-Support_img1.png)
 
 
 
-![](Localization-Support_images/Localization-Support_img2.png)
+![ASP.NET Webforms CurrencyTextBox Localization Support](Localization-Support_images/Localization-Support_img2.png)
 
 
 
