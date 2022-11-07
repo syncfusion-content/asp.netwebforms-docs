@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Row | Grid | ASP.NET Webforms | Syncfusion
-description: row
+description: Learn here all about row support in Syncfusion Essential ASP.NET Webforms Grid control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Row
+# Row in Essential ASP.NET Webforms Grid
 
 ## Details Template
 
@@ -80,7 +80,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-![](Row_images/Row_img1.png)
+![ASPNET Grid row](Row_images/Row_img1.png)
 
 
 
@@ -272,7 +272,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-![](Row_images/Row_img2.png)
+![ASPNET Grid hierarchy](Row_images/Row_img2.png)
 
 
 ## Row Template
@@ -495,7 +495,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-![](Row_images/Row_img3.png)
+![ASPNET Grid row template](Row_images/Row_img3.png)
 
 
 
@@ -554,7 +554,7 @@ protected void Page_Load(object sender, EventArgs e)
 The following output is displayed as a result of the above code example.
 
 
-![](Row_images/Row_img4.png)
+![ASPNET Grid customize hover and alt row](Row_images/Row_img4.png)
 
 ## Drag-and-Drop
 
@@ -617,12 +617,12 @@ public partial class RowTemplate : System.Web.UI.Page
 
 The following output is displayed before reordering rows. 
 
-![](Row_images/Row_img5.png)
+![ASPNET Grid drag and drop](Row_images/Row_img5.png)
 {:Before Drop}
 
 The following output is displayed after reordering rows.
 
-![](Row_images/Row_img6.png)
+![ASPNET Grid reordering rows](Row_images/Row_img6.png)
 {:After Drop}
 
 ### Grid-to-Grid
@@ -737,12 +737,12 @@ public partial class RowTemplate : System.Web.UI.Page
 
 The following output is displayed before dropping Grid rows.
 
-![](Row_images/Row_img7.png)
+![ASPNET Grid displays before dropping rows](Row_images/Row_img7.png)
 {:Before Drop}
 
 The following output is displayed after dropping Grid rows.
 
-![](Row_images/Row_img8.png)
+![ASPNET Grid display after dropping rows](Row_images/Row_img8.png)
 {:After Drop}
 
 ### Grid-to-Custom control
@@ -822,12 +822,12 @@ public partial class RowTemplate : System.Web.UI.Page
 
 The following output is displayed before dropping the rows on Form.
 
-![](Row_images/Row_img9.png)
+![ASPNET Grid displayed before dropping the rows on form](Row_images/Row_img9.png)
 {:Before Drop}
 
 The following output is displayed after dropping the rows on Form.
 
-![](Row_images/Row_img10.png)
+![ASPNET Grid displayed after dropping the rows on form](Row_images/Row_img10.png)
 {:After Drop}
 
 N>   The default behavior of drag and drop between Grid or any other controls is as cut and paste. For copy and paste behavior specify the drag behavior in `DragBehavior` property of `RowDropSettings` as "Copy".
