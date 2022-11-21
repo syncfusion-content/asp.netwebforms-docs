@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Supported and unsupported elements of Syncfusion Essential ASP .NET PDF viewer.
-description: Supported and unsupported elements of Syncfusion Essential ASP .NET PDF viewer.
+title: Supported and Unsupported Elements | ASPNET PDF Viewer | Syncfusion
+description: Learn here all about supported and unsupported elements in Syncfusion Essential ASP.NET Webforms PDF Viewer control, its elements, and more.
 platform: aspnet
 control: PDF viewer
 documentation: ug
 keywords: PDF viewer, pdfviewer
 ---
 
-## Supported and Unsupported Elements
+# Supported and Unsupported Elements in ASP.NET Webforms PDF Viewer
 
 The supported and un-supported elements of the PDF viewer control are:
 
