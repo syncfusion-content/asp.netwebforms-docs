@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart legend| Chart  | ASP.NET Webforms | Syncfusion
-description: How to cutomize the legend in Syncfusion Essential ASP.NET Webforms Chart Control, its elements, and more.
+description: How to cutomize the legend in Essential JavaScript Chart.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# Legend in ASP.NET Webforms Chart
+# Legend
 
 The legend contains the list of Chart Series and Trendlines that appear in a chart. 
 
@@ -24,7 +24,7 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Legend Visibility](Legend_images/Legend_img1.png)
+![](Legend_images/Legend_img1.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/legendposition1.aspx) here to view the online demo sample for legend customization.
 
@@ -45,7 +45,7 @@ To add the title to the legend, you have to specify the **Legend.Title.Text** op
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Legend title](Legend_images/Legend_img2.png)
+![](Legend_images/Legend_img2.png)
 
 
 ## Position and Align the Legend
@@ -62,7 +62,7 @@ By using the **Position** option, you can position the legend at *Left*, *Right*
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart](Legend_images/Legend_img3.png)
+![](Legend_images/Legend_img3.png)
 
 **Legend Alignment**
 
@@ -78,7 +78,7 @@ You can align the legend to the *Center*, *Far* or *Near* based on its position 
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Position and Align the Legend](Legend_images/Legend_img4.png)
+![](Legend_images/Legend_img4.png)
 
 ## Arrange legend items in the rows and columns
 
@@ -103,7 +103,7 @@ You can arrange the legend items horizontally and vertically by using the **RowC
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Arrange legend items in the rows and columns](Legend_images/Legend_img5.png)
+![](Legend_images/Legend_img5.png)
 
 ## Customization
 
@@ -121,7 +121,7 @@ To change the legend icon shape, you have to specify the shape in the **Shape** 
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Legend shape](Legend_images/Legend_img6.png)
+![](Legend_images/Legend_img6.png)
 
 ### Legend items size and border
 
@@ -141,7 +141,7 @@ You can change the size of the legend items by using the *ItemStyle.Width* and *
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Legend items size and border](Legend_images/Legend_img7.png)
+![](Legend_images/Legend_img7.png)
 
 ### Legend size
 
@@ -159,7 +159,7 @@ By default, legend takes 20% of the **Height** horizontally when it was placed o
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Legend size](Legend_images/Legend_img8.png)
+![](Legend_images/Legend_img8.png)
 
 ### Legend Item Padding
 
@@ -175,7 +175,7 @@ You can control the spacing between the legend items by using the **ItemPadding*
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Legend Item Padding](Legend_images/Legend_img9.png)
+![](Legend_images/Legend_img9.png)
 
 ### Legend border
 
@@ -192,7 +192,7 @@ You can customize the legend border by using the **Border** option in the legend
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Legend border](Legend_images/Legend_img10.png)
+![](Legend_images/Legend_img10.png)
 
 ### Scrollbar for legend
 
@@ -209,7 +209,7 @@ You can enable or disable the legend scrollbar by using the **EnableScrollbar** 
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Scrollbar for legend](Legend_images/Legend_img11.png)
+![](Legend_images/Legend_img11.png)
 
 ### Customize the legend text
 
@@ -230,7 +230,7 @@ To customize the legend item text and title you can use the **Legend.Font** and 
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Customize the legend text](Legend_images/Legend_img12.png)
+![](Legend_images/Legend_img12.png)
 
 ### LegendItems Text Overflow
 
@@ -248,20 +248,20 @@ You can trim the legend item text when its width exceeds the **Legend.TextWidth*
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart trim](Legend_images/Legend_img13.png)
+![](Legend_images/Legend_img13.png)
 
 
 **Wrap**
 
 By specifying *TextOverflow* as **Wrap**, you can wrap the legend text by word.
 
-![ASP.NET Webforms Chart LegendItems Text Overflow](Legend_images/Legend_img14.png)
+![](Legend_images/Legend_img14.png)
 
 **WrapAndTrim**
 
 You can wrap and trim the legend text by specifying *TextOverflow* as **WrapAndTrim**. The original text will be displayed on mouse hover.
 
-![ASP.NET Webforms Chart WrapAndTrim](Legend_images/Legend_img15.png)
+![](Legend_images/Legend_img15.png)
 
 
 ## Handle the legend item clicked
@@ -302,7 +302,7 @@ You can select a specific series or point while clicking on the corresponding le
 
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Series selection on legend item click](Legend_images/Legend_img16.png)
+![](Legend_images/Legend_img16.png)
 
 
 
@@ -326,5 +326,5 @@ You can collapse the specific series/point legend item displaying in the chart, 
       
 {% endhighlight %}
 
-![ASP.NET Webforms Chart Collapsing legend item](Legend_images/Legend_img17.png)
+![](Legend_images/Legend_img17.png)
 

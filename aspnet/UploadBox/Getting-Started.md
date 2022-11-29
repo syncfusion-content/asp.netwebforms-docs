@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | UploadBox | ASP.NET | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion ASP.NET UploadBox control, its elements, and more
 platform: aspnet
 control: UploadBox
 documentation: ug
