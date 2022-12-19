@@ -46,7 +46,7 @@ Project Creation Wizard
 
     > Refer the above assemblies from the installed location, [Installed Location]:\Program Files (x86)\Syncfusion\Essential Studio\ASP.NET\{{ site.releaseversion }}\Assemblies
 
-3.  Add the following WebAPI assemblies from [NuGet package](https://www.nuget.org/packages/Microsoft.AspNet.WebApi/ "Web NuGet Package Details").
+3.  Add the following WebAPI assemblies from [NuGet package](https://www.nuget.org/packages/Microsoft.AspNet.WebApi/).
 
     * System.Web.Http
     * System. Web.Http.WebHost
@@ -76,7 +76,7 @@ To create a new Web Forms in the application
 
 ## Add Scripts and Styles
 
-For complete dependencies list of report designer control [Click here](/aspnet/ReportDesigner/Dependencies).
+For complete dependencies list of report designer control [Click_here](/aspnet/ReportDesigner/Dependencies).
 
 Add the script files and theme files in the &lt;head&gt; tag of the Default.aspx page.
 
