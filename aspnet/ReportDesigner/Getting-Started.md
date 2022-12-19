@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | ReportDesigner | ASP.NET | Syncfusion
-description: getting started
+description: Learn here all about Getting Started in Syncfusion Essential ASP.NET Webforms Report Designer control, its elements, and more.
 platform: aspnet
 control: ReportDesigner
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms Report Designer
 
 This section explains briefly about how to create a ReportDesigner in your ASP.NET web application.
 
@@ -17,7 +17,7 @@ The following screenshots displays the Project Creation Wizard in Visual Studio 
 
 Open Visual Studio and create a new project by clicking `New Project`. Select the **Web** category, select the ASP.NET Web Forms Application template, and then click `OK`. The following screenshot displays the Project Creation Wizard.
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![Getting Started with ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img1.png) 
 
 Project Creation Wizard
 {:.caption}
@@ -26,7 +26,7 @@ Project Creation Wizard
 
 1. In the Solution Explorer, right-click the `References` folder and then click `Add Reference`.
 
-    ![](Getting-Started_images/Getting-Started_img4.png) 
+    ![Add Assembly References in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img4.png) 
 
 2. Add the following Syncfusion assemblies to the project that are necessary for using the report designer control and click OK.
 
@@ -61,18 +61,18 @@ To create a new Web Forms in the application
 
 1. Right-Click on the project and select `Add` then click `New Item`. 
 
-    ![](Getting-Started_images/Getting-Started_img2.png)
+    ![Select Add in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img2.png)
 
 2. Select `Web Form` from the listed templates and name the page as **Default.aspx**.
 
-   ![](Getting-Started_images/Getting-Started_img3.png) 
+   ![Default in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img3.png) 
    
    Adding Web Forms
    {:.caption}
    
 3.  Click Add.
 
-    ![](Getting-Started_images/Getting-Started_img14.png)
+    ![Click Add Getting Started with ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img14.png)
 
 ## Add Scripts and Styles
 
@@ -146,14 +146,14 @@ To add the control, we can use either of the following two ways:
 
     You just need to drag the required control from the toolbox and then drop it into the body section of the Default.aspx page, so that the required control code gets generated automatically and also the required dependent assembly get registered automatically.
 
-    ![](Getting-Started_images/Getting-Started_img5.png) 
+    ![Drag Toolbar in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img5.png) 
    
     ReportDesigner Control in Toolbox
     {:.caption} 
 
 2.	When you drag and drop the Report Designer control into the Default.aspx page, the page looks as the image shown in the following with the automatic control code generated and the required assemblies registered.
 
-    ![](Getting-Started_images/Getting-Started_img10.png)
+    ![Drop Toolbar in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img10.png)
 
 3. Set the desired `ServiceUrl` to ReportDesigner.
 
@@ -237,15 +237,15 @@ The ASP.NET ReportDesigner uses WebApi services to process the report file and p
 
 1. Right-Click on the project and select `Add` then click `New Item`. 
 
-    ![](Getting-Started_images/Getting-Started_img2.png)
+    ![Add Controller in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img2.png)
 
 2. Select `Web API Controller Class` from the listed templates and name the controller as **ReportDesignerController.cs**. 
 
-    ![](Getting-Started_images/Getting-Started_img7.png)
+    ![Select Web API Controller in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img7.png)
 
 3. Click Add.
 
-    ![](Getting-Started_images/Getting-Started_img12.png)
+    ![Click Add Application in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img12.png)
 
 #### Inherit IReportDesignerController
  
@@ -367,15 +367,15 @@ If `Global Application Class` file already exists in your application skip the b
 
 1. Right-Click on the project and select `Add` then click `New Item`. 
 
-    ![](Getting-Started_images/Getting-Started_img2.png) 
+    ![Add Global Application in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img2.png) 
 
 2. Select `Global Application Class` from the listed templates and name it as `Global.asax`.
 
-    ![](Getting-Started_images/Getting-Started_img8.png)
+    ![Global Application Class in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img8.png)
 
 3. Click Add.
 
-    ![](Getting-Started_images/Getting-Started_img13.png)
+    ![Add in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img13.png)
  
 #### Route WebAPI
 
@@ -412,4 +412,4 @@ namespace ReportDesignerSample
 
 Run the sample application and you can see the ReportDesigner on the page as displayed in the following screenshot.
 
-![](Getting-Started_images/Getting-Started_img9.png)  
+![Run The Application in ASP.NET Webforms Report Designer](Getting-Started_images/Getting-Started_img9.png)  
