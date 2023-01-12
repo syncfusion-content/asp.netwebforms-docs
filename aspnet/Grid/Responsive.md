@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Responsive with Grid widget for Syncfusion ASP.NET
-description: How to set the grid, responsive to screen resolutions
+title: Responsive in ASP.NET Webforms Grid Control | Syncfusion
+description: Learn here all about Responsive support in Syncfusion Essential ASP.NET Webforms Grid control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Responsive
+# Responsive in Essential ASP.NET Webforms Grid
 
 The Grid control has support for responsive behavior based on the client browser's width and height. To enable responsive, the `IsResponsive` property should be true. In Desktop and Tablet mode, to render scroller set `MinWidth` property. There are three modes of responsive layout is available in grid based on client width. They are.
 
@@ -64,7 +64,7 @@ Enabling responsive row makes the grid to render the record values in vertical o
 {% endtabs %} 
 
 
-![](Responsive_images/Responsive_img1.png)
+![Responsive Row in ASP.NET Webforms Grid](Responsive_images/Responsive_img1.png)
 
 
 W> IE8 and IE9 does not support responsive row. The `ejgrid.responsive.css` should be referred to display responsive row.
@@ -73,31 +73,31 @@ W> IE8 and IE9 does not support responsive row. The `ejgrid.responsive.css` shou
 
 The customized layout for filtering, sorting, searching and CRUD operations in mobile device can be seen in the following screen shots.
 
-![](Responsive_images/Responsive_img2.png)
+![Customized Layout in ASP.NET Webforms Grid](Responsive_images/Responsive_img2.png)
 {:caption}
 Responsive row with filtering , sorting and searching
 
-![](Responsive_images/Responsive_img3.png)
+![Mobile Layout in ASP.NET Webforms Grid](Responsive_images/Responsive_img3.png)
 
 {:caption}
 CRUD in mobile layout
 
-![](Responsive_images/Responsive_img4.png)
+![CRUD Operation in ASP.NET Webforms Grid](Responsive_images/Responsive_img4.png)
 
 {:caption}
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img5.png)
+![Filtering Operation in ASP.NET Webforms Grid](Responsive_images/Responsive_img5.png)
 {:caption}
 
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img6.png)
+![Sorting Operation in ASP.NET Webforms Grid](Responsive_images/Responsive_img6.png)
 
 {:caption}
 Sorting in mobile layout
 
-![](Responsive_images/Responsive_img7.png)
+![Searching Operation in ASP.NET Webforms Grid](Responsive_images/Responsive_img7.png)
 {:caption}
 
 Searching in mobile layout
@@ -193,12 +193,12 @@ If the client width is between 321px and 800px, then the grid will render in tab
 {% endhighlight  %}
 {% endtabs %} 
 
-![](Responsive_images/Responsive_img8.png)
+![Tab Layout in ASP.NET Webforms Grid](Responsive_images/Responsive_img8.png)
 {:caption}
 
 Default tab layout
 
-![](Responsive_images/Responsive_img9.png)
+![Filtering Design in ASP.NET Webforms Grid](Responsive_images/Responsive_img9.png)
 
 {:caption}
 Filtering design in tab layout.
