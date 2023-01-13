@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Worksheets with Spreadsheet widget for Syncfusion Essential JS
-description: How to use and customize the Spreadsheet Worksheet
+title: Worksheets in ASP.NET Webforms Spreadsheet Control | Syncfusion
+description: Learn here all about Worksheet support in Syncfusion Essential ASP.NET Webforms Spreadsheet control, its elements, and more.
 platform: aspnet
 control: Spreadsheet
 documentation: ug
 --- 
 
-# Worksheet
+# Worksheet in Essential ASP.NET Webforms Spreadsheet
 
 Worksheet is a collection of cells organized in the form of rows and columns that allow us to store, format, manipulate and display data in grid format. You can create multiple sheets in Spreadsheet and use sheet tab for switching between those worksheets. By default Spreadsheet creates single worksheet since default `SheetCount` value is `1`.
 
@@ -60,7 +60,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img1.png)
+![Insert Sheet in ASP.NET Webforms Spreadsheet](Worksheet_images/Worksheet_img1.png)
 
 ### Copy
 
@@ -84,7 +84,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img2.png)
+![Copy Existing Worksheet in ASP.NET Webforms Spreadsheet](Worksheet_images/Worksheet_img2.png)
 
 ### Move
 
@@ -108,7 +108,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img3.png)
+![Move Existing Worksheet in ASP.NET Webforms Spreadsheet](Worksheet_images/Worksheet_img3.png)
 
 ### Remove
 
@@ -134,7 +134,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img4.png)
+![Remove Existing Worksheet in ASP.NET Webforms Spreadsheet](Worksheet_images/Worksheet_img4.png)
 
 ### Rename
 
@@ -158,7 +158,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img5.png)
+![Rename Existing Worksheet in ASP.NET Webforms Spreadsheet](Worksheet_images/Worksheet_img5.png)
 
 ## Headers
 
@@ -178,7 +178,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img6.png)
+![Headers in ASP.NET Webforms Spreadsheet](Worksheet_images/Worksheet_img6.png)
 
 ## Show/Hide Sheets
 
@@ -205,7 +205,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img7.png)
+![Show and Hide Sheet in ASP.NET Webforms Spreadsheet](Worksheet_images/Worksheet_img7.png)
 
 ## Show/Hide Gridlines
 
@@ -225,4 +225,4 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
-![](Worksheet_images/Worksheet_img8.png)
+![Show and Hide Gridlines in ASP.NET Webforms Spreadsheet](Worksheet_images/Worksheet_img8.png)
