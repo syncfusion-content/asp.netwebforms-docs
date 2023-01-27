@@ -257,7 +257,7 @@ The corresponding arrow keys are used to move the selected elements towards up, 
 
 Nudge commands are particularly useful for accurate placement of elements.
 
-For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction#keyboard "Keyboard Interaction").
+For more information, refer to [Keyboard Interaction](/js/diagram/interaction#keyboard "Keyboard Interaction").
 
 ## BringIntoView
 
