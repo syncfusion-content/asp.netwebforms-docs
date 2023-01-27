@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Commands | Diagram | ASP.NET Webform | Syncfusion
-description: This section explains how to explore and use the built-in commands in the Diagram control.
+description: Learn here about commands support in Syncfusion Essential ASP.NET Webforms Diagram Control, its elements, and more.
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
-# Commands
+# Commands in ASP.NET Webforms Diagram
 
 There are several commands available in the Diagram as follows.
 
@@ -257,7 +257,7 @@ The corresponding arrow keys are used to move the selected elements towards up, 
 
 Nudge commands are particularly useful for accurate placement of elements.
 
-For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction#keyboard "Keyboard Interaction").
+For more information, refer to [Keyboard Interaction](/js/diagram/interaction#keyboard "Keyboard Interaction").
 
 ## BringIntoView
 
