@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Ports | Diagram | ASP.NET Webform | Syncfusion
-description: This section explains how to draw/create connections between the nodes with specific points.
+title: Ports in ASP.NET Webforms Diagram Control | Syncfusion
+description: Learn here all about ports support in Syncfusion Essential ASP.NET Webforms Diagram Control, its elements, and more.
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
-# Port
+# Ports in ASP.NET Webforms Diagram
 
 Essential Diagram for ASP.NET provides support to define custom ports for making connections.
 
-![connections between the nodes with multiple ports](/aspnet/Diagram/Port_images/Port_img3.png)
+![connections between the nodes with multiple ports](Port_images/Port_img3.png)
 
 When a connector is connected between two nodes, its end points are automatically docked to node's nearest boundary as shown in the following image. 
 
-![connector is connected between ports of two nodes](/aspnet/Diagram/Port_images/Port_img4.png)
+![connector is connected between ports of two nodes](Port_images/Port_img4.png)
 
 Ports act as the connection points of node and allows to create connections with only those specific points as shown in the following image.
 
-![Ports act as the connection points of node](/aspnet/Diagram/Port_images/Port_img5.png)
+![Ports act as the connection points of node](Port_images/Port_img5.png)
 
 ## Create Port
 
@@ -75,7 +75,7 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 
 {% endhighlight %}
 
-![add ports to node at runtime](/aspnet/Diagram/Port_images/Port_img1.png)
+![add ports to node at runtime](Port_images/Port_img1.png)
 
 To explore the set of properties for defining a port, refer to [Port Properties](http://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Port.html  "Port Properties")
 
@@ -123,8 +123,8 @@ The following code illustrates how to change the appearance of port.
 
 {% endhighlight %}
 
-![change the appearance of port](/aspnet/Diagram/Port_images/Port_img2.png)
+![change the appearance of port](Port_images/Port_img2.png)
 
 ## Constraints
 
-The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/aspnet/Diagram/Constraints#portconstraints)
+The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/aspnet/diagram/constraints#portconstraints)
