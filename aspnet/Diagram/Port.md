@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ports | Diagram | ASP.NET Webform | Syncfusion
-description: This section explains how to draw/create connections between the nodes with specific points.
+title: Ports in ASP.NET Webforms Diagram Control | Syncfusion
+description: Learn here all about ports support in Syncfusion Essential ASP.NET Webforms Diagram Control, its elements, and more.
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
-# Port
+# Ports in ASP.NET Webforms Diagram
 
 Essential Diagram for ASP.NET provides support to define custom ports for making connections.
 
@@ -127,4 +127,4 @@ The following code illustrates how to change the appearance of port.
 
 ## Constraints
 
-The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/aspnet/Diagram/Constraints#portconstraints)
+The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/aspnet/diagram/constraints#portconstraints)
