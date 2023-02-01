@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Button | ASP.NET Webforms | Syncfusion
-description: Learn here more about Overview in Syncfusion Essential ASP.NET Button Control, its element and more
+description: Learn here more about Overview support in Syncfusion Essential ASP.NET Button Control, its element and more
 platform: aspnet
 control: Button
 documentation: ug

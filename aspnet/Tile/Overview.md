@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Tile | ASP.NET | Syncfusion
-description: Learn here more about Overview in Syncfusion Essential ASP.NET Tile Control, its element and more
+description: Learn here more about Overview support in Syncfusion Essential ASP.NET Tile Control, its element and more
 platform: aspnet
 control: Tile
 documentation: ug

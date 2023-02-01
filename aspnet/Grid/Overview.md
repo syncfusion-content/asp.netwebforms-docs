@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Grid | ASP.NET Webforms | Syncfusion
-description: Learn here more about Overview in Syncfusion Essential ASP.NET Grid Control, its element and more
+description: Learn here more about Overview support in Syncfusion Essential ASP.NET Grid Control, its element and more
 platform: aspnet
 control: Grid
 documentation: ug
