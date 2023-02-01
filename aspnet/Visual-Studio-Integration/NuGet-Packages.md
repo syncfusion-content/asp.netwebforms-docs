@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ASP.NET NuGet Packages | ASP.NET | Syncfusion
-description: 
+description: Learn here more about NuGet Packages in Syncfusion Essential ASP.NET NuGet Packages Control, its element and more
 platform: aspnet
 control: NuGet Packages
 documentation: ug
 ---
 
-# NuGet Packages
+# NuGet Packages in ASP.NET
 
 [NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion ASP.NET Web Forms NuGet packages without installing the Essential Studio or ASP.NET Web Forms platform installation to development with the Syncfusion ASP.NET controls. 
 
