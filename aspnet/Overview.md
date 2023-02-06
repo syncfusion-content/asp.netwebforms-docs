@@ -19,7 +19,7 @@ Essential Studio for ASP.NET is a set of server-side wrappers for Essential Java
 
 * After integrating the component into your application using one of the sample code snippets as a starting point, it is likely that you would need additional information on specific features and API. The best option will be to search a specific topic using the search box available at the top of the user guide.
 
-* Another valuable resource is the [API reference](https://help.syncfusion.com/js/api#) that provides detailed information on the object hierarchy as well as the settings available on every object.
+* Another valuable resource is the [API reference](https://help.syncfusion.com/api/js/global) that provides detailed information on the object hierarchy as well as the settings available on every object.
 
 ## Additional help resources
 
