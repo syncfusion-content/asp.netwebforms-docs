@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Enabling Validation | Captcha | ASP.NET Webforms | Syncfusion
-description: enabling validation
+title: Enabling Validation in ASP.NET Webforms Captcha | Syncfusion
+description: Learn here more about enabling validation support in Syncfusion Essential ASP.NET Webforms Captcha Control, its elements, and more.
 platform: aspnet
 control: Captcha
 documentation: ug
 ---
 
-# Enabling Validation
+# Enabling Validation in ASP.NET Webforms Captcha
 
 ## Auto Validation
 
