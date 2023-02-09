@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Columns | TreeGrid | ASP.NET | Syncfusion
-description: columns
+description: Learn here more about columns support in Sycfusion Essential ASP.NET TreeGrid control,its element and more.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-# Columns
+# Columns in ASP.NET TreeGrid
 
 Column definitions specified in the `Columns` option defines how the data in the **DataSource** have to be displayed, formatted and edited in TreeGrid. The values in the **DataSource** can be mapped to the appropriate column using the `Field` property of the corresponding column object.
 
@@ -84,7 +84,7 @@ The below code snippet shows how to set width for specific column,
 
 The below screenshot shows the TreeGrid rendered with specific column width values.
 
-![](Columns_images/Columns_img13.png)
+![Defining column width in ASP.NET TreeGrid](Columns_images/Columns_img13.png)
 
 ### Defining common width for the columns
 
@@ -97,7 +97,7 @@ The TreeGrid control provides the support to set same width for all the availabl
 
 The below screenshot shows TreeGrid render with common width. 
 
-![](Columns_images/Columns_img16.png)
+![Defining common width for the columns in ASP.NET TreeGrid](Columns_images/Columns_img16.png)
 
 ## Headers
 
@@ -173,7 +173,7 @@ The following code snippet shows how to set the header template for TreeGrid col
 
 The below screenshot depicts column headers with custom templates.
 
-![](Columns_images/Columns_img1.png)
+![Header Template in ASP.NET TreeGrid](Columns_images/Columns_img1.png)
 
 [Click](https://asp.syncfusion.com/demos/web/treegrid/treegridheadertemplate.aspx) here to view the online demo sample for header template.
 
@@ -197,15 +197,15 @@ Specific columns can be frozen by enabling the `IsFrozen` property of the respec
 
 The below screenshot depicts TreeGrid with frozen columns,
 
-![](Columns_images/Columns_img2.png)
+![Frozen Columns in ASP.NET TreeGrid](Columns_images/Columns_img2.png)
 
 It is also possible to freeze all the preceding columns at run-time by choosing **Freeze Preceding Columns** option in the column menu or by using the [`freezePrecedingColumns`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezeprecedingcolumns "freezePrecedingColumns") method, the column field name, for which the columns preceding it to be frozen should be passed as the method parameter.
 
-![](Columns_images/Columns_img3.png)
+![Freeze Preceding Columns in ASP.NET TreeGrid](Columns_images/Columns_img3.png)
 
 ### Freeze columns using method
 
-Columns can also be frozen or unfrozen on any custom actions using the [`freezeColumn`](/api/js/ejtreegrid#methods:freezecolumn "freezeColumn") method.
+Columns can also be frozen or unfrozen on any custom actions using the [`freezeColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezecolumn "freezeColumn") method.
 The column's field name which is to be frozen/unfrozen should be passed as the method parameter, along with the freeze state.
 
 {% highlight html %}
@@ -254,7 +254,7 @@ The following code snippet explains how to set column resize mode in TreeGrid,
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img15.png)
+![Column resize mode in ASP.NET TreeGrid](Columns_images/Columns_img15.png)
 
 The above screenshot shows the TreeGrid rendered with `FixedColumns` resize mode.
 {:.caption}
@@ -278,7 +278,7 @@ The following code snippet explains how to display a checkbox column in TreeGrid
 
 The below screen shot depicts the `Approved` column in TreeGrid displayed as a checkbox column.
 
-![](Columns_images/Columns_img8.png)
+![Checkbox column in ASP.NET TreeGrid](Columns_images/Columns_img8.png)
 
 ## Column Template
 
@@ -313,7 +313,7 @@ The following code example show how to define template for the column,
 </ej:TreeGrid>
 {% endhighlight %}
 
-![](Columns_images/Columns_img4.png)
+![Column Template in ASP.NET TreeGrid](Columns_images/Columns_img4.png)
 
 [Click](https://asp.syncfusion.com/demos/web/treegrid/columntemplate.aspx) here to view the online demo sample for frozen column.
 
@@ -337,7 +337,7 @@ The following are the items displayed in the column menu,
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img5.png)
+![Column Menu in ASP.NET TreeGrid](Columns_images/Columns_img5.png)
 
 The column menu also provides support for some of the additional column options such as,
 
@@ -357,9 +357,9 @@ The following code example shows how to enable the column option in TreeGrid,
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img17.png)
+![Delete Column in ASP.NET Webforms TreeGrid](Columns_images/Columns_img17.png)
 
-![](Columns_images/Columns_img18.png)
+![Renamed Column in ASP.NET Webforms TreeGrid](Columns_images/Columns_img18.png)
 
 The above screenshot shows insert column dialog in TreeGrid  
 {:.caption}
@@ -379,7 +379,7 @@ The following code example shows how to customize the insert column option in Tr
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img19.png)
+![Customize insert column dialog fields in ASP.NET TreeGrid](Columns_images/Columns_img19.png)
 
 The above screenshot shows customized insert column dialog in TreeGrid.  
 {:.caption}
@@ -399,14 +399,14 @@ The following code example shows how to hide specific column in column chooser l
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img14.png)
+![Hide specific column in column chooser list in ASP.NET TreeGrid](Columns_images/Columns_img14.png)
 
 The above screenshot shows TreeGrid column chooser rendered without `Task Id` column. 
 {:.caption}
 
 ## Show/Hide columns using method
 
-It is possible to toggle the visibility of the columns using the [`hideColumn`](/api/js/ejtreegrid#methods:hidecolumn "hideColumn") and [`showColumn`](/api/js/ejtreegrid#methods:showcolumn "showColumn") methods. The column's header text should be passed as the method parameter which is to be shown/hidden.
+It is possible to toggle the visibility of the columns using the [`hideColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:hidecolumn "hideColumn") and [`showColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showcolumn "showColumn") methods. The column's header text should be passed as the method parameter which is to be shown/hidden.
 
 {% highlight html %}
 
@@ -457,7 +457,7 @@ A command column can be customized by using the `Type` and `ButtonOptions` prope
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img9.png)
+![Command Column in ASP.NET TreeGrid](Columns_images/Columns_img9.png)
 
 [Click](https://asp.syncfusion.com/demos/web/treegrid/treegridcommandcolumn.aspx) here to view the online demo sample for command column.
 
@@ -490,7 +490,7 @@ We can also add custom buttons to the command column by specifying text value ot
 </script>
 {% endhighlight %}
 
-![](Columns_images/Columns_img10.png)
+![Custom buttons in ASP.NET TreeGrid](Columns_images/Columns_img10.png)
 
 ## Tree column/ Expander column 
 
@@ -527,7 +527,7 @@ The following code example explains how to hide the fourth column,
         
 {% endhighlight %}
 
-![](Columns_images/Columns_img6.png)
+![Visibility in ASP.NET TreeGrid](Columns_images/Columns_img6.png)
 
 ## Read-only
 
@@ -626,7 +626,7 @@ Apart by the in-built validation rules, any custom validation rules can also be 
 
 The below image displays the TreeGrid with validation rule applied for a date column.
 
-![](Columns_images/Columns_img7.png)
+![Custom Validation rules in ASP.NET TreeGrid](Columns_images/Columns_img7.png)
 
 [Click](https://asp.syncfusion.com/demos/web/treegrid/treegridcustomvalidation.aspx) here to view the online demo sample for TreeGrid validation support.
 
@@ -643,7 +643,7 @@ The following code example explains how to enable column reorder in TreeGrid,
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img11.png)
+![Column Reorder in ASP.NET TreeGrid](Columns_images/Columns_img11.png)
 
 The above screenshot shows the column reorder in TreeGrid.
 {:.caption}
@@ -680,7 +680,7 @@ The following code example explains how to set text alignment for content and he
 
 {% endhighlight %}
 
-![](Columns_images/Columns_img12.png)
+![Text Alignment in ASP.NET TreeGrid](Columns_images/Columns_img12.png)
 
 The above screenshot shows TreeGrid render with text alignment and header text alignment.
 {:.caption}
@@ -715,7 +715,7 @@ function load(args) {
 </script>
 {% endhighlight %}
 
-![](Columns_images/Columns_img20.png)
+![Customize the column at initial load in ASP.NET TreeGrid](Columns_images/Columns_img20.png)
 
 The above screenshot shows TreeGrid rendered with customized column.
 
