@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting  |Chart  | ASP.NET Webforms | Syncfusion 
-description: Learn how to export Chart as excel file or image.
+description: Learn here more about exporting support in Syncfusion ASP.NET Webforms Chart control, its element and more.
 platform: aspnet
 control: Chart
 documentation: ug
