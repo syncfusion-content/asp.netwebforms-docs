@@ -205,7 +205,7 @@ It is also possible to freeze all the preceding columns at run-time by choosing 
 
 ### Freeze columns using method
 
-Columns can also be frozen or unfrozen on any custom actions using the [`freezeColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:freezecolumn "freezeColumn") method.
+Columns can also be frozen or unfrozen on any custom actions using the [`freezeColumn`](/api/js/ejtreegrid#methods:freezecolumn "freezeColumn") method.
 The column's field name which is to be frozen/unfrozen should be passed as the method parameter, along with the freeze state.
 
 {% highlight html %}
@@ -406,7 +406,7 @@ The above screenshot shows TreeGrid column chooser rendered without `Task Id` co
 
 ## Show/Hide columns using method
 
-It is possible to toggle the visibility of the columns using the [`hideColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:hidecolumn "hideColumn") and [`showColumn`](https://help.syncfusion.com/api/js/ejtreegrid#methods:showcolumn "showColumn") methods. The column's header text should be passed as the method parameter which is to be shown/hidden.
+It is possible to toggle the visibility of the columns using the [`hideColumn`](/api/js/ejtreegrid#methods:hidecolumn "hideColumn") and [`showColumn`](/api/js/ejtreegrid#methods:showcolumn "showColumn") methods. The column's header text should be passed as the method parameter which is to be shown/hidden.
 
 {% highlight html %}
 
