@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Style and Appearance with Grid widget for Syncfusion Essential ASP.NET
-description: How to apply styling and appearance
+description: Learn here about styling and appearance support in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Style and Appearance
+# Style and Appearance in ASP.NET Webforms Grid
 
 ## List of classes and its purposes
 
@@ -211,4 +211,4 @@ To modify Grid appearance, you need to override default CSS of Grid. Please find
 
 To customize toolbar, you need to use toolbar default CSS class to override icon in toolbar. 
 
-{% seealso %} [customize toolbar ](http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}
+{% seealso %} [customize toolbar ](https://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}

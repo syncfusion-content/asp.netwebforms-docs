@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance and Styling | DateTimePicker | ASP.NET Webforms | Syncfusion
-description: appearance and styling
+description: Learn here all about appearance and styling support in Syncfusion Essential Studio ASP.NET Webforms DateTimePicker Control, its elements, and more.
 platform: aspnet
 control: DateTimePicker
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in ASP.NET Webforms DateTimePicker
 
 ## Theme
 
@@ -35,7 +35,7 @@ The following 13 themes are supported by the DateTimePicker:
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
+![Theme in ASP.NET Webforms DateTimePicker](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 
 
@@ -94,7 +94,7 @@ Add the following code in your style section. In the following CSS style, exitin
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![CSS Class in ASP.NET Webforms DateTimePicker](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 
 
