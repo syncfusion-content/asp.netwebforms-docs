@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Exporting  |Chart  | ASP.NET Webforms | Syncfusion 
-description: Learn how to export Chart as excel file or image.
+description: Learn here more about exporting support in Syncfusion ASP.NET Webforms Chart control, its element and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# Exporting Chart
+# Exporting Chart in ASP.NET Webforms 
 
 Exporting a chart can be done in both client-side and in server-side. This can be modified by setting values to the property “mode” in exporting. Default value for mode is client. 
 
@@ -157,7 +157,7 @@ To convert the chart data from client to server-side, refer to the following ste
 
 2. Add Syncfusion.EJ, Syncfusion.EJ.Web, Syncfusion.EJ.Export and Syncfusion.XlsIO dll’s as references to the application.
 
-![](Exporting_images/Exporting_img1.png)
+![Excel Exporting in ASP.NET Webforms Chart](Exporting_images/Exporting_img1.png)
 
 
 Currently, the chart data can be exported at server-side only through the helper functions in the “.Net”. So to use exporting in your projects, it is required to create a server with any of the following.
@@ -265,7 +265,7 @@ Export multiple chart to excel at server-side
 
 {% endhighlight %}
 
-![](Exporting_images/Exporting_img2.png)
+![Multiple Excel Exporting in ASP.NET Webforms Chart](Exporting_images/Exporting_img2.png)
 
 ## Naming the exported file
 
@@ -285,7 +285,7 @@ We can also rotate the chart and can export it. Possible angles of rotation are 
 
 {% endhighlight %}
 	
-![](Exporting_images/Exporting_img3.png)
+![Rotating the chart in ASP.NET Webforms Chart](Exporting_images/Exporting_img3.png)
 
 ## Setting orientation for the document
 

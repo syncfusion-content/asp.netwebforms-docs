@@ -351,7 +351,7 @@ The following output is displayed as a result of the above code example.
 ![ASPNET Grid EntityFramework](Data-Binding_images/Data-Binding_img6.png)
 
 {% seealso %}  
-For more information on creating and consuming Entity Framework, please refer this [link]( http://www.asp.net/web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1)
+For more information on creating and consuming Entity Framework, please refer this [link]( https://learn.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1)
 {% endseealso %}
 
 ## LINQ to SQL
@@ -396,7 +396,7 @@ The following output is displayed as a result of the above code example.
 
 
 {% seealso %}
-For more information on using LINQ to SQL please refer to the [link](http://weblogs.asp.net/scottgu/using-linq-to-sql-part-1)
+For more information on using LINQ to SQL please refer to the [link](https://weblogs.asp.net/scottgu/using-linq-to-sql-part-1)
 {% endseealso %}
 
 ## DataTable
