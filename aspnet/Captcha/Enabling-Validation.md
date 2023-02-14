@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Enabling Validation | Captcha | ASP.NET Webforms | Syncfusion
-description: enabling validation
+title: Enabling Validation in ASP.NET Webforms Captcha | Syncfusion
+description: Learn here more about enabling validation support in Syncfusion Essential ASP.NET Webforms Captcha Control, its elements, and more.
 platform: aspnet
 control: Captcha
 documentation: ug
 ---
 
-# Enabling Validation
+# Enabling Validation in ASP.NET Webforms Captcha
 
 ## Auto Validation
 
@@ -38,7 +38,7 @@ In the ASPX page, include the following Captcha control code example for auto va
 
 The following screenshot illustrates the Captcha with Auto-Validation support. 
 
-![C:/Users/ApoorvahR/Desktop/3.png](Enabling-Validation_images/Enabling-Validation_img1.png)
+![Enabling validation in ASP.NET Webforms Captcha](Enabling-Validation_images/Enabling-Validation_img1.png)
 
 
 
@@ -72,7 +72,7 @@ In the ASPX page, include the following Captcha control code example for manual 
 
 The following screenshot illustrates the Captcha with manual validation support. 
 
-![](Enabling-Validation_images/Enabling-Validation_img2.png)
+![Validation by method in ASP.NET Webforms Captcha](Enabling-Validation_images/Enabling-Validation_img2.png)
 
 
 
@@ -106,7 +106,7 @@ In the ASPX page, include the following Captcha control code-snippet for case se
 
 The following screenshot illustrates the Captcha with Case sensitive validation support. 
 
-![C:/Users/ApoorvahR/Desktop/3.png](Enabling-Validation_images/Enabling-Validation_img3.png)
+![Case sensitive validation in ASP.NET Webforms Captcha](Enabling-Validation_images/Enabling-Validation_img3.png)
 
 
 
