@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in ASP.NET Webform Diagram
 
 * Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 * Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.

@@ -534,7 +534,7 @@ The Schedule appointment data can also be bound through the Web API services. It
 
 <!-- HTML element will initialize as a ejSchedule -->
 <ej:Schedule ClientIDMode="Static" runat="server" ID="Schedule1" Width="100%" Height="525px" CurrentDate="2/23/1997" ReadOnly="true">
-    <DataManager CrossDomain="true" URL="http://mvc.syncfusion.com/OdataServices/api/ScheduleData/" Adaptor="WebApiAdaptor" />
+    <DataManager CrossDomain="true" URL="https://ej2.syncfusion.com/home/aspnetmvc.html#platform" Adaptor="WebApiAdaptor" />
     <AppointmentSettings Id="Id" Subject="Subject" StartTime="StartTime" EndTime="EndTime" Description="Description" AllDay="AllDay" Recurrence="Recurrence" RecurrenceRule="RecurrenceRule"/>
 </ej:Schedule>
 

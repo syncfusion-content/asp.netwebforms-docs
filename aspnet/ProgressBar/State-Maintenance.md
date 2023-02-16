@@ -1,13 +1,13 @@
 ---
 layout: post
 title: State Maintenance | ProgressBar | ASP.NET | Syncfusion
-description: state maintenance
+description: Learn here about state maintenance in Syncfusion Essential ASP.NET ProgressBar Control, its elements, and more.
 platform: aspnet
 control: ProgressBar
 documentation: ug
 ---
 
-# State Maintenance
+# State Maintenance in ASP.NET ProgressBar
 
 Save the current model value to cookies for state maintenance. While refreshing the ProgressBar control, the page retains the 
 model value applied from the browser cookies. By default, EnablePersistence property is set to false in the ProgressBar.
@@ -22,5 +22,5 @@ Add the following code example to the corresponding ASPX page to render Progress
 
 The following screenshot displays the output for the above code.
 
-![](State-Maintenance_images/State-Maintenance_img1.png)
+![State Maintenance in ASP.NET ProgressBar](State-Maintenance_images/State-Maintenance_img1.png)
 

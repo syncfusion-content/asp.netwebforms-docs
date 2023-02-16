@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Summary | Grid | ASP.NET Webforms | Syncfusion
-description: summary 
+description: Learn here about summary in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-# Summary 
+# Summary in ASP.NET Webforms Grid
 
 Summary is a key feature of Grid that is used to aggregate a particular column. This is useful to analyze the details of a particular column. It has the following types:
 
@@ -184,7 +184,7 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
 The following output is displayed as a result of the above code example.
 
-![](Summary_images/Summary_img1.png)
+![Webforms Grid in ASP.NET Grid](Summary_images/Summary_img1.png)
 
 
 
@@ -239,7 +239,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-![](Summary_images/Summary_img2.png)
+![Custom Summary by String in ASP.NET Grid](Summary_images/Summary_img2.png)
 
 
 
@@ -414,7 +414,7 @@ namespace WebSampleBrowser.Grid
 
 {% endtabs %}
 
-![](Summary_images/Summary_img3.PNG)
+![Custom Summary by Function in ASP.NET Grid](Summary_images/Summary_img3.PNG)
 
 
 ## Title for summary
@@ -538,7 +538,7 @@ namespace WebSampleBrowser.Grid
 
 {% endtabs %}
 
-![](Summary_images/Summary_img8.PNG)
+![Title for summary in ASP.NET Grid](Summary_images/Summary_img8.PNG)
 
 
 ## Group Summary
@@ -697,7 +697,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-![](Summary_images/Summary_img4.png)
+![Group Summary in ASP.NET Grid](Summary_images/Summary_img4.png)
 
 
 
@@ -860,7 +860,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-![](Summary_images/Summary_img5.png)
+![Caption Summary in ASP.NET Grid](Summary_images/Summary_img5.png)
 
 ## Summary Template
 
@@ -940,7 +940,7 @@ public partial class DefaultFunctionalities : System.Web.UI.Page
 
 The following output is displayed as a result of the above code example.
 
-![](Summary_images/summaryGrid_img7.PNG)
+![Summary Template in ASP.NET Grid](Summary_images/summaryGrid_img7.PNG)
 
 ## Handling Aggregation in server side
 
@@ -1041,7 +1041,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-![](Summary_images/Summary_img6.png)
+![Handling Aggregation in ASP.NET Grid](Summary_images/Summary_img6.png)
 
 
 

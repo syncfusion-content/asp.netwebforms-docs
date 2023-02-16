@@ -1,13 +1,13 @@
 ---
 layout: post
 title: File Size | UploadBox | ASP.NET | Syncfusion
-description: file size 
+description: Learn here about file size in Syncfusion Essential ASP.NET UploadBox Control, its elements, and more.
 platform: aspnet
 control: UploadBox
 documentation: ug
 ---
 
-# File Size 
+# File Size in ASP.NET UploadBox 
 
 ## Maximum File Size for the UploadBox
 
@@ -39,13 +39,13 @@ The following screenshot displays the UploadBox control with customized file siz
 
 You can browse and upload the files within the FileSize.
 
- ![Maximum File Size](File-Size_images/File-Size_img1.png)
+ ![Maximum File Size in ASP.NET UploadBox](File-Size_images/File-Size_img1.png)
 
 
 
 You cannot browse and upload the files with exceeded FileSize.
 
- ![Exceeded File Size](File-Size_images/File-Size_img2.png)
+ ![Exceeded File Size in ASP.NET UploadBox](File-Size_images/File-Size_img2.png)
 
 
 
@@ -120,7 +120,7 @@ N>  maxRequestLength is measured in kilobytes.
 
 N> maxAllowedContentLength is measured in bytes.
 
-![Maximum File Size](File-Size_images/File-Size_img3.png)
+![Maximum File Size in ASP.NET UploadBox](File-Size_images/File-Size_img3.png)
 
 
 N> * When you configure both maxAllowedContentLength and maxRequestLength attributes, then maxAllowedContentLength can be run. 
@@ -131,4 +131,4 @@ N> * When the upload file’s size exceeds maxRequestLength value, you get an ex
 N>
 N> * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
 
-![Limitations](File-Size_images/File-Size_img4.png)
+![Limitations in ASP.NET UploadBox](File-Size_images/File-Size_img4.png)

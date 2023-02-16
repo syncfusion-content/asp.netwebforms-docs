@@ -1,13 +1,13 @@
 ---
 layout: post
 title: selection | ListView | ASP.NET Webforms | Syncfusion
-description: selection
+description: Learn here about selection in Syncfusion Essential in ASP.NET Webforms ListView Control, its elements, and more.
 platform: aspnet
 control: ListView
 documentation: ug
 ---
 
-# Selection
+# Selection in ASP.NET Webforms ListView 
 
 **MultiSelection**
 
@@ -37,7 +37,7 @@ Refer the following code examples.
 
 Run the codes to get the following output
 
-![Selection](Selection_images/Selection_img1.png) 
+![Selection in ASP.NET Webforms ListView](Selection_images/Selection_img1.png) 
 
 **PreventSelection**
 
@@ -97,4 +97,4 @@ Refer the following code examples.
 
 Run the codes to get the following output
 
-![Persistance](Selection_images/Selection_img2.png) 
+![Persistance in ASP.NET Webforms ListView](Selection_images/Selection_img2.png) 

@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Symbol Palette
+# Symbol Palette in ASP.NET Webform Diagram
 
 The **SymbolPalette** displays a collection of palettes. The Palette shows a set of nodes and connectors. It allows you to drag and drop the nodes and connectors into the Diagram.
 
