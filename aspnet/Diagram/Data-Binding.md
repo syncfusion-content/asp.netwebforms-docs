@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-Binding | Diagram | ASP.NET Webform | Syncfusion
-description: This section explains about how to populate the Diagram from the local data, remote data, or HTML tables.
+title: Data-Binding | Diagram | ASP.NET | Syncfusion
+description: Learn here about how to populate the Diagram in Syncfusion Essential ASP.NET Diagram Control, its elements, and more.
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
-# Data Binding in ASP.NET Webform Diagram
+# Data Binding in ASP.NET Diagram
 
 * Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 * Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.

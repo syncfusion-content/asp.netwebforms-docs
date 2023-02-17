@@ -118,7 +118,7 @@ You can refer to the following code example for consuming OData v4 services and 
 
 The request and response to the service from the DataManager is illustrated as follows.
 
-![C:/Users/apoorvah.ramanathan/Desktop/1.png](Data-Binding_images/Data-Binding_img3.png)
+![OData V4 in ASPNET DataManager](Data-Binding_images/Data-Binding_img3.png)
 
 The result of the above code example is illustrated as follows.
 
@@ -168,7 +168,7 @@ Refer to the following code example for consuming Web API data using DataManager
 
 The request to the Web API and response is illustrated as follows.
 
-![C:/Users/apoorvah.ramanathan/Desktop/1.png](Data-Binding_images/Data-Binding_img5.png)
+![WebAPI binding in ASPNET DataManager](Data-Binding_images/Data-Binding_img5.png)
 
 The result for the above code example is illustrated as follows.
 
