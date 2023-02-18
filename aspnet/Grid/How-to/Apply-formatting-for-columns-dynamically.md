@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Apply formatting for columns dynamically | Grid | ASP.NET Webforms | Syncfusion
-description: apply formatting for columns dynamically
+description: Learn here about how to apply formatting for columns dynamically in Syncfusion Essential ASP.NET Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-## Apply formatting for columns dynamically
+# Apply formatting for columns dynamically in ASP.NET Grid
 
 Column format can be used dynamically to change data values format with the help of the public method. The following code example illustrates the Essential JavaScript with column formatting in public method.
 
