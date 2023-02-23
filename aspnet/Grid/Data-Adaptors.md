@@ -1,12 +1,12 @@
 ---
 layout: post
-title: data adaptors with Grid widget for Syncfusion Essential JS
-description: How to enable data adaptors and its functionalities
+title: Data Adaptors in ASP.NET Web Forms Grid Control | Syncfusion
+description: Learn here about data adaptor support in Syncfusion Essential ASP.NET Web Forms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
-#  Data Adaptors
+#  Data Adaptors in ASP.NET Web Forms Grid
 
 The Data adaptor is a mechanism through which the `DataManager` interact with the remote service or local dataSource. The `DataManager` has several preconfigured Data Adaptors, refer to the [link](http://help.syncfusion.com/aspnetmvc/datamanager/data-adaptors).
 
@@ -50,7 +50,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Adaptors_images/Data-Adaptor_img1.png)
+![ASP.NET Web Forms Grid WebMethod Adaptor](Data-Adaptors_images/Data-Adaptor_img1.png)
 
 ##  WebMethod Adaptor
 
@@ -108,7 +108,7 @@ You can use the following code example to use WebMethod adaptor.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Adaptors_images/Data-Adaptor_img2.png)
+![ASP.NET Web Forms Grid Url Adaptor](Data-Adaptors_images/Data-Adaptor_img2.png)
 
 ##  Url Adaptor
 
@@ -162,7 +162,7 @@ N> 2. The `count` must be returned along with response when paging is enabled in
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Adaptors_images/Data-Adaptor_img3.png)
+![ASP.NET Web Forms Grid OData Adaptor](Data-Adaptors_images/Data-Adaptor_img3.png)
 
 ##  OData Adaptor
 
@@ -192,7 +192,7 @@ You can use the following code example to use OData adaptor.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Adaptors_images/Data-Adaptor_img4.png)
+![ASP.NET Web Forms Grid ODataV4 Adaptor](Data-Adaptors_images/Data-Adaptor_img4.png)
 
 ##  ODataV4 Adaptor
 
@@ -220,7 +220,7 @@ You can use the following code example to use ODataV4 adaptor.
 
 The following output is displayed as a result of the above code example. 
 
-![](Data-Adaptors_images/Data-Adaptor_img5.png)
+![ASP.NET Web Forms Grid WebAPI Adaptor](Data-Adaptors_images/Data-Adaptor_img5.png)
 
 ##  WebAPI Adaptor
 
@@ -267,7 +267,7 @@ You can use the following code example to use WebAPI adaptor.
 
 The following output is displayed as a result of the above code example. 
 
-![](Data-Adaptors_images/Data-Adaptor_img6.png)
+![ASP.NET Web Forms Grid RemoteSave Adaptor](Data-Adaptors_images/Data-Adaptor_img6.png)
 
 ##  RemoteSave Adaptor
 
@@ -331,11 +331,11 @@ You can use the following code example to use RemoteSave adaptor.
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Adaptors_images/Data-Adaptor_img7.png)
+![ASP.NET Web Forms Grid adaptor](Data-Adaptors_images/Data-Adaptor_img7.png)
 
 On performing CRUD operations in Grid, the record changes will be sent to server-side as in the following screenshot.
 
-![](Data-Adaptors_images/Data-Adaptor_img8.png)
+![ASP.NET Web Forms Grid Foreign Key Adaptor](Data-Adaptors_images/Data-Adaptor_img8.png)
 
 ##  Foreign Key Adaptor
 
@@ -398,6 +398,6 @@ N> 2. By default, the `ForeignKeyAdaptor` uses `JsonAdaptor`, to use other adapt
  
 The following output is displayed as a result of the above code example.
 
-![](Data-Adaptors_images/Data-Adaptor_img9.png)
+![ASP.NET Web Forms Grid data adaptor](Data-Adaptors_images/Data-Adaptor_img9.png)
 
 

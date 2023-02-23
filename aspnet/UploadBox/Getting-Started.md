@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Getting Started | UploadBox | ASP.NET | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Essential ASP.NET WebForms UploadBox Control, its elements, and more.
 platform: aspnet
 control: UploadBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET WebForms UploadBox
 
 ## Create your first UploadBox in ASP.NET
 
 ASP.NET Web Forms UploadBox provides support to upload the files or photos within your web page. From the following guidelines, you can learn how to upload the file by using Resume Upload scenario. This helps you to restrict some file extensions while uploading the resume in the server by using UploadBox control. The following screenshot demonstrates the functionality of UploadBox with file extension.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET WebForms UploadBox support to upload the files](Getting-Started_images/Getting-Started_img1.png)
 
 
 In the above screenshot, you can upload a resume with .png and .docx file extensions. This stops unsupported resume formats from being uploaded to the server.
@@ -24,7 +24,7 @@ ASP.NET UploadBox widget has built-in features like Upload multiple files, Delet
 
 You can create a Web project and add the necessary assemblies, styles, and scripts with the help of the given [ASP-Getting Started](https://help.syncfusion.com/aspnet/getting-started) Documentation.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![ASP.NET WebForms UploadBox](Getting-Started_images/Getting-Started_img2.png)
 
 Add the following code example to the ASPX page to render the UploadBox.
 
@@ -168,11 +168,11 @@ public void ProcessRequest(HttpContext context)
 
 Run the code to render the following output.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![ASP.NET WebForms UploadBox create widgets](Getting-Started_images/Getting-Started_img3.png)
 
 Run the project to see the following output for the given steps. The file is uploaded. 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![ASP.NET WebForms UploadBox Restrictions](Getting-Started_images/Getting-Started_img4.png)
 
 ## Set Restrictions to File Extensions
 
@@ -378,7 +378,7 @@ In the UploadBox control, you can either allow files with specified extension on
 
 The following screenshot displays an UploadBox control with the file extension.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![ASP.NET WebForms UploadBox File Extensions](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -388,4 +388,4 @@ To upload multiple files in the UploadBox control, click the Browse button to se
 
 The following screenshot displays an UploadBox control with multiple files selected.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![ASP.NET WebForms UploadBox Multiple Files](Getting-Started_images/Getting-Started_img6.png)

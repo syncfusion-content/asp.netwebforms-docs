@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Filtering with Grid widget for Syncfusion Essential ASP.NET
-description: How to enable filtering and its functionalities
+title: Filtering in ASP.NET Web Forms Grid Control | Syncfusion
+description: Learn here about filtering support in Syncfusion Essential ASP.NET Web Forms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
-# Filtering
+# Filtering in ASP.NET Web Forms Grid
 
 Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `AllowFiltering` property as`true`.   
 
@@ -102,7 +102,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/Filtering_img1.png)
+![ASP.NET Web Forms Grid Menu Filter](Filtering_images/Filtering_img1.png)
 
 
 ## Menu Filter
@@ -187,19 +187,19 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/Filtering_img2.png)
+![ASP.NET Web Forms Grid Numeric Filter](Filtering_images/Filtering_img2.png)
 
 Numeric Filter
 
-![](Filtering_images/Filtering_img3.png)
+![ASP.NET Web Forms Grid String Filter](Filtering_images/Filtering_img3.png)
 
 String Filter
 
-![](Filtering_images/Filtering_img4.png)
+![ASP.NET Web Forms Grid ate Filter](Filtering_images/Filtering_img4.png)
 
 Date Filter
 
-![](Filtering_images/Filtering_img5.png)
+![ASP.NET Web Forms Grid Boolean Filter](Filtering_images/Filtering_img5.png)
 
 Boolean Filter
 
@@ -282,7 +282,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/Filtering_img6.png)
+![ASP.NET Web Forms Grid Checkbox list generation](Filtering_images/Filtering_img6.png)
 
 
 ### Checkbox list generation:
@@ -367,7 +367,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/filtering_img7.png)
+![ASP.NET Web Forms Grid filter checkbox](Filtering_images/filtering_img7.png)
 
 
 ### Add current selection to filter checkbox:
@@ -376,7 +376,7 @@ When filtering is done multiple times on the same column then the previously fil
 
 The following image describes the above mentioned behavior.
 
-![](filtering_images/filtering_img12.png)
+![ASP.NET Web Forms Grid Case Sensitivity](filtering_images/filtering_img12.png)
 
 
 ### Case Sensitivity
@@ -457,7 +457,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/filtering_img8.png)
+![ASP.NET Web Forms Grid Filter Bar](Filtering_images/filtering_img8.png)
 
 
 ## Filter Bar
@@ -676,7 +676,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/filtering_img9.png)
+![ASP.NET Web Forms Grid Filter bar modes](Filtering_images/filtering_img9.png)
 
 
 Filter bar modes:
@@ -765,7 +765,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/filtering_img10.png)
+![ASP.NET Web Forms Grid Filter Operators](Filtering_images/filtering_img10.png)
 
 
 ## Filter Operators
@@ -1000,6 +1000,6 @@ namespace WebSampleBrowser.Grid
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img11.png)
+![ASP.NET Web Forms Grid FilterBar Template](filtering_images/filtering_img11.png)
 {:caption}
 After Filtering
