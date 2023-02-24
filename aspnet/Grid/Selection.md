@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Selection with Grid widget for Syncfusion Essential ASP
-description: How to enable selection and its functionalities
+title: Selection in ASP.NET Web Forms Grid Control | Syncfusion
+description: Learn here about selection support in Syncfusion Essential ASP.NET Web Forms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
-# Selection
+# Selection in ASP.NET Web Forms Grid
 
 Selection provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set `AllowSelection` as `true`. 
 
@@ -102,7 +102,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img1.png)
+![ASP.NET Web Forms Grid Multiple Row Selection](Selection_images/Selection_img1.png)
 
 ## Multiple Row Selection using Checkbox Column
 
@@ -144,7 +144,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img12.png)
+![ASP.NET Web Forms Grid Cell Selection](Selection_images/Selection_img12.png)
 
 ## Cell Selection
 
@@ -223,7 +223,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img2.png)
+![ASP.NET Web Forms Grid Cell Selection Mode](Selection_images/Selection_img2.png)
 
 ### Cell Selection Mode
 
@@ -307,7 +307,7 @@ The following code example describes the above behavior.
 
  The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img3.png)
+![ASP.NET Web Forms Grid Column Selection](Selection_images/Selection_img3.png)
 
 
 ## Column Selection
@@ -387,7 +387,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img4.png)
+![ASP.NET Web Forms Grid Touch options](Selection_images/Selection_img4.png)
 
 
 ## Touch options
@@ -466,7 +466,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Selection_images/Selection_img5.png)
+![ASP.NET Web Forms Grid toggle selection](Selection_images/Selection_img5.png)
 
 
 ## Toggle Selection

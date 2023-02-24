@@ -1,13 +1,13 @@
 ---
 layout: post
 title: File Size | UploadBox | ASP.NET | Syncfusion
-description: file size 
+description: Learn here about file size support in Syncfusion Essential ASP.NET WebForms UploadBox Control, its elements, and more.
 platform: aspnet
 control: UploadBox
 documentation: ug
 ---
 
-# File Size 
+# File Size in ASP.NET WebForms UploadBox
 
 ## Maximum File Size for the UploadBox
 
