@@ -1,13 +1,13 @@
 ---
 layout: post
 title: selection | ListView | ASP.NET Webforms | Syncfusion
-description: selection
+description: Learn here about selection support in Syncfusion Essential ASP.NET Webforms ListView Control, its elements, and more.
 platform: aspnet
 control: ListView
 documentation: ug
 ---
 
-# Selection
+# Selection in ASP.NET Webforms ListView
 
 **MultiSelection**
 
