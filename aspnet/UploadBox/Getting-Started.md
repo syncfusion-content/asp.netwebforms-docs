@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | UploadBox | ASP.NET | Syncfusion
-description: Learn here more about getting started with Syncfusion ASP.NET UploadBox Control, its elements, and more.
+description: Learn here about getting started with Syncfusion Essential ASP.NET WebForms UploadBox Control, its elements, and more.
 platform: aspnet
 control: UploadBox
 documentation: ug
 ---
 
-# Getting Started with ASP.NET UploadBox
+# Getting Started with ASP.NET WebForms UploadBox
 
 ## Create your first UploadBox in ASP.NET
 

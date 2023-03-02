@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Overview | Toggle Button | ASP.NET | Syncfusion
-description: Learn here about overview in Syncfusion Essential ASP.NET MVC Toggle Button  Control, its elements, and more.
+description: Learn here about overview of Syncfusion Essential ASP.NET WebForms Toggle Button Control, its elements, and more.
 platform: aspnet
 control: Toggle Button
 documentation: ug
 ---
 
-# Overview in ASP.NET Toggle Button 
+# Overview of ASP.NET WebForms Toggle Button
 
 The **Essential ASP.NET Toggle Button** allows you to perform the toggle option by using checked and unchecked state. The **Toggle Button** control displays both text and images. The value given in the Text property is displayed on the ToggleButton. 
 
-### Key Features
+## Key Features
 
 * **Trendy Look: **Rich Appearance with Theme Support.
 * **RTL:** Supports Right to Left alignment.
