@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Initialize Grid | Grid | ASP.NET Webforms | Syncfusion
-description: Learn here about how to initialize grid in Syncfusion Essential ASP.NET Grid Control, its elements, and more.
+description: Learn here about how to initialize grid in Syncfusion Essential ASP.NET WebForms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
