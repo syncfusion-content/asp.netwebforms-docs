@@ -9,7 +9,7 @@ keywords: JSON data, OData, OData4, WebAPI, Web Method, Data Binding
 
 ---
 
-# Data Binding in DataManager ASP.NET Webforms 
+# Data Binding in DataManager ASP.NET Web Forms 
 
 ## LOCAL
 
@@ -118,7 +118,7 @@ You can refer to the following code example for consuming OData v4 services and 
 
 The request and response to the service from the DataManager is illustrated as follows.
 
-![OData V4 in ASPNET DataManager](Data-Binding_images/Data-Binding_img3.png)
+![OData in ASPNET DataManager](Data-Binding_images/Data-Binding_img3.png)
 
 The result of the above code example is illustrated as follows.
 
@@ -172,7 +172,7 @@ The request to the Web API and response is illustrated as follows.
 
 The result for the above code example is illustrated as follows.
 
-![ASPNET DataManager Data-Binding image6](Data-Binding_images/Data-Binding_img6.png)
+![ASPNET DataManager Data-Binding image](Data-Binding_images/Data-Binding_img6.png)
 
 ## Other Web Services binding
 
