@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customize-Header| ListView | ASP.NET Webforms | Syncfusion
-description: customize header
+description: Learn here about customize header in Syncfusion Essential ASP.NET Webforms ListView Control, its elements, and more.
 platform: aspnet
 control: ListView
 documentation: ug
 ---
 
-# Customize Header
+# Customize Header in ASP.NET Webforms ListView
 
 In **ListView**, you can enable the built-in **Header** support. To show or hide the **Header** in **ListView**, use the `ShowHeader` property. By default, **ListView** is rendered with the **Header**. You can set the title for the **Header** by using the `HeaderTitle` property.
 
@@ -40,5 +40,5 @@ Refer the following code example.
 
 Run the code to get the following output
 
-![Customize-Header](Customize-Header_images/Customize-Header_img1.png) 
+![ASP.NET Webforms ListView Customize Header](Customize-Header_images/Customize-Header_img1.png) 
 
