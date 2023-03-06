@@ -7,6 +7,12 @@ control: Introduction
 documentation: ug
 
 ---
+
+> The Syncfusion ASP.NET Web Forms components will no longer be actively developed and will be marked as the end of support after the 2023 Volume 2 release. However, ASP.NET Web Forms related to NuGet will be updated until then. If you want to use the Syncfusion ASP.NET Web Forms components in the future, you may continue to use them till the version 2023 Volume 2 release, and bug fixes are provided as patches as long as Microsoft supports it, even after the 2023 Volume 2 release. It is recommended to use the latest Blazor or ASP.NET Core for new web application development.
+
+For more details, [please refer to this link](https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/introduction). You can also visit the Blazor documentation and demo links provided for more information. such as Blazor [documentation](https://blazor.syncfusion.com/documentation/introduction) and Blazor [demo](https://blazor.syncfusion.com/demos/).
+
+
 # Welcome to Syncfusion ASP.NET Web Forms
 
 Essential Studio for ASP.NET is a set of server-side wrappers for Essential JavaScript controls that enables you to create Essential Studio’s HTML5 JavaScript controls through ASP.NET Designer and/or Code Behind file. It includes rich designer support, server-side events, and better ViewState handling for all server-side wrappers.
