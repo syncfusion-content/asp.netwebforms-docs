@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Virtual Scrolling | ListView | ASP.NET Webforms | Syncfusion
-description: virtual scrolling
+description: Learn here about virtual scrolling in Syncfusion Essential ASP.NET Webforms ListView Control, its elements, and more.
 platform: aspnet
 control: ListView
 documentation: ug
 ---
 
-# Virtual Scrolling
+# Virtual Scrolling in ASP.NET Webforms ListView
 
    We can load large data on demand using "AllowVirtualScrolling" property. By default, "AllowVirtualScrolling" set as boolean value of **"false"**. When it is set true, list items will be loaded on every scroll action. The number of items to be loaded per request can be specified using the “ItemRequestCount” property. We have provided two type of option for virtualScrolling,
 
