@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in ComboBox widget for Syncfusion Essential WebForm
-description: Describes about the data binding in ComboBox widget for Syncfusion Essential WebForm
+title: Data Binding in ASP.NET WebForms ComboBox Control | Syncfusion
+description: Learn here all about data binding support in Syncfusion Essential ASP.NET WebForms ComboBox Control, its elements, and more.
 platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, combobox, data binding, REStFul Binding, WebAPI, Web Method, OData, OData4
 ---
 
-# Data Binding
+# Data Binding in ASP.NET WebForms ComboBox
 
 The ComboBox loads the data either from local data sources or remote data services using the dataSource property. It supports the data type of array or DataManager.
 
@@ -110,4 +110,4 @@ protected void Page_Load(object sender, EventArgs e)
 
 {% endtabs %}
 
-![](DataBinding_images/DataBinding_image1.png)
+![Data Binding in ASP.NET WebForms ComboBox](DataBinding_images/DataBinding_image1.png)
