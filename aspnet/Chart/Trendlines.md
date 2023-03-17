@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Trendlines | Chart  | ASP.NET Webforms | Syncfusion
-description: What are the different types of trendlines available in chart.
+description: Learn here all about trendlines support in Syncfusion Essential ASP.NET WebForms Chart Control, its elements, and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# Trendlines
+# Trendlines in ASP.NET WebForms Chart
 
 EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except Bar type series. You can add more than one trendline object to the **Trendlines** option.
 
@@ -26,7 +26,7 @@ EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatte
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img1.png)
+![Trendlines in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img1.png)
 
 [Click](http://asp.syncfusion.com/demos/web/chart/trendlines.aspx) here to view the Trendlines online demo sample.
 
@@ -50,7 +50,7 @@ A trendline can be customized by using the properties such as *Fill*, *Width*, *
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img2.png)
+![Customize the trendline styles in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img2.png)
 
 
 ## Types of Trendline
@@ -83,7 +83,7 @@ To render Linear Trendline, you have to set the **Type** as *Linear*.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img3.png)
+![Linear in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img3.png)
 
 ### Exponential
 
@@ -104,7 +104,7 @@ Exponential Trendline can be rendered by setting the *Type* as *Exponential*.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img4.png)
+![Exponential in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img4.png)
 
 ### Logarithmic
 
@@ -125,7 +125,7 @@ Logarithmic Trendline can be rendered by setting the *Type* as *Logarithmic*.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img5.png)
+![Logarithmic in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img5.png)
 
 
 ### Power
@@ -148,7 +148,7 @@ Power Trendline can be rendered by setting the *Type* of the trendline as *Power
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img6.png)
+![Power in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img6.png)
 
 
 ### Polynomial
@@ -170,7 +170,7 @@ Polynomial Trendline can be rendered by setting the trendline *Type* as *Polynom
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img7.png)
+![Polynomial in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img7.png)
 
 
 ### MovingAverage
@@ -192,7 +192,7 @@ MovingAverage Trendline can be rendered by setting the *Type* of the trendline a
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img8.png)
+![Moving average in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img8.png)
 
 
 ## Forecasting
@@ -221,7 +221,7 @@ The value set for **ForwardForecast** is used to determine the distance moving t
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img9.png)
+![Forward forecasting in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img9.png)
 
 
 ### Backward Forecasting
@@ -243,7 +243,7 @@ The value set for the **BackwardForecast** is used to determine the past trends.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img10.png)
+![Barkward forecasting in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img10.png)
 
 
 ## Trendlines Legend
@@ -265,4 +265,4 @@ To display the legend item for trendline, use the **Name** property. You can int
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img11.png)
+![Trendlines legend in ASP.NET WebForms Chart](Trendlines_images/Trendlines_img11.png)
