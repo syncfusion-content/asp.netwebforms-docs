@@ -20,7 +20,7 @@ The TreeGrid control has an option to search its content using toolbar search bo
 {% endhighlight %}
 
 The below screenshot shows TreeGrid search with `plan` key word.
-![](Searching_images/Searching_img1.png)
+![Searching in ASP.NET Web Forms TreeGrid](Searching_images/Searching_img1.png)
 
 ## Search Hierarchy Modes
 
@@ -48,7 +48,7 @@ The following code example shows how to set the `SearchHierarchyMode` in the tre
 {% endhighlight %}
 
 The following image depicts the output of the previous code example.
-![](Searching_images/SearchHierarchyModes_img1.png)
+![Search Hierarchy Modes in ASP.NET Web Forms TreeGrid](Searching_images/SearchHierarchyModes_img1.png)
 
 The above screenshot shows Tree Grid with `Child` search mode.
 

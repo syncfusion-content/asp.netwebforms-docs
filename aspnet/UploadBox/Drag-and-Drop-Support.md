@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag and Drop Support | UploadBox | ASP.NET | Syncfusion
-description: drag and drop support
+title: Drag and Drop in ASP.NET Webforms UploadBox Control | Syncfusion
+description: Learn here about drag and drop support in Syncfusion Essential ASP.NET Webforms UploadBox Control, its elements, and more.
 platform: aspnet
 control: UploadBox
 documentation: ug
 ---
 
-# Drag and Drop Support
+# Drag and Drop Support in ASP.NET Webforms UploadBox
 
 The UploadBox control provides the drag and drop support. You can simply drag-and-drop files, directly from the computer to the droppable area. A list of files can be dragged and dropped when you enable the MultipleFilesSelection.
 

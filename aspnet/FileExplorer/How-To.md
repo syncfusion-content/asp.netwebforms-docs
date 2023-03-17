@@ -1,12 +1,12 @@
 ---
 title: How To | FileExplorer | ASP.NET Web | Syncfusion
-description: “How to do” section for FileExplorer
+description: Learn here about How to section with Syncfusion Essential ASP.NET WebForms File Explorer Control, its elements, and more.
 platform: aspnet
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, ASP.NET Web FileExplorer, UG document, How To
 ---
-# How To
+# How To section with ASP.NET WebForms File Explorer
 
 ## File handling operations
 
@@ -574,7 +574,7 @@ If your server is located in Intranet Zone, In IE Browser, confirmation dialog w
 
 To suppress this warning, you need to specify the "*Access data sources across domains*" setting to “allow”.
 
-![](HowTo_images/HowTo_img1.jpeg)
+![How to section in ASP.NET WebForms File Explorer](HowTo_images/HowTo_img1.jpeg)
 
 **Option 2: Using JSONP for cross-origin request**
 
