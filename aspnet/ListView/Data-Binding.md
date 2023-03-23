@@ -92,7 +92,7 @@ Run the code to get the following output
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the Datasource URL property or can give it in the DataManager.
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](https://www.odata.org/) URL directly to the Datasource URL property or can give it in the DataManager.
 
 {% highlight html %}
 
