@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | Checkbox | ASP.NET Webforms | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Essential ASP.NET Webforms Checkbox Control, its elements, and more.
 platform: aspnet
 control: Checkbox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Webforms Checkbox
 
 This section explains briefly how to create a **Checkbox** in your application with ASP.NET.
 
@@ -15,7 +15,7 @@ This section explains briefly how to create a **Checkbox** in your application w
 
 ASP.NET Checkbox provides support for multiple selections, within your web page and allows you to specify an option from the list. From the following guidelines, you can select Multiple or Single Selection List Receiving App by using Checkbox. The following screenshot demonstrates the functionality with Checkbox button action.
 
-![Description: C:/Users/jeganprakash/Desktop/Documentation/Images/Check/1.PNG](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET Webforms Checkbox creation](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -151,7 +151,7 @@ Add the script into your ASPX page.
 {% endhighlight %}
 
 
-![Description: C:/Users/jeganprakash/Desktop/Documentation/Images/Check/2.PNG](Getting-Started_images/Getting-Started_img2.png)
+![ASP.NET Webforms Checkbox file selections](Getting-Started_images/Getting-Started_img2.png)
 
 
 ## File Selection in Media Player
@@ -275,7 +275,7 @@ Add the following styles to show the Checkbox control in an order.
 
 Run the code to render the resultant output.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![ASP.NET Webforms Checkbox file type of Media player](Getting-Started_images/Getting-Started_img3.png)
 
 
 
