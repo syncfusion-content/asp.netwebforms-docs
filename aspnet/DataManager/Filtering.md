@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Filtering | DataManager | ASP.NET Webforms | Syncfusion
-description: filtering
+description: Learn here about filtering in Syncfusion Essential ASP.NET Webforms DataManager Control, its elements, and more.
 platform: aspnet
 control: DataManager
 documentation: ug
 keywords: filter Operators, lessThan, lessThanOrEqual, less, contains
 ---
 
-# Filtering
+# Filtering in ASP.NET Webforms DataManager
 
 Filtering is a basic technique in DataManager query. The “where” query is used to filter some particular or related records from the data source to review details of records. 
 
