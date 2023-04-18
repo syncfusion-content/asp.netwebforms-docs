@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grouping | ListBox | ASP.NET Webforms | Syncfusion
-description: Grouping
+description: Learn here about Grouping in Syncfusion Essential ASP.NET Webforms ListBox Control, its elements, and more.
 platform: aspnet
 control: Listbox
 documentation: ug
 ---
 
-# Grouping
+# Grouping in ASP.NET Webforms ListBox
 
 ListBox items can be grouped by providing a heading (header) for each set of items.
  
@@ -58,5 +58,5 @@ In design page set the DataGroupBy property to group the list items. In the code
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img1.png)
+![ASP.NET Core ListBox grouping](Grouping_images/Grouping_img1.png)
 
