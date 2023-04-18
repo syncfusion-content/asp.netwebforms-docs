@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Use NHibernate with Grid | Grid | ASP.NET Webforms | Syncfusion
-description: use nhibernate with grid
+title: Use NHibernate with ASP.NET Webforms Grid Control | Syncfusion
+description: Learn here about use nhibernate with Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
 documentation: ug
 ---
 
-## Use NHibernate with Grid
+# Use NHibernate with ASP.NET Webforms Grid
 
-### NHibernate
+## NHibernate
 
 NHibernate is an object-relational mapping (ORM) solution for the Microsoft .NET platform. It provides a Framework for mapping an object-oriented domain model to a traditional relational database.
 
