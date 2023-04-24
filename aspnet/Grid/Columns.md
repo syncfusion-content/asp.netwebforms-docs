@@ -257,7 +257,7 @@ The following output is displayed as a result of the above code example.
 
 The template design that applies on for the column header. To render template, set `HeaderTemplateID` property of the `Columns`.
 
-You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
+You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](https://www.jsviews.com/#jsrapi "the link").
 
 N> It's a standard way to enclose the `template` within the `script` tag with `type` as `text/x-jsrender`.
 
@@ -693,7 +693,7 @@ The following output is displayed as a result of the above code example.
 
 HTML templates can be specified in the `Template` property of the particular column as a string (HTML element) or ID of the template's HTML element.
 
-You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
+You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](https://www.jsviews.com/#jsrapi "this link"). 
 
 For template manipulation using JavaScript, either you can use JsRender [helper](https://www.jsviews.com/#helpers) function or `TemplateRefresh` grid event. For more information on `TemplateRefresh` event, refer [this link](https://help.syncfusion.com/aspnet/grid/how-to/display-other-syncfusion-controls-in-grid-columns).
 
@@ -851,7 +851,7 @@ The following output is displayed as a result of the above code example.
 
 `Expression` column is possible only for `Template` column.
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link"). 
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](https://www.jsviews.com/#jsrapi "the link"). 
 
 N> This expression column is supported at read only mode.
 
