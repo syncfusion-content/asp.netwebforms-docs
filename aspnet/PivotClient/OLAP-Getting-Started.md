@@ -1,14 +1,14 @@
 ---
 layout: post
-title: OLAP Getting Started | PivotClient | ASP.NET | Syncfusion
-description: olap getting started
+title: OLAP Getting Started with ASP.NETWEBForms PivotClient | Syncfusion
+description: Learn here about olap getting started with Syncfusion Essential ASP.NETWEBForms PivotClient Control, its elements, and more.
 platform: aspnet
 control: PivotClient
 documentation: ug
 ---
 
 
-# Getting started
+# OLAP Getting started with ASP.NETWEBForms PivotClient
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use our components.
@@ -744,6 +744,6 @@ Now, the **pivot client** is rendered with pivot chart and pivot grid showing cu
 
 ### WCF
 
-This section demonstrates the utilization of WCF service as endpoint binding the OLAP data source to a simple pivot client. For more details on this topic, [click here](http://help.syncfusion.com/aspnet/pivotclient/olap-connectivity#wcf).
+This section demonstrates the utilization of WCF service as endpoint binding the OLAP data source to a simple pivot client. For more details on this topic, [click here](https://help.syncfusion.com/aspnet/pivotclient/olap-connectivity#wcf).
 
 
