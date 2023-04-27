@@ -32,7 +32,7 @@ By using the **Title** option, you can add the *Text* as well as customize its *
 ![](Chart-Title_images/Chart-Title_img1.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/subtitle.aspx) here to view the Chart Title online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/subtitle.aspx) here to view the Chart Title online demo sample.
 
 
 
