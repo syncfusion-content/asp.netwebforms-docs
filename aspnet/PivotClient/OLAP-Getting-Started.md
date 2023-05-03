@@ -1,14 +1,14 @@
 ---
 layout: post
-title: OLAP Getting Started with ASP.NETWEBForms PivotClient | Syncfusion
-description: Learn here about olap getting started with Syncfusion Essential ASP.NETWEBForms PivotClient Control, its elements, and more.
+title: OLAP Getting Started with ASP.NET Web Forms PivotClient | Syncfusion
+description: Learn here about olap getting started with Syncfusion Essential ASP.NET Web Forms PivotClient Control, its elements, and more.
 platform: aspnet
 control: PivotClient
 documentation: ug
 ---
 
 
-# OLAP Getting started with ASP.NETWEBForms PivotClient
+# OLAP Getting started with ASP.NET Web Forms PivotClient
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use our components.
