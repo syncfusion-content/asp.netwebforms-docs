@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling | Slider | ASP.NET | Syncfusion
-description: appearance and styling
+title: Appearance and Styling in ASP.NET Webforms Slider Control | Syncfusion
+description: Learn here about appearance and styling in Syncfusion Essential ASP.NET Webforms Slider Control, its elements, and more.
 platform: aspnet
 control: Slider
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in ASP.NET Webforms Slider
 
 ## Theme
 
@@ -69,13 +69,13 @@ The following screenshot displays the output of the above code example.
 
 #### Default Slider
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+ ![Default Slider in ASP.NET Webforms Slider](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 
 #### Range Slider
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+ ![Range Slider in ASP.NET Webforms Slider](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
@@ -170,7 +170,7 @@ In an ASPX page, define the Slider control and configure the Slider with custom 
 
 The following screenshot displays the output of the above code example.
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+ ![Define CSS class for customizing in ASP.NET Webforms Slider](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
 
@@ -202,4 +202,4 @@ In an ASPX page, define the Slider control and set the ShowRoundedCorner proper
 
 The following screenshot displays the output of the above code example.
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+ ![Show Rounded Corner in ASP.NET Webforms Slider](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)

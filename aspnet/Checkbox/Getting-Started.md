@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | Checkbox | ASP.NET Webforms | Syncfusion
+title: Getting Started with ASP.NET Webforms Checkbox Control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential ASP.NET Webforms Checkbox Control, its elements, and more.
 platform: aspnet
 control: Checkbox
