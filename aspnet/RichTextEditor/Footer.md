@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation in RichTextEditor control for Syncfusion Essential ASP.NET Webform
-description: Validation to format the RichTextEditor control's content
+description: Learn here about footer support in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: RTE
 documentation: ug
@@ -9,7 +9,7 @@ keywords: RichTextEditor, Footer, Resizer, HTML Tag Info, Clear Format, Characte
 
 ---
 
-# Footer
+# Footer in ASP.NET Webforms RichTextEditor
 
 This option allows to specify which footer elements should be shown at the bottom of the editor. The available footer elements are listed below:
 
@@ -85,7 +85,7 @@ N> The outermost tag is the body tag of &lt; iframe &gt; element in design view,
 
 ## Characters Count/Word Count
 
-The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/js/api/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
+The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](https://help.syncfusion.com/api/js/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
 
 {% highlight html %}
 
@@ -162,6 +162,6 @@ The editor automatically counts the number of characters and words in the conten
 
 By clicking the Characters Count/Word Count labels in footer , The word and character count information dialog is opened. It contains the details of the number of words and characters with and without spacing.  
 
-![](Footer_images/wordchar.png)
+![Word Count in ASP.NET Webforms RichTextEditor](Footer_images/wordchar.png)
 
 N> The editor counts the characters by including the space, and this validation occurs while pasting the content into the editor also.

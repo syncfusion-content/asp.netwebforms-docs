@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customizing the Submenu direction | Menu | ASP.NET Webforms | Syncfusion
-description: customizing the submenu direction
+description: Learn here about customizing the submenu direction in Syncfusion ASP.NET Webforms Menu Control, its elements, and more.
 platform: aspnet
 control: Menu
 documentation: ug
 ---
 
-# Customizing the Submenu direction
+# Customizing the Submenu direction in ASP.NET Webforms Menu
 
 You can customize the direction to open the sub menu items by using SubMenuDirection property. SubMenuDirection accepts the type as string or enum. It accepts the value as “Left” and “Right”. 
 
@@ -415,7 +415,7 @@ Add the following code example in your ASPX page.
 
 The output for the above code example is as follows.
 
-![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img1.png) 
+![Customizing the Submenu direction in ASP.NET Webforms Menu](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img1.png) 
 
 
 
@@ -551,7 +551,7 @@ Add the following code example in your style section.
 
 The output for the above code example is as follows.
 
-![](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img2.png) 
+![Open the submenu items in ASP.NET Webforms Menu](Customizing-the-Submenu-direction_images/Customizing-the-Submenu-direction_img2.png) 
 
 
 

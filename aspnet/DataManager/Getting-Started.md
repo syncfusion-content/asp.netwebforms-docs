@@ -7,7 +7,7 @@ control: DataManager
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with ASP.NET Webforms DataManager
 
 ## Create your DataManager in ASP.NET
 
