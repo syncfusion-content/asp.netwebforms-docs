@@ -26,7 +26,7 @@ To render a Line Chart, set the series **Type** as **Line** in the chart series.
 ![Chart-Types_images1](Chart-Types_images/Chart-Types_img1.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/defaultfunctionalities.aspx) here to view the Line Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/defaultfunctionalities.aspx) here to view the Line Chart online demo sample.
 
 
 ## Change the line width
@@ -127,7 +127,7 @@ You can change the color of the line segments by using the **Fill** property of 
 
 ![Chart-Types_images81](Chart-Types_images/Chart-Types_img81.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/multicolor.aspx) here to view the MultiColor Line Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/multicolor.aspx) here to view the MultiColor Line Chart online demo sample.
 
  
 ## Step Line Chart
@@ -147,7 +147,7 @@ To render a Step Line Chart, set the series Type as **StepLine"** in the chart s
 
 ![Chart-Types_images6](Chart-Types_images/Chart-Types_img6.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/stepline.aspx) here to view the Step Line Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/stepline.aspx) here to view the Step Line Chart online demo sample.
 
 
 ### Changing the line width
@@ -241,7 +241,7 @@ To render an Area chart, you can specify the series Type as **Area** in the char
 ![Chart-Types_images11](Chart-Types_images/Chart-Types_img11.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/area.aspx) here to view the Area Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/area.aspx) here to view the Area Chart online demo.
 
 
 ## Range Area Chart
@@ -273,7 +273,7 @@ Since the RangeArea series requires two y values for a point, you have to add th
 
 ![Chart-Types_images12](Chart-Types_images/Chart-Types_img12.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/rangearea.aspx) here to view Range Area Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/rangearea.aspx) here to view Range Area Chart online demo.
 
 
 ## Step Area Chart
@@ -295,7 +295,7 @@ To render a Step Area Chart, set the Type as **StepArea** in the chart series. T
 ![Chart-Types_images13](Chart-Types_images/Chart-Types_img13.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/steparea.aspx) here to view Step Area Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/steparea.aspx) here to view Step Area Chart online demo.
 
 
 ## Spline Area Chart
@@ -318,7 +318,7 @@ To render a Spline Area Chart, set the Type as **SplineArea** in the chart serie
 
 ![Chart-Types_images14](Chart-Types_images/Chart-Types_img14.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/splinearea.aspx) here to view Spline Area Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/splinearea.aspx) here to view Spline Area Chart online demo.
 
 
 ## Stacked Area Chart
@@ -340,7 +340,7 @@ To render a Stacked Area Chart, set the Type as **StackingArea** in the chart se
 ![Chart-Types_images15](Chart-Types_images/Chart-Types_img15.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/stackingarea.aspx) here to view Stacked Area Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/stackingarea.aspx) here to view Stacked Area Chart online demo.
 
 
 ## 100% Stacked Area Chart  
@@ -362,7 +362,7 @@ To render a 100% Stacked Area Chart, set the Type as **StackingArea100** in the 
 ![Chart-Types_images16](Chart-Types_images/Chart-Types_img16.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/stackingarea100.aspx) here to view 100% Stacked Area Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/stackingarea100.aspx) here to view 100% Stacked Area Chart online demo.
 
 
 ## Column Chart
@@ -384,7 +384,7 @@ To render a Column Chart, set the Type as **Column** in the chart series. To cha
 ![Chart-Types_images17](Chart-Types_images/Chart-Types_img17.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/column.aspx) here to view Column Chart demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/column.aspx) here to view Column Chart demo.
 
 
 ### Change a point color
@@ -511,7 +511,7 @@ Since, the RangeColumn series requires two y values for a point, add the High an
 
 ![Chart-Types_images19](Chart-Types_images/Chart-Types_img19.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/rangecolumn.aspx) here to view Range Column Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/rangecolumn.aspx) here to view Range Column Chart online demo.
 
 
 ### Change a point color 
@@ -554,7 +554,7 @@ To render a Stacked Column Chart, set the Type as **StackingColumn** in the char
 
 ![Chart-Types_images21](Chart-Types_images/Chart-Types_img21.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/stackingcolumn.aspx) here to view Stacked Column Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/stackingcolumn.aspx) here to view Stacked Column Chart online demo.
 
 
 ### Cluster / Group stacked columns
@@ -620,7 +620,7 @@ To render a 100% Stacked Column Chart, set the Type as **StackingColumn100** in 
 ![Chart-Types_images24](Chart-Types_images/Chart-Types_img24.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/stackingcolumn100.aspx) here to view 100% Stacked Column Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/stackingcolumn100.aspx) here to view 100% Stacked Column Chart online demo.
 
 
 ### Cluster / Group 100% stacked columns
@@ -686,7 +686,7 @@ To render a bar Chart, set the Type as **Bar** in the chart series. To change th
 ![Chart-Types_images27](Chart-Types_images/Chart-Types_img27.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/bar.aspx) here to view Bar Chart demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/bar.aspx) here to view Bar Chart demo.
 
 
 ### Change the color of a bar
@@ -730,7 +730,7 @@ To render a Stacked Bar Chart, set the Type as **StackingBar** in the chart seri
 ![Chart-Types_images29](Chart-Types_images/Chart-Types_img29.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/stackingbar.aspx) here to view Stacked Bar Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/stackingbar.aspx) here to view Stacked Bar Chart online demo.
 
 
 ### Cluster / Group stacked bars
@@ -795,7 +795,7 @@ To render a 100% Stacked Bar Chart, set the Type as **StackingBar100** in the ch
 
 ![Chart-Types_images32](Chart-Types_images/Chart-Types_img32.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/stackingbar100.aspx) here to view 100% Stacked Bar Chart online demo.
+[Click](https://asp.syncfusion.com/demos/web/chart/stackingbar100.aspx) here to view 100% Stacked Bar Chart online demo.
 
 By using the StackingGroup property, you can group the 100% stacking bars with the same group name. 
 
@@ -859,7 +859,7 @@ To render a Spline Chart, set the Type as **Spline** in the chart series. To cha
 ![Chart-Types_images35](Chart-Types_images/Chart-Types_img35.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/spline.aspx) here to view the Spline Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/spline.aspx) here to view the Spline Chart online demo sample.
 
 
 ### Change the spline width
@@ -920,7 +920,7 @@ You can create a pie chart by setting the series Type as **Pie** in the chart se
 ![Chart-Types_images38](Chart-Types_images/Chart-Types_img38.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/pie.aspx) here to view the Pie chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/pie.aspx) here to view the Pie chart online demo sample.
 
 
 ### Change the pie size
@@ -1018,7 +1018,7 @@ EjChart allows you to render all the data points/segments in the semi-pie, quart
 ![Chart-Types_images43](Chart-Types_images/Chart-Types_img43.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/semipie.aspx) here to view the Semi Pie Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/semipie.aspx) here to view the Semi Pie Chart online demo sample.
 
 
 
@@ -1040,7 +1040,7 @@ To create a Doughnut chart, you can specify the series Type as **Doughnut** in t
 
 ![Chart-Types_images44](Chart-Types_images/Chart-Types_img44.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/doughnut.aspx) here to view the Doughnut Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/doughnut.aspx) here to view the Doughnut Chart online demo sample.
 
 
 ### Change Doughnut inner radius
@@ -1157,7 +1157,7 @@ EjChart allows you to render all the data points/segments in the semi-doughnut, 
 ![Chart-Types_images50](Chart-Types_images/Chart-Types_img50.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/semipie.aspx) here to view the Semi Doughnut Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/semipie.aspx) here to view the Semi Doughnut Chart online demo sample.
 
 
 
@@ -1189,7 +1189,7 @@ EjChart provides support to render more than one series in pie and in doughnut c
 
 ![Chart-Types_images83](Chart-Types_images/Chart-Types_img83.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/multiplepie.aspx) here to view the Multiple Pie chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/multiplepie.aspx) here to view the Multiple Pie chart online demo sample.
 
 ### Start and End Angle Support
 
@@ -1222,7 +1222,7 @@ To create a Pyramid chart, you can specify the series Type as **Pyramid** in the
 
 ![Chart-Types_images51](Chart-Types_images/Chart-Types_img51.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/pyramid.aspx) here to view the Pyramid Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/pyramid.aspx) here to view the Pyramid Chart online demo sample.
 
 
 ### Pyramid Mode
@@ -1299,7 +1299,7 @@ You can create a funnel chart by setting the series Type as **Funnel** in the ch
 
 ![Chart-Types_images55](Chart-Types_images/Chart-Types_img55.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/funnel.aspx) here to view the Funnel Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/funnel.aspx) here to view the Funnel Chart online demo sample.
 
 
 ### Change the funnel width and height
@@ -1397,7 +1397,7 @@ To create a Bubble chart, you can set the series Type as **Bubble** in the chart
 ![Chart-Types_images58](Chart-Types_images/Chart-Types_img58.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/bubble.aspx) here to view the Bubble Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/bubble.aspx) here to view the Bubble Chart online demo sample.
 
 ## Scatter
 
@@ -1418,7 +1418,7 @@ To create a Scatter chart, you can set the series Type as **Scatter** in the cha
 ![Chart-Types_images59](Chart-Types_images/Chart-Types_img59.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/scatter.aspx) here to view the Scatter Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/scatter.aspx) here to view the Scatter Chart online demo sample.
 
 ### Customize the scatter chart
 
@@ -1503,7 +1503,7 @@ To create a HiLoOpenClose chart, you can set the series Type as **HiloOpenClose*
 ![Chart-Types_images61](Chart-Types_images/Chart-Types_img61.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/hiloopenclose.aspx) here to view the HiLoOpenClose Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/hiloopenclose.aspx) here to view the HiLoOpenClose Chart online demo sample.
 
 
 ### DrawMode
@@ -1603,7 +1603,7 @@ You can create a Candle chart by specifying the series Type as **Candle** in the
 
 ![Chart-Types_images64](Chart-Types_images/Chart-Types_img64.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/candle.aspx) here to view the Candle Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/candle.aspx) here to view the Candle Chart online demo sample.
 
 
 ### Bull and Bear Color
@@ -1682,7 +1682,7 @@ HiLo chart is created by setting the series Type as **Hilo** in the chart series
 ![Chart-Types_images66](Chart-Types_images/Chart-Types_img66.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/hilo.aspx) here to view the HiLo Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/hilo.aspx) here to view the HiLo Chart online demo sample.
 
 
 ## Polar
@@ -1704,7 +1704,7 @@ Polar chart is created by setting the series Type as **Polar** in the chart seri
 ![Chart-Types_images67](Chart-Types_images/Chart-Types_img67.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/polar.aspx) here to view the Polar Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/polar.aspx) here to view the Polar Chart online demo sample.
 
 
 ### DrawType
@@ -1745,7 +1745,7 @@ By using the **IsStacking** property, you can specify whether the column has to 
 ![Chart-Types_images69](Chart-Types_images/Chart-Types_img69.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/windrose.aspx) here to view the Polar Wind Rose Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/windrose.aspx) here to view the Polar Wind Rose Chart online demo sample.
 
 
 ## Radar Chart  
@@ -1767,7 +1767,7 @@ To create a Radar chart, you can specify the series Type as **Radar** in the cha
 
 ![Chart-Types_images70](Chart-Types_images/Chart-Types_img70.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/radar.aspx) here to view the Radar Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/radar.aspx) here to view the Radar Chart online demo sample.
 
 
 ### DrawType
@@ -1832,7 +1832,7 @@ N> The inline property of the **Series.PositiveFill** has the first priority and
 ![Chart-Types_images73](Chart-Types_images/Chart-Types_img73.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/waterfall.aspx) here to view the Waterfall Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/waterfall.aspx) here to view the Waterfall Chart online demo sample.
 
 
 **ShowIntermediateSum**
@@ -1918,7 +1918,7 @@ EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Sc
 ![Chart-Types_images75](Chart-Types_images/Chart-Types_img75.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/errorbar.aspx) here to view the ErrorBar Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/errorbar.aspx) here to view the ErrorBar Chart online demo sample.
 
 
 ### Changing Error Bar Type
@@ -2140,7 +2140,7 @@ Outlier symbol, width and height can be customized using outlierSettings through
 
 ![Chart-Types_images92](Chart-Types_images/Chart-Types_img92.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/boxplot.aspx) here to view the Box and Whisker Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/boxplot.aspx) here to view the Box and Whisker Chart online demo sample.
 
 ## Pie Of Pie Chart
 To render the pie of pie chart, set the series `type` as **PieOfPie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
@@ -2165,7 +2165,7 @@ To render the pie of pie chart, set the series `type` as **PieOfPie**. Pie of pi
 
 ![Chart-Types_images93](Chart-Types_images/Chart-Types_img93.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/pieofpie.aspx) here to view the Pie Of Pie Chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/pieofpie.aspx) here to view the Pie Of Pie Chart online demo sample.
 
 ### Split Mode and Split Value 
 
