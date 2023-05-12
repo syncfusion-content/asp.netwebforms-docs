@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows | TreeGrid | ASP.NET | Syncfusion
-description: rows
+title: Rows in ASP.NET Webforms TreeGrid Control | Syncfusion
+description: Learn here about rows support in Syncfusion Essential ASP.NET Webforms TreeGrid Control, its elements, and more.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-# Rows
+# Rows in ASP.NET Webforms TreeGrid
 
 The TreeGrid rows displays the information of each row from the bounded data source.
 
