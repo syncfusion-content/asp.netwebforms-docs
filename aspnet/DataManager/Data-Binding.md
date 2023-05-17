@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ASP.NET Webforms Data Manager Control | Syncfusion
-description: Learn here about data binding support in Syncfusion Essential ASP.NET Webforms Data Manager Control, its elements, and more.
+description: Learn here about data binding support in Essential ASP.NET Webforms Data Manager Control, its elements, and more.
 platform: aspnet
 control: DataManager
 documentation: ug
