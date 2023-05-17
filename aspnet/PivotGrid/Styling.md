@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling | PivotGrid | ASP.NET | Syncfusion
-description: styling
+title: Styling in ASP.NET Webforms Pivot Grid Controls | Syncfusion
+description: Learn here about styling support in Syncfusion Essential ASP.NET Webforms Pivot Grid Control, its elements, and more.
 platform: aspnet
 control: PivotGrid
 documentation: ug
 ---
 
-# Styling
+# Styling in ASP.NET Webforms Pivot Grid
 
 By default, the pivot grid supports the following **17** different types of themes:
 
