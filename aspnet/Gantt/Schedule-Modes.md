@@ -158,7 +158,7 @@ The value `Auto`, automatically calculates the schedule header depending on the 
 {% endhighlight %}
 ![](Schedule-Modes_images/Schedule-Modes_img6.png)
 
-[Click](http://asp.syncfusion.com/demos/web/gantt/schedulemodes.aspx) here to view the timescale modes in Gantt.
+[Click](https://asp.syncfusion.com/demos/web/gantt/schedulemodes.aspx) here to view the timescale modes in Gantt.
 
 ## Customize automatic timescale update action
 

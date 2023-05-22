@@ -119,7 +119,7 @@ N> For more details about `data binding` refer following [`link`](http://help.sy
 
 Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `AllowConditionalFormats` property to enable/disable Conditional formats.
 
-To apply conditional formats for a range use [`setCFRule`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule "setCFRule") method. The following code example illustrates this,
+To apply conditional formats for a range use [`setCFRule`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcformat-setcfrule) method. The following code example illustrates this,
 
 {% highlight html %}
 
