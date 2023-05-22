@@ -140,7 +140,7 @@ EjChart allows you to render the combination of different series in the chart.
 ![](Chart-Series_images/Chart-Series_img3.png)
 
 
-[Click](https://asp.syncfusion.com/demos/web/chart/column.aspx) here to view the combination series online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/combination.aspx) here to view the combination series online demo sample.
 
 ### Limitation of combination chart
 
