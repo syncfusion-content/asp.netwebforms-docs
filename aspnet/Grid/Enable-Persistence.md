@@ -9,9 +9,9 @@ documentation: ug
 
 # Enable Persistence in ASP.NET Webforms Grid
 
-Enable Persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. State persistence stores Grid's model object in local storage while defining `EnablePersistence` as true. 
+Enable Persistence is to maintain the grid state in browser's [local storage](https://www.w3schools.com/html/html5_webstorage.asp) even if browser refresh or move to next page. State persistence stores Grid's model object in local storage while defining `EnablePersistence` as true. 
 
-I>  [localStorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below IE9 then grid state persistence technique is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
+I>  [localStorage](https://www.w3schools.com/html/html5_webstorage.asp) is not supported below IE9 then grid state persistence technique is fallback to [cookie](https://www.w3schools.com/js/js_cookies.asp).
 
 ## List of properties are not Persisted by default
 
