@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart | ASP.NET Webforms | Syncfusion
-description: overview
+title: Overview of ASP.NET Webforms Chart control | Syncfusion
+description: Learn about overview of Syncfusion Essential ASP.NET Webforms Chart control, its elements and more.
 platform: aspnet
 control: Chart
 documentation: ug
 ---
 
-# Overview
+# Overview of ASP.NET Webforms Chart
 
 Essential Chart for ASP.NET is a visually stunning Charting component. It includes common Chart types ranging from line Charts to specialized financial Charts.
 
