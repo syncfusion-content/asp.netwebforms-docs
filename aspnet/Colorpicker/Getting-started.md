@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started | ColorPicker | ASP.NET Webforms | Syncfusion
-description: getting started
+title: Getting started with ASP.NET Webforms ColorPicker control | Syncfusion
+description: Learn about getting started with Syncfusion Essential ASP.NET Webforms ColorPicker control, its elements and more.
 platform: aspnet
 control: ColorPicker
 documentation: ug
 ---
 
-# Getting started
+# Getting started with ASP.NET Webforms ColorPicker
 
 ## Create your first ColorPicker in ASP.NET
 

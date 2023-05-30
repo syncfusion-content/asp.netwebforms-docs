@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling | Splitter | ASP.NET | Syncfusion
-description: appearance and styling
+title: Appearance and styling in ASP.NET Webforms Splitter control | Syncfusion
+description: Learn about appearance and styling support in Syncfusion Essential ASP.NET Webforms Splitter control, its elements and more.
 platform: aspnet
 control: Splitter
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and styling in ASP.NET Webforms Splitter
 
 ## Responsive
 

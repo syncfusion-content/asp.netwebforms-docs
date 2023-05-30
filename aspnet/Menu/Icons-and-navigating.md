@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Icons and navigating | Menu | ASP.NET Webforms | Syncfusion
-description: icons and navigating
+title: Icons and navigating in ASP.NET Webforms Menu control | Syncfusion
+description: Learn about icons and navigating support in Syncfusion Essential ASP.NET Webforms Menu control, its elements and more.
 platform: aspnet
 control: Menu
 documentation: ug
 ---
 
-# Icons and navigating
+# Icons and navigating in ASP.NET Webforms Menu
 
 Icons are the images that are to be displayed in the Menu control. To specify the menu with icons, you can use sprite property to display the icons. 
 
