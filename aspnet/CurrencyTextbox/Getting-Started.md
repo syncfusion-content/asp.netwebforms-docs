@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Webforms Currency TextBox control | Syncfusion
-description: Learn about getting started with Syncfusion Essential ASP.NET Webforms Currency TextBox control, its elements and more.
+description: Learn here about getting started with Syncfusion Essential ASP.NET Webforms Currency TextBox control, its elements and more.
 platform: aspnet
 control: Currency TextBox
 documentation: ug
