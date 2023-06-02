@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of ASP.NET Web Forms Chart control | Syncfusion
-description: Learn here about overview of Syncfusion Essential ASP.NET Web Forms Chart control, its elements and more.
+title: Overview of ASP.NET Web Forms Chart Control | Syncfusion
+description: Learn here about overview of Syncfusion Essential ASP.NET Web Forms Chart Control, its elements and more.
 platform: aspnet
 control: Chart
 documentation: ug
