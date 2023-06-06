@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Slider | ASP.NET | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET WebForms Slider Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential ASP.NET WebForms Slider control, its elements, and more.
 platform: aspnet
 control: Slider
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET WebForms Slider
 
 ## Create your first Slider in ASP.NET
 

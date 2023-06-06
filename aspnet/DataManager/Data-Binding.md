@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | DataManager | ASP.NET Webforms | Syncfusion
-description: data binding
+title: Data Binding in ASP.NET WebForms DataManager Control | Syncfusion
+description: Learn here all about data binding support in Syncfusion Essential ASP.NET WebForms DataManager control, its elements, and more.
 platform: aspnet
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: JSON data, OData, OData4, WebAPI, Web Method, Data Binding
 
 ---
 
-# Data Binding
+# Data Binding in ASP.NET WEbForms DataManager
 
 ## LOCAL
 
