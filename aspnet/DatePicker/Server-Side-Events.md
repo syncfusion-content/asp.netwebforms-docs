@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Validation
-description: Validate the date in server side
+title: Server Side Event in ASP.NET WebForm DatePicker control | Syncfusion
+description: Learn here all about Server side events in Syncfusion Essential ASP.NET WebForm DatePicker control, its elements, and more.
 platform: aspnet
 control: DatePicker
 documentation: ug
 ---
 
-## Server side events
+# Server side events in ASP.NET WebForm DatePicker
 
 EJWEB DatePicker control supports the Server side events too. This allows you to configure the DatePicker functionality in code-behind also. Please refer the below code, to use the server side events of EJWEB DatePicker
 
