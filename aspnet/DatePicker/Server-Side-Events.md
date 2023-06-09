@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server Side Event in ASP.NET WebForm DatePicker Control | Syncfusion
+title: Server Side Events in ASP.NET WebForm DatePicker Control | Syncfusion
 description: Learn here all about server side events support in Syncfusion Essential ASP.NET WebForm DatePicker control, its elements, and more.
 platform: aspnet
 control: DatePicker
