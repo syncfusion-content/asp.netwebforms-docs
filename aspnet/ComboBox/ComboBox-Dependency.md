@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dependencies of ASP.NET WebForm ComboBox Control | Syncfusion
-description: Learn here all about dependancy of Syncfusion Essential ASP.NET WebForm ComboBox control, its elements, and more.
+title: Dependencies in ASP.NET WebForm ComboBox Control | Syncfusion
+description: Learn here all about dependancies support in Syncfusion Essential ASP.NET WebForm ComboBox control, its elements, and more.
 platform: aspnet
 control: ComboBox
 documentation: ug
 ---
 
-# Dependencies of ASP.NET WebForm ComboBox
+# Dependencies in ASP.NET WebForm ComboBox
 
 The external script dependencies of the ComboBox control are,
 
