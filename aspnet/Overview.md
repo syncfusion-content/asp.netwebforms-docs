@@ -29,9 +29,9 @@ Essential Studio for ASP.NET is a set of server-side wrappers for Essential Java
 
 ## Additional help resources
 
-* The [Knowledge Base](https://www.syncfusion.com/kb/aspnet#) section contains responses to some of the most common questions that other customers have asked us in the past. This will be a good place to search for topics that are not covered in the user guide.
+* The [Knowledge Base](https://support.syncfusion.com/kb/retiredproducts/category/92) section contains responses to some of the most common questions that other customers have asked us in the past. This will be a good place to search for topics that are not covered in the user guide.
 
-* Similar to the [Knowledge Base](https://www.syncfusion.com/kb/aspnet#), the [forum](https://www.syncfusion.com/forums/aspnet#) section also contains responses to questions that other customers have asked us in the past.
+* Similar to the [Knowledge Base](https://support.syncfusion.com/kb/retiredproducts/category/92), the [forum](https://www.syncfusion.com/forums/aspnet#) section also contains responses to questions that other customers have asked us in the past.
 
 ## Create a support incident
 
