@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Server Side Events in ASP.NET WebForm DatePicker Control | Syncfusion
-description: Learn here all about server side events support in Syncfusion Essential ASP.NET WebForm DatePicker control, its elements, and more.
+title: Server Side Events in ASP.NET WebForms DatePicker Control | Syncfusion
+description: Learn here all about server side events support in Syncfusion Essential ASP.NET WebForms DatePicker control, its elements, and more.
 platform: aspnet
 control: DatePicker
 documentation: ug
 ---
 
-# Server Side Events in ASP.NET WebForm DatePicker
+# Server Side Events in ASP.NET WebForms DatePicker
 
 EJWEB DatePicker control supports the Server side events too. This allows you to configure the DatePicker functionality in code-behind also. Please refer the below code, to use the server side events of EJWEB DatePicker
 
