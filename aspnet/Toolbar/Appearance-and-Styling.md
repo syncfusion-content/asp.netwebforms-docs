@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance and Styling | Toolbar | ASP.NET | Syncfusion
-description: appearance and styling 
+description: Learn here about appearance and styling in Syncfusion Essential ASP.NET Webforms Toolbar Control, its elements, and more.
 platform: aspnet
 control: Toolbar
 documentation: ug
 ---
 
-# Appearance and Styling 
+# Appearance and Styling in ASP.NET Toolbar 
 
 ## Adjusting Toolbar size
 
@@ -69,7 +69,7 @@ The following screenshot displays the output of the above code.
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Enabling Rounded Corner in ASP.NET Webforms Toolbar](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 
@@ -121,7 +121,7 @@ The following screenshot displays the output of the above code.
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![Enabling Separator in ASP.NET Webforms Toolbar](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 
 
@@ -180,7 +180,7 @@ Add the following code example to render the ToolBar Control
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+![Themes in ASP.NET Webforms Toolbar](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 
 

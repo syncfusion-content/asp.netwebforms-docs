@@ -1,13 +1,13 @@
 ---
 layout: post
-title: overview
-description: overview
+title: overview | Signature | ASP.NET | Syncfusion
+description: Learn here about overview in Syncfusion Essential ASP.NET Webforms Signature Control, its elements, and more.
 platform: aspnet
 control: Signature
 documentation: ug
 ---
 
-# Overview
+# Overview in ASP.NET Webforms Signature
 
 The Signature Plugin is used to capture or drawing the smooth signatures. It captures user’s signature as vector outlines of strokes. Using Signature we can customize the background, stroke width and stroke color and also convert captured signature to an image format. It is also provided with Undo, Redo & Clear options.
 
