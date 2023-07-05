@@ -69,7 +69,7 @@ The following screenshot displays the output of the above code.
 
 
 
-![Enabling Rounded Corner in ASP.NET Webforms Toolbar](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Enabling Rounded Corner in ASP.NET Webforms Toolbar](appearance-and-styling_images/aspnet-webforms-toolbar-enabling-rounded-corner.png)
 
 
 
@@ -121,7 +121,7 @@ The following screenshot displays the output of the above code.
 
 
 
-![Enabling Separator in ASP.NET Webforms Toolbar](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
+![Enabling Separator in ASP.NET Webforms Toolbar](appearance-and-styling_images/aspnet-webforms-toolbar-enabling-separator.png) 
 
 
 
@@ -180,7 +180,7 @@ Add the following code example to render the ToolBar Control
 
 
 
-![Themes in ASP.NET Webforms Toolbar](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
+![Themes in ASP.NET Webforms Toolbar](appearance-and-styling_images/aspnet-webforms-toolbar-theme.png) 
 
 
 
