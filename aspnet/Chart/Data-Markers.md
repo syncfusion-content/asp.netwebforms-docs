@@ -507,4 +507,4 @@ The following code example shows how to enable smart labels,
 ![ASP.NET Webforms Chart SmartLabels](Data-Markers_images/Data-Markers_img12.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/pie.aspx) here to view the SmartLabels online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/pie.aspx) here to view the SmartLabels online demo sample.
