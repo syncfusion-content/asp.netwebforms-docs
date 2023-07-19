@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  GrandTotal Hiding | PivotGrid | ASP.NET | Syncfusion
-description: GrandTotal Hiding
+description: Learn here about GrandTotal Hiding in Syncfusion Essential ASP.NET Webforms PivotGrid Control, its elements, and more.
 platform: aspnet
 control: PivotGrid
 documentation: ug
 ---
 
-# Grand total hiding
+# Grand total hiding in ASP.NET Webforms PivotGrid
 
 Grand total hiding can be classified into three categories as follows:
 
