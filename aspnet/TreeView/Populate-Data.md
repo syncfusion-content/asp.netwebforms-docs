@@ -397,7 +397,7 @@ In the view page, add TreeView element and map the properties defined in to the
 ## Remote Data
 
 When using remote data binding, the adaptor of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
-[https://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript](https://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript)
+[http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript](http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript)
 
 ### OData
 
@@ -429,7 +429,7 @@ In the view page, add an element to configure TreeView.
     
 ### Web API
 
-Using [ej.WebApiAdaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind Web API service data to TreeView as shown in below code example
+Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind Web API service data to TreeView as shown in below code example
 
 In the code behind page, specify the Web API data source URL and other settings as follows.
     
@@ -462,9 +462,9 @@ In the view page, add an element to configure TreeView.
     
 ### Other Restful web services
 The custom adaptor concept of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager) allow you to customize or generate your own adaptor which is used to process query and result data. 
-[https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](https://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
+[http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to the DataSource property of TreeView.
     
@@ -965,7 +965,7 @@ While expanding the parent node
 After expanding the parent node
 {:.caption}
 
-For more details about load on demand for local data source, refer the sample [here](https://asp.syncfusion.com/demos/web/treeview/loadOnDemand.aspx).
+For more details about load on demand for local data source, refer the sample [here](http://asp.syncfusion.com/demos/web/treeview/loadOnDemand.aspx).
 
 
 For remote data source, TreeView loads the first level nodes initially. While expand the node from TreeView, the data manager passes the query to the controller. Based on this query, you can filter the data from table and return to TreeView.
