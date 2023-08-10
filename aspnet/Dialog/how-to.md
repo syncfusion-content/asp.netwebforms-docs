@@ -168,6 +168,8 @@ Initialize Footer in Dialog widgets by adding the script section in JsRender as 
         <ej:CheckBox ID="check1" runat="server" Text="Dont ask me this again"></ej:CheckBox>
   
     </div>
+
+    </script>
  
 {% endhighlight %}
 
