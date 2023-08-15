@@ -28,7 +28,7 @@ To show only horizontal/vertical gridlines or to hide gridlines, refer to [Const
 
 ## Appearance
 
-You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](http://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.GridLines.html  "Gridlines")
+You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.GridLines.html  "Gridlines")
 The `HorizontalGridLines` and `VerticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
 {% highlight aspx-cs %}

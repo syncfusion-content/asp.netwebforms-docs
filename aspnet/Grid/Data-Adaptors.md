@@ -8,7 +8,7 @@ documentation: ug
 ---
 #  Data Adaptors
 
-The Data adaptor is a mechanism through which the `DataManager` interact with the remote service or local dataSource. The `DataManager` has several preconfigured Data Adaptors, refer to the [link](http://help.syncfusion.com/aspnetmvc/datamanager/data-adaptors).
+The Data adaptor is a mechanism through which the `DataManager` interact with the remote service or local dataSource. The `DataManager` has several preconfigured Data Adaptors, refer to the [link](https://help.syncfusion.com/aspnetmvc/datamanager/data-adaptors).
 
 In Grid, the adaptor can be specified using the `Adaptor` property of the `DataManager`.
 
@@ -167,7 +167,7 @@ The following output is displayed as a result of the above code example.
 ##  OData Adaptor
 
 OData Adaptor that is extended from `UrlAdaptor`, is used for consuming data through OData Service. 
-We have an online OData Service “http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders” created specifically for Syncfusion Controls
+We have an online OData Service “https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders” created specifically for Syncfusion Controls
 
 
 N> `ODataAdaptor` is the default adaptor of `DataManager` and so no need to specify adaptor when binding OData service
