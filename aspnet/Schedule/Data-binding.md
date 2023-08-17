@@ -500,7 +500,7 @@ public class ScheduleAppointmentsObjData
 
 ## Binding Remote Data Service
 
-The appointment data can be bound to the Scheduler through [Odata](http://www.odata.org) remote services, by configuring the service URL to the Schedule dataSource through `DataManager`.
+The appointment data can be bound to the Scheduler through [Odata](https://www.odata.org/) remote services, by configuring the service URL to the Schedule dataSource through `DataManager`.
 
 {% highlight html %}
 
@@ -514,7 +514,7 @@ The appointment data can be bound to the Scheduler through [Odata](http://www.od
 
 ## OData V4
 
-The OData v4 is an improved version of OData protocols. Scheduler supports retrieving and consuming appointment data from [OData v4](http://www.odata.org/documentation) services, just similar to the other remote services.  
+The OData v4 is an improved version of OData protocols. Scheduler supports retrieving and consuming appointment data from [OData v4](https://www.odata.org/documentation/) services, just similar to the other remote services.  
 
 {% highlight html %}
 

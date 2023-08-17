@@ -47,7 +47,7 @@ You can create a Grid with a highly customizable look and feel. You can use th
 
    ~~~
    
-   For more information about SQL data source configuration refer the following link: [http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx](http://msdn.microsoft.com/en-us/library/vstudio/w1kdt8w2(v=vs.100).aspx)
+   For more information about SQL data source configuration refer the following link: [https://learn.microsoft.com/en-us/previous-versions/aspnet/w1kdt8w2(v=vs.100)?redirectedfrom=MSDN](https://learn.microsoft.com/en-us/previous-versions/aspnet/w1kdt8w2(v=vs.100)?redirectedfrom=MSDN)
 
 4. By Columns definition, the TextAlign property allows you to align the text of the columns. The Width property is used to define the width of the columns and the Format property allows you to format the particular column’s value.
 

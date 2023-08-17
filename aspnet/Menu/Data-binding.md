@@ -73,7 +73,7 @@ The menu control also provides supports for Remote data binding. Here the remote
 
 DataManager is used to manage relational data in JavaScript. Query generates data queries that are to be read by DataManager. 
 
-In the following code example, [http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used as the URL. Here, it acts as web service that is located in the Syncfusion server. The web service used here is Northwnd.svc.
+In the following code example, [https://mvc.syncfusion.com/Services/Northwnd.svc/](https://mvc.syncfusion.com/Services/Northwnd.svc/) is used as the URL. Here, it acts as web service that is located in the Syncfusion server. The web service used here is Northwnd.svc.
 
 Add the following code example in your ASPX page.
 
@@ -518,7 +518,7 @@ In the following code example, dataSource for menu is set from DataTable.
 
 {% endhighlight %}
 
-Sample can be downloaded [here](http://www.syncfusion.com/downloads/support/directtrac/233237/ze/Menu921663815)
+Sample can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/233237/ze/Menu921663815)
 
 Now , the menu will be displayed as shown below
 
