@@ -44,7 +44,7 @@ Category axis displays the text labels instead of numbers. To use the categorica
 ![ASPNET Chart Axis](Axis_images/axis_img1.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/column.aspx) here to view our online demo sample that uses Category axis.
+[Click](https://github.com/syncfusion/aspnet-ej1-demos/blob/master/Chart/Column.aspx) here to view our online demo sample that uses Category axis.
 
 
 ### Place labels on ticks
@@ -296,7 +296,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 ![ASPNET Chart DateTime Axis](Axis_images/axis_img12.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/datetimeaxis.aspx) here to view our online demo sample for date time axis.
+[Click](https://github.com/syncfusion/aspnet-ej1-demos/blob/master/Chart/DateTimeAxis.aspx) here to view our online demo sample for date time axis.
 
  
 ### Customizing date time range
@@ -427,7 +427,7 @@ DateTime category axis takes date time value as input but behaves like category 
 
 ![ASPNET Chart DateTimeCategory Axis](Axis_images/axis_img63.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/datetimecategoryaxis.aspx) here to view our online demo sample for date time axis.
+[Click](https://github.com/syncfusion/aspnet-ej1-demos/blob/master/Chart/DateTimeCategoryAxis.aspx) here to view our online demo sample for date time axis.
 
 ### Customizing DateTime Category range
 
@@ -489,7 +489,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 ![ASPNET Chart Logarithmic Axis](Axis_images/axis_img19.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/logaxis.aspx) here to view our online demo sample link for logarithmic axis.
+[Click](https://github.com/syncfusion/aspnet-ej1-demos/blob/master/Chart/LogAxis.aspx) here to view our online demo sample link for logarithmic axis.
 
 ### Customize Logarithmic range
 
@@ -1068,7 +1068,7 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 ![ASPNET Chart Multiple Axis](Axis_images/axis_img41.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/multipleaxes.aspx) here to view the multiple axis online demo sample.
+[Click](https://github.com/syncfusion/aspnet-ej1-demos/blob/master/Chart/MultipleAxes.aspx) here to view the multiple axis online demo sample.
 
 
 ## Smart Axis Labels
@@ -1090,7 +1090,7 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 ![ASPNET Chart Smart Axis](Axis_images/axis_img42.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/chart/smartaxislabel.aspx) here to view our online demo sample for smart axis labels.
+[Click](https://github.com/syncfusion/aspnet-ej1-demos/blob/master/Chart/SmartAxisLabel.aspx) here to view our online demo sample for smart axis labels.
 
 
 
@@ -1217,4 +1217,4 @@ The below screenshot shows the trimmed multi-level labels
 ![ASPNET Chart trimmed multi level labels](Axis_images/axis_img61.png)
 
 And these labels can be placed in various rows using the **Level** property.
-[Click](http://asp.syncfusion.com/demos/web/chart/multilevellabels.aspx) here to view the multi-level labels online demo sample.
+[Click](https://github.com/syncfusion/aspnet-ej1-demos/blob/master/Chart/MultilevelLabels.aspx) here to view the multi-level labels online demo sample.

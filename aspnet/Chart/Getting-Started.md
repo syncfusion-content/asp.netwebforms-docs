@@ -293,4 +293,4 @@ You need to add a title to the chart to provide quick information to the user ab
 
 Refer to the [`Chart Title`](chart-title.html) section to know more about aligning Title, customizing its appearance and adding SubTitle to the chart.
 
-We have created a sample by combining all the above code snippets for reference. This can be downloaded [`here`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SyncfusionASPNETApplication-1738844927).
+We have created a sample by combining all the above code snippets for reference. This can be downloaded [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SyncfusionASPNETApplication-1738844927).

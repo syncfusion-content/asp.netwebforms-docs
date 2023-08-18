@@ -12,7 +12,7 @@ The grid control has support for dynamic insertion, updating and deletion of rec
 
 Deletion of the record is possible by selecting the required row and clicking on Delete icon in toolbar. 
 
-The primary key for the data source should be defined in `Columns` definition, for editing to work properly. In `Columns` definition, particular primary column's `IsPrimaryKey` property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
+The primary key for the data source should be defined in `Columns` definition, for editing to work properly. In `Columns` definition, particular primary column's `IsPrimaryKey` property should be set to `true`. Refer the Knowledge base [link](https://support.syncfusion.com/kb/article/2934/cant-edit-any-row-except-the-first-row-in-grid "link") for more information.
 
 N> 1. In grid, the primary key column will be automatically set to read only while editing the row, but you can specify primary key column value while adding a new record.
 N> 2. The column which is specified as `IsIdentity` will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that `IsIdentity` column.
@@ -1162,7 +1162,7 @@ After the template elements are converted to JS controls using ActionComplete ev
 Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set `EditMode` as `Batch` to enable batch editing.
 
 N> `getBatchChanges` method of grid holds the unsaved record changes.
-N> Refer the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-confirmation-messages# "link") for "How to suppress grid confirmation messages" in batch mode.
+N> Refer the KB [link](https://support.syncfusion.com/kb/article/3065/how-to-suppress-grid-confirmation-messages"link") for "How to suppress grid confirmation messages" in batch mode.
 
 The following code example describes the above behavior.
 
@@ -1499,7 +1499,7 @@ equalTo</td><td>
 Requires the element to be the same as another.</td></tr>
 </table>
 
-Grid supports all the standard validation methods of jQuery, please refer the jQuery validation documentation [link](http://jqueryvalidation.org/documentation/# "link") for more information.
+Grid supports all the standard validation methods of jQuery, please refer the jQuery validation documentation [link](https://jqueryvalidation.org/documentation/# "link") for more information.
 
 The following code example describes the above behavior.
 
@@ -1594,7 +1594,7 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img18.png)
 
-N> 1. Refer this [Knowledge Base link](https://www.syncfusion.com/kb/6817/how-to-perform-server-side-validation-in-grid) to perform server side validation in Grid.
+N> 1. Refer this [Knowledge Base link](https://support.syncfusion.com/kb/article/6216/how-to-perform-server-side-validation-in-grid) to perform server side validation in Grid.
 
 ### Custom Validation
 
