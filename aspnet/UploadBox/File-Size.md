@@ -70,13 +70,13 @@ Maximum request size</th><th>
 Details</th></tr>
 <tr>
 <td>
-{{ '[maxRequestLength](https://msdn.microsoft.com/en-us/library/system.web.configuration.httpruntimesection.maxrequestlength.aspx)' | markdownify }}</td><td>
+{{ '[maxRequestLength](https://learn.microsoft.com/en-us/dotnet/api/system.web.configuration.httpruntimesection.maxrequestlength?view=netframework-4.8.1&redirectedfrom=MSDN#System_Web_Configuration_HttpRuntimeSection_MaxRequestLength)' | markdownify }}</td><td>
 Property</td><td>
 28.6 MB</td><td>
 Maximum request size supported by ASP.NET.</td></tr>
 <tr>
 <td>
-{{ '[maxAllowedContentLength](https://msdn.microsoft.com/en-us/library/ms689462(v=vs.90).aspx)' | markdownify }}</td><td>
+{{ '[maxAllowedContentLength](https://learn.microsoft.com/en-us/previous-versions/iis/settings-schema/ms689462(v=vs.90)?redirectedfrom=MSDN)' | markdownify }}</td><td>
 Property</td><td>
 28.6 MB</td><td>
 maxAllowedContentLength specifies the maximum length of content in a request supported by IIS.</td></tr>

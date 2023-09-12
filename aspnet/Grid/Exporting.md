@@ -27,7 +27,7 @@ Export Helper functions are available in the assembly `Syncfusion.EJ.Export`, wh
 
 In ASP, exporting is achieved by using Grid control server side method. Using Export() server method in Grid server side event, you can export the Grid into excel, PDF and word documents.
 
-N> Refer the knowledge base [link](https://www.syncfusion.com/kb/5442/how-to-export-the-data-when-grid-is-in-updatepanel "link") to export the Grid when it is rendered inside UpdatePanel.
+N> Refer the knowledge base [link](https://support.syncfusion.com/kb/article/5140/how-to-export-the-data-when-grid-is-in-updatepanel "link") to export the Grid when it is rendered inside UpdatePanel.
 
 {% tabs %}
 
