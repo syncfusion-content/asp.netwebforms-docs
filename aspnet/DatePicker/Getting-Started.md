@@ -12,11 +12,11 @@ documentation: ug
 
 To get start with The EJWEB DatePicker, create a new web application and add the required assemblies in references and then refer the below specified dependent CSS file as well as scripts
 
-To create a web application and to add necessary assemblies you can use the help of the given [ASP-Getting Started](https://help.syncfusion.com/aspnet/getting-started) documentation.
+To create a web application and to add necessary assemblies you can use the help of the given [ASP-Getting Started](https://help.syncfusion.com/aspnet/datepicker/getting-started) documentation.
 
 CSS file
 
-* [ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) - includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](http://help.syncfusion.com/js/theming-in-essential-javascript-components#))
+* [ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) - includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](https://help.syncfusion.com/js/theming-in-essential-javascript-components#))
 
 External script files
 
@@ -51,7 +51,7 @@ You can make use of **ej.web.all.min.js** file which encapsulates all EJWEB comp
 
 * [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js) - includes all web widgets.
 
-N>  In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
+N>  In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/?hl=en#text-compression-with-gzip) in your server. 
 
 Below is a simple site master page with required CSS and script references added to create EJWEB DatePicker in ASP.NET WEB application
 
