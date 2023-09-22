@@ -211,4 +211,4 @@ To modify Grid appearance, you need to override default CSS of Grid. Please find
 
 To customize toolbar, you need to use toolbar default CSS class to override icon in toolbar. 
 
-{% seealso %} [customize toolbar ](http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}
+{% seealso %} [customize toolbar ](https://support.syncfusion.com/kb/article/4868/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}
