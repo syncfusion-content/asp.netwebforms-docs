@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context Menu | Gantt | ASP.NET Webforms | Syncfusion
-description: Learn here about context menu in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
+title: Context Menu in ASP.NET Webforms Gantt | Syncfusion
+description: Learn here about context menu support in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
 platform: aspnet
 control: Gantt
 documentation: ug

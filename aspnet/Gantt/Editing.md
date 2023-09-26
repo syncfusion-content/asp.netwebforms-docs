@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing | Gantt | ASP.NET Webforms | Syncfusion
-description: Learn here about editing  in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
+title: Editing in ASP.NET Webforms Gantt | Syncfusion
+description: Learn here about editing support in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
 platform: aspnet
 control: Gantt
 documentation: ug
