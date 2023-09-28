@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing in ASP.NET Webforms Gantt | Syncfusion
+title: Editing in ASP.NET Webforms Gantt Control | Syncfusion
 description: Learn here about editing support in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
 platform: aspnet
 control: Gantt
@@ -116,7 +116,7 @@ Update the task details through edit dialog by setting `EditMode` as `normal`. T
 
 The following screenshot shows the output of `normal` editing.
 
-![Initialize Normal edit mode in ASP.NET Webforms Gantt](Editing_images/Editing_img2.png)
+![Initialize normal edit mode in ASP.NET Webforms Gantt](Editing_images/Editing_img2.png)
 
 ### Define required fields in add/edit dialog
 
@@ -273,7 +273,7 @@ In Gantt, we can add, edit, update the task dependencies by mouse interactions, 
 
 Task dependency can be added by mouse interactions by connecting connector points in predecessor and successor tasks. The following screen shot shows the add dependency action.
 
-![Add Dependency in ASP.NET Webforms Gantt](Editing_images/Editing_img3.png)
+![Add dependency in ASP.NET Webforms Gantt](Editing_images/Editing_img3.png)
 
 ### Edit Dependency
 
@@ -306,13 +306,13 @@ function actionBegin(args) {
 {% endhighlight %}
 
 The following screen shot shows the dependency edit dialog.
-![Edit Dependency in ASP.NET Webforms Gantt](Editing_images/Predecessor_Editing_Dialog.png)
+![Edit dependency in ASP.NET Webforms Gantt](Editing_images/Predecessor_Editing_Dialog.png)
 
 ### Delete Dependency
 
 Task dependency can be deleted by using edit dialog and [`deleteDependency`](/api/js/ejgantt#methods:deletedependency) method. The following screen shot shows the dependency edit dialog with delete option.
 
-![Delete Dependency in ASP.NET Webforms Gantt](Editing_images/Predecessor_Editing_Dialog.png)
+![Delete dependency in ASP.NET Webforms Gantt](Editing_images/Predecessor_Editing_Dialog.png)
 
 [Click](https://asp.syncfusion.com/demos/web/gantt/editing.aspx) here to view the online demo sample for editing in Gantt.
 
@@ -409,12 +409,12 @@ $("#indentTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![Before Task Indent in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
+![Before task indent in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
 
 Before Indent
 {:.caption}
 
-![After Task Indent in ASP.NET Webforms Gantt](Editing_images/Editing_img7.png)
+![After task indent in ASP.NET Webforms Gantt](Editing_images/Editing_img7.png)
 
 After Indent
 {:.caption}
@@ -447,12 +447,12 @@ $("#outdentTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![Before Task Outdent in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
+![Before task outdent in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
 
 Before Outdent
 {:.caption}
 
-![After Task Outdent in ASP.NET Webforms Gantt](Editing_images/Editing_img8.png)
+![After task outdent in ASP.NET Webforms Gantt](Editing_images/Editing_img8.png)
 
 After Outdent
 {:.caption}
@@ -485,11 +485,11 @@ $("#deleteTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![Before Task Delete in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
+![Before task delete in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
 Before Delete
 {:.caption}
 
-![After Task Delete in ASP.NET Webforms Gantt](Editing_images/Editing_img9.png)
+![After task delete in ASP.NET Webforms Gantt](Editing_images/Editing_img9.png)
 After Delete
 {:.caption}
 

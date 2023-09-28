@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping with Grid widget for Syncfusion Essential ASP
+title: Enable Grouping in ASP.NET Webforms Grid | Syncfusion
 description: Learn here about how to enable grouping and its functionalities in Syncfusion Essential ASP.NET Webforms Grid Control, its elements, and more.
 platform: aspnet
 control: Grid
@@ -165,7 +165,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Initial Grouping in ASP.NET Webforms Grid](Grouping_images/Grouping_img2.png)
+![Initial grouping in ASP.NET Webforms Grid](Grouping_images/Grouping_img2.png)
 
 
 ## Multi-Column Grouping
@@ -247,7 +247,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Multi-Column Grouping in ASP.NET Webforms Grid](Grouping_images/Grouping_img3.png)
+![Multi-Column grouping in ASP.NET Webforms Grid](Grouping_images/Grouping_img3.png)
 
 
 ## Group Buttons
@@ -329,7 +329,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Group Buttons in ASP.NET Webforms Grid](Grouping_images/Grouping_img4.png)
+![Group buttons in ASP.NET Webforms Grid](Grouping_images/Grouping_img4.png)
 
 
 ## Hide Ungroup Button
@@ -410,7 +410,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Hide Ungroup Button in ASP.NET Webforms Grid](Grouping_images/Grouping_img5.png)
+![Hide ungroup Button in ASP.NET Webforms Grid](Grouping_images/Grouping_img5.png)
 
 
 ## Hide Grouped Column
@@ -491,7 +491,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Hide Grouped Column in ASP.NET Webforms Grid](Grouping_images/Grouping_img6.png)
+![Hide grouped column in ASP.NET Webforms Grid](Grouping_images/Grouping_img6.png)
 
 
 ## AutoSize Drop Area
@@ -648,7 +648,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Hide Drop Area in ASP.NET Webforms Grid](Grouping_images/Grouping_img8.png)
+![Hide drop area in ASP.NET Webforms Grid](Grouping_images/Grouping_img8.png)
 
 
 ## Group Caption Format/Group Caption Template
@@ -755,10 +755,10 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![Group Caption Format in ASP.NET Webforms Grid](Grouping_images/Grouping_img9.png)
+![Group caption format in ASP.NET Webforms Grid](Grouping_images/Grouping_img9.png)
 
 
-![Group Caption Template in ASP.NET Webforms Grid](Grouping_images/Grouping_img10.png)
+![Group caption template in ASP.NET Webforms Grid](Grouping_images/Grouping_img10.png)
 
 ## Handling grouped records count in server-side    
 
