@@ -19,7 +19,7 @@ Essential Studio for ASP.NET is a set of server-side wrappers for Essential Java
 
 ## How to best read this user guide
 
-* The best way to get started is to read the common “[Getting Started](/getting-started-webforms)” document of the component that you would like to start using first. The “Getting Started” guide gives enough information that you need to know before starting to write code. This is the only section that is recommend to read end-to-end before starting to write code, and all other information can be referred when needed.
+* The best way to get started is to read the common “[Getting Started](aspnet/getting-started-webforms)” document of the component that you would like to start using first. The “Getting Started” guide gives enough information that you need to know before starting to write code. This is the only section that is recommend to read end-to-end before starting to write code, and all other information can be referred when needed.
 
 * Once you get familiar with the basics of using the component, the next step will be to start integrating the component into your application. A good starting point will be to refer to the code snippets in the [online sample browser](https://github.com/syncfusion/aspnet-ej1-demos) that contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
