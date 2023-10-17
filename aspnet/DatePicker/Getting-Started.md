@@ -16,11 +16,11 @@ To create a web application and to add necessary assemblies you can use the help
 
 CSS file
 
-* [ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) - includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](https://help.syncfusion.com/js/theming-in-essential-javascript-components#))
+* [ej.web.all.min.css](https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) - includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](https://help.syncfusion.com/js/theming-in-essential-javascript-components))
 
 External script files
 
-* [jQuery](http://jquery.com/#) (from the version 1.7.1 to 3.1.0)
+* [jQuery](https://jquery.com/#) (from the version 1.7.1 to 3.1.0)
 
 N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with our script file ej.globalize.min.js to support the globalization for our widgets. For version lower than 13.4.0.53, refer jQuery.globalize.min.js. jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
@@ -49,7 +49,7 @@ N> From V13.4.0.53 onwards, jQuery.globalize.min.js file has been replaced with 
 
 You can make use of **ej.web.all.min.js** file which encapsulates all EJWEB components and frameworks in single file.
 
-* [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js) - includes all web widgets.
+* [ej.web.all.min.js](https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js) - includes all web widgets.
 
 N>  In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/?hl=en#text-compression-with-gzip) in your server. 
 
@@ -137,11 +137,11 @@ In ASP.NET to bind all the data sources to their server controls, we can use Pag
 
 {% endhighlight %}
 
-N>  Existing EJWEB DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API's of DatePicker behavior.
+N>  Existing EJWEB DatePicker instance can be created by [jQuery.data()](https://api.jquery.com/jQuery.data/#) and you can control the API's of DatePicker behavior.
 
 ## DatePicker events
 
-You can handle the all available [Client side events](http://help.syncfusion.com/js/api/ejdatepicker#events) in Essential JavaScript DatePicker. Refer the below code example to use the client side event in EJWEB DatePicker
+You can handle the all available [Client side events](https://help.syncfusion.com/api/js/ejdatepicker#events) in Essential JavaScript DatePicker. Refer the below code example to use the client side event in EJWEB DatePicker
 
 
 {% highlight html %}
@@ -169,4 +169,4 @@ In Code Behind page,
 
 {% endhighlight %}
 
-Also, EJWEB DatePicker components have support with server side events please refer the [Server Side Events](http://help.syncfusion.com/aspnet/datepicker/server-side-events) section to know about available server side events in this component.
+Also, EJWEB DatePicker components have support with server side events please refer the [Server Side Events](https://help.syncfusion.com/aspnet/datepicker/server-side-events) section to know about available server side events in this component.
