@@ -466,7 +466,7 @@ public Array GetData(){
 
 Orientation, spacings, and position of layout can be customized with a set of properties.
 
-To explore layout properties, refer to [Layout Properties](http://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout.html "Layout Properties").
+To explore layout properties, refer to [Layout Properties](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Layout.html "Layout Properties").
 
 ### Layout Orientation
 
