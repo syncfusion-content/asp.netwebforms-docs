@@ -28,9 +28,9 @@ You can create an ASP.NETProject and add necessary Dll’s and Scripts with t
 
  Add the following code example in the corresponding ASPX page to render Button. Refer the following links to know details on ToggleButton and SplitButton.
 
-ToggleButton : <http://help.syncfusion.com/js/togglebutton/getting-started>
+ToggleButton : <https://help.syncfusion.com/js/togglebutton/getting-started>
 
-SplitButton :  <http://help.syncfusion.com/js/splitbutton/getting-started>
+SplitButton :  <https://help.syncfusion.com/js/splitbutton/getting-started>
 
 
 
