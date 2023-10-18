@@ -26,7 +26,7 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 
 ![ASP.NET Webforms Chart Legend Visibility](Legend_images/Legend_img1.png)
 
-[Click](http://asp.syncfusion.com/demos/web/chart/legendposition1.aspx) here to view the online demo sample for legend customization.
+[Click](https://github.com/syncfusion/aspnet-ej1-demos/blob/master/Chart/LegendPosition1.aspx) here to view the online demo sample for legend customization.
 
 
 ## Legend title
