@@ -44,7 +44,7 @@ In client-side rendered chart can be exported as PNG image or as SVG file.
 
 {% endhighlight %}
 
-[Click](http://asp.syncfusion.com/demos/web/chart/export.aspx) here to view the Export chart online demo sample.
+[Click](https://asp.syncfusion.com/demos/web/chart/export.aspx) here to view the Export chart online demo sample.
 
 
 ## Server-side exporting
