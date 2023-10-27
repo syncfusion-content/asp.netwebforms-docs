@@ -396,7 +396,7 @@ In the view page, add TreeView element and map the properties defined in to the
 
 ## Remote Data
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 [http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript](http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript)
 
 ### OData
@@ -461,10 +461,10 @@ In the view page, add an element to configure TreeView.
     {% endhighlight %}
     
 ### Other Restful web services
-The custom adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
+The custom adaptor concept of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager) allow you to customize or generate your own adaptor which is used to process query and result data. 
 [http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](https://help.syncfusion.com/api/js/ejdatamanager) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to the DataSource property of TreeView.
     
