@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Easy Customization | RadioButton | ASP.NET | Syncfusion
-description: RadioButton easy customization
+description: Learn here all about easy customization in Syncfusion Essential ASP.NET RadioButton component, its elements and more
 platform: aspnet
 control: RadioButton
 documentation: ug
 ---
 
-# Easy Customization
+# Easy Customization in ASP.NET RadioButton
 
 ## Checked status
 
@@ -52,7 +52,7 @@ Configure the CSS styles to align the radio buttons.
 </style>
 {% endhighlight %}
 
-![Checked status](Easy-Customization_images/Easy-Customization_img1.png)
+![ASP.NET RadioButton checked status](Easy-Customization_images/aspnet-radiobutton-checked-status.png)
 
 ## Text
 
@@ -91,7 +91,7 @@ Configure the CSS styles to align the radio buttons.
 </style>
 {% endhighlight %}
 
-![Text](Easy-Customization_images/Easy-Customization_img2.png)
+![ASP.NET RadioButton text](Easy-Customization_images/aspnet-radiobutton-text.png)
 
 ## Size
 
@@ -179,7 +179,7 @@ Configure the CSS styles to align the radio buttons
 </style>
 {% endhighlight %}
 
-![Size](Easy-Customization_images/Easy-Customization_img3.png)
+![ASP.NET RadioButton size](Easy-Customization_images/aspnet-radiobutton-size.png)
 
 ## RTL Support 
 
@@ -231,7 +231,7 @@ Configure the CSS styles to align the RadioButtons.
 
 {% endhighlight %}
 
-![RTL Support](Easy-Customization_images/Easy-Customization_img4.png)
+![ASP.NET RadioButton RTL support](Easy-Customization_images/aspnet-radiobutton-rtl-support.png)
 
 ## Styles Customization
 
@@ -280,4 +280,4 @@ In the following example, the border color and border width of the active RadioB
 
 {% endhighlight %}
 
-![Customization](Easy-Customization_images/Easy-Customization_img5.png)
+![ASP.NET RadioButton customization](Easy-Customization_images/aspnet-radiobutton-customization.png)
