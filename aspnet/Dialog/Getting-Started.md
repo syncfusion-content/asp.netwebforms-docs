@@ -14,7 +14,7 @@ This section helps to understand the getting started of the Dialog widget with t
 
 ## Create a Dialog
 
-Create an ASP Project and add the necessary DLL and scripts with the help of the given [ASP Getting Started](http://help.syncfusion.com/aspnet/getting-started) documentation.
+Create an ASP Project and add the necessary DLL and scripts with the help of the given [ASP Getting Started](https://help.syncfusion.com/aspnet/getting-started/manual-integration-of-syncfusion-aspnet-controls) documentation.
 
 Add the following code snippet to the corresponding ASPX page to render the Dialog.
 
@@ -78,7 +78,7 @@ The Dialog widget can be hidden on initialize using `ShowOnInit` property which 
 
 {% seealso %}
 
-[Button](http://help.syncfusion.com/aspnet/button/getting-started).
+[Button](https://help.syncfusion.com/aspnet/button/getting-started).
 
 {% endseealso %}
 
