@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in ASP.NET Webforms Gantt Control | Syncfusion
-description: Learn here about editing support in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
+title: Editing in ASP.NET Web Forms Gantt Control | Syncfusion
+description: Learn here about editing support in Syncfusion Essential ASP.NET Web Forms Gantt Control, its elements, and more.
 platform: aspnet
 control: Gantt
 documentation: ug
 ---
 
-# Editing in ASP.NET Webforms Gantt
+# Editing in ASP.NET Web Forms Gantt
 
 The Gantt control provides in-built support to add, insert and update the tasks. The following are the types of editing available in Gantt.
 
@@ -32,7 +32,7 @@ Update the task details through grid cell editing by setting `EditSettings.EditM
 {% endhighlight %}
 
 The output of Gantt with cell editing is as follows.
-![Initialize cell edit mode in ASP.NET Webforms Gantt](Editing_images/Editing_img1.png)
+![Initialize cell edit mode in ASP.NET Web Forms Gantt](Editing_images/Editing_img1.png)
 
 ### Save editing cell
 
@@ -116,7 +116,7 @@ Update the task details through edit dialog by setting `EditMode` as `normal`. T
 
 The following screenshot shows the output of `normal` editing.
 
-![Initialize normal edit mode in ASP.NET Webforms Gantt](Editing_images/Editing_img2.png)
+![Initialize normal edit mode in ASP.NET Web Forms Gantt](Editing_images/Editing_img2.png)
 
 ### Define required fields in add/edit dialog
 
@@ -139,7 +139,7 @@ In Gantt we can define the editing fields available in add and edit dialogs by u
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![Define required fields in add/edit dialog in ASP.NET Webforms Gantt](Editing_images/Editing_img4.png)
+![Define required fields in add/edit dialog in ASP.NET Web Forms Gantt](Editing_images/Editing_img4.png)
 
 N> Similarly we can define the required fields in add dialog with `AddDialogFields.Field` and `AddDialogFields.EditType` properties.
 
@@ -175,7 +175,7 @@ function load(args) {
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![Add custom column fields in General tab in ASP.NET Webforms Gantt](Editing_images/Editing_img5.png)
+![Add custom column fields in General tab in ASP.NET Web Forms Gantt](Editing_images/Editing_img5.png)
 
 N> Similarly we can include custom fields in add dialog's General tab by setting `DisplayInGeneralTab` as `true` in `AddDialogFields` collection.
 
@@ -273,7 +273,7 @@ In Gantt, we can add, edit, update the task dependencies by mouse interactions, 
 
 Task dependency can be added by mouse interactions by connecting connector points in predecessor and successor tasks. The following screen shot shows the add dependency action.
 
-![Add dependency in ASP.NET Webforms Gantt](Editing_images/Editing_img3.png)
+![Add dependency in ASP.NET Web Forms Gantt](Editing_images/Editing_img3.png)
 
 ### Edit Dependency
 
@@ -306,13 +306,13 @@ function actionBegin(args) {
 {% endhighlight %}
 
 The following screen shot shows the dependency edit dialog.
-![Edit dependency in ASP.NET Webforms Gantt](Editing_images/Predecessor_Editing_Dialog.png)
+![Edit dependency in ASP.NET Web Forms Gantt](Editing_images/Predecessor_Editing_Dialog.png)
 
 ### Delete Dependency
 
 Task dependency can be deleted by using edit dialog and [`deleteDependency`](/api/js/ejgantt#methods:deletedependency) method. The following screen shot shows the dependency edit dialog with delete option.
 
-![Delete dependency in ASP.NET Webforms Gantt](Editing_images/Predecessor_Editing_Dialog.png)
+![Delete dependency in ASP.NET Web Forms Gantt](Editing_images/Predecessor_Editing_Dialog.png)
 
 [Click](https://asp.syncfusion.com/demos/web/gantt/editing.aspx) here to view the online demo sample for editing in Gantt.
 
@@ -378,7 +378,7 @@ The following code snippet explains how to enable delete confirmation message in
 
 {% endhighlight %}
 
-![Delete confirmation message in ASP.NET Webforms Gantt](Editing_images/deleteConfirmation.png)
+![Delete confirmation message in ASP.NET Web Forms Gantt](Editing_images/deleteConfirmation.png)
 
 The above screen shot shows the appearance of delete confirmation message in Gantt.
 
@@ -409,12 +409,12 @@ $("#indentTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![Before task indent in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
+![Before task indent in ASP.NET Web Forms Gantt](Editing_images/Editing_img6.png)
 
 Before Indent
 {:.caption}
 
-![After task indent in ASP.NET Webforms Gantt](Editing_images/Editing_img7.png)
+![After task indent in ASP.NET Web Forms Gantt](Editing_images/Editing_img7.png)
 
 After Indent
 {:.caption}
@@ -447,12 +447,12 @@ $("#outdentTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![Before task outdent in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
+![Before task outdent in ASP.NET Web Forms Gantt](Editing_images/Editing_img6.png)
 
 Before Outdent
 {:.caption}
 
-![After task outdent in ASP.NET Webforms Gantt](Editing_images/Editing_img8.png)
+![After task outdent in ASP.NET Web Forms Gantt](Editing_images/Editing_img8.png)
 
 After Outdent
 {:.caption}
@@ -485,11 +485,11 @@ $("#deleteTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![Before task delete in ASP.NET Webforms Gantt](Editing_images/Editing_img6.png)
+![Before task delete in ASP.NET Web Forms Gantt](Editing_images/Editing_img6.png)
 Before Delete
 {:.caption}
 
-![After task delete in ASP.NET Webforms Gantt](Editing_images/Editing_img9.png)
+![After task delete in ASP.NET Web Forms Gantt](Editing_images/Editing_img9.png)
 After Delete
 {:.caption}
 

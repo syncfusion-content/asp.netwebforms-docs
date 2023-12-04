@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu in ASP.NET Webforms Gantt Control | Syncfusion
-description: Learn here about context menu support in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
+title: Context Menu in ASP.NET Web Forms Gantt Control | Syncfusion
+description: Learn here about context menu support in Syncfusion Essential ASP.NET Web Forms Gantt Control, its elements, and more.
 platform: aspnet
 control: Gantt
 documentation: ug
 ---
 
-# Context Menu in ASP.NET Webforms Gantt
+# Context Menu in ASP.NET Web Forms Gantt
 
 ## Default Context Menu
 
@@ -43,7 +43,7 @@ The following screenshot shows the Default Context Menu in Gantt control.
 
 
 
-![Default Context Menu in ASP.NET Webforms Gantt](Context-Menu_images/Context-Menu_img1.png)
+![Default Context Menu in ASP.NET Web Forms Gantt](Context-Menu_images/Context-Menu_img1.png)
 
 Default Context Menu
 {:.caption}
@@ -98,7 +98,7 @@ The screenshot of the Custom Context Menu items in Gantt control is as follows.
 
 
 
-![Custom Context Menu in ASP.NET Webforms Gantt](Context-Menu_images/Context-Menu_img2.png)
+![Custom Context Menu in ASP.NET Web Forms Gantt](Context-Menu_images/Context-Menu_img2.png)
 
 
 Custom Context Menu
