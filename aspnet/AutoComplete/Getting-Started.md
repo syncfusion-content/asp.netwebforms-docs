@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Webforms AutoComplete Control| Syncfusion
-description: Learn here about getting started with Syncfusion Essential ASP.NET Webforms AutoComplete Control, its elements, and more.
+title: Getting Started with ASP.NET Webforms AutoComplete | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential ASP.NET Webforms AutoComplete Control, its elements, and more.
 platform: aspnet
 control: AutoComplete
 documentation: ug
@@ -15,7 +15,7 @@ In this ASP.NET section use the flat-lime as the default theme.
 
 The following screenshot illustrates the AutoComplete control that searches the list of components available in the database.
 
-![ASP.NET Webforms AutoComplete Getting Started](Getting-Started_images/Getting-Started_img1.png) 
+![ASP.NET Webforms AutoComplete Getting Started.](Getting-Started_images/Getting-Started_img1.png) 
 
 
 
@@ -49,7 +49,7 @@ Execute the above code to create the AutoComplete textbox as illustrated in th
 
 
 
-![ASP.NET Webforms AutoComplete Create an AutoComplete](Getting-Started_images/Getting-Started_img2.png)
+![ASP.NET Webforms AutoComplete Create an AutoComplete.](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -134,7 +134,7 @@ Select a component/s:
 
 Run this code to render the AutoComplete with components list.
 
-![ASP.NET Webforms AutoComplete local data for AutoComplete](Getting-Started_images/Getting-Started_img3.png)
+![ASP.NET Webforms AutoComplete local data for AutoComplete.](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -166,7 +166,7 @@ Select a component/s:
 
 The following screenshot displays the AutoComplete textbox with selection visual mode.
 
-![ASP.NET Webforms AutoComplete Visual Mode with filter option](Getting-Started_images/Getting-Started_img4.png) 
+![ASP.NET Webforms AutoComplete Visual Mode with filter option.](Getting-Started_images/Getting-Started_img4.png) 
 
 
 
@@ -191,7 +191,7 @@ When you set the HighlightSearch property to ‘true’, the characters typed
 
 The following screenshot displays the AutoComplete textbox with highlight search enabled.
 
-![ASP.NET Webforms AutoComplete Search and Rounded corners](Getting-Started_images/Getting-Started_img5.png) 
+![ASP.NET Webforms AutoComplete Search and Rounded corners.](Getting-Started_images/Getting-Started_img5.png) 
 
 
 ### Configure Popup button
@@ -239,7 +239,7 @@ The following screenshot displays the AutoComplete textbox with dropdown icon.
 
 
 
-![ASP.NET Webforms AutoComplete Configure Popup button](Getting-Started_images/Getting-Started_img6.png)
+![ASP.NET Webforms AutoComplete Configure Popup button.](Getting-Started_images/Getting-Started_img6.png)
 
 
 
