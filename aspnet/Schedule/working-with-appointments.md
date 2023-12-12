@@ -1139,7 +1139,7 @@ EXDATE is used to hold the modified appointment date details (date value) in the
 RECUREDITID<br/><br/></td><td>
 This property contains the Parent Id value of the edited appointment. It is used to track the edited appointment occurrence with its parent recurrence appointment series.<br/><br/><b>For example</b>, when you edit the particular occurrence of the recurrence appointment series, the “RECUREDITID” is added to that edited appointment depicting its parent Id.<br/><br/>Example:<br/><br/>FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;COUNT=10;EXDATE=6/18/2015,6/20/2015;<b>RECUREDITID=1651</b><br/><br/></td></tr>
 </table>
-To know more about other possible combinations of above specified recurrence rule properties, refer [here](http://www.syncfusion.com/kb/3719/what-is-recurrencerule-in-the-schedule-control).
+To know more about other possible combinations of above specified recurrence rule properties, refer [here](https://support.syncfusion.com/kb/article/3918/what-is-recurrencerule-in-the-schedule-control).
 
 {% highlight html %}
 
@@ -1169,7 +1169,7 @@ The default recurrence validation has been included for recurrence appointments 
 
 {% endhighlight %}
 
-N> You can parse the **RecurrenceRule** of an appointment from the server-side by making use of a new generic utility class **RecurrenceHelper**. Refer this [KB document](https://www.syncfusion.com/kb/5390/how-to-parse-the-recurrencerule-in-server-side).
+N> You can parse the **RecurrenceRule** of an appointment from the server-side by making use of a new generic utility class **RecurrenceHelper**. Refer this [KB document](https://support.syncfusion.com/kb/article/5128/how-to-parse-the-recurrencerule-in-server-side-in-aspnet-mvc-scheduler).
 
 ### Recurrence Edit and Delete options
 
