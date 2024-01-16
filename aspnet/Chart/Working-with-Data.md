@@ -166,4 +166,4 @@ N> All the properties in EjChart supports one way AngularJS binding except inner
 
 ![ASP.NET Webforms Chart AngularJS Data Binding](Working-with-Data_images/Working-with-Data_img4.png)
 
-[Click](http://ngjq.syncfusion.com/#/chart/line) here to view the AngularJS data binding online demo sample.	
+[Click](https://ej2.syncfusion.com/home/javascript.html#/chart/line) here to view the AngularJS data binding online demo sample.	
