@@ -66,7 +66,7 @@ The following output is displayed as a result of the above code example.
 ![ASPNET Grid Data Binding](Data-Binding_images/Data-Binding_img1.png)
 
 {% seealso %} 
-Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/dz12d98w(v=vs.140)) for more information on SqlDataSource.
+Refer to this [link](https://learn.microsoft.com/en-us/previous-versions/dz12d98w(v=vs.140)) for more information on SqlDataSource.
 {% endseealso %}
 
 
@@ -168,7 +168,7 @@ The following output is displayed as a result of the above code example.
 ![ASPNET Grid ObjectDataSource](Data-Binding_images/Data-Binding_img2.png)
 
 {% seealso %} 
-Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/9a4kyhcx(v=vs.140)) for more information on ObjectDataSource.
+Refer to this [link](https://learn.microsoft.com/en-us/previous-versions/9a4kyhcx(v=vs.140)) for more information on ObjectDataSource.
 {% endseealso %}
 
 ### XmlDataSource
@@ -208,7 +208,7 @@ The following output is displayed as a result of the above code example.
 ![ASPNET Grid XmlDataSource](Data-Binding_images/Data-Binding_img3.png)
 
 {% seealso %}  
-Refer to this [link](https://docs.microsoft.com/en-us/previous-versions/494y92bs(v=vs.140)) for more information on XmlDataSource
+Refer to this [link](https://learn.microsoft.com/en-us/previous-versions/494y92bs(v=vs.140)) for more information on XmlDataSource
 {% endseealso %}
 
 
@@ -267,7 +267,7 @@ The following output is displayed as a result of the above code example.
 
 ## IEnumerable
 	
-The Grid can be bound with either non-generic collection or generic collection that implements [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-6.0) interface. It can be assigned to Grid’s `DataSource` property.
+The Grid can be bound with either non-generic collection or generic collection that implements [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-6.0) interface. It can be assigned to Grid’s `DataSource` property.
 
 The following code example describes the above behavior.
 
@@ -351,7 +351,7 @@ The following output is displayed as a result of the above code example.
 ![ASPNET Grid EntityFramework](Data-Binding_images/Data-Binding_img6.png)
 
 {% seealso %}  
-For more information on creating and consuming Entity Framework, please refer this [link]( http://www.asp.net/web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1)
+For more information on creating and consuming Entity Framework, please refer this [link](https://learn.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-getting-started/getting-started-with-ef/the-entity-framework-and-aspnet-getting-started-part-1)
 {% endseealso %}
 
 ## LINQ to SQL
@@ -396,7 +396,7 @@ The following output is displayed as a result of the above code example.
 
 
 {% seealso %}
-For more information on using LINQ to SQL please refer to the [link](http://weblogs.asp.net/scottgu/using-linq-to-sql-part-1)
+For more information on using LINQ to SQL please refer to the [link](https://weblogs.asp.net/scottgu/using-linq-to-sql-part-1)
 {% endseealso %}
 
 ## DataTable
@@ -472,7 +472,7 @@ ITypedList provides functionality to discover the schema for a bind-able list, w
 
 To implement ITypedList binding, create a generic type named class that derives from ITypedList interface. Define the named class based on properties descriptor of the Grid Model class, to return list according to the custom implementation.
 
-For more information on ITypedList interface you can refer [here](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?redirectedfrom=MSDN&view=net-6.0)
+For more information on ITypedList interface you can refer [here](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?redirectedfrom=MSDN&view=net-6.0)
 Create a collection of ITypedList and bind it to Grid using `DataSource` property.
 
 The following code example describes the above behavior.
@@ -594,7 +594,7 @@ The following output is displayed as a result of the above code example.
 
 WCF Data Services is a component of the .NET Framework that enables you to create services that use the Open Data Protocol (OData) to expose and consume data over the Web or intranet by using the semantics of representational state transfer (REST).
 
-To create WCF Data Service in your web application refer [here](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework?view=vs-2015&redirectedfrom=MSDN)
+To create WCF Data Service in your web application refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework?view=vs-2015&redirectedfrom=MSDN)
 
 To consume OData service, set the service link to the `URL` property of `DataManager` which is a nested property of Grid Control.
 
