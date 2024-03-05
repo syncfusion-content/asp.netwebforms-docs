@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Captcha | ASP.NET Webforms | Syncfusion
-description: Learn here all about overview of Syncfusion Essential Studio ASP.NET WebForms Captcha control, its elements, and more.
+description: Learn here all about overview of Syncfusion Essential ASP.NET WebForms Captcha control, its elements, and more.
 platform: aspnet
 control: Captcha
 documentation: ug
