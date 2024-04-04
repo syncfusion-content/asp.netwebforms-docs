@@ -17,7 +17,7 @@ By default you can add any text or image to the DropDownList list item. To custo
 
 You can create the popup header by using HeaderTemplate property. You can add any HTML content in header template.
 
-N> Please refer the [How to](http://help.syncfusion.com/aspnet/dropdownlist/howto?cs-save-lang=1&cs-lang=js#add-check-all-option-in-popup-list) for check all option in Header
+N> Please refer the [How to](https://help.syncfusion.com/aspnet/dropdownlist/howto?cs-save-lang=1&cs-lang=js#add-check-all-option-in-popup-list) for check all option in Header
 
 ## Template Field
 
