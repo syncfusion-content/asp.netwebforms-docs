@@ -77,7 +77,7 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 
 ![add ports to node at runtime](Port_images/Port_img1.png)
 
-To explore the set of properties for defining a port, refer to [Port Properties](http://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Port.html  "Port Properties")
+To explore the set of properties for defining a port, refer to [Port Properties](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Port.html  "Port Properties")
 
 ### Update Port at runtime
 
