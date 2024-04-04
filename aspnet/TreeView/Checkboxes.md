@@ -80,7 +80,7 @@ You can use [isNodeChecked](https://help.syncfusion.com/api/js/ejtreeview#method
 
 ## Get Checked Nodes
 
-To get checked nodes of TreeView, you can use [getCheckedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getcheckednodes) method. It returns the collection of checked tree nodes. Also you can get currently checked nodes indexes in TreeView by using [getCheckedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodesindex) method.
+To get checked nodes of TreeView, you can use [getCheckedNodes](https://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodes) method. It returns the collection of checked tree nodes. Also you can get currently checked nodes indexes in TreeView by using [getCheckedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodesindex) method.
     
     {% highlight html %}
     

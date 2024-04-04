@@ -11,7 +11,7 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, How To
 
 ## Update the modified data from tree to database.
 
-TreeView allows us to get the updated tree data after performing such operation like node editing, drag and drop, add and remove node. Using [getTreeData](http://help.syncfusion.com/js/api/ejtreeview#methods:gettreedata) method you can get the updated tree data.
+TreeView allows us to get the updated tree data after performing such operation like node editing, drag and drop, add and remove node. Using [getTreeData](https://help.syncfusion.com/api/js/ejtreeview#methods:gettreedata) method you can get the updated tree data.
 
 Refer the following code block to know how to get updated data from TreeView.
 
@@ -292,12 +292,12 @@ Define menu events in the script as follows,
 
 The output for the context menu for TreeView control is as follows.
 
-![http://help.syncfusion.com/aspnet/treeview/How-To_images/How-To_img1.png](How-To_images/How-To_img1.jpeg)
+![Context menu output](How-To_images/How-To_img1.jpeg)
 
 
 ## Sorted data using refresh method
 
-TreeView allows you to refresh the entire tree data using [refresh](http://help.syncfusion.com/js/api/ejtreeview#methods:refresh) method. Refer the below code block to know how to sort entire tree data using refresh method.
+TreeView allows you to refresh the entire tree data using [refresh](https://help.syncfusion.com/api/js/ejtreeview#methods:refresh) method. Refer the below code block to know how to sort entire tree data using refresh method.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to DataSource property of TreeView.
     
@@ -732,7 +732,7 @@ TreeView allows us to bind and update tree data in mapped data component while a
     
 ## Set tooltip for TreeView nodes
 
-TreeView allows you to set tooltip option to TreeView nodes using [fields.linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute) property of TreeView. Refer the below code block to know how to set tooltip for TreeView nodes.
+TreeView allows you to set tooltip option to TreeView nodes using [fields.linkAttribute](https://help.syncfusion.com/api/js/ejtreeview#members:fields-linkattribute) property of TreeView. Refer the below code block to know how to set tooltip for TreeView nodes.
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to DataSource property of TreeView.
     
