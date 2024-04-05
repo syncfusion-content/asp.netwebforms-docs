@@ -1,13 +1,13 @@
 ---
 title: How To | TreeView | ASP.NET | Syncfusion
-description: How to do - section for TreeView
+description: Learn here about how to do section for TreeView control in Syncfusion ASP.NET its elements, and more.
 platform: aspnet
 control: TreeView
 documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, How To
 ---
 
-# How To
+# How To in ASPNET TreeView Control
 
 ## Update the modified data from tree to database.
 

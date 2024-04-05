@@ -1,6 +1,6 @@
 ---
 title: Template Option| TreeView | ASP.NET | Syncfusion
-description: Rendering TreeView using Template option
+description: Rendering TreeView using Template option in Syncfusion ASP.NET TreeView control, its elements and more.
 platform: aspnet
 control: TreeView
 documentation: UG
@@ -8,7 +8,7 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Template Option
 ---
 
 
-# Template Option
+# Template Option in ASP.NET TreeView Control
 
 Tree nodes can be customized by using '**Template**' property. Treeview template option requires addition JS library called '**JsRender**', which helps to create the structured way of tree nodes with simple codes and increased performance. To know more about JsRender - [https://www.jsviews.com/](https://www.jsviews.com/).  
 

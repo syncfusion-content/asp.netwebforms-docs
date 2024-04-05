@@ -1,13 +1,13 @@
 ---
 title: Tree Node manipulation | TreeView | ASP.NET | Syncfusion
-description: Handling node operations in TreeView
+description: Learn here about handling node operations in Syncfusion ASP.NET TreeView control, its elementa and more.
 platform: aspnet
 control: TreeView
 documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Tree Node
 ---
 
-# Tree Node
+# Tree Node in ASP.NET TreeView Control
 
 TreeView node is structured with expand/ collapse arrow, checkbox, image and text as shown in below.
 
