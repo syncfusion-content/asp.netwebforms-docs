@@ -91,7 +91,7 @@ public static object FileActionDefault(string ActionType, string Path, string Ex
 ![Image from Your Computer](ImageandFilebrowser_images/ImageandFilebrowser_img2.png)
 
 
-N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](http://helpjs.syncfusion.com/js/fileexplorer/overview#).
+N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](https://help.syncfusion.com/js/fileexplorer/overview).
 
 ## Image Properties
 
@@ -104,7 +104,7 @@ You can set or modify the properties of an image by using the image dialog. It a
 
 You can resize an image either manually or by setting width and height in the image dialog. 
 
-N> Set the default height and width of the Images which was inserted into the RTE text area in the client side event called “change” event of RTE - {{'[Link](http://jsplayground.syncfusion.com/Sync_rghpsadi)'| markdownify }}
+N> Set the default height and width of the Images which was inserted into the RTE text area in the client side event called “change” event of RTE - {{'[Link](https://ej2.syncfusion.com/home/javascript.html)'| markdownify }}
 
 ### Resize Manually
 
