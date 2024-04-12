@@ -7,7 +7,7 @@ documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, How To
 ---
 
-# How To in ASPNET TreeView Control
+# How To in ASP.NET TreeView Control
 
 ## Update the modified data from tree to database.
 
