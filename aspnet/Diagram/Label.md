@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Label | Diagram | ASP.NET Webform | Syncfusion
-description: This section explains how to use Essential Diagram control Label's functionality and its behavior.
+description: This section explains how to use Essential Diagram control Label's functionality and its behavior in ASP.NET webforms.
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
-# Label
+# Label in ASP.NET webforms Diagram
 
 **Label** is a block of text that can be displayed over a node or connector. Label is used to textually represent an object with a string that can be edited at run time. You can add Multiple Labels to a node/connector.
 
@@ -47,7 +47,7 @@ You can add a label to a node/connector by defining the label object and adding 
 
 ![Label Properties](/aspnet/Diagram/Label_images/Label_img1.png)
 
-To explore more label properties, refer to [Label Properties](http://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Label.html "Label Properties").
+To explore more label properties, refer to [Label Properties](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Label.html "Label Properties").
 
 ## Update Label at runtime
 
