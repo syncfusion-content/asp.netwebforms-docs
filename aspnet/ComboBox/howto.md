@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cascading in ComboBox widget for Syncfusion Essential WebForm
-description: Describes about the cascading in ComboBox widget for Syncfusion Essential WebForm
+description: Describes about the cascading in ComboBox widget for Syncfusion Essential in ASP.NET WebForm its elements, and more.
 platform: aspnet
 control: ComboBox
 documentation: ug
@@ -217,7 +217,7 @@ In the following sample, showcase that how to work autofill with ComboBox.
 	
 <div class="row">
     <ej:ComboBox ID="searchCustomer" AutoFill="true" runat="server" Width="100%" DataTextField="ContactName" Placeholder="Search a customer">
-        <DataManager URL="http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/" CrossDomain="true"></DataManager>
+        <DataManager URL="https://ej2.syncfusion.com/home/javascript.html" CrossDomain="true"></DataManager>
     </ej:ComboBox>
 </div>
 
@@ -240,7 +240,7 @@ In the following sample, showcase that how to work autofill with ComboBox.
 
 Validation of ComboBox can be done on form submission using jQuery Validations by adding name attribute for ComboBox through `htmlAttributes` property. Also, you can remove this error message during item selection through select or change event of ComboBox
 
-N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+N> [jquery.validate.min](https://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](https://jqueryvalidation.org/documentation/).
 
 {% tabs %}
 
