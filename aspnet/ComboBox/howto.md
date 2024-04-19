@@ -8,7 +8,7 @@ documentation: ug
 keywords: ComboBox, combobox, Cascading ComboBox, Autofill supported with ComboBox
 ---
 
-# How To
+# How To in ASP.NET webforms ComboBox
 
 ## Configure the Cascading ComboBox
 
@@ -240,7 +240,7 @@ In the following sample, showcase that how to work autofill with ComboBox.
 
 Validation of ComboBox can be done on form submission using jQuery Validations by adding name attribute for ComboBox through `htmlAttributes` property. Also, you can remove this error message during item selection through select or change event of ComboBox
 
-N> [jquery.validate.min](https://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](https://jqueryvalidation.org/documentation/).
+N> [jquery.validate.min](https://help.syncfusion.com/js/cdn) script file should be referred for validation, for more details, refer [here](https://jqueryvalidation.org/documentation/).
 
 {% tabs %}
 
