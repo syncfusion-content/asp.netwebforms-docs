@@ -1,6 +1,6 @@
 ---
 title: Template Option| TreeView | ASP.NET | Syncfusion
-description: Rendering TreeView using Template option
+description: Rendering TreeView using Template option in Syncfusion ASP.NET TreeView control, its elements and more.
 platform: aspnet
 control: TreeView
 documentation: UG
@@ -8,9 +8,9 @@ keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Template Option
 ---
 
 
-# Template Option
+# Template Option in ASP.NET TreeView Control
 
-Tree nodes can be customized by using '**Template**' property. Treeview template option requires addition JS library called '**JsRender**', which helps to create the structured way of tree nodes with simple codes and increased performance. To know more about JsRender - [http://www.jsviews.com/](http://www.jsviews.com/#).  
+Tree nodes can be customized by using '**Template**' property. Treeview template option requires addition JS library called '**JsRender**', which helps to create the structured way of tree nodes with simple codes and increased performance. To know more about JsRender - [https://www.jsviews.com/](https://www.jsviews.com/).  
 
 In the code behind page, create a data list which contains the details about tree nodes and map the list data to DataSource property of TreeView.
     
@@ -180,7 +180,7 @@ In the view page, specify template format and add TreeView element
     
 **Custom action in nodes**
 
-You can able to perform custom action in TreeView template node. You can able to perform node delete operation while clicking delete icon by using [removeNode](http://help.syncfusion.com/js/api/ejtreeview#methods:removenode) method of TreeView as shown in below code example.
+You can able to perform custom action in TreeView template node. You can able to perform node delete operation while clicking delete icon by using [removeNode](https://help.syncfusion.com/api/js/ejtreeview#methods:removenode) method of TreeView as shown in below code example.
     
     {% highlight html %}
     
