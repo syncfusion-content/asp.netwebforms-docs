@@ -1,13 +1,13 @@
 ---
 title: Checkboxes in TreeView | TreeView | ASP.NET | Syncfusion
-description: Specify checkboxes in TreeView and its settings
+description: Learn here about specifying checkboxes in Syncfusion ASP.NET TreeView control, its settings and more. 
 platform: aspnet
 control: TreeView
 documentation: UG
 keywords: TreeView,  Syncfusion, ASP Web TreeView UG Doc, Checkboxes
 ---
 
-# Checkboxes
+# Checkboxes in ASP.NET TreeView Control
 
 TreeView consists of built-in checkbox option and it can be displayed to the left of the tree node by setting the **ShowCheckbox** property as true. It allows you to select more than one node at a time. 
 
@@ -80,7 +80,7 @@ You can use [isNodeChecked](https://help.syncfusion.com/api/js/ejtreeview#method
 
 ## Get Checked Nodes
 
-To get checked nodes of TreeView, you can use [getCheckedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getcheckednodes) method. It returns the collection of checked tree nodes. Also you can get currently checked nodes indexes in TreeView by using [getCheckedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodesindex) method.
+To get checked nodes of TreeView, you can use [getCheckedNodes](https://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodes) method. It returns the collection of checked tree nodes. Also you can get currently checked nodes indexes in TreeView by using [getCheckedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getcheckednodesindex) method.
     
     {% highlight html %}
     
