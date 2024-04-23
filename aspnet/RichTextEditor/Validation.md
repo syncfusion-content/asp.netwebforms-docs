@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation in RichTextEditor | Syncfusion | ASP.NET Webform
-description:Learn here about Validation to format in Syncfusion ASP.NET RichTextEditor control its element and more
+description: Learn here about Validation to format in Syncfusion ASPNET RichTextEditor control its element and more
 platform: aspnet
 control: RTE
 documentation: ug
