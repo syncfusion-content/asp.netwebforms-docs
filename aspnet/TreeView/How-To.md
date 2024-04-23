@@ -937,7 +937,7 @@ In the view page, add TreeView element and map the properties defined in to the
                 width: 16px;
                 height: 16px;
                 background-repeat: no-repeat;
-                background-image: url("http://jsplayground.syncfusion.com/13.3.0.7/themes/web/images/ui-icons/ui-icons-default.png");
+                background-image: url(https://ej2.syncfusion.com/home/javascript.html);
             }
     
             .customize .e-icon.e-plus:before, .customize .e-icon.e-minus:before {
