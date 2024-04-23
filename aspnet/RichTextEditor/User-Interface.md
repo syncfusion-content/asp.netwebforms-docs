@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Interface for the RichTextEditor | Syncfusion | ASP.NET
-description: User Interface for RichTextEditor control (toolbar, content area, and footer)
+description: Learn here about User Interface in ASP.NET Webforms RichTextEditor controls (toolbar, content area, and footer) its elements and more
 platform: aspnet
 control: RTE
 documentation: ug
@@ -9,7 +9,7 @@ keywords: RichTextEditor, Toolbar Configuration, Toolbar Items, Custom Tools
 
 ---
 
-# Toolbar Configuration
+# Toolbar Configuration in ASP.NET Webform RichTextEditor
 
 The editor’s toolbar contains a collection of tools such as bold, italic and text alignment buttons that are used to format the content.
 
@@ -21,17 +21,17 @@ However, in most integrations, it's desirable to change the toolbar configuratio
     <th> Description <br/><br/></th>
 </tr>
 <tr>
-    <td> {{'[toolsList](http://help.syncfusion.com/js/api/ejrte#members:toolslist)'| markdownify }} <br/><br/></td>
+    <td> {{'[toolsList](https://help.syncfusion.com/api/js/ejrte#members:toolslist)'| markdownify }} <br/><br/></td>
     <td>  The toolsList option allows you to choose which tools appear on the toolbar, as well as the order and grouping of those items <br/><br/></td>
 </tr>
 <tr>
-    <td> {{'[tools](http://help.syncfusion.com/js/api/ejrte#members:tools)'| markdownify }} <br/><br/></td>
+    <td> {{'[tools](https://help.syncfusion.com/api/js/ejrte#members:tools)'| markdownify }} <br/><br/></td>
     <td> The toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups displayed.<br/><br/></td>
 </tr>
 </table>
 
 N> By default, when you tab from the textbox to the RTE, the first tools in the Toolbar of RTE will get focus not in the text area. <BR>
-But we can able to focus the RTE text area by setting the tab index attribute as -1 to avoid the focus on RTE toolbar when we tab from textbox to RTE - {{'[Demo](http://jsplayground.syncfusion.com/Sync_1rlmhqbz)'| markdownify }}
+But we can able to focus the RTE text area by setting the tab index attribute as -1 to avoid the focus on RTE toolbar when we tab from textbox to RTE - {{'[Demo](https://ej2.syncfusion.com/home/javascript.html)'| markdownify }}
 
 ## Toolbar Items
 
