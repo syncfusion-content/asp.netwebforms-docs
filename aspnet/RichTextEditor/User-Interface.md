@@ -9,7 +9,7 @@ keywords: RichTextEditor, Toolbar Configuration, Toolbar Items, Custom Tools
 
 ---
 
-# Toolbar Configuration in ASP.NET Web form RichTextEditor
+# Toolbar Configuration in ASP.NET Web Form RichTextEditor
 
 The editor’s toolbar contains a collection of tools such as bold, italic and text alignment buttons that are used to format the content.
 
