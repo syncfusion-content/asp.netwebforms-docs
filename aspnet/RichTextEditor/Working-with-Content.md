@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with content related operation|RTE|Syncfusion|ASP.NET
-description: Learn here all about Working with Content related changes in ASP.NET Webforms RichTextEditor its elements, and more.
+description: Learn here all about Working with content related changes in Syncfusion ASP.NET Webforms RichTextEditor its elements, and more.
 platform: aspnet
 control: RTE
 documentation: ug
