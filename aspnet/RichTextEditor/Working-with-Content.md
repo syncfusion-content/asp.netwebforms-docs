@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Working with content related operation|RTE|Syncfusion|ASP.NET
-description: Working with Content related changes in RichTextEditor control
+description: Learn here all about Working with content related changes in Syncfusion ASP.NET Webforms RichTextEditor its elements, and more.
 platform: aspnet
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Submit Content, Refresh, IFrame Attributes, Persistence
 
 ---
-# Working with Content
+# Working with Content in ASP.NET RichTextEditor
 
 The editor creates the iframe element as the content area on control initialization, it is used to display and editing the content. In Content Area, the editor displays only the body tag of a &lt; iframe &gt; document. To set or modify details in the &lt; head &gt; tag, use [Source view](#footer#source-view) of the editor.
 
@@ -42,8 +42,8 @@ AllToolsSample.IFrameAttributes = new Dictionary<string, object> { { "style", "b
 
 {% endhighlight %}
 
-N> Background image for the RTE control : {{'[Link](http://jsplayground.syncfusion.com/Sync_cpaoqshs)'| markdownify }} <BR>
-Set default font for the Iframe : {{'[Link](http://jsplayground.syncfusion.com/Sync_k2uwsibi)'| markdownify }}
+N> Background image for the RTE control : {{'[Link](https://ej2.syncfusion.com/home/javascript.html)'| markdownify }} <BR>
+Set default font for the Iframe : {{'[Link](https://ej2.syncfusion.com/home/javascript.html)'| markdownify }}
 
 ## Adding CSS File
 
@@ -138,7 +138,7 @@ The ContentEditable attribute allows you to make any element of HTML content to 
 	
 {% endhighlight %}
 
-N> Content editable is fully compatible with latest browsers, to know more details, see [here](http://www.w3schools.com/tags/att_global_contenteditable.asp#).
+N> Content editable is fully compatible with latest browsers, to know more details, see [here](https://www.w3schools.com/tags/att_global_contenteditable.asp).
 
 ## Submit Content
 
@@ -161,7 +161,7 @@ The editor allows you to process its content before it is being submitted to the
 
 ## Refresh
 
-When you move the editor’s wrapper element into another DOM element, the editor needs to be reinitialized by the [refresh](http://help.syncfusion.com/js/api/ejrte#methods:refresh) method to retain its content. The method reload the content area and rebind the events of the editor. 
+When you move the editor’s wrapper element into another DOM element, the editor needs to be reinitialized by the [refresh](https://help.syncfusion.com/api/js/ejrte#methods:refresh) method to retain its content. The method reload the content area and rebind the events of the editor. 
 
 {% highlight html %}
 
@@ -198,7 +198,7 @@ When you move the editor’s wrapper element into another DOM element, the edito
 
 The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the EnablePersistence property to true, the persistence will be enabled in the editor.
 
-N>  [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
+N>  [local storage](https://www.w3schools.com/html/html5_webstorage.asp) is not supported below ie9 version, therefore persistence support is fallback to [cookie](https://www.w3schools.com/js/js_cookies.asp).
 
 {% highlight html %}
 
