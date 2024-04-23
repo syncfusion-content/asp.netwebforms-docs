@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation in RichTextEditor | Syncfusion | ASP.NET Webform
-description: Validation to format the RichTextEditor control's content
+description:Learn here about Validation to format in Syncfusion ASP.NET RichTextEditor control its element and more
 platform: aspnet
 control: RTE
 documentation: ug
@@ -9,11 +9,11 @@ keywords: RichTextEditor, Validation, JQuery Validation, ASP Validation
 
 ---
 
-# Validation 
+# Validation in ASP.NET RichTextEditor
 
 Validate the RichTextEditor’s value on form submission by applying ValidationRules and ValidationMessage to the RichTextEditor.
 
-N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+N> [jquery.validate.min](https://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](https://jqueryvalidation.org/documentation/).
 
 ## jQuery Validation Methods
 
