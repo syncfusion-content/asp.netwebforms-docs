@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in DropDownList control for Syncfusion ASP.NET WebForm
-description: Customization in DropDownList control for Syncfusion ASP.NET WebForm
+description: Learn here about customization in DropDownList control for Syncfusion ASP.NET WebForm its elements and more
 platform: aspnet
 control: DropDownList
 documentation: ug
