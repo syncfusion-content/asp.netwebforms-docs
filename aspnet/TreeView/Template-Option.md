@@ -1,6 +1,6 @@
 ---
 title: Template Option| TreeView | ASP.NET | Syncfusion
-description: Rendering TreeView using Template option in Syncfusion ASP.NET TreeView control, its elements and more.
+description: learn here about Rendering TreeView using Template option in Syncfusion ASP.NET TreeView control, its elements and more.
 platform: aspnet
 control: TreeView
 documentation: UG
@@ -87,7 +87,7 @@ In the view page, specify template format and add TreeView element
             {{"{{"}}else{{}}}}
                 <div class="cont-list">
                     <img class="con-img"
-                        src="http://asp.syncfusion.com/demos/web/Content/images/treeview/template-image-{{"{{"}}>ImageId{{}}}}.png" />
+                        src="https://ej2.syncfusion.com/home/javascript.html" />
                     <div class="cont-delete"></div>
                     <div class="cont-details">
                         <b>{{"{{"}}>Name{{}}}}</b><br />
@@ -159,7 +159,7 @@ In the view page, specify template format and add TreeView element
             }
     
             .cont-delete {
-                background-image: url("http://asp.syncfusion.com/demos/web/Content/images/treeview/remove-icon.png");
+                background-image: url("https://ej2.syncfusion.com/home/javascript.html");
                 background-position: -6px -10px;
                 background-repeat: no-repeat;
                 float: right;
