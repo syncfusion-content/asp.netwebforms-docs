@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Page-Settings | Diagram | ASP.NET Webform | Syncfusion
-description: This section explains how to customize the size and appearance of the Diagram pages.
+description: Learn here about page settings in Diagram for Syncfusion ASP.NET WebForm controls its elements and more
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
 
-# Page Settings 
+# Page Settings in ASP.NET Diagram
 
 Page settings enable to customize the appearance, width, and height of the Diagram page.
 
@@ -19,7 +19,7 @@ Page settings enable to customize the appearance, width, and height of the Diagr
 The size and appearance of the Diagram pages can be customized with the `PageSettings` property. 
 
 The `PageWidth` and `PageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties.
-To explore those properties, refer [Page Settings](http://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.PageSettings.html "Page Settings").
+To explore those properties, refer [Page Settings](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.PageSettings.html).
 
 You can also customize the appearance of off-page regions with the property `BackgroundColor`.
 
