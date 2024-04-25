@@ -74,7 +74,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-![ASPNET DataTimePicker DateTime format](Display-format_images/Display-format_img1.png) 
+![ASPNET DateTimePicker DateTime format](display-format_images/aspnet-datetimepicker-datetime-format.png) 
 
 
 
@@ -122,7 +122,7 @@ In the ASPX page, include the following DateTimePicker control code example.
 
 
 
-![ASPNET DateTimePicker Day Header format](Display-format_images/Display-format_img2.png) 
+![ASPNET DateTimePicker Day Header format](display-format_images/aspnet-datetimepicker-day-header-format.png) 
 
 
 
