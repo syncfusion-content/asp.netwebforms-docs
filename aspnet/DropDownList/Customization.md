@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in DropDownList control for Syncfusion ASP.NET WebForm
-description: Customization in DropDownList control for Syncfusion ASP.NET WebForm
+description: Learn here about customization in DropDownList control for Syncfusion ASP.NET WebForm its elements and more
 platform: aspnet
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: Customization, DropDownList, dropdown, watermark text
 
 ---
 
-# Customization
+# Customization in ASP.NET DropDownList
 
 ## Adding watermark text
 
@@ -29,9 +29,9 @@ It provides the short description of the expected value in dropdown and will dis
         
 {% endhighlight %}
 
-![ ](Customization_images/Customization_img1.jpeg)
+![Customization in ASP.NET DropDownList](customization_images/aspnet-dropdownlist-customization.jpeg)
 
-![ ](Customization_images/Customization_img2.jpeg)
+![ Adding watermark text in ASPNET DropDownList](customization_images/aspnet-dropdownlist-adding-watermark-text.jpeg)
 
 ## Applying Rounded Corner
 
@@ -51,7 +51,7 @@ You can use ShowRoundedCorner property to add rounded borders to the input and p
         
 {% endhighlight %}
 
-![ ](Customization_images/Customization_img3.jpeg)
+![Applying Rounded Corner in ASPNET DropDownList ](customization_images/aspnet-dropdownlist-applying-rounded-corner.jpeg)
 
 I> The browser support details for rounded corner is given [here](http://www.w3schools.com/cssref/css3_pr_border-radius.asp).
 
@@ -73,7 +73,7 @@ The Enabled property is used to indicate whether the control can respond to the 
     
 {% endhighlight %}
     
-![ ](Customization_images/Customization_img4.jpeg)
+![Enable/Disable the Control ](customization_images/aspnet-dropdownlist-enable-disable-the-control.jpeg)
 
 ## Applying HTML Attributes
 
@@ -110,5 +110,5 @@ Additional HTML attributes can be applied to the control by using HtmlAttributes
     
 {% endtabs %}
 
-![ ](Customization_images/Customization_img5.jpeg)
+![Applying HTML Attributes ](customization_images/aspnet-dropdownlist-applying-html-attributes.jpeg)
 
