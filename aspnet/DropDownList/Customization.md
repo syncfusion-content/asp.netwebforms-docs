@@ -29,7 +29,7 @@ It provides the short description of the expected value in dropdown and will dis
         
 {% endhighlight %}
 
-![Customization in ASPNET DropDownList](customization_images/aspnet-dropdownlist-customization.jpeg)
+![Customization in ASP.NET DropDownList](customization_images/aspnet-dropdownlist-customization.jpeg)
 
 ![ Adding watermark text in ASPNET DropDownList](customization_images/aspnet-dropdownlist-adding-watermark-text.jpeg)
 
