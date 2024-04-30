@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend | CircularGauge | ASP.NET Webforms | Syncfusion
-description:  Learn here about legends in CircularGauge control for Syncfusion ASP.NET WebForm controls its elements and more.
+description: Learn here about legend support in Syncfusion ASP.NET Web Forms Circular Gauge control, along with its various elements and additional features.
 platform: aspnet
 control: Circular Gauge
 documentation: ug
@@ -24,7 +24,7 @@ By default, the legend will not be displayed in the circular gauge. You can enab
 
 {% endhighlight %}
 
-![ASPNET CircularGauge Legend image1](Legend_images/Legend_img1.png)
+![ASP.NET CircularGauge Legend image1](Legend_images/Legend_img1.png)
 
 
 [Click](https://ej2.syncfusion.com/javascript/demos/#/material3/circular-gauge/default-functionalities.html) here to view the online demo sample for  legend in the circular Gauge.
