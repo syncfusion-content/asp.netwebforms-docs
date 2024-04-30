@@ -7,7 +7,7 @@ control: Circular Gauge
 documentation: ug
 ---
 
-# Legend in ASP.NET CircularGuage
+# Legend in ASP.NET CircularGauge
 
 The `Legend` contains the list of the ranges that appear in the circular gauge  
 
