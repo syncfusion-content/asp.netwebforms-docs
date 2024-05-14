@@ -87,7 +87,7 @@ In the view page, specify template format and add TreeView element
             {{"{{"}}else{{}}}}
                 <div class="cont-list">
                     <img class="con-img"
-                        src="https://ej2.syncfusion.com/home/javascript.html" />
+                        src="http://asp.syncfusion.com/demos/web/Content/images/treeview/template-image-{{"{{"}}>ImageId{{}}}}.png" />
                     <div class="cont-delete"></div>
                     <div class="cont-details">
                         <b>{{"{{"}}>Name{{}}}}</b><br />
