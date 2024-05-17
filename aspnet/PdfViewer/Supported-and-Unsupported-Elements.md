@@ -8,7 +8,7 @@ documentation: ug
 keywords: PDF viewer, pdfviewer
 ---
 
-## Supported and Unsupported Elements
+# Supported and Unsupported Elements
 
 The supported and un-supported elements of the PDF viewer control are:
 
