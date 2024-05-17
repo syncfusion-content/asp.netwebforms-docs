@@ -64,7 +64,7 @@ The following screenshot displays the customization of Context menu in TreeGrid 
 
 ![](Context-Menu_images/Context-Menu_img2.png) 
 
-# Header Context Menu
+### Header Context Menu
 Header context menu can be enabled by setting `ShowContextMenu` as `true`. The default value of the `ShowContextMenu` property is `false`.
 
 Following options are shown in header context menu. 
