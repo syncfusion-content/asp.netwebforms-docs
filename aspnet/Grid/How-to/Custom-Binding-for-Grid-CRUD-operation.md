@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Binding for Grid CRUD operation | Grid | ASP.NET Webforms | Syncfusion
-description: custom binding for grid crud operation
+title: Custom binding in ASP.NET Web Forms Grid Control | Syncfusion
+description: Learn here all about custom binding for grid crud operation in Syncfusion ASP.NET Web Forms Grid control, its elements and more.
 platform: aspnet
 control: Control Name undefined
 documentation: ug
