@@ -7,7 +7,7 @@ control: Control Name undefined
 documentation: ug
 ---
 
-# Custom Binding for Grid CRUD operation
+# Custom Binding for Grid CRUD operation in ASP.NET Web Forms Grid
 
 In Grid control, DataManager is used for data processing. The adaptors of dataManager are customizable that can be extended for custom Binding with server-side for Grid CRUD operation.
 
