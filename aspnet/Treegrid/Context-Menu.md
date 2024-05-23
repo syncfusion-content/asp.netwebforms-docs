@@ -62,7 +62,7 @@ function customMenuClick(args) {
 
 The following screenshot displays the customization of Context menu in TreeGrid control.
 
-![Context menu ustomization in ASP.NET Web Forms TreeGrid](context-menu_images/aspnet-web-forms-treegrid-context-menu-customization.png) 
+![Context menu customization in ASP.NET Web Forms TreeGrid](context-menu_images/aspnet-web-forms-treegrid-context-menu-customization.png) 
 
 ## Header Context Menu
 Header context menu can be enabled by setting `ShowContextMenu` as `true`. The default value of the `ShowContextMenu` property is `false`.
