@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Adaptors in ASP.NET Web Forms Grid Control | Syncfusion
+title: Data Adaptors in ASP.NET Web Forms Grid | Syncfusion
 description: Learn here all about data adaptors support in Syncfusion Essential ASP.NET Web Forms Grid controls, it's elements and more.
 platform: aspnet
 control: Grid

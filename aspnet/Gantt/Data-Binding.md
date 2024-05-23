@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ASP.NET Web Forms Gantt Control | Syncfusion
+title: Data Binding in ASP.NET Web Forms Gantt | Syncfusion
 description: Learn here all about data binding support in Syncfusion Essential ASP.NET Web Forms Gantt control, it's elements and more.
 platform: aspnet
 control: Gantt
