@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in DropDownList control for Syncfusion ASP.NET WebForm
-description: Customization in DropDownList control for Syncfusion ASP.NET WebForm
+title: Customization in ASP.NET Web Form DropDownList Control | Syncfusion 
+description: Learn here all about customization support in Syncfusion Essential ASP.NET Web Form DropDownList control, it's elements and more. 
 platform: aspnet
 control: DropDownList
 documentation: ug
@@ -9,7 +9,8 @@ keywords: Customization, DropDownList, dropdown, watermark text
 
 ---
 
-# Customization
+
+# Customization in ASP.NET Web Forms DropDownList
 
 ## Adding watermark text
 
@@ -29,9 +30,9 @@ It provides the short description of the expected value in dropdown and will dis
         
 {% endhighlight %}
 
-![ ](Customization_images/Customization_img1.jpeg)
+![Customization in ASP.NET Web Forms DropDownList.](customization_images/aspnet-web-forms-dropdownlist-customization.jpeg)
 
-![ ](Customization_images/Customization_img2.jpeg)
+![Adding watermark text in ASP.NET Web Forms DropDownList.](customization_images/aspnet-web-forms-dropdownlist-adding-watermark-text.jpeg)
 
 ## Applying Rounded Corner
 
@@ -51,7 +52,7 @@ You can use ShowRoundedCorner property to add rounded borders to the input and p
         
 {% endhighlight %}
 
-![ ](Customization_images/Customization_img3.jpeg)
+![Applying rounded corner in ASP.NET Web Forms DropDownList.](customization_images/aspnet-web-forms-dropdownlist-applying-rounded-corner.jpeg)
 
 I> The browser support details for rounded corner is given [here](http://www.w3schools.com/cssref/css3_pr_border-radius.asp).
 
@@ -73,7 +74,7 @@ The Enabled property is used to indicate whether the control can respond to the 
     
 {% endhighlight %}
     
-![ ](Customization_images/Customization_img4.jpeg)
+![Enable or disable in ASP.NET Web Forms DropDownList.](customization_images/aspnet-web-forms-dropdownlist-enable-or-disable.jpeg)
 
 ## Applying HTML Attributes
 
@@ -110,5 +111,5 @@ Additional HTML attributes can be applied to the control by using HtmlAttributes
     
 {% endtabs %}
 
-![ ](Customization_images/Customization_img5.jpeg)
+![Applying HTML attributes in ASP.NET Web Forms DropDownList.](customization_images/aspnet-web-forms-dropdownlist-applying-html-attributes.jpeg)
 
