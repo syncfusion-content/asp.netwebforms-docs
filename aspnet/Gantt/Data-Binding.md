@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Data Binding | Gantt | ASP.NET Webforms | Syncfusion
-description: data binding
+title: Data Binding in ASP.NET Web Forms Gantt Control | Syncfusion
+description: Learn here all about data binding support in Syncfusion Essential ASP.NET Web Forms Gantt control, it's elements and more.
 platform: aspnet
 control: Gantt
 documentation: ug
 ---
 
-# Data Binding
+
+# Data Binding in ASP.NET Web Forms Gantt
 
 Data binding is the process that establishes a connection between the application and different kinds of data sources such as business objects.
 
@@ -299,7 +300,7 @@ The output of the above steps is as follows.
 
 
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![Data binding in ASP.NET Web Forms Gantt.](data-binding_images/aspnet-web-forms-gantt-data-binding.png)
 
 Data Binding
 {:.caption}
@@ -747,7 +748,7 @@ The following screenshot shows the output of the above steps.
 
 
 
-![](Data-Binding_images/Data-Binding_img2.png) 
+![Flat data in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-flat-data.png) 
 
 Self-Referential Data Binding
 {:.caption}
@@ -799,8 +800,8 @@ The following code example describes the above behavior.
 
 The following output is displayed for the code above,
 
-![](Data-Binding_images/Data-Binding_img3.png)
-![](Data-Binding_images/Data-Binding_img4.png)
+![Remote data in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-remote-data.png)
+![OData in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-odata.png)
 
 ### WebAPI
 
@@ -846,5 +847,5 @@ namespace GanttExportService {
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Binding_images/Data-Binding_img5.png)
-![](Data-Binding_images/Data-Binding_img6.png)
+![WebAPI in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-webapi.png)
+![WebAPI service data in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-webapi-service-data.png)
