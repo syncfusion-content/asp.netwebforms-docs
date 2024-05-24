@@ -26,7 +26,7 @@ The `ContextMenuItems` property is used to add the menu items to context menu, t
 
 The following screenshot displays the Context menu in TreeGrid control.
 
- ![Context menu in ASP.NET Web Forms TreeGrid](context-menu_images/aspnet-web-forms-treegrid-context-menu.png) 
+ ![Context menu in ASP.NET Web Forms TreeGrid.](context-menu_images/aspnet-web-forms-treegrid-context-menu.png) 
 
 
 
@@ -62,7 +62,7 @@ function customMenuClick(args) {
 
 The following screenshot displays the customization of Context menu in TreeGrid control.
 
-![Context menu customization in ASP.NET Web Forms TreeGrid](context-menu_images/aspnet-web-forms-treegrid-context-menu-customization.png) 
+![Context menu customization in ASP.NET Web Forms TreeGrid.](context-menu_images/aspnet-web-forms-treegrid-context-menu-customization.png) 
 
 ## Header Context Menu
 Header context menu can be enabled by setting `ShowContextMenu` as `true`. The default value of the `ShowContextMenu` property is `false`.
@@ -91,7 +91,7 @@ The below code snippet explains how to enable header context menu in TreeGrid
 
 The following screenshot displays the Header context menu in TreeGrid control.
 
-![Header context menu in ASP.NET Web Forms TreeGrid](context-menu_images/aspnet-web-forms-treegrid-header-context-menu.png)
+![Header context menu in ASP.NET Web Forms TreeGrid.](context-menu_images/aspnet-web-forms-treegrid-header-context-menu.png)
 
 
 
