@@ -748,7 +748,7 @@ The following screenshot shows the output of the above steps.
 
 
 
-![Flat data in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-flat-data.png) 
+![Flat data in ASP.NET Web Forms Gantt.](data-binding_images/aspnet-web-forms-gantt-flat-data.png) 
 
 Self-Referential Data Binding
 {:.caption}
@@ -800,8 +800,8 @@ The following code example describes the above behavior.
 
 The following output is displayed for the code above,
 
-![Remote data in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-remote-data.png)
-![OData in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-odata.png)
+![Remote data in ASP.NET Web Forms Gantt.](data-binding_images/aspnet-web-forms-gantt-remote-data.png)
+![OData in ASP.NET Web Forms Gantt.](data-binding_images/aspnet-web-forms-gantt-odata.png)
 
 ### WebAPI
 
@@ -847,5 +847,5 @@ namespace GanttExportService {
 
 The following output is displayed as a result of the above code example.
 
-![WebAPI in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-webapi.png)
-![WebAPI service data in ASP.NET Web Form Gantt.](data-binding_images/aspnet-web-forms-gantt-webapi-service-data.png)
+![WebAPI in ASP.NET Web Forms Gantt.](data-binding_images/aspnet-web-forms-gantt-webapi.png)
+![WebAPI service data in ASP.NET Web Forms Gantt.](data-binding_images/aspnet-web-forms-gantt-webapi-service-data.png)

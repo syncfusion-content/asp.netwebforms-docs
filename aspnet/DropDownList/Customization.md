@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ASP.NET Web Form DropDownList Control | Syncfusion 
-description: Learn here all about customization support in Syncfusion Essential ASP.NET Web Form DropDownList control, it's elements and more. 
+title: Customization in ASP.NET Web Forms DropDownList Control | Syncfusion 
+description: Learn here all about customization support in Syncfusion Essential ASP.NET Web Forms DropDownList control, it's elements and more. 
 platform: aspnet
 control: DropDownList
 documentation: ug
