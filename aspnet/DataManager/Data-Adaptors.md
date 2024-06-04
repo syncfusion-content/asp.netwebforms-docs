@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Adaptors | DataManager | ASP.NET Webforms | Syncfusion
-description: Learn about data adaptors support in Syncfusion ASP.NET Webforms DataManager control and more details.
+title: Data adaptors in ASP.NET Web Forms Data Manager | Syncfusion
+description: Learn about data adaptors support in Syncfusion ASP.NET Web Forms Data Manager control, its elements and more.
 platform: aspnet
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: JSON Adaptor, URL Adaptor, OData Adaptor, Odata4 Adaptor, WebApi Adapt
 
 ---
 
-# Data Adaptors
+# Data adaptors in ASP.NET Web Forms Data Manager Control
 
 DataManager uses adaptors to process data. There are three types of adaptors in DataManager. They are
 

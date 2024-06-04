@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding | AutoComplete | ASP.NET Webforms | Syncfusion
-description: This section explains how to bind the data source key value mapping in the Syncfusion ASP.NET Web Forms Autocomplete component.
+title: Data binding in ASP.NET Web Forms AutoComplete | Syncfusion
+description: Learn here all about data binding support in Syncfusion Essential ASP.NET Web Forms AutoComplete component, its elements, and more.
 platform: aspnet
 control: AutoComplete
 documentation: ug
 ---
 
-# Data-Binding
+# Data binding in ASP.NET Web Forms AutoComplete Control
 
 In order to render the AutoComplete control, the data needs to be bound to it in a proper way. The following sub-properties provide a way to bind, either the local or remote data, to the AutoComplete control, by binding the appropriate data fields to the corresponding options.
 
