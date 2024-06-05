@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multiple files upload | UploadBox | ASP.NET | Syncfusion
-description: multiple files upload
+title: Multiple Files Upload in ASP.NET Web Forms UploadBox | Syncfusion
+description: Learn here all about multiple files upload support in Syncfusion ASP.NET Web Forms UploadBox control, it's elements and more.
 platform: aspnet
 control: UploadBox
 documentation: ug
 ---
 
-# Multiple files upload
+# Multiple Files Upload in ASP.NET Web Forms UploadBox
 
 The UploadBox control provides support to upload multiple files spontaneously. The MultipleFilesSelection property enables you to select multiple files while browsing.  To achieve this, set the MultipleFilesSelection property to true. The data type is Boolean.
 
@@ -28,6 +28,6 @@ N> The SaveUrl and RemoveUrl are the same as above (see Save File Action and Rem
 
 The following screenshot displays the output.
 
-![Multiple files upload](Multiple-files-upload_images/Multiple-files-upload_img1.png)
+![Multiple files upload in ASP.NET Web Forms UploadBox.](multiple-files-upload_images/aspnet-web-forms-uploadbox-multiple-files-upload.png)
 
-![File Upload](Multiple-files-upload_images/Multiple-files-upload_img2.png)
+![File upload in ASP.NET Web Forms UploadBox.](multiple-files-upload_images/aspnet-web-forms-uploadbox-files-upload.png)
