@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu in ASP.NET Web Forms TreeGrid Control | Syncfusion
-description: Learn here all about context menu support in Syncfusion ASP.NET Web Forms TreeGrid control, it's elements and more.
+description: Learn here all about context menu support in Syncfusion ASP.NET Web Forms TreeGrid control, it's elements, and more.
 platform: aspnet
 control: TreeGrid
 documentation: ug
