@@ -8,13 +8,9 @@ documentation: ug
 
 ---
 
->The Syncfusion [ASP.NET Web Forms](https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/introduction) components are no longer actively developed and are marked as the end of support by the 2023 Volume 2 release. These components are built using .NET Framework 4.6, which has already ended its support as of April 26, 2022.
+>The [Syncfusion ASP.NET Web Forms](https://help.syncfusion.com/aspnet/overview) product was officially marked as a retired product with the 2023 Volume 2 release. Support for retired products will be as defined in [Syncfusion Product Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio).
 <br/><br/>
->https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-framework
-<br/><br/>
->Using the latest Blazor or ASP.NET Core is recommended for new web application development. If you plan to use the Syncfusion ASP.NET Web Forms components, you can continue with the version released before the 2023 Volume 2 release.
-<br/><br/>
->You can also visit the Blazor documentation and demo links for additional information, such as Blazor [documentation](https://blazor.syncfusion.com/documentation/introduction) and Blazor [demos](https://blazor.syncfusion.com/demos/).
+Using the latest [Blazor or ASP.NET Core](https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/introduction) is recommended for new web application development. You can also visit the Blazor documentation and demo links for additional information, such as Blazor [documentation](https://blazor.syncfusion.com/documentation/introduction) and Blazor [demos](https://blazor.syncfusion.com/demos/).
 
 # Welcome to Syncfusion ASP.NET Web Forms
 
