@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 >The [Syncfusion ASP.NET Web Forms](https://help.syncfusion.com/aspnet/overview) product was officially marked as a retired product with the 2023 Volume 2 release. Support for retired products will be as defined in [Syncfusion Product Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio).
-<br/><br/>
+<br/>
 Using the latest [Blazor or ASP.NET Core](https://learn.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/introduction) is recommended for new web application development. You can also visit the Blazor documentation and demo links for additional information, such as Blazor [documentation](https://blazor.syncfusion.com/documentation/introduction) and Blazor [demos](https://blazor.syncfusion.com/demos/).
 
 # Welcome to Syncfusion ASP.NET Web Forms
