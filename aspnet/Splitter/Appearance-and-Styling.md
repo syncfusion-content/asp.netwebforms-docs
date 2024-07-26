@@ -92,7 +92,7 @@ The output for Splitter when EnableAutoResize is “false”.
 
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
