@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting| Gantt | ASP.NET | Syncfusion
-description: exporting
+description: Learn here about Exporting with the Syncfusion ASP.NET Web Forms Gantt control, its elements, and more.
 platform: aspnet
 control: Gantt
 documentation: ug
