@@ -6,7 +6,7 @@ platform: aspnet
 control: Gantt
 documentation: ug
 ---
-# Update H1 as Exporting in ASP.NET Web Forms Gantt Control.
+# Exporting in ASP.NET Web Forms Gantt Control.
 
 Exporting feature provides support to export Gantt content to excel and PDF files. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be added in the toolbar using the `ToolbarItems` property of `ToolbarSettings`. When you click, the toolbar exporting icons, it internally invokes the export public method of Gantt object to export.
 
