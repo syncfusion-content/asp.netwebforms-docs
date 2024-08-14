@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rating | Rating | ASP.NET | Syncfusion
-description: overview
+description: This component provides a user-friendly interface for capturing and displaying user ratings in Syncfusion ASP.NET applications.
 platform: aspnet
 control: Rating
 documentation: ug

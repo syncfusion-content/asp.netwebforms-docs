@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Exporting| Gantt | ASP.NET | Syncfusion
-description: exporting
+description: This feature allows users to export Gantt charts into various formats, such as PDF, Excel, and CSV in Syncfusion's ASP.NET Gantt component.
 platform: aspnet
 control: Gantt
 documentation: ug
 ---
-# Export
+# Exporting documents in ASP.NET Web Forms Gantt Charts
 
 Exporting feature provides support to export Gantt content to excel and PDF files. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be added in the toolbar using the `ToolbarItems` property of `ToolbarSettings`. When you click, the toolbar exporting icons, it internally invokes the export public method of Gantt object to export.
 

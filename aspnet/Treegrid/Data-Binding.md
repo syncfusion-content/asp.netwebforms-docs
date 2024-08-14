@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding | TreeGrid | ASP.NET | Syncfusion
-description: data binding
+description: This feature allows the TreeGrid component to bind and display hierarchical data from various data sources in Syncfusion ASP.NET application.
 platform: aspnet
 control: TreeGrid
 documentation: ug
