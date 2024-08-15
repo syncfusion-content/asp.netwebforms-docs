@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Context Menu | TreeGrid | ASP.NET | Syncfusion
-description: context menu
+description: This feature provides users with an interactive way to perform actions on the grid's rows or cells through a right-click menu in Syncfusion ASP.NET TreeGrid.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu in ASP.NET Web Forms TreeGrid
 
 The **Context menu** in TreeGrid control is used to manipulate (add, edit and delete) the TreeGrid rows. In TreeGrid, context menu can be enabled with `ContextMenuSettings` property. The `ContextMenuSettings` property contains two inner properties `ShowContextMenu` and `ContextMenuItems`.
 
@@ -26,11 +26,11 @@ The `ContextMenuItems` property is used to add the menu items to context menu, t
 
 The following screenshot displays the Context menu in TreeGrid control.
 
- ![](Context-Menu_images/Context-Menu_img1.png) 
+ ![Context Menu Customization.](Context-Menu_images/context-menu-customization.png) 
 
 
 
-## ContextMenu Customization
+## Context Menu Customization
 
 The Context menu can be customized by adding a new custom menu item to it. In TreeGrid, context menu can be customized using the ContextMenuOpen client-side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event.
 
@@ -62,7 +62,7 @@ function customMenuClick(args) {
 
 The following screenshot displays the customization of Context menu in TreeGrid control.
 
-![](Context-Menu_images/Context-Menu_img2.png) 
+![Header Context Menu.](Context-Menu_images/header-context-menu.png) 
 
 ## Header Context Menu
 Header context menu can be enabled by setting `ShowContextMenu` as `true`. The default value of the `ShowContextMenu` property is `false`.
@@ -91,7 +91,7 @@ The below code snippet explains how to enable header context menu in TreeGrid
 
 The following screenshot displays the Header context menu in TreeGrid control.
 
-![](Context-Menu_images/Context-Menu_img3.png)
+![Header context menu in TreeGrid.](Context-Menu_images/header-context-menu-in-treegrid.png)
 
 
 
