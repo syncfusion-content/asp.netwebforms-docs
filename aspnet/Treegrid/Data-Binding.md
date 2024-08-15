@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Binding | TreeGrid | ASP.NET | Syncfusion
-description: data binding
+description: This feature allows the TreeGrid component to bind and display hierarchical data from various data sources in Syncfusion ASP.NET application.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in ASP.NET Web Forms TreeGrid
 
 Data Binding is the process that establishes a connection between the application and different kinds of data sources such as business objects.
 
@@ -185,7 +185,7 @@ public partial class TreeGridDefault : System.Web.UI.Page
 
 The output of the above steps is as follows:
 
- ![](Data-Binding_images/Data-Binding_img1.png)
+ ![Self-Referential Data Binding.](Data-Binding_images/self-referential-data-binding.png)
 
  [Click](https://asp.syncfusion.com/demos/web/treegrid/localbinding.aspx) here to view the online demo sample for hierarchical data binding.
 
@@ -389,7 +389,7 @@ TreeGrid.aspx
 
 The following screenshot shows the output of the above steps,
 
-![](Data-Binding_images/Data-Binding_img2.png)
+![Remote data binding.](Data-Binding_images/remote-data-binding.png)
 
 [Click](https://asp.syncfusion.com/demos/web/treegrid/selfreference.aspx) here to view the online demo sample for self-referential data binding
 
@@ -433,12 +433,12 @@ The following code explains how to use Load on Demand in TreeGrid Control,
 
 The output for load on demand support in TreeGrid:
 
-![](Data-Binding_images/Data-Binding_img3.png)
-![](Data-Binding_images/Data-Binding_img4.png)
+![Load on demand Data Binding.](Data-Binding_images/loading-on-demand-data-binding.png)
+![Load at once Data Binding.](Data-Binding_images/loading-at-once-data-binding.png)
 
 The following output shows how load on demand works for expanding action
 
-![](Data-Binding_images/Data-Binding_img5.png)
+![Expanding action Data Binding.](Data-Binding_images/expanding-action-data-binding.png)
 
 [Click](https://asp.syncfusion.com/demos/web/treegrid/loadondemand.aspx) here to view the online demo sample for Load on demand.
 
