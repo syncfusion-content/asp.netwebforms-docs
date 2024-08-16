@@ -56,7 +56,7 @@ The below code snippet explains the above behavior,
 {% endtabs %} 
 
 The below screen shot shows Gantt with excel and PDF exporting enabled.
-![PDF exporting enabled in ASP.NET Web Forms Gantt](Export_images/Export_img1.png)
+![Exporting in ASP.NET Web Forms Gantt Control](Export_images/Export_img1.png)
 
 ## Server dependencies
 Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, which is available in the Essential Studio & Essential ASP.NET builds. The list of assemblies needed for Gantt Export as follows
