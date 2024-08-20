@@ -16,13 +16,13 @@ This section explains how to add and use a PDF viewer control in your web applic
 
 Create a new project in the Visual Studio by selecting the ASP.NET Empty Web Application template. The following screenshot displays the Project Creation Wizard in Visual Studio 2012.
 
-![Getting started application](Gettingstarted_images/Gettingstarted_img1.jpeg)
+![Getting started application in ASP.NET Web Forms PDF Viewer.](Gettingstarted_images/aspnet-web-forms-pdf-viewer-application.jpeg)
 
 **Adding Web Form**
 
 Add a new Web Form to the project and name it as **Default.aspx**
 
-![Getting started project](Gettingstarted_images/Gettingstarted_img2.jpeg)
+![Adding ASP.NET Web Forms in PDF Viewer.](Gettingstarted_images/aspnet-web-forms-pdf-viewer-add.jpeg)
 
 #### Add References, Scripts, Styles
 
@@ -229,7 +229,7 @@ Add below code snippet to Default.aspx. Here, PDF viewer uses the hosted service
 
 Add new folder **WebApi** in the solution and create new Web API Controller Class to it. Name it as **PdfViewerController** and click Add.
 
-![Getting started controller](Gettingstarted_images/Gettingstarted_img3.jpeg)
+![Display PDF Viewer document in ASP.NET Web Forms.](Gettingstarted_images/aspnet-web-forms-pdf-viewer-display.jpeg)
 
 Replace the below code in the PdfViewerController.cs
 
@@ -291,7 +291,7 @@ N> Please, create a folder named **Data** in the project location and add the PD
 
 Right-Click the Project, select Add and select Global.asax file from the listed templates.
 
-![Getting started project](Gettingstarted_images/Gettingstarted_img4.jpeg)
+![Routing in ASP.NET Web Forms PDF Viewer.](Gettingstarted_images/aspnet-web-forms-pdf-viewer-routing.jpeg)
 
 You can route the Web API in Application_Start event in the Global.asax file as follows.
 
@@ -368,9 +368,9 @@ Map the controller absolutely in the production environment by using the **Virtu
 
 **Sample:**
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewerWeb_GettingStarted1465969179>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewerWeb_GettingStarted1465969179>
 
 Run the sample and you will see the PDF viewer control as in the below screenshot.
 
-![Getting started PDF viewer](Gettingstarted_images/Gettingstarted_img5.png)
+![Mapping of controller in ASP.NET Web Forms PDF viewer.](Gettingstarted_images/aspnet-web-forms-pdf-viewer-mapping.png)
 
