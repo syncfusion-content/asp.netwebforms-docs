@@ -27,7 +27,7 @@ By default, the legend will not be displayed in the circular gauge. You can enab
 ![ASPNET CircularGauge Legend image1](Legend_images/Legend_img1.png)
 
 
-[Click](http://asp.syncfusion.com/demos/web/circulargauge/legend.aspx) here to view the online demo sample for  legend in the circular Gauge.
+[Click](https://ej2.syncfusion.com/home/javascript.html) here to view the online demo sample for  legend in the circular Gauge.
 
 ### Legend Text
 
