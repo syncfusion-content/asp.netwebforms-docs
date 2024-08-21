@@ -8,7 +8,7 @@ documentation: ug
 keywords: ComboBox, combobox, Cascading ComboBox, Autofill supported with ComboBox
 ---
 
-# ASP.NET Web Forms ComboBox howto
+# ASP.NET Web Forms ComboBox how to
 
 ## Configure the Cascading ComboBox
 
