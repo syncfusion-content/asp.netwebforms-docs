@@ -7,7 +7,7 @@ control: Tab
 documentation: ug
 ---
 
-#  Integration with other controls
+# Integration with other controls in ASP.NET Web Forms Tab
 
 You can provide more customization to the Tab with rating control as content for describing the item rating value.
 
