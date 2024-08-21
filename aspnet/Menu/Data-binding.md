@@ -111,7 +111,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 The following screenshot displays the output of the above code example. 
 
-![Remote Data](Data-binding_images/Data-binding_img1.png) 
+![Remote data in ASP.NET Web Forms Menu.](Data-binding_images/aspnet-web-forms-menu-data-binding.png) 
 
 
 
@@ -145,7 +145,7 @@ SelectCommand="SELECT * FROM [TreeBind]"></asp:SqlDataSource>
 
 The following screenshot displays the output for the above code example.                                                                                                       
 
-![SQL Data](Data-binding_images/Data-binding_img2.png) 
+![SQL data in ASP.NET Web Forms Menu.](Data-binding_images/aspnet-web-forms-menu-sql-data.png) 
 
 
 
@@ -349,7 +349,7 @@ public class MenuSource
 
 The following screenshot displays the output for the above code example.  
     
-![Object Data binding](Data-binding_images/Data-binding_img3.png) 
+![Object data binding in ASP.NET Web Forms Menu.](Data-binding_images/aspnet-web-forms-menu-object.png) 
 
 
 
@@ -445,7 +445,7 @@ Load the menu items in the XML data as illustrated in the following code example
 
 The following screenshot displays the output for the XML Data binding.                                                                                                       
 
-![XML Data binding](Data-binding_images/Data-binding_img4.png) 
+![XML data binding in ASP.NET Web Forms Menu.](Data-binding_images/aspnet-web-forms-menu-xml-data.png) 
 
 
 
@@ -479,7 +479,7 @@ In the Design page, assign values for DataTextField, DataIdField, DataParentIdFi
 
 The following screenshot displays the output for the above code example.                                                                                                       
 
-![LINQ-to-SQL Data binding](Data-binding_images/Data-binding_img5.png) 
+![LINQ to SQL data binding in ASP.NET Web Forms Menu.](Data-binding_images/aspnet-web-forms-menu-linq-sql.png) 
 
 ## Data binding from DataTable
 
@@ -522,4 +522,4 @@ Sample can be downloaded [here](https://www.syncfusion.com/downloads/support/dir
 
 Now , the menu will be displayed as shown below
 
-![DataTable](Data-binding_images/Data-binding_img6.png) 
+![Data binding from datatable in ASP.NET Web Forms Menu.](Data-binding_images/aspnet-web-forms-menu-datatable.png) 
