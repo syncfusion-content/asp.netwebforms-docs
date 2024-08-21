@@ -166,10 +166,10 @@ The `TextAlign` property of label allows you to set how the text should be align
 
 | TextAlign | Image |
 |---|---|
-| Left | ![Text Alignment Left](/aspnet/Diagram/Label_images/Label_img15.png) |
-| Right | ![Text Alignment Right](/aspnet/Diagram/Label_images/Label_img16.png) |
-| Center | ![Text Alignment Center](/aspnet/Diagram/Label_images/Label_img17.png) |
-| Justify | ![Text Alignment Justify](/aspnet/Diagram/Label_images/Label_img18.png) |
+| Left | ![Text Alignment Left in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img15.png) |
+| Right | ![Text Alignment Right in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img16.png) |
+| Center | ![Text Alignment Center in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img17.png) |
+| Justify | ![Text Alignment Justify in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img18.png) |
 
 ## Wrapping
 
@@ -196,7 +196,7 @@ When text overflows node boundaries, you can control it by using text wrapping. 
 | Values | Description | Image |
 |---|---|---|
 | NoWrap | Text will not be wrapped | ![Text with NoWrap in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img20.png) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![Text with Wrap](/aspnet/Diagram/Label_images/Label_img21.png) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![Text with Wrap in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img21.png) |
 | WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![Text with WrapWithOverflow in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img22.png) |
 
 ## Appearance
