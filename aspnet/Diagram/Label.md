@@ -45,7 +45,7 @@ You can add a label to a node/connector by defining the label object and adding 
 
 {% endhighlight %}
 
-![Label Properties](/aspnet/Diagram/Label_images/Label_img1.png)
+![Create Label Properties in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img1.png)
 
 To explore more label properties, refer to [Label Properties](https://help.syncfusion.com/cr/aspnet/Syncfusion.JavaScript.DataVisualization.Models.Diagram.Label.html "Label Properties").
 
@@ -74,7 +74,7 @@ The `Offset` property of label is used to align the labels based on fractions. 0
 
 The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
-![Label Alignment](/aspnet/Diagram/Label_images/Label_img2.png)
+![Label Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img2.png)
 
 ### Horizontal and vertical alignments
 
@@ -84,15 +84,15 @@ The following tables illustrates all the possible alignments visually with **off
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
-| Left | Top | ![Label Left Top Alignment](/aspnet/Diagram/Label_images/Label_img3.png) |
-| Center | | ![Label Center alignment](/aspnet/Diagram/Label_images/Label_img4.png) |
-| Right | | ![Label Right Alignment](/aspnet/Diagram/Label_images/Label_img5.png) |
-| Left | Center | ![Label Left Center Alignment](/aspnet/Diagram/Label_images/Label_img6.png) |
-| Center | | ![Label Center Alignment](/aspnet/Diagram/Label_images/Label_img7.png) |
-| Right | | ![Label Right Alignment](/aspnet/Diagram/Label_images/Label_img8.png) |
-| Left | Bottom | ![Label Left Bottom Alignment](/aspnet/Diagram/Label_images/Label_img9.png) |
-| Center | | ![Label Center Alignment](/aspnet/Diagram/Label_images/Label_img10.png) |
-| Right | | ![Label Right Alignment](/aspnet/Diagram/Label_images/Label_img11.png) |
+| Left | Top | ![Label Left Top Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img3.png) |
+| Center | | ![Label Center alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img4.png) |
+| Right | | ![Label Right Alignment in ASP.NET Webform Diagram](/aspnet/Diagram/Label_images/Label_img5.png) |
+| Left | Center | ![Label Left Center Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img6.png) |
+| Center | | ![Label Center Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img7.png) |
+| Right | | ![Label Right Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img8.png) |
+| Left | Bottom | ![Label Left Bottom Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img9.png) |
+| Center | | ![Label Center Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img10.png) |
+| Right | | ![Label Right Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img11.png) |
 
 The following codes illustrates how to align labels.
 
@@ -114,7 +114,7 @@ The following codes illustrates how to align labels.
 
 {% endhighlight %}
 
-![Label Alignment](/aspnet/Diagram/Label_images/Label_img12.png)
+![Label Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img12.png)
 
 ### Margin
 
@@ -140,7 +140,7 @@ The following code example illustrates how to align a label based on its `Offset
         
 {% endhighlight %}
 
-![Margin](/aspnet/Diagram/Label_images/Label_img13.png)
+![Margin in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img13.png)
 
 ### Text Alignment
 
@@ -162,7 +162,7 @@ The `TextAlign` property of label allows you to set how the text should be align
 
 {% endhighlight %}
 
-![Text Alignment](/aspnet/Diagram/Label_images/Label_img14.png)
+![Text Alignment in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img14.png)
 
 | TextAlign | Image |
 |---|---|
@@ -191,13 +191,13 @@ When text overflows node boundaries, you can control it by using text wrapping. 
 
 {% endhighlight %}
 
-![Text Wrapping](/aspnet/Diagram/Label_images/Label_img19.png)
+![Text Wrapping in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img19.png)
 
 | Values | Description | Image |
 |---|---|---|
-| NoWrap | Text will not be wrapped | ![Text with NoWrap](/aspnet/Diagram/Label_images/Label_img20.png) |
+| NoWrap | Text will not be wrapped | ![Text with NoWrap in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img20.png) |
 | Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![Text with Wrap](/aspnet/Diagram/Label_images/Label_img21.png) |
-| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![Text with WrapWithOverflow](/aspnet/Diagram/Label_images/Label_img22.png) |
+| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![Text with WrapWithOverflow in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img22.png) |
 
 ## Appearance
 
@@ -222,7 +222,7 @@ You can change the font style of the labels with the font specific properties(`F
 
 {% endhighlight %}
 
-![Text Appearance](/aspnet/Diagram/Label_images/Label_img23.png)
+![Text Appearance in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img23.png)
 
 The fill and border appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background and border of a label.
 
@@ -242,7 +242,7 @@ The fill and border appearances of the text can also be customized with appearan
    </ej:Diagram>
 {% endhighlight %}
 
-![Text Appearance Customize](/aspnet/Diagram/Label_images/Label_img24.png)
+![Text Appearance Customize in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img24.png)
 
 ## Drag
 
@@ -272,7 +272,7 @@ A **Label** can be displaced from its original position to any preferred locatio
 
 {% endhighlight %}
 
-![Text Dragging](/aspnet/Diagram/Label_images/Label_img25.png)
+![Text Dragging in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img25.png)
 
 ## Rotate
 
@@ -294,7 +294,7 @@ You can rotate the labels to any desired angle. Labels are rotated to the angle 
 
 {% endhighlight %}
 
-![Text Rotate](/aspnet/Diagram/Label_images/Label_img26.png)
+![Text Rotate in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img26.png)
 
 N> There is no built-in support to rotate labels interactively.
 
@@ -321,7 +321,7 @@ diagram.updateLabel(node.name, node.labels[0], options);
 
 {% endhighlight %}
 
-![Text Edit](/aspnet/Diagram/Label_images/Label_img27.png)
+![Text Edit in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img27.png)
 
 ### Read Only labels
 
@@ -392,7 +392,7 @@ You can add any number of labels to a node or connector. The following code illu
 
 {% endhighlight %}
 
-![Multiple Label](/aspnet/Diagram/Label_images/Label_img28.png)
+![Multiple Label in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img28.png)
 
 ## Limitation
 
@@ -400,4 +400,4 @@ You can add any number of labels to a node or connector. The following code illu
 
 | Expected behavior | Current behavior |
 |---|---|
-| ![Expected behavior](/aspnet/Diagram/Label_images/Label_img29.png) | ![Current behavior](/aspnet/Diagram/Label_images/Label_img30.png) |
+| ![Expected behavior in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img29.png) | ![Current behavior in ASP.NET Webform Diagram.](/aspnet/Diagram/Label_images/Label_img30.png) |
