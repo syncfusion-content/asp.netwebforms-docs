@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Legend | CircularGauge | ASP.NET Webforms | Syncfusion
-description:  legend
+description: Learn here about Legend with Syncfusion ASP.NET Web Forms CircularGauge control, its elements, and more.
 platform: aspnet
 control: Circular Gauge
 documentation: ug
 ---
 
-# Legend
+# ASP.NET Web Forms CircularGauge Legend
 
 The `Legend` contains the list of the ranges that appear in the circular gauge  
 
