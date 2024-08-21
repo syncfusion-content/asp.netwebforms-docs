@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Interface for the RichTextEditor | Syncfusion | ASP.NET
-description: User Interface for RichTextEditor control (toolbar, content area, and footer)
+description: Learn here about user interface support in Syncfusion ASP.NET Web Forms RichTextEditor control, its elements, and more.
 platform: aspnet
 control: RTE
 documentation: ug

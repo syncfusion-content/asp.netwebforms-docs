@@ -7,7 +7,7 @@ control: Kanban
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Web Forms Kanban
 
 This section explains briefly about how to create a Kanban in your application with ASP.NET.
 
