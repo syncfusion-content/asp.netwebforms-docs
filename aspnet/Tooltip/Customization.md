@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization | Tooltip | ASP.NET | Syncfusion
-description: Customization in Tooltip widget for Syncfusion Essential ASP
+description: Learn here about customization support in Syncfusion Essential ASP.NET Web Forms Tooltip, its elements, and more.
 platform: aspnet
 control: Tooltip
 documentation: ug
