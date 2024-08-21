@@ -6,7 +6,7 @@ control: Spreadsheet
 documentation: ug
 ---
 
-# Open and save in ASP.NET Web Forms Control
+# Open and save in ASP.NET Web Forms Spreadsheet Control
 
 The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson "saveAsJSON") and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
 
