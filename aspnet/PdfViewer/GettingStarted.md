@@ -62,7 +62,7 @@ Add the script files and CSS files in the &#60;title&#62; tag of Default.aspx.
 <script src="https://cdn.syncfusion.com/16.1.0.24/js/web/ej.web.all.min.js"></script>
 {% endhighlight %}
 
-N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in one single file. In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets# "custom script generator") to create custom script file with required widgets and its dependencies, to reduce the size of the script file.
+N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in one single file. In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/overview "custom script generator") to create custom script file with required widgets and its dependencies, to reduce the size of the script file.
 
 ### Add PDF viewer Control in View page
 
