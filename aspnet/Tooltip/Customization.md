@@ -8,7 +8,7 @@ documentation: ug
 keywords :  Tooltip, ASP Tooltip, ASP Tooltip,ASP Tooltip widget, ASP Tooltip template,ASP Tooltip title, ASP Tooltip Animation, ASP Tooltip Content, ASP Tooltip Close mode
 ---
 
-# Customization
+# Customization in ASP.NET Web Forms Tooltip
 
 ## Template Support
 
@@ -133,7 +133,7 @@ None (Default)<br/></td><td>
 No effect takes place<br/></td></tr>
 </table>
 
-Let's create a Tooltip that slides down when shown using the [animation](http://help.syncfusion.com/js/api/ejtooltip#members:animation) property:
+Let's create a Tooltip that slides down when shown using the [animation](https://help.syncfusion.com/api/js/ejtooltip#members:animation) property:
 
 {% highlight html %}
 
@@ -149,7 +149,7 @@ Let's create a Tooltip that slides down when shown using the [animation](http://
 
 ### Custom Animation
 
-Custom animation effect for both Tooltip show/hide can also be done by [show](http://help.syncfusion.com/js/api/ejtooltip#methods:show) and [hide](http://help.syncfusion.com/js/api/ejtooltip#methods:hide) method.
+Custom animation effect for both Tooltip show/hide can also be done by [show](https://help.syncfusion.com/js/api/ejtooltip#methods:show) and [hide](https://help.syncfusion.com/api/js/ejtooltip#methods:hide) method.
 
 Show or Hide method may receive an optional 'callback' parameter, which represents a function you'd like to call which will animate the tooltip.
 
@@ -229,7 +229,7 @@ Tooltip will be hidden when mouse leaves the target element.<br/></td></tr>
 
 ### Auto
 
-The tooltip will be visible only for the period of time specified in the [autoCloseTimeout](http://help.syncfusion.com/js/api/ejtooltip#members:autoclosetimeout).
+The tooltip will be visible only for the period of time specified in the [autoCloseTimeout](https://help.syncfusion.com/api/js/ejtooltip#members:autoclosetimeout).
 
 Let see an example, this Tooltip will only hide after hovering the target for 2000ms
 
