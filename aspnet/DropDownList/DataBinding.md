@@ -10,7 +10,7 @@ keywords: DropDownList, dropdown, data binding, Local data, Remote data
 
 # Data Binding
 
-To populate data in the DropDownList widget, define [dataSource](http://help.syncfusion.com/js/api/ejdropdownlist#members:datasource) property with associated fields. In DropDownList, can bind either local array or OData, WebApi and other [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) services.
+To populate data in the DropDownList widget, define [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property with associated fields. In DropDownList, can bind either local array or OData, WebApi and other [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) services.
 
 ## Fields
 
@@ -379,7 +379,7 @@ It loads the data on scrolling the list of items. This can be achieved by settin
     {% highlight c# %}
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownList1.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
+            DropDownList1.DataSource = "https://ej2.syncfusion.com/home/javascript.html";
         }
         
     {% endhighlight %}
@@ -404,7 +404,7 @@ N> In both modes, set of items will be fetched based on the count specified in t
     {% highlight c# %}
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownList1.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
+            DropDownList1.DataSource = "https://ej2.syncfusion.com/home/javascript.html";
         }
         
     {% endhighlight %}
