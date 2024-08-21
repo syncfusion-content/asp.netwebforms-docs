@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Integration with other controls | Tab | ASP.NET | Syncfusion
-description: integration with other controls
+description: Learn here about integration with other controls in Syncfusion ASP.NET Web Forms Tab control, its elements, and more.
 platform: aspnet
 control: Tab
 documentation: ug
