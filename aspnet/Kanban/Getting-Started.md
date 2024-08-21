@@ -121,7 +121,7 @@ You can bind data to the Kanban control by either locally or remotely. Assign th
 
 ![ASPNET Kanban Getting-Started image2](Getting-Started_images/Getting_Started_img2.png) 
 
-N> ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](http://help.syncfusion.com/aspnet/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
+N> ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](https://help.syncfusion.com/aspnet/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
 ## Mapping Values
 
@@ -289,7 +289,7 @@ N> `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” and 
 
 ## Adding Filters
 
-Filters allows to filter the collection of cards from `DataSource` which meets the predefined `Query` in the filters collection. To enable filtering, define `FilterSettings` collection with display `Text` and [ej.Query](http://help.syncfusion.com/aspnet/datamanager/query).
+Filters allows to filter the collection of cards from `DataSource` which meets the predefined `Query` in the filters collection. To enable filtering, define `FilterSettings` collection with display `Text` and [ej.Query](https://help.syncfusion.com/aspnet/datamanager/query).
 
 {% tabs %}
 
