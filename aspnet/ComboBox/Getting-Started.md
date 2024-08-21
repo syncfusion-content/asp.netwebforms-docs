@@ -27,7 +27,7 @@ keywords: ComboBox, ComboBox, Populating data
             
     {% endhighlight %}
     
-N> Refer the [ASP.NET-Getting Started](http://help.syncfusion.com/aspnet/getting-started#manual-integration-of-syncfusion-aspnet-controls-into-the-newexisting-application) Documentation to know further details about necessary assemblies, Script and CSS files.
+N> Refer the [ASP.NET-Getting Started](https://help.syncfusion.com/aspnet/getting-started/manual-integration-of-syncfusion-aspnet-controls) Documentation to know further details about necessary assemblies, Script and CSS files.
 
 3. Configure the ComboBox control using smart tag, to add ComboBox items
 
