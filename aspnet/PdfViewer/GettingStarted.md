@@ -51,8 +51,8 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 You can find the scripts for PDF viewer control and style sheets in any of the following locations:
 Local Disk to know more about script and style sheets installed in local machine.
-CDN Link: [Click here](https://help.syncfusion.com/js/cdn#cdn-scripts-links "CDN scripts and styles links") to know more about script and style sheets available online.
-NuGet Package: [Click here](https://help.syncfusion.com/js/nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
+CDN Link to know more about script and style sheets available online.
+NuGet Package to know more about script and style sheets available in NuGet package.
 
 Add the script files and CSS files in the &#60;title&#62; tag of Default.aspx.
 
