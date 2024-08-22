@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image and File browser in RichTextEditor | Syncfusion | ASP.NET
-description: Configuring and working with Image and File browser in RichTextEditor  
+description: Learn here about configuring and working with image and file browser in Syncfusion ASP.NET Web Forms RichTextEditor control, its elements, and more.
 platform: aspnet
 control: RTE
 documentation: ug
@@ -91,7 +91,7 @@ public static object FileActionDefault(string ActionType, string Path, string Ex
 ![Image from Your Computer](ImageandFilebrowser_images/ImageandFilebrowser_img2.png)
 
 
-N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](http://helpjs.syncfusion.com/js/fileexplorer/overview#).
+N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](https://help.syncfusion.com/js/fileexplorer/overview).
 
 ## Image Properties
 

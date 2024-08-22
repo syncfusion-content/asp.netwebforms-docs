@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Levels | SunburstChart | ASP.NET Webforms | Syncfusion
-description: Learn about levels support in Syncfusion ASP.NET Webforms SunburstChart control and more details.
+title: Levels in ASP.NET Web Forms Sunburst Chart | Syncfusion
+description: Learn about levels support in Syncfusion ASP.NET Web Forms Sunburst Chart control, its elements, and more details.
 platform: aspnet
 control: SunburstChart
 documentation: ug
 ---
 
-## Levels
+# Levels in ASP.NET Web Forms Sunburst Chart Control
 
 Sunburst chart is used to display hierarchical data. You can add more than one hierarchical data by using the **Levels** property of Sunburst chart. Each level of the hierarchy is represented by circle.
 The following code snippet illustrates 
