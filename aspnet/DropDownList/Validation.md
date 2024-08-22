@@ -19,7 +19,7 @@ DropDownList value can be validated in two ways,
  
 You can validate the DropDownList value on form submission using jQuery Validator, by applying “ValidationRules” and “ValidationMessage” to the DropDownList. 
 
-N> [jquery.validate.min](https://help.syncfusion.com/aspnet/dropdownlist/validation#jquery-validator) script file should be referred for validation, for more details, refer [here](https://jqueryvalidation.org/documentation/).
+N> [jquery.validate.min] script file should be referred for validation, for more details, refer [here](https://jqueryvalidation.org/documentation/).
 
 ### Validation Rules
 
