@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RangeBand
-description: Learn how to add Rangeband to Sparkline .
+title: Range band in ASP.NET Web Forms Sparkline Control | Syncfusion
+description: Learn how to add range band in Syncfusion Essential ASP.NET Web Forms Sparkline control, its elements, and more.
 platform: aspnet
 control: Sparkline
 documentation: ug
 ---
 
-## Range Band  
+# Range band in ASP.NET Web Forms Sparkline Control 
 
 The range band feature is used to highlight a particular range along the y-axis using `StartRange` and `EndRange` property. You can also customize the `Color` and `Opacity` of the `RangeBandSettings`. 
 
