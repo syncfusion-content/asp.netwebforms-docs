@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing with Spreadsheet widget for Syncfusion Essential JS
-description: Learn about editing support in Syncfusion ASP.NET Webforms Spreadsheet control and more details. 
+title: Editing in ASP.NET Web Forms Spreadsheet widget | Syncfusion
+description: Learn here about editing support in Syncfusion Essential ASP.NET Webforms Spreadsheet control, its elements and more details. 
 platform: aspnet
 control: Spreadsheet
 documentation: ug
 ---
 
-# Editing 
+# Editing in ASP.NET Web Forms Spreadsheet
 
 You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In editing mode formatting options are not available. You can use `AllowEditing` property to enable/disable editing feature.
 
