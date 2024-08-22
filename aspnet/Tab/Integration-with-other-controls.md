@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Integration with other controls | Tab | ASP.NET | Syncfusion
-description: integration with other controls
+description: Learn here about integration with other controls in Syncfusion ASP.NET Web Forms Tab control, its elements, and more.
 platform: aspnet
 control: Tab
 documentation: ug
 ---
 
-#  Integration with other controls
+# Integration with other controls in ASP.NET Web Forms Tab
 
 You can provide more customization to the Tab with rating control as content for describing the item rating value.
 
 The Essential ASP Rating control provides an intuitive rating experience that allows you to select the number of stars that represent the rating. For more information about the rating, you can refer to the following link:
 
-<http://help.syncfusion.com/js>
+<https://help.syncfusion.com/js/overview>
 
 The following code example explains the rating control creation
 

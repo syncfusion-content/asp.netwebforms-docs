@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Interface for the RichTextEditor | Syncfusion | ASP.NET
-description: User Interface for RichTextEditor control (toolbar, content area, and footer)
+description: Learn here about user interface support in Syncfusion ASP.NET Web Forms RichTextEditor control, its elements, and more.
 platform: aspnet
 control: RTE
 documentation: ug
@@ -21,11 +21,11 @@ However, in most integrations, it's desirable to change the toolbar configuratio
     <th> Description <br/><br/></th>
 </tr>
 <tr>
-    <td> {{'[toolsList](http://help.syncfusion.com/js/api/ejrte#members:toolslist)'| markdownify }} <br/><br/></td>
+    <td> {{'[toolsList](https://help.syncfusion.com/api/js/ejrte#members:toolslist)'| markdownify }} <br/><br/></td>
     <td>  The toolsList option allows you to choose which tools appear on the toolbar, as well as the order and grouping of those items <br/><br/></td>
 </tr>
 <tr>
-    <td> {{'[tools](http://help.syncfusion.com/js/api/ejrte#members:tools)'| markdownify }} <br/><br/></td>
+    <td> {{'[tools](https://help.syncfusion.com/api/js/ejrte#members:tools)'| markdownify }} <br/><br/></td>
     <td> The toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups displayed.<br/><br/></td>
 </tr>
 </table>
