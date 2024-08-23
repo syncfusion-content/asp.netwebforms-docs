@@ -1,7 +1,7 @@
 ---
 layout: post
-title: This article explains more about TemplateSupport support with ASP.NET Web Forms DropDownList control for Syncfusion ASP.NET 
-description: Template Support with DropDownList control for Syncfusion ASP.NET
+title:  Template support with DropDownList control for Syncfusion ASP.NET 
+description: This article explains more about TemplateSupport support with ASP.NET Web Forms DropDownList control for Syncfusion ASP.NET.
 platform: aspnet 
 control: DropDownList
 documentation: ug

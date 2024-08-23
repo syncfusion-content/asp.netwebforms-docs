@@ -7,7 +7,7 @@ control: NumericTextbox
 documentation: ug
 ---
 
-# ASP.NET Web Forms Numerictextbox Localization Support
+# ASP.NET Web Forms Numeric Textbox Localization Support
 
 **Globalization** is language support based on the culture in **Textboxes**. You can achieve the **Globalization** using “**locale”** property in **PercentageTextBox** . 
 

@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Page-Settings | Diagram | ASP.NET Webform | Syncfusion
-description: This section explains how to customize the size and appearance of the Diagram pages.
+description: This section explains how to customize the size and appearance of the ASP.NET Web Forms Diagram Page Settings.
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
-
 
 # ASP.NET Web Forms Diagram Page Settings 
 
