@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Cascading in ComboBox widget for Syncfusion Essential WebForm
-description: Describes about the cascading in ComboBox widget for Syncfusion Essential WebForm
+description: This article describes about the cascading in the ComboBox widget for the Syncfusion Essential ASP.NET WebForm
 platform: aspnet
 control: ComboBox
 documentation: ug
 keywords: ComboBox, combobox, Cascading ComboBox, Autofill supported with ComboBox
 ---
 
-# How To
+# ASP.NET Web Forms ComboBox how to
 
 ## Configure the Cascading ComboBox
 

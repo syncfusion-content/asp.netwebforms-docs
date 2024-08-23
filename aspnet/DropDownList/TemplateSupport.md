@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template support with DropDownList control for Syncfusion ASP.NET 
+title: This article explains more about TemplateSupport support with ASP.NET Web Forms DropDownList control for Syncfusion ASP.NET 
 description: Template Support with DropDownList control for Syncfusion ASP.NET
 platform: aspnet 
 control: DropDownList
@@ -9,7 +9,7 @@ keywords: Template Support, DropDownList, dropdown, Header Template
 
 ---
 
-# Template Support
+# ASP.NET Web Forms DropDownList TemplateSupport
 
 By default you can add any text or image to the DropDownList list item. To customize the items layout or to create your own visualized elements you can use this template support.
 
