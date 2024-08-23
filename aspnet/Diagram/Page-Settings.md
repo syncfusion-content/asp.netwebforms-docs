@@ -11,7 +11,7 @@ documentation: ug
 
 Page settings enable to customize the appearance, width, and height of the Diagram page.
 
-![Size and appearance of the asp.net web forms diagram page settings.](/aspnet/Diagram/Page-Settings_images/Page-Settings_img1.png)
+![Size and appearance of the asp.net web forms diagram page settings.](Size-and-appearance/aspnet/Diagram/Page-Settings_images/Page-Settings_img1.png)
 
 ## Page size and appearance
 
@@ -36,7 +36,7 @@ The following code illustrates how to customize the page size and the appearance
 {% endhighlight %}
 
 
-![Customize the page size of the asp.net web forms diagram page settings.](/aspnet/Diagram/Page-Settings_images/Page-Settings_img2.png)
+![Customize the page size of the asp.net web forms diagram page settings.](Customize-the-page-size/aspnet/Diagram/Page-Settings_images/Page-Settings_img2.png)
 
 ![Customize the page appearance and size in asp.net web forms diagram page settings.](/aspnet/Diagram/Page-Settings_images/Page-Settings_img3.png)
 
