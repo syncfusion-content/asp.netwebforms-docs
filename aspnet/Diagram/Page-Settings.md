@@ -38,7 +38,7 @@ The following code illustrates how to customize the page size and the appearance
 
 ![Customize the page size of the asp.net web forms diagram page settings.](Customize-the-page-size/aspnet/Diagram/Page-Settings_images/Page-Settings_img2.png)
 
-![Customize the page appearance and size in asp.net web forms diagram page settings.](/aspnet/Diagram/Page-Settings_images/Page-Settings_img3.png)
+![Customize the page appearance and size in asp.net web forms diagram page settings.](Customize-the-page-appearance-and-size/aspnet/Diagram/Page-Settings_images/Page-Settings_img3.png)
 
 N>When the PageWidth and PageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
 
@@ -46,7 +46,7 @@ N>When the PageWidth and PageHeight are not specified, the rectangular region th
 
 When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
 
-![Page Breaks used as visual guide to see how pages are split in asp.net web forms diagram page settings.](/aspnet/Diagram/Page-Settings_images/Page-Settings_img4.png)
+![Page Breaks used as visual guide to see how pages are split in asp.net web forms diagram page settings.](Page-Breaks-used-as-visual-guide/aspnet/Diagram/Page-Settings_images/Page-Settings_img4.png)
 
 `MultiplePage` and `ShowPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
 The following code illustrates how to enable multiple page and page break lines.
