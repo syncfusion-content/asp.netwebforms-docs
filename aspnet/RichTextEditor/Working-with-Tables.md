@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Working with Tables opreation | RTE | Syncfusion | ASP.NET
-description: This article explains more about working with Tables customization for the ASP.NET Web Forms RichTextEditor RichTextEditor control
+description: Learn here about Working with Tables with Syncfusion Essential ASP.NET Web Forms RichTextEditor control, its elements, and more.
 platform: aspnet 
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Tables, Insert Row, Remove Row, Remove Columns, Insert Columns
 
 ---
-# ASP.NET Web Forms RichTextEditor Working with Tables
+# Add tables in your content in ASP.NET Web Forms RichTextEditor
 
 The editor provides tools to add tables in your content. Can add, edit, and remove the table as well as perform other table related tasks.
 
