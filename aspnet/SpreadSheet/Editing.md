@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing in ASP.NET Web Forms Spreadsheet widget | Syncfusion
+title: Editing in the ASP.NET Web Forms Spreadsheet Control | Syncfusion
 description: Learn here about editing support in Syncfusion Essential ASP.NET Webforms Spreadsheet control, its elements and more details. 
 platform: aspnet
 control: Spreadsheet
