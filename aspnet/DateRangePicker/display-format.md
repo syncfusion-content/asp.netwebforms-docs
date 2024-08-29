@@ -8,7 +8,7 @@ documentation: ug
 keywords: format
 ---
 
-# Text representation in aspnet DateRangePicker Display Format
+# Text representation in ASP.NET DateRangePicker Display Format
 
 Text representation of date and time in their corresponding text box in a control, can be changed using the available API called **DateFormat**, **TimeFormat**.  By default those values will be set based on culture. 
 
