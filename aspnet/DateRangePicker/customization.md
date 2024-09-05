@@ -1,18 +1,18 @@
 ---
 layout: post
-title: customization
-description: customization
+title: Customization in ASP.NET Web Forms DateRangePicker | Syncfusion
+description: Learn here about customization support in Syncfusion ASP.NET Web Forms DateRangePicker control, its elements, and more.
 platform: aspnet
 control: DateRangePicker
 documentation: ug
 keywords: dimension, corners
 ---
 
-## Customization
+# Customization in ASP.NET Web Forms DateRangePicker
 
 With available flexible options customization of DateRangePicker will be easier.
 
-### Setting Dimension
+## Setting Dimension
 
 **Height** and **width** of the DateRangePicker can be changed using corresponding API (**Height,Width**) like below code examples.
 
