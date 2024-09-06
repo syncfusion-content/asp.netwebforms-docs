@@ -103,7 +103,7 @@ Add the following styles to render the Tab.
 
 The following screenshot illustrates the Tab content with rating control. 
 
-![Integration with other controls in ASP.NET Web Forms Tab.](Integration-with-other-controls_images/aspnet-web-forms-tab-control-intergration.png) 
+![Integration with other controls](Integration-with-other-controls_images/Integration-with-other-controls_img1.png) 
 
 
 
