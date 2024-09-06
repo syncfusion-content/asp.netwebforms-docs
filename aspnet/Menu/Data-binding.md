@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data binding | Menu | ASP.NET Webforms | Syncfusion
-description: Menu data binding for Webforms
+description: Learn hera about data binding in Syncfusion Essential ASP.NET Web Forms Menu control, its elements and more details.
 platform: aspnet
 control: Menu
 documentation: ug
 ---
 
-# Data binding
+# Data binding in ASP.NET Web Forms Menu
 
 Data binding enables you to synchronize the elements with different sources of data. You can bind data by using two ways, Local data and remote data. 
 

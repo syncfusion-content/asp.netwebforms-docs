@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Globalization Support | NumericTextbox | ASP.NET | Syncfusion
-description: globalization support
+title: Locolization Support | Numeric Textbox | ASP.NET | Syncfusion
+description: Learn here about locolization support in Syncfusion Essential ASP.NET web Forms Numeric Textbox control, its elements and more.
 platform: aspnet
 control: NumericTextbox
 documentation: ug
 ---
 
-# Globalization Support
+# Locolization Support in ASP.NET Web Forms Numeric Textbox
 
 **Globalization** is language support based on the culture in **Textboxes**. You can achieve the **Globalization** using “**locale”** property in **PercentageTextBox** . 
 
