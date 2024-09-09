@@ -518,7 +518,7 @@ In the following code example, dataSource for menu is set from DataTable.
 
 {% endhighlight %}
 
-Sample can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/233237/ze/Menu921663815)
+Sample can be downloaded [here](http://www.syncfusion.com/downloads/support/directtrac/233237/ze/Menu921663815)
 
 Now , the menu will be displayed as shown below
 
