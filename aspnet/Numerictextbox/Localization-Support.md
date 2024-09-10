@@ -64,9 +64,9 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 
 The following screenshot displays the output of the NumericTextbox with localization.
 
-![Configure ASP.NET Web Forms NumericTextbox localization support.](Localization-Support_images/aspnet-web-forms-numeric-textbox-localization-support.png) 
+![Configure ASP.NET Web Forms Numeric Textbox localization support.](Localization-Support_images/aspnet-web-forms-numeric-textbox-localization-support.png) 
 
-![ASP.NET Web Forms NumericTextbox localization support.](Localization-Support_images/aspnet-web-forms-numeric-textbox-support-display.png) 
+![ASP.NET Web Forms Numeric Textbox localization support.](Localization-Support_images/aspnet-web-forms-numeric-textbox-support-display.png) 
 
 
 
