@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar customization in ASP.NET PDF viewer | Syncfusion
-description: Learn here about toolbar customization of Syncfusion Essential ASP.NET PDF viewer, its elements and more details.
+title: Toolbar customization in ASP.NET Web Forms PDF viewer | Syncfusion
+description: Learn here about toolbar customization of Syncfusion Essential ASP.NET Web Forms PDF viewer, its elements and more details.
 platform: aspnet
 control: PDF viewer
 documentation: ug
 keywords: pdfviewer, PDF viewer
 ---
 
-# Toolbar Customization in ASP.NET PDF Viewer
+# Toolbar Customization in ASP.NET Web Forms PDF Viewer
 
 **Customizing default toolbar**
 
