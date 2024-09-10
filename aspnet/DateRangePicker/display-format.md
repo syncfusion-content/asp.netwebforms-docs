@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TASP.NET DateRangePicker Display Format | Syncfusion
-description: Learn here about Display Format with Syncfusion Essentialaspnet DateRangePicker control, its elements, and more.
+description: Learn here about Display Format use in Syncfusion Essentialaspnet DateRangePicker control, its elements, and more.
 platform: aspnet
 control: DateRangePicker
 documentation: ug
