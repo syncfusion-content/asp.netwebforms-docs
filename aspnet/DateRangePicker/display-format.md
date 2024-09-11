@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ASP.NET DateRangePicker Display Format | Syncfusion
-description: Learn here about Display Format use in Syncfusion aspnet DateRangePicker control, its elements, and more.
+description: Learn here all about Display Format use in Syncfusion aspnet DateRangePicker control, its elements, and more.
 platform: aspnet
 control: DateRangePicker
 documentation: ug
