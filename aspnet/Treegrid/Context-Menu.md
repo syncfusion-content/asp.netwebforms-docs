@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu | TreeGrid | ASP.NET | Syncfusion
-description: Learn here all about Context menu in Syncfusion Essential ASP.NET Web Forms TreeGrid control, its elements and more details.
+description: Learn here all about context menu support in Syncfusion Essential ASP.NET Web Forms TreeGrid control, its elements, and more details.
 platform: aspnet
 control: TreeGrid
 documentation: ug
@@ -26,7 +26,7 @@ The `ContextMenuItems` property is used to add the menu items to context menu, t
 
 The following screenshot displays the Context menu in TreeGrid control.
 
- ![Context menu in ASP.NET TreeGrid.](context-menu_images/context-menu-in-aspnet-treegrid.png)
+ ![Context menu in ASP.NET Web Forms TreeGrid.](context-menu_images/context-menu-in-aspnet-web-forms-treegrid.png)
 
 
 
