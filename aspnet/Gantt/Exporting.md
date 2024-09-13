@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Exporting| Gantt | ASP.NET | Syncfusion
-description: Learn here about exporting support in Syncfusion ASP.NET Web Forms Gantt control, its elements, and more.
+title: Exporting in ASP.NET Webforms Gantt Control | Syncfusion
+description: Learn here all about exporting support in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
 platform: aspnet
 control: Gantt
 documentation: ug
 ---
-# Exporting in ASP.NET Web Forms Gantt Control
+# Exporting in ASP.NET Webforms Gantt Control
 
 Exporting feature provides support to export Gantt content to excel and PDF files. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be added in the toolbar using the `ToolbarItems` property of `ToolbarSettings`. When you click, the toolbar exporting icons, it internally invokes the export public method of Gantt object to export.
 
