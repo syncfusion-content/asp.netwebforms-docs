@@ -9,7 +9,7 @@ keywords: Validation, DropDownList, dropdown, jQuery Validator, ASP Validator
 
 ---
 
-# Validation in  ASP.NET WebForm DropDownList control
+# Validation in  ASP.NET Web Form DropDownList control
 
 DropDownList value can be validated in two ways,
 1. Using jQuery Validator
