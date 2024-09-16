@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in DropDownList | Syncfusion | ASP.NET WebForms
-description: Learn here about data binding with Syncfusion Essential ASP.NET Web Forms dropdownList control, its elements, and more.
+title: Data binding in ASP.NET WebForms DropDown List | Syncfusion
+description: Learn here about data binding in Syncfusion Essential ASP.NET Web Forms dropdown List control, its elements, and more.
 platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, data binding, Local data, Remote data
 ---
 
-# ASP.NET Web Forms DropDownList Data Binding
+# Data binding in ASP.NET Web Forms DropDown List
 
 To populate data in the DropDownList widget, define [dataSource](https://help.syncfusion.com/api/js/ejdropdownlist#members:datasource) property with associated fields. In DropDownList, can bind either local array or OData, WebApi and other [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) services.
 
@@ -379,7 +379,7 @@ It loads the data on scrolling the list of items. This can be achieved by settin
     {% highlight c# %}
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownList1.DataSource = "https://ej2.syncfusion.com/home/javascript.html";
+            DropDownList1.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
         }
         
     {% endhighlight %}
