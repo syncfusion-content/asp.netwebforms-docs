@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Functionalities in DropDownList | Syncfusion | ASP.NET WebForms
-description: This article explains more about ASP.NET Web Forms DropDownList Functionalities in the DropDownList control for Syncfusion ASP.NET WebForm
+title: Functionalities in ASP.NET Web Forms Dropdown List Component | Syncfusion
+description: Learn here all about Functionalities in Syncfusion ASP.NET Web Forms Dropdown List component of Syncfusion Essential JS 2 and more.
 platform: aspnet
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Selection, Grouping, Sorting
 ---
-# ASP.NET Web Forms DropDownList Functionalities
+# Functionalities in ASP.NET Web Forms Dropdown List Component
 
 ## Selection
 

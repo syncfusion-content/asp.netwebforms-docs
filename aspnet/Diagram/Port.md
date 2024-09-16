@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ports in ASP.NET Webforms Diagram Control | Syncfusion
-description: Learn here all about ports support in Syncfusion Essential ASP.NET Webforms Diagram Control, its elements, and more.
+title: Ports in ASP.NET Web Forms Diagram Control | Syncfusion
+description: Learn here all about ports support in Syncfusion Essential ASP.NET Web Forms Diagram Control, its elements, and more.
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
-# Ports in ASP.NET Webforms Diagram
+# Ports in ASP.NET Web Forms Diagram Control
 
 Essential Diagram for ASP.NET provides support to define custom ports for making connections.
 
