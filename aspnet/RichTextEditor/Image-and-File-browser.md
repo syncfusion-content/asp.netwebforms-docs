@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Image and File browser in RichTextEditor | Syncfusion | ASP.NET
-description: Configuring and working with Image and File browser in RichTextEditor  
+description: Learn here about Configuring and working with Image and File browser in ASP.NET RichTextEditor control its elements and more
 platform: aspnet
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Image and File browser, From Local Source, From Online Source
 ---
 
-# Image and File browser
+# Image and File browser in ASP.NET RichTextEditor 
 
 The editor allows you to manage the images and files using **FileExplorer**. The FileExplorer enables you to insert images from online source as well as local computer where you want to insert the image in your content. The Image and file browser is the ability to upload pictures and link file to the editor. 
 
@@ -91,7 +91,7 @@ public static object FileActionDefault(string ActionType, string Path, string Ex
 ![Image from Your Computer](ImageandFilebrowser_images/ImageandFilebrowser_img2.png)
 
 
-N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](http://helpjs.syncfusion.com/js/fileexplorer/overview#).
+N> FileExplorer component has been implemented and integrated with the editor in Volume 1, 2015 release. For more information about FileExplorer component, see [here](https://help.syncfusion.com/js/fileexplorer/overview).
 
 ## Image Properties
 
@@ -104,7 +104,7 @@ You can set or modify the properties of an image by using the image dialog. It a
 
 You can resize an image either manually or by setting width and height in the image dialog. 
 
-N> Set the default height and width of the Images which was inserted into the RTE text area in the client side event called “change” event of RTE - {{'[Link](http://jsplayground.syncfusion.com/Sync_rghpsadi)'| markdownify }}
+N> Set the default height and width of the Images which was inserted into the RTE text area in the client side event called “change” event of RTE - {{'[Link](https://ej2.syncfusion.com/home/javascript.html)'| markdownify }}
 
 ### Resize Manually
 
