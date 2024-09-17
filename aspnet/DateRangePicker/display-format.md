@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET DateRangePicker Display Format | Syncfusion
-description: Learn here all about Display Format use in Syncfusion aspnet DateRangePicker control, its elements, and more.
+title: Display format in ASP.NET Web Forms DateRangePicker | Syncfusion
+description: Learn here all about display Format use in Syncfusion ASP.NET Web Forms DateRangePicker control, its elements, and more.
 platform: aspnet
 control: DateRangePicker
 documentation: ug
 keywords: format
 ---
 
-# Display format in ASP.NET DateRangePicker Component
+# Display format in ASP.NET Web Forms DateRangePicker Component
 
 Text representation of date and time in their corresponding text box in a control, can be changed using the available API called **DateFormat**, **TimeFormat**.  By default those values will be set based on culture. 
 
