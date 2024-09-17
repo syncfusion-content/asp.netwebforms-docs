@@ -50,9 +50,9 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 **Add Scripts and Styles**
 
 You can find the scripts for PDF viewer control and style sheets in any of the following locations:
-Local Disk to know more about script and style sheets installed in local machine.
-CDN Link to know more about script and style sheets available online.
-NuGet Package to know more about script and style sheets available in NuGet package.
+Local Disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment# "Installation and deployment") to know more about script and style sheets installed in local machine.
+CDN Link: [Click here](https://help.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
+NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
 
 Add the script files and CSS files in the &#60;title&#62; tag of Default.aspx.
 
@@ -322,7 +322,7 @@ Add below code snippet to Default.aspx. Here, PDF viewer uses the Web API to pro
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PdfViewerEJWeb.Default" %>
 <%@ Register assembly="Syncfusion.EJ.Web" namespace="Syncfusion.JavaScript.Web" tagprefix="ej" %>
 <!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml/">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>PDF viewer</title>
     <link href="https://cdn.syncfusion.com/16.1.0.24/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
