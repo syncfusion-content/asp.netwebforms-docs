@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting in ASP.NET Webforms Gantt Control | Syncfusion
-description: Learn here all about exporting support in Syncfusion Essential ASP.NET Webforms Gantt Control, its elements, and more.
+title: Exporting in ASP.NET Web Forms Gantt Control | Syncfusion
+description: Learn here all about exporting support in Syncfusion Essential ASP.NET Web Forms Gantt Control, its elements, and more.
 platform: aspnet
 control: Gantt
 documentation: ug
