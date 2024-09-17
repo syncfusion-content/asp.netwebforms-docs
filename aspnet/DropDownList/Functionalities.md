@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Functionalities in ASP.NET Web Forms Dropdown List Component | Syncfusion
+title: Functionalities in ASP.NET Web Forms Dropdown List | Syncfusion
 description: Learn here all about Functionalities in Syncfusion ASP.NET Web Forms Dropdown List component of Syncfusion Essential JS 2 and more.
 platform: aspnet
 control: DropDownList
