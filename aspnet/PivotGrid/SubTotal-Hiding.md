@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  SubTotal Hiding | PivotGrid | ASP.NET | Syncfusion
-description: SubTotal Hiding
+description: Learn here more about SubTotal Hiding support in Syncfusion Essential ASP.NET PivotGrid Control, its element and more
 platform: aspnet
 control: PivotGrid
 documentation: ug
 ---
 
-# Sub total hiding
+# Sub total hiding in ASP.NET PIvotGrid
 
 N> This feature is applicable only for the relational data source.
 

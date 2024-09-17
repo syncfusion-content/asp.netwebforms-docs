@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview | Button | ASP.NET Webforms | Syncfusion
-description: overview
+description: Learn here more about Overview support in Syncfusion Essential ASP.NET Button Control, its element and more
 platform: aspnet
 control: Button
 documentation: ug
 ---
 
-# Overview
+# Overview in ASP.NET Button Control
 
 The Essential **ASP.NET Button control** allows you to perform an action by clicking on it. The **Button** control has the feature of displaying both text and images. When the Button is clicked, it looks as if it is being pushed in and released. The Text property is used to display the Text content in Button. The **Button** control displays images by using the sprite CSS and Image Position properties. The **Button** control has theme support. While using input type submit, reset and button to be render as button, has text only support.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance and Styling | Menu | ASP.NET Webforms | Syncfusion
-description: appearance and styling
+description: Learn here more about appearance and styling support in Syncfusion Essential ASP.NET Menu Control, its elements, and more
 platform: aspnet
 control: Menu
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in ASP.NET Menu
 
 ## Theme
 
