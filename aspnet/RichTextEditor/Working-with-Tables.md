@@ -8,7 +8,7 @@ documentation: ug
 keywords: RichTextEditor, Tables, Insert Row, Remove Row, Remove Columns, Insert Columns
 
 ---
-# Working with tables in ASP.NET Web Forms RichTextEditor
+# Working with tables in ASP.NET Web Forms RichTextEditor control
 
 The editor provides tools to add tables in your content. Can add, edit, and remove the table as well as perform other table related tasks.
 

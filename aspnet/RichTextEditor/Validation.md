@@ -9,7 +9,7 @@ keywords: RichTextEditor, Validation, JQuery Validation, ASP Validation
 
 ---
 
-# Validation in ASP.NET Web Forms RichTextEditor
+# Validation in ASP.NET Web Forms RichTextEditor control
 
 Validate the RichTextEditor’s value on form submission by applying ValidationRules and ValidationMessage to the RichTextEditor.
 
