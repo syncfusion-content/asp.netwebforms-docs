@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started | PDF viewer | ASP.NET Webforms | Syncfusion
-description: Learn here about getting started with Syncfusion ASP.NET Webforms PDF viewer control and more details.
+title: Getting Started | PDF Viewer | ASP.NET Web Forms | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Web Forms PDF Viewer control and more details.
 platform: aspnet
 control: PDF viewer
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Webforms PDF viewer
+# Getting Started with ASP.NET Web Forms PDF Viewer
 
 This section explains how to add and use a PDF viewer control in your web application with ASP.NET Web Forms.
 

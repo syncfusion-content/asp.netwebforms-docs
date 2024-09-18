@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in  ASP.NET WebForm Dropdown List control | Syncfusion
-description: Learn here all about ports support in Syncfusion Essential ASP.NET Webforms Dropdown List Control, its elements, and more.
+title: Validation in ASP.NET Web Forms Dropdown List Control | Syncfusion
+description: Learn here all about ports support in Syncfusion Essential ASP.NET Web Forms Dropdown List Control, its elements, and more.
 platform: aspnet
 control: DropDownList
 documentation: ug
@@ -9,7 +9,7 @@ keywords: Validation, DropDownList, dropdown, jQuery Validator, ASP Validator
 
 ---
 
-# Validation in  ASP.NET Web Form Dropdown List control
+# Validation in ASP.NET Web Forms Dropdown List Control
 
 DropDownList value can be validated in two ways,
 1. Using jQuery Validator
@@ -19,7 +19,7 @@ DropDownList value can be validated in two ways,
  
 You can validate the DropDownList value on form submission using jQuery Validator, by applying “ValidationRules” and “ValidationMessage” to the DropDownList. 
 
-N> [jquery.validate.min] script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
 ### Validation Rules
 

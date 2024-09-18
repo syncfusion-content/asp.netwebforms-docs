@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Functionalities in ASP.NET Web Forms Dropdown List | Syncfusion
-description: Learn here all about Functionalities in Syncfusion ASP.NET Web Forms Dropdown List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about functionalities in Syncfusion ASP.NET Web Forms Dropdown List control, it's elements, and more.
 platform: aspnet
 control: DropDownList
 documentation: ug
@@ -305,7 +305,7 @@ I> To use "SelectedIndices" property, you should enable either ShowCheckbox or M
 
 ### Unselect items
 
-Similarly, you can unselect a single or multiple items by using [unselectItemByValue](https://help.syncfusion.com/api/js/ejdropdownlist#methods:unselectitembyvalue)) or [unselectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyindices) or [unselectItemByText](https://help.syncfusion.com/api/js/ejdropdownlist#methods:unselectitembytext) methods. This will remove the selection state of the corresponding data item from the popup list and textbox. 
+Similarly, you can unselect a single or multiple items by using [unselectItemByValue](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyvalue) or [unselectItemByIndices](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembyindices) or [unselectItemByText](http://help.syncfusion.com/js/api/ejdropdownlist#methods:unselectitembytext) methods. This will remove the selection state of the corresponding data item from the popup list and textbox.
 
 {% tabs %}
 

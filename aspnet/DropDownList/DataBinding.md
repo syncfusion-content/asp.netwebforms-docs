@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data binding in ASP.NET WebForms Dropdown List | Syncfusion
+title: Data binding in ASP.NET Web Forms Dropdown List | Syncfusion
 description: Learn here about data binding in Syncfusion Essential ASP.NET Web Forms Dropdown List control, its elements, and more.
 platform: aspnet
 control: DropDownList
@@ -404,7 +404,7 @@ N> In both modes, set of items will be fetched based on the count specified in t
     {% highlight c# %}
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownList1.DataSource = "https://ej2.syncfusion.com/home/javascript.html";
+            DropDownList1.DataSource = "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders";
         }
         
     {% endhighlight %}
