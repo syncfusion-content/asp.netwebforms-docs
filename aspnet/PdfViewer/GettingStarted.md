@@ -2,6 +2,7 @@
 layout: post
 title: Getting Started | PDF Viewer | ASP.NET Web Forms | Syncfusion
 description: Learn here about getting started with Syncfusion Essential ASP.NET Web Forms PDF Viewer control, it's elements, and more details.
+
 platform: aspnet
 control: PDF viewer
 documentation: ug
