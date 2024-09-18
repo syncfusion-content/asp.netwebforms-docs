@@ -51,9 +51,9 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 **Add Scripts and Styles**
 
 You can find the scripts for PDF viewer control and style sheets in any of the following locations:
-Local Disk: [Installation and deployment](https://help.syncfusion.com/js/overview) to know more about script and style sheets installed in local machine.
+Local Disk: [Installation and deployment](https://help.syncfusion.com/js/configuration-and-deployment) to know more about script and style sheets installed in local machine.
 CDN Link: [CDN scripts and styles links](https://help.syncfusion.com/js/cdn#) to know more about script and style sheets available online.
-NuGet Package: [Configuring Syncfusion.uGet Packages](https://help.syncfusion.com/js/overview) to know more about script and style sheets available in NuGet package.
+NuGet Package: [Configuring Syncfusion.NuGet Packages](https://help.syncfusion.com/js/nuget-packages) to know more about script and style sheets available in NuGet package.
 
 Add the script files and CSS files in the &#60;title&#62; tag of Default.aspx.
 
@@ -63,7 +63,7 @@ Add the script files and CSS files in the &#60;title&#62; tag of Default.aspx.
 <script src="https://cdn.syncfusion.com/16.1.0.24/js/web/ej.web.all.min.js"></script>
 {% endhighlight %}
 
-N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in one single file. In production, we highly recommend you to use our to create custom script file with required widgets and its dependencies, to reduce the size of the script file.
+N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in one single file. In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/overview) to create custom script file with required widgets and its dependencies, to reduce the size of the script file.
 
 ### Add PDF viewer Control in View page
 
