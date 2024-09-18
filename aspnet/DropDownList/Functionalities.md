@@ -7,7 +7,7 @@ control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Selection, Grouping, Sorting
 ---
-# Functionalities in ASP.NET Web Forms Dropdown List Component
+# Functionalities in ASP.NET Web Forms Dropdown List Control
 
 ## Selection
 
