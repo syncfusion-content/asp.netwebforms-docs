@@ -45,14 +45,14 @@ Add below references, which are necessary for the PDF viewer control, to the pro
 * Syncfusion.EJ.PdfViewer
 * Syncfusion.EJ.Web
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key "Syncfusion Licensing Overview") to know about registering Syncfusion license key in your ASP.NET application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview "Syncfusion Licensing Overview") to know about registering Syncfusion license key in your ASP.NET application to use our components.
 
 **Add Scripts and Styles**
 
 You can find the scripts for PDF viewer control and style sheets in any of the following locations:
-Local Disk: [Click here](https://help.syncfusion.com/js/overview "Installation and deployment") to know more about script and style sheets installed in local machine.
-CDN Link: [Click here](https://help.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
-NuGet Package: [Click here](https://help.syncfusion.com/js/overview "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
+Local Disk: [Installation and deployment](https://help.syncfusion.com/js/overview) to know more about script and style sheets installed in local machine.
+CDN Link: [CDN scripts and styles links](https://help.syncfusion.com/js/cdn#) to know more about script and style sheets available online.
+NuGet Package: [Configuring Syncfusion.uGet Packages](https://help.syncfusion.com/js/overview) to know more about script and style sheets available in NuGet package.
 
 Add the script files and CSS files in the &#60;title&#62; tag of Default.aspx.
 
