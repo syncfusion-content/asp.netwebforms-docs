@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation in ASP.NET Web Forms RichTextEditor | Syncfusion
-description: Learn here all about working with validation in Syncfusion ASP.NET Web Forms RichTextEditor control, its elements, and more
+description: Learn here all about working with validation in Syncfusion ASP.NET Web Forms RichTextEditor control, its elements, and more.
 platform: aspnet
 control: RTE
 documentation: ug
