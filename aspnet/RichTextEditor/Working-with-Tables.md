@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Working with Tables opreation | RTE | Syncfusion | ASP.NET
-description: Working with Tables customization for RichTextEditor control
+title: Working with tables in ASP.NET Web Forms RichTextEditor | Syncfusion
+description: Learn here all about working with tables in Syncfusion ASP.NET Web Forms RichTextEditor control, its elements, and more.
 platform: aspnet 
 control: RTE
 documentation: ug
 keywords: RichTextEditor, Tables, Insert Row, Remove Row, Remove Columns, Insert Columns
 
 ---
-# Working with Tables
+# Working with tables in ASP.NET Web Forms RichTextEditor control
 
 The editor provides tools to add tables in your content. Can add, edit, and remove the table as well as perform other table related tasks.
 
 ## Create a Table
 
-By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools-tables) tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
+By default, [Insert Table](https://help.syncfusion.com/api/js/ejrte#members:tools-tables) tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
 
 * [Insert a table](#insert-a-table)
 * [Insert a custom table](#custom-table)
