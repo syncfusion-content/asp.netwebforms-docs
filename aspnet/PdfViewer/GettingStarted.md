@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started | PDF viewer | ASP.NET Webforms | Syncfusion
-description: Learn here about getting started with Syncfusion ASP.NET Webforms PDF viewer control and more details.
+title: Getting Started with ASP.NET Web Forms PDF Viewer | Syncfusion
+description: Learn here about getting started with Syncfusion Essential ASP.NET Web Forms PDF Viewer control, it's elements, and more details.
 platform: aspnet
 control: PDF viewer
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Web Forms PDF Viewer
 
 This section explains how to add and use a PDF viewer control in your web application with ASP.NET Web Forms.
 
@@ -45,14 +45,14 @@ Add below references, which are necessary for the PDF viewer control, to the pro
 * Syncfusion.EJ.PdfViewer
 * Syncfusion.EJ.Web
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key "Syncfusion Licensing Overview") to know about registering Syncfusion license key in your ASP.NET application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview "Syncfusion Licensing Overview") to know about registering Syncfusion license key in your ASP.NET application to use our components.
 
 **Add Scripts and Styles**
 
 You can find the scripts for PDF viewer control and style sheets in any of the following locations:
-Local Disk: [Click here](https://help.syncfusion.com/js/installation-and-deployment# "Installation and deployment") to know more about script and style sheets installed in local machine.
-CDN Link: [Click here](https://help.syncfusion.com/js/cdn# "CDN scripts and styles links") to know more about script and style sheets available online.
-NuGet Package: [Click here](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages "Configuring Syncfusion NuGet Packages") to know more about script and style sheets available in NuGet package.
+Local Disk: [Installation and deployment](https://help.syncfusion.com/js/configuration-and-deployment) to know more about script and style sheets installed in local machine.
+CDN Link: [CDN scripts and styles links](https://help.syncfusion.com/js/cdn#) to know more about script and style sheets available online.
+NuGet Package: [Configuring Syncfusion.NuGet Packages](https://help.syncfusion.com/js/nuget-packages) to know more about script and style sheets available in NuGet package.
 
 Add the script files and CSS files in the &#60;title&#62; tag of Default.aspx.
 
@@ -62,7 +62,7 @@ Add the script files and CSS files in the &#60;title&#62; tag of Default.aspx.
 <script src="https://cdn.syncfusion.com/16.1.0.24/js/web/ej.web.all.min.js"></script>
 {% endhighlight %}
 
-N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in one single file. In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/include-only-the-needed-widgets# "custom script generator") to create custom script file with required widgets and its dependencies, to reduce the size of the script file.
+N> For getting started, you can use the ej.web.all.min.js file, which encapsulates all the ej widgets and frameworks in one single file. In production, we highly recommend you to use our [custom script generator](https://help.syncfusion.com/js/custom-script-generator) to create custom script file with required widgets and its dependencies, to reduce the size of the script file.
 
 ### Add PDF viewer Control in View page
 
