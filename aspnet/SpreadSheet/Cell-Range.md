@@ -1,12 +1,12 @@
 ---
 title: Cell Range with Spreadsheet widget for Syncfusion Essential JS
-description: Learn about cell range support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
+description: Learn here about cell range support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
 platform: aspnet
 control: Spreadsheet
 documentation: ug
 --- 
 
-# Cell Range
+# Cell Range in ASP.NET Diagram
 
 A Cell Range is a collection of cells in a sheet. It represents single cell or selection of cells. When cells have been selected, they are surrounded by border. 
 
@@ -30,7 +30,7 @@ You can insert a comment by using one of the following ways,
 
 * Using "New" button under Comments group of REVIEW Tab in ribbon.
 * Using context menu to select "Insert Comment" option in "Comment".
-* Using [`setComment`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-setcomment "setComment") method.
+* Using [`setComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-setcomment "setComment") method.
 
 ### To remove a Comment
 
