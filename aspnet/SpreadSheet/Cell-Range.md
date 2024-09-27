@@ -30,7 +30,7 @@ You can insert a comment by using one of the following ways,
 
 * Using "New" button under Comments group of REVIEW Tab in ribbon.
 * Using context menu to select "Insert Comment" option in "Comment".
-* Using [`setComment`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-setcomment "setComment") method.
+* Using [`setComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-setcomment "setComment") method.
 
 ### To remove a Comment
 
@@ -38,7 +38,7 @@ You can remove a comment by using one of the following ways,
 
 * Using "Delete" button under Comments group of REVIEW Tab in ribbon.
 * Using context menu to select "Delete Comment" option in "Comment".
-* Using [`deleteComment`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-deletecomment "deleteComment") method.
+* Using [`deleteComment`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlcomment-deletecomment "deleteComment") method.
 
 The following code example describes the above behavior.
 {% tabs %}
@@ -134,7 +134,7 @@ N> * jquery.validate.unobtrusive.min.js
 You can apply data validation by using one of the following ways,
 
 * Using "Data Validation" option in Data Validation button under Data Tools group of DATA Tab in ribbon, Data Validation dialog will be opened in that you can perform Validation.
-* Using [`applyDVRules`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlvalidate-applydvrules "applyDVRules") method.
+* Using [`applyDVRules`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlvalidate-applydvrules "applyDVRules") method.
 
 The following code example describes the above behavior.
 {% tabs %}
@@ -186,7 +186,7 @@ function loadComplete(args) {
 You can clear data validation rule by one of the following ways,
 
 * Using "Clear Validation" option in Data Validation button under Data Tools group of DATA Tab in ribbon.
-* Using [`clearDV`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlvalidate-cleardv "clearDV") method.
+* Using [`clearDV`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlvalidate-cleardv "clearDV") method.
 
 The following code example describes the above behavior.
 {% tabs %}
@@ -238,7 +238,7 @@ function loadComplete(args) {
 You can highlight the invalid data by using following ways,
 
 * Using "Format Invalid Data" option in Data Validation button under Data Tools group of DATA Tab in ribbon.
-* Using [`highlightInvalidData`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlvalidate-highlightinvaliddata "highlightInvalidData") method.
+* Using [`highlightInvalidData`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlvalidate-highlightinvaliddata "highlightInvalidData") method.
 
 The following code example describes the above behavior.
 {% tabs %}
@@ -295,7 +295,7 @@ Drag and drop is used to pick a selected cells and drop it into a new place on t
 You can do this by one of the following ways,
 
 * Using mouse drag and drop.
-* Using [`moveRangeTo`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragdrop-moverangeto "moveRangeTo") Method.
+* Using [`moveRangeTo`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragdrop-moverangeto "moveRangeTo") Method.
 
 The following code example describes the above behavior.
 {% tabs %}
@@ -349,7 +349,7 @@ Auto Fill is used to fill the cells with data based on adjacent cells. It also f
 You can do this by one of the following ways,
 
 * Using “AutoFillOptions” menu which is open, while drag and drop the cell using fill handle element.
-* Using [`autoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method.
+* Using [`autoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method.
 
 In Auto Fill we have following options, 
 
@@ -366,7 +366,7 @@ N> The default auto fill option is "FillSeries" which can be referred from `Fill
 To copy the selected cell content to the adjacent cells. You can do this by one of the following ways,
 
 * Using fill handle to select the adjacent cell range and "Copy Cells" option in "AutoFillOptions" menu to fill the adjacent cells.
-* Using "CopyCells" as fill type in [`autoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
+* Using "CopyCells" as fill type in [`autoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 #### Fill Series
 
@@ -375,7 +375,7 @@ To fill the series of numbers, characters, or dates based on selected cell conte
 You can do this by one of the following ways,
 
 * Using fill handle to select the adjacent cell range and "Fill Series" option in "AutoFillOptions" menu to fill the adjacent cells.
-* Using "fillSeries" as fill type in [`autoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
+* Using "fillSeries" as fill type in [`autoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 #### Fill Formatting Only
 
@@ -384,7 +384,7 @@ To fill the cell style and number formatting based on the selected cell content 
 You can do this by one of the following ways,
 
 * Using fill handle to select the adjacent cell range and "Fill Formatting Only" option in "AutoFillOptions" menu to fill the adjacent cells.
-* Using "FillFormattingOnly" as fill type in [`autoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
+* Using "FillFormattingOnly" as fill type in [`autoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 #### Fill Without Formatting
 
@@ -393,7 +393,7 @@ To fill series of numbers, characters, or dates based on the selected cells to t
 You can do this by one of the following ways,
 
 * Using fill handle to select the adjacent cell range and "Fill Without Formatting" option in "AutoFillOptions" menu to fill the adjacent cells.
-* Using "FillWithoutFormatting" as fill type in [`autoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
+* Using "FillWithoutFormatting" as fill type in [`autoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 #### Flash Fill 
 
@@ -402,7 +402,7 @@ To fill the column when it senses a pattern from adjacent column data based on w
 You can do this by one of the following ways,
 
 * Using fill handle to select the adjacent cell range and "Flash Fill" option in "AutoFillOptions" menu to fill the adjacent cells.
-* Using "FlashFill" as fill type in [`autoFill`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
+* Using "FlashFill" as fill type in [`autoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xldragfill-autofill "autoFill") method to fill the adjacent cells.
 
 The following code example describes the above behavior.
 
@@ -506,14 +506,14 @@ You can insert a hyperlink by one of the following ways,
 
 * Using "Hyperlink" button under Links group of INSERT Tab in ribbon.
 * Using context menu to select "Insert Hyperlink" option in "Hyperlink".
-* Using [`setHyperlink`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:sethyperlink "setHyperlink") method.
+* Using [`setHyperlink`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:sethyperlink "setHyperlink") method.
 
 ### To remove a Hyperlink
 
 You can remove a hyperlink by one of the following ways,
 
 * Using context menu to select "Remove Hyperlink" option in Hyperlink.
-* Using [`removeHyperlink`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:removehyperlink "removeHyperlink") method.
+* Using [`removeHyperlink`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:removehyperlink "removeHyperlink") method.
 
 The following code example describes the above behavior.
 {% tabs %}
@@ -584,7 +584,7 @@ You can combine two or more cells located in the same row or column into a singl
 You can do this by one of the following ways,
 
 * Using "Merge Cells" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
-* Using [`mergeCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method.
+* Using [`mergeCells`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method.
 
 ### Merge & Center
 
@@ -592,7 +592,7 @@ You can combine two or more cells located in the same row or column into a singl
 
 * Using Merge & Center button under Alignment group of HOME Tab in ribbon.
 * Using "Merge & Center" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
-* Using [`mergeCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method with `MergeCenter` property as `true` to enable the center alignment.
+* Using [`mergeCells`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:mergecells "mergeCells") method with `MergeCenter` property as `true` to enable the center alignment.
 
 ### Merge Across
 
@@ -601,7 +601,7 @@ You can combine two or more cells located in the same row into a single cell. Wh
 You can do this by one of the following ways,
 
 * Using "Merge Across" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
-* Using [`mergeAcrossCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:mergeacrosscells "mergeAcrossCells") method.
+* Using [`mergeAcrossCells`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:mergeacrosscells "mergeAcrossCells") method.
 
 The following code example describes the behavior of merge Cells, merge & center and merge Across.
 {% tabs %}
@@ -657,7 +657,7 @@ The following output is displayed as a result of the above code example.
 You can split the merged cell into multiple cells. You can do this by one of the following ways,
 
 * Using "Unmerge cells" option in Merge & Center button under Alignment group of HOME Tab in ribbon.
-* Using [`unMergeCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:unmergecells "unMergeCells") method.
+* Using [`unMergeCells`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:unmergecells "unMergeCells") method.
 
 The following code example describes the above behavior.
 {% tabs %}
