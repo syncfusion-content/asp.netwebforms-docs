@@ -6,8 +6,7 @@ platform: aspnet
 control: DatePicker
 documentation: ug
 ---
-# Formatting in DateRangePicker
-
+#  Formatting in ASP.NET DateRangePicker
 Formatting is the way of displaying the date or number as string in some standard format which is based on culture specific or user need.
 
 Below table shows the patterns to format date value.
