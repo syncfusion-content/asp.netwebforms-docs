@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Display Format in ASP.NET  Daterangepicker | Syncfusion
-description: Configuring display format of  ASP.NET Core DatePicker in documentation of ASP.NET webform documents app
+title: Display Format in ASP.NET Web Forms DateRangePicker | Syncfusion
+description: Learn here all about configuring display format of DatePicker in Syncfusion ASP.NET Web Forms DateRangePicker control, it's elements, and more.
 platform: aspnet
 control: DatePicker
 documentation: ug
 ---
-# Display Format of ASP.NET Daterangepicker  in ASP.NET web
+# Display Format in ASP.NET Web Forms DateRangePicker
 
 Formatting is the way of displaying the date or number as string in some standard format which is based on culture specific or user need.
 
