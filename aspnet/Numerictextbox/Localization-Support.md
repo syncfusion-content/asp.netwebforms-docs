@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Globalization Support | NumericTextbox | ASP.NET | Syncfusion
-description: globalization support
+description: Learn here about Localization Support with Syncfusion ASP.NET Web Forms Numerictextbox control, its elements, and more.
 platform: aspnet
 control: NumericTextbox
 documentation: ug
 ---
 
-# Globalization Support
+# ASP.NET Web Forms Numeric Textbox Localization Support
 
 **Globalization** is language support based on the culture in **Textboxes**. You can achieve the **Globalization** using “**locale”** property in **PercentageTextBox** . 
 
@@ -15,7 +15,7 @@ The **PercentageTextBox** widget provides multi-language support using globaliza
 
 
 More than 350 culture specific files are available to localize the value. To know more about EJ globalize support, please refer the below link      
- [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
+ [https://help.syncfusion.com/js/localization](https://help.syncfusion.com/js/localization) 
  
  N> All the culture-specific script files are available within the below specified location, once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
@@ -64,9 +64,9 @@ Add the following code example in your ASPX page to render the NumericTextbox co
 
 The following screenshot displays the output of the NumericTextbox with localization.
 
-![C:/Users/giftline.jebamani/Desktop/n.png](Localization-Support_images/Localization-Support_img1.png) 
+![Localization-Support_img1 in ASP.NET Web Forms Numeric Textbox](Localization-Support_images/Localization-Support_img1.png) 
 
-![C:/Users/giftline.jebamani/Desktop/na.png](Localization-Support_images/Localization-Support_img2.png) 
+![Localization-Support_img2 in ASP.NET Web Forms Numeric Textbox](Localization-Support_images/Localization-Support_img2.png) 
 
 
 
