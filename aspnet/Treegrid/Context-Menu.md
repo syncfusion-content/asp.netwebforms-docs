@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Context Menu | TreeGrid | ASP.NET | Syncfusion
-description: context menu
+description: Learn here about context menu in Syncfusion Essential ASP.NET TreeGrid control, its elements, and more.
 platform: aspnet
 control: TreeGrid
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu in ASP.NET TreeGrid
 
 The **Context menu** in TreeGrid control is used to manipulate (add, edit and delete) the TreeGrid rows. In TreeGrid, context menu can be enabled with `ContextMenuSettings` property. The `ContextMenuSettings` property contains two inner properties `ShowContextMenu` and `ContextMenuItems`.
 
@@ -26,7 +26,7 @@ The `ContextMenuItems` property is used to add the menu items to context menu, t
 
 The following screenshot displays the Context menu in TreeGrid control.
 
- ![](Context-Menu_images/Context-Menu_img1.png) 
+ ![Display context menu in ASP.NET TreeGrid](Context-Menu_images/aspnet-treegrid-display-context-menu.png) 
 
 
 
@@ -62,9 +62,9 @@ function customMenuClick(args) {
 
 The following screenshot displays the customization of Context menu in TreeGrid control.
 
-![](Context-Menu_images/Context-Menu_img2.png) 
+![Context menu customization in ASP.NET TreeGrid](Context-Menu_images/aspnet-treegrid-context-menu-customization.png) 
 
-# Header Context Menu
+### Header Context Menu
 Header context menu can be enabled by setting `ShowContextMenu` as `true`. The default value of the `ShowContextMenu` property is `false`.
 
 Following options are shown in header context menu. 
@@ -91,7 +91,7 @@ The below code snippet explains how to enable header context menu in TreeGrid
 
 The following screenshot displays the Header context menu in TreeGrid control.
 
-![](Context-Menu_images/Context-Menu_img3.png)
+![Header context menu in ASP.NET TreeGrid](Context-Menu_images/aspnet-treegrid-context-menu-header.png)
 
 
 
