@@ -42,7 +42,7 @@ You can create a Kanban with a highly customizable look and feel. This section d
  
    For more information about SQL data source configuration refer the following link: [https://msdn.microsoft.com/en-us/library/dz12d98w.aspx](https://msdn.microsoft.com/en-us/library/dz12d98w.aspx)
    
-   ![ASPNET Kanban Getting-Started image1](Getting-Started_images/Getting_Started_img1.png) 
+   ![ASP.NET Web Forms Kanban first application.](Getting-Started_images/aspnet-web-forms-kanban-application.png) 
 
 ## Data Binding
 
@@ -119,7 +119,7 @@ You can bind data to the Kanban control by either locally or remotely. Assign th
 
 {% endtabs %}  
 
-![ASPNET Kanban Getting-Started image2](Getting-Started_images/Getting_Started_img2.png) 
+![Data binding in ASP.NET Web Forms Kanban.](Getting-Started_images/aspnet-web-forms-kanban-data-binding.png) 
 
 N> ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](https://help.syncfusion.com/aspnet/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
@@ -205,7 +205,7 @@ In order to display cards in Kanban control, you need to map the database fields
 
 {% endtabs %}  
 
-![ASPNET Kanban Getting-Started image3](Getting-Started_images/Getting_Started_img3.png) 
+![ASP.NET Web Forms Kanban mapping values.](Getting-Started_images/aspnet-web-forms-kanban-mapping-values.png) 
 
 N> `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” and “Editing” Features.
 
@@ -285,7 +285,7 @@ N> `PrimaryKey` field is mandatory for “Drag and Drop”, ”Selection” and 
 
 {% endtabs %}  
 
-![ASPNET Kanban Getting-Started image4](Getting-Started_images/Getting_Started_img4.png) 
+![SwimlaneKey in ASP.NET Web Forms Kanban.](Getting-Started_images/aspnet-web-forms-kanban-swimlaneKey.png) 
 
 ## Adding Filters
 
@@ -367,4 +367,4 @@ Filters allows to filter the collection of cards from `DataSource` which meets t
 
 {% endtabs %}  
 
-![ASPNET Kanban Getting-Started image5](Getting-Started_images/Getting_Started_img5.png)  
+![Adding filters in ASP.NET Web Forms Kanban.](Getting-Started_images/aspnet-web-forms-kanban-filters.png)  
