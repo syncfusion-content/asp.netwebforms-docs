@@ -1,14 +1,14 @@
 ---
 title: Open and Save with Spreadsheet widget for Syncfusion Essential JS
-description: Learn about open and save support in Syncfusion ASP.NET Webforms Spreadsheet control and more details.
+description: Learn about open and save support in Syncfusion ASP.NET Webforms Spreadsheet control its elements and more.
 platform: aspnet
 control: Spreadsheet
 documentation: ug
 ---
 
-# Open and Save
+# Open and Save in ASP.NET Spreadsheet
 
-The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson "saveAsJSON") and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
+The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson%20%22saveAsJSON%22) and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
 
 {% highlight javascript %}
 
@@ -98,7 +98,7 @@ Following file types can be opened in Spreadsheet
 * XLSX
 * CSV
 
-[`Click`](http://asp.syncfusion.com/demos/web/spreadsheet/importexport.aspx "Click") here to view online demo sample.
+[`Click`](https://ej2.syncfusion.com/home/javascript.html) here to view online demo sample.
 You can open excel documents in following ways,
 
 1. Initial settings
@@ -113,7 +113,7 @@ To load excel documents initially from client side, set `ImportUrl` as excel fil
 {% highlight html %}
 
 <ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
-      <ImportSettings ImportUrl="http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx" ImportMapper="SpreadsheetHandler.ashx" />
+      <ImportSettings ImportUrl="https://ej2.syncfusion.com/home/javascript.html" ImportMapper="SpreadsheetHandler.ashx" />
 </ej:Spreadsheet>
 
 {% endhighlight %}
@@ -122,7 +122,7 @@ To load excel documents initially from server side, set `ImportOnLoad` as `true`
 
 {% highlight html %}
 <ej:Spreadsheet ID="FlatSpreadsheet" AllowImport="true" runat="server">
-      <ImportSettings ImportOnLoad="true" ImportUrl="http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx" ImportMapper="SpreadsheetHandler.ashx" />
+      <ImportSettings ImportOnLoad="true" ImportUrl="https://ej2.syncfusion.com/home/javascript.html" ImportMapper="SpreadsheetHandler.ashx" />
 </ej:Spreadsheet>
 
 {% endhighlight %}
@@ -131,7 +131,7 @@ To load excel documents initially from server side, set `ImportOnLoad` as `true`
 
 ### Methods
 
-To open an excel document, [`import`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
+To open an excel document, [`import`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:import%20%22import%22) method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
 
 #### Stream
 Spreadsheet can open excel document as a stream and the document stream was either from the client side or it can be specified in server side. The code snippets to open excel document as a stream from client side are as follows,
@@ -154,7 +154,7 @@ The code snippets to open excel document as URL from client side are as follows,
 
 function fileOpen() {
     var excelObj = $("#FlatSpreadsheet").data("ejSpreadsheet");
-    excelObj["import"]({Url: "http://mvc.syncfusion.com/Spreadsheet/LargeData.xlsx"});
+    excelObj["import"]({Url: "https://ej2.syncfusion.com/home/javascript.html"});
 }
 
 {% endhighlight %}
@@ -220,7 +220,7 @@ You can save Spreadsheet contents with following file types
 * CSV
 * PDF
 
-[`Click`](http://asp.syncfusion.com/demos/web/spreadsheet/importexport.aspx "Click") here to view online demo sample.
+[`Click`](https://ej2.syncfusion.com/home/javascript.html) here to view online demo sample.
 You can save excel documents in following ways
 
 1. Methods
@@ -228,7 +228,7 @@ You can save excel documents in following ways
 
 ### Methods
 
-To save Spreadsheet document as excel file, [`export`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlexport-export "export") method should be called with file type as parameter. The code snippets to save Spreadsheet document are as follows,
+To save Spreadsheet document as excel file, [`export`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlexport-export%20%22export") method should be called with file type as parameter. The code snippets to save Spreadsheet document are as follows,
 
 {% highlight javascript %}
 
