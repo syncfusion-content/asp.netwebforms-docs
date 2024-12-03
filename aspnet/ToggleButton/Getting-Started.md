@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Toggle Button | ASP.NET | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Web Forms Toggle Button | Syncfusion
+description: Learn here all about getting started with Syncfusion ASP.NET Web Forms Toggle Button control, it's elements, and more.
 platform: aspnet
 control: ToggleButton
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Web Forms Toggle Button
 
 This section explains briefly how to create a ToggleButton in your application with ASP.NET.
 
@@ -33,7 +33,7 @@ Create an aspx file and add the following code to aspx file for ejToggleButton c
 
 Output of the above steps.
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![Getting Started with ASP.NET Web Forms Toggle Button.](getting-started_images/aspnet-web-forms-getting-started.png) 
 
 
 
