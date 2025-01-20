@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Undo-Redo | Diagram | ASP.NET Webform | Syncfusion
-description: This section explains how to revert/restore the changes using Undo and Redo commands in the Diagram control.
+title: Undo-Redo | ASP.NET Webform | Diagram | Syncfusion
+description: Learn here about Undo-Redo with Syncfusion Essential ASP.NET Webform Diagram control, its elements, and more.
 platform: aspnet
 control: Diagram
 documentation: ug
 ---
 
-# History Manager
+# Undo-Redo in ASP.NET Webform Diagram
 
 Diagram tracks the history of actions that are performed after loading the time and provides support to reverse and restore those changes.
 
