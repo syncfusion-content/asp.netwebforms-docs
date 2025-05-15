@@ -333,7 +333,7 @@ The following structure is maintained for ASP.NET platform NuGet packages from 2
 			Syncfusion.AspNet<br/>
 		</td>
 		<td>
-			Grid<br/>Data Visualization<br/>Layout<br/>Editors<br/>Navigation<br/>Notification<br/>To know more information about the controls for above categories navigate to the following link.<br/> {{'<http://www.syncfusion.com/products/aspnet>'| markdownify }}<br/><br/>
+			Grid<br/>Data Visualization<br/>Layout<br/>Editors<br/>Navigation<br/>Notification<br/>To know more information about the controls for above categories navigate to the following link.<br/> {{'<https://www.syncfusion.com/jquery/aspnet-web-forms-ui-controls>'| markdownify }}<br/><br/>
 		</td>
 		<td>
 			EJ.Web<br/>
