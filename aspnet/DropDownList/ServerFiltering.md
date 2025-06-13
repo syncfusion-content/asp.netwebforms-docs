@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching in DropDownList | Syncfusion | ASP.NET WebForms
-description: Describes about the searching in the DropDownList control for Syncfusion ASP.NET WebForm
+description: Checkout and learn all how to describe about the searching in the DropDownList control for Syncfusion ASP.NET WebForm
 platform: aspnet
 control: DropDownList
 documentation: ug
