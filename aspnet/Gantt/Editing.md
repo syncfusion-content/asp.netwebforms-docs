@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing | Gantt | ASP.NET Webforms | Syncfusion
-description: editing
+description: Check out and learn here all about editing the Syncfusion ASP.NET Web Forms Gantt and much more details. 
 platform: aspnet
 control: Gantt
 documentation: ug
@@ -32,7 +32,7 @@ Update the task details through grid cell editing by setting `EditSettings.EditM
 {% endhighlight %}
 
 The output of Gantt with cell editing is as follows.
-![](Editing_images/Editing_img1.png)
+![cell editing.](Editing_images/Editing_img1.png)
 
 ### Save editing cell
 
@@ -116,7 +116,7 @@ Update the task details through edit dialog by setting `EditMode` as `normal`. T
 
 The following screenshot shows the output of `normal` editing.
 
-![](Editing_images/Editing_img2.png)
+![normal editing in gantt control.](Editing_images/Editing_img2.png)
 
 ### Define required fields in add/edit dialog
 
@@ -139,7 +139,7 @@ In Gantt we can define the editing fields available in add and edit dialogs by u
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![](Editing_images/Editing_img4.png)
+![add and edit dialogs.](Editing_images/Editing_img4.png)
 
 N> Similarly we can define the required fields in add dialog with `AddDialogFields.Field` and `AddDialogFields.EditType` properties.
 
@@ -175,7 +175,7 @@ function load(args) {
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![](Editing_images/Editing_img5.png)
+![custom column fields.](Editing_images/Editing_img5.png)
 
 N> Similarly we can include custom fields in add dialog's General tab by setting `DisplayInGeneralTab` as `true` in `AddDialogFields` collection.
 
@@ -273,7 +273,7 @@ In Gantt, we can add, edit, update the task dependencies by mouse interactions, 
 
 Task dependency can be added by mouse interactions by connecting connector points in predecessor and successor tasks. The following screen shot shows the add dependency action.
 
-![](Editing_images/Editing_img3.png)
+![dependency.](Editing_images/Editing_img3.png)
 
 ### Edit Dependency
 
@@ -306,13 +306,13 @@ function actionBegin(args) {
 {% endhighlight %}
 
 The following screen shot shows the dependency edit dialog.
-![](Editing_images/Predecessor_Editing_Dialog.png)
+![editing dependency.](Editing_images/Predecessor_Editing_Dialog.png)
 
 ### Delete Dependency
 
 Task dependency can be deleted by using edit dialog and [`deleteDependency`](/api/js/ejgantt#methods:deletedependency) method. The following screen shot shows the dependency edit dialog with delete option.
 
-![](Editing_images/Predecessor_Editing_Dialog.png)
+![delete dependency.](Editing_images/Predecessor_Editing_Dialog.png)
 
 [Click](https://asp.syncfusion.com/demos/web/gantt/editing.aspx) here to view the online demo sample for editing in Gantt.
 
@@ -378,7 +378,7 @@ The following code snippet explains how to enable delete confirmation message in
 
 {% endhighlight %}
 
-![](Editing_images/deleteConfirmation.png)
+![delete confirmation.](Editing_images/deleteConfirmation.png)
 
 The above screen shot shows the appearance of delete confirmation message in Gantt.
 
@@ -409,12 +409,12 @@ $("#indentTask").click(function () {
 
 The following screenshots shows the output of above code example.
 
-![](Editing_images/Editing_img6.png)
+![task delete option.](Editing_images/Editing_img6.png)
 
 Before Indent
 {:.caption}
 
-![](Editing_images/Editing_img7.png)
+![after delete option in gantt.](Editing_images/Editing_img7.png)
 
 After Indent
 {:.caption}

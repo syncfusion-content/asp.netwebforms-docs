@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add comments in the Exported file (Excel, Word or Pdf) | Grid | ASP.NET Webforms | Syncfusion
-description: Add comments in the Exported file (Excel, Word or Pdf)
+title: Add comments in the Exported file | Grid | Syncfusion
+description: Check out and learn here all about add comments in the exported file (Excel, Word or Pdf) of Syncfusion ASP.NET Web Forms and much more details.
 platform: aspnet
 control: Grid
 documentation: ug
@@ -57,7 +57,7 @@ Using the Range property and AddComment method of the XlsIO IRange Class, we wil
 
 The following screenshot displays the exported grid with comments added to cells
 
-![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img1.png)
+![exported grid with comments added to cell.](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img1.png)
 
 ## Adding Comments in Exported Word document
 
@@ -105,7 +105,7 @@ We can add comments to the word document using the AppendComment method in the W
 
 The following screenshot shows the exported grid with comments added to the document.
 
-![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img2.png)
+![exported grid with comments added to the document.](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img2.png)
 
 ## Adding Comments in Exported PDF document
 
@@ -164,4 +164,4 @@ We can add comments to a PDF documents using the annotation support provided in 
 
 The following screenshot displays the exported grid with comments added to cells
 
-![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img3.png)
+![the exported grid with comments added to cells.](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img3.png)
