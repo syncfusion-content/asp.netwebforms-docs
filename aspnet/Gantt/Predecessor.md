@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Predecessor
-description: Predecessor
+title: Predecessor | Gantt | Syncfusion 
+description: Check out and learn here all about the predecessor of Syncfusion ASP.NET Webforms Gantt and much more details.
 platform: js
 control: Gantt
 documentation: ug
@@ -41,7 +41,7 @@ var data = [
 
 The following screen shot depicts the duration unit support in the predecessor offset.
 
-![](Predecessor_images/Predecessor_img1.png)
+![depicts the duration unit support in the predecessor offset.](Predecessor_images/Predecessor_img1.png)
 
 ## Validate predecessor links on editing
 
@@ -140,7 +140,7 @@ The following code example explains this.
 
 In this case, if the user dragging action violated the predecessor type then the following dialog will be rendered to perform operation.
 
-![](Predecessor_images/Predecessor_img2.png)
+![validation dialog.](Predecessor_images/Predecessor_img2.png)
 
 
 
