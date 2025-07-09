@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Datasource of Grid in Sorted Order | Grid | ASP.NET Webforms | Syncfusion
-description: Getting Datasource of Grid in Sorted Order
+title: Getting Datasource of Grid in Sorted Order | Grid | ASP.NET Webforms
+description: Check out and learn here all about getting datasource of Syncfusion Grid in Sorted Order and much more details.
 platform: aspnet
 control: Grid
 documentation: ug
