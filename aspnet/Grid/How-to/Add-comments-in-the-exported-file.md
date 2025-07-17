@@ -57,7 +57,7 @@ Using the Range property and AddComment method of the XlsIO IRange Class, we wil
 
 The following screenshot displays the exported grid with comments added to cells
 
-![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img1.png)
+![adding comments in excel sheet in Asp.net Grid.](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img1.png)
 
 ## Adding Comments in Exported Word document
 
@@ -105,7 +105,7 @@ We can add comments to the word document using the AppendComment method in the W
 
 The following screenshot shows the exported grid with comments added to the document.
 
-![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img2.png)
+![adding comments in exported Word document in ASp.net Gantt.](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img2.png)
 
 ## Adding Comments in Exported PDF document
 
@@ -164,4 +164,4 @@ We can add comments to a PDF documents using the annotation support provided in 
 
 The following screenshot displays the exported grid with comments added to cells
 
-![](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img3.png)
+![adding comments in exported pdf document in Asp.net Grid.](Add-comments-in-the-Exported-file_images/Add-comments-in-the-Exported-file_img3.png)
