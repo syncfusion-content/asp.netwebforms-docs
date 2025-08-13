@@ -17,7 +17,7 @@ The following screenshot illustrates the functionality of a MaskEdit. Here, Mob
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![create your first MaskEdit in ASP.NET](Getting-Started_images/Getting-Started_img1.png) 
 
 
 
@@ -231,7 +231,7 @@ The following code example is used to set mask value.
 
 Execute the above code to render the following output.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![set mask value in Markedit.](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -289,7 +289,7 @@ The following screenshot shows the output for the above code example.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png) 
+![create product key validation app using Mask Edit control.](Getting-Started_images/Getting-Started_img3.png) 
 
 
 
