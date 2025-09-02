@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling | Splitter | ASP.NET | Syncfusion
-description: appearance and styling
+description: Learn here all about appearance and styling in ASP.NETWebForms Splitter Control, it's element and more
 platform: aspnet
 control: Splitter
 documentation: ug
@@ -84,7 +84,7 @@ The following screenshot displays the output of the above code example.
 
 The output for Splitter when EnableAutoResize is “True”.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 
@@ -92,7 +92,7 @@ The output for Splitter when EnableAutoResize is “false”.
 
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
@@ -140,7 +140,7 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 The output for Splitter when EnableAnimation is “True”. Expanding or collapsing the outer pane in the Splitter produces the animation effect with the animation speed.
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
 
@@ -206,19 +206,19 @@ In an ASPX page, define the Splitter control and add the contents corresponding
 
 The output for Splitter after adding the properties.
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
 
 
 
@@ -316,7 +316,7 @@ Define CSS class for customizing the Splitter.
 
 The output for Splitter after customizing the CSS class.
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 
 
 
@@ -432,7 +432,7 @@ $(document).on("keydown", function (e) {
 
 Run the sample and press Alt + J to focus the Splitter control. Perform provided functionality by using keyboard shortcuts.
 
- ![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
+ ![ASP.NETWebForms Splitter appearance and styling Control](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
 
 
 
