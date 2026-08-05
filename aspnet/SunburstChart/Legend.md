@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in ASP.NET Webforms SunburstChart | Syncfusion
-description: Learn here about getting started with Syncfusion ASP.NET Webforms SunburstChart control, its elements, and more.
+description: Learn here about getting started with Syncfusion ASP.NET Webforms SunburstChart control, its elements and more.
 platform: aspnet 
 control: SunburstChart
 documentation: ug
